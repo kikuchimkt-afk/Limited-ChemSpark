@@ -1,0 +1,2497 @@
+{
+  "metadata": {
+    "chapter": "6-3",
+    "chapter_title": "高分子化合物と人間生活",
+    "source_file": "json_data/6-3高分子化合物と人間生活.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    }
+  },
+  "questions": [
+    {
+      "id": "ch6_3_q001",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "definition",
+      "sub_category": "三大栄養素",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "三大栄養素について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "糖質、タンパク質、脂質の三つ。生体の構成物質やエネルギー源として特に重要な栄養素。糖質とタンパク質は一グラムあたり約十七キロジュール、脂質は約三十八キロジュールのエネルギーを供給する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "三大栄養素はビタミン、無機質、水。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "糖質、タンパク質、脂質。"
+        },
+        {
+          "label": "3",
+          "text": "脂質は一グラムあたり約十七キロジュール。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "約三十八キロジュール。十七は糖質とタンパク質。"
+        },
+        {
+          "label": "4",
+          "text": "糖質は一グラムあたり約三十八キロジュール。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "約十七キロジュール。三十八は脂質。"
+        }
+      ],
+      "explanation": "脂質が糖質やタンパク質の約二倍のエネルギーを持つことは重要です。「脂質は三十八」「糖質・タンパク質は十七」と覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "糖質17 kJ/g、タンパク質17 kJ/g、脂質38 kJ/g"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": "脂質＝さんぱち（38）、糖＋タン＝いちなな（17）"
+    },
+    {
+      "id": "ch6_3_q002",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "definition",
+      "sub_category": "五大栄養素",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "五大栄養素について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "糖質、タンパク質、脂質、無機質（ミネラル）、ビタミンの五つ。このうち三大栄養素（糖質、タンパク質、脂質）はエネルギー源となり、無機質とビタミンは体の調子を整える。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "五大栄養素に水が含まれる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "通常は含まない。"
+        },
+        {
+          "label": "3",
+          "text": "無機質とビタミンはエネルギー源になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ならない。調節機能。"
+        },
+        {
+          "label": "4",
+          "text": "脂質は五大栄養素に含まれない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "含まれる。"
+        }
+      ],
+      "explanation": "五大栄養素のうちエネルギー源になるのは三大栄養素（糖質・タンパク質・脂質）だけです。無機質とビタミンは微量で生体機能の調節を担います。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "五大栄養素：糖質、タンパク質、脂質、無機質、ビタミン"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q003",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "栄養素の発熱量比較",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "栄養素の発熱量に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "糖質は一グラムあたり約十七キロジュール。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "タンパク質は一グラムあたり約十七キロジュール。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "脂質は一グラムあたり約三十八キロジュール。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "脂質は一グラムあたり約十七キロジュールで、糖質は約三十八キロジュール。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。脂質が三十八、糖質が十七。"
+        }
+      ],
+      "explanation": "脂質のエネルギーが最も高い理由は、脂質の分子中に酸素の割合が少なく炭素と水素が多いため、酸化（燃焼）時により多くのエネルギーを放出するからです。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "脂質38 kJ/g。糖質17 kJ/g"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q004",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "definition",
+      "sub_category": "食品の変質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "食品の変質について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "微生物が有機物を分解する過程で人間に有害な場合を腐敗、有用な場合を発酵という。空気中の酸素や光で油脂が酸化され異臭を生じることを酸敗という。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "腐敗は人間に有用な変化。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "有害。有用は発酵。"
+        },
+        {
+          "label": "3",
+          "text": "発酵は人間に有害な変化。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "有用。有害は腐敗。"
+        },
+        {
+          "label": "4",
+          "text": "酸敗は微生物による分解。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸素や光による油脂の酸化。"
+        }
+      ],
+      "explanation": "腐敗と発酵の違いは化学的には同じ微生物分解反応ですが、人間の立場から「有用か有害か」で区別します。酸敗は微生物ではなく酸化反応です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_002",
+          "quote": "発酵は有用、腐敗は有害。酸敗は油脂の酸化"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q005",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "definition",
+      "sub_category": "必須脂肪酸",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "必須脂肪酸について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒトの体内で合成できないため食事から摂取する必要がある脂肪酸。リノール酸やリノレン酸が代表例。不飽和脂肪酸に分類される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "必須脂肪酸は体内で十分に合成できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "できない。"
+        },
+        {
+          "label": "3",
+          "text": "必須脂肪酸は飽和脂肪酸。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "不飽和脂肪酸。"
+        },
+        {
+          "label": "4",
+          "text": "ステアリン酸は必須脂肪酸。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "飽和脂肪酸であり必須ではない。"
+        }
+      ],
+      "explanation": "必須アミノ酸と同様に、必須脂肪酸も「体内で作れないから食事で摂る」ことがポイントです。植物油に多く含まれます。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "リノール酸。必須脂肪酸。不飽和脂肪酸"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q006",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "definition",
+      "sub_category": "天然繊維の分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "天然繊維の分類として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "植物繊維はセルロースが主成分（綿、麻）。動物繊維はタンパク質が主成分（羊毛はケラチン、絹はフィブロイン）。植物繊維は丈夫で吸湿性が高い。動物繊維は染色性に優れるが酸や塩基に弱い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "綿はタンパク質を主成分とする。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "セルロース。タンパク質は動物繊維。"
+        },
+        {
+          "label": "3",
+          "text": "羊毛はセルロースを主成分とする。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "タンパク質（ケラチン）。"
+        },
+        {
+          "label": "4",
+          "text": "動物繊維は酸や塩基に強い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "弱い。"
+        }
+      ],
+      "explanation": "植物繊維はセルロース、すなわち多糖類。動物繊維はタンパク質。この分類は燃やしたときの臭いでも区別できます（タンパク質は焦げ臭く、毛を焼いたような匂いがします）。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "植物繊維＝セルロース。動物繊維＝タンパク質。動物繊維は酸・塩基に弱い"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q007",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "繊維の主成分",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "繊維の主成分に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "綿はセルロースが主成分。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "羊毛はケラチン（タンパク質）が主成分。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "絹はフィブロインが主成分。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "綿はケラチン（タンパク質）が主成分で、羊毛はセルロースが主成分。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。綿＝セルロース。羊毛＝ケラチン。"
+        }
+      ],
+      "explanation": "綿→植物→セルロース。羊毛→動物→タンパク質（ケラチン）。絹→動物→タンパク質（フィブロイン）。由来と主成分をセットで覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "綿＝セルロース。羊毛＝ケラチン"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q008",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "definition",
+      "sub_category": "化学繊維の分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "化学繊維の分類として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "再生繊維はセルロースを一度溶かして紡糸し直したもの（レーヨン、キュプラ）。半合成繊維はセルロースの官能基を化学修飾したもの（アセテート）。合成繊維は低分子の単量体から重合したもの（ナイロン、ペット繊維、アクリル）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "レーヨンは合成繊維。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "再生繊維。"
+        },
+        {
+          "label": "3",
+          "text": "ナイロンは再生繊維。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "合成繊維。"
+        },
+        {
+          "label": "4",
+          "text": "アセテートは合成繊維。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "半合成繊維。"
+        }
+      ],
+      "explanation": "繊維の分類：天然繊維（植物＋動物）→化学繊維（再生→半合成→合成）。「天然→化学」の順で人間の手が入る程度が増します。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "天然繊維と化学繊維の分類"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q009",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "definition",
+      "sub_category": "イオン交換樹脂の原理",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "イオン交換樹脂について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "陽イオン交換樹脂は酸性の基（スルホ基など）を持ち、水中の陽イオンと自身の水素イオンを交換する。陰イオン交換樹脂は塩基性の基を持ち、水中の陰イオンと自身の水酸化物イオンを交換する。立体網目状構造の合成樹脂。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "陽イオン交換樹脂は陰イオンを交換する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陽イオンを交換する。"
+        },
+        {
+          "label": "3",
+          "text": "陰イオン交換樹脂は水素イオンを放出する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水酸化物イオンを放出する。水素イオンは陽イオン交換。"
+        },
+        {
+          "label": "4",
+          "text": "イオン交換樹脂は鎖状構造。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "立体網目状構造。"
+        }
+      ],
+      "explanation": "陽イオン交換樹脂は「陽イオンをキャッチして水素イオンをリリース」。陰イオン交換樹脂は「陰イオンをキャッチして水酸化物イオンをリリース」。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_001",
+          "quote": "陽イオン交換：H+放出。陰イオン交換：OH-放出。網目状構造"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q010",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "definition",
+      "sub_category": "脱イオン水の製造",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "脱イオン水の製造について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "不純物を含む水を陽イオン交換樹脂と陰イオン交換樹脂の両方に通す。陽イオンは水素イオンに、陰イオンは水酸化物イオンに交換され、両者が中和して水になる。イオンを含まない脱イオン水が得られる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "陽イオン交換樹脂だけで脱イオン水が得られる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両方必要。"
+        },
+        {
+          "label": "3",
+          "text": "脱イオン水にはイオンが残っている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "イオンは除去される。"
+        },
+        {
+          "label": "4",
+          "text": "使用済みの樹脂は再生できない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸や塩基で再生可能。"
+        }
+      ],
+      "explanation": "脱イオン水は純水とほぼ同義です。半導体製造ではさらに純度の高い超純水が使われます。樹脂は酸（陽イオン用）や塩基（陰イオン用）で再生できます。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_001",
+          "quote": "陽＋陰の両方に通す。H+とOH-が中和して水に"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q011",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "イオン交換の方向",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "イオン交換樹脂の作用に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "陽イオン交換樹脂はナトリウムイオンを吸着し水素イオンを放出する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "陰イオン交換樹脂は塩化物イオンを吸着し水酸化物イオンを放出する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "脱イオン水は硝酸銀水溶液を加えても白濁しない。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "陽イオン交換樹脂はナトリウムイオンを放出し水素イオンを吸着する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。水素イオンを放出し、ナトリウムイオンを吸着する。"
+        }
+      ],
+      "explanation": "陽イオン交換樹脂の反応：樹脂のスルホ基から水素イオンが出て、代わりにナトリウムイオンなどの陽イオンが樹脂に結合します。方向を間違えないように注意しましょう。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_001",
+          "quote": "R-SO3H + Na+ → R-SO3Na + H+"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q012",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "definition",
+      "sub_category": "吸水性高分子",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "吸水性高分子（高吸水性樹脂）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "わずかに架橋した網目状構造を持ち、短時間に自重の数百〜千倍の水を吸収して膨潤する合成樹脂。ポリアクリル酸ナトリウムが代表例。紙おむつや保冷剤に使われる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "吸水性高分子は水をはじく。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "大量に吸収する。"
+        },
+        {
+          "label": "3",
+          "text": "吸水性高分子は架橋構造を持たない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "わずかに架橋している。"
+        },
+        {
+          "label": "4",
+          "text": "吸水性高分子はセルロースからできている。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "ポリアクリル酸ナトリウム（合成高分子）。"
+        }
+      ],
+      "explanation": "吸水性高分子が水を大量に吸収するメカニズム：カルボキシ基のナトリウム塩が電離→マイナス電荷同士の反発で網目が広がる→浸透圧で水が流入→ゲル状に膨潤。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "ポリアクリル酸ナトリウム。網目状。大量の水を吸収。紙おむつ"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q013",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "definition",
+      "sub_category": "導電性高分子",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "導電性高分子について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "共役二重結合を多く持つ高分子にハロゲン（ヨウ素など）を少量加える（ドーピング）と高い電気伝導性を示す。ポリアセチレンが代表例。白川英樹博士がノーベル化学賞を受賞した業績。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "すべてのプラスチックは電気を通す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "通常は絶縁体。"
+        },
+        {
+          "label": "3",
+          "text": "ドーピングなしで導電性を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ドーピングが必要。"
+        },
+        {
+          "label": "4",
+          "text": "導電性高分子は天然物。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "合成高分子。"
+        }
+      ],
+      "explanation": "ドーピングとは不純物を微量添加して電気的性質を変える操作です。半導体のドーピングと同様の考え方です。白川博士は二千年にノーベル化学賞を受賞しました。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_003",
+          "quote": "ポリアセチレン。ヨウ素ドーピング。白川英樹。ノーベル賞"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q014",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "definition",
+      "sub_category": "生分解性高分子",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "生分解性高分子について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "土壌や水中の微生物により最終的に水と二酸化炭素に分解される合成樹脂。ポリ乳酸が代表例。プラスチックごみの環境問題を解決する材料として注目。外科手術用の縫合糸にも使われる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "生分解性高分子は自然界で分解されない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分解される。"
+        },
+        {
+          "label": "3",
+          "text": "ポリエチレンは生分解性高分子。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分解されにくい。"
+        },
+        {
+          "label": "4",
+          "text": "生分解性高分子は医療に使えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "縫合糸に使われる。"
+        }
+      ],
+      "explanation": "外科手術の縫合糸にポリ乳酸が使われるのは、体内で安全に分解・吸収されるため抜糸が不要になるからです。環境にも医療にも優しい高分子です。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_004",
+          "quote": "微生物で分解。ポリ乳酸。縫合糸"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q015",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "機能性高分子の分類",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "機能性高分子に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン交換樹脂は水中のイオンを交換する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "吸水性高分子は大量の水を吸収する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "導電性高分子はドーピングで電気を通す。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "生分解性高分子は永久に分解されない環境負荷の高い材料。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "微生物で分解される環境にやさしい材料。"
+        }
+      ],
+      "explanation": "生分解性高分子のそもそもの開発目的が「環境負荷の軽減」です。従来のプラスチックが自然界で分解されず残留する問題を解決するために作られました。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_004",
+          "quote": "微生物で分解される。環境問題を解決"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q016",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "脱イオン水の手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "脱イオン水の製造手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "不純物水を陽イオン交換樹脂に通し陽イオンを水素イオンに交換。次に陰イオン交換樹脂に通し陰イオンを水酸化物イオンに交換。水素イオンと水酸化物イオンが中和し水になる。結果、イオンを含まない脱イオン水ができる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "陰イオン交換樹脂に先に通してから陽イオン交換樹脂に通す。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "通常は陽→陰の順。逆でも結果は同じだが教科書順は陽が先。"
+        },
+        {
+          "label": "3",
+          "text": "片方の樹脂だけで完全な脱イオン水が得られる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両方必要。"
+        },
+        {
+          "label": "4",
+          "text": "水素イオンと水酸化物イオンは結合しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "中和して水になる。"
+        }
+      ],
+      "explanation": "脱イオン水の製造は中和反応の応用です。陽イオン交換で水素イオン放出→陰イオン交換で水酸化物イオン放出→中和して水。完全にイオンフリーに。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_001",
+          "quote": "陽→陰→中和→脱イオン水"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q017",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "樹脂の再生",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "イオン交換樹脂の再生方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "使用済み陽イオン交換樹脂に塩酸を通すと、高濃度の水素イオンにより平衡が逆向きに移動し、吸着した陽イオンが放出されて樹脂が再生される。陰イオン交換樹脂には水酸化ナトリウム水溶液を使う。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "陽イオン交換樹脂の再生に水酸化ナトリウムを使う。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩酸。水酸化ナトリウムは陰イオン用。"
+        },
+        {
+          "label": "3",
+          "text": "陰イオン交換樹脂の再生に塩酸を使う。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水酸化ナトリウム。塩酸は陽イオン用。"
+        },
+        {
+          "label": "4",
+          "text": "イオン交換樹脂は再生できない使い捨て。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "再生可能。"
+        }
+      ],
+      "explanation": "再生のポイント：陽イオン交換樹脂→酸（水素イオンで洗う）。陰イオン交換樹脂→塩基（水酸化物イオンで洗う）。それぞれ元のイオンを大量に供給して平衡を戻す。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_001",
+          "quote": "陽：塩酸で再生。陰：水酸化ナトリウムで再生"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q018",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "property",
+      "sub_category": "ケラチンの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ケラチンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "羊毛（ウール）を構成するタンパク質。アルファヘリックス構造を持つ。親水基を持ち吸湿性がある。ジスルフィド結合（硫黄の架橋結合）を含み弾力性がある。酸や塩基に弱い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ケラチンはセルロースの一種。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "タンパク質。"
+        },
+        {
+          "label": "3",
+          "text": "ケラチンは酸や塩基に強い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "弱い。"
+        },
+        {
+          "label": "4",
+          "text": "ケラチンは綿の主成分。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "羊毛。綿の主成分はセルロース。"
+        }
+      ],
+      "explanation": "ケラチンのジスルフィド結合（S-S結合）はパーマの原理にも関係しています。還元剤でS-S結合を切り、形を変えてから酸化剤で再結合させます。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_001",
+          "quote": "羊毛を構成。アルファヘリックス。酸・塩基に弱い"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q019",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "絹と羊毛の比較",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "絹と羊毛に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "どちらも動物繊維でタンパク質が主成分。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "羊毛のタンパク質はケラチン。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "絹のタンパク質はフィブロイン。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "絹はケラチン、羊毛はフィブロインが主成分。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。絹＝フィブロイン、羊毛＝ケラチン。"
+        }
+      ],
+      "explanation": "絹はフィブロイン、羊毛はケラチン。「キヌフィブ」「ウールケラ」と略して覚えると混同しにくくなります。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "羊毛＝ケラチン。絹＝フィブロイン"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q020",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "腐敗と発酵の区別",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "食品の変質に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "腐敗は微生物による有害な分解。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "発酵は微生物による有用な分解。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "酸敗は油脂が酸素や光で酸化される現象。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "発酵は有害な変化で、腐敗は有用な変化。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。発酵＝有用、腐敗＝有害。"
+        }
+      ],
+      "explanation": "ワインやヨーグルトは「発酵」（有用）。肉や魚が臭くなるのは「腐敗」（有害）。化学的には同じ微生物分解ですが人間の立場で区別します。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_002",
+          "quote": "発酵＝有用。腐敗＝有害"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q021",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "吸水性高分子の原理",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "吸水性高分子が大量の水を吸収する原理として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カルボキシ基のナトリウム塩が電離してマイナスイオン同士が反発→網目が広がる→内部のイオン濃度が高いため浸透圧で水が流入→ゲル状に膨潤する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水素結合だけで水を吸収する。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "イオンの反発と浸透圧が主な駆動力。"
+        },
+        {
+          "label": "3",
+          "text": "架橋構造がないから水を吸う。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "わずかに架橋しているから保持できる。"
+        },
+        {
+          "label": "4",
+          "text": "吸水後に分解して消える。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分解しない。ゲルとして保持する。"
+        }
+      ],
+      "explanation": "吸水性高分子の吸水メカニズムは三段階：(1)イオンの電離→(2)クーロン反発で膨張→(3)浸透圧で水が流入。架橋があるから無限に溶けずにゲルとして保持できます。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "COO-の反発で網目が広がり、浸透圧で水が流入"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q022",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "陽イオン交換樹脂の原料",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "陽イオン交換樹脂の製造方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "スチレンとパラジビニルベンゼンを共重合させて網目状構造を作り、濃硫酸でスルホン化してスルホ基を導入する。スルホ基が水素イオンの供給源となる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ポリエチレンに水酸化ナトリウムを加えて作る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "スチレンを共重合＋スルホン化。"
+        },
+        {
+          "label": "3",
+          "text": "スルホン化は不要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "必要。スルホ基がイオン交換の活性部位。"
+        },
+        {
+          "label": "4",
+          "text": "鎖状構造で作る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "網目状構造。"
+        }
+      ],
+      "explanation": "ジビニルベンゼンは二つのビニル基を持つため架橋剤として働き、ポリスチレンに網目状構造を作ります。その後スルホン化でスルホ基を導入してイオン交換能力を付与します。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_001",
+          "quote": "スチレン＋ジビニルベンゼン共重合→スルホン化"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q023",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "property",
+      "sub_category": "植物繊維の性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "植物繊維の性質として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セルロースが主成分。水素結合により強度が大きい。吸湿性が高い。酸や塩基にやや強い（動物繊維より耐性がある）。綿や麻が代表例。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "植物繊維はタンパク質が主成分。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "セルロース。"
+        },
+        {
+          "label": "3",
+          "text": "植物繊維は吸湿性が低い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高い。"
+        },
+        {
+          "label": "4",
+          "text": "植物繊維は虫に食われやすい。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "動物繊維が虫に食われやすい。"
+        }
+      ],
+      "explanation": "動物繊維（タンパク質）は虫が食べますが、植物繊維（セルロース）は虫にはあまり食われません。防虫剤が特に必要なのはウールやシルクの衣類です。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "植物繊維＝セルロース。強度大。吸湿性高い"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q024",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "動物繊維の弱点",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "動物繊維の弱点として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸や塩基に弱い。虫に食われやすい。摩擦に弱い（毛玉ができやすい）。洗濯で縮みやすい。ただし染色性や吸湿性には優れる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "動物繊維は酸や塩基に強い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "弱い。"
+        },
+        {
+          "label": "3",
+          "text": "虫に食われにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "食われやすい。"
+        },
+        {
+          "label": "4",
+          "text": "動物繊維は染色できない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "染色性に優れる。"
+        }
+      ],
+      "explanation": "動物繊維がなぜ酸や塩基に弱いのか。タンパク質の高次構造が酸・塩基で変性するからです。食品のタンパク質変性と同じ原理が繊維にも当てはまります。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "動物繊維は酸・塩基に弱い。虫に食われやすい"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q025",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "レーヨンの分類",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "レーヨンに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セルロースを原料とする。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "再生繊維に分類される。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "吸湿性に優れ肌触りがよい。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "レーヨンは石油から合成した合成繊維。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "セルロース（植物由来）を再生した再生繊維。合成繊維ではない。"
+        }
+      ],
+      "explanation": "レーヨンはセルロース（木材パルプなど）を一度溶かして紡糸し直したもの。合成繊維（石油原料から重合）とは根本的に異なります。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "再生繊維。セルロース原料"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q026",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "アセテートの分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アセテートについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セルロースのヒドロキシ基をアセチル化（酢酸エステル化）した半合成繊維。天然のセルロースを化学的に修飾しているため「半合成」。絹に似た光沢を持つ。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アセテートは天然繊維。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "半合成繊維。"
+        },
+        {
+          "label": "3",
+          "text": "アセテートはタンパク質を原料とする。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "セルロース。"
+        },
+        {
+          "label": "4",
+          "text": "アセテートは完全に人工合成された合成繊維。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "半合成繊維。"
+        }
+      ],
+      "explanation": "半合成繊維は天然高分子（セルロース）を「化学修飾」したものです。天然物ベースだけど化学処理をしているから「半」合成。再生繊維（化学処理せず溶かして紡糸し直すだけ）とも異なります。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "半合成繊維。セルロースのアセチル化"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q027",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "property",
+      "sub_category": "ポリ乳酸の用途",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ポリ乳酸の用途として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "外科手術用の縫合糸。体内で安全に分解・吸収されるため抜糸が不要。食品用容器や農業用マルチフィルムにも使われる。生分解性高分子の代表例。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ポリ乳酸は電気部品に使う。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "生分解性が目的。電気部品はフェノール樹脂など。"
+        },
+        {
+          "label": "3",
+          "text": "ポリ乳酸は分解されないため永久に使える。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分解される。"
+        },
+        {
+          "label": "4",
+          "text": "ポリ乳酸は有害物質を放出する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水と二酸化炭素に分解される。有害物質なし。"
+        }
+      ],
+      "explanation": "ポリ乳酸の利点は「分解されること」です。体内で使えるほど安全で、環境中でも微生物が分解してくれます。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_004",
+          "quote": "ポリ乳酸。縫合糸。体内で分解吸収"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q028",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "機能性高分子と用途",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "機能性高分子と用途の対応として、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン交換樹脂→脱イオン水の製造。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "吸水性高分子→紙おむつ。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "導電性高分子→有機エレクトロニクス。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "吸水性高分子→電気部品の絶縁材料。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "吸水性高分子は紙おむつなど水の吸収が目的。電気絶縁はフェノール樹脂など。"
+        }
+      ],
+      "explanation": "各機能性高分子が「何のために」開発されたのかを理解すると、用途との対応を間違えません。吸水はおむつ。イオン交換は純水。導電性はエレクトロニクス。生分解性は環境。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "吸水性高分子→紙おむつ"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q029",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "ノーベル賞と導電性高分子",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "導電性高分子の研究でノーベル化学賞を受賞した日本人科学者として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "白川英樹。二千年にノーベル化学賞を受賞。ポリアセチレンにヨウ素をドーピングすると金属並みの導電性を示すことを発見。導電性高分子の先駆的研究。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "野依良治が導電性高分子で受賞した。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "野依良治は不斉合成の触媒。"
+        },
+        {
+          "label": "3",
+          "text": "福井謙一が導電性高分子で受賞した。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "福井謙一はフロンティア軌道理論。"
+        },
+        {
+          "label": "4",
+          "text": "導電性高分子は賞を受賞していない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "受賞している。"
+        }
+      ],
+      "explanation": "日本人ノーベル化学賞受賞者：福井謙一（千九百八十一年）はフロンティア軌道理論。白川英樹（二千年）は導電性高分子。野依良治（二千一年）は不斉合成触媒。区別しましょう。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_003",
+          "quote": "白川英樹。ノーベル化学賞"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q030",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "繊維の分類まとめ",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "繊維の全体分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "天然繊維は植物繊維（綿・麻はセルロース）と動物繊維（羊毛はケラチン、絹はフィブロイン）。化学繊維は再生繊維（レーヨンはセルロース溶解紡糸）、半合成繊維（アセテートはセルロースのエステル化）、合成繊維（ナイロン、ペット繊維、アクリル）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ナイロンは再生繊維。レーヨンは合成繊維。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。"
+        },
+        {
+          "label": "3",
+          "text": "すべての繊維がセルロースを主成分とする。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "動物繊維はタンパク質。"
+        },
+        {
+          "label": "4",
+          "text": "半合成繊維は石油から作る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "セルロース（植物由来）。"
+        }
+      ],
+      "explanation": "繊維の分類を系統図で整理しましょう。天然（植物／動物）→化学（再生→半合成→合成）。左に行くほど天然に近く、右に行くほど人工的です。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "繊維の分類。天然繊維と化学繊維"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q031",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "脱イオン水と蒸留水",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "脱イオン水と蒸留水の違いとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "脱イオン水はイオン交換樹脂でイオンを除去した水。蒸留水は蒸留（加熱→蒸発→凝縮）でイオンや不揮発性物質を除去した水。どちらも純水だがイオンの除去法が異なる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "脱イオン水は蒸留して作る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "イオン交換樹脂で作る。"
+        },
+        {
+          "label": "3",
+          "text": "蒸留水はイオン交換樹脂で作る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "蒸留で作る。"
+        },
+        {
+          "label": "4",
+          "text": "脱イオン水にはイオンが多量に含まれる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "含まれない。"
+        }
+      ],
+      "explanation": "どちらも化学実験で「純水」として使いますが、脱イオン水は有機物を除去しないため、精密な分析では蒸留水や超純水を使います。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_001",
+          "quote": "イオン交換樹脂で脱イオン水を製造"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q032",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "ポリアセチレンの特徴",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ポリアセチレンに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子内に二重結合を多く持つ。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ヨウ素をドーピングすると導電性を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "白川英樹博士の研究対象。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ポリアセチレンはドーピングなしで金属並みの導電性を持つ。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "ドーピングが必要。そのままでは絶縁体に近い。"
+        }
+      ],
+      "explanation": "ポリアセチレン自体は導電性が低いのですが、ヨウ素や臭素などのハロゲンを少量加えることで劇的に導電性が向上します。これが白川博士の画期的発見でした。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_003",
+          "quote": "ハロゲンをドープすることで導電性。ドーピング必要"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q033",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "property",
+      "sub_category": "食品保存法",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "食品の保存方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "冷蔵・冷凍は微生物の増殖を抑える。乾燥は水分を除いて微生物の活動を止める。塩漬け・砂糖漬けは浸透圧で微生物を脱水する。真空パックは酸素を遮断し好気性菌の増殖を防ぐ。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "食品を高温に保つと保存できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "冷蔵・冷凍。高温は加熱殺菌のみ一時的。"
+        },
+        {
+          "label": "3",
+          "text": "水分を増やすと保存性が上がる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "乾燥させる。"
+        },
+        {
+          "label": "4",
+          "text": "塩漬けは微生物を増やす。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "浸透圧で微生物を脱水して抑制する。"
+        }
+      ],
+      "explanation": "食品保存の化学は微生物の増殖条件（温度、水分、酸素）を制御することです。すべての保存法がこの原理に基づいています。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_002",
+          "quote": "微生物の増殖を防ぐ保存方法"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q034",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "酸敗のメカニズム",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "油脂の酸敗について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "空気中の酸素や光によって油脂が酸化され、過酸化物を経て分解し異臭（酸っぱい臭いや不快な臭い）を生じる現象。不飽和脂肪酸が多い油脂（植物油など）ほど酸敗しやすい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "酸敗は微生物による分解。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸素や光による化学的酸化。微生物は腐敗。"
+        },
+        {
+          "label": "3",
+          "text": "飽和脂肪酸の方が酸敗しやすい。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "不飽和脂肪酸。二重結合が酸化されやすい。"
+        },
+        {
+          "label": "4",
+          "text": "酸敗は有用な変化。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "有害（異臭・有毒物質の生成）。"
+        }
+      ],
+      "explanation": "不飽和脂肪酸の二重結合が酸素と反応しやすいため、植物油は動物脂肪より酸敗しやすいです。抗酸化剤（ビタミンEなど）の添加で防ぎます。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_002",
+          "quote": "酸素や光で油脂が酸化→酸敗"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q035",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "再生繊維と半合成繊維の違い",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "再生繊維と半合成繊維の違いに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "再生繊維はセルロースを溶かして紡糸し直したもの。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "半合成繊維はセルロースの官能基を化学修飾したもの。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "レーヨンは再生繊維の代表例。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "レーヨンは半合成繊維で、アセテートは再生繊維。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。レーヨン＝再生繊維。アセテート＝半合成繊維。"
+        }
+      ],
+      "explanation": "再生繊維は構造を変えずに形だけ変える（溶かして紡糸）。半合成繊維は化学的に官能基を変える（アセチル化など）。加工の深さが違います。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "再生繊維＝レーヨン。半合成＝アセテート"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q036",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "property",
+      "sub_category": "ビタミンの役割",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ビタミンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "微量で生体機能の調節に関与する有機化合物。体内でほとんど合成できないため食事から摂取する必要がある。エネルギー源にはならない。水溶性ビタミンと脂溶性ビタミンがある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ビタミンはエネルギー源になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ならない。"
+        },
+        {
+          "label": "3",
+          "text": "ビタミンは体内で十分に合成できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ほとんどできない。"
+        },
+        {
+          "label": "4",
+          "text": "ビタミンは無機化合物。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "有機化合物。無機質（ミネラル）とは異なる。"
+        }
+      ],
+      "explanation": "ビタミンと無機質（ミネラル）の違い：ビタミンは有機化合物。無機質は無機化合物（鉄、カルシウムなど）。どちらもエネルギー源にはなりません。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "五大栄養素にビタミン。エネルギー源ではない"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q037",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "無機質の例",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "無機質（ミネラル）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カルシウム（骨・歯の成分）、鉄（ヘモグロビンの成分）、ナトリウム（体液の浸透圧調節）などの無機化合物。エネルギー源にはならない。微量だが生体に不可欠。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "無機質はエネルギー源になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ならない。"
+        },
+        {
+          "label": "3",
+          "text": "カルシウムはビタミンの一種。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "無機質（ミネラル）。"
+        },
+        {
+          "label": "4",
+          "text": "鉄は三大栄養素の一つ。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "無機質。三大は糖質・タンパク質・脂質。"
+        }
+      ],
+      "explanation": "無機質は「無機物のうち生体に必要な元素やそのイオン」です。鉄不足は貧血、カルシウム不足は骨粗鬆症の原因になります。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "五大栄養素に無機質。カルシウム、鉄"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q038",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "イオン交換樹脂のpH変化",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "塩化ナトリウム水溶液を陽イオン交換樹脂に通した後のpH変化として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ナトリウムイオンが樹脂に吸着され、水素イオンが放出される。溶液中の水素イオン濃度が増加するためpHが低下する（酸性になる）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "pHは上昇する（塩基性になる）。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "低下する（酸性に）。"
+        },
+        {
+          "label": "3",
+          "text": "pHは変化しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "変化する。"
+        },
+        {
+          "label": "4",
+          "text": "水酸化物イオンが放出される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水素イオンが放出される。水酸化物は陰イオン交換。"
+        }
+      ],
+      "explanation": "陽イオン交換樹脂は水素イオンを放出するので、通過した溶液は酸性（pHが下がる）になります。これは中和滴定の計算問題にもつながります。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_001",
+          "quote": "陽イオン交換でH+放出→酸性に"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q039",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "機能性高分子のまとめ",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "機能性高分子のまとめとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン交換樹脂→イオンの交換（脱イオン水）。吸水性高分子→大量の吸水（紙おむつ）。導電性高分子→ドーピングで導電性（白川英樹、ノーベル賞）。生分解性高分子→微生物で分解（ポリ乳酸、手術糸）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "吸水性高分子は導電性を示す。導電性高分子は水を吸収する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "機能が逆。"
+        },
+        {
+          "label": "3",
+          "text": "すべてが生分解性を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "生分解性は一部のみ。"
+        },
+        {
+          "label": "4",
+          "text": "イオン交換樹脂は水を吸収する高分子。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオンの交換が機能。水の吸収は吸水性高分子。"
+        }
+      ],
+      "explanation": "四つの機能性高分子の「機能」を一言で：交換・吸水・導電・分解。それぞれが社会のどんな問題を解決するかをセットで覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_001",
+          "quote": "イオン交換"
+        },
+        {
+          "source_id": "3_3_def_002",
+          "quote": "吸水性"
+        },
+        {
+          "source_id": "3_3_def_003",
+          "quote": "導電性"
+        },
+        {
+          "source_id": "3_3_def_004",
+          "quote": "生分解性"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_001",
+        "3_3_def_002",
+        "3_3_def_003",
+        "3_3_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q040",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "繊維の耐薬品性比較",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "繊維の耐薬品性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "綿（セルロース）は酸に比較的弱い。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "羊毛（タンパク質）は酸にも塩基にも弱い。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ナイロン（合成繊維）は耐薬品性に比較的優れる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "羊毛は酸や塩基に強い。綿は酸にも塩基にも弱い。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。羊毛が弱い（タンパク質変性）。綿は比較的強い。"
+        }
+      ],
+      "explanation": "タンパク質繊維（羊毛、絹）は酸や塩基でタンパク質が変性するため耐性が低いです。セルロース繊維（綿、麻）はタンパク質変性がないため相対的に強いですが、強酸には分解されます。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "動物繊維は酸・塩基に弱い"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q041",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "三大栄養素と五大栄養素の関係",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "栄養素に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "三大栄養素は糖質、タンパク質、脂質。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "五大栄養素は三大＋無機質＋ビタミン。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "エネルギー源は三大栄養素。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "三大栄養素はビタミン、無機質、水。五大栄養素は三大＋糖質＋脂質。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて入れ替わっている。三大＝糖質・タンパク質・脂質。五大＝三大＋無機質＋ビタミン。"
+        }
+      ],
+      "explanation": "三大栄養素はエネルギーの「燃料」。ビタミン・無機質はエンジンの「潤滑油」。水は「冷却水」に例えると覚えやすいです。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "三大＝糖質・タンパク質・脂質。五大＝三大＋無機質＋ビタミン"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q042",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "property",
+      "sub_category": "脂質のエネルギーが高い理由",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "脂質のエネルギーが糖質やタンパク質より高い理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "脂質は分子中の酸素の割合が低く炭素と水素の割合が高いため、酸化（燃焼）時により多くの酸素を消費し、より多くのエネルギーを放出する。一グラムあたり約三十八キロジュールで糖質の約二倍。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "脂質は分子量が小さいからエネルギーが高い。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "分子量ではなく組成（酸素含有率の低さ）。"
+        },
+        {
+          "label": "3",
+          "text": "糖質のエネルギーの方が脂質より高い。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。"
+        },
+        {
+          "label": "4",
+          "text": "脂質は水に溶けるからエネルギーが高い。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "溶解性とは無関係。"
+        }
+      ],
+      "explanation": "糖質は既に分子中にかなりの酸素を含む（部分的に酸化された状態）ので、追加の酸化で得られるエネルギーが少ないのです。脂質は「未酸化」の部分が多いため多くのエネルギーを出せます。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "脂質38 kJ/g。糖質17 kJ/g"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q043",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "繊維の燃焼試験",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "繊維の見分け方（燃焼試験）として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "植物繊維（綿、麻）は紙を燃やすような臭い。動物繊維（羊毛、絹）は毛髪を焼くような焦げ臭い（タンパク質の窒素による）。合成繊維（ナイロン等）は溶けながら燃え独特の臭い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "羊毛を燃やすと紙のような臭い。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "焦げ臭い（毛髪の臭い）。紙の臭いは植物繊維。"
+        },
+        {
+          "label": "3",
+          "text": "綿を燃やすと焦げ臭い。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "紙を燃やすような臭い。焦げ臭いは動物繊維。"
+        },
+        {
+          "label": "4",
+          "text": "すべての繊維が同じ臭いで燃える。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "異なる（成分により異なる）。"
+        }
+      ],
+      "explanation": "燃焼試験は繊維の簡便な識別法です。窒素を含むタンパク質（動物繊維）は独特の焦げ臭（アンモニア臭）がします。セルロース（植物繊維）には窒素がないため異なる臭いです。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "植物繊維＝セルロース。動物繊維＝タンパク質"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q044",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "環境問題と高分子",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "高分子化合物と環境問題について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "従来のプラスチックは自然界で分解されにくく海洋汚染やマイクロプラスチック問題を引き起こす。生分解性高分子（ポリ乳酸等）は微生物で分解される。リサイクル（マテリアル・ケミカル・サーマル）も重要な対策。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ポリエチレンは自然界ですぐに分解される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "されにくい。"
+        },
+        {
+          "label": "3",
+          "text": "すべてのプラスチックが生分解性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一部のみ。"
+        },
+        {
+          "label": "4",
+          "text": "プラスチックの環境問題は存在しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "深刻な問題。"
+        }
+      ],
+      "explanation": "マイクロプラスチック（直径五ミリ以下の微小なプラスチック片）は海洋生態系に深刻な影響を与えています。生分解性高分子の開発と3Rの推進が解決策です。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_004",
+          "quote": "従来のプラスチックの環境問題。生分解性高分子"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q045",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "脱イオン水の検証",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "脱イオン水が正しく製造されたことの確認方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "硝酸銀水溶液を加えても白い沈殿（塩化銀）が生じないことで塩化物イオンが除去されたと確認できる。電気伝導率が極めて低いことでもイオンの除去を確認できる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "硝酸銀を加えて白濁すれば脱イオン水。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "白濁しないのが正しい。"
+        },
+        {
+          "label": "3",
+          "text": "脱イオン水は電気をよく通す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "通さない（イオンがないため）。"
+        },
+        {
+          "label": "4",
+          "text": "脱イオン水の確認は不可能。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "可能。"
+        }
+      ],
+      "explanation": "硝酸銀水溶液に塩化物イオンがあると塩化銀（白色沈殿）が生じます。脱イオン水では塩化物イオンが除去されているので沈殿が生じません。これが確認法です。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_001",
+          "quote": "脱イオン水に硝酸銀を加えても白濁しない"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q046",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "糖質のエネルギー源",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "糖質がエネルギー源として重要な理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "消化吸収が速く即効性のエネルギー源になる。脳のエネルギー源として特に重要（脳はグルコースを主なエネルギー源とする）。米やパンなどの主食に多く含まれる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "糖質は脳に不要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "脳の主要エネルギー源。"
+        },
+        {
+          "label": "3",
+          "text": "糖質は脂質よりエネルギーが高い。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "低い（十七対三十八）。"
+        },
+        {
+          "label": "4",
+          "text": "糖質は消化吸収が遅い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "速い。"
+        }
+      ],
+      "explanation": "脳はグルコースを主な燃料とするため、糖質不足は集中力低下を招きます。脂質の方がエネルギー量は大きいですが、糖質が即効性で消化が速いため主食として重要です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "糖質＝エネルギー源。脳のエネルギー"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q047",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "食品の保存と変質まとめ",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "食品の変質と保存に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "発酵は有用で腐敗は有害。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "酸敗は油脂の酸化。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "冷蔵や乾燥は微生物の増殖を抑える保存法。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "酸敗は微生物による有用な変化で、発酵は油脂の酸化。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。酸敗＝油脂の酸化。発酵＝微生物による有用な変化。"
+        }
+      ],
+      "explanation": "「発酵」「腐敗」「酸敗」の三つの区別は超頻出です。微生物関与（発酵・腐敗）と化学反応（酸敗）で分け、さらに有用か有害かで発酵と腐敗を区別します。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_002",
+          "quote": "発酵＝有用。腐敗＝有害。酸敗＝酸化"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q048",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "章の総合その一",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "高分子化合物と人間生活に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "脂質は一グラムあたり約三十八キロジュール。糖質は約十七キロジュール。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "綿はセルロース。羊毛はケラチン（タンパク質）。絹はフィブロイン。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "陽イオン交換樹脂は水素イオンを放出。陰イオン交換樹脂は水酸化物イオンを放出。両方通すと脱イオン水。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "脂質は十七キロジュール。綿はケラチン。陽イオン交換樹脂は水酸化物イオンを放出。ポリアセチレンはドーピング不要。ポリ乳酸は分解されない。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "五か所全て誤り。"
+        }
+      ],
+      "explanation": "章全体の重要ポイントを一問にまとめた最高難度問題。栄養素、繊維、イオン交換、導電性高分子、生分解性のすべてを正確に把握しましょう。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "脂質38 kJ/g"
+        },
+        {
+          "source_id": "3_2_def_001",
+          "quote": "綿＝セルロース"
+        },
+        {
+          "source_id": "3_3_def_001",
+          "quote": "陽イオン交換でH+放出"
+        },
+        {
+          "source_id": "3_3_def_003",
+          "quote": "ドーピング必要"
+        },
+        {
+          "source_id": "3_3_def_004",
+          "quote": "微生物で分解される"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_2_def_001",
+        "3_3_def_001",
+        "3_3_def_003",
+        "3_3_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q049",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "機能性高分子の代表例",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "機能性高分子の代表例とその応用として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ポリアクリル酸ナトリウム（吸水性高分子）→紙おむつ、保冷剤、砂漠緑化。ポリアセチレン（導電性高分子）→有機エレクトロニクス。ポリ乳酸（生分解性高分子）→手術糸、環境配慮型包装。イオン交換樹脂→純水製造。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ポリ乳酸を電気部品に使い、イオン交換樹脂で手術糸にする。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "用途が逆。"
+        },
+        {
+          "label": "3",
+          "text": "ポリアセチレンを紙おむつに使う。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "紙おむつは吸水性高分子。"
+        },
+        {
+          "label": "4",
+          "text": "すべての機能性高分子が同じ用途に使える。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "機能が異なるため用途も異なる。"
+        }
+      ],
+      "explanation": "機能性高分子は「特定の機能に特化した高分子」です。それぞれの機能（吸水、導電、分解、イオン交換）と社会的需要（衛生、電子機器、環境、純水）を対応づけましょう。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "ポリアクリル酸ナトリウム→紙おむつ"
+        },
+        {
+          "source_id": "3_3_def_003",
+          "quote": "ポリアセチレン→導電性"
+        },
+        {
+          "source_id": "3_3_def_004",
+          "quote": "ポリ乳酸→手術糸"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002",
+        "3_3_def_003",
+        "3_3_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_3_q050",
+      "chapter": "6-3",
+      "chapter_title": "高分子化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "最終総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "高分子化合物と人間生活の全範囲に関する最終総合として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "三大栄養素は糖質・タンパク質・脂質で脂質が最高エネルギー（三十八キロジュール毎グラム）。発酵は有用・腐敗は有害・酸敗は油脂酸化。繊維は植物（セルロース）と動物（タンパク質）。レーヨンは再生、アセテートは半合成。機能性高分子は吸水・導電・生分解・イオン交換の四つ。白川英樹のノーベル賞は導電性高分子。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "脂質は十七で糖質が三十八。発酵は有害。綿はタンパク質。レーヨンは合成繊維。導電性高分子はドーピング不要。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて逆。"
+        },
+        {
+          "label": "3",
+          "text": "すべての繊維がセルロースでできている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "動物繊維はタンパク質。"
+        },
+        {
+          "label": "4",
+          "text": "ポリ乳酸は分解されない。イオン交換樹脂は再生不可。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両方可能。"
+        }
+      ],
+      "explanation": "教科書の最後の章にふさわしい総合問題です。食品・繊維・機能性高分子のすべてを正確に整理して試験に臨みましょう。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "栄養素のエネルギー"
+        },
+        {
+          "source_id": "3_1_def_002",
+          "quote": "変質の分類"
+        },
+        {
+          "source_id": "3_2_def_001",
+          "quote": "繊維の分類"
+        },
+        {
+          "source_id": "3_3_def_001",
+          "quote": "イオン交換樹脂"
+        },
+        {
+          "source_id": "3_3_def_002",
+          "quote": "吸水性高分子"
+        },
+        {
+          "source_id": "3_3_def_003",
+          "quote": "導電性高分子"
+        },
+        {
+          "source_id": "3_3_def_004",
+          "quote": "生分解性高分子"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_002",
+        "3_2_def_001",
+        "3_3_def_001",
+        "3_3_def_002",
+        "3_3_def_003",
+        "3_3_def_004"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

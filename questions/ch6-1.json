@@ -1,0 +1,2506 @@
+{
+  "metadata": {
+    "chapter": "6-1",
+    "chapter_title": "天然有機化合物",
+    "source_file": "json_data/6-1天然有機化合物.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    }
+  },
+  "questions": [
+    {
+      "id": "ch6_1_q001",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "definition",
+      "sub_category": "単糖の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "単糖について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "これ以上加水分解されない糖類の最小単位。グルコース（ブドウ糖）やフルクトース（果糖）、ガラクトースが代表例。水溶液中で一部が鎖式構造となり還元性を示す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "スクロースは単糖である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "二糖。"
+        },
+        {
+          "label": "3",
+          "text": "単糖はさらに加水分解できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "できない。それが単糖の定義。"
+        },
+        {
+          "label": "4",
+          "text": "単糖は還元性を示さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "示す。"
+        }
+      ],
+      "explanation": "単糖の「単」は「これ以上分割できない」という意味です。二糖は加水分解すると単糖二つに分かれますが、単糖はそれ以上分かれません。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_001",
+          "quote": "これ以上は加水分解されない糖類"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q002",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "property",
+      "sub_category": "グルコースの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "グルコース（ブドウ糖）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "白色の結晶。水溶液中では鎖式構造と環式構造が平衡を保つ。還元性を示しフェーリング液や銀鏡反応で検出できる。アルコール発酵によりエタノールと二酸化炭素に変化する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "グルコースは還元性を示さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "示す。"
+        },
+        {
+          "label": "3",
+          "text": "グルコースは水溶液中で環式構造のみ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "鎖式と環式の平衡。"
+        },
+        {
+          "label": "4",
+          "text": "グルコースは二糖に分類される。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "単糖。"
+        }
+      ],
+      "explanation": "グルコースの還元性は水溶液中で鎖式構造（ホルミル基はアルデヒド基を持つ）に一部が変換されることで生まれます。環式構造だけなら還元性は出ません。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_001",
+          "quote": "還元性を示す。鎖式と環式が平衡"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q003",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "property",
+      "sub_category": "フルクトースの性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "フルクトース（果糖）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "単糖の一種。天然の糖類の中で最も甘みが強い。水溶液中で還元性を示す。ケトース（ケトン型の糖）に分類されるがフェーリング液を還元する。グルコースと分子式が同じ構造異性体。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "フルクトースは還元性を示さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "示す。"
+        },
+        {
+          "label": "3",
+          "text": "フルクトースはアルドース。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ケトース。アルドースはグルコース。"
+        },
+        {
+          "label": "4",
+          "text": "フルクトースは二糖。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "単糖。"
+        }
+      ],
+      "explanation": "フルクトースはケトン型の糖（ケトース）ですが、塩基性条件下でアルドース型に異性化するためフェーリング液を還元できます。「ケトースだから還元性なし」は間違いです。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_001",
+          "quote": "フルクトース（果糖）。単糖。還元性あり"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q004",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "property",
+      "sub_category": "スクロースの還元性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "スクロース（ショ糖）の還元性について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "スクロースは還元性を示さない。グルコースとフルクトースがヘミアセタール構造のところで脱水縮合しアセタール構造になっているため、鎖式構造に変換できない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "スクロースは還元性を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "示さない。唯一の非還元性二糖。"
+        },
+        {
+          "label": "3",
+          "text": "スクロースはフェーリング液を還元する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "しない。"
+        },
+        {
+          "label": "4",
+          "text": "マルトースも還元性を示さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "マルトースは還元性を示す。"
+        }
+      ],
+      "explanation": "スクロースが還元性を示さない理由は、グルコースとフルクトースの両方の還元性の元（ヘミアセタール構造）の部分で結合しているからです。他の二糖（マルトース、ラクトース）は一方のヘミアセタールが自由なので還元性があります。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_001",
+          "quote": "スクロースはヘミアセタール構造のところで脱水縮合しアセタール構造。還元性を示さない"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_001",
+        "6_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q005",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "二糖の加水分解",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "二糖の加水分解について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "マルトース（麦芽糖）はグルコース二分子に加水分解される。スクロース（ショ糖）はグルコースとフルクトースに加水分解される。ラクトース（乳糖）はグルコースとガラクトースに加水分解される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "スクロースはグルコース二分子に分解される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "グルコース＋フルクトース。"
+        },
+        {
+          "label": "3",
+          "text": "マルトースはグルコースとフルクトースに分解される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "グルコース二分子。"
+        },
+        {
+          "label": "4",
+          "text": "ラクトースはフルクトース二分子に分解される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "グルコース＋ガラクトース。"
+        }
+      ],
+      "explanation": "二糖の加水分解生成物は超頻出です。マルトース→グル＋グル。スクロース→グル＋フル。ラクトース→グル＋ガラ。「マグスグフラグガ」で覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_001",
+          "quote": "二糖は加水分解で単糖に"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_001"
+      ],
+      "mnemonic": "マグスグフラグガ（マルトース→グル、スクロース→グルフル、ラクトース→グルガラ）"
+    },
+    {
+      "id": "ch6_1_q006",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "property",
+      "sub_category": "デンプンの構造",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "デンプンの構造について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "多数のアルファグルコースが脱水縮合した多糖。アミロース（直鎖状・らせん構造）とアミロペクチン（枝分かれ構造）から構成される。還元性がない。ヨウ素デンプン反応で青〜青紫に呈色する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "デンプンは還元性がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ない。"
+        },
+        {
+          "label": "3",
+          "text": "デンプンはベータグルコースからできている。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アルファグルコース。ベータはセルロース。"
+        },
+        {
+          "label": "4",
+          "text": "デンプンはアミロペクチンのみで構成される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アミロースとアミロペクチンの二成分。"
+        }
+      ],
+      "explanation": "デンプンはアルファグルコース。セルロースはベータグルコース。この「アルファとベータ」の違いが構造と性質の大きな違いを生みます。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_003",
+          "quote": "アミロースとアミロペクチン。還元性なし。ヨウ素デンプン反応"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q007",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "definition",
+      "sub_category": "ヨウ素デンプン反応",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ヨウ素デンプン反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "デンプンの水溶液にヨウ素溶液を加えると青〜青紫に呈色する反応。デンプンのらせん構造にヨウ素分子が入り込むことで発色する。加熱すると色が消え、冷やすと色が戻る。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ヨウ素デンプン反応で赤色に変化する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "青〜青紫色。"
+        },
+        {
+          "label": "3",
+          "text": "加熱しても色は消えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "消える。"
+        },
+        {
+          "label": "4",
+          "text": "セルロースもヨウ素デンプン反応を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "示さない。"
+        }
+      ],
+      "explanation": "ヨウ素デンプン反応で加熱すると色が消えるのは、デンプンの熱運動が激しくなりらせん構造が緩んでヨウ素を保持できなくなるためです。冷やすと再びヨウ素がらせんに入り色が戻ります。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_002",
+          "quote": "青〜青紫に呈色。らせん構造にヨウ素が入り込む。加熱で色が消える"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q008",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "アミロースとアミロペクチンの呈色",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アミロースとアミロペクチンのヨウ素反応での呈色として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アミロースは濃青色を示し、アミロペクチンは赤紫色を示す。らせん構造の長さの違いによる。アミロースのらせんが長いため多くのヨウ素を取り込み青色が濃くなる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アミロースが赤紫色、アミロペクチンが濃青色。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。"
+        },
+        {
+          "label": "3",
+          "text": "どちらも同じ色に呈色する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "異なる色。"
+        },
+        {
+          "label": "4",
+          "text": "アミロペクチンはヨウ素反応を示さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "赤紫色を示す。"
+        }
+      ],
+      "explanation": "アミロースは直鎖状で長いらせん構造をもち、ヨウ素を多く取り込むため濃青色。アミロペクチンは枝分かれ構造で短いらせんしか作れず、ヨウ素をあまり取り込まないため赤紫色。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_002",
+          "quote": "アミロースは濃青色。アミロペクチンは赤紫色"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q009",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "property",
+      "sub_category": "セルロースの性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "セルロースについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "多数のベータグルコースが脱水縮合した多糖。直線状の分子で分子間に水素結合が形成され繊維状構造をとる。ヒトは消化できない（消化酵素を持たない）。ヨウ素デンプン反応を示さない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "セルロースはアルファグルコースからできている。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ベータグルコース。アルファはデンプン。"
+        },
+        {
+          "label": "3",
+          "text": "ヒトはセルロースを消化できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "できない。"
+        },
+        {
+          "label": "4",
+          "text": "セルロースはらせん構造をとる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "直線状。らせんはアミロース。"
+        }
+      ],
+      "explanation": "デンプン（アルファ型）は消化酵素（アミラーゼ）で分解されますが、セルロース（ベータ型）は結合の向きが異なるためヒトの酵素では切断できません。牛などの反芻動物は消化できます。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_003",
+          "quote": "デンプンはアルファグルコース。セルロースはベータグルコース"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q010",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "definition",
+      "sub_category": "アミノ酸の双性イオン",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アミノ酸の双性イオンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アミノ酸は水溶液中でアミノ基が陽イオンに、カルボキシ基が陰イオンになった双性イオンとして主に存在する。分子内に正と負の両方の電荷を持つ。このため融点が高く水に溶けやすい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アミノ酸は水中で双性イオンにならない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "なる。"
+        },
+        {
+          "label": "3",
+          "text": "双性イオンではアミノ基が陰イオン。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陽イオン。"
+        },
+        {
+          "label": "4",
+          "text": "アミノ酸は有機溶媒によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶けにくい。水に溶けやすい。"
+        }
+      ],
+      "explanation": "アミノ酸が結晶状態で融点が高い（分解温度も高い）のは、双性イオン間のイオン結合的な引力が強いためです。これはイオン結晶と似た性質です。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_004",
+          "quote": "水に溶けやすいが有機溶媒には溶けにくい。融点が高い"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q011",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "definition",
+      "sub_category": "等電点",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "等電点について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アミノ酸の水溶液中で双性イオンが最も多く存在し、全体として電荷がゼロになるpHのこと。等電点では電気泳動で移動しない。中性アミノ酸の等電点はpH六付近のものが多い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "等電点では陰イオンが最も多い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "双性イオンが最も多い。"
+        },
+        {
+          "label": "3",
+          "text": "すべてのアミノ酸の等電点は同じ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アミノ酸の種類により異なる。"
+        },
+        {
+          "label": "4",
+          "text": "塩基性アミノ酸の等電点は酸性領域にある。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩基性領域。"
+        }
+      ],
+      "explanation": "酸性アミノ酸→等電点は酸性側。塩基性アミノ酸→等電点は塩基性側。中性アミノ酸→等電点はpH六付近。この対応を覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_005",
+          "quote": "双性イオンが最も多く電荷がゼロ。中性アミノ酸はpH6付近"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q012",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "definition",
+      "sub_category": "タンパク質の変性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "タンパク質の変性について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "加熱、酸、塩基、アルコール、重金属イオンなどによりタンパク質の立体構造が変化し凝固や沈殿する現象。変性すると酵素としての機能も失われる（失活）。ゆで卵が固まるのは変性の例。不可逆的な変化。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "変性は可逆的で元に戻る。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不可逆的。"
+        },
+        {
+          "label": "3",
+          "text": "変性してもタンパク質の機能は維持される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "失われる。"
+        },
+        {
+          "label": "4",
+          "text": "変性はペプチド結合が切断される現象。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "立体構造（高次構造）の変化。ペプチド結合自体は保たれる。"
+        }
+      ],
+      "explanation": "変性では一次構造（アミノ酸配列）は変わりませんが、二次・三次・四次構造（立体構造）が崩れます。重金属イオンによるタンパク質の沈殿は食中毒や消毒のメカニズムにも関連します。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_006",
+          "quote": "立体構造が変化し凝固・沈殿。失活"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_006"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q013",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "definition",
+      "sub_category": "ビウレット反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ビウレット反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "タンパク質水溶液に水酸化ナトリウムを加え塩基性にした後、薄い硫酸銅水溶液を加えると赤紫色に呈色する反応。ペプチド結合が二個以上（トリペプチド以上）必要。ペプチド結合の検出に用いる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ビウレット反応では黄色に呈色する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "赤紫色。黄色はキサントプロテイン反応。"
+        },
+        {
+          "label": "3",
+          "text": "ジペプチドでもビウレット反応が起こる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "トリペプチド以上。ジペプチドは不可。"
+        },
+        {
+          "label": "4",
+          "text": "酸性条件で行う。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩基性条件。"
+        }
+      ],
+      "explanation": "ビウレット反応の「ビウレット→バイオレット（紫）」の語呂合わせで色を覚えましょう。ジペプチドはペプチド結合が一個しかないので反応しません。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_003",
+          "quote": "赤紫色。ペプチド結合が2個以上。塩基性条件"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_003"
+      ],
+      "mnemonic": "ビウレット→バイオレット（紫）"
+    },
+    {
+      "id": "ch6_1_q014",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "ビウレットとキサントプロテイン",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "タンパク質の検出反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ビウレット反応は赤紫色に呈色する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "キサントプロテイン反応は濃硝酸で黄色に呈色する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ニンヒドリン反応はアミノ酸の検出に用いる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ビウレット反応は黄色に呈色し、キサントプロテイン反応は赤紫色に呈色する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。ビウレットが赤紫、キサントプロテインが黄色。"
+        }
+      ],
+      "explanation": "タンパク質の三大検出反応の色を正確に覚えましょう。ビウレットは赤紫。キサントプロテインは黄色（さらに加熱＋アンモニアで橙黄色）。ニンヒドリンは青紫〜赤紫。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_003",
+          "quote": "ビウレットで赤紫色"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q015",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "デンプンとセルロースの構成単位",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "デンプンとセルロースの構成について、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "デンプンはアルファグルコースの多糖。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "セルロースはベータグルコースの多糖。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "デンプンはアミロースとアミロペクチンから構成される。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "デンプンはベータグルコース、セルロースはアルファグルコースからできている。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。デンプン＝アルファ、セルロース＝ベータ。"
+        }
+      ],
+      "explanation": "「でんぷんはアルファ」「セルロースはベータ」は語呂で覚えられます。「で（デンプン）ん（アルファ）ぷんのア！」「セ（セルロース）ルはベ（ベータ）」",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_003",
+          "quote": "アルファグルコースの多糖（デンプン）"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q016",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "還元糖と非還元糖",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "糖類の還元性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "グルコースは還元性を持つ。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "マルトースは還元性を持つ。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "フルクトースは還元性を持つ。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "スクロースは還元性を持つ。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "持たない。二糖で唯一の非還元糖。"
+        }
+      ],
+      "explanation": "覚え方のポイント：代表的な二糖のうちスクロースだけが非還元糖！マルトースもラクトースも還元性あり。「スクロースだけ例外」と覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_001",
+          "quote": "スクロースは還元性を示さない"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q017",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "property",
+      "sub_category": "グリシンの特徴",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "グリシンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "最も簡単な構造のアミノ酸。不斉炭素原子を持たないため光学異性体（鏡像異性体）が存在しない。水に溶けやすいが有機溶媒には溶けにくい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "グリシンは光学異性体を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "持たない。唯一の例外。"
+        },
+        {
+          "label": "3",
+          "text": "グリシンは水に溶けにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶けやすい。"
+        },
+        {
+          "label": "4",
+          "text": "グリシンは最も複雑なアミノ酸。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "最も簡単。"
+        }
+      ],
+      "explanation": "グリシンはアルファ炭素にメチル基やその他の大きな側鎖がなく（水素原子のみ）、不斉炭素原子がないため、天然アミノ酸の中で唯一光学異性体がありません。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_004",
+          "quote": "最も簡単なアミノ酸。不斉炭素原子をもたない"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q018",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "電気泳動",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "アミノ酸の電気泳動について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "等電点より酸性のpHではアミノ酸は正に帯電し陰極に移動する。等電点より塩基性のpHでは負に帯電し陽極に移動する。等電点では移動しない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "等電点より酸性で陽極に移動する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陰極。酸性→正に帯電→陰極へ。"
+        },
+        {
+          "label": "3",
+          "text": "等電点より塩基性で陰極に移動する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陽極。塩基性→負に帯電→陽極へ。"
+        },
+        {
+          "label": "4",
+          "text": "すべてのpHで移動しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "等電点以外では移動する。"
+        }
+      ],
+      "explanation": "電気泳動の方向の覚え方：「酸性で水素イオンが多い→アミノ基がプロトン化→正に帯電→陰極（マイナス極）に引かれる」「塩基性→カルボキシ基が脱プロトン→負に帯電→陽極（プラス極）に引かれる」",
+      "evidence": [
+        {
+          "source_id": "6_1_def_005",
+          "quote": "等電点では電荷がゼロ。電気泳動で移動しない"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q019",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "definition",
+      "sub_category": "ペプチド結合",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ペプチド結合について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アミノ酸のカルボキシ基と別のアミノ酸のアミノ基から水一分子が取れて形成されるアミド結合の一種。タンパク質はペプチド結合で多数のアミノ酸がつながった高分子化合物。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ペプチド結合はエステル結合の一種。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "アミド結合。"
+        },
+        {
+          "label": "3",
+          "text": "アミノ基同士が結合する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "カルボキシ基＋アミノ基。"
+        },
+        {
+          "label": "4",
+          "text": "ペプチド結合で水は生じない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水が一分子取れる（脱水縮合）。"
+        }
+      ],
+      "explanation": "ペプチド結合は「マイナスシーオーエヌエイチマイナス」の構造です。カルボキシ基のオーエイチとアミノ基のエイチが水として取れて結合します。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_003",
+          "quote": "ペプチド結合の検出"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q020",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "アルコール発酵",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アルコール発酵について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "グルコースが酵素の働きでエタノールと二酸化炭素に分解される反応。酵母菌が持つ酵素（チマーゼ）によって起こる。ワインやビールの醸造に利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルコール発酵でメタノールが生じる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "エタノール。"
+        },
+        {
+          "label": "3",
+          "text": "アルコール発酵で酸素が発生する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "二酸化炭素。"
+        },
+        {
+          "label": "4",
+          "text": "アルコール発酵は人為的な化学反応で酵素は関与しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酵素が関与する生体反応。"
+        }
+      ],
+      "explanation": "グルコース→エタノール＋二酸化炭素。この反応は嫌気的条件（酸素がない）下で酵母菌が行います。二酸化炭素がパンを膨らませ、エタノールがお酒のアルコール成分です。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_001",
+          "quote": "アルコール発酵によりエタノールと二酸化炭素"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q021",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "スクロースの加水分解",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "スクロースの加水分解について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "スクロースを希酸や酵素（インベルターゼ）で加水分解するとグルコースとフルクトースの等量混合物が得られる。この混合物を転化糖という。転化糖は還元性を示す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "スクロースを加水分解するとグルコース二分子が得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "グルコース＋フルクトース。"
+        },
+        {
+          "label": "3",
+          "text": "転化糖は還元性を示さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "示す（グルコースとフルクトースはどちらも還元糖）。"
+        },
+        {
+          "label": "4",
+          "text": "スクロースの加水分解にはアミラーゼを使う。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "インベルターゼ（またはスクラーゼ）。アミラーゼはデンプン分解。"
+        }
+      ],
+      "explanation": "「転化」の名は、スクロース（右旋性）が加水分解されると混合物全体の旋光度が左旋性に変わる（転化する）ことに由来します。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_002",
+          "quote": "スクロースは加水分解でグルコースとフルクトース"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q022",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "property",
+      "sub_category": "キサントプロテイン反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "キサントプロテイン反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "タンパク質に濃硝酸を加えて加熱すると黄色に呈色する反応。さらにアンモニア水を加えると橙黄色に変化する。ベンゼン環を持つアミノ酸（チロシン、フェニルアラニンなど）の検出反応。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "キサントプロテイン反応では赤紫色になる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "黄色。赤紫はビウレット反応。"
+        },
+        {
+          "label": "3",
+          "text": "キサントプロテイン反応は希硝酸を使う。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "濃硝酸。"
+        },
+        {
+          "label": "4",
+          "text": "すべてのアミノ酸で呈色する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ベンゼン環を持つアミノ酸のみ。"
+        }
+      ],
+      "explanation": "キサント（xantho）は黄色を意味するギリシャ語。プロテインはタンパク質。つまり「タンパク質を黄色くする反応」という意味の名前です。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_003",
+          "quote": "タンパク質の検出。キサントプロテインで黄色"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_003"
+      ],
+      "mnemonic": "キサント＝黄色"
+    },
+    {
+      "id": "ch6_1_q023",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "酵素の性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "酵素の性質として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "タンパク質からなる生体触媒。基質特異性（特定の物質にしか作用しない）を持つ。最適温度と最適pHがある。加熱すると変性して失活する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "酵素はすべての物質に作用する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "基質特異性がある。"
+        },
+        {
+          "label": "3",
+          "text": "酵素は高温でも活性を維持する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "変性して失活する。"
+        },
+        {
+          "label": "4",
+          "text": "酵素は無機化合物である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "タンパク質（有機化合物）。"
+        }
+      ],
+      "explanation": "酵素の三大特性は「基質特異性」「最適温度」「最適pH」です。タンパク質でできているため加熱や強酸で変性（失活）します。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_006",
+          "quote": "酵素もタンパク質。加熱で変性し失活"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_006"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q024",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "タンパク質の変性要因",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "タンパク質の変性を引き起こすものとして、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "加熱。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "酸や塩基。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "重金属イオン（銅イオン、水銀イオンなど）。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "水で希釈するだけで変性する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "水だけでは変性しない。タンパク質は水溶液中で通常安定。"
+        }
+      ],
+      "explanation": "タンパク質の変性要因：加熱、酸、塩基、アルコール、有機溶媒、重金属イオン。単純な水での希釈は変性を引き起こしません。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_006",
+          "quote": "加熱、酸、塩基、アルコール、重金属イオンの添加で変性"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_006"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q025",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "マルトースの構成",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "マルトース（麦芽糖）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "グルコース二分子がアルファ一・四結合で結合した二糖。還元性を示す。デンプンの部分加水分解で生じる。麦芽中の酵素マルターゼで分解される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "マルトースはグルコースとフルクトースからなる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "グルコース二分子。"
+        },
+        {
+          "label": "3",
+          "text": "マルトースは還元性を示さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "示す。"
+        },
+        {
+          "label": "4",
+          "text": "マルトースは三糖類。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二糖類。"
+        }
+      ],
+      "explanation": "マルトースの名前は「麦芽（malt）」に由来します。デンプンがアミラーゼで部分分解されるとマルトースになり、マルターゼでさらにグルコースに分解されます。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_001",
+          "quote": "マルトースはグルコース二分子からなる二糖"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q026",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "property",
+      "sub_category": "アミノ酸の両性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アミノ酸の両性電解質としての性質について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アミノ酸は酸としても塩基としても働く両性電解質。酸性溶液中ではアミノ基がプロトン化されて陽イオンに。塩基性溶液中ではカルボキシ基が脱プロトン化されて陰イオンになる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アミノ酸は酸としてのみ働く。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両性（酸と塩基の両方）。"
+        },
+        {
+          "label": "3",
+          "text": "酸性溶液中で陰イオンになる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陽イオン。"
+        },
+        {
+          "label": "4",
+          "text": "塩基性溶液中で陽イオンになる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陰イオン。"
+        }
+      ],
+      "explanation": "アミノ酸のイオン状態はpHによって変わります。「酸性→プロトン化→正（陽イオン）」「塩基性→脱プロトン化→負（陰イオン）」。これが電気泳動の方向を決めます。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_005",
+          "quote": "アミノ酸は両性電解質。等電点"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q027",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "ニンヒドリン反応",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ニンヒドリン反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アミノ酸やタンパク質にニンヒドリン溶液を加えて加熱すると青紫〜赤紫色に呈色する反応。アミノ基の検出に広く用いられる。指紋の検出にも利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ニンヒドリン反応では黄色に呈色する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "青紫〜赤紫色。"
+        },
+        {
+          "label": "3",
+          "text": "ニンヒドリン反応はペプチド結合の検出反応。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アミノ基の検出。ペプチド結合はビウレット。"
+        },
+        {
+          "label": "4",
+          "text": "ニンヒドリン反応は糖類にのみ使う。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "アミノ酸やタンパク質の検出。"
+        }
+      ],
+      "explanation": "ニンヒドリン反応はアミノ基を検出するため、遊離アミノ酸・ペプチド・タンパク質のすべてで陽性です。指紋のアミノ酸（汗に含まれる）も検出できるので犯罪捜査にも使われます。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_003",
+          "quote": "タンパク質の検出反応。ニンヒドリンで青紫〜赤紫"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q028",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "タンパク質の構造レベル",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "タンパク質の構造の階層について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "一次構造はアミノ酸の配列順序。二次構造はアルファヘリックスやベータシートなどの局所的な立体構造。三次構造は一本のポリペプチド全体の三次元構造。四次構造は複数のポリペプチドが集合した構造。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "一次構造は立体構造のこと。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アミノ酸配列のこと。"
+        },
+        {
+          "label": "3",
+          "text": "二次構造はアミノ酸配列のこと。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "局所的な立体構造。"
+        },
+        {
+          "label": "4",
+          "text": "変性では一次構造が壊れる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高次構造（二次以上）が壊れる。一次構造は保持される。"
+        }
+      ],
+      "explanation": "変性では一次構造（ペプチド結合でつながったアミノ酸の順番）は変わりません。二次・三次・四次構造を保つ水素結合や疎水性相互作用が壊れるだけです。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_006",
+          "quote": "立体的構造が変化。高次構造の崩壊"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_006"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q029",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "ラクトースの構成",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ラクトース（乳糖）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "グルコースとガラクトースからなる二糖。乳汁に含まれる。還元性を示す。ラクターゼで加水分解される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ラクトースはグルコース二分子からなる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "グルコース＋ガラクトース。"
+        },
+        {
+          "label": "3",
+          "text": "ラクトースは還元性を示さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "示す。"
+        },
+        {
+          "label": "4",
+          "text": "ラクトースは植物に多く含まれる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "動物の乳汁に多い。"
+        }
+      ],
+      "explanation": "ラクトは牛乳（ラテン語）。乳糖は牛乳に含まれる糖で、乳糖不耐症はラクターゼが少ないために起こります。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_001",
+          "quote": "ラクトースはグルコースとガラクトースの二糖"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q030",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "comprehensive",
+      "sub_category": "糖類の分類まとめ",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "糖類の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "単糖はグルコース、フルクトース、ガラクトース。二糖はマルトース（グルコース二分子）、スクロース（グルコース＋フルクトース）、ラクトース（グルコース＋ガラクトース）。多糖はデンプン（アルファグルコース）、セルロース（ベータグルコース）。スクロースだけが非還元糖。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "セルロースはアルファグルコースの多糖。スクロースは還元糖。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "セルロースはベータ。スクロースは非還元。"
+        },
+        {
+          "label": "3",
+          "text": "マルトースはグルコースとフルクトースからなる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "グルコース二分子。"
+        },
+        {
+          "label": "4",
+          "text": "すべての二糖は非還元糖。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "スクロースのみ非還元。マルトース、ラクトースは還元糖。"
+        }
+      ],
+      "explanation": "糖類の分類表を頭に入れましょう。特にスクロースだけが非還元糖であること、デンプンはアルファ・セルロースはベータの区別が重要です。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_001",
+          "quote": "糖類の分類"
+        },
+        {
+          "source_id": "6_1_rxn_001",
+          "quote": "スクロースは還元性なし"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_001",
+        "6_1_rxn_001",
+        "6_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q031",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "property",
+      "sub_category": "セルロースの利用",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "セルロースの利用について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "繊維（綿、紙）の主成分。再生繊維（レーヨン）や半合成繊維（アセテート）の原料。火薬（ニトロセルロース）の原料にもなる。セロハンはセルロースの再生フィルム。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "セルロースは食品として広く摂取される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ヒトは消化できない（食物繊維）。"
+        },
+        {
+          "label": "3",
+          "text": "デンプンが衣服の繊維になる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "セルロース。"
+        },
+        {
+          "label": "4",
+          "text": "セルロースは化学的に全く利用されない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多くの工業製品に利用される。"
+        }
+      ],
+      "explanation": "セルロースは地球上で最も豊富な有機化合物です。繊維素とも呼ばれ、木材の約半分がセルロースです。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_003",
+          "quote": "セルロースの利用"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q032",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "検出反応の試薬と色",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "タンパク質の検出反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ビウレット反応：水酸化ナトリウム＋硫酸銅→赤紫色。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "キサントプロテイン反応：濃硝酸→黄色。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ニンヒドリン反応：ニンヒドリン→青紫〜赤紫色。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ビウレット反応：濃硝酸→黄色。キサントプロテイン反応：水酸化ナトリウム＋硫酸銅→赤紫色。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "試薬と色がビウレットとキサントプロテインで入れ替わっている。"
+        }
+      ],
+      "explanation": "試薬と色の対応を正確に覚えましょう。ビウレットは銅イオン→赤紫。キサントは硝酸→黄。ニンヒドリンはニンヒドリン→青紫。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_003",
+          "quote": "ビウレットで赤紫。キサントで黄"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q033",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "property",
+      "sub_category": "油脂と脂肪酸",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "油脂について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "グリセリンと高級脂肪酸のエステル。不飽和脂肪酸が多いと常温で液体（脂肪油）、飽和脂肪酸が多いと常温で固体（脂肪）。水酸化ナトリウムでけん化するとセッケンとグリセリンが得られる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "不飽和脂肪酸が多いと固体。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "液体。"
+        },
+        {
+          "label": "3",
+          "text": "油脂はアミノ酸からなる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "グリセリンと脂肪酸のエステル。"
+        },
+        {
+          "label": "4",
+          "text": "けん化でエタノールが得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "グリセリン。"
+        }
+      ],
+      "explanation": "不飽和脂肪酸のシス型二重結合が分子の折れ曲がりを生み、分子同士が密に並びにくいため融点が低く液体になります。飽和脂肪酸はまっすぐな構造で密に並ぶため固体になります。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_002",
+          "quote": "油脂の性質"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q034",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "必須アミノ酸",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "必須アミノ酸について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒトの体内で合成できないため食事から摂取する必要があるアミノ酸。成人では約九種類。バリン、ロイシン、イソロイシン、トレオニン、メチオニン、フェニルアラニン、トリプトファン、リシン、ヒスチジンなど。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "必須アミノ酸は体内で十分に合成できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "合成できない。"
+        },
+        {
+          "label": "3",
+          "text": "グリシンは必須アミノ酸。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非必須。"
+        },
+        {
+          "label": "4",
+          "text": "必須アミノ酸は二種類だけ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "約九種類。"
+        }
+      ],
+      "explanation": "必須アミノ酸は体内で合成できない（または不十分にしか合成できない）ため、食事から摂る必要があります。アミノ酸自体は約二十種類ありますがそのうち約九種類が必須です。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_004",
+          "quote": "アミノ酸の分類"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q035",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "definition",
+      "sub_category": "核酸の構成",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "核酸について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヌクレオチドが多数結合した高分子化合物。デオキシリボ核酸（ディーエヌエー）とリボ核酸（アールエヌエー）の二種類がある。ヌクレオチドは糖（ペントース）・リン酸・塩基から構成される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "核酸はアミノ酸からなる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "ヌクレオチドからなる。アミノ酸からなるのはタンパク質。"
+        },
+        {
+          "label": "3",
+          "text": "核酸には一種類しかない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二種類（ディーエヌエーとアールエヌエー）。"
+        },
+        {
+          "label": "4",
+          "text": "ヌクレオチドはグルコースとリン酸からなる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ペントース（五炭糖）。グルコースは六炭糖。"
+        }
+      ],
+      "explanation": "核酸はタンパク質と同じく「高分子化合物」ですが構成単位が異なります。タンパク質はアミノ酸がペプチド結合で、核酸はヌクレオチドがリン酸エステル結合でつながっています。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_005",
+          "quote": "核酸の構成"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q036",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "デンプンとセルロースの消化",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "デンプンとセルロースの消化に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "デンプンはアミラーゼで加水分解される。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ヒトはデンプンを消化してグルコースにできる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "セルロースはヒトの消化酵素では分解できない。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ヒトはセルロースもデンプンと同じように消化できる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "セルロースは消化できない。ベータ結合を切る酵素がないため。"
+        }
+      ],
+      "explanation": "デンプン（アルファ結合）を切る酵素はヒトにありますが、セルロース（ベータ結合）を切る酵素はありません。草食動物は消化管内の微生物が持つセルラーゼでセルロースを分解しています。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_003",
+          "quote": "デンプンはアルファグルコース。セルロースはベータグルコース。ヒトはセルロースを消化できない"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q037",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "等電点の応用",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "等電点と電気泳動に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸性アミノ酸の等電点は酸性領域にある。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "塩基性アミノ酸の等電点は塩基性領域にある。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "等電点のpHでは電気泳動で移動しない。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "酸性アミノ酸の等電点は塩基性領域にあり、塩基性アミノ酸の等電点は酸性領域にある。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。酸性アミノ酸→酸性側。塩基性アミノ酸→塩基性側。"
+        }
+      ],
+      "explanation": "「酸性アミノ酸は酸性側に等電点」「塩基性アミノ酸は塩基性側に等電点」。名前と対応しているので覚えやすいはずです。入れ替えに注意しましょう。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_005",
+          "quote": "酸性アミノ酸は酸性領域。塩基性アミノ酸は塩基性領域"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q038",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "property",
+      "sub_category": "硫黄含有アミノ酸",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "硫黄を含むアミノ酸の検出法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "タンパク質に水酸化ナトリウムを加えて加熱し、酢酸鉛水溶液を加えると黒色沈殿（硫化鉛）が生じる。これはシステインやメチオニンなど硫黄を含むアミノ酸の検出反応。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "硫黄含有アミノ酸はニンヒドリンでのみ検出できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酢酸鉛の反応で特異的に検出できる。"
+        },
+        {
+          "label": "3",
+          "text": "黒色沈殿は酸化銅である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "硫化鉛。"
+        },
+        {
+          "label": "4",
+          "text": "すべてのアミノ酸が硫黄を含む。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一部のみ。"
+        }
+      ],
+      "explanation": "硫黄検出反応では、タンパク質中の硫黄が塩基性加熱で硫化物イオンとなり、鉛イオンと反応して黒色の硫化鉛が沈殿します。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_003",
+          "quote": "タンパク質の検出反応"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q039",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "還元性の理由",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "糖類の還元性の有無を決める構造的要因として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヘミアセタール構造を持つ糖は水溶液中で鎖式構造（ホルミル基を含む）に変換でき還元性を示す。アセタール構造ではホルミル基が生じないため還元性がない。スクロースがアセタール構造を持つため非還元性。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ヘミアセタール構造を持つと還元性がなくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "あると還元性がある。"
+        },
+        {
+          "label": "3",
+          "text": "アセタール構造でも還元性がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ない。"
+        },
+        {
+          "label": "4",
+          "text": "マルトースがアセタール構造を持つため非還元性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "マルトースはヘミアセタールがあるので還元性あり。スクロースが非還元。"
+        }
+      ],
+      "explanation": "ヘミアセタールは開環でき、ホルミル基が現れるため還元性あり。アセタールは開環できず、ホルミル基が現れないため還元性なし。スクロースでは両方の糖の還元末端がアセタール化されています。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_001",
+          "quote": "ヘミアセタール構造→還元性。アセタール構造→還元性なし"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q040",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "comprehensive",
+      "sub_category": "アミノ酸の総合",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "アミノ酸に関する総合として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アミノ基とカルボキシ基を持つ両性電解質。水中では双性イオン。等電点で電荷ゼロ。酸性側では陽イオン（陰極へ移動）、塩基性側では陰イオン（陽極へ移動）。グリシン以外は不斉炭素原子を持ち光学異性体が存在する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "すべてのアミノ酸が光学異性体を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "グリシンは持たない。"
+        },
+        {
+          "label": "3",
+          "text": "酸性側で陰極ではなく陽極に移動する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "正に帯電→陰極へ。"
+        },
+        {
+          "label": "4",
+          "text": "アミノ酸は有機溶媒によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶けにくい。"
+        }
+      ],
+      "explanation": "アミノ酸の性質を総合的にまとめた問題です。両性電解質・双性イオン・等電点・電気泳動・光学異性体のすべてを正確に理解しましょう。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_004",
+          "quote": "グリシンは不斉炭素なし"
+        },
+        {
+          "source_id": "6_1_def_005",
+          "quote": "等電点。電気泳動"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_004",
+        "6_1_def_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q041",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "グルコースとガラクトース",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "グルコースとガラクトースの関係として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "どちらも単糖で分子式が同じ。構造異性体ではなく立体異性体の関係（特に一つの不斉炭素原子の配置が異なるエピマー）。どちらも還元性を示す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ガラクトースは二糖。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "単糖。"
+        },
+        {
+          "label": "3",
+          "text": "ガラクトースは還元性を示さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "示す。"
+        },
+        {
+          "label": "4",
+          "text": "グルコースとガラクトースは全く同じ構造。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "立体的に異なる（エピマー）。"
+        }
+      ],
+      "explanation": "グルコース、フルクトース、ガラクトースはいずれも単糖で分子式が同じですが、立体構造が異なるため性質も異なります。ガラクトースは乳糖（ラクトース）の構成成分です。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_001",
+          "quote": "グルコース、フルクトース、ガラクトースは単糖"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q042",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "デンプンの加水分解経路",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "デンプンの段階的な加水分解として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "デンプンがアミラーゼでデキストリンを経てマルトースに分解され、さらにマルターゼでグルコースに分解される。最終的にはすべてグルコースになる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "デンプンが直接グルコースに分解される。中間体はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "段階的。デキストリンやマルトースを経る。"
+        },
+        {
+          "label": "3",
+          "text": "デンプンの加水分解でフルクトースが生じる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "グルコース。"
+        },
+        {
+          "label": "4",
+          "text": "マルターゼがデンプンを直接分解する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "マルターゼはマルトースをグルコースに。アミラーゼがデンプンを分解。"
+        }
+      ],
+      "explanation": "デンプン→（アミラーゼ）→デキストリン→マルトース→（マルターゼ）→グルコース。酵素の名前と基質の対応を正確に覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_003",
+          "quote": "デンプンの加水分解"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q043",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "property",
+      "sub_category": "アミロースの熱水溶解",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "デンプンの水への溶解について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アミロースは冷水に溶けにくいが熱水に溶けてコロイド溶液になる。アミロペクチンは冷水にも熱水にも溶けにくい。デンプン水溶液はコロイド溶液の一種。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アミロースは冷水によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶けにくい。"
+        },
+        {
+          "label": "3",
+          "text": "アミロペクチンは熱水によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶けにくい。"
+        },
+        {
+          "label": "4",
+          "text": "デンプン水溶液は真の溶液。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "コロイド溶液。"
+        }
+      ],
+      "explanation": "デンプンは高分子なので真の溶液（分子レベルの均一溶液）にはなりません。コロイド粒子として分散するコロイド溶液になります。",
+      "evidence": [
+        {
+          "source_id": "6_1_sub_003",
+          "quote": "アミロースは冷水に溶けにくいが熱水でコロイド溶液"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q044",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "ビウレット反応の条件",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ビウレット反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水酸化ナトリウムで塩基性にしてから硫酸銅を加える。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "赤紫色に呈色する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ペプチド結合が二個以上（トリペプチド以上）必要。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "アミノ酸一つでもビウレット反応が陽性になる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "トリペプチド以上。アミノ酸単体やジペプチドでは陰性。"
+        }
+      ],
+      "explanation": "ビウレット反応はペプチド結合「二個以上」が条件です。アミノ酸一つはペプチド結合ゼロ。ジペプチドはペプチド結合一個。どちらも不可。トリペプチドはペプチド結合二個で初めて陽性。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_003",
+          "quote": "ペプチド結合が2個以上。トリペプチド以上"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q045",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "comprehensive",
+      "sub_category": "検出反応の対応",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "各検出反応とその対象の正しい組み合わせを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェーリング反応・銀鏡反応→還元糖。ヨウ素反応→デンプン。ビウレット反応→ペプチド結合。キサントプロテイン→ベンゼン環を持つアミノ酸。ニンヒドリン→アミノ基。硫化鉛反応→硫黄含有アミノ酸。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ヨウ素反応→タンパク質。ビウレット→デンプン。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。ヨウ素はデンプン、ビウレットはタンパク質。"
+        },
+        {
+          "label": "3",
+          "text": "フェーリング反応→タンパク質。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "還元糖。"
+        },
+        {
+          "label": "4",
+          "text": "すべての検出反応がすべてのタンパク質に陽性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "検出反応ごとに対象が異なる。"
+        }
+      ],
+      "explanation": "天然有機化合物の検出反応をすべて表にまとめて整理しましょう。それぞれ何を検出するのかを正確に対応づけることが大切です。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_001",
+          "quote": "フェーリング反応で還元糖"
+        },
+        {
+          "source_id": "6_1_rxn_002",
+          "quote": "ヨウ素でデンプン"
+        },
+        {
+          "source_id": "6_1_rxn_003",
+          "quote": "ビウレットでペプチド結合"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_001",
+        "6_1_rxn_002",
+        "6_1_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q046",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "confusion",
+      "sub_category": "グルコースとフルクトースの違い",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "グルコースとフルクトースに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "グルコースはアルドース。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "フルクトースはケトース。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "どちらも単糖で還元性を持つ。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "グルコースとフルクトースは同じ構造を持つ。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "分子式は同じだが構造が異なる（構造異性体）。グルコースはアルドース、フルクトースはケトース。"
+        }
+      ],
+      "explanation": "グルコースはアルデヒド型（アルドース）、フルクトースはケトン型（ケトース）です。分子式は同じでも官能基の種類が異なる構造異性体です。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_001",
+          "quote": "グルコース（アルドース）、フルクトース（ケトース）"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q047",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "comprehensive",
+      "sub_category": "変性の原因まとめ",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "タンパク質の変性を引き起こす要因に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "加熱で変性する（ゆで卵）。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "重金属イオンで変性する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アルコールで変性する（消毒の原理）。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "食塩水に溶かすだけで変性する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "食塩水程度では変性しない。塩析は変性ではなく可逆的な沈殿。"
+        }
+      ],
+      "explanation": "塩析（高濃度の塩を加えてタンパク質を沈殿させる）は変性ではありません。塩析は可逆的で、塩を除けばタンパク質は元の状態に戻ります。変性は不可逆です。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_006",
+          "quote": "加熱、酸、塩基、アルコール、重金属イオンで変性"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_006"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q048",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "comprehensive",
+      "sub_category": "章の総合その一",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "天然有機化合物に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "グルコースは単糖で還元性あり。スクロースは二糖で還元性なし。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "デンプンはアルファグルコースの多糖。セルロースはベータグルコースの多糖。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アミノ酸は両性電解質で等電点を持つ。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "スクロースは還元性を持つ還元糖。デンプンはベータグルコースの多糖。アミロースは赤紫色にヨウ素呈色。グリシンは光学異性体を持つ。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所誤り。スクロースは非還元。デンプンはアルファ。アミロースは濃青色。グリシンは光学異性体なし。"
+        }
+      ],
+      "explanation": "章全体の重要ポイントを複合した問題です。糖の還元性、デンプンの構成単位、ヨウ素呈色の色、アミノ酸の特性、のすべてを正確に把握しましょう。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_001",
+          "quote": "スクロースは還元性なし"
+        },
+        {
+          "source_id": "6_1_sub_003",
+          "quote": "アルファグルコース"
+        },
+        {
+          "source_id": "6_1_rxn_002",
+          "quote": "アミロースは濃青色"
+        },
+        {
+          "source_id": "6_1_sub_004",
+          "quote": "グリシンは不斉炭素なし"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_001",
+        "6_1_sub_003",
+        "6_1_rxn_002",
+        "6_1_sub_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q049",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "comprehensive",
+      "sub_category": "タンパク質検出の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "タンパク質の検出反応の総合として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ビウレット反応→赤紫色（ペプチド結合、トリペプチド以上）。キサントプロテイン反応→黄色（ベンゼン環含有アミノ酸）。ニンヒドリン反応→青紫色（アミノ基）。硫化鉛反応→黒色沈殿（硫黄含有アミノ酸）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ビウレット→黄色、キサント→赤紫、ニンヒドリン→黒色沈殿。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "色がすべて入れ替わっている。"
+        },
+        {
+          "label": "3",
+          "text": "ジペプチドでもすべての反応が陽性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ビウレットはトリペプチド以上。"
+        },
+        {
+          "label": "4",
+          "text": "すべてのタンパク質がキサントプロテイン反応陽性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ベンゼン環含有アミノ酸がないタンパク質は陰性。"
+        }
+      ],
+      "explanation": "タンパク質の各検出反応は「何を検出するのか」が異なります。ビウレットはペプチド結合。キサントは芳香族アミノ酸。ニンヒドリンはアミノ基。硫化鉛は硫黄。",
+      "evidence": [
+        {
+          "source_id": "6_1_rxn_003",
+          "quote": "ビウレット赤紫。キサント黄。ニンヒドリン青紫"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_1_q050",
+      "chapter": "6-1",
+      "chapter_title": "天然有機化合物",
+      "category": "comprehensive",
+      "sub_category": "最終総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "天然有機化合物の全範囲に関する最終総合として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "単糖はグルコース・フルクトース・ガラクトースで全て還元性あり。二糖のスクロースのみ非還元性。デンプンはアルファグルコースの多糖（アミロース＋アミロペクチン）。セルロースはベータグルコースの多糖。ヨウ素デンプン反応でアミロースは濃青色、アミロペクチンは赤紫色。アミノ酸は両性電解質で双性イオンとして存在。グリシンのみ光学異性体なし。タンパク質は加熱等で変性・失活。ビウレットは赤紫、キサントは黄、ニンヒドリンは青紫。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "スクロースは還元性あり。デンプンはベータグルコース。アミロースは赤紫色。グリシンは光学異性体あり。ビウレットは黄色。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "すべての二糖は非還元性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "スクロースのみ。"
+        },
+        {
+          "label": "4",
+          "text": "セルロースはヒトが消化でき、デンプンは消化できない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。"
+        }
+      ],
+      "explanation": "天然有機化合物の全範囲を一問に凝縮した最終問題です。糖類の分類と還元性、アミノ酸の双性イオンと等電点、タンパク質の変性と検出反応、のすべてを正確に整理しましょう。",
+      "evidence": [
+        {
+          "source_id": "6_1_def_001",
+          "quote": "糖類の分類"
+        },
+        {
+          "source_id": "6_1_rxn_001",
+          "quote": "還元性"
+        },
+        {
+          "source_id": "6_1_sub_003",
+          "quote": "デンプンとセルロース"
+        },
+        {
+          "source_id": "6_1_rxn_002",
+          "quote": "ヨウ素デンプン反応"
+        },
+        {
+          "source_id": "6_1_sub_004",
+          "quote": "アミノ酸"
+        },
+        {
+          "source_id": "6_1_def_005",
+          "quote": "等電点"
+        },
+        {
+          "source_id": "6_1_def_006",
+          "quote": "変性"
+        },
+        {
+          "source_id": "6_1_rxn_003",
+          "quote": "検出反応"
+        }
+      ],
+      "related_concept_ids": [
+        "6_1_def_001",
+        "6_1_rxn_001",
+        "6_1_sub_003",
+        "6_1_rxn_002",
+        "6_1_sub_004",
+        "6_1_def_005",
+        "6_1_def_006",
+        "6_1_rxn_003"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

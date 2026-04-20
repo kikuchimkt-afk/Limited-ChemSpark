@@ -1,0 +1,445 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 4,
+   "chapter_title": "無機物質と人間生活",
+   "section": 1,
+   "section_title": "セラミックス・金属・肥料",
+   "page_range": [398, 408],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "4_1_sub_001",
+     "name": "二酸化ケイ素",
+     "formula": "SiO2",
+     "aliases": ["シリカ"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["TBD:p.353"],
+     "notes": "ケイ酸塩工業における主成分"
+   },
+   {
+     "id": "4_1_sub_002",
+     "name": "ソーダ石灰ガラス",
+     "formula": "",
+     "aliases": ["ふつうのガラス"],
+     "type": "混合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色透明",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "なし",
+       "other": ["融解しやすい"]
+     },
+     "cross_refs": [],
+     "notes": "主成分はSiO2, CaO, Na2O。板ガラスや瓶に使用。"
+   },
+   {
+     "id": "4_2_sub_001",
+     "name": "四酸化三鉄",
+     "formula": "Fe3O4",
+     "aliases": ["黒さび"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "黒",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "不溶",
+       "electrical_conductivity": "",
+       "other": ["緻密で密着性がよい"]
+     },
+     "cross_refs": [],
+     "notes": "内部を保護することができる"
+   },
+   {
+     "id": "4_2_sub_002",
+     "name": "トタン",
+     "formula": "",
+     "aliases": ["亜鉛めっき鋼板"],
+     "type": "混合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "あり",
+       "other": []
+     },
+     "cross_refs": ["TBD:p.303"],
+     "notes": "鉄板に亜鉛をめっきしたもの。屋外で水に濡れる場所に使用。"
+   },
+   {
+     "id": "4_2_sub_003",
+     "name": "ブリキ",
+     "formula": "",
+     "aliases": ["スズめっき鋼板"],
+     "type": "混合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "あり",
+       "other": []
+     },
+     "cross_refs": ["TBD:p.303"],
+     "notes": "鉄板にスズをめっきしたもの。缶詰の内壁などに使用。"
+   },
+   {
+     "id": "4_2_sub_004",
+     "name": "ステンレス鋼",
+     "formula": "",
+     "aliases": [],
+     "type": "混合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "銀白色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "あり",
+       "other": ["さびにくい"]
+     },
+     "cross_refs": ["4_2_def_002"],
+     "notes": "Fe, Cr, Ni, Cの合金。クロムの酸化被膜が不動態となる。"
+   },
+   {
+     "id": "4_3_sub_001",
+     "name": "尿素",
+     "formula": "(NH2)2CO",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水溶性",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": "窒素肥料として用いられる"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "4_1_def_001",
+     "type": "def",
+     "title": "セラミックス",
+     "prerequisite_ids": [],
+     "definition": "原料を成形後に加熱処理によって焼き固めて得られる無機固体材料の総称",
+     "explanation": "粘土・石灰石・けい砂などを高温で焼いて作った窯業製品です。古くは土器から、現在ではガラスやセメント、さらに先端技術向けのファインセラミックスまで幅広く含まれます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "従来形セラミックス",
+         "substance_ids": ["4_1_sub_002"],
+         "description": "ガラス、セメント、陶磁器など。主成分はSiO2やケイ酸塩。",
+         "values": [
+           { "value": "800~1500", "unit": "℃", "condition": "窯の中での焼成温度" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "セラミックスの原料や種類に関する正誤問題（定期試験対策ア〜オ）",
+         "key_concept_ids": ["4_1_def_001", "4_1_def_002", "4_1_def_003"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 398
+   },
+   {
+     "id": "4_1_def_002",
+     "type": "def",
+     "title": "ファインセラミックス",
+     "prerequisite_ids": ["4_1_def_001"],
+     "definition": "金属酸化物、炭化物、窒化物などの高純度原料を用い、化学組成や微細構造などを精密に制御して製造した新しい形のセラミックス",
+     "explanation": "ニューセラミックスとも呼ばれます。金属に比べて軽くて硬く、耐熱性が高い特徴があります。人工骨やICチップの基板など、先端技術に使われます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "酸化アルミニウム（アルミナ）",
+         "substance_ids": [],
+         "description": "電気絶縁性、生体親和性があり、人工関節や集積回路の基板に利用。",
+         "values": []
+       },
+       {
+         "label": "チタン酸バリウム",
+         "substance_ids": [],
+         "description": "高い比誘電率を持ち、コンデンサーに利用。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 400
+   },
+   {
+     "id": "4_2_def_001",
+     "type": "def",
+     "title": "金属の特徴",
+     "prerequisite_ids": ["TBD:p.90"],
+     "definition": "自由電子によりもたらされる、金属光沢、展性・延性、電気・熱伝導性といった金属特有の性質",
+     "explanation": "金属の中を自由に動き回る「自由電子」があるため、光を反射してピカピカ光ったり（金属光沢）、叩いて伸ばせたり（展性・延性）、電気や熱をよく通したりします。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "展性・延性",
+         "substance_ids": [],
+         "description": "金(Au)は金属中で最大の展性・延性を持つ。",
+         "values": []
+       },
+       {
+         "label": "電気・熱伝導性",
+         "substance_ids": [],
+         "description": "銀(Ag)は金属中で最も伝導性が大きい。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "金属がさびると自由電子が失われるため、光沢を失い、電気が流れなくなる。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 401
+   },
+   {
+     "id": "4_2_rxn_001",
+     "type": "rxn",
+     "title": "鉄の腐食（赤さびの生成）",
+     "prerequisite_ids": ["4_2_def_001"],
+     "definition": "水と酸素の存在下で、鉄が酸化されて赤さび(FeO(OH)など)を生じる反応",
+     "explanation": "鉄は水の中の酸素によって酸化され、Fe2+として溶け出します。同時に酸素は電子を受け取って水酸化物イオン(OH-)になります。これらが反応して水酸化鉄(II)ができ、さらに酸化されて赤さびになります。",
+     "conditions": [
+       "水と酸素が必要",
+       "電解質の存在がさびの進行を促進する（例：海水）"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "Fe → Fe2+ + 2e-",
+         "reason": "鉄が酸化されて電子を放出し、溶出する（負極）"
+       },
+       {
+         "step": 2,
+         "action": "O2 + 2H2O + 4e- → 4OH-",
+         "reason": "酸素が電子を受け取って還元される（正極）"
+       },
+       {
+         "step": 3,
+         "action": "Fe2+ + 2OH- → Fe(OH)2",
+         "reason": "中性の水中などで水酸化物となる"
+       },
+       {
+         "step": 4,
+         "action": "4Fe(OH)2 + O2 → 4FeO(OH) + 2H2O",
+         "reason": "一部がさらに酸化・脱水されて赤さびとなる"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "さびの進行に関する穴埋め問題（酸化数、正極・負極の反応）",
+         "key_concept_ids": ["4_2_rxn_001", "4_2_def_002"]
+       }
+     ],
+     "cross_refs": ["TBD:p.378"],
+     "source_page": 403
+   },
+   {
+     "id": "4_2_def_002",
+     "type": "def",
+     "title": "不動態",
+     "prerequisite_ids": [],
+     "definition": "金属の表面に非常に薄く安定な酸化被膜が生成し、内部まで酸化が進行しない状態",
+     "explanation": "アルミニウムやステンレス鋼などで見られます。表面の膜がバリアの役割を果たし、それ以上さびなくなります。ただし、強酸や強塩基など環境によっては侵されることがあります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "アルミニウム",
+         "substance_ids": [],
+         "description": "自然に酸化被膜を作り不動態となるが、強塩基には弱い。",
+         "values": []
+       },
+       {
+         "label": "ステンレス鋼",
+         "substance_ids": ["4_2_sub_004"],
+         "description": "クロムの酸化被膜が不動態となる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["TBD:p.368"],
+     "source_page": 403
+   },
+   {
+     "id": "4_2_proc_001",
+     "type": "proc",
+     "title": "電気めっき",
+     "prerequisite_ids": [],
+     "definition": "水溶液中で金属を極板にして電気分解することで、素材の表面に薄い金属被膜を析出させる方法",
+     "explanation": "さびを防ぐだけでなく、見た目を美しくしたり、電気を通しやすくしたりするために行います。たとえば、銅板にニッケルをめっきする場合、めっきしたい金属(ニッケル)を陽極に、めっきされる側(銅)を陰極につなぎます。",
+     "conditions": [
+       "めっきする金属イオンを溶かした水溶液が必要（湿式めっき法）"
+     ],
+     "examples": [
+       {
+         "label": "銅板へのニッケルめっき",
+         "substance_ids": [],
+         "description": "陽極: Ni → Ni2+ + 2e-, 陰極: Ni2+ + 2e- → Ni",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "被めっき物を陰極、めっき金属を陽極として電解液に浸す",
+         "reason": "陽極で金属がイオン化して溶け出し、陰極で還元されて析出するため"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "めっきの原理と、トタン・ブリキの耐食性の比較問題",
+         "key_concept_ids": ["4_2_proc_001", "4_2_sub_002", "4_2_sub_003"]
+       }
+     ],
+     "cross_refs": ["4_2_sub_002", "4_2_sub_003"],
+     "source_page": 404
+   },
+   {
+     "id": "4_2_def_003",
+     "type": "def",
+     "title": "合金",
+     "prerequisite_ids": ["4_2_def_001"],
+     "definition": "融解したある金属に、他の金属元素の単体、あるいは非金属元素の単体を混合し凝固させたもの",
+     "explanation": "複数の金属などを混ぜ合わせることで、元の金属単体にはない「硬い」「さびにくい」などの優れた特性を持たせたものです。混ぜ方によって置換型合金や侵入型合金に分かれます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "黄銅（真ちゅう）",
+         "substance_ids": [],
+         "description": "CuとZnの合金。金色で美しく、家庭用器具や楽器に利用。",
+         "values": []
+       },
+       {
+         "label": "ジュラルミン",
+         "substance_ids": [],
+         "description": "Al, Cu, Mg, Mnの合金。軽くて強いので航空機の機体に利用。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "合金にすると結晶格子に歪みができるため、一般的に展性や延性が悪くなり、電気伝導性も悪くなることが多い。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "合金の成分と用途を結びつける選択問題",
+         "key_concept_ids": ["4_2_def_003"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 405
+   },
+   {
+     "id": "4_3_def_001",
+     "type": "def",
+     "title": "肥料の三要素",
+     "prerequisite_ids": [],
+     "definition": "植物の成長に伴い多量に必要であるにもかかわらず、土壌中で不足しがちなため、とくに補給する必要がある窒素(N)、リン(P)、カリウム(K)の3元素",
+     "explanation": "窒素は葉や茎を育てるタンパク質の元、リンは細胞の核に含まれるDNAの元、カリウムは根や分裂組織の発育などに関わります。これらは植物にとって欠かせない成分です。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "窒素肥料",
+         "substance_ids": ["4_3_sub_001"],
+         "description": "硫酸アンモニウム、尿素など。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "化学肥料は水溶性で速効性があるが、過剰に流出すると川の富栄養化を引き起こすことがある。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられた物質を窒素・リン酸・カリ肥料に分類する問題",
+         "key_concept_ids": ["4_3_def_001"]
+       }
+     ],
+     "cross_refs": ["TBD:p.348"],
+     "source_page": 407
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "4_1_sub_002",
+     "to_id": "4_1_def_001",
+     "relation_type": "is_example_of",
+     "note": "ソーダ石灰ガラスは従来形セラミックスの一種"
+   },
+   {
+     "from_id": "4_2_sub_002",
+     "to_id": "4_2_proc_001",
+     "relation_type": "is_applied_in",
+     "note": "トタンは鉄板への亜鉛の電気めっき（または溶融めっき）を応用"
+   },
+   {
+     "from_id": "4_2_sub_004",
+     "to_id": "4_2_def_002",
+     "relation_type": "is_example_of",
+     "note": "ステンレス鋼は表面に不動態被膜を形成する合金の代表例"
+   },
+   {
+     "from_id": "4_3_sub_001",
+     "to_id": "4_3_def_001",
+     "relation_type": "is_example_of",
+     "note": "尿素は肥料の三要素のうち窒素を供給する化学肥料"
+   }
+ ]
+}

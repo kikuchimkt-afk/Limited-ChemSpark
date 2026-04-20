@@ -1,0 +1,572 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "高等学校化学",
+   "chapter": 2,
+   "chapter_title": "気体",
+   "section": 2,
+   "section_title": "気体の性質と法則",
+   "page_range": [136, 157],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "2_0_sub_001",
+     "name": "水素",
+     "formula": "H2",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": -253, "unit": "℃", "condition": "1.01×10^5 Pa" },
+       "color": "無色",
+       "odor": "無臭",
+       "density": { "value": null, "unit": "g/L", "condition": "" },
+       "solubility": "水に溶けにくい",
+       "electrical_conductivity": "",
+       "other": [
+         { "description": "モル体積", "value": 22.42, "unit": "L/mol", "condition": "標準状態" }
+       ]
+     },
+     "cross_refs": [],
+     "notes": "理想気体に最も近い実在気体の一つ。分子間力が非常に小さく、分子の大きさも小さい。"
+   },
+   {
+     "id": "2_0_sub_002",
+     "name": "ヘリウム",
+     "formula": "He",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": -269, "unit": "℃", "condition": "1.01×10^5 Pa" },
+       "color": "無色",
+       "odor": "無臭",
+       "density": { "value": null, "unit": "g/L", "condition": "" },
+       "solubility": "水に溶けにくい",
+       "electrical_conductivity": "",
+       "other": [
+         { "description": "モル体積", "value": 22.43, "unit": "L/mol", "condition": "標準状態" }
+       ]
+     },
+     "cross_refs": [],
+     "notes": "水素と同様に理想気体に極めて近い振る舞いをする単原子分子。"
+   },
+   {
+     "id": "2_0_sub_003",
+     "name": "アンモニア",
+     "formula": "NH3",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": -33, "unit": "℃", "condition": "1.01×10^5 Pa" },
+       "color": "無色",
+       "odor": "刺激臭",
+       "density": { "value": null, "unit": "g/L", "condition": "" },
+       "solubility": "水に極めてよく溶ける",
+       "electrical_conductivity": "",
+       "other": [
+         { "description": "モル体積", "value": 22.09, "unit": "L/mol", "condition": "標準状態" }
+       ]
+     },
+     "cross_refs": ["TBD:極性分子_p133"],
+     "notes": "極性分子であり水素結合を形成するため、分子間力が大きく、理想気体からのずれが大きい。"
+   },
+   {
+     "id": "2_0_sub_004",
+     "name": "二酸化炭素",
+     "formula": "CO2",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "無臭",
+       "density": { "value": null, "unit": "g/L", "condition": "" },
+       "solubility": "水に少し溶ける",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": "分子量が比較的大きいためファンデルワールス力が強く、常温付近でも高圧で容易に液化（凝縮）する。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "2_1_law_001",
+     "type": "law",
+     "title": "ボイルの法則",
+     "prerequisite_ids": [],
+     "definition": "一定温度で、一定量の気体の体積は圧力に反比例する（pV = 一定）。",
+     "explanation": "温度が変わらないとき、気体を押し縮めて体積を半分にすると、中の気体分子が壁に衝突する回数が2倍になり、圧力が2倍になるという法則です。",
+     "conditions": [
+       "温度(T)が一定",
+       "気体の物質量(n)が一定"
+     ],
+     "examples": [
+       {
+         "label": "ピストンの圧縮",
+         "substance_ids": [],
+         "description": "25℃のまま体積を4Lから2Lへ半分に圧縮すると、圧力は2倍になる。",
+         "values": [
+           { "value": 4, "unit": "L", "condition": "圧縮前" },
+           { "value": 2, "unit": "L", "condition": "圧縮後" },
+           { "value": 1.0e5, "unit": "Pa", "condition": "圧縮前" },
+           { "value": 2.0e5, "unit": "Pa", "condition": "圧縮後" }
+         ]
+       }
+     ],
+     "counter_examples": [
+       "気体が凝縮して液体になってしまうと、この法則は適用できない（蒸気圧一定となるため）。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "温度一定でピストンを押し引きし、体積と圧力の片方を求める問題",
+         "key_concept_ids": ["2_1_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 136
+   },
+   {
+     "id": "2_1_def_001",
+     "type": "def",
+     "title": "絶対温度",
+     "prerequisite_ids": [],
+     "definition": "理論上考えられる最低の温度（絶対零度、-273.15℃）を0とする温度目盛り。単位はケルビン（K）。",
+     "explanation": "気体の体積が計算上ゼロになる温度を基準にした温度です。セルシウス温度（℃）に273を足すことで求められます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "セルシウス温度からの変換",
+         "substance_ids": [],
+         "description": "0℃は273K、27℃は300Kとなる。",
+         "values": [
+           { "value": 273, "unit": "K", "condition": "0℃" },
+           { "value": 300, "unit": "K", "condition": "27℃" }
+         ]
+       }
+     ],
+     "counter_examples": [
+       "実際の気体は絶対零度に達する前に液化・凝固するため、体積が完全に0になることはない。"
+     ],
+     "mnemonics": [
+       "兄さん（273）を足して絶対温度"
+     ],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["TBD:熱力学温度_p138"],
+     "source_page": 138
+   },
+   {
+     "id": "2_1_law_002",
+     "type": "law",
+     "title": "シャルルの法則",
+     "prerequisite_ids": ["2_1_def_001"],
+     "definition": "一定圧力の下で、一定量の気体の体積は絶対温度に比例する（V/T = 一定）。",
+     "explanation": "気体を温めると分子の動きが激しくなり、同じ圧力を保とうとすれば膨張して体積が大きくなるという法則です。温度を絶対温度(K)で表すことが不可欠です。",
+     "conditions": [
+       "圧力(p)が一定",
+       "気体の物質量(n)が一定"
+     ],
+     "examples": [
+       {
+         "label": "熱気球の原理",
+         "substance_ids": [],
+         "description": "風船の中の気体を加熱すると膨張し、密度が小さくなって浮力が増すことで上昇する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "計算時にセルシウス温度（℃）をそのまま使ってしまうミスが非常に多い。必ずKに直すこと。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "圧力一定で加熱・冷却し、体積の変化を計算する問題",
+         "key_concept_ids": ["2_1_law_002", "2_1_def_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 138
+   },
+   {
+     "id": "2_1_law_003",
+     "type": "law",
+     "title": "ボイル・シャルルの法則",
+     "prerequisite_ids": ["2_1_law_001", "2_1_law_002"],
+     "definition": "一定量の気体の体積は圧力に反比例し、絶対温度に比例する（pV/T = 一定）。",
+     "explanation": "圧力も温度も両方変化する場合に使える便利な法則です。気体の量が漏れたり足されたりしない限り、変化の前後で「圧力×体積÷絶対温度」の値が等しくなります。",
+     "conditions": [
+       "気体の物質量(n)が一定（密閉容器など）"
+     ],
+     "examples": [],
+     "counter_examples": [
+       "容器のコックを開けて気体を外に逃がした場合や、化学反応で気体分子の数が増減した場合には適用できない。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "温度・圧力・体積の3つのうち、2つが変化した後の残りの1つを求める問題",
+         "key_concept_ids": ["2_1_law_003"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 140
+   },
+   {
+     "id": "2_2_law_001",
+     "type": "law",
+     "title": "気体の状態方程式",
+     "prerequisite_ids": ["2_1_law_003"],
+     "definition": "気体の圧力p、体積V、物質量n、気体定数R、絶対温度Tの間に成り立つ関係式：pV = nRT",
+     "explanation": "気体の「圧力・体積・温度・物質量」の4つの状態量のうち、3つが分かれば残りの1つが計算できる万能な方程式です。すべての理想気体について成り立ちます。",
+     "conditions": [
+       "理想気体であること（実在気体でも近似的に適用可）"
+     ],
+     "examples": [
+       {
+         "label": "水素の圧力計算",
+         "substance_ids": ["2_0_sub_001"],
+         "description": "27℃、10Lのボンベに入った100molの水素の圧力を計算する。",
+         "values": [
+           { "value": 300, "unit": "K", "condition": "温度(27+273)" },
+           { "value": 10, "unit": "L", "condition": "体積" },
+           { "value": 100, "unit": "mol", "condition": "物質量" },
+           { "value": 24.9e6, "unit": "Pa", "condition": "計算結果" }
+         ]
+       }
+     ],
+     "counter_examples": [
+       "圧力の単位がPa、体積の単位がLのとき、Rは8.3×10^3を用いる。単位の不一致による計算ミスに注意。"
+     ],
+     "mnemonics": [
+       "気体といえば、いつでもpV=nRT（チャート20）"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "気体の物質量(mol)や質量(g)が与えられ、体積や圧力を求める問題",
+         "key_concept_ids": ["2_2_law_001"]
+       }
+     ],
+     "cross_refs": ["TBD:モル体積_p127", "TBD:アボガドロの法則_p128"],
+     "source_page": 141
+   },
+   {
+     "id": "2_2_eq_001",
+     "type": "eq",
+     "title": "状態方程式を用いた分子量の導出",
+     "prerequisite_ids": ["2_2_law_001"],
+     "definition": "気体の状態方程式pV=(m/M)RTを変形し、分子量(モル質量) M = mRT/pV で求める関係式。",
+     "explanation": "気体の質量m、圧力p、体積V、温度Tを測定すれば、その気体の分子量Mを計算できます。未知の気体や、加熱すれば気体になる液体の分子量を特定するのによく使われます。",
+     "conditions": [
+       "測定条件で対象物質が完全に気体として存在していること"
+     ],
+     "examples": [
+       {
+         "label": "密度からの分子量計算",
+         "substance_ids": [],
+         "description": "密度d = m/Vより、M = dRT/p と変形して密度から直接分子量を求めることができる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "ある気体の質量・温度・圧力・体積から分子量を求める問題",
+         "key_concept_ids": ["2_2_eq_001"]
+       },
+       {
+         "pattern": "気体の密度と温度・圧力から分子量を求める問題",
+         "key_concept_ids": ["2_2_eq_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 142
+   },
+   {
+     "id": "2_2_proc_001",
+     "type": "proc",
+     "title": "蒸気密度法（デュマ法）",
+     "prerequisite_ids": ["2_2_eq_001"],
+     "definition": "揮発性の液体の分子量を、加熱して完全に気化させたときの体積・温度・圧力・質量から状態方程式を用いて測定する実験手法。",
+     "explanation": "揮発しやすい液体の分子量を測る実験です。フラスコに液体を入れて熱湯で温め、全て気体にします。このとき溢れた蒸気は逃がすため、フラスコ内の気体の圧力は大気圧と等しくなります。冷やして凝縮させた液体の重さを測ることで、気体だった時の質量が分かります。",
+     "conditions": [
+       "試料の沸点が測定温度（熱湯など）より低いこと",
+       "試料が熱で分解しないこと"
+     ],
+     "examples": [],
+     "counter_examples": [
+       "フラスコを冷やさずに高温のまま質量を測ろうとすると、空気に比べて密度が小さくなり浮力の影響で正確な質量が測定できない。"
+     ],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "丸底フラスコに液体試料を入れ、アルミ箔などで蓋をして小さな穴を開ける。",
+         "reason": "気化した試料でフラスコ内を満たしつつ、余分な蒸気を穴から逃がして内圧を大気圧と等しく保つため。"
+       },
+       {
+         "step": 2,
+         "action": "沸騰水などの恒温槽にフラスコを深く沈め、液体試料を完全に蒸発させ、温度Tを記録する。",
+         "reason": "状態方程式における温度Tを確定し、フラスコの容積Vを全て試料蒸気で満たすため。"
+       },
+       {
+         "step": 3,
+         "action": "フラスコを取り出して放冷し、蒸気を凝縮させてから質量を測定する。",
+         "reason": "気体だった試料を液体に戻すことで、純粋な試料の質量m（フラスコの増加量）を正確に測定するため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "フラスコにアルミ箔で蓋をして加熱する実験設定での分子量計算問題",
+         "key_concept_ids": ["2_2_proc_001", "2_2_eq_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 144
+   },
+   {
+     "id": "2_3_law_001",
+     "type": "law",
+     "title": "ドルトンの分圧の法則",
+     "prerequisite_ids": ["2_2_law_001"],
+     "definition": "混合気体の全圧は、各成分気体が単独で同体積・同温度を占めたときに示す圧力（分圧）の和に等しい（p = pA + pB + pC）。",
+     "explanation": "複数の気体が混ざっているとき、全体の圧力は、それぞれの気体が自分だけで壁にぶつかる力（分圧）の足し算になるという法則です。",
+     "conditions": [
+       "気体同士が化学反応しないこと",
+       "体積と温度が一定であること"
+     ],
+     "examples": [
+       {
+         "label": "窒素と酸素の混合気体",
+         "substance_ids": ["2_0_sub_004", "TBD:窒素_sub", "TBD:酸素_sub"],
+         "description": "分圧がそれぞれ1.0×10^5 Paの窒素と2.0×10^4 Paの酸素を混合した場合、全圧は1.2×10^5 Paとなる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "アンモニアと塩化水素のように、混合すると反応して固体(塩化アンモニウム)になる場合は適用できない。"
+     ],
+     "mnemonics": [
+       "全圧は分圧の和（分身の輪）"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "異なる容器に入った気体をコックを開いて混合した後の全圧・分圧を求める問題",
+         "key_concept_ids": ["2_3_law_001", "2_1_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 146
+   },
+   {
+     "id": "2_3_eq_001",
+     "type": "eq",
+     "title": "分圧とモル分率",
+     "prerequisite_ids": ["2_3_law_001"],
+     "definition": "ある成分気体の分圧は、全圧にその気体のモル分率（成分の物質量 / 全物質量）を掛けたものに等しい（pA = p × nA/n）。",
+     "explanation": "混合気体の中での「分子の個数の割合（モル分率）」は、そのまま「圧力の割合」になります。例えば、全体の分子のうち酸素が20%なら、全圧の20%が酸素の分圧です。",
+     "conditions": [
+       "同温・同体積の混合気体であること"
+     ],
+     "examples": [
+       {
+         "label": "空気の分圧",
+         "substance_ids": ["TBD:窒素_sub", "TBD:酸素_sub"],
+         "description": "大気圧1.0×10^5 Paの空気（窒素：酸素 = 4：1）において、窒素の分圧は全圧の4/5、酸素の分圧は全圧の1/5となる。",
+         "values": [
+           { "value": 8.0e4, "unit": "Pa", "condition": "窒素の分圧" },
+           { "value": 2.0e4, "unit": "Pa", "condition": "酸素の分圧" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [
+       "分圧の比＝物質量の比＝（同温・同圧で取り出したときの）体積の比"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "混合気体の各成分の物質量から分圧を求める問題",
+         "key_concept_ids": ["2_3_eq_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 147
+   },
+   {
+     "id": "2_3_proc_001",
+     "type": "proc",
+     "title": "水上置換法と気体の圧力",
+     "prerequisite_ids": ["2_3_law_001"],
+     "definition": "水上置換法で捕集した気体は常に水蒸気との混合気体となっており、捕集した気体の分圧は全圧(大気圧)から水蒸気圧を引いて求める。",
+     "explanation": "水上置換で集めた気体の中には、水から蒸発した水蒸気も必ず混ざっています。そのため、大気圧と水面を一致させたときのフラスコ内の圧力（全圧）から、水蒸気の圧力（飽和水蒸気圧）を引かないと、目的の気体だけの正しい圧力が計算できません。",
+     "conditions": [
+       "捕集容器の内側と外側の水面が一致していること（全圧＝大気圧とするため）",
+       "水に溶けにくい気体であること"
+     ],
+     "examples": [
+       {
+         "label": "水素の水上捕集",
+         "substance_ids": ["2_0_sub_001"],
+         "description": "27℃、大気圧1.013×10^5 Paで捕集した水素の分圧は、大気圧から27℃の水蒸気圧(3.6×10^3 Pa)を引いた値となる。",
+         "values": [
+           { "value": 1.013e5, "unit": "Pa", "condition": "大気圧(全圧)" },
+           { "value": 3.6e3, "unit": "Pa", "condition": "水蒸気圧" },
+           { "value": 9.77e4, "unit": "Pa", "condition": "水素の分圧" }
+         ]
+       }
+     ],
+     "counter_examples": [
+       "水面が一致していない場合、水柱の圧力分を大気圧から加算・減算する必要がある。"
+     ],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "捕集容器（メスシリンダー等）の内側と外側の水面を一致させる。",
+         "reason": "容器内の全圧を外部の大気圧と等しくするため。"
+       },
+       {
+         "step": 2,
+         "action": "全圧(大気圧)からその温度での飽和水蒸気圧を引く。",
+         "reason": "目的の気体のみの分圧を求めるため。"
+       },
+       {
+         "step": 3,
+         "action": "求めた分圧を用いて、状態方程式などで物質量を計算する。",
+         "reason": "正しい圧力を用いることで正確な物質量を導出するため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "水上置換で集めた気体の体積から、その気体の物質量や乾燥状態での体積を求める問題",
+         "key_concept_ids": ["2_3_proc_001", "2_2_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 150
+   },
+   {
+     "id": "2_4_def_001",
+     "type": "def",
+     "title": "理想気体",
+     "prerequisite_ids": ["2_2_law_001"],
+     "definition": "分子自身の体積を0、分子間力を0とみなした、気体の状態方程式(pV=nRT)に厳密に従う仮想的な気体。",
+     "explanation": "現実の気体（実在気体）は分子の粒の大きさがあり、分子同士が引き合う力（分子間力）もあるため、温度を下げたり圧力を上げたりすると状態方程式からズレて液化してしまいます。これを計算しやすく無視したのが理想気体です。",
+     "conditions": [
+       "実在気体を理想気体とみなせるのは、高温・低圧の条件"
+     ],
+     "examples": [
+       {
+         "label": "理想気体に近い実在気体",
+         "substance_ids": ["2_0_sub_001", "2_0_sub_002"],
+         "description": "ヘリウムや水素は分子間力が小さく分子も小さいため、実在気体の中で最も理想気体に近い。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "極性分子（アンモニアなど）や分子量の大きい分子は分子間力が大きいため、理想気体からのズレが著しい。"
+     ],
+     "mnemonics": [
+       "実在気体を理想に近づけるには「高温・低圧」"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "複数の実在気体の中でどれが最も理想気体に近いか、または理想気体に近づけるための温度・圧力条件を問う問題",
+         "key_concept_ids": ["2_4_def_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 151
+   },
+   {
+     "id": "2_4_eq_001",
+     "type": "eq",
+     "title": "理想気体からのずれ (圧縮率因子 Z)",
+     "prerequisite_ids": ["2_4_def_001"],
+     "definition": "実在気体の状態方程式に対する一致度合いを示す指標。Z = pV/nRT で表され、理想気体では常にZ=1となる。",
+     "explanation": "実在気体の場合、分子間力が影響するとZは1より小さく（グラフが下に凹む）なり、分子の大きさが影響する高圧条件ではZは1より大きく（グラフが右上がり）なります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "圧力とZの関係",
+         "substance_ids": ["2_0_sub_004"],
+         "description": "二酸化炭素は常温付近で圧力を少し上げると分子間力の影響でZが大きく1を割り込むが、さらに超高圧にすると分子自身の体積の影響で1を超えていく。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "pV/nRTのグラフ（Z-Pグラフ）を見て、気体の種類を判別したり、ズレの原因（分子間力か体積か）を説明する問題",
+         "key_concept_ids": ["2_4_eq_001", "2_4_def_001"]
+       }
+     ],
+     "cross_refs": ["TBD:ファンデルワールスの状態方程式_p154"],
+     "source_page": 153
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "2_1_law_001",
+     "to_id": "2_1_law_003",
+     "relation_type": "is_prerequisite_of",
+     "note": "ボイルの法則はボイル・シャルルの法則の構成要素"
+   },
+   {
+     "from_id": "2_1_law_002",
+     "to_id": "2_1_law_003",
+     "relation_type": "is_prerequisite_of",
+     "note": "シャルルの法則はボイル・シャルルの法則の構成要素"
+   },
+   {
+     "from_id": "2_1_law_003",
+     "to_id": "2_2_law_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "ボイル・シャルルの法則にアボガドロの法則を組み合わせることで状態方程式が導出される"
+   },
+   {
+     "from_id": "2_2_law_001",
+     "to_id": "2_2_eq_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "状態方程式を変形して分子量算出式を得る"
+   },
+   {
+     "from_id": "2_2_eq_001",
+     "to_id": "2_2_proc_001",
+     "relation_type": "is_applied_in",
+     "note": "デュマ法の計算根拠となる式"
+   },
+   {
+     "from_id": "2_3_law_001",
+     "to_id": "2_3_proc_001",
+     "relation_type": "is_applied_in",
+     "note": "水上置換法における全圧と水蒸気圧・気体の分圧の関係は分圧の法則に基づく"
+   },
+   {
+     "from_id": "2_4_def_001",
+     "to_id": "2_4_eq_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "理想気体の定義を理解して初めて、実在気体とのズレ(Z)を評価できる"
+   }
+ ]
+}

@@ -1,0 +1,426 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 1,
+   "chapter_title": "化学反応とエネルギー",
+   "section": 1,
+   "section_title": "化学反応と熱・光",
+   "page_range": [194, 211],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "1_1_sub_001",
+     "name": "炭素(黒鉛)",
+     "formula": "C",
+     "aliases": ["黒鉛", "グラファイト"],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "黒",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "導電性あり",
+       "other": []
+     },
+     "cross_refs": ["TBD:同素体"],
+     "notes": "生成エンタルピーの基準(0 kJ/mol)となる。"
+   },
+   {
+     "id": "1_1_sub_002",
+     "name": "水",
+     "formula": "H2O",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": 0, "unit": "℃", "condition": "1.013×10^5 Pa" },
+       "boiling_point": { "value": 100, "unit": "℃", "condition": "1.013×10^5 Pa" },
+       "color": "無色",
+       "odor": "無臭",
+       "density": { "value": 1.0, "unit": "g/cm³", "condition": "液体" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": [
+         "比熱は4.2 J/(g・K)"
+       ]
+     },
+     "cross_refs": [],
+     "notes": "蒸発エンタルピーは25℃で44 kJ/mol、100℃で41 kJ/mol。"
+   },
+   {
+     "id": "1_1_sub_003",
+     "name": "水酸化ナトリウム",
+     "formula": "NaOH",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "白",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水によく溶ける",
+       "electrical_conductivity": "水溶液は導電性あり",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": "水への溶解エンタルピーは-44.5 kJ/mol (25℃)。"
+   },
+   {
+     "id": "1_2_sub_001",
+     "name": "酸化チタン(IV)",
+     "formula": "TiO2",
+     "aliases": ["酸化チタン"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "白",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["超親水性"]
+     },
+     "cross_refs": ["1_2_def_004"],
+     "notes": "強力な光触媒として働く。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "1_1_def_001",
+     "type": "def",
+     "title": "系と外界",
+     "prerequisite_ids": [],
+     "definition": "注目すべき化学反応などが起きている観察対象となる部分を系といい、それ以外の部分を外界という。",
+     "explanation": "化学反応に伴うエネルギーの出入りを考えるとき、反応している物質そのものを「系」、それを囲む容器や空気などを「外界」と呼び分けて考えます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "フラスコ内の反応",
+         "substance_ids": [],
+         "description": "フラスコ内の水溶液で起きる反応において、水溶液が「系」であり、フラスコや周囲の空気が「外界」となる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 194
+   },
+   {
+     "id": "1_1_def_002",
+     "type": "def",
+     "title": "発熱反応と吸熱反応",
+     "prerequisite_ids": ["1_1_def_001"],
+     "definition": "系がもっていたエネルギーを熱として外界に放出する化学反応を発熱反応といい、外界の熱を吸収する化学反応を吸熱反応という。",
+     "explanation": "発熱反応が起きると外界に熱が放出されるため周囲は熱くなります。逆に吸熱反応が起きると外界から熱を奪うため周囲は冷たくなります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "発熱反応の例",
+         "substance_ids": ["1_1_sub_001"],
+         "description": "炭素(黒鉛)の完全燃焼。394kJの熱量を外界に放出する。",
+         "values": [
+           { "value": 394, "unit": "kJ/mol", "condition": "完全燃焼時" }
+         ]
+       },
+       {
+         "label": "吸熱反応の例",
+         "substance_ids": [],
+         "description": "窒素と酸素から一酸化窒素が生成する反応。180kJの熱量を外界から吸収する。",
+         "values": [
+           { "value": 180, "unit": "kJ", "condition": "NO 2mol生成時" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 194
+   },
+   {
+     "id": "1_1_def_003",
+     "type": "def",
+     "title": "反応エンタルピー (ΔH)",
+     "prerequisite_ids": ["1_1_def_002"],
+     "definition": "大気圧など一定圧力のもとで、化学反応に伴って放出・吸収する熱量のこと。生成物がもつエンタルピーと反応物がもつエンタルピーの差で表される。",
+     "explanation": "物質がもつエネルギーの目安（エンタルピー）の変化量です。発熱反応ではエネルギーを放出するので変化量（ΔH）はマイナスに、吸熱反応では吸収するのでプラスになります。",
+     "conditions": [
+       "一定圧力（大気圧など）のもと"
+     ],
+     "examples": [],
+     "counter_examples": [
+       "発熱反応だからといってΔHがプラスになるわけではない。系からエネルギーが減るためΔHは負となる。"
+     ],
+     "mnemonics": [
+       "発熱はマイナス（熱を出すから減る）、吸熱はプラス（熱を吸うから増える）"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "反応エンタルピーの符号と発熱・吸熱の判別",
+         "key_concept_ids": ["1_1_def_002", "1_1_def_003"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 195
+   },
+   {
+     "id": "1_1_proc_001",
+     "type": "proc",
+     "title": "エンタルピー変化を付した反応式の書き方",
+     "prerequisite_ids": ["1_1_def_003"],
+     "definition": "化学反応式に物質の状態を明記し、右辺の最後にエンタルピー変化(ΔH)を付記する表記法。",
+     "explanation": "着目する物質1molを基準にするため、係数に分数が含まれてもかまいません。また、状態（気、液、固）によってエネルギーが異なるため、必ず状態を記載します。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "水の生成反応",
+         "substance_ids": ["1_1_sub_002"],
+         "description": "水素と酸素から液体の水1molが生成する式",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "化学反応式を書く。",
+         "reason": "反応物と生成物の関係を明確にするため。"
+       },
+       {
+         "step": 2,
+         "action": "着目する物質の係数を1にし、他の係数を調整する。",
+         "reason": "反応エンタルピーは通常、特定の物質1molあたりで定義されるため。"
+       },
+       {
+         "step": 3,
+         "action": "物質の化学式の後に状態（気、液、固、aq）を付記し、右端にΔH = ○○ kJ を書く。",
+         "reason": "物質の状態によってエンタルピーが異なるため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "文章で与えられた反応からエンタルピー変化を付した反応式を作成する",
+         "key_concept_ids": ["1_1_proc_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 196
+   },
+   {
+     "id": "1_1_law_001",
+     "type": "law",
+     "title": "ヘスの法則（総熱量保存の法則）",
+     "prerequisite_ids": ["1_1_def_003", "1_1_proc_001"],
+     "definition": "物質が変化するときの反応エンタルピーの総和は、変化の前後の物質の種類と状態だけで決まり、変化の経路や方法には関係しない。",
+     "explanation": "山登りに例えると、一気に頂上まで登っても、途中で休憩しながら登っても、最終的に登った高さ（エネルギーの差）は同じになるという法則です。これを使うと、直接実験で測れない反応の熱も計算で求められます。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "複数の反応式から目的の反応のエンタルピー変化を計算する",
+         "key_concept_ids": ["1_1_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 201
+   },
+   {
+     "id": "1_1_eq_001",
+     "type": "eq",
+     "title": "生成エンタルピーと反応エンタルピーの関係",
+     "prerequisite_ids": ["1_1_law_001"],
+     "definition": "反応エンタルピー = (生成物の生成エンタルピーの総和) - (反応物の生成エンタルピーの総和)",
+     "explanation": "各物質の生成エンタルピーが分かっていれば、この公式に代入するだけでどんな反応の反応エンタルピーも計算できます。単体の生成エンタルピーは0と考える点に注意が必要です。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [
+       "エンタルピー変化は『生成物引く反応物（後引く前）』"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "各物質の生成エンタルピーから特定の反応の反応エンタルピーを求める",
+         "key_concept_ids": ["1_1_eq_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 202
+   },
+   {
+     "id": "1_1_def_004",
+     "type": "def",
+     "title": "結合エネルギー",
+     "prerequisite_ids": ["1_1_def_003"],
+     "definition": "気体分子中の2個の原子の間の共有結合1molを切断するのに要するエネルギー。",
+     "explanation": "原子同士をつなぐ「接着剤」を剥がすために必要なエネルギーです。結合を切るにはエネルギーを加える（吸熱）必要があるため、結合エネルギーの値は常に正になります。",
+     "conditions": [
+       "気体状態であること"
+     ],
+     "examples": [
+       {
+         "label": "水素分子の結合エネルギー",
+         "substance_ids": [],
+         "description": "H-H結合1molを切断するために436kJのエネルギーが必要。",
+         "values": [
+           { "value": 436, "unit": "kJ/mol", "condition": "25℃" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 204
+   },
+   {
+     "id": "1_1_eq_002",
+     "type": "eq",
+     "title": "結合エネルギーと反応エンタルピーの関係",
+     "prerequisite_ids": ["1_1_def_004", "1_1_law_001"],
+     "definition": "反応エンタルピー = (反応物の結合エネルギーの総和) - (生成物の結合エネルギーの総和)",
+     "explanation": "反応が起きるときは「反応物の結合を切る（吸熱）」→「生成物の結合を作る（発熱）」という過程を経ると考えます。生成エンタルピーの公式（生成物 - 反応物）と逆の引き算になるので注意してください。",
+     "conditions": [
+       "反応に関与する物質がすべて気体であること（液体が含まれる場合は蒸発エンタルピーの補正が必要）"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [
+       "結合エネルギーの計算は『反応物引く生成物（前引く後）』"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "結合エネルギー表を用いて気体反応の反応エンタルピーを求める",
+         "key_concept_ids": ["1_1_eq_002"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 205
+   },
+   {
+     "id": "1_2_def_001",
+     "type": "def",
+     "title": "光化学反応",
+     "prerequisite_ids": [],
+     "definition": "物質が光の吸収によって開始される化学反応。",
+     "explanation": "熱ではなく、光のエネルギーをもらって始まる反応です。一般的に、目に見える光（可視光線）よりも、エネルギーの高い紫外線の方が反応を起こしやすいです。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "水素と塩素の反応",
+         "substance_ids": [],
+         "description": "水素と塩素の混合気体に強い光を当てると、連鎖反応が起きて爆発的に塩化水素が生成する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["1_2_def_002"],
+     "source_page": 207
+   },
+   {
+     "id": "1_2_def_002",
+     "type": "def",
+     "title": "連鎖反応",
+     "prerequisite_ids": ["1_2_def_001"],
+     "definition": "反応によって生じた活性な粒子（ラジカルなど）が次の反応を引き起こし、それが連続的に繰り返される反応。",
+     "explanation": "ドミノ倒しのように、一度反応が始まると次々と連鎖して反応が進む現象です。水素と塩素の反応では、光で生じた塩素原子が引き金となります。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["TBD:メタンの塩素化"],
+     "source_page": 207
+   },
+   {
+     "id": "1_2_def_003",
+     "type": "def",
+     "title": "化学発光（化学ルミネセンス）",
+     "prerequisite_ids": [],
+     "definition": "化学反応に伴って、熱エネルギーを放出する代わりに、そのエネルギーを光の形で放出する現象。",
+     "explanation": "反応で生じたエネルギーを熱ではなく光として出す現象です。ホタルの光や、コンサートで使うケミカルライト（サイリウム）、血痕捜査のルミノール反応などがこれにあたります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "ルミノール反応",
+         "substance_ids": [],
+         "description": "塩基性溶液中でルミノールを過酸化水素で酸化すると、青白い光を発する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 208
+   },
+   {
+     "id": "1_2_def_004",
+     "type": "def",
+     "title": "光触媒",
+     "prerequisite_ids": [],
+     "definition": "光が当たることによって、その物質自身は変化せずに化学反応を促進する働きを示す物質。",
+     "explanation": "光を浴びると強力な酸化力を発揮し、汚れや細菌を分解する物質です。酸化チタンが有名で、建物の外壁や鏡の曇り止めなどに使われています。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "酸化チタン(IV)",
+         "substance_ids": ["1_2_sub_001"],
+         "description": "表面に紫外線が当たると強い酸化力を持ち、有機物を分解したり超親水性を示したりする。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["TBD:触媒"],
+     "source_page": 209
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "1_1_law_001",
+     "to_id": "1_1_eq_001",
+     "relation_type": "is_applied_in",
+     "note": "ヘスの法則を応用して生成エンタルピーから反応エンタルピーを導出する"
+   },
+   {
+     "from_id": "1_1_def_004",
+     "to_id": "1_1_eq_002",
+     "relation_type": "is_applied_in",
+     "note": "結合エネルギーの値を用いて反応エンタルピーを計算する"
+   },
+   {
+     "from_id": "1_2_sub_001",
+     "to_id": "1_2_def_004",
+     "relation_type": "is_example_of",
+     "note": "酸化チタンは代表的な光触媒である"
+   }
+ ]
+}

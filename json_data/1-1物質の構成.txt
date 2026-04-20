@@ -1,0 +1,621 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学基礎",
+   "chapter": 1,
+   "chapter_title": "物質の構成",
+   "section": 1,
+   "section_title": "純物質と混合物",
+   "page_range": [20, 39],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "1_1_sub_001",
+     "name": "水",
+     "formula": "H2O",
+     "aliases": ["純水"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": 0, "unit": "℃", "condition": "大気圧" },
+       "boiling_point": { "value": 100, "unit": "℃", "condition": "大気圧" },
+       "color": "無",
+       "odor": "無",
+       "density": { "value": 1.00, "unit": "g/cm³", "condition": "4℃" },
+       "solubility": "",
+       "electrical_conductivity": "無",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": ""
+   },
+   {
+     "id": "1_1_sub_002",
+     "name": "塩化ナトリウム",
+     "formula": "NaCl",
+     "aliases": ["食塩"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": 801, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": 1413, "unit": "℃", "condition": "" },
+       "color": "無",
+       "odor": "無",
+       "density": { "value": 2.16, "unit": "g/cm³", "condition": "0℃" },
+       "solubility": "水に溶けやすい",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": ""
+   },
+   {
+     "id": "1_1_sub_003",
+     "name": "エタノール",
+     "formula": "C2H6O",
+     "aliases": ["アルコール"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": -115, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": 78, "unit": "℃", "condition": "" },
+       "color": "無",
+       "odor": "特有のにおい",
+       "density": { "value": 0.79, "unit": "g/cm³", "condition": "25℃" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": ""
+   },
+   {
+     "id": "1_1_sub_004",
+     "name": "空気",
+     "formula": "",
+     "aliases": [],
+     "type": "混合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "無",
+       "odor": "無",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["窒素、酸素その他の物質が混じり合ってできている"]
+     },
+     "cross_refs": [],
+     "notes": "均一混合物の代表例"
+   },
+   {
+     "id": "1_2_sub_001",
+     "name": "斜方硫黄",
+     "formula": "S8",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "黄",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["常温で最も安定"]
+     },
+     "cross_refs": ["1_2_def_003", "1_2_sub_002", "1_2_sub_003"],
+     "notes": "硫黄の同素体"
+   },
+   {
+     "id": "1_2_sub_002",
+     "name": "単斜硫黄",
+     "formula": "S8",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "黄",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["斜方硫黄を約120℃に加熱し冷却すると生成", "常温放置で斜方硫黄に戻る"]
+     },
+     "cross_refs": ["1_2_def_003", "1_2_sub_001"],
+     "notes": "硫黄の同素体"
+   },
+   {
+     "id": "1_2_sub_003",
+     "name": "ゴム状硫黄",
+     "formula": "Sx",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "黒褐色（純度が高ければ黄）",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["斜方硫黄を約250℃に加熱後、水中に注ぐと生成", "ゴムに似た弾性をもつ"]
+     },
+     "cross_refs": ["1_2_def_003", "1_2_sub_001"],
+     "notes": "硫黄の同素体"
+   },
+   {
+     "id": "1_2_sub_004",
+     "name": "酸素",
+     "formula": "O2",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": -218, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": -183, "unit": "℃", "condition": "" },
+       "color": "無",
+       "odor": "無",
+       "density": { "value": 1.43e-3, "unit": "g/cm³", "condition": "0℃, 1.01×10^5Pa" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["空気中に約20%存在"]
+     },
+     "cross_refs": ["1_2_def_003", "1_2_sub_005"],
+     "notes": "酸素の同素体"
+   },
+   {
+     "id": "1_2_sub_005",
+     "name": "オゾン",
+     "formula": "O3",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "淡青",
+       "odor": "独特のにおい",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["反応しやすく有毒"]
+     },
+     "cross_refs": ["1_2_def_003", "1_2_sub_004"],
+     "notes": "酸素の同素体"
+   },
+   {
+     "id": "1_2_sub_006",
+     "name": "ダイヤモンド",
+     "formula": "C",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "無色透明",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "通さない",
+       "other": ["全物質中で最も硬い", "立体的な網目状構造"]
+     },
+     "cross_refs": ["1_2_def_003", "TBD:共有結合の結晶"],
+     "notes": "炭素の同素体"
+   },
+   {
+     "id": "1_2_sub_007",
+     "name": "黒鉛",
+     "formula": "C",
+     "aliases": ["グラファイト"],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "黒色不透明",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "通す",
+       "other": ["軟らかく薄くはがれやすい", "層状構造"]
+     },
+     "cross_refs": ["1_2_def_003", "TBD:共有結合の結晶"],
+     "notes": "炭素の同素体"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "1_1_def_001",
+     "type": "def",
+     "title": "混合物",
+     "prerequisite_ids": [],
+     "definition": "2種類以上の物質が混じり合ったもの。",
+     "explanation": "空気や海水のように、複数の異なる物質（純物質）が合わさってできている物質のことです。混合割合によって融点や沸点が変わります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "空気",
+         "substance_ids": ["1_1_sub_004"],
+         "description": "窒素、酸素、アルゴンなどが混じり合っている。",
+         "values": []
+       },
+       {
+         "label": "海水",
+         "substance_ids": ["1_1_sub_001", "1_1_sub_002"],
+         "description": "水に塩化ナトリウムや塩化マグネシウムが溶けている。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられた物質群の中から混合物を選ぶ問題",
+         "key_concept_ids": ["1_1_def_001", "1_1_def_002"]
+       }
+     ],
+     "cross_refs": ["1_1_def_002"],
+     "source_page": 20
+   },
+   {
+     "id": "1_1_def_002",
+     "type": "def",
+     "title": "純物質",
+     "prerequisite_ids": [],
+     "definition": "物理的な方法ではそれ以上分けることができない、単一の物質で構成されているもの。",
+     "explanation": "水や酸素など、1つの物質だけでできているものです。融点や沸点、密度などが常に一定の決まった値を示します。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "純物質の例",
+         "substance_ids": ["1_1_sub_001", "1_1_sub_002", "1_1_sub_003", "1_2_sub_004"],
+         "description": "水、塩化ナトリウム、エタノール、酸素など。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       {
+         "label": "食塩水（混合物）",
+         "description": "一見均一に見えるが、水と塩化ナトリウムに物理的な方法（蒸留など）で分離できるため純物質ではない。"
+       }
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "温度変化のグラフから純物質と混合物を判別する問題",
+         "key_concept_ids": ["1_1_def_002"]
+       }
+     ],
+     "cross_refs": ["1_1_def_001", "1_2_def_001", "1_2_def_002"],
+     "source_page": 20
+   },
+   {
+     "id": "1_1_proc_001",
+     "type": "proc",
+     "title": "ろ過",
+     "prerequisite_ids": ["1_1_def_001"],
+     "definition": "液体と、それに不溶な固体が混じった混合物を、ろ紙などを用いて液体と固体に分ける操作。",
+     "explanation": "砂の混じった食塩水から砂を取り除くときのように、水に溶けない固体をろ紙の穴の大きさの違いを利用して分離します。ろ紙を通過した液体をろ液と呼びます。",
+     "conditions": ["液体とそれに不溶な固体の混合物であること"],
+     "examples": [
+       {
+         "label": "砂と塩化ナトリウムの分離",
+         "substance_ids": ["1_1_sub_001", "1_1_sub_002"],
+         "description": "混合物に水を加え塩化ナトリウムを溶かした後、ろ過して砂をろ紙上に残し、塩化ナトリウム水溶液をろ液として得る。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       { "step": 1, "action": "ろ紙を4分の1に折り、円錐状に開いて漏斗の中に入れる", "reason": "漏斗にフィットさせるため" },
+       { "step": 2, "action": "ろ紙を水で湿らせ、漏斗に密着させる", "reason": "隙間から液体が漏れないようにするため" },
+       { "step": 3, "action": "漏斗の先端はビーカーの内側に密着させる", "reason": "ろ液が飛び散るのを防ぎ、速やかに流し落とすため" },
+       { "step": 4, "action": "ガラス棒の先をろ紙につけ、伝わらせて液体を入れる", "reason": "液体が飛び散るのを防ぐため" }
+     ],
+     "related_problems": [
+       {
+         "pattern": "ろ過の正しい操作方法や器具の配置を図から選ばせる、あるいは誤りを指摘させる問題",
+         "key_concept_ids": ["1_1_proc_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 21
+   },
+   {
+     "id": "1_1_proc_002",
+     "type": "proc",
+     "title": "蒸留",
+     "prerequisite_ids": ["1_1_def_001"],
+     "definition": "溶液を加熱して目的の液体を蒸発させ、その気体を冷却して再び液体として分離・精製する操作。",
+     "explanation": "食塩水から純粋な水を取り出すときのように、沸点の差を利用して、蒸発しやすい物質（揮発性の高い物質）を分離する方法です。",
+     "conditions": ["沸点の異なる物質の混合物であること"],
+     "examples": [
+       {
+         "label": "塩化ナトリウム水溶液の蒸留",
+         "substance_ids": ["1_1_sub_001", "1_1_sub_002"],
+         "description": "塩化ナトリウム水溶液を加熱し、水のみを蒸発・冷却させて純粋な水を得る。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       { "step": 1, "action": "フラスコ内の液量を半分以下にする", "reason": "突発的な沸騰（突沸）により溶液が冷却器に流れ込むのを防ぐため" },
+       { "step": 2, "action": "沸騰石を入れる", "reason": "突発的な沸騰（突沸）を防ぐため" },
+       { "step": 3, "action": "温度計の球部を枝付きフラスコの枝の管の付け根付近にする", "reason": "冷却器へ進む気体の温度（留出温度）を測るため" },
+       { "step": 4, "action": "冷却水をリービッヒ冷却器の下から上に向かって流す", "reason": "冷却器の中に空気が残らず水が満たされ、冷却効率を良くするため" },
+       { "step": 5, "action": "アダプターの先と受け器は密栓しない", "reason": "密栓すると装置内の圧力が上昇し、破裂する危険があるため" }
+     ],
+     "related_problems": [
+       {
+         "pattern": "蒸留装置の図示問題で、注意点（温度計の位置、冷却水の向き、沸騰石、密栓しないこと）の理由を記述させる問題",
+         "key_concept_ids": ["1_1_proc_002"]
+       }
+     ],
+     "cross_refs": ["1_1_proc_003"],
+     "source_page": 22
+   },
+   {
+     "id": "1_2_def_001",
+     "type": "def",
+     "title": "化合物",
+     "prerequisite_ids": ["1_1_def_002"],
+     "definition": "2種類以上の元素からできている純物質。",
+     "explanation": "水（H2O）や二酸化炭素（CO2）のように、複数の異なる元素が結びついてできた物質のことです。化学的な方法で単体に分解することができます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "化合物の例",
+         "substance_ids": ["1_1_sub_001", "1_1_sub_002"],
+         "description": "水（水素と酸素からなる）、塩化ナトリウム（ナトリウムと塩素からなる）。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       {
+         "label": "混合物との混同",
+         "description": "化合物は純物質であり、構成元素の割合は常に一定。混合物（食塩水など）とは異なる。"
+       }
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "物質名や化学式から単体・化合物・混合物を分類する問題",
+         "key_concept_ids": ["1_2_def_001", "1_2_def_002", "1_1_def_001"]
+       }
+     ],
+     "cross_refs": ["1_1_def_002", "1_2_def_002"],
+     "source_page": 28
+   },
+   {
+     "id": "1_2_def_002",
+     "type": "def",
+     "title": "単体",
+     "prerequisite_ids": ["1_1_def_002"],
+     "definition": "1種類の元素だけからできている純物質。",
+     "explanation": "酸素（O2）や鉄（Fe）のように、一種類の元素記号だけで表される物質です。これ以上、別の物質に分解することはできません。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "単体の例",
+         "substance_ids": ["1_2_sub_004", "1_2_sub_006"],
+         "description": "水素、酸素、窒素、鉄、銅、硫黄など。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "文章中の用語が「元素」を表しているか「単体」を表しているか（実在する物質か、成分としての種類か）を判別する問題",
+         "key_concept_ids": ["1_2_def_002", "TBD:元素と単体の違い"]
+       }
+     ],
+     "cross_refs": ["1_2_def_001", "1_2_def_003"],
+     "source_page": 28
+   },
+   {
+     "id": "1_2_def_003",
+     "type": "def",
+     "title": "同素体",
+     "prerequisite_ids": ["1_2_def_002"],
+     "definition": "同じ元素の単体であるが、結合している原子の数や配列が異なるため、性質が異なる物質群。",
+     "explanation": "例えば同じ「炭素(C)」からできていても、キラキラ硬いダイヤモンドと、黒くて柔らかい黒鉛（えんぴつの芯）は全く違う性質を持ちます。これらを互いに同素体と呼びます。",
+     "conditions": ["同じ元素からなる単体であること", "原子の配列や結合数が異なること"],
+     "examples": [
+       {
+         "label": "硫黄の同素体",
+         "substance_ids": ["1_2_sub_001", "1_2_sub_002", "1_2_sub_003"],
+         "description": "斜方硫黄、単斜硫黄、ゴム状硫黄",
+         "values": []
+       },
+       {
+         "label": "酸素の同素体",
+         "substance_ids": ["1_2_sub_004", "1_2_sub_005"],
+         "description": "酸素(O2)、オゾン(O3)",
+         "values": []
+       },
+       {
+         "label": "炭素の同素体",
+         "substance_ids": ["1_2_sub_006", "1_2_sub_007"],
+         "description": "ダイヤモンド、黒鉛、フラーレン、カーボンナノチューブ",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       {
+         "label": "同位体との混同",
+         "description": "同位体は「原子」の種類（中性子数の違い）であり、同素体は「単体（物質）」の種類である。"
+       }
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "物質群の中から同素体の組み合わせを選ばせる問題",
+         "key_concept_ids": ["1_2_def_003"]
+       }
+     ],
+     "cross_refs": ["1_2_tip_001", "TBD:同位体"],
+     "source_page": 28
+   },
+   {
+     "id": "1_2_tip_001",
+     "type": "tip",
+     "title": "同素体をもつ代表的元素の覚え方",
+     "prerequisite_ids": ["1_2_def_003"],
+     "definition": "同素体をもつ元素(S, C, O, P)の頭文字をつなげた語呂合わせ。",
+     "explanation": "代表的な同素体をもつ元素は「硫黄(S)」「炭素(C)」「酸素(O)」「リン(P)」です。「スコップ」と覚えましょう。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": ["同素体はSCOP(スコップ)で掘れ"],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["1_2_def_003"],
+     "source_page": 28
+   },
+   {
+     "id": "1_2_proc_001",
+     "type": "proc",
+     "title": "炎色反応",
+     "prerequisite_ids": [],
+     "definition": "特定の元素（アルカリ金属やアルカリ土類金属など）を含む化合物や水溶液を無色の高温の炎に入れると、元素特有の色がつく現象。",
+     "explanation": "物質に含まれる金属元素の種類を調べるための実験です。例えば、ナトリウムが含まれていると炎が黄色になります。花火の色もこの現象を利用しています。",
+     "conditions": ["特定の金属元素（Li, Na, K, Cu, Ca, Sr, Baなど）が含まれていること"],
+     "examples": [
+       {
+         "label": "ナトリウムの炎色",
+         "substance_ids": ["1_1_sub_002"],
+         "description": "塩化ナトリウム水溶液を白金線につけて炎に入れると黄色になる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       { "step": 1, "action": "白金線の先を濃塩酸に浸し、バーナーの外炎に入れて無色になることを確認する", "reason": "白金線についた不純物を塩化物にして揮発させ、取り除くため" },
+       { "step": 2, "action": "試料の水溶液を白金線の先に付け、外炎に入れる", "reason": "外炎の方が温度が高く、色が観察しやすいため" },
+       { "step": 3, "action": "炎の色を観察し、元素を特定する", "reason": "" }
+     ],
+     "related_problems": [
+       {
+         "pattern": "炎の色から含まれる元素を推定する問題",
+         "key_concept_ids": ["1_2_proc_001", "1_2_tip_002"]
+       }
+     ],
+     "cross_refs": ["1_2_tip_002"],
+     "source_page": 31
+   },
+   {
+     "id": "1_2_tip_002",
+     "type": "tip",
+     "title": "炎色反応の色の覚え方",
+     "prerequisite_ids": ["1_2_proc_001"],
+     "definition": "炎色反応を示す主要元素とその色の語呂合わせ。",
+     "explanation": "Li(赤), Na(黄), K(赤紫), Cu(青緑), Ca(橙赤), Sr(紅), Ba(黄緑) を覚えるための有名な語呂合わせです。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": ["リアカー(Li:赤) なき(Na:黄) K村(K:赤紫)、どうせ(Cu:青緑) 借るとう(Ca:橙赤) するもくれない(Sr:紅)、馬力(Ba:黄緑)"],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["1_2_proc_001"],
+     "source_page": 31
+   },
+   {
+     "id": "1_3_law_001",
+     "type": "law",
+     "title": "質量保存の法則",
+     "prerequisite_ids": [],
+     "definition": "物質が化学変化するとき、反応前の物質の質量の和と、反応後の物質の質量の和は等しい。",
+     "explanation": "化学変化が起きても、物質が突然消えたり、何もないところから生まれたりすることはありません。反応の前後で全体の重さは変わらないという法則で、ラボアジエが発見しました。",
+     "conditions": ["密閉容器内など、気体の出入りも含めて全ての物質の質量を測定できる環境であること"],
+     "examples": [
+       {
+         "label": "炭素の燃焼",
+         "substance_ids": ["1_2_sub_004"],
+         "description": "炭素 3.0g を燃焼させると、酸素 8.0g と反応して、二酸化炭素 11g が生成する。(3.0 + 8.0 = 11)",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "法則名と発見者の組み合わせを選ばせる問題",
+         "key_concept_ids": ["1_3_law_001"]
+       }
+     ],
+     "cross_refs": ["1_3_def_001"],
+     "source_page": 34
+   },
+   {
+     "id": "1_3_def_002",
+     "type": "def",
+     "title": "アボガドロの分子説 (アボガドロの法則)",
+     "prerequisite_ids": ["1_3_def_001", "1_3_law_004"],
+     "definition": "気体はいくつかの原子が結合した「分子」からできており、同温・同圧・同体積の気体中には、気体の種類によらず同数の分子が含まれる。",
+     "explanation": "ドルトンの原子説とゲーリュサックの気体反応の法則の矛盾を解決するために提案されました。気体の体積は、そこに含まれる分子の数に比例するという重要な法則（アボガドロの法則）を含みます。",
+     "conditions": ["同温・同圧の条件であること"],
+     "examples": [
+       {
+         "label": "窒素と酸素の反応",
+         "substance_ids": ["1_2_sub_004"],
+         "description": "窒素1体積(N2分子1個)と酸素1体積(O2分子1個)が反応すると、一酸化窒素2体積(NO分子2個)ができる。原子が分割される矛盾なく説明可能。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "各法則の説明文から法則名を答えさせる問題",
+         "key_concept_ids": ["1_3_def_002", "1_3_law_001", "1_3_law_002", "1_3_law_003", "1_3_law_004"]
+       }
+     ],
+     "cross_refs": ["1_3_law_004"],
+     "source_page": 37
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "1_1_def_002",
+     "to_id": "1_1_def_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "混合物は純物質の集まりとして定義されるため。"
+   },
+   {
+     "from_id": "1_2_def_003",
+     "to_id": "1_2_sub_001",
+     "relation_type": "is_example_of",
+     "note": "斜方硫黄は同素体の具体例。"
+   },
+   {
+     "from_id": "1_2_proc_001",
+     "to_id": "1_1_sub_002",
+     "relation_type": "is_applied_in",
+     "note": "炎色反応でナトリウムの検出例として使用される。"
+   },
+   {
+     "from_id": "1_3_def_001",
+     "to_id": "1_3_law_004",
+     "relation_type": "contradicts",
+     "note": "ドルトンの原子説（気体は単原子）はゲーリュサックの気体反応の法則と矛盾した（分子の概念がなかったため）。"
+   },
+   {
+     "from_id": "1_3_def_002",
+     "to_id": "1_3_def_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "分子説は原子説の矛盾を解消するために考案された。"
+   }
+ ]
+}

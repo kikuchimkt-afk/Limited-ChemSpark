@@ -1,0 +1,430 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 1,
+   "chapter_title": "有機化合物の分類と分析",
+   "section": 1,
+   "section_title": "有機化合物の特徴と分類・有機化合物の分析",
+   "page_range": [410, 417],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "1_1_sub_001",
+     "name": "尿素",
+     "formula": "$(NH_{2})_{2}CO$",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["ヒトの尿中に含まれる", "ウェーラーによって初めて人工的に合成された有機化合物"]
+     },
+     "cross_refs": ["1_1_sub_002"],
+     "notes": "無機化合物であるシアン酸アンモニウムから合成された"
+   },
+   {
+     "id": "1_1_sub_002",
+     "name": "シアン酸アンモニウム",
+     "formula": "$NH_{4}OCN$",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "可溶性",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["1_1_sub_001"],
+     "notes": "この水溶液を濃縮することで尿素が得られる"
+   },
+   {
+     "id": "1_1_sub_003",
+     "name": "メタン",
+     "formula": "$CH_{4}$",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["天然ガスの主成分", "アルカンの代表例"]
+     },
+     "cross_refs": ["1_1_def_004"],
+     "notes": ""
+   },
+   {
+     "id": "1_1_sub_004",
+     "name": "ベンゼン",
+     "formula": "$C_{6}H_{6}$",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["芳香族炭化水素の基本骨格"]
+     },
+     "cross_refs": ["1_1_def_004", "TBD:芳香族化合物"],
+     "notes": "6個の炭素原子が特別な環の構造をしている"
+   },
+   {
+     "id": "1_2_sub_001",
+     "name": "酸化銅(II)",
+     "formula": "$CuO$",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["酸化剤"]
+     },
+     "cross_refs": ["1_2_proc_001"],
+     "notes": "元素分析において、試料を完全燃焼させるための酸化剤として使用される"
+   },
+   {
+     "id": "1_2_sub_002",
+     "name": "ソーダ石灰",
+     "formula": "CaO + NaOH",
+     "aliases": [],
+     "type": "混合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["水分や二酸化炭素の吸収に使う"]
+     },
+     "cross_refs": ["1_2_proc_001", "TBD:気体の乾燥剤"],
+     "notes": "CaOを濃NaOH水溶液で練って熱し、乾燥・粒状にしたもの"
+   },
+   {
+     "id": "1_2_sub_003",
+     "name": "塩化カルシウム",
+     "formula": "$CaCl_{2}$",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["水分の吸収に使う"]
+     },
+     "cross_refs": ["1_2_proc_001"],
+     "notes": "元素分析においてH2Oを吸収する役割を果たす"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "1_1_def_001",
+     "type": "def",
+     "title": "有機化合物と無機化合物",
+     "prerequisite_ids": [],
+     "definition": "炭素原子を骨格とした化合物を有機化合物、それ以外の化合物を無機化合物と区別する。",
+     "explanation": "かつては「生命力によってのみ作られる」と考えられていましたが、現在では主に炭素(C)を骨格とする化合物を有機化合物と呼びます。有機化合物は種類が非常に多く、可燃性で、融点が低く、水に溶けにくい非電解質が多いという特徴があります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "有機化合物の例",
+         "substance_ids": ["1_1_sub_001", "1_1_sub_003", "1_1_sub_004"],
+         "description": "構成元素はCを含み、H, O, N, P, S, ハロゲンなど少数。共有結合が大部分。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "炭素の酸化物(CO, CO2)",
+       "炭酸塩(CaCO3など)・炭酸水素塩(NaHCO3など)",
+       "シアン化物(KCNなど)"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "有機化合物と無機化合物の一般的な性質の違い（水溶性、融点、燃焼性など）の正誤判定問題",
+         "key_concept_ids": ["1_1_def_001"]
+       }
+     ],
+     "cross_refs": ["TBD:無機化合物"],
+     "source_page": 410
+   },
+   {
+     "id": "1_1_def_002",
+     "type": "def",
+     "title": "飽和化合物と不飽和化合物",
+     "prerequisite_ids": ["1_1_def_001"],
+     "definition": "炭素原子どうしの結合がすべて単結合のものを飽和化合物とよび、二重結合や三重結合などの不飽和結合を1つでも含むものを不飽和化合物とよぶ。",
+     "explanation": "炭素原子の手（価標）がすべて他の原子と単結合で結ばれ「満席」になっているのが飽和化合物です。一方、二重結合や三重結合があり、まだ他の原子が結合する余地があるものを不飽和化合物と言います。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "飽和化合物の例",
+         "substance_ids": [],
+         "description": "エタン（単結合のみ）",
+         "values": []
+       },
+       {
+         "label": "不飽和化合物の例",
+         "substance_ids": [],
+         "description": "エチレン（二重結合をもつ）、アセチレン（三重結合をもつ）",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["1_1_def_003"],
+     "source_page": 411
+   },
+   {
+     "id": "1_1_def_003",
+     "type": "def",
+     "title": "炭化水素の分類",
+     "prerequisite_ids": ["1_1_def_002"],
+     "definition": "炭素と水素だけからなる化合物を炭化水素といい、結合の様式によってアルカン、アルケン、アルキンなどに分類される。",
+     "explanation": "すべての有機化合物の骨格となるのが炭化水素です。鎖状か環状か、そして単結合のみ（飽和）か二重・三重結合を含む（不飽和）かによって細かく名前が付けられています。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "アルカン",
+         "substance_ids": ["1_1_sub_003"],
+         "description": "一般式 $C_{n}H_{2n+2}$。単結合のみ。例：メタン、エタン",
+         "values": []
+       },
+       {
+         "label": "アルケン",
+         "substance_ids": [],
+         "description": "一般式 $C_{n}H_{2n}$。二重結合を1個もつ。例：エチレン",
+         "values": []
+       },
+       {
+         "label": "アルキン",
+         "substance_ids": [],
+         "description": "一般式 $C_{n}H_{2n-2}$。三重結合を1個もつ。例：アセチレン",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [
+       "いざ歩かん(アルカン=単結合)、しかし、もう歩けん(アルケン=二重結合)、だから歩きは禁止(アルキン=三重結合)"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "炭化水素の名称から一般式や結合の種類を問う問題",
+         "key_concept_ids": ["1_1_def_003"]
+       }
+     ],
+     "cross_refs": ["TBD:脂肪族炭化水素"],
+     "source_page": 412
+   },
+   {
+     "id": "1_1_def_004",
+     "type": "def",
+     "title": "官能基",
+     "prerequisite_ids": ["1_1_def_001"],
+     "definition": "物質の性質を決定している原子または原子団を官能基という。",
+     "explanation": "炭化水素の水素原子が別の原子やグループ（原子団）に置き換わることで、特有の性質を持つようになります。この「性質を決めるパーツ」を官能基と呼びます。同じ官能基を持つ化合物は、化学的な性質がよく似ています。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "ヒドロキシ基 (-OH)",
+         "substance_ids": [],
+         "description": "アルコール類を構成。水溶液は中性で、単体のナトリウムと反応する。",
+         "values": []
+       },
+       {
+         "label": "カルボキシ基 (-COOH)",
+         "substance_ids": [],
+         "description": "カルボン酸類を構成。酸性を示し、アルコールと反応してエステルをつくる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "示性式から官能基の名称および化合物群の名称を答える問題",
+         "key_concept_ids": ["1_1_def_004"]
+       }
+     ],
+     "cross_refs": ["TBD:アルコール", "TBD:カルボン酸", "TBD:芳香族化合物"],
+     "source_page": 413
+   },
+   {
+     "id": "1_2_proc_001",
+     "type": "proc",
+     "title": "リービッヒの元素分析",
+     "prerequisite_ids": ["1_1_def_001"],
+     "definition": "有機化合物中の主要元素(C, H, O等)の質量または質量百分率を決定し、組成式を求めるための実験操作。",
+     "explanation": "未知の有機化合物がどの元素からどの割合でできているかを調べる実験です。試料を燃やして、発生した水(H2O)と二酸化炭素(CO2)の重さを測ることで、元の試料中の炭素(C)と水素(H)の重さを逆算します。",
+     "conditions": [
+       "試料が完全燃焼すること"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "試料、塩化カルシウム管、ソーダ石灰管の質量を正確にはかり、装置を組み立てる。",
+         "reason": "実験前後の質量の増加分から、吸収されたH2OとCO2の質量を算出するため。"
+       },
+       {
+         "step": 2,
+         "action": "試料に乾いた酸素O2を通じて完全燃焼させる。",
+         "reason": "試料中のHをH2Oに、CをCO2に完全に変換するため。不完全燃焼を防ぐために酸化銅(II)も併用する。"
+       },
+       {
+         "step": 3,
+         "action": "燃焼・冷却後、塩化カルシウム管、ソーダ石灰管の質量をもう一度正確にはかる。",
+         "reason": "塩化カルシウム管でH2Oの増加量を、ソーダ石灰管でCO2の増加量を求めるため。※ソーダ石灰はH2Oも吸収してしまうため、必ず塩化カルシウム管を先につなぐ必要がある。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "元素分析の装置図を見て、吸収管の順番や試薬の名称、吸収される物質を答える問題",
+         "key_concept_ids": ["1_2_proc_001"]
+       }
+     ],
+     "cross_refs": ["1_2_eq_001", "1_2_sub_001", "1_2_sub_002", "1_2_sub_003"],
+     "source_page": 414
+   },
+   {
+     "id": "1_2_eq_001",
+     "type": "eq",
+     "title": "元素分析による組成式の決定",
+     "prerequisite_ids": ["1_2_proc_001"],
+     "definition": "発生したH2OとCO2の質量から、試料中のC, H, Oの質量の比を求め、原子量の比で割ることで原子数の最も簡単な整数比（組成式）を算出する計算手法。",
+     "explanation": "元素分析で得られたCO2とH2Oの重さから、CとHの重さを出します。全体の重さからCとHを引いた残りがOの重さです。それぞれの重さを原子量（C=12, H=1.0, O=16）で割ると、原子の個数の比（組成式）がわかります。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "Cの質量を求める: $CO_{2}$ の質量 × (12 / 44)",
+         "reason": "$CO_{2}$ の分子量44のうち、Cの原子量12の割合を掛けるため。"
+       },
+       {
+         "step": 2,
+         "action": "Hの質量を求める: $H_{2}O$ の質量 × (2.0 / 18)",
+         "reason": "$H_{2}O$ の分子量18のうち、H原子2個分(2.0)の割合を掛けるため。"
+       },
+       {
+         "step": 3,
+         "action": "Oの質量を求める: 試料全体の質量 - (Cの質量 + Hの質量)",
+         "reason": "燃焼に使った外部の酸素と区別するため、引き算で元の試料内のOの質量を出す。"
+       },
+       {
+         "step": 4,
+         "action": "各元素の質量をそれぞれの原子量で割り、モル比（簡単な整数比）を出す: $C/12 : H/1.0 : O/16$",
+         "reason": "質量の比を個数の比に変換し、組成式（実験式）を決定するため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "燃焼で生じたCO2とH2Oの質量、または各成分元素の質量百分率から、有機化合物の組成式を求める計算問題",
+         "key_concept_ids": ["1_2_eq_001"]
+       }
+     ],
+     "cross_refs": ["1_2_eq_002"],
+     "source_page": 415
+   },
+   {
+     "id": "1_2_eq_002",
+     "type": "eq",
+     "title": "分子式の決定",
+     "prerequisite_ids": ["1_2_eq_001"],
+     "definition": "組成式の式量をn倍して、別途測定した分子量と一致する整数nを求め、分子式を決定する手法。",
+     "explanation": "組成式は「原子の比率」を示すだけなので、実際の分子の大きさ（分子式）を知るには分子量が必要です。「組成式の重さ」を何倍すれば「分子量」になるかを計算して、全体の原子の数を決定します。",
+     "conditions": [
+       "別途、気体の状態方程式や浸透圧などで分子量が測定されていること"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "組成式の式量を計算する",
+         "reason": "比率のベースとなる単位質量の大きさを知るため。"
+       },
+       {
+         "step": 2,
+         "action": "分子量を組成式の式量で割り、倍率 n を求める ($n = 分子量 / 式量$)",
+         "reason": "実際の分子が組成式の何セット分で構成されているかを算出するため。"
+       },
+       {
+         "step": 3,
+         "action": "組成式の各原子の数を n 倍して分子式とする",
+         "reason": "正しい原子の個数を示す式を完成させるため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "決定した組成式と与えられた分子量から、分子式を決定する問題",
+         "key_concept_ids": ["1_2_eq_002"]
+       }
+     ],
+     "cross_refs": ["TBD:気体の状態方程式", "TBD:沸点上昇と凝固点降下", "TBD:浸透圧"],
+     "source_page": 415
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "1_2_proc_001",
+     "to_id": "1_2_eq_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "元素分析の実験データを用いて組成式を計算する"
+   },
+   {
+     "from_id": "1_2_eq_001",
+     "to_id": "1_2_eq_002",
+     "relation_type": "is_prerequisite_of",
+     "note": "計算した組成式をもとに分子式を決定する"
+   },
+   {
+     "from_id": "1_1_def_002",
+     "to_id": "1_1_def_003",
+     "relation_type": "is_applied_in",
+     "note": "飽和・不飽和の概念は炭化水素の分類の基礎となる"
+   }
+ ]
+}

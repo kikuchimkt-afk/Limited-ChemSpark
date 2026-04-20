@@ -1,0 +1,482 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学 [cite: 4]",
+   "chapter": 6,
+   "chapter_title": "天然有機化合物と高分子化合物 [cite: 1, 2]",
+   "section": 1,
+   "section_title": "天然有機化合物 [cite: 6, 7]",
+   "page_range": [484, 507],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "6_1_sub_001",
+     "name": "グルコース [cite: 35]",
+     "formula": "C6H12O6 [cite: 35]",
+     "aliases": [
+       "ブドウ糖 [cite: 35]"
+     ],
+     "type": "化合物 [cite: 14]",
+     "properties": {
+       "melting_point": {
+         "value": null,
+         "unit": "℃",
+         "condition": ""
+       },
+       "boiling_point": {
+         "value": null,
+         "unit": "℃",
+         "condition": ""
+       },
+       "color": "白色 [cite: 80]",
+       "odor": "",
+       "density": {
+         "value": null,
+         "unit": "g/cm³",
+         "condition": ""
+       },
+       "solubility": "水溶液中で鎖式構造と環式構造が平衡を保つ [cite: 70]",
+       "electrical_conductivity": "",
+       "other": [
+         "還元性を示す [cite: 70]",
+         "アルコール発酵によりエタノールと二酸化炭素に変化する [cite: 139]"
+       ]
+     },
+     "cross_refs": [
+       "6_1_def_001",
+       "6_1_rxn_001",
+       "TBD:フェーリング反応"
+     ],
+     "notes": "動植物の体内に広く存在する代表的な単糖である [cite: 71]。"
+   },
+   {
+     "id": "6_1_sub_002",
+     "name": "スクロース [cite: 38]",
+     "formula": "C12H22O11 [cite: 38]",
+     "aliases": [
+       "ショ糖 [cite: 38]"
+     ],
+     "type": "化合物 [cite: 14]",
+     "properties": {
+       "melting_point": {
+         "value": null,
+         "unit": "℃",
+         "condition": ""
+       },
+       "boiling_point": {
+         "value": null,
+         "unit": "℃",
+         "condition": ""
+       },
+       "color": "無色 [cite: 225]",
+       "odor": "",
+       "density": {
+         "value": null,
+         "unit": "g/cm³",
+         "condition": ""
+       },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": [
+         "水溶液は還元性を示さない [cite: 226]"
+       ]
+     },
+     "cross_refs": [
+       "6_1_def_002"
+     ],
+     "notes": "サトウキビの茎やテンサイの根など、植物界に広く存在している二糖である [cite: 225]。"
+   },
+   {
+     "id": "6_1_sub_003",
+     "name": "デンプン [cite: 39]",
+     "formula": "(C6H10O5)n [cite: 39]",
+     "aliases": [],
+     "type": "化合物 [cite: 14]",
+     "properties": {
+       "melting_point": {
+         "value": null,
+         "unit": "℃",
+         "condition": ""
+       },
+       "boiling_point": {
+         "value": null,
+         "unit": "℃",
+         "condition": ""
+       },
+       "color": "",
+       "odor": "",
+       "density": {
+         "value": null,
+         "unit": "g/cm³",
+         "condition": ""
+       },
+       "solubility": "アミロースは冷水に溶けにくいが、熱水に溶けてコロイド溶液になる [cite: 462]",
+       "electrical_conductivity": "",
+       "other": [
+         "還元性がない [cite: 396]",
+         "ヨウ素デンプン反応で青〜青紫に呈色する [cite: 462]"
+       ]
+     },
+     "cross_refs": [
+       "6_1_def_003",
+       "6_1_rxn_002"
+     ],
+     "notes": "植物のエネルギー貯蔵物質であり、アミロースとアミロペクチンから構成される [cite: 15, 459]。"
+   },
+   {
+     "id": "6_1_sub_004",
+     "name": "グリシン [cite: 630]",
+     "formula": "C2H5NO2 [cite: 673]",
+     "aliases": [
+       "Gly [cite: 673]"
+     ],
+     "type": "化合物 [cite: 624]",
+     "properties": {
+       "melting_point": {
+         "value": null,
+         "unit": "℃",
+         "condition": "比較的高く、融解と同時に分解するものが多い [cite: 631]"
+       },
+       "boiling_point": {
+         "value": null,
+         "unit": "℃",
+         "condition": ""
+       },
+       "color": "無色 [cite: 631]",
+       "odor": "",
+       "density": {
+         "value": null,
+         "unit": "g/cm³",
+         "condition": ""
+       },
+       "solubility": "水に溶けやすいが、有機溶媒には溶けにくい [cite: 631]",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [
+       "6_1_def_004",
+       "6_1_def_005"
+     ],
+     "notes": "最も簡単なアミノ酸であり、不斉炭素原子をもたない [cite: 630]。等電点は5.97である [cite: 673]。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "6_1_def_001",
+     "type": "def",
+     "title": "単糖 [cite: 35]",
+     "prerequisite_ids": [],
+     "definition": "これ以上は加水分解されない糖類のこと [cite: 35]。",
+     "explanation": "糖類の最小単位であり、これ以上水と反応して小さな分子に分かれない物質です [cite: 35]。代表的なものの分子式はC6H12O6で表されます [cite: 35]。水溶液中では一部が鎖式構造となり、還元性を示します [cite: 70]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "代表的な単糖 [cite: 35]",
+         "substance_ids": [
+           "6_1_sub_001",
+           "TBD:フルクトース",
+           "TBD:ガラクトース"
+         ],
+         "description": "グルコース（ブドウ糖）、フルクトース（果糖）、ガラクトースなどがある [cite: 35]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "スクロースやマルトースは加水分解されて単糖を生じるため、単糖ではない（二糖である） [cite: 36]。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられた糖類の中から単糖をすべて選ぶ問題 [cite: 1114]",
+         "key_concept_ids": [
+           "6_1_def_001"
+         ]
+       }
+     ],
+     "cross_refs": [
+       "6_1_def_002",
+       "6_1_def_003",
+       "6_1_rxn_001"
+     ],
+     "source_page": 485
+   },
+   {
+     "id": "6_1_rxn_001",
+     "type": "rxn",
+     "title": "糖類の還元性 [cite: 132]",
+     "prerequisite_ids": [
+       "6_1_def_001"
+     ],
+     "definition": "糖類が水溶液中でホルミル基（アルデヒド基）をもつ鎖式構造となり、他の物質を還元する性質 [cite: 81]。",
+     "explanation": "グルコースなどの糖は水に溶けると、分子の一部が「ホルミル基」という還元しやすい形（鎖式構造）に変わります [cite: 81]。このため、フェーリング液や銀鏡反応などの酸化還元反応を起こすことができます [cite: 81]。グルコース、フルクトース、マルトースなどがこの性質を持ちます [cite: 132]。",
+     "conditions": [
+       "水溶液中において、環式構造と鎖式構造が平衡状態にあること [cite: 70]。",
+       "分子内にヘミアセタール構造をもつこと [cite: 82]。"
+     ],
+     "examples": [
+       {
+         "label": "フェーリング液の還元 [cite: 81]",
+         "substance_ids": [
+           "6_1_sub_001"
+         ],
+         "description": "グルコース1molからフェーリング液中のCu2+が還元されて1molの酸化銅(I) Cu2Oが生成する [cite: 81]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "スクロースは還元性を示すヘミアセタール構造のところで脱水縮合してアセタール構造になっているため、還元性を示さない [cite: 226]。"
+     ],
+     "mnemonics": [
+       "「還元糖は『麦（マルトース）芽（ガラクトース）ブドウ（グルコース）果汁（フルクトース）』」といった語呂合わせで覚える [cite: 132, 231, 199, 147]。(※ガラクトースは麦芽ではないが、還元糖の代表例として列挙する)"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "還元性をもたない二糖の名称と、その理由を答えさせる問題 [cite: 1117]",
+         "key_concept_ids": [
+           "6_1_rxn_001",
+           "6_1_sub_002"
+         ]
+       }
+     ],
+     "cross_refs": [
+       "TBD:フェーリング液",
+       "TBD:銀鏡反応"
+     ],
+     "source_page": 486
+   },
+   {
+     "id": "6_1_rxn_002",
+     "type": "rxn",
+     "title": "ヨウ素デンプン反応 [cite: 462]",
+     "prerequisite_ids": [
+       "6_1_def_003"
+     ],
+     "definition": "デンプンの水溶液にヨウ素溶液を加えると、青〜青紫に呈色する反応 [cite: 462]。",
+     "explanation": "デンプンのらせん状の分子構造の中にヨウ素分子（または三ヨウ化物イオン）が入り込むことで、色が青や青紫色に変わります [cite: 503]。微量でも反応するため、デンプンやヨウ素があるかどうかを確かめる検出反応として使われます [cite: 462]。",
+     "conditions": [
+       "デンプンがらせん構造を保っていること（加熱すると熱運動が激しくなりヨウ素が保てず色が消える） [cite: 503]。"
+     ],
+     "examples": [
+       {
+         "label": "アミロースとアミロペクチンの呈色 [cite: 460, 461]",
+         "substance_ids": [
+           "6_1_sub_003"
+         ],
+         "description": "アミロースは濃青色を示し、アミロペクチンは赤紫色を示す [cite: 460, 461]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "デンプン水溶液を用意し、ヨウ素溶液を加える [cite: 483]。",
+         "reason": "ヨウ素がデンプンのらせん構造に入り込むため [cite: 503]。"
+       },
+       {
+         "step": 2,
+         "action": "色を観察し、加熱して色が消えるか確認する [cite: 462]。",
+         "reason": "加熱によりデンプン分子の熱運動が激しくなり、ヨウ素が保てなくなるため [cite: 503]。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "デンプンに褐色の液を加えたときの呈色と、その名称を問う問題 [cite: 1114]",
+         "key_concept_ids": [
+           "6_1_rxn_002"
+         ]
+       }
+     ],
+     "cross_refs": [
+       "TBD:アミロース",
+       "TBD:アミロペクチン"
+     ],
+     "source_page": 490
+   },
+   {
+     "id": "6_1_def_005",
+     "type": "def",
+     "title": "等電点 [cite: 632]",
+     "prerequisite_ids": [
+       "6_1_def_004"
+     ],
+     "definition": "アミノ酸の水溶液中において、双性イオンが最も多く存在し、全体で電荷が打ち消された状態になるpHのこと [cite: 632, 1120]。",
+     "explanation": "アミノ酸は水の中で、酸性の部分と塩基性の部分がそれぞれイオンになり、プラスとマイナスの両方の電気を持ちます（双性イオン） [cite: 631]。溶液の酸性度（pH）を変えると電気のバランスが変わり、プラスとマイナスがちょうど釣り合って全体として電気がゼロになる特定のpHがあります。これを等電点と呼びます [cite: 632]。",
+     "conditions": [
+       "アミノ酸が両性電解質として水溶液中に存在すること [cite: 631]。"
+     ],
+     "examples": [
+       {
+         "label": "中性アミノ酸の等電点 [cite: 632]",
+         "substance_ids": [
+           "6_1_sub_004"
+         ],
+         "description": "-COOHと-NH2を1つずつもつ中性アミノ酸では、pH6付近であるものが多い（例：アラニンの等電点は6.00） [cite: 632, 673]。",
+         "values": [
+           {
+             "value": 6.00,
+             "unit": "",
+             "condition": "アラニン"
+           }
+         ]
+       }
+     ],
+     "counter_examples": [
+       "酸性アミノ酸の等電点は酸性領域（例：アスパラギン酸は2.77）に、塩基性アミノ酸の等電点は塩基性領域（例：リシンは9.74）にある [cite: 632, 674]。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "特定のpH溶液中でアミノ酸に直流電流を流し、陽極・陰極に向かうものを判別する電気泳動の問題 [cite: 1122]",
+         "key_concept_ids": [
+           "6_1_def_005"
+         ]
+       }
+     ],
+     "cross_refs": [
+       "TBD:双性イオン",
+       "TBD:電気泳動"
+     ],
+     "source_page": 495
+   },
+   {
+     "id": "6_1_def_006",
+     "type": "def",
+     "title": "タンパク質の変性 [cite: 878]",
+     "prerequisite_ids": [
+       "TBD:タンパク質"
+     ],
+     "definition": "タンパク質の水溶液を加熱したり、酸、塩基、有機溶媒などを加えることで、立体的構造が変化し、凝固や沈殿する現象 [cite: 878]。",
+     "explanation": "タンパク質は複雑な立体構造（高次構造）を持っていますが、熱や酸などの刺激を与えると、その構造を保っている結合（水素結合など）が壊れてしまいます [cite: 899]。すると、ゆで卵が固まるように性質が変わり、元に戻らなくなります [cite: 879]。これによって酵素としての働きなども失われます（失活） [cite: 878, 928]。",
+     "conditions": [
+       "加熱、酸、塩基、アルコール、有機溶媒、重金属イオン(Cu2+, Hg2+, Pb2+など)の添加 [cite: 878]。"
+     ],
+     "examples": [
+       {
+         "label": "卵白の凝固 [cite: 879]",
+         "substance_ids": [],
+         "description": "卵白の水溶液を加熱すると凝固する [cite: 879]。",
+         "values": []
+       },
+       {
+         "label": "ヘモグロビンの失活 [cite: 879]",
+         "substance_ids": [],
+         "description": "血色素ヘモグロビンは、約65℃で酸素と結合する能力を失う [cite: 879]。",
+         "values": [
+           {
+             "value": 65,
+             "unit": "℃",
+             "condition": "ヘモグロビン"
+           }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "タンパク質を加熱したりアルコールを加えると凝固して元に戻らなくなる現象の名称を問う問題 [cite: 1123]",
+         "key_concept_ids": [
+           "6_1_def_006"
+         ]
+       }
+     ],
+     "cross_refs": [
+       "TBD:高次構造",
+       "TBD:失活"
+     ],
+     "source_page": 501
+   },
+   {
+     "id": "6_1_rxn_003",
+     "type": "rxn",
+     "title": "ビウレット反応 [cite: 911]",
+     "prerequisite_ids": [
+       "TBD:タンパク質",
+       "TBD:ペプチド結合"
+     ],
+     "definition": "タンパク質水溶液にNaOH水溶液と薄いCuSO4水溶液を加えると、赤紫色に呈色する反応 [cite: 911]。",
+     "explanation": "タンパク質の中に含まれる「ペプチド結合」が、アルカリ性の環境下で銅イオン(Cu2+)と結びついて特殊な構造（錯イオン）を作るため、美しい赤紫色になります [cite: 911]。ペプチド結合が2個以上（つまりアミノ酸が3つ以上つながったトリペプチド以上）ないと、この反応は起きません [cite: 911]。",
+     "conditions": [
+       "2個以上のペプチド結合をもつ（トリペプチド以上である）こと [cite: 911]。",
+       "塩基性条件（NaOH水溶液などを加える）であること [cite: 911]。"
+     ],
+     "examples": [
+       {
+         "label": "卵白水溶液の呈色 [cite: 907]",
+         "substance_ids": [],
+         "description": "卵白水溶液に水酸化ナトリウム水溶液と硫酸銅(II)水溶液を加えると赤紫色になる [cite: 906, 907, 908]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "1個のペプチド結合をもつジペプチドでは呈色しない [cite: 911]。"
+     ],
+     "mnemonics": [
+       "「ビウレットでバイオレット（紫色）」と覚える [cite: 917]。",
+       "「タンパク質はキサントで黄色、ビウレットでバイオレット」 [cite: 916, 917]"
+     ],
+     "steps": [
+       {
+         "step": 1,
+         "action": "タンパク質水溶液にNaOH水溶液を加える [cite: 911]。",
+         "reason": "塩基性の環境を作るため [cite: 911]。"
+       },
+       {
+         "step": 2,
+         "action": "次に薄いCuSO4水溶液を加える [cite: 911]。",
+         "reason": "Cu2+とタンパク質のペプチド結合が錯イオンをつくるため [cite: 911]。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "卵白水溶液を塩基性にして硫酸銅(II)水溶液を加えたときの反応名と色を問う問題 [cite: 1123]",
+         "key_concept_ids": [
+           "6_1_rxn_003"
+         ]
+       }
+     ],
+     "cross_refs": [
+       "TBD:キサントプロテイン反応",
+       "TBD:ニンヒドリン反応"
+     ],
+     "source_page": 502
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "6_1_sub_001",
+     "to_id": "6_1_sub_003",
+     "relation_type": "is_prerequisite_of",
+     "note": "デンプンは多数のα-グルコースが脱水縮合してできた高分子化合物である [cite: 396]。"
+   },
+   {
+     "from_id": "6_1_sub_003",
+     "to_id": "6_1_rxn_002",
+     "relation_type": "is_detected_by",
+     "note": "デンプンはヨウ素デンプン反応によって微量でも青〜青紫に呈色し検出される [cite: 462]。"
+   },
+   {
+     "from_id": "6_1_sub_004",
+     "to_id": "6_1_def_005",
+     "relation_type": "is_example_of",
+     "note": "グリシンなどのアミノ酸は両性電解質であり、等電点をもつ [cite: 631, 632]。"
+   },
+   {
+     "from_id": "6_1_def_006",
+     "to_id": "TBD:酵素",
+     "relation_type": "is_applied_in",
+     "note": "酵素もタンパク質からなるため、加熱により熱変性を起こし失活する [cite: 928]。"
+   }
+ ]
+}

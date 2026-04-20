@@ -1,0 +1,2479 @@
+{
+  "metadata": {
+    "chapter": "4-4",
+    "chapter_title": "無機物質と人間生活",
+    "source_file": "json_data/4-4無機物質と人間生活.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    }
+  },
+  "questions": [
+    {
+      "id": "ch4_4_q001",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "definition",
+      "sub_category": "セラミックスの定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "セラミックスについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "原料を成形した後に加熱処理によって焼き固めて得られる無機固体材料の総称。ガラス、セメント、陶磁器などが含まれる。主成分は二酸化ケイ素やケイ酸塩。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "セラミックスは有機材料である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "無機固体材料。"
+        },
+        {
+          "label": "3",
+          "text": "セラミックスは金属材料に分類される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "金属とは別の分類。"
+        },
+        {
+          "label": "4",
+          "text": "セラミックスは加熱せずに製造される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "加熱処理（焼成）で焼き固める。"
+        }
+      ],
+      "explanation": "セラミックスは「焼き物」全般を指す広い概念です。粘土やケイ砂などの天然原料を高温で焼成して作ります。土器・陶器から現代のガラスやセメントまで人類最古の材料技術の一つです。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_001",
+          "quote": "原料を成形後に加熱処理によって焼き固めて得られる無機固体材料の総称"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q002",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "definition",
+      "sub_category": "ファインセラミックス",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ファインセラミックスについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "高純度の金属酸化物・炭化物・窒化物などを原料とし化学組成や微細構造を精密に制御して製造したセラミックス。軽くて硬く耐熱性が高い。人工骨や集積回路の基板に利用。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ファインセラミックスは天然の粘土をそのまま使う。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高純度の人工原料を使う。"
+        },
+        {
+          "label": "3",
+          "text": "ファインセラミックスは従来のセラミックスより柔らかい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "硬い。"
+        },
+        {
+          "label": "4",
+          "text": "ファインセラミックスは金属より重い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "軽い。"
+        }
+      ],
+      "explanation": "ファインセラミックスは従来のセラミックスを進化させた先端材料です。酸化アルミニウム（アルミナ）は電気絶縁性と生体親和性に優れ人工関節に。チタン酸バリウムは高い比誘電率からコンデンサーに利用されます。ニューセラミックスとも呼ばれます。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_002",
+          "quote": "高純度原料を用い精密に制御して製造。軽くて硬く耐熱性が高い"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q003",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "ソーダ石灰ガラス",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ソーダ石灰ガラスについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ふつうのガラスとも呼ばれる。主成分は二酸化ケイ素・酸化カルシウム・酸化ナトリウム。無色透明で板ガラスや瓶に使用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ソーダ石灰ガラスは金属でできている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "セラミックス（無機非金属材料）。"
+        },
+        {
+          "label": "3",
+          "text": "ソーダ石灰ガラスの主成分は酸化鉄である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "二酸化ケイ素が主成分。"
+        },
+        {
+          "label": "4",
+          "text": "ガラスは結晶構造を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非晶質（アモルファス）。"
+        }
+      ],
+      "explanation": "ソーダ石灰ガラスは最も一般的なガラスで窓ガラスやびんに使われます。二酸化ケイ素に炭酸ナトリウム（ソーダ灰）と炭酸カルシウム（石灰石）を加えて融合します。ガラスは非晶質で一定の融点がなく徐々に軟化するのが結晶との違いです。",
+      "evidence": [
+        {
+          "source_id": "4_1_sub_002",
+          "quote": "主成分はSiO2, CaO, Na2O。板ガラスや瓶に使用"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q004",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "definition",
+      "sub_category": "金属の特徴",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "金属の性質として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "自由電子によって金属光沢・展性・延性・電気伝導性・熱伝導性がもたらされる。金は展性延性が最大、銀は電気伝導性が最大。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "金属光沢は原子核の性質による。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "自由電子が光を反射するため。"
+        },
+        {
+          "label": "3",
+          "text": "金属は電気を通さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "良導体。"
+        },
+        {
+          "label": "4",
+          "text": "銅が展性延性最大で金は電気伝導性最大。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。金が展性延性最大、銀が電気伝導性最大。"
+        }
+      ],
+      "explanation": "金属の四大特性（金属光沢・展性延性・電気伝導性・熱伝導性）はすべて自由電子の存在に起因します。自由電子は金属結合において原子核の間を自由に動き回り、外からの力や電気、光に対して特徴的な応答を示します。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_001",
+          "quote": "自由電子によりもたらされる金属光沢、展性・延性、電気・熱伝導性"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q005",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "鉄の腐食",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "鉄の腐食（赤さび）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水と酸素の存在下で鉄が酸化されて赤さびが生じる。電解質（海水など）の存在でさびの進行が促進される。赤さびはもろく内部の保護にならない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "鉄のさびには酸素は不要で水だけで進行する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水と酸素の両方が必要。"
+        },
+        {
+          "label": "3",
+          "text": "海水中では鉄はさびにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電解質の存在で促進される。"
+        },
+        {
+          "label": "4",
+          "text": "赤さびは緻密な被膜を形成して内部を保護する。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "赤さびはもろい。緻密で保護力があるのは黒さび。"
+        }
+      ],
+      "explanation": "鉄の腐食は水膜中で起こる電気化学反応です。鉄が電子を放出して溶け出し（酸化）、酸素が電子を受け取って水酸化物イオンになります（還元）。赤さびは多孔質でもろいため次々と内部が侵されます。これが黒さびと決定的に異なる点です。",
+      "evidence": [
+        {
+          "source_id": "4_2_rxn_001",
+          "quote": "水と酸素の存在下で鉄が酸化されて赤さびを生じる。電解質がさびの進行を促進"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q006",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "黒さびと赤さびの違い",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "鉄のさびに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "赤さびはもろく内部の保護にならない。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "黒さび（四酸化三鉄）は緻密で密着性がよく内部を保護する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "赤さびの生成には水と酸素が必要。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "赤さびは緻密な被膜で内部を保護するが、黒さびはもろく保護力がない。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。赤さびがもろく保護力なし、黒さびが緻密で保護力あり。"
+        }
+      ],
+      "explanation": "赤さびと黒さびの性質を入れ替えるのは定番のひっかけです。黒さび（四酸化三鉄）は緻密で密着性がよく内部を保護します。フライパンを焼き入れして黒くするのは黒さびを意図的に形成して赤さびを防ぐためです。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_001",
+          "quote": "黒さび。緻密で密着性がよい。内部を保護する"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q007",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "definition",
+      "sub_category": "不動態",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "不動態について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "金属の表面に非常に薄く安定な酸化被膜が生成し、内部まで酸化が進行しない状態。アルミニウムやステンレス鋼で見られる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "不動態はすべての金属で形成される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "特定の金属のみ（アルミニウム、鉄、ニッケル、クロムなど）。"
+        },
+        {
+          "label": "3",
+          "text": "不動態は厚い被膜である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非常に薄い被膜。"
+        },
+        {
+          "label": "4",
+          "text": "不動態が形成されると金属はさらに酸化されやすくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸化が進行しなくなる。"
+        }
+      ],
+      "explanation": "不動態は数ナノメートルの極めて薄い酸化被膜ですが、非常に緻密で安定なため優れたバリア機能を発揮します。ステンレス鋼がさびにくいのはクロムが酸化されて不動態被膜を形成するためです。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_002",
+          "quote": "非常に薄く安定な酸化被膜が生成し、内部まで酸化が進行しない状態"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q008",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "トタンの特性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "トタンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "鉄板に亜鉛をめっきしたもの。亜鉛は鉄よりイオン化傾向が大きいため傷がついても亜鉛が先に酸化されて鉄を保護する犠牲防食の効果がある。屋外で水に濡れる場所に使用。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "トタンは鉄板にスズをめっきしたものである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "スズめっきはブリキ。トタンは亜鉛めっき。"
+        },
+        {
+          "label": "3",
+          "text": "トタンは傷がつくと鉄が先に酸化される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "亜鉛が先に酸化される。"
+        },
+        {
+          "label": "4",
+          "text": "トタンは食品容器に適している。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "食品容器はブリキ（スズめっき）。"
+        }
+      ],
+      "explanation": "トタンとブリキの使い分けは超頻出です。トタン（亜鉛めっき）は犠牲防食により傷ついても鉄が守られるため屋根やバケツなど屋外用。ブリキ（スズめっき）はスズが無害で美しいため缶詰など食品用ですが、傷つくと鉄が先に腐食します。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_002",
+          "quote": "鉄板に亜鉛をめっきしたもの。屋外で水に濡れる場所に使用"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q009",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "ブリキの特性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ブリキについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "鉄板にスズをめっきしたもの。スズは美しく無毒なため缶詰の内壁に使用される。ただし傷がつくとスズより鉄が先に酸化されるため屋外には向かない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ブリキは亜鉛めっきである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "スズめっき。亜鉛めっきはトタン。"
+        },
+        {
+          "label": "3",
+          "text": "ブリキは傷がついてもスズが先に酸化される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "スズのイオン化傾向は鉄より小さいため鉄が先に酸化される。"
+        },
+        {
+          "label": "4",
+          "text": "ブリキは屋外の屋根材に最適である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "屋外にはトタン。ブリキは食品容器。"
+        }
+      ],
+      "explanation": "ブリキの注意点は「傷がついた場合」です。正常な状態ではスズの被膜が鉄を覆って保護しますが、傷でスズが剥がれると鉄の方がイオン化傾向が大きいため先に酸化されます。だから屋外で傷つきやすい場所にはトタンが使われます。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_003",
+          "quote": "鉄板にスズをめっきしたもの。缶詰の内壁などに使用"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q010",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "ステンレス鋼",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ステンレス鋼について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "鉄にクロムとニッケルなどを混ぜた合金。クロムの酸化被膜が不動態となりさびにくい。台所用品や建築材料に使われる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ステンレス鋼は純鉄である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "合金。"
+        },
+        {
+          "label": "3",
+          "text": "ステンレス鋼がさびにくいのはニッケルの被膜のおかげである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "クロムの酸化被膜。"
+        },
+        {
+          "label": "4",
+          "text": "ステンレス鋼は非常にさびやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "さびにくい。ステンレスは英語でstainless（汚れない）。"
+        }
+      ],
+      "explanation": "ステンレス鋼は英語で「stainless steel（汚れない鋼）」の意味です。鉄にクロム（約十二パーセント以上）を加えることでクロムの酸化被膜が不動態として表面を覆いさびを防ぎます。ニッケルを加えると更に耐食性が向上します。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_004",
+          "quote": "Fe, Cr, Ni, Cの合金。クロムの酸化被膜が不動態となる"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q011",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "procedure",
+      "sub_category": "電気めっき",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "電気めっきについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "めっきしたい金属を陽極、めっきされる素材を陰極として電気分解する。陽極の金属が溶けてイオンとなり陰極に析出する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "めっきされる素材を陽極にする。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陰極。"
+        },
+        {
+          "label": "3",
+          "text": "電気めっきは電気を使わない方法である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電気分解を利用する。"
+        },
+        {
+          "label": "4",
+          "text": "めっき金属を陰極にして溶かし出す。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陽極で溶かし出す。"
+        }
+      ],
+      "explanation": "電気めっきの極の配置は電解精錬と同じ原理です。「溶かす側は陽極、くっつける側は陰極」と覚えましょう。めっき金属のイオンを含む水溶液中で電気分解することでめっき被膜が形成されます。",
+      "evidence": [
+        {
+          "source_id": "4_2_proc_001",
+          "quote": "めっきする金属を陽極に、めっきされる側を陰極に"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q012",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "definition",
+      "sub_category": "合金の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "合金について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "融解した金属に他の金属や非金属を混合して凝固させたもの。元の金属にはない性質（硬い・さびにくいなど）を持たせることができる。ただし一般的に展性延性や電気伝導性は悪くなる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "合金は純金属より電気伝導性が高い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一般に悪くなる。"
+        },
+        {
+          "label": "3",
+          "text": "合金は金属のみを混ぜたものを指し非金属は含まない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非金属元素も含むことがある（例：鋼の炭素）。"
+        },
+        {
+          "label": "4",
+          "text": "合金にすると常に柔らかくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一般に硬くなる。"
+        }
+      ],
+      "explanation": "合金は異なる元素を混ぜることで結晶格子に歪みが生じます。この歪みが原子の滑りを阻害するため硬くなりますが、自由電子の移動が妨げられるため電気伝導性は下がります。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_003",
+          "quote": "合金にすると展性や延性が悪くなり、電気伝導性も悪くなることが多い"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q013",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "黄銅（真ちゅう）",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "黄銅（真ちゅう）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銅と亜鉛の合金。金色で美しく五円硬貨・楽器・家庭用器具に使われる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "黄銅は銅と銀の合金である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "銅と亜鉛。"
+        },
+        {
+          "label": "3",
+          "text": "黄銅は銀白色である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "金色。"
+        },
+        {
+          "label": "4",
+          "text": "黄銅は航空機の中に使われる軽い合金である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "航空機はジュラルミン。"
+        }
+      ],
+      "explanation": "黄銅は真ちゅうとも呼ばれ、銅に亜鉛を混ぜた合金です。五円硬貨の材質で金色の美しい光沢があります。トランペットなどの金管楽器にも使われます（英語ではbrass）。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_003",
+          "quote": "CuとZnの合金。金色で美しく、家庭用器具や楽器に利用"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q014",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "ジュラルミン",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ジュラルミンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルミニウム・銅・マグネシウム・マンガンの合金。軽くて強いため航空機の主体に利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ジュラルミンは鉄とクロムの合金である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "それはステンレス鋼。"
+        },
+        {
+          "label": "3",
+          "text": "ジュラルミンは重い合金である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "軽い。"
+        },
+        {
+          "label": "4",
+          "text": "ジュラルミンは楽器に使われる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "楽器は黄銅（真ちゅう）。"
+        }
+      ],
+      "explanation": "ジュラルミンはアルミニウムをベースとした軽合金で航空宇宙産業に不可欠な材料です。純アルミニウムは柔らかいですが銅やマグネシウムを加えることで強度が大幅に向上しつつ軽さを保ちます。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_003",
+          "quote": "Al, Cu, Mg, Mnの合金。軽くて強いので航空機の機体に利用"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q015",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "definition",
+      "sub_category": "肥料の三要素",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "肥料の三要素として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "窒素・リン・カリウムの三つ。窒素は葉や茎の成長、リンは細胞分裂、カリウムは根の発育に関わる。土壌中で不足しがちなため特に補給が必要。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "肥料の三要素は炭素・水素・酸素である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "それは有機物の構成元素。"
+        },
+        {
+          "label": "3",
+          "text": "肥料の三要素は鉄・銅・亜鉛である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "それらは微量元素。"
+        },
+        {
+          "label": "4",
+          "text": "肥料の三要素はナトリウム・塩素・硫黄である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "肥料の三要素ではない。"
+        }
+      ],
+      "explanation": "肥料の三要素は窒素（N）・リン（P）・カリウム（K）です。肥料のパッケージに書かれている「N-P-K」の数字はこれらの含有量を示しています。窒素肥料の代表は硫酸アンモニウムや尿素です。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "窒素(N)、リン(P)、カリウム(K)の3元素"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q016",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "トタンとブリキの混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "トタンとブリキに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "トタンは亜鉛めっきの鉄板で傷がついても犠牲防食で鉄を守る。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ブリキはスズめっきの鉄板で食品容器に使われる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "トタンは屋外使用に適している。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "トタンはスズめっきで食品容器に使用され、ブリキは亜鉛めっきで屋外に使用される。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "すべて逆。"
+        }
+      ],
+      "explanation": "トタンとブリキの完全入れ替えは最頻出のひっかけです。トタンは亜鉛めっきで屋外向け、ブリキはスズめっきで食品向け。これをセットで覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_002",
+          "quote": "亜鉛めっき。屋外"
+        },
+        {
+          "source_id": "4_2_sub_003",
+          "quote": "スズめっき。缶詰"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_002",
+        "4_2_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q017",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "合金の成分と用途",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "合金の成分と用途に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "黄銅は銅と亜鉛の合金で楽器に使われる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ジュラルミンはアルミニウムを主成分とする軽合金で航空機に使われる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ステンレス鋼は鉄にクロムやニッケルを加えた合金でさびにくい。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "黄銅はアルミニウムとマンガンの合金で航空機に使われ、ジュラルミンは銅と亜鉛の合金で楽器に使われる。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "すべて逆。黄銅が銅と亜鉛で楽器、ジュラルミンがアルミニウム主成分で航空機。"
+        }
+      ],
+      "explanation": "合金の成分と用途の入れ替えは定番です。黄銅は銅＋亜鉛は楽器・五円硬貨。ジュラルミンはアルミ＋銅＋マグネシウム＋マンガンは航空機。ステンレスは鉄＋クロム＋ニッケルは台所用品。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_003",
+          "quote": "黄銅はCuとZn、ジュラルミンはAl, Cu, Mg, Mn"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q018",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "さびの防止法の分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "鉄のさびを防ぐ方法の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "めっき（トタン・ブリキ）、塗装、合金化（ステンレス鋼）、不動態形成が代表的な防食法。トタンは犠牲防食でブリキは被覆保護。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "鉄のさびを防ぐには水中に浸しておくのが最もよい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水はさびの原因。"
+        },
+        {
+          "label": "3",
+          "text": "めっきと塗装は同じ原理である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "めっきは金属被膜、塗装は有機被膜で原理が異なる。"
+        },
+        {
+          "label": "4",
+          "text": "合金化ではさびにくくならない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ステンレス鋼のように合金化でさびにくくなる。"
+        }
+      ],
+      "explanation": "防食法は水や酸素との接触を断つ「バリア型」（塗装・めっき・不動態）と、先に酸化される金属を犠牲にする「犠牲防食型」（トタン）に大別されます。ステンレス鋼はクロムの不動態被膜によるバリア型です。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_002",
+          "quote": "不動態"
+        },
+        {
+          "source_id": "4_2_sub_002",
+          "quote": "トタン"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_002",
+        "4_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q019",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "電気めっきの極の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "電気めっきに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "めっきしたい金属を陽極にする。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "めっきされる素材を陰極にする。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "陽極金属がイオンとなって溶け出す。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "めっきされる素材を陽極にしてめっき金属を陰極にする。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。被めっき物が陰極、めっき金属が陽極。"
+        }
+      ],
+      "explanation": "電気めっきの極の配置は電解精錬と同じです。「溶かす側（めっき金属）は陽極」「くっつける側（素材）は陰極」。陽極で金属がイオン化して溶け出し、陰極で還元されて被膜として析出します。",
+      "evidence": [
+        {
+          "source_id": "4_2_proc_001",
+          "quote": "被めっき物を陰極、めっき金属を陽極"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q020",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "尿素と窒素肥料",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "窒素肥料について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "尿素や硫酸アンモニウムが代表的な窒素肥料。窒素は植物の葉や茎を育てるタンパク質の構成元素。化学肥料は水溶性で速効性がある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "尿素はリン酸肥料である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "窒素肥料。"
+        },
+        {
+          "label": "3",
+          "text": "窒素は植物に不要な元素である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "最も重要な肥料要素の一つ。"
+        },
+        {
+          "label": "4",
+          "text": "化学肥料は遅効性である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "速効性。遅効性は有機肥料。"
+        }
+      ],
+      "explanation": "窒素肥料はアンモニウム塩や尿素として施用されます。窒素はアミノ酸・タンパク質・核酸（DNA）の構成元素であり植物の成長に不可欠です。化学肥料は水に溶けて速やかに吸収されるため速効性がありますが、過剰施用は河川の富栄養化を引き起こします。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "窒素は葉や茎を育てるタンパク質の元"
+        },
+        {
+          "source_id": "4_3_sub_001",
+          "quote": "窒素肥料として用いられる"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001",
+        "4_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q021",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "セラミックスとファインセラミックスの区別",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "セラミックスに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "従来のセラミックスには陶磁器やガラスが含まれる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ファインセラミックスは高純度原料を精密に制御して作る。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アルミナは人工関節にも使われるファインセラミックス。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ファインセラミックスは天然の粘土をそのまま焼いたもので昔からある伝統的な材料である。",
+          "is_correct": true,
+          "trap_type": "concept_confusion",
+          "trap_detail": "天然粘土で作るのは従来のセラミックス。ファインセラミックスは高純度人工原料。"
+        }
+      ],
+      "explanation": "セラミックスは「従来形」と「ファイン（ニュー）」に分けられます。従来形は粘土・石灰石などの天然原料から作る陶磁器・ガラス・セメント。ファインは高純度の人工原料（アルミナ・ジルコニアなど）を精密制御して作る先端材料です。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_001",
+          "quote": "古くは土器から"
+        },
+        {
+          "source_id": "4_1_def_002",
+          "quote": "高純度原料を用い精密に制御"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_001",
+        "4_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q022",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "ガラスの非晶質性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ガラスの構造的特徴として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ガラスは非晶質（アモルファス）であり一定の融点を持たず徐々に軟化する。原子配列に長距離秩序がない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ガラスは規則正しい結晶構造を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非晶質。"
+        },
+        {
+          "label": "3",
+          "text": "ガラスにはシャープな融点がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "徐々に軟化する。"
+        },
+        {
+          "label": "4",
+          "text": "ガラスは金属結合で構成されている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "共有結合とイオン結合。"
+        }
+      ],
+      "explanation": "ガラスは液体を急冷することで結晶化せずに固まった「過冷却液体」の一種です。そのため規則的な結晶構造がなく一定の融点を示しません。加熱すると徐々に軟化して成形できるようになります。",
+      "evidence": [
+        {
+          "source_id": "4_1_sub_002",
+          "quote": "融解しやすい"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q023",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "ステンレスの不動態成分",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "ステンレス鋼の不動態に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ステンレス鋼はクロムを含む。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "クロムの酸化被膜が不動態となりさびを防ぐ。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "不動態は非常に薄いが安定な被膜である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ステンレス鋼がさびにくいのは鉄の酸化被膜による。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "鉄ではなくクロムの酸化被膜。"
+        }
+      ],
+      "explanation": "ステンレス鋼の不動態は鉄ではなくクロムが形成します。純鉄の酸化被膜（赤さび）はもろくて保護力がありませんが、クロムの酸化被膜は緻密で自己修復能力も持ち優れた耐食性を発揮します。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_004",
+          "quote": "クロムの酸化被膜が不動態となる"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q024",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "肥料の三要素の混同",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "肥料の三要素に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "窒素は葉や茎の成長に関わる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "リンは細胞分裂に関わる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "カリウムは根の発育に関わる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "鉄・銅・亜鉛が肥料の三要素である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "窒素・リン・カリウムが三要素。鉄・銅・亜鉛は微量元素。"
+        }
+      ],
+      "explanation": "肥料の三要素は窒素・リン・カリウムです。鉄・銅・亜鉛・マンガンなどは「微量必須元素」として少量は必要ですが、三要素には入りません。肥料のパッケージに記載される「N-P-K」の数字を思い出しましょう。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "窒素(N)、リン(P)、カリウム(K)"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q025",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "さびの条件",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "鉄がさびるための条件として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水と酸素の両方が必要。乾燥した空気中や酸素のない純水中では鉄はさびない。電解質があるとさびの進行が促進される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水だけでさびる。酸素は不要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両方必要。"
+        },
+        {
+          "label": "3",
+          "text": "酸素だけでさびる。水は不要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両方必要。"
+        },
+        {
+          "label": "4",
+          "text": "電解質はさびを抑制する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "促進する。"
+        }
+      ],
+      "explanation": "鉄のさびの実験では「水のみ」「酸素のみ」「水＋酸素」の三条件を比較します。水＋酸素の場合のみさびが進行します。海水（電解質を含む水）では電気が流れやすくなり電気化学反応が促進されるため、さびの進行が著しく速まります。",
+      "evidence": [
+        {
+          "source_id": "4_2_rxn_001",
+          "quote": "水と酸素が必要。電解質の存在がさびの進行を促進"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q026",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "ファインセラミックスの用途",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ファインセラミックスの用途として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルミナは電気絶縁性と生体親和性から人工関節や集積回路の基板に使われる。チタン酸バリウムは高い比誘電率からコンデンサーに使われる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ファインセラミックスは食器にのみ使われる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "先端技術にも使われる。"
+        },
+        {
+          "label": "3",
+          "text": "チタン酸バリウムは人工関節に使われる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "コンデンサー。人工関節はアルミナ。"
+        },
+        {
+          "label": "4",
+          "text": "アルミナは導電性が高いため電線に使われる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電気絶縁性が高い。"
+        }
+      ],
+      "explanation": "ファインセラミックスは用途ごとに最適な材料が選ばれます。アルミナ→人工骨・基板（絶縁＋生体親和）、チタン酸バリウム→コンデンサー（高誘電率）、窒化ケイ素→エンジン部品（耐熱性）、ジルコニア→酸素センサー（イオン伝導性）などです。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_002",
+          "quote": "アルミナは人工関節や集積回路。チタン酸バリウムはコンデンサー"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q027",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "犠牲防食の原理",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "犠牲防食の原理として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "守りたい金属よりイオン化傾向の大きい金属を接触させ、イオン化傾向の大きい方が先に酸化されることで守りたい金属を保護する方法。トタンが代表例。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "犠牲防食ではイオン化傾向の小さい金属が先に酸化される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "大きい方が先。"
+        },
+        {
+          "label": "3",
+          "text": "ブリキが犠牲防食の代表例である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "トタン。ブリキは被覆保護。"
+        },
+        {
+          "label": "4",
+          "text": "犠牲防食ではめっき層が傷ついても関係ない。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "傷がつくとイオン化傾向の差で保護が発揮される（ブリキは保護されない）。"
+        }
+      ],
+      "explanation": "犠牲防食は船舶のプロペラにも応用されています。プロペラ（銅合金）の近くに亜鉛板を取り付けることで亜鉛が先に腐食してプロペラを守ります。定期的に亜鉛板を交換するだけで高価な部品を保護できます。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_002",
+          "quote": "亜鉛。鉄を保護"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q028",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "合金と純金属の性質差",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "合金の性質に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "合金は一般に純金属より硬い。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "合金にすると展性や延性は悪くなることが多い。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "合金にすると電気伝導性が悪くなることが多い。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "合金にすると電気伝導性が純金属より向上し柔らかくなる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "逆。電気伝導性は悪くなり硬くなる。"
+        }
+      ],
+      "explanation": "合金化すると結晶格子に歪みが生じ、原子の滑りが妨げられて硬くなる一方、自由電子の散乱が増えて電気伝導性は悪くなります。これは純銅から真ちゅうにすると硬くなるが電気は通しにくくなる身近な例で確認できます。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_003",
+          "quote": "展性や延性が悪くなり、電気伝導性も悪くなることが多い"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q029",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "化学肥料と有機肥料の違い",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "化学肥料の特徴として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水溶性で速効性がある。過剰に使用すると川の富栄養化を引き起こす可能性がある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "化学肥料は水に溶けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水溶性。"
+        },
+        {
+          "label": "3",
+          "text": "化学肥料は遅効性である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "速効性。"
+        },
+        {
+          "label": "4",
+          "text": "化学肥料は環境に全く影響を与えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "富栄養化のリスクがある。"
+        }
+      ],
+      "explanation": "化学肥料は水に溶けて速やかに植物に吸収されるため速効性がありますが、雨で河川に流出すると窒素やリンが藻類の異常増殖を引き起こし富栄養化の原因になります。これは環境化学の重要なトピックです。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "化学肥料は水溶性で速効性があるが、過剰に流出すると富栄養化"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q030",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "comprehensive",
+      "sub_category": "防食法の総合",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "鉄の防食法に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "トタン（亜鉛めっき）は犠牲防食で屋外用。ブリキ（スズめっき）は被覆保護で食品用。ステンレス鋼はクロムの不動態で防食。塗装は水や酸素との接触を遮断する被覆法。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "トタンはスズめっきで食品用。ブリキは亜鉛めっきで屋外用。ステンレスは鉄の被膜で防食。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて逆。"
+        },
+        {
+          "label": "3",
+          "text": "塩水に浸すと鉄はさびにくくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "さびやすくなる。"
+        },
+        {
+          "label": "4",
+          "text": "不動態は厚い金属板のことである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非常に薄い酸化被膜。"
+        }
+      ],
+      "explanation": "防食法の全体を整理した問題です。バリア型（塗装・ブリキ・不動態）と犠牲防食型（トタン）の二種類をしっかり区別しましょう。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_002",
+          "quote": "トタン＝亜鉛＝屋外"
+        },
+        {
+          "source_id": "4_2_sub_003",
+          "quote": "ブリキ＝スズ＝缶詰"
+        },
+        {
+          "source_id": "4_2_sub_004",
+          "quote": "ステンレス＝クロム不動態"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_002",
+        "4_2_sub_003",
+        "4_2_sub_004",
+        "4_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q031",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "二酸化ケイ素の役割",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "二酸化ケイ素（シリカ）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ケイ酸塩工業の主成分。ガラスやセメントの原料として使われる。天然には石英や水晶として存在する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "二酸化ケイ素は金属材料の一種である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非金属の無機化合物。"
+        },
+        {
+          "label": "3",
+          "text": "二酸化ケイ素はガラスの原料には使われない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "主成分。"
+        },
+        {
+          "label": "4",
+          "text": "二酸化ケイ素は水に溶けやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水に溶けにくい。"
+        }
+      ],
+      "explanation": "二酸化ケイ素は地球の地殻に最も豊富に存在する酸化物の一つです。砂浜の砂の主成分でありガラスの最も重要な原料です。共有結合の結晶で融点が非常に高く（約千七百度）水にほとんど溶けません。",
+      "evidence": [
+        {
+          "source_id": "4_1_sub_001",
+          "quote": "ケイ酸塩工業における主成分"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q032",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "自由電子の役割",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "金属の自由電子に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "自由電子が金属光沢をもたらす。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "自由電子が電気伝導性をもたらす。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "自由電子が展性延性をもたらす。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "自由電子は金属の性質に関係なくイオン結合を形成している。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "自由電子は金属結合を形成し金属の全特性に関わる。"
+        }
+      ],
+      "explanation": "自由電子は金属の四大特性すべてに関わっています。光沢（自由電子が光を反射）、電気伝導（自由電子が電流を運ぶ）、展性延性（力を加えても自由電子が移動して原子同士の結合を保つ）、熱伝導（自由電子が熱エネルギーを運ぶ）。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_001",
+          "quote": "自由電子によりもたらされる"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q033",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "comprehensive",
+      "sub_category": "合金の総合",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "合金に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "黄銅は銅と亜鉛の合金で楽器に使われる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ジュラルミンは軽くて強い合金で航空機に使われる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ステンレス鋼はクロムの不動態によりさびにくい。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "合金にすると電気伝導性が純金属より向上し展性延性も改善される。黄銅は鉄とマンガンの合金で航空機に使われる。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。"
+        }
+      ],
+      "explanation": "合金の総合問題です。合金化→電気伝導性低下・硬度上昇（展性延性低下）。黄銅は銅と亜鉛の合金で楽器に使用。ジュラルミンはアルミニウム系の合金で航空機に使用。成分と用途の組み合わせを正確に覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_003",
+          "quote": "合金にすると展性延性が悪くなり電気伝導性も悪くなる"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q034",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "鉄の腐食の電気化学",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "鉄の腐食の電気化学的メカニズムとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "鉄が電子を放出して二価の鉄イオンとなる酸化反応（負極）と、酸素が電子を受け取って水酸化物イオンになる還元反応（正極）が同時に起こる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "鉄は電子を受け取って酸化される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電子を放出して酸化される。"
+        },
+        {
+          "label": "3",
+          "text": "酸素が鉄に電子を与える。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸素は電子を受け取る（還元される）。"
+        },
+        {
+          "label": "4",
+          "text": "腐食では酸化反応のみが起こり還元反応は起こらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸化と還元は同時に起こる。"
+        }
+      ],
+      "explanation": "鉄の腐食は局所電池反応です。鉄の表面で微小な電池が形成され、鉄が溶ける部分（負極・陽極）と酸素が還元される部分（正極・陰極）が同時に機能します。この理解があればなぜ水と酸素の両方が必要かが分かります。",
+      "evidence": [
+        {
+          "source_id": "4_2_rxn_001",
+          "quote": "Fe→Fe2++2e-（負極）、O2+2H2O+4e-→4OH-（正極）"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q035",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "ブリキの傷つき時の腐食",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ブリキに傷がついた場合の腐食について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "スズのイオン化傾向は鉄より小さいため傷で鉄が露出すると鉄が先に酸化されて急速に腐食が進む。スズは保護されて溶けない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "傷がついてもスズが先に溶けて鉄を守る。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "鉄が先に溶ける。"
+        },
+        {
+          "label": "3",
+          "text": "傷がついてもブリキは腐食しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "急速に腐食する。"
+        },
+        {
+          "label": "4",
+          "text": "スズのイオン化傾向は鉄より大きい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "小さい。"
+        }
+      ],
+      "explanation": "ブリキの弱点はまさにこの点です。スズ（イオン化傾向：鉄より小）が鉄を被覆している間は問題ありませんが、傷で鉄が露出するとイオン化傾向の差で鉄が加速的に腐食します。缶詰の缶が凹むと急速に錆びるのはこのためです。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_003",
+          "quote": "スズめっき。缶詰の内壁"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q036",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "ガラスの種類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ガラスの種類と特徴として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ソーダ石灰ガラスは普通のガラスで窓やびんに使用。ホウケイ酸ガラスは耐熱性が高く実験器具に使用。鉛ガラス（クリスタルガラス）は屈折率が高く光沢が強い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "すべてのガラスは同じ成分でできている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "成分によって種類が異なる。"
+        },
+        {
+          "label": "3",
+          "text": "ソーダ石灰ガラスは最も耐熱性が高い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ホウケイ酸ガラスの方が耐熱性が高い。"
+        },
+        {
+          "label": "4",
+          "text": "鉛ガラスは窓ガラスとして最も一般的である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "窓ガラスはソーダ石灰ガラス。"
+        }
+      ],
+      "explanation": "ガラスは成分によって特性が大きく変わります。ソーダ石灰ガラス（普通のガラス）、ホウケイ酸ガラス（パイレックスなど耐熱ガラス）、鉛ガラス（クリスタルグラスなど装飾用）、石英ガラス（純粋な二酸化ケイ素、最も耐熱）の四種を覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "4_1_sub_002",
+          "quote": "ソーダ石灰ガラスは板ガラスや瓶に使用"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q037",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "金属がさびると光沢を失う理由",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "金属がさびると光沢を失う理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "さびによって自由電子が失われ光を反射する能力が低下するため。さびた部分は金属結合ではなくイオン結合や共有結合にっている。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "金属光沢は原子核の性質で、さびても変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "自由電子の性質で、さびると失われる。"
+        },
+        {
+          "label": "3",
+          "text": "さびても電気伝導性は変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電気伝導性も低下する。"
+        },
+        {
+          "label": "4",
+          "text": "金属はさびても光沢を保つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "光沢を失う。"
+        }
+      ],
+      "explanation": "金属光沢は自由電子が光を反射することで生じます。さびると金属が酸化物やwater酸化物に変わり自由電子がなくなるため光沢を失います。同時に電気伝導性も失われます。研磨して光沢を取り戻すのはさびを除去して金属面を露出させるからです。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_001",
+          "quote": "金属がさびると自由電子が失われるため光沢を失い電気が流れなくなる"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q038",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "めっきの極の確認",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "銅板にニッケルをめっきする場合の電極配置として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ニッケルを陽極、銅板を陰極にして硫酸ニッケル水溶液中で電気分解する。ニッケルが溶けて銅板上に析出する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "銅板を陽極にする。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陰極。"
+        },
+        {
+          "label": "3",
+          "text": "ニッケルを陰極にする。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陽極。"
+        },
+        {
+          "label": "4",
+          "text": "銅を含む水溶液で電気分解する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ニッケルを含む水溶液。"
+        }
+      ],
+      "explanation": "めっきのポイントは「くっつけたい金属のイオンを含む溶液を使い、くっつけたい金属を陽極（補給源）、被めっき物を陰極（受け側）にする」です。この原理は電解精錬と同じです。",
+      "evidence": [
+        {
+          "source_id": "4_2_proc_001",
+          "quote": "陽極: Ni → Ni2+ + 2e-, 陰極: Ni2+ + 2e- → Ni"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q039",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "肥料の過剰施用",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "化学肥料の環境影響に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "化学肥料の過剰使用は河川の富栄養化を引き起こす。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "富栄養化により藻類が異常増殖する恐れがある。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "化学肥料は水溶性で雨により流出しやすい。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "化学肥料は環境に影響を与えず、いくら使っても問題ない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "過剰施用は環境問題を引き起こす。"
+        }
+      ],
+      "explanation": "化学肥料の環境影響は重要なテーマです。窒素やリンが河川や湖沼に流入すると藻類が異常増殖し水中の酸素が減少して魚介類が死滅する富栄養化が起こります。適量の施用と有機肥料との併用が環境保全に重要です。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "過剰に流出すると川の富栄養化を引き起こす"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q040",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "comprehensive",
+      "sub_category": "セラミックスの総合",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "セラミックスに関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セラミックスは無機固体材料で加熱処理で焼き固めて作る。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ガラスは非晶質のセラミックスで一定の融点がない。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ファインセラミックスは高純度原料を精密制御して製造する先端材料。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "セラミックスは有機材料であり、ファインセラミックスは天然粘土で作る伝統材料。ガラスには規則正しい結晶構造がある。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて誤り。"
+        }
+      ],
+      "explanation": "セラミックスの章の全体を確認する問題です。無機（有機ではない）、ファインは高純度人工原料（天然粘土ではない）、ガラスは非晶質（結晶ではない）。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_001",
+          "quote": "無機固体材料"
+        },
+        {
+          "source_id": "4_1_def_002",
+          "quote": "高純度原料を精密に制御"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_001",
+        "4_1_def_002",
+        "4_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q041",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "セメント",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "セメントについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "石灰石と粘土を高温で焼成して粉砕したもの。水を加えると水和反応で固まる。コンクリートはセメントに砂と砂利と水を混ぜて固めたもの。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "セメントは金属材料である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "セラミックス（無機非金属材料）。"
+        },
+        {
+          "label": "3",
+          "text": "セメントは水を加えても固まらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水和反応で固まる。"
+        },
+        {
+          "label": "4",
+          "text": "コンクリートはセメントだけで作られる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "砂と砂利と水も必要。"
+        }
+      ],
+      "explanation": "セメントは代表的なセラミックスの一つです。石灰石（炭酸カルシウム）と粘土を約千四百度で焼成してクリンカーを作り細かく粉砕します。水を加えると水和反応（発熱反応）が起こり硬化します。鉄筋と組み合わせた鉄筋コンクリートはビルや橋の主要構造材です。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_001",
+          "quote": "セラミックスにはガラス、セメント、陶磁器が含まれる"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q042",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "リン肥料とカリ肥料",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "リン酸肥料とカリ肥料の代表例として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "リン酸肥料は過リン酸石灰など。カリ肥料は塩化カリウムや硫酸カリウムなど。リンは実や種の成長、カリウムは根の発育に特に重要。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "尿素はリン酸肥料である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "窒素肥料。"
+        },
+        {
+          "label": "3",
+          "text": "塩化カリウムは窒素肥料である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "カリ肥料。"
+        },
+        {
+          "label": "4",
+          "text": "過リン酸石灰はカリ肥料である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "リン酸肥料。"
+        }
+      ],
+      "explanation": "肥料の分類は名前から推測できることが多いです。「リン酸」とつくものはリン酸肥料、「カリウム」とつくものはカリ肥料、「アンモニウム」や「尿素」は窒素肥料です。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "窒素は葉や茎、リンは細胞の核、カリウムは根や分裂組織"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q043",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "チタン酸バリウムの用途",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ファインセラミックスの材料と用途に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルミナは電気絶縁性に優れ集積回路の基板に使われる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "アルミナは生体親和性があり人工関節に使われる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "チタン酸バリウムは高い比誘電率を持つ。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "チタン酸バリウムは人工骨に使われ、アルミナはコンデンサーに使われる。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。アルミナが人工骨、チタン酸バリウムがコンデンサー。"
+        }
+      ],
+      "explanation": "材料と用途の入れ替えは定番です。アルミナは人工骨・基板、チタン酸バリウムはコンデンサー。性質と用途の因果関係も覚えましょう。生体親和性→人工骨、高誘電率→コンデンサー。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_002",
+          "quote": "アルミナは人工関節。チタン酸バリウムはコンデンサー"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q044",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "comprehensive",
+      "sub_category": "金属の総合",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "金属材料に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "金属の特性は自由電子による。さびには水と酸素が必要。赤さびはもろく黒さびは緻密で保護的。トタンは亜鉛めっきで犠牲防食。ブリキはスズめっきで食品用。ステンレスはクロムの不動態。合金は硬いが電気伝導性低下。黄銅は銅と亜鉛、ジュラルミンはアルミ系。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "金属の特性は原子核による。赤さびは緻密。トタンはスズめっき。黄銅は鉄とマンガン。合金は電気伝導性が向上する。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "五か所すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "ステンレスは鉄の酸化被膜でさびにくい。ブリキは犠牲防食で鉄を守る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "クロムの被膜。犠牲防食はトタン。"
+        },
+        {
+          "label": "4",
+          "text": "鉄のさびには酸素のみが必要で水は不要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両方必要。"
+        }
+      ],
+      "explanation": "金属材料の分野全体をカバーする総合問題です。自由電子→金属特性。さび→水＋酸素。赤さび（もろい）対黒さび（緻密）。トタンは亜鉛めっきによる犠牲防食で屋外用。ブリキはスズめっきによる被覆保護で食品用。ステンレスはクロム不動態。合金は硬いが電気伝導性低下。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_001",
+          "quote": "自由電子"
+        },
+        {
+          "source_id": "4_2_rxn_001",
+          "quote": "水と酸素"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_001",
+        "4_2_rxn_001",
+        "4_2_def_002",
+        "4_2_sub_002",
+        "4_2_sub_003",
+        "4_2_sub_004",
+        "4_2_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q045",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "置換型と侵入型合金",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "合金の種類について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "置換型合金は母金属の原子位置に他の金属原子が置き換わったもの（黄銅など）。侵入型合金は結晶格子の隙間に小さな原子が入り込んだもの（鋼の炭素など）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "鋼は置換型合金の代表例である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "侵入型。"
+        },
+        {
+          "label": "3",
+          "text": "黄銅は侵入型合金である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "置換型。"
+        },
+        {
+          "label": "4",
+          "text": "合金には置換型と侵入型の区別はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "区別がある。"
+        }
+      ],
+      "explanation": "合金の種類の区別は構成原子のサイズで決まります。サイズが近い金属同士は置換型（銅と亜鉛の黄銅）。サイズが大きく異なる場合は侵入型（鉄の格子隙間に小さな炭素原子が入る鋼）になります。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_003",
+          "quote": "置換型合金や侵入型合金に分かれる"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q046",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "confusion",
+      "sub_category": "不動態と赤さびの違い",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "不動態と赤さびに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "不動態は薄くて緻密な酸化被膜で内部を保護する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "赤さびはもろくて内部の保護にならない。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アルミニウムやクロムは不動態を形成しやすい。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "赤さびは緻密な被膜で内部を保護し、不動態はもろくて役に立たない。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "すべて逆。"
+        }
+      ],
+      "explanation": "不動態（緻密・保護的）と赤さび（もろい・保護力なし）は真逆の性質です。黒さびも不動態と同様に緻密な被膜で保護的です。フライパンの「焼き入れ」は黒さびを形成するための処理です。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_002",
+          "quote": "薄く安定な酸化被膜で内部まで酸化が進行しない"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_002",
+        "4_2_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q047",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "窒素肥料の具体例",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "窒素肥料に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "硫酸アンモニウムは窒素肥料である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "尿素は窒素肥料である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "硝酸アンモニウムは窒素肥料である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "過リン酸石灰は窒素肥料の代表例である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "リン酸肥料。"
+        }
+      ],
+      "explanation": "「アンモニウム」や「硝酸」がつくものは窒素を含むため窒素肥料です。「リン酸」がつくものはリン酸肥料。「カリウム」がつくものはカリ肥料。名前から判断できることが多いです。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "窒素肥料として硫酸アンモニウム、尿素など"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q048",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "comprehensive",
+      "sub_category": "肥料の総合",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "肥料に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "肥料の三要素は窒素・リン・カリウム。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "窒素は葉や茎、リンは実や種、カリウムは根の成長に関わる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "化学肥料は水溶性で速効性がある。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "肥料の三要素は鉄・銅・亜鉛であり、過剰施用しても環境に影響はない。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "二か所誤り。三要素はN・P・K。過剰施用は環境問題。"
+        }
+      ],
+      "explanation": "肥料の分野を総合した問題です。三要素（N・P・K）、各元素の役割、化学肥料の特徴（水溶性・速効性）、環境影響（富栄養化）のすべてを正確に覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "窒素(N)、リン(P)、カリウム(K)。過剰で富栄養化"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q049",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "property",
+      "sub_category": "黒さびの保護作用",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "黒さび（四酸化三鉄）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "黒色で緻密な被膜。密着性がよく内部の鉄を保護する。フライパンの焼き入れで意図的に形成させることがある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "黒さびはもろくて保護力がない。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "緻密で保護力がある。もろいのは赤さび。"
+        },
+        {
+          "label": "3",
+          "text": "黒さびは赤色である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "黒色。赤色は赤さび。"
+        },
+        {
+          "label": "4",
+          "text": "黒さびは水に溶けやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不溶。"
+        }
+      ],
+      "explanation": "黒さび（四酸化三鉄）は赤さびと対照的に緻密で密着性のよい保護膜です。鉄を六百度以上の高温で酸化すると黒さびが形成されます。中華鍋を「空焼き」するのは黒さびの保護膜を作るためです。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_001",
+          "quote": "黒色。緻密で密着性がよい。内部を保護"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_4_q050",
+      "chapter": "4-4",
+      "chapter_title": "無機物質と人間生活",
+      "category": "comprehensive",
+      "sub_category": "章全体の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "無機物質と人間生活に関する全体の総合記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セラミックスは無機固体材料で焼成して製造。ファインセラミックスは高純度原料の先端材料。ガラスは非晶質。金属の特性は自由電子による。赤さびはもろく黒さびは保護的。トタンは亜鉛で犠牲防食、ブリキはスズで食品用。ステンレスはクロムの不動態。合金は硬いが電導性低下。肥料三要素は窒素リンカリウム。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "セラミックスは有機材料。ファインは天然粘土。ガラスは結晶。赤さびは保護的。トタンはスズ。合金は電導性向上。三要素は鉄銅亜鉛。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "七か所すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "ブリキは犠牲防食の代表で屋外用。ステンレスは鉄の被膜。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "犠牲防食はトタン。ステンレスはクロム。"
+        },
+        {
+          "label": "4",
+          "text": "肥料の三要素は窒素リンカリウムだが化学肥料は環境に全く影響しない。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "前半正しいが後半誤り。"
+        }
+      ],
+      "explanation": "無機物質と人間生活の章全体を一つの問題に集約しました。セラミックス・金属・肥料の三分野すべての知識を正確に整理することが重要です。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_001",
+          "quote": "無機固体材料"
+        },
+        {
+          "source_id": "4_2_def_001",
+          "quote": "自由電子"
+        },
+        {
+          "source_id": "4_3_def_001",
+          "quote": "N, P, K"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_001",
+        "4_1_def_002",
+        "4_2_def_001",
+        "4_2_rxn_001",
+        "4_2_def_002",
+        "4_2_sub_002",
+        "4_2_sub_003",
+        "4_2_sub_004",
+        "4_2_def_003",
+        "4_3_def_001"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

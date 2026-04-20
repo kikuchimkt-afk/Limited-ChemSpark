@@ -1,0 +1,750 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "第1編 物質の構成と化学結合",
+   "chapter": 4,
+   "chapter_title": "物質量と化学反応式",
+   "section": 0,
+   "section_title": "全体",
+   "page_range": [100, 122],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "4_1_sub_001",
+     "name": "炭素",
+     "formula": "C",
+     "aliases": ["黒鉛"],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": [
+         "質量数12の炭素原子1個の質量を12と決め、他の原子の質量の基準とする [cite: 12]。",
+         "黒鉛の1molは12.01gである [cite: 170]。"
+       ]
+     },
+     "cross_refs": ["4_1_def_002", "4_1_def_003"],
+     "notes": "原子量の基準となる元素 [cite: 12]。"
+   },
+   {
+     "id": "4_2_sub_001",
+     "name": "ステアリン酸",
+     "formula": "C17H35COOH",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "ベンゼンに溶ける [cite: 156]。",
+       "electrical_conductivity": "",
+       "other": [
+         "疎水性のアルキル基と親水性のカルボキシ基からなる脂肪酸である [cite: 156]。",
+         "水面に滴下すると単分子層を形成する [cite: 156]。"
+       ]
+     },
+     "cross_refs": ["4_2_tip_001"],
+     "notes": "アボガドロ定数を求める実験に利用される [cite: 149, 156]。"
+   },
+   {
+     "id": "4_3_sub_001",
+     "name": "硫酸銅(II)五水和物",
+     "formula": "CuSO4・5H2O",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に溶ける [cite: 348]。",
+       "electrical_conductivity": "",
+       "other": [
+         "式量は250である [cite: 348]。",
+         "無水物CuSO4と水和水H2Oから構成されている [cite: 370]。"
+       ]
+     },
+     "cross_refs": ["4_3_tip_001"],
+     "notes": "水和水をもつ物質の代表例 [cite: 348, 370]。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "4_1_def_001",
+     "type": "def",
+     "title": "絶対質量と相対質量",
+     "prerequisite_ids": [],
+     "definition": "グラムなどの単位を用いて表した質量を絶対質量といい、質量数12の炭素原子1個の質量を12と決め、それを基準とした質量の比を相対質量という [cite: 12]。",
+     "explanation": "原子1個の質量は非常に小さいため、そのままグラムで表す（絶対質量）と不便です [cite: 12]。そこで、特定の炭素原子を「12」という基準の重さとし、それと比べて何倍重いかで表す（相対質量）と扱いやすい数値になります [cite: 12]。陽子や中性子の相対質量はほぼ1となるため、原子の相対質量は質量数にほぼ等しくなります [cite: 13]。",
+     "conditions": [
+       "基準は質量数12の炭素原子（12C）1個の質量を12とする [cite: 12]。"
+     ],
+     "examples": [
+       {
+         "label": "水素原子の絶対質量",
+         "substance_ids": [],
+         "description": "水素原子1個の実際の質量 [cite: 12]。",
+         "values": [
+           { "value": "1.6735e-24", "unit": "g", "condition": "水素原子1個 [cite: 12]" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["TBD:質量数", "TBD:同位体"],
+     "source_page": 100
+   },
+   {
+     "id": "4_1_def_002",
+     "type": "def",
+     "title": "原子量",
+     "prerequisite_ids": ["4_1_def_001"],
+     "definition": "同位体の相対質量にそれぞれの存在比をかけて求めた平均値 [cite: 18]。",
+     "explanation": "自然界の元素には重さの異なる同位体が混ざっています [cite: 18]。そのため、それぞれの同位体の相対質量と、それが自然界に存在する割合（存在比）を使って平均値を計算し、その元素を代表する質量として「原子量」を定めています [cite: 18]。",
+     "conditions": [
+       "同位体の存在比（百分率）の合計は1（100%）となる [cite: 27]。"
+     ],
+     "examples": [
+       {
+         "label": "炭素の原子量",
+         "substance_ids": ["4_1_sub_001"],
+         "description": "質量数12の炭素と質量数13の炭素の存在比に基づく平均値 [cite: 18, 19]。",
+         "values": [
+           { "value": 12.01, "unit": "", "condition": "自然界の平均値 [cite: 19]" }
+         ]
+       }
+     ],
+     "counter_examples": [
+       "原子量には単位がない（無次元量あるいは無名数という） [cite: 69]。"
+     ],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "各同位体の相対質量と存在比を掛け合わせる [cite: 18]。",
+         "reason": "それぞれの同位体が全体に占める質量の割合を求めるため [cite: 18]。"
+       },
+       {
+         "step": 2,
+         "action": "それらの総和を求める [cite: 25]。",
+         "reason": "全体の平均値を算出するため [cite: 18]。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "同位体の相対質量と原子量から、それぞれの同位体の存在比（原子数百分率）を求める問題 [cite: 29]。",
+         "key_concept_ids": ["4_1_def_002"]
+       }
+     ],
+     "cross_refs": ["4_1_def_003"],
+     "source_page": 102
+   },
+   {
+     "id": "4_1_def_003",
+     "type": "def",
+     "title": "分子量と式量",
+     "prerequisite_ids": ["4_1_def_002"],
+     "definition": "分子量は分子を構成する元素の原子量の総和であり、式量はイオンの化学式や組成式に含まれる元素の原子量の総和である [cite: 63, 67, 68]。",
+     "explanation": "分子の相対質量を表すのが分子量です [cite: 62]。イオンや、塩化ナトリウムのような分子を作らない物質（組成式で表される物質）の相対質量を表すのが式量です [cite: 65]。どちらも、構成する原子の原子量を足し合わせて計算します [cite: 63, 68]。",
+     "conditions": [
+       "電子の質量は無視できるため、単原子イオンの式量はその原子の原子量に等しい [cite: 66]。"
+     ],
+     "examples": [
+       {
+         "label": "水(H2O)の分子量",
+         "substance_ids": [],
+         "description": "水素の原子量と酸素の原子量の和 [cite: 64]。",
+         "values": [
+           { "value": 18, "unit": "", "condition": "1.0×2 + 16 [cite: 64]" }
+         ]
+       },
+       {
+         "label": "塩化ナトリウム(NaCl)の式量",
+         "substance_ids": [],
+         "description": "ナトリウムと塩素の原子量の和 [cite: 71]。",
+         "values": [
+           { "value": 58.5, "unit": "", "condition": "23 + 35.5 [cite: 71]" }
+         ]
+       }
+     ],
+     "counter_examples": [
+       "原子量と同様に、分子量や式量にも単位はない [cite: 69]。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられた化学式と原子量から、物質の分子量や式量を計算する問題 [cite: 75, 77]。"
+       }
+     ],
+     "cross_refs": ["TBD:組成式"],
+     "source_page": 103
+   },
+   {
+     "id": "4_2_def_001",
+     "type": "def",
+     "title": "物質量",
+     "prerequisite_ids": [],
+     "definition": "粒子の数をアボガドロ定数で割った値であり、原子や分子やイオンの量を表す物理量 [cite: 120, 121]。",
+     "explanation": "原子や分子は小さすぎて1個ずつ数えるのが難しいため、$6.02 \\times 10^{23}$ 個を1まとまり（1 mol）として数えます [cite: 120, 121]。これは鉛筆12本を1ダースと呼ぶのと同じ考え方です [cite: 121]。単位には「mol」を用います [cite: 120]。",
+     "conditions": [
+       "「何について」表しているかを化学式などを用いて明確にする必要がある [cite: 121]。"
+     ],
+     "examples": [
+       {
+         "label": "水分子の物質量",
+         "substance_ids": [],
+         "description": "水分子が $3.01 \\times 10^{23}$ 個あるときの物質量 [cite: 203]。",
+         "values": [
+           { "value": 0.500, "unit": "mol", "condition": "3.01×10^23 / 6.02×10^23 [cite: 208]" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられた粒子の数から物質量(mol)を求める問題 [cite: 203]。"
+       }
+     ],
+     "cross_refs": ["4_2_def_002"],
+     "source_page": 104
+   },
+   {
+     "id": "4_2_def_002",
+     "type": "def",
+     "title": "アボガドロ定数",
+     "prerequisite_ids": ["4_2_def_001"],
+     "definition": "1molあたりの粒子の数であり、記号 $N_A$ で表され、$6.02 \\times 10^{23} /\\text{mol}$ と定義される [cite: 120]。",
+     "explanation": "物質1molの中に含まれる粒子の個数を示す定数です [cite: 120, 121]。この値を使うことで、物質量から粒子の数を計算したり、逆に粒子の数から物質量を計算したりすることができます [cite: 125]。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["4_2_tip_001"],
+     "source_page": 104
+   },
+   {
+     "id": "4_2_tip_001",
+     "type": "tip",
+     "title": "アボガドロ定数の利用例",
+     "prerequisite_ids": ["4_2_def_002"],
+     "definition": "アボガドロ定数を利用することで、原子1個の質量、ファラデー定数、金属の格子定数、分子の断面積などを求めることができる [cite: 130, 132, 135, 139, 149]。",
+     "explanation": "アボガドロ定数 $N_A$ は単に個数を数えるだけでなく、マクロな質量（モル質量）とミクロな質量（原子1個の質量）を結びつける架け橋になります [cite: 134]。例えば、原子1個の質量 $m$ は、モル質量 $M$ を $N_A$ で割ることで求められます [cite: 134]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "ステアリン酸分子の断面積の算出",
+         "substance_ids": ["4_2_sub_001"],
+         "description": "ステアリン酸の単分子層の面積と質量、アボガドロ定数から分子1個の占有面積を求める [cite: 156, 157, 163]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "モル質量とアボガドロ定数を用いて、粒子1個の質量を計算する問題 [cite: 204]。"
+       }
+     ],
+     "cross_refs": ["TBD:ファラデー定数", "TBD:面心立方格子"],
+     "source_page": 105
+   },
+   {
+     "id": "4_2_def_003",
+     "type": "def",
+     "title": "モル質量",
+     "prerequisite_ids": ["4_1_def_003", "4_2_def_001"],
+     "definition": "物質1molあたりの質量をモル質量といい、その単位にはg/molが用いられる [cite: 165]。",
+     "explanation": "ある物質をちょうど1mol（粒子が $6.02 \\times 10^{23}$ 個）集めたときの重さのことです [cite: 165]。これは、その物質の原子量、分子量、または式量に「g/mol」という単位をつけた数値と完全に一致します [cite: 166]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "水のモル質量",
+         "substance_ids": [],
+         "description": "水の分子量18に単位をつけたもの [cite: 166]。",
+         "values": [
+           { "value": 18, "unit": "g/mol", "condition": "" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "質量をモル質量で割り、物質量(mol)を求める問題 [cite: 185, 187]。"
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 106
+   },
+   {
+     "id": "4_2_law_001",
+     "type": "law",
+     "title": "アボガドロの法則",
+     "prerequisite_ids": [],
+     "definition": "すべての気体は、同温・同圧・同体積中に同数の分子を含む [cite: 226]。",
+     "explanation": "気体の種類（水素でも酸素でも二酸化炭素でも）に関係なく、温度と圧力と体積が同じであれば、その中に含まれる気体分子の個数は必ず同じになるという法則です [cite: 226, 241]。このため、気体の体積は物質量（分子の数）に比例します [cite: 259]。",
+     "conditions": [
+       "温度と圧力を一定にして考える必要がある [cite: 222]。"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["4_2_def_004", "4_2_def_005"],
+     "source_page": 107
+   },
+   {
+     "id": "4_2_def_004",
+     "type": "def",
+     "title": "モル体積と標準状態",
+     "prerequisite_ids": ["4_2_law_001", "4_2_def_001"],
+     "definition": "気体分子1molあたりの体積をモル体積といい、0℃、$1.01 \\times 10^5 \\text{Pa}$（標準状態）において、気体の種類に関わらず22.4L/molとなる [cite: 241, 242]。",
+     "explanation": "どんな気体でも、標準状態（0℃、1気圧）であれば、1mol集めるとその体積は22.4Lになります [cite: 241]。混合気体である空気でも同じように成り立ちます [cite: 242]。これを使うと、気体の体積から物質量（mol）を簡単に計算できます [cite: 260]。",
+     "conditions": [
+       "標準状態（0℃、$1.01 \\times 10^5 \\text{Pa}$）であること [cite: 242]。"
+     ],
+     "examples": [
+       {
+         "label": "標準状態の空気1molの体積",
+         "substance_ids": [],
+         "description": "窒素と酸素の混合気体でも1molは22.4L [cite: 242]。",
+         "values": [
+           { "value": 22.4, "unit": "L", "condition": "標準状態 [cite: 242]" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [
+       "気体1molは22.4L（ににんがし） [cite: 272, 273]"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "標準状態の気体の体積[L]を22.4L/molで割り、物質量[mol]を求める問題 [cite: 264, 301]。"
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 108
+   },
+   {
+     "id": "4_2_tip_002",
+     "type": "tip",
+     "title": "気体の密度と見かけの分子量",
+     "prerequisite_ids": ["4_2_def_004", "4_2_def_003"],
+     "definition": "気体の密度にモル体積(22.4L/mol)をかけるとモル質量となり、空気の見かけの分子量(28.8)と比較することで気体の軽重を判断できる [cite: 321, 323, 327]。",
+     "explanation": "標準状態の気体の密度（1Lあたりの質量）がわかれば、それに22.4L/molをかけることで、その気体の分子量（モル質量）が計算できます [cite: 286, 327]。また、空気は窒素と酸素が4:1で混ざっており、平均分子量は約28.8です [cite: 321, 322]。これより分子量が小さい気体は空気より軽く、大きい気体は重いと判断できます [cite: 323, 324]。",
+     "conditions": [
+       "同温・同圧での比較であること [cite: 321]。",
+       "空気の体積比を窒素:酸素=4:1とする [cite: 321]。"
+     ],
+     "examples": [
+       {
+         "label": "水素と二酸化炭素の空気との比較",
+         "substance_ids": [],
+         "description": "分子量2.0の水素は空気(28.8)より軽く、分子量44の二酸化炭素は重い [cite: 324]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "気体の密度から分子量を求める、あるいは他気体との密度比から分子量を求める問題 [cite: 304, 326]。"
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 110
+   },
+   {
+     "id": "4_3_def_001",
+     "type": "def",
+     "title": "質量パーセント濃度",
+     "prerequisite_ids": [],
+     "definition": "溶液の質量に対する溶質の質量の割合を百分率（パーセント）で表した濃度 [cite: 341, 344]。",
+     "explanation": "溶液全体（溶媒＋溶質）の重さのうち、溶けている物質（溶質）の重さが何パーセントを占めているかを示す値です [cite: 341]。水100gに塩10gを溶かした場合、全体の質量は110gになるため、濃度は「10 / 110 × 100」で約9.1%となります [cite: 345]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "塩化ナトリウム水溶液",
+         "substance_ids": [],
+         "description": "塩化ナトリウム10gを水100gに溶かした場合の濃度 [cite: 345]。",
+         "values": [
+           { "value": 9.1, "unit": "%", "condition": "塩10g、水100g [cite: 345]" }
+         ]
+       }
+     ],
+     "counter_examples": [
+       "水100gに溶質10gを溶かしても、10%にはならない（分母は100+10になるため） [cite: 345]。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "溶質の質量と溶媒の質量から質量パーセント濃度を求める問題 [cite: 344]。"
+       }
+     ],
+     "cross_refs": ["4_3_tip_001"],
+     "source_page": 111
+   },
+   {
+     "id": "4_3_tip_001",
+     "type": "tip",
+     "title": "水和物の溶解と濃度計算",
+     "prerequisite_ids": ["4_3_def_001"],
+     "definition": "水和水をもつ物質を水に溶かす際、水和水は溶媒の水の一部となり、無水物のみが溶質として計算される [cite: 348, 352, 372]。",
+     "explanation": "結晶の中に水分子を含んでいる物質（水和物）を水に溶かすと、元々持っていた水分子（水和水）はただの水になり、溶媒の一部として扱われます [cite: 352, 372]。そのため、濃度を計算するときの「溶質」の質量は、水和水を除いた「無水物」だけの質量で考える必要があります [cite: 348]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "硫酸銅(II)五水和物の溶解",
+         "substance_ids": ["4_3_sub_001"],
+         "description": "25gの五水和物(式量250)を溶かすと、溶質である無水物(式量160)は16gとなる [cite: 348, 349]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [
+       "水和水、水に溶ければただの水！ [cite: 352]"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "水和物を水に溶かした場合の質量パーセント濃度やモル濃度を求める問題 [cite: 348, 425]。"
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 111
+   },
+   {
+     "id": "4_3_def_002",
+     "type": "def",
+     "title": "モル濃度",
+     "prerequisite_ids": ["4_2_def_001"],
+     "definition": "溶液1L中の溶質の量を物質量で表した濃度で、単位はmol/L [cite: 364, 365]。",
+     "explanation": "溶液1リットルあたりに、溶質が何モル溶けているかを示す濃度です [cite: 364]。化学反応では物質量が重要になるため、このモル濃度が最もよく使われます。溶液の体積にモル濃度をかけることで、含まれる溶質の物質量(mol)が計算できます [cite: 391]。",
+     "conditions": [
+       "体積は溶媒の体積ではなく、完成した「溶液」の体積である [cite: 366, 369]。",
+       "計算時は体積の単位を基本L(リットル)に変換する [cite: 391]。"
+     ],
+     "examples": [],
+     "counter_examples": [
+       "「水1Lに溶質を溶かす」のではなく、「溶質を水に溶かして全体を1Lにする」のが正しい [cite: 366]。"
+     ],
+     "mnemonics": [
+       "cV均一（モル濃度cと体積Vをかけると溶質の物質量になる） [cite: 394, 396]"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "質量から物質量を求め、さらに溶液の体積で割ってモル濃度を求める問題 [cite: 401]。"
+       },
+       {
+         "pattern": "モル濃度と体積から、溶質の物質量や質量を逆算する問題 [cite: 404, 406]。"
+       }
+     ],
+     "cross_refs": ["4_3_proc_001"],
+     "source_page": 112
+   },
+   {
+     "id": "4_3_proc_001",
+     "type": "proc",
+     "title": "溶液の調製",
+     "prerequisite_ids": ["4_3_def_002"],
+     "definition": "正確な濃度の水溶液（例: 0.10 mol/L）をメスフラスコ等を用いて調製する手順 [cite: 374]。 ",
+     "explanation": "モル濃度の正確な溶液を作るためには、加える水の量を計算で決めることができません [cite: 369]。そのため、溶質を完全に溶かした後、目盛り付きのフラスコ（メスフラスコ）を使って、全体の体積がちょうど目的の量になるように水を加えて調整します [cite: 377, 379]。",
+     "conditions": [
+       "メスフラスコなどの精密な体積計を使用する [cite: 377]。"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "電子てんびんを使って、必要な質量の溶質をビーカーに正確にはかりとる [cite: 375]。",
+         "reason": "正確な物質量を用意するため [cite: 375]。"
+       },
+       {
+         "step": 2,
+         "action": "少量の純粋な水を加え、完全に溶かす [cite: 376]。",
+         "reason": "溶け残りを防ぐため [cite: 376]。"
+       },
+       {
+         "step": 3,
+         "action": "溶液をメスフラスコに移す [cite: 377]。",
+         "reason": "正確な体積に合わせる準備のため [cite: 377]。"
+       },
+       {
+         "step": 4,
+         "action": "ビーカーを純粋な水で洗い、その洗液もメスフラスコに入れる操作を数回繰り返す [cite: 378]。",
+         "reason": "ビーカーに残った溶質をすべて回収するため [cite: 378]。"
+       },
+       {
+         "step": 5,
+         "action": "メスフラスコの標線まで純粋な水を加えて、栓をしてよく振り混ぜる [cite: 379]。",
+         "reason": "全体の体積を正確に合わせ、濃度を均一にするため [cite: 379]。"
+       }
+     ],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 112
+   },
+   {
+     "id": "4_3_def_003",
+     "type": "def",
+     "title": "質量モル濃度",
+     "prerequisite_ids": ["4_2_def_001"],
+     "definition": "溶媒1kgに溶かした溶質の量を物質量で表した濃度で、単位記号は mol/kg を使う [cite: 427]。",
+     "explanation": "モル濃度は「溶液の体積」を基準にしますが、体積は温度によって変化してしまいます [cite: 428]。そこで、温度が変わっても変化しない「溶媒の質量(kg)」を基準にして、そこに溶けている溶質の物質量(mol)を表したのが質量モル濃度です [cite: 428]。",
+     "conditions": [
+       "分母は溶液の質量ではなく、溶媒のみの質量(kg)である [cite: 429]。"
+     ],
+     "examples": [],
+     "counter_examples": [
+       "分母に溶液の質量を使ってはいけない [cite: 429]。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "質量パーセント濃度などから溶媒の質量と溶質の物質量を導き、質量モル濃度を求める問題 [cite: 465, 482]。"
+       }
+     ],
+     "cross_refs": ["TBD:沸点上昇", "TBD:凝固点降下"],
+     "source_page": 114
+   },
+   {
+     "id": "4_3_eq_001",
+     "type": "eq",
+     "title": "濃度の換算",
+     "prerequisite_ids": ["4_3_def_001", "4_3_def_002"],
+     "definition": "溶液の密度と溶質のモル質量を用いて、質量パーセント濃度とモル濃度を相互に換算する手順 [cite: 433, 434]。",
+     "explanation": "パーセント濃度からモル濃度を計算したり、その逆を行ったりする計算です [cite: 434]。体積と質量を変換するために「密度(g/cm³)」の情報が必ず必要になります [cite: 433]。計算間違いを防ぐため、常に「溶液1L（1000cm³）」を仮定して計算を始めるのがコツです [cite: 447]。",
+     "conditions": [
+       "溶液の密度 $d [\\text{g/cm}^3]$ と溶質のモル質量 $M [\\text{g/mol}]$ がわかっていること [cite: 433]。"
+     ],
+     "examples": [
+       {
+         "label": "濃硫酸の濃度換算",
+         "substance_ids": [],
+         "description": "98.0%、密度1.84 g/cm³ の硫酸のモル濃度を計算すると18.4 mol/L になる [cite: 444, 452]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [
+       "濃度の換算は1Lで考える [cite: 447]。"
+     ],
+     "steps": [
+       {
+         "step": 1,
+         "action": "溶液 1 L (1000 cm³) の質量を計算する（密度 $d \\times 1000$） [cite: 438]。",
+         "reason": "体積を質量に変換するため [cite: 438]。"
+       },
+       {
+         "step": 2,
+         "action": "その質量に質量パーセント濃度の割合（$a/100$）をかけ、溶質の質量を求める [cite: 439]。",
+         "reason": "全体の中から溶質だけの質量を取り出すため [cite: 439]。"
+       },
+       {
+         "step": 3,
+         "action": "溶質の質量をモル質量 $M$ で割り、物質量を求める [cite: 440, 441]。",
+         "reason": "質量を物質量(mol)に変換するため [cite: 440]。"
+       },
+       {
+         "step": 4,
+         "action": "求めた物質量を溶液の体積(1 L)で割ってモル濃度とする [cite: 442, 443]。",
+         "reason": "定義通りにモル濃度を算出するため [cite: 442]。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "密度と質量パーセント濃度が与えられた溶液からモル濃度を求める問題 [cite: 464]。"
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 114
+   },
+   {
+     "id": "4_4_def_001",
+     "type": "def",
+     "title": "化学反応式とイオン反応式",
+     "prerequisite_ids": [],
+     "definition": "反応物と生成物の関係を化学式で表し、両辺の原子の種類と数が一致するよう係数を付けたものが化学反応式。反応に関係するイオンを含み、両辺の電荷の総和も等しくしたものがイオン反応式 [cite: 538, 542, 548]。",
+     "explanation": "化学変化を数式のように表したものです [cite: 538]。左側に反応前の物質、右側に反応後の物質を書き、矢印で結びます [cite: 539]。物質が勝手に消えたり増えたりしないため、左右で原子の数が同じになるように係数（化学式の前の数字）を調整します [cite: 542]。水溶液中の反応など、イオンだけに着目する場合はイオン反応式を使いますが、このときは原子の数だけでなく「プラスマイナスの電気の合計（電荷）」も左右で合わせる必要があります [cite: 548]。",
+     "conditions": [
+       "係数が1のときは省略する [cite: 541]。",
+       "左辺の原子の種類とその数 ＝ 右辺の原子の種類とその数 [cite: 556]。",
+       "イオン反応式では左辺の電荷の総和 ＝ 右辺の電荷の総和 [cite: 557]。"
+     ],
+     "examples": [
+       {
+         "label": "水素と酸素の反応式",
+         "substance_ids": [],
+         "description": "水が生成する化学反応式 [cite: 539, 540]。",
+         "values": []
+       },
+       {
+         "label": "亜鉛と酸のイオン反応式",
+         "substance_ids": [],
+         "description": "水素が発生するイオン反応式 $Zn + 2H^+ \\rightarrow Zn^{2+} + H_2$ [cite: 547, 553]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["4_4_proc_001", "4_4_proc_002", "4_4_tip_001"],
+     "source_page": 116
+   },
+   {
+     "id": "4_4_proc_002",
+     "type": "proc",
+     "title": "未定係数法",
+     "prerequisite_ids": ["4_4_def_001"],
+     "definition": "各物質の係数を未知数として文字で置き、各原子について連立方程式を立てて解くことで化学反応式の係数を求める方法 [cite: 607]。",
+     "explanation": "複雑な化学反応式では、暗算（目算法）で係数を合わせるのが難しい場合があります [cite: 590, 592]。そのときは、すべての係数を $a, b, c$ などの文字にして、「反応前の各原子の数＝反応後の各原子の数」という方程式を作ります [cite: 594, 596]。文字の1つを適当な数字（例えば1）に仮定して方程式を解くと、正しい係数の比が計算できます [cite: 601, 607]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "銅と希硝酸の反応式作成",
+         "substance_ids": [],
+         "description": "未知数を使って連立方程式を立て、最後に分母を払って整数にする手順 [cite: 610, 614, 625]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "反応にかかわる物質の係数をすべて未知数（$a, b, c\\dots$）で置く [cite: 594]。",
+         "reason": "方程式を立てる準備のため [cite: 594]。"
+       },
+       {
+         "step": 2,
+         "action": "左辺と右辺の各原子の数を等しくするように、各原子について方程式をたてる [cite: 596]。",
+         "reason": "質量保存の法則を数式化するため [cite: 542, 596]。"
+       },
+       {
+         "step": 3,
+         "action": "未知数のうちのどれか1つを1とする [cite: 601]。",
+         "reason": "連立方程式の解を具体的な比率として定着させるため [cite: 601]。"
+       },
+       {
+         "step": 4,
+         "action": "方程式を解いて他の未知数を求め、必要なら全体を整数倍して簡単な整数比にする [cite: 604, 605, 625]。",
+         "reason": "化学反応式の係数は最も簡単な整数比で表すルールのため [cite: 580, 625]。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "反応物と生成物が与えられ、未定係数法を用いて化学反応式を完成させる問題 [cite: 610, 633]。"
+       }
+     ],
+     "cross_refs": ["4_4_proc_001"],
+     "source_page": 118
+   },
+   {
+     "id": "4_4_tip_001",
+     "type": "tip",
+     "title": "化学反応式の係数の意味",
+     "prerequisite_ids": ["4_4_def_001", "4_2_def_001", "4_2_law_001"],
+     "definition": "化学反応式の係数の比は、反応する分子の数の比、物質量(mol)の比、および（同温・同圧の気体の場合）体積の比を表す [cite: 639, 658, 714, 715]。",
+     "explanation": "化学反応式の前についている数字（係数）は、物質がどれだけの割合で反応するかを示す非常に重要なデータです [cite: 543]。係数の比はそのまま、粒子の個数の比や、物質量（モル）の比として使えます [cite: 639]。また、気体同士の反応であれば、同じ温度・圧力の条件のもとでの体積（リットル）の比にもなります [cite: 656, 658]。",
+     "conditions": [
+       "質量の比には直接ならないので注意が必要 [cite: 672]。",
+       "体積比が成り立つのは同温・同圧における気体のみ [cite: 656, 658]。"
+     ],
+     "examples": [
+       {
+         "label": "一酸化炭素の燃焼 ($2CO + O_2 \\rightarrow 2CO_2$)",
+         "substance_ids": [],
+         "description": "物質量比は 2:1:2、体積比(同温同圧)も 2:1:2 となる [cite: 639, 658]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "質量の関係は、係数の比ではなく、各物質のモル質量を掛けた値の比になる [cite: 674]。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "化学反応式を用いて、ある物質の量（mol、質量、体積）から、別の反応物や生成物の量を計算する過不足・量的関係の問題 [cite: 662, 677, 766]。"
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 119
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "4_1_def_001",
+     "to_id": "4_1_def_002",
+     "relation_type": "is_prerequisite_of",
+     "note": "原子量の定義には、同位体の相対質量の概念が不可欠であるため [cite: 18]。"
+   },
+   {
+     "from_id": "4_1_def_002",
+     "to_id": "4_1_def_003",
+     "relation_type": "is_prerequisite_of",
+     "note": "分子量や式量は、構成元素の原子量の総和として計算されるため [cite: 63, 68]。"
+   },
+   {
+     "from_id": "4_2_def_001",
+     "to_id": "4_2_def_003",
+     "relation_type": "is_prerequisite_of",
+     "note": "モル質量は物質量1molあたりの質量と定義されるため [cite: 165]。"
+   },
+   {
+     "from_id": "4_1_def_003",
+     "to_id": "4_2_def_003",
+     "relation_type": "is_prerequisite_of",
+     "note": "モル質量の数値は、分子量や式量と一致するため [cite: 166]。"
+   },
+   {
+     "from_id": "4_2_law_001",
+     "to_id": "4_2_def_004",
+     "relation_type": "is_prerequisite_of",
+     "note": "気体1molの体積が定まる根拠がアボガドロの法則であるため [cite: 241]。"
+   },
+   {
+     "from_id": "4_3_def_002",
+     "to_id": "4_3_proc_001",
+     "relation_type": "is_applied_in",
+     "note": "モル濃度の定義に基づき、溶液全体の体積を正確に合わせる調製操作が行われるため [cite: 366, 377]。"
+   },
+   {
+     "from_id": "4_4_def_001",
+     "to_id": "4_4_tip_001",
+     "relation_type": "is_applied_in",
+     "note": "化学反応式における係数が、そのまま物質量や体積の比として計算に応用されるため [cite: 543, 639]。"
+   }
+ ]
+}

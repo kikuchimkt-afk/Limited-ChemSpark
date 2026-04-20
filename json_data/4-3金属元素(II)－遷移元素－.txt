@@ -1,0 +1,394 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "4-3金属元素(II)－遷移元素－.pdf",
+   "chapter": 3,
+   "chapter_title": "金属元素(Ⅱ)－遷移元素－",
+   "section": 1,
+   "section_title": "遷移元素の特色",
+   "page_range": [373, 397],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "3_2_sub_001",
+     "name": "銅",
+     "formula": "Cu",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "赤色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "塩酸や希硫酸には溶けない。酸化力が強い酸（希硝酸、濃硝酸、熱濃硫酸）には溶解する。",
+       "electrical_conductivity": "良導体",
+       "other": ["展性・延性に富む"]
+     },
+     "cross_refs": ["3_2_proc_001", "3_2_rxn_001"],
+     "notes": "湿った空気中で緑青とよばれる緑色のさびができる。"
+   },
+   {
+     "id": "3_2_sub_002",
+     "name": "銀",
+     "formula": "Ag",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "銀白色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "塩酸や希硫酸には溶けない。酸化力の強い酸には溶解する。",
+       "electrical_conductivity": "金属の中で最大",
+       "other": ["展性・延性に富む"]
+     },
+     "cross_refs": ["3_2_rxn_002"],
+     "notes": "硫化水素に触れると黒色の硫化銀になる。"
+   },
+   {
+     "id": "3_2_sub_003",
+     "name": "金",
+     "formula": "Au",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "黄金色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "王水に溶解する。",
+       "electrical_conductivity": "良導体",
+       "other": ["金属の中で最も展性・延性に富む"]
+     },
+     "cross_refs": ["3_2_rxn_003"],
+     "notes": "イオン化傾向が非常に小さい。"
+   },
+   {
+     "id": "3_1_sub_004",
+     "name": "テトラアンミン銅(II)イオン",
+     "formula": "[Cu(NH3)4]2+",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "深青色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["正方形"]
+     },
+     "cross_refs": ["3_1_def_002"],
+     "notes": "錯イオン"
+   },
+   {
+     "id": "3_4_sub_005",
+     "name": "亜鉛",
+     "formula": "Zn",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": 420, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": 907, "unit": "℃", "condition": "" },
+       "color": "銀白色",
+       "odor": "",
+       "density": { "value": 7.13, "unit": "g/cm³", "condition": "" },
+       "solubility": "希硫酸や希塩酸、強塩基の水溶液に溶ける。",
+       "electrical_conductivity": "",
+       "other": ["両性金属"]
+     },
+     "cross_refs": ["3_4_def_001"],
+     "notes": "12族元素"
+   },
+   {
+     "id": "3_3_sub_006",
+     "name": "ニクロム酸カリウム",
+     "formula": "K2Cr2O7",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "赤橙色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に溶ける",
+       "electrical_conductivity": "",
+       "other": ["強い酸化作用"]
+     },
+     "cross_refs": ["3_3_rxn_001"],
+     "notes": ""
+   }
+ ],
+ "concepts": [
+   {
+     "id": "3_1_def_001",
+     "type": "def",
+     "title": "遷移元素",
+     "prerequisite_ids": ["TBD:典型元素", "TBD:周期表"],
+     "definition": "周期表の3〜12族に属する元素の総称であり、すべて金属元素である。",
+     "explanation": "遷移元素は典型元素と違い、族が違っても性質が似ていることが多いです。最外殻電子の数は1個か2個で、色付きのイオンや化合物を作ったり、複数の酸化数を持ったりします。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "遷移元素の例",
+         "substance_ids": ["3_2_sub_001", "3_2_sub_002", "3_2_sub_003", "3_4_sub_005"],
+         "description": "鉄、銅、銀、金、亜鉛など",
+         "values": []
+       }
+     ],
+     "counter_examples": ["アルミニウムやカルシウムは典型元素です。"],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "遷移元素の一般的特徴（最外殻電子数、酸化数、有色イオン）を問う正誤問題",
+         "key_concept_ids": ["3_1_def_001"]
+       }
+     ],
+     "cross_refs": ["TBD:典型元素"],
+     "source_page": 373
+   },
+   {
+     "id": "3_1_def_002",
+     "type": "def",
+     "title": "錯イオン",
+     "prerequisite_ids": ["TBD:配位結合"],
+     "definition": "非共有電子対をもった分子やイオンが、中心の金属イオンと配位結合してできたイオン。",
+     "explanation": "金属イオンの周りに、アンモニアや水分子、水酸化物イオンなどがくっついてできた大きなイオンのことです。くっつく分子やイオンを「配位子」、くっつく数を「配位数」と呼びます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "代表的な錯イオン",
+         "substance_ids": ["3_1_sub_004"],
+         "description": "[Cu(NH3)4]2+ は深青色の正方形錯イオンです。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [
+       "崇拝するイオンさん。婦人ならさらにさんをつける（錯イオンの名称の付け方のルール）"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "金属イオンと配位子から錯イオンの化学式および名称を答える問題",
+         "key_concept_ids": ["3_1_def_002"]
+       }
+     ],
+     "cross_refs": ["TBD:配位結合"],
+     "source_page": 375
+   },
+   {
+     "id": "3_2_proc_001",
+     "type": "proc",
+     "title": "銅の電解精錬",
+     "prerequisite_ids": ["TBD:電気分解", "3_2_sub_001"],
+     "definition": "粗銅を陽極、純銅を陰極とし、硫酸銅(II)水溶液を電解液として電気分解を行うことで純度の高い銅を得る操作。",
+     "explanation": "不純物を含む粗い銅から、純度99.99%の銅を取り出す方法です。電気分解すると、陽極の粗銅が溶けてイオンになり、陰極に純粋な銅として析出します。イオン化傾向の小さい金や銀は溶けずに底に沈みます（陽極泥）。",
+     "conditions": ["0.3〜0.4Vの低い電圧で行う"],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "粗銅板を陽極に、純銅板を陰極に接続する",
+         "reason": "陽極で銅を酸化して溶かし、陰極で還元して純銅を析出させるため"
+       },
+       {
+         "step": 2,
+         "action": "硫酸銅(II)水溶液中で低電圧で電気分解する",
+         "reason": "銅よりイオン化傾向の小さい金属（Ag, Auなど）の溶解や、大きい金属（Zn, Feなど）の析出を防ぐため"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "電解精錬における各極の反応式と陽極泥の成分を問う問題",
+         "key_concept_ids": ["3_2_proc_001"]
+       }
+     ],
+     "cross_refs": ["TBD:電気分解"],
+     "source_page": 378
+   },
+   {
+     "id": "3_3_rxn_001",
+     "type": "rxn",
+     "title": "クロム酸イオンとニクロム酸イオンの平衡",
+     "prerequisite_ids": ["TBD:化学平衡", "3_3_sub_006"],
+     "definition": "クロム酸イオン（黄色）とニクロム酸イオン（赤橙色）が水溶液の液性（酸性・塩基性）によって相互に変化する平衡状態。",
+     "explanation": "クロムの化合物は、水溶液が酸性か塩基性かで色が変わります。黄色いクロム酸イオンに酸を加えると赤橙色のニクロム酸イオンに変わり、逆に塩基を加えると黄色に戻ります。",
+     "conditions": ["可逆反応であること"],
+     "examples": [],
+     "counter_examples": ["これは酸化還元反応ではありません（クロムの酸化数は+6のまま）"],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "液性の変化に伴うイオンの色と化学式の変化を問う問題",
+         "key_concept_ids": ["3_3_rxn_001"]
+       }
+     ],
+     "cross_refs": ["TBD:ルシャトリエの原理"],
+     "source_page": 383
+   },
+   {
+     "id": "3_3_proc_002",
+     "type": "proc",
+     "title": "鉄の製錬",
+     "prerequisite_ids": ["TBD:還元反応"],
+     "definition": "溶鉱炉に鉄鉱石、コークス、石灰石を入れ、一酸化炭素による還元反応を利用して銑鉄を得る工程。",
+     "explanation": "鉄鉱石（酸化鉄）から酸素を奪って鉄を取り出す方法です。コークスが燃えてできた一酸化炭素が、鉄鉱石から段階的に酸素を奪っていきます。ここで得られた鉄は炭素を多く含むため「銑鉄」と呼ばれます。",
+     "conditions": ["高温環境が必要"],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "溶鉱炉に鉄鉱石(Fe2O3)、コークス(C)、石灰石(CaCO3)を入れる",
+         "reason": "鉄を還元し、不純物をスラグとして除去するため"
+       },
+       {
+         "step": 2,
+         "action": "熱風を送り高温にする",
+         "reason": "コークスからCOを発生させ、段階的還元反応（Fe2O3 → Fe3O4 → FeO → Fe）を起こすため"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "溶鉱炉内の還元反応式、銑鉄と鋼の違いを問う問題",
+         "key_concept_ids": ["3_3_proc_002"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 384
+   },
+   {
+     "id": "3_4_def_001",
+     "type": "def",
+     "title": "両性金属",
+     "prerequisite_ids": ["TBD:酸と塩基", "3_4_sub_005"],
+     "definition": "酸の水溶液にも強塩基の水溶液にも反応して水素を発生し、塩をつくる金属。",
+     "explanation": "普通の金属は酸にしか溶けませんが、亜鉛(Zn)、アルミニウム(Al)、スズ(Sn)、鉛(Pb)は例外で、水酸化ナトリウムのような強いアルカリ（塩基）の水溶液にも溶けて水素を出します。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "両性金属の例",
+         "substance_ids": ["3_4_sub_005"],
+         "description": "亜鉛、アルミニウム、スズ、鉛",
+         "values": []
+       }
+     ],
+     "counter_examples": ["鉄や銅は強塩基の水溶液には溶けません。"],
+     "mnemonics": ["あ(Al)あ(Zn)すん(Sn)なり(Pb)と溶ける両性金属"],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "亜鉛やアルミニウムに強塩基を加えた際の反応式や錯イオンの名称を問う問題",
+         "key_concept_ids": ["3_4_def_001"]
+       }
+     ],
+     "cross_refs": ["TBD:両性酸化物"],
+     "source_page": 386
+   },
+   {
+     "id": "3_5_proc_001",
+     "type": "proc",
+     "title": "金属イオンの系統分析",
+     "prerequisite_ids": ["TBD:沈殿反応", "3_4_def_001"],
+     "definition": "数種類の金属イオンの混合溶液から、特定の試薬を順次加えて沈殿や溶解の性質を利用し、各イオンを分離・確認する手法。",
+     "explanation": "色々な金属イオンが混ざった水から、どの金属が入っているかを見つけ出す実験操作です。塩酸を入れて沈殿するもの、硫化水素を入れて沈殿するもの…というように、順番に試薬を加えてグループ分けしていきます。",
+     "conditions": ["指定された順序で試薬を加えること"],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "希塩酸を加える",
+         "reason": "Ag+, Pb2+ を塩化物(AgCl, PbCl2)として沈殿分離する"
+       },
+       {
+         "step": 2,
+         "action": "酸性で硫化水素を通じる",
+         "reason": "Cu2+, Cd2+ などを硫化物(CuSなど)として沈殿分離する"
+       },
+       {
+         "step": 3,
+         "action": "煮沸後、アンモニア水を加える",
+         "reason": "Fe3+, Al3+ などを水酸化物として沈殿分離する。煮沸はH2Sを除去するため。"
+       },
+       {
+         "step": 4,
+         "action": "塩基性で硫化水素を通じる",
+         "reason": "Zn2+ などを硫化物(ZnS)として沈殿分離する"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "系統分析の流れ図を読み解き、各段階で生じる沈殿の化学式や色を答える問題",
+         "key_concept_ids": ["3_5_proc_001"]
+       }
+     ],
+     "cross_refs": ["3_6_law_001"],
+     "source_page": 390
+   },
+   {
+     "id": "3_6_law_001",
+     "type": "law",
+     "title": "金属塩の溶解性ルール",
+     "prerequisite_ids": ["TBD:溶解度"],
+     "definition": "金属の塩化物が水に溶けるかどうかの一般的な傾向。",
+     "explanation": "ほとんどの塩（アルカリ金属や硝酸塩）は水に溶けますが、一部例外があります。例えば塩化物イオン(Cl-)はAg+, Pb2+とくっつくと水に溶けない沈殿を作ります。硫酸イオン(SO4 2-)はBa2+, Ca2+, Pb2+, Sr2+と沈殿を作ります。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": ["塩化物は銀、鉛が沈殿（銀閣寺でなまり）、硫酸塩はバカにするな（Ba, Ca, Sr, Pb）"],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "沈殿を生成する陰イオンと陽イオンの組み合わせを選ぶ問題",
+         "key_concept_ids": ["3_6_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 394
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "3_1_def_002",
+     "to_id": "3_1_sub_004",
+     "relation_type": "is_example_of",
+     "note": "テトラアンミン銅(II)イオンは錯イオンの典型例である。"
+   },
+   {
+     "from_id": "3_2_proc_001",
+     "to_id": "3_2_sub_001",
+     "relation_type": "produces",
+     "note": "電解精錬によって純銅が生成される。"
+   },
+   {
+     "from_id": "3_5_proc_001",
+     "to_id": "3_6_law_001",
+     "relation_type": "is_applied_in",
+     "note": "溶解性ルールは系統分析での沈殿分離の根拠となる。"
+   },
+   {
+     "from_id": "3_4_def_001",
+     "to_id": "3_4_sub_005",
+     "relation_type": "is_example_of",
+     "note": "亜鉛は両性金属である。"
+   }
+ ]
+}

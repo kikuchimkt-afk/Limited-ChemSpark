@@ -1,0 +1,313 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 5,
+   "chapter_title": "有機化合物と人間生活",
+   "section": 0,
+   "section_title": "界面活性剤と洗剤、医薬品、染料",
+   "page_range": [476, 482],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "5_1_sub_001",
+     "name": "セッケン（脂肪酸ナトリウム）",
+     "formula": "RCOONa (CH3-(CH2)n-COONa)",
+     "aliases": ["高級脂肪酸のナトリウム塩"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に溶解 [cite: 65]",
+       "electrical_conductivity": "",
+       "other": [
+         "水溶液は弱塩基性を示す [cite: 63, 65]。",
+         "硬水中では脂肪酸カルシウムや脂肪酸マグネシウムが沈殿し、洗浄力が低下する [cite: 65]。"
+       ]
+     },
+     "cross_refs": ["TBD:p.453"],
+     "notes": "陰イオン界面活性剤の一種 [cite: 19]。塩酸を加えると弱酸である脂肪酸が遊離し白濁する [cite: 65]。"
+   },
+   {
+     "id": "5_1_sub_002",
+     "name": "アルキルベンゼンスルホン酸ナトリウム",
+     "formula": "CH3-(CH2)n-C6H4-SO3Na",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に溶解 [cite: 65]",
+       "electrical_conductivity": "",
+       "other": [
+         "水溶液は中性を示す [cite: 65]。",
+         "硬水中でもCa2+やMg2+と沈殿をつくらないため洗浄力は低下しない [cite: 63, 65]。"
+       ]
+     },
+     "cross_refs": [],
+     "notes": "代表的な合成洗剤の成分であり、陰イオン界面活性剤 [cite: 19, 65]。"
+   },
+   {
+     "id": "5_2_sub_001",
+     "name": "アセチルサリチル酸",
+     "formula": "C9H8O4",
+     "aliases": ["アスピリン"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["TBD:p.466"],
+     "notes": "サリチル酸の副作用を緩和した対症療法薬（解熱鎮痛剤・抗炎症剤） [cite: 129]。"
+   },
+   {
+     "id": "5_2_sub_002",
+     "name": "アセトアミノフェン",
+     "formula": "C8H9NO2",
+     "aliases": ["p-アセトアミドフェノール"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": "アセトアニリドやフェナセチンの副作用（肝毒性など）を改良した解熱鎮痛剤（風邪薬） [cite: 133, 138]。"
+   },
+   {
+     "id": "5_3_sub_001",
+     "name": "インジゴ",
+     "formula": "C16H10N2O2",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "青色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に不溶 [cite: 186]",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": "アイから得られる植物染料。塩基性で還元すると無色の水溶液（ロイコ体）となり、酸化すると青色に戻る [cite: 167, 186]。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "5_1_def_001",
+     "type": "def",
+     "title": "界面活性剤",
+     "prerequisite_ids": [],
+     "definition": "液体の表面に集まって表面張力を下げる作用をもつ物質 [cite: 11]。",
+     "explanation": "水と油のように混ざらないものの境目（界面）にはたらきかけ、混ざりやすくする物質です。分子内に水になじむ「親水基」と油になじむ「疎水基」の両方を持っています [cite: 11, 12]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "陰イオン界面活性剤",
+         "substance_ids": ["5_1_sub_001", "5_1_sub_002"],
+         "description": "セッケンや硫酸アルキルナトリウムなど。分子が陰イオンになってはたらく [cite: 19]。",
+         "values": []
+       },
+       {
+         "label": "陽イオン界面活性剤（逆性セッケン）",
+         "substance_ids": [],
+         "description": "塩化ドデシルトリメチルアンモニウムなど。親水性部分が陽イオンで、殺菌・消毒剤や柔軟仕上げ剤に用いられる [cite: 20, 85, 86]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "界面活性剤の分類（陰イオン、陽イオン、非イオンなど）と用途を問う問題 [cite: 191]",
+         "key_concept_ids": ["5_1_def_001"]
+       },
+       {
+         "pattern": "セッケンと合成洗剤の性質の違い（液性、硬水中での挙動）を問う問題 [cite: 191]",
+         "key_concept_ids": ["5_1_def_001", "5_1_sub_001", "5_1_sub_002"]
+       }
+     ],
+     "cross_refs": ["TBD:p.159"],
+     "source_page": 476
+   },
+   {
+     "id": "5_1_proc_001",
+     "type": "proc",
+     "title": "洗浄のしくみ",
+     "prerequisite_ids": ["5_1_def_001"],
+     "definition": "界面活性剤の浸透作用、乳化作用、分散作用によって汚れを落とす一連の過程 [cite: 72, 73]。",
+     "explanation": "まず洗剤液が繊維と汚れの間にしみ込みます（浸透作用）。次に、界面活性剤が汚れを取り囲んでミセルという粒を作ります（乳化作用）。最後に、その粒が水中に散らばって洗い流されます（分散作用） [cite: 72, 73]。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "浸透作用",
+         "reason": "界面活性剤が表面張力を小さくし、繊維と汚れの間にしみ込んで汚れを浮かせるため [cite: 72]。"
+       },
+       {
+         "step": 2,
+         "action": "乳化作用",
+         "reason": "界面活性剤がミセルを形成し、その中に油汚れを取り込んで細かい粒子にするため [cite: 73]。"
+       },
+       {
+         "step": 3,
+         "action": "分散作用",
+         "reason": "ミセルが水中に散らばって乳濁液となり、水に流されていくため [cite: 73]。"
+       }
+     ],
+     "related_problems": [],
+     "cross_refs": ["TBD:p.453"],
+     "source_page": 478
+   },
+   {
+     "id": "5_2_def_001",
+     "type": "def",
+     "title": "対症療法薬",
+     "prerequisite_ids": [],
+     "definition": "病気の原因に直接作用しないが、病気の症状を緩和し苦痛を軽減して自然治癒力で回復に向かわせるための医薬品 [cite: 115]。",
+     "explanation": "熱を下げたり、痛みを和らげたりする薬のことです。病気そのものを治すわけではなく、症状を抑えて体が自然に治るのを助けます [cite: 115]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "サリチル酸系医薬品",
+         "substance_ids": ["5_2_sub_001"],
+         "description": "アセチルサリチル酸（解熱鎮痛剤）など [cite: 129]。",
+         "values": []
+       },
+       {
+         "label": "アミド系の医薬品",
+         "substance_ids": ["5_2_sub_002"],
+         "description": "アセトアミノフェン（解熱鎮痛剤）など [cite: 133]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "サリチル酸系およびアミド系の解熱鎮痛薬の名称と構造式を問う問題 [cite: 193-197]",
+         "key_concept_ids": ["5_2_def_001", "5_2_sub_001", "5_2_sub_002"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 480
+   },
+   {
+     "id": "5_2_def_002",
+     "type": "def",
+     "title": "化学療法薬",
+     "prerequisite_ids": [],
+     "definition": "病気の原因に直接作用し、治療する医薬品 [cite: 140]。",
+     "explanation": "細菌の増殖を抑えたり、死滅させたりして、病気の根本原因を攻撃する薬です [cite: 140]。ヒトにはない酵素に作用するため、人間への影響は少ないように作られています [cite: 140]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "サルファ剤",
+         "substance_ids": [],
+         "description": "スルファニルアミドなど。大腸菌などの発育を阻害する [cite: 141, 142]。",
+         "values": []
+       },
+       {
+         "label": "抗生物質",
+         "substance_ids": [],
+         "description": "微生物によって生産され、病原細菌を死滅させる物質。ペニシリンやストレプトマイシンなど [cite: 143, 144]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "サルファ剤の起源（プロントジル）や抗生物質（ペニシリンなど）の発見に関する穴埋め問題 [cite: 193]",
+         "key_concept_ids": ["5_2_def_002"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 480
+   },
+   {
+     "id": "5_3_def_001",
+     "type": "def",
+     "title": "発色団と助色団",
+     "prerequisite_ids": [],
+     "definition": "発色団は有機化合物が色をもつために必要な不飽和結合を含む原子団であり、助色団は色を濃くしたり染着性を与えたりする非共有電子対を含む原子団 [cite: 150-153]。",
+     "explanation": "物質が色を持つには「発色団」という特別な構造（-N=N-など）が必要です [cite: 150]。さらに「助色団」（-OHなど）がつくと、色がよりはっきり出たり、繊維に染まりやすくなったりします [cite: 151, 152]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "発色団の例",
+         "substance_ids": [],
+         "description": "-N=N- (アゾ基), -N=O, >C=O など [cite: 154-156]。",
+         "values": []
+       },
+       {
+         "label": "助色団の例",
+         "substance_ids": [],
+         "description": "-OH, -NH2, ハロゲン原子, -COOH など [cite: 157, 158]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "染料の構造における発色団と助色団の役割、およびアゾ染料の基本構造を問う問題 [cite: 199]",
+         "key_concept_ids": ["5_3_def_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 481
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "5_1_sub_001",
+     "to_id": "5_1_def_001",
+     "relation_type": "is_example_of",
+     "note": "セッケンは陰イオン界面活性剤の代表例である [cite: 19]。"
+   },
+   {
+     "from_id": "5_2_sub_001",
+     "to_id": "5_2_def_001",
+     "relation_type": "is_example_of",
+     "note": "アセチルサリチル酸は対症療法薬の代表例である [cite: 129]。"
+   },
+   {
+     "from_id": "5_3_sub_001",
+     "to_id": "5_3_def_001",
+     "relation_type": "is_applied_in",
+     "note": "インジゴの染色は酸化還元反応を利用する [cite: 186]。"
+   }
+ ]
+}

@@ -1,0 +1,2573 @@
+{
+  "metadata": {
+    "chapter": "1-4",
+    "chapter_title": "物質量と化学反応式",
+    "source_file": "json_data/1-4物質量と化学反応式.txt",
+    "textbook": "化学基礎",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "すべての文字列は日本語読み上げ可能な形式で記述。化学式・数式は日本語名に置換済み。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true,
+      "temperature_unit": "度",
+      "percent_unit": "パーセント"
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワード1語をすり替え",
+      "concept_confusion": "類似概念の混同",
+      "property_swap": "物質の性質を別物質と入れ替え",
+      "condition_change": "成立条件の変更",
+      "step_order": "手順の順序入れ替え",
+      "reason_swap": "正しい操作に誤った理由を付与",
+      "partial_truth": "前半は正しく後半だけ誤り",
+      "multiple_swap": "複数箇所を同時にすり替え",
+      "allotrope_mix": "同素体の性質を入れ替え",
+      "negation": "肯定否定を入れ替え"
+    },
+    "category_distribution": {
+      "definition": 12,
+      "property": 10,
+      "classification": 8,
+      "procedure": 6,
+      "confusion": 8,
+      "mnemonic": 3,
+      "comprehensive": 3
+    }
+  },
+  "questions": [
+    {
+      "id": "ch1_4_q001",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "definition",
+      "sub_category": "相対質量の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "相対質量について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "質量数十二の炭素原子一個の質量を十二と決め、それを基準とした他の原子の質量の比のことである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "質量数一の水素原子一個の質量を一と決め、それを基準とした他の原子の質量の比のことである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "基準は水素ではなく質量数十二の炭素。"
+        },
+        {
+          "label": "3",
+          "text": "原子一個の質量をグラム単位で表したもののことである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "グラム単位は絶対質量。相対質量は基準との比。"
+        },
+        {
+          "label": "4",
+          "text": "分子一モルあたりの質量のことである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "モル質量の定義にすり替え。"
+        }
+      ],
+      "explanation": "原子一個の質量は非常に小さいため、グラムで表すと不便な数値になります。そこで質量数十二の炭素原子一個の質量を十二という基準値とし、他の原子がそれと比べて何倍重いかで表したものが相対質量です。陽子や中性子の相対質量はほぼ一であるため、原子の相対質量は質量数にほぼ等しくなります。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_001",
+          "quote": "質量数12の炭素原子1個の質量を12と決め、それを基準とした質量の比を相対質量という"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q002",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "definition",
+      "sub_category": "原子量の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "原子量について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "同位体の相対質量にそれぞれの存在比をかけて求めた平均値であり、単位はない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "同位体のうち最も存在比の大きいものの質量数がそのまま原子量である。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "質量数に近い値になることはあるが、存在比で重みづけた平均値。"
+        },
+        {
+          "label": "3",
+          "text": "原子量の単位はグラムである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "原子量は無次元量（単位なし）。グラムはモル質量の単位。"
+        },
+        {
+          "label": "4",
+          "text": "原子量は原子核中の陽子と中性子と電子の総数である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これは質量数に近い概念。原子量は同位体の加重平均。"
+        }
+      ],
+      "explanation": "原子量は自然界に存在する同位体の相対質量を、それぞれの存在比（割合）で重みづけて平均した値です。たとえば炭素は質量数十二と十三の同位体があり、存在比で平均すると約十二・〇一になります。原子量には単位がなく、無次元量と呼ばれます。単位をつけるとモル質量（グラム毎モル）になります。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_002",
+          "quote": "同位体の相対質量にそれぞれの存在比をかけて求めた平均値"
+        },
+        {
+          "source_id": "4_1_def_002",
+          "quote": "原子量には単位がない（無次元量あるいは無名数という）"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_002",
+        "4_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q003",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "definition",
+      "sub_category": "分子量と式量の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "分子量と式量について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子量は分子を構成する原子の原子量の総和であり、式量はイオンの化学式や組成式に含まれる原子の原子量の総和である。どちらも単位はない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分子量は分子一個の質量をグラムで表したもので、式量は組成式一個の質量をグラムで表したものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "グラム表記は絶対質量。分子量・式量は無次元。"
+        },
+        {
+          "label": "3",
+          "text": "分子量と式量は同じ意味であり、使い分ける必要はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量は分子に対して、式量は組成式やイオンに対して使い分ける。"
+        },
+        {
+          "label": "4",
+          "text": "分子量の単位はモル、式量の単位はグラムである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "どちらも単位なし。"
+        }
+      ],
+      "explanation": "分子量は分子を構成する全原子の原子量の和で表される相対質量です。たとえば水は水素の原子量一・〇が二つと酸素の原子量十六で計十八です。一方、塩化ナトリウムのように分子を作らない物質では式量を使い、ナトリウムの原子量二十三と塩素の原子量三十五・五で五十八・五となります。どちらも単位のない無次元量です。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_003",
+          "quote": "分子量は分子を構成する元素の原子量の総和であり、式量はイオンの化学式や組成式に含まれる元素の原子量の総和である"
+        },
+        {
+          "source_id": "4_1_def_003",
+          "quote": "原子量と同様に、分子量や式量にも単位はない"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_003",
+        "4_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q004",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "definition",
+      "sub_category": "物質量の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "物質量について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "粒子をアボガドロ定数（約六・〇二かける十の二十三乗個）ずつまとめて数えた量であり、単位はモルである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "物質の質量をグラムで表したものであり、単位はグラムである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "質量の定義にすり替え。物質量の単位はモル。"
+        },
+        {
+          "label": "3",
+          "text": "物質の体積をリットルで表したものであり、単位はリットルである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "体積の定義にすり替え。"
+        },
+        {
+          "label": "4",
+          "text": "物質の密度のことであり、単位はグラム毎立方センチメートルである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "密度の定義にすり替え。"
+        }
+      ],
+      "explanation": "物質量とは、原子や分子やイオンなどの粒子をアボガドロ定数（約六・〇二かける十の二十三乗）個ずつまとめて数えたときの量のことです。単位にはモルを使います。鉛筆十二本を一ダースと呼ぶのと同じ考え方で、粒子約六・〇二かける十の二十三乗個を一モルと呼びます。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_001",
+          "quote": "粒子の数をアボガドロ定数で割った値であり、原子や分子やイオンの量を表す物理量"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_001",
+        "4_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q005",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "definition",
+      "sub_category": "アボガドロ定数の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アボガドロ定数について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "一モルあたりの粒子の数であり、約六・〇二かける十の二十三乗個毎モルと定義される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "一グラムあたりの粒子の数であり、物質によって異なる値をとる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "一モルあたり。一グラムあたりではない。物質によらず一定。"
+        },
+        {
+          "label": "3",
+          "text": "気体一リットルあたりの分子の数であり、温度や圧力によって変わる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これは気体の密度に関する概念。アボガドロ定数は一モルあたりの定数。"
+        },
+        {
+          "label": "4",
+          "text": "約六・〇二かける十の二十乗個毎モルと定義される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "十の二十乗ではなく十の二十三乗が正しい。"
+        }
+      ],
+      "explanation": "アボガドロ定数は物質一モルに含まれる粒子の数で、約六・〇二かける十の二十三乗個毎モルです。この値はすべての物質に共通であり、物質の種類によって変わることはありません。アボガドロ定数を使うことで、物質量から粒子の数を計算したり、逆に粒子の数から物質量を計算したりすることができます。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_002",
+          "quote": "1molあたりの粒子の数であり、6.02×10^23/molと定義される"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q006",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "definition",
+      "sub_category": "モル質量の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "モル質量について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "物質一モルあたりの質量であり、原子量・分子量・式量にグラム毎モルの単位をつけた数値と一致する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "物質一個あたりの質量であり、絶対質量と同じ意味である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "一個あたりではなく一モルあたり。一個の質量は絶対質量。"
+        },
+        {
+          "label": "3",
+          "text": "物質一リットルあたりの質量であり、密度と同じ意味である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "一リットルあたりの質量は密度。モル質量は一モルあたり。"
+        },
+        {
+          "label": "4",
+          "text": "モル質量には単位がなく、原子量と完全に同じものである。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "数値は一致するが、モル質量にはグラム毎モルの単位がある。"
+        }
+      ],
+      "explanation": "モル質量は物質一モル（粒子約六・〇二かける十の二十三乗個）を集めたときの質量です。水の分子量は十八であるため、水のモル質量は十八グラム毎モルです。同様に塩化ナトリウムの式量は五十八・五なので、モル質量は五十八・五グラム毎モルです。原子量・分子量・式量との違いは単位の有無です。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_003",
+          "quote": "物質1molあたりの質量をモル質量といい、その単位にはg/molが用いられる"
+        },
+        {
+          "source_id": "4_2_def_003",
+          "quote": "その物質の原子量、分子量、または式量に「g/mol」という単位をつけた数値と完全に一致します"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_003",
+        "4_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q007",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "definition",
+      "sub_category": "アボガドロの法則",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アボガドロの法則について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "すべての気体は、同温・同圧・同体積中に同数の分子を含む。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "すべての物質は、同温・同圧・同体積中に同数の粒子を含む。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "気体に限定される法則。液体や固体には適用できない。"
+        },
+        {
+          "label": "3",
+          "text": "すべての気体は、温度や圧力に関係なく同じ体積中に同数の分子を含む。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "同温・同圧の条件が必要。"
+        },
+        {
+          "label": "4",
+          "text": "すべての気体は、同温・同圧・同体積中に同じ質量の分子を含む。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "同数の分子であり同じ質量ではない。分子量が異なれば質量は異なる。"
+        }
+      ],
+      "explanation": "アボガドロの法則は、気体の種類に関係なく、温度と圧力と体積が同じであれば含まれる分子の個数は等しいという法則です。このため気体の体積は物質量（分子の数）に比例します。この法則は気体にのみ適用され、液体や固体には当てはまりません。また同温・同圧という条件が前提であることに注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "4_2_law_001",
+          "quote": "すべての気体は、同温・同圧・同体積中に同数の分子を含む"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q008",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "definition",
+      "sub_category": "モル体積と標準状態",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "モル体積と標準状態について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "標準状態（零度、約一・〇一かける十の五乗パスカル）において、気体の種類に関わらず一モルの体積は二十二・四リットルである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "標準状態において、気体一モルの体積は気体の種類によって大きく異なる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "気体の種類によらず二十二・四リットルで共通。"
+        },
+        {
+          "label": "3",
+          "text": "標準状態とは摂氏二十五度、一気圧のことである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "化学の標準状態は零度。二十五度ではない。"
+        },
+        {
+          "label": "4",
+          "text": "モル体積は液体にも適用でき、液体一モルも二十二・四リットルになる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "モル体積二十二・四リットルは気体のみの性質。液体は体積が小さい。"
+        }
+      ],
+      "explanation": "標準状態とは零度かつ約一・〇一かける十の五乗パスカル（一気圧）のことです。この条件ではアボガドロの法則により、どのような気体でも一モル（約六・〇二かける十の二十三乗個の分子）の体積は二十二・四リットルになります。この値をモル体積と呼び、気体の体積と物質量の変換に用います。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_004",
+          "quote": "0℃、1.01×10^5 Pa（標準状態）において、気体の種類に関わらず22.4L/molとなる"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_004",
+        "4_2_law_001"
+      ],
+      "mnemonic": "気体一モルは二十二・四リットル"
+    },
+    {
+      "id": "ch1_4_q009",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "definition",
+      "sub_category": "質量パーセント濃度の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "質量パーセント濃度について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶液全体の質量に対する溶質の質量の割合を百分率で表した濃度である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "溶媒の質量に対する溶質の質量の割合を百分率で表した濃度である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "分母は溶媒ではなく溶液（溶媒＋溶質）の質量。"
+        },
+        {
+          "label": "3",
+          "text": "溶液一リットルあたりの溶質の物質量で表した濃度である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "モル濃度の定義にすり替え。"
+        },
+        {
+          "label": "4",
+          "text": "溶媒一キログラムあたりの溶質の物質量で表した濃度である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "質量モル濃度の定義にすり替え。"
+        }
+      ],
+      "explanation": "質量パーセント濃度は溶液全体に占める溶質の質量の割合をパーセントで表します。重要なのは分母が溶液全体（溶媒と溶質の合計）であることです。水百グラムに食塩十グラムを溶かした場合、全体は百十グラムなので濃度は十割る百十かける百で約九・一パーセントとなり、十パーセントにはなりません。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "溶液の質量に対する溶質の質量の割合を百分率（パーセント）で表した濃度"
+        },
+        {
+          "source_id": "4_3_def_001",
+          "quote": "水100gに溶質10gを溶かしても、10%にはならない（分母は100+10になるため）"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q010",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "definition",
+      "sub_category": "モル濃度の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "モル濃度について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶液一リットル中の溶質の量を物質量（モル）で表した濃度であり、単位はモル毎リットルである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "溶媒一リットルに溶けている溶質の量を物質量で表した濃度である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "溶媒ではなく溶液の体積。"
+        },
+        {
+          "label": "3",
+          "text": "溶液全体の質量に対する溶質の質量の割合をパーセントで表した濃度である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "質量パーセント濃度の定義にすり替え。"
+        },
+        {
+          "label": "4",
+          "text": "溶媒一キログラムに溶けている溶質の物質量で表した濃度である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "質量モル濃度の定義にすり替え。"
+        }
+      ],
+      "explanation": "モル濃度は完成した溶液一リットルあたりに溶けている溶質の物質量（モル）を示す濃度です。注意点として、溶媒一リットルに溶かすのではなく、溶質を溶かした後の溶液全体の体積が一リットルとなるよう調製するのが正しい考え方です。溶液の体積にモル濃度をかけると溶質の物質量が得られます。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_002",
+          "quote": "溶液1L中の溶質の量を物質量で表した濃度で、単位はmol/L"
+        },
+        {
+          "source_id": "4_3_def_002",
+          "quote": "「水1Lに溶質を溶かす」のではなく、「溶質を水に溶かして全体を1Lにする」のが正しい"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q011",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "definition",
+      "sub_category": "質量モル濃度の定義",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "質量モル濃度について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶媒一キログラムに溶かした溶質の量を物質量で表した濃度であり、温度変化による体積変化の影響を受けない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "溶液一キログラムに溶かした溶質の量を物質量で表した濃度である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "分母は溶液ではなく溶媒の質量。"
+        },
+        {
+          "label": "3",
+          "text": "溶媒一リットルあたりの溶質の量で表した濃度であり、モル濃度と同じものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "モル濃度は溶液の体積基準。質量モル濃度は溶媒の質量基準。"
+        },
+        {
+          "label": "4",
+          "text": "温度変化で数値が変わりやすいため、沸点上昇や凝固点降下の計算には使えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "逆。温度変化の影響を受けないため沸点上昇等の計算に適している。"
+        }
+      ],
+      "explanation": "質量モル濃度は溶媒の質量（キログラム）を基準としてそこに溶けている溶質の物質量を表す濃度です。溶媒の質量は温度が変わっても変化しないため、温度依存性がありません。この特徴から沸点上昇や凝固点降下の計算に適しています。注意点として、分母は溶液ではなく溶媒のみの質量であることが重要です。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_003",
+          "quote": "溶媒1kgに溶かした溶質の量を物質量で表した濃度"
+        },
+        {
+          "source_id": "4_3_def_003",
+          "quote": "分母は溶液の質量ではなく、溶媒のみの質量(kg)である"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q012",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "definition",
+      "sub_category": "化学反応式の係数の意味",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "化学反応式の係数が表す意味として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "係数の比は、反応に関わる粒子の数の比であり、物質量の比でもある。同温同圧の気体なら体積の比にもなる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "係数の比は、反応に関わる物質の質量の比を直接表している。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "質量の比にはならない。モル質量を掛ける必要がある。"
+        },
+        {
+          "label": "3",
+          "text": "係数の比は、液体の体積比を表している。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "体積比が成り立つのは同温同圧の気体のみ。液体は不可。"
+        },
+        {
+          "label": "4",
+          "text": "係数は反応速度を表しており、大きいほど速く反応する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "係数は比率を表し、反応速度とは無関係。"
+        }
+      ],
+      "explanation": "化学反応式の係数は物質の反応する割合を示す重要な数値です。係数の比はそのまま粒子の個数の比や物質量（モル）の比として使えます。さらに同温・同圧の気体反応では体積の比にもなります。しかし質量の比としては直接使えず、各物質のモル質量を掛ける必要があります。",
+      "evidence": [
+        {
+          "source_id": "4_4_tip_001",
+          "quote": "化学反応式の係数の比は、反応する分子の数の比、物質量(mol)の比、および体積の比を表す"
+        },
+        {
+          "source_id": "4_4_tip_001",
+          "quote": "質量の比には直接ならないので注意が必要"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_tip_001",
+        "4_4_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q013",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "property",
+      "sub_category": "空気の見かけの分子量",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "空気の見かけの分子量について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "窒素と酸素が体積比で約四対一の割合で混ざっており、見かけの分子量は約二十八・八である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "窒素と酸素が体積比で約一対四の割合で混ざっており、見かけの分子量は約十六・〇である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "窒素と酸素の比を逆転し、分子量も誤り。"
+        },
+        {
+          "label": "3",
+          "text": "空気はすべて窒素でできており、見かけの分子量は約二十八である。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "空気には酸素も含まれる。"
+        },
+        {
+          "label": "4",
+          "text": "空気には分子量がなく、気体の軽重を判断する基準にはならない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "見かけの分子量は計算でき、気体の軽重判断の基準になる。"
+        }
+      ],
+      "explanation": "空気は主に窒素（分子量約二十八）と酸素（分子量約三十二）が体積比で約四対一の割合で混合した気体です。これらの加重平均として見かけの分子量を計算すると約二十八・八になります。この値より分子量が小さい気体は空気より軽く（たとえば水素、分子量約二）、大きい気体は空気より重い（たとえば二酸化炭素、分子量約四十四）と判断できます。",
+      "evidence": [
+        {
+          "source_id": "4_2_tip_002",
+          "quote": "空気は窒素と酸素が4:1で混ざっており、平均分子量は約28.8です"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_tip_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q014",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "property",
+      "sub_category": "モル質量と原子量の関係",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "炭素のモル質量について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "炭素の原子量は約十二・〇一であるため、炭素一モルの質量は約十二・〇一グラムである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "炭素の原子量は約十二・〇一であるため、炭素一モルの質量は約一・〇一グラムである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "数値が大幅に異なる。モル質量の数値は原子量と一致する。"
+        },
+        {
+          "label": "3",
+          "text": "炭素一モルの質量は気体か固体かによって異なる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物質の状態によらず一モルの質量は同じ。"
+        },
+        {
+          "label": "4",
+          "text": "炭素の原子量は約六・〇二であるため、炭素一モルの質量は約六・〇二グラムである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "六・〇二はアボガドロ定数の係数。原子量は約十二・〇一。"
+        }
+      ],
+      "explanation": "モル質量は原子量（または分子量・式量）にグラム毎モルの単位をつけた値と一致します。炭素の原子量は同位体の加重平均で約十二・〇一であるため、炭素一モルの質量は約十二・〇一グラムです。この関係はすべての物質に適用でき、質量と物質量の変換に用います。",
+      "evidence": [
+        {
+          "source_id": "4_1_sub_001",
+          "quote": "黒鉛の1molは12.01gである"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_003",
+        "4_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q015",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "property",
+      "sub_category": "水和物の濃度計算",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "水和物を水に溶かした場合の質量パーセント濃度について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水和水は溶媒の一部となるため、溶質は無水物のみの質量で計算する必要がある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水和物をそのまま溶質として計算し、水和水を含む全体の質量で計算する。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "水和水は溶媒の水と一体化するため溶質から除く。"
+        },
+        {
+          "label": "3",
+          "text": "水和水は蒸発して消えるため、計算に含める必要はない。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "蒸発するのではなく溶媒の一部になる。計算では溶媒に加算する。"
+        },
+        {
+          "label": "4",
+          "text": "水和物を溶かしても無水物と同じ濃度の溶液ができる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水和水の分だけ溶質の割合が変わるため同じにはならない。"
+        }
+      ],
+      "explanation": "水和物を水に溶かすと、結晶中の水和水は溶媒の水と一体化します。たとえば硫酸銅五水和物（式量二百五十）二十五グラムを溶かすと、溶質である無水硫酸銅（式量百六十）は十六グラムだけであり、残りの九グラムは水和水として溶媒に加わります。この点を見落とすと濃度計算が誤りになります。",
+      "evidence": [
+        {
+          "source_id": "4_3_tip_001",
+          "quote": "水和水は溶媒の水の一部となり、無水物のみが溶質として計算される"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_tip_001",
+        "4_3_sub_001"
+      ],
+      "mnemonic": "水和水、水に溶ければただの水"
+    },
+    {
+      "id": "ch1_4_q016",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "property",
+      "sub_category": "質量パーセント濃度の計算注意",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "質量パーセント濃度の計算について、誤りを含む記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶液全体の質量は溶媒の質量と溶質の質量の合計である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "食塩十グラムを水百グラムに溶かした場合、溶液は百十グラムになる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "食塩十グラムを水百グラムに溶かした場合、濃度は約九・一パーセントである。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "食塩十グラムを水百グラムに溶かした場合、濃度はちょうど十パーセントである。",
+          "is_correct": true,
+          "trap_type": "partial_truth",
+          "trap_detail": "分母は百ではなく百十。十割る百十で約九・一パーセント。"
+        }
+      ],
+      "explanation": "質量パーセント濃度を計算するとき、分母は溶媒の質量ではなく溶液全体の質量（溶媒＋溶質）です。食塩十グラムを水百グラムに溶かすと溶液は百十グラムになるため、濃度は十割る百十かける百で約九・一パーセントです。分母を百（溶媒のみ）としてしまい十パーセントと答えるのは非常に多い誤りです。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "水100gに溶質10gを溶かしても、10%にはならない（分母は100+10になるため）"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q017",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "property",
+      "sub_category": "モル濃度の体積の注意",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "モル濃度に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "モル濃度の単位はモル毎リットルである。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "溶液の体積にモル濃度をかけると溶質の物質量が得られる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "モル濃度は溶液の体積を基準としている。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "水一リットルに溶質を溶かして作った溶液のモル濃度を計算するとき、溶液の体積はちょうど一リットルとしてよい。",
+          "is_correct": true,
+          "trap_type": "condition_change",
+          "trap_detail": "溶質を溶かすと体積が変化するため、一リットルにはならない。溶液全体を一リットルに調製する必要がある。"
+        }
+      ],
+      "explanation": "モル濃度の計算で重要なのは、分母が溶媒ではなく完成した溶液の体積であることです。水一リットルに溶質を加えると全体の体積は一リットルよりやや大きくなるため、正確な一モル毎リットルの溶液を作るにはメスフラスコを使って全体をちょうど一リットルに調製しなければなりません。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_002",
+          "quote": "「水1Lに溶質を溶かす」のではなく、「溶質を水に溶かして全体を1Lにする」のが正しい"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q018",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "property",
+      "sub_category": "気体の密度と分子量",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "標準状態における気体の密度と分子量の関係について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "標準状態の気体の密度にモル体積の二十二・四リットル毎モルをかけるとモル質量（分子量にグラム毎モルをつけた値）が得られる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "気体の密度をモル体積で割ると分子量が求められる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "割るのではなくかける。"
+        },
+        {
+          "label": "3",
+          "text": "気体の密度と分子量の間には関係がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密度から分子量を計算できる密接な関係がある。"
+        },
+        {
+          "label": "4",
+          "text": "液体の密度にモル体積をかけても同様に分子量が得られる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "モル体積二十二・四リットルは気体のみ。液体には適用不可。"
+        }
+      ],
+      "explanation": "標準状態の気体の密度（グラム毎リットル）にモル体積二十二・四リットル毎モルをかけると、一モルあたりの質量すなわちモル質量（グラム毎モル）が得られます。モル質量の数値は分子量と等しいため、気体の密度から分子量を逆算することが可能です。この計算は気体の種類を特定する際によく使われます。",
+      "evidence": [
+        {
+          "source_id": "4_2_tip_002",
+          "quote": "気体の密度にモル体積(22.4L/mol)をかけるとモル質量となり"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_tip_002",
+        "4_2_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q019",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "property",
+      "sub_category": "化学反応式の両辺のバランス",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "化学反応式の成り立ちについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "左辺と右辺で原子の種類とその数が等しくなるように係数を合わせる。イオン反応式ではさらに電荷の総和も等しくする。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "左辺と右辺で原子の種類だけが同じであればよく、数は異なってもよい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "原子の数も等しくなければならない。質量保存の法則。"
+        },
+        {
+          "label": "3",
+          "text": "イオン反応式では電荷のバランスを考える必要がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "イオン反応式では電荷の総和も等しくする必要がある。"
+        },
+        {
+          "label": "4",
+          "text": "係数は小数や分数で表すのが一般的である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "最も簡単な整数比で表すのが慣例。"
+        }
+      ],
+      "explanation": "化学反応式では、反応前後で物質が消えたり増えたりしないため（質量保存の法則）、左辺と右辺の原子の種類と数を一致させます。係数は最も簡単な整数比で表し、一の場合は省略します。イオン反応式ではこれに加えて、左辺と右辺の電荷の合計も等しくする必要があります。",
+      "evidence": [
+        {
+          "source_id": "4_4_def_001",
+          "quote": "左辺の原子の種類とその数 ＝ 右辺の原子の種類とその数"
+        },
+        {
+          "source_id": "4_4_def_001",
+          "quote": "イオン反応式では左辺の電荷の総和 ＝ 右辺の電荷の総和"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q020",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "property",
+      "sub_category": "物質量と粒子数の関係",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "物質量と粒子の数の関係について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "物質量にアボガドロ定数をかけると粒子の数が得られ、粒子の数をアボガドロ定数で割ると物質量が得られる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "粒子の数にアボガドロ定数をかけると物質量が得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "かけるのではなく割る。かけると数がさらに大きくなる。"
+        },
+        {
+          "label": "3",
+          "text": "アボガドロ定数は物質の種類によって異なるため、物質ごとに変換方法が変わる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アボガドロ定数はすべての物質で同じ値。"
+        },
+        {
+          "label": "4",
+          "text": "物質量と粒子の数は無関係である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アボガドロ定数を介して直接変換できる。"
+        }
+      ],
+      "explanation": "物質量（モル）と粒子の数はアボガドロ定数を介して相互に変換できます。物質量にアボガドロ定数（約六・〇二かける十の二十三乗毎モル）をかけると粒子の数が得られます。逆に粒子の数をアボガドロ定数で割ると物質量になります。たとえば水分子が約三・〇一かける十の二十三乗個あれば、物質量は〇・五モルです。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_001",
+          "quote": "粒子の数をアボガドロ定数で割った値"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_001",
+        "4_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q021",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "property",
+      "sub_category": "絶対質量と相対質量の違い",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "絶対質量と相対質量に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "絶対質量はグラムなどの単位を用いて表した原子一個の質量である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "相対質量は質量数十二の炭素原子を基準とした比である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "相対質量を用いると扱いやすい数値になるため便利である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "絶対質量と相対質量は全く同じものであり区別する必要はない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "絶対質量はグラム単位の実際の質量、相対質量は基準との比。明確に区別される。"
+        }
+      ],
+      "explanation": "絶対質量と相対質量は明確に区別されます。水素原子一個の絶対質量は約一・六七三五かける十のマイナス二十四乗グラムという極めて小さな値ですが、相対質量では約一・〇という扱いやすい数値になります。この変換は質量数十二の炭素原子を十二と定めた基準によるものです。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_001",
+          "quote": "グラムなどの単位を用いて表した質量を絶対質量といい、質量数12の炭素原子1個の質量を12と決め、それを基準とした質量の比を相対質量という"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q022",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "property",
+      "sub_category": "アボガドロ定数の利用",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "アボガドロ定数の利用法として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "モル質量をアボガドロ定数で割ると原子一個の絶対質量が求められる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "モル質量にアボガドロ定数をかけると原子一個の絶対質量が求められる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "かけるではなく割る。かけると全粒子の質量二乗のような無意味な値になる。"
+        },
+        {
+          "label": "3",
+          "text": "アボガドロ定数は原子の質量を計算する際には使用しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "原子一個の質量を求めるのにアボガドロ定数は不可欠。"
+        },
+        {
+          "label": "4",
+          "text": "アボガドロ定数を使う計算は原子量の計算だけに限られる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "ファラデー定数や格子定数、分子の断面積の計算にも使われる。"
+        }
+      ],
+      "explanation": "アボガドロ定数はマクロな量とミクロな量を結びつける架け橋です。モル質量をアボガドロ定数で割ると原子や分子一個あたりの絶対質量が得られます。また逆に、一個の質量とアボガドロ定数から一モルの質量を求めることもできます。さらにファラデー定数や結晶の格子定数の計算にも利用されます。",
+      "evidence": [
+        {
+          "source_id": "4_2_tip_001",
+          "quote": "原子1個の質量mは、モル質量MをNAで割ることで求められます"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_tip_001",
+        "4_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q023",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "classification",
+      "sub_category": "三つの濃度の相違",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "質量パーセント濃度、モル濃度、質量モル濃度の違いについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "質量パーセント濃度は溶液の質量基準、モル濃度は溶液の体積基準、質量モル濃度は溶媒の質量基準であり、三者は異なる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "三つの濃度はすべて溶液の体積を基準としている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "基準が異なる。体積基準はモル濃度のみ。"
+        },
+        {
+          "label": "3",
+          "text": "三つの濃度は同じ意味であり互いに等しい値になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "基準と単位が異なるため一般に異なる値。"
+        },
+        {
+          "label": "4",
+          "text": "質量モル濃度とモル濃度は常に同じ値をとる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶液の体積と溶媒の質量は一般に異なるため同じにはならない。"
+        }
+      ],
+      "explanation": "三種類の濃度はそれぞれ基準が異なります。質量パーセント濃度は溶液全体の質量に対する溶質の質量比、モル濃度は溶液の体積に対する溶質の物質量、質量モル濃度は溶媒の質量に対する溶質の物質量です。目的に応じて使い分ける必要があります。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "溶液の質量に対する溶質の質量の割合"
+        },
+        {
+          "source_id": "4_3_def_002",
+          "quote": "溶液1L中の溶質の量を物質量で表した濃度"
+        },
+        {
+          "source_id": "4_3_def_003",
+          "quote": "溶媒1kgに溶かした溶質の量を物質量で表した濃度"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001",
+        "4_3_def_002",
+        "4_3_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q024",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "classification",
+      "sub_category": "原子量・分子量・式量の使い分け",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "原子量・分子量・式量の使い分けについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "原子量は元素に対して、分子量は分子を構成する物質に対して、式量はイオンや組成式で表される物質に対して用いる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "すべての物質に対して分子量だけを使えばよい。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "イオン結晶などは分子をつくらないため式量を使う。"
+        },
+        {
+          "label": "3",
+          "text": "原子量と式量は同じ意味であり区別する必要はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "原子量は元素一種、式量は組成式の全原子の原子量の和。"
+        },
+        {
+          "label": "4",
+          "text": "式量は有機化合物にのみ使用する。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "塩化ナトリウムなど無機のイオン結晶にも使用する。"
+        }
+      ],
+      "explanation": "原子量は元素一種類を代表する相対質量であり、同位体の存在比で加重平均した値です。分子量は水や二酸化炭素のように分子をつくる物質に使い、構成原子の原子量の和で求めます。式量は塩化ナトリウムのように分子をつくらず組成式で表される物質や、イオンに対して使われます。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_003",
+          "quote": "分子量は分子を構成する元素の原子量の総和であり、式量はイオンの化学式や組成式に含まれる元素の原子量の総和である"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_002",
+        "4_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q025",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "classification",
+      "sub_category": "物質量の変換経路",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "物質量を中心とする変換の関係について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "物質量にモル質量をかけると質量が、アボガドロ定数をかけると粒子数が、モル体積をかけると標準状態の気体の体積が得られる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "質量にモル質量をかけると物質量が得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "質量をモル質量で割ると物質量。かけるのではない。"
+        },
+        {
+          "label": "3",
+          "text": "粒子数にアボガドロ定数をかけると物質量が得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "粒子数をアボガドロ定数で割ると物質量。"
+        },
+        {
+          "label": "4",
+          "text": "気体の体積にモル体積をかけると物質量が得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "気体の体積をモル体積で割ると物質量。"
+        }
+      ],
+      "explanation": "物質量（モル）を中心として、三つの量への変換が可能です。物質量にモル質量をかけると質量（グラム）が得られます。物質量にアボガドロ定数をかけると粒子数が得られます。物質量にモル体積（標準状態で二十二・四リットル毎モル）をかけると気体の体積（リットル）が得られます。逆方向の変換はすべて割り算になります。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_003",
+          "quote": "質量をモル質量で割り、物質量(mol)を求める"
+        },
+        {
+          "source_id": "4_2_def_004",
+          "quote": "標準状態の気体の体積[L]を22.4L/molで割り、物質量[mol]を求める"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_001",
+        "4_2_def_002",
+        "4_2_def_003",
+        "4_2_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q026",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "classification",
+      "sub_category": "空気より軽い気体の判別",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "空気より軽い気体について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子量が空気の見かけの分子量（約二十八・八）より小さい気体は空気より軽い。水素（分子量約二）はその代表例である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分子量が空気の見かけの分子量より大きい気体が空気より軽い。二酸化炭素はその代表例である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "大小関係が逆。大きい方が重い。二酸化炭素は空気より重い。"
+        },
+        {
+          "label": "3",
+          "text": "気体の軽重と分子量には関係がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "同温同圧のもとでは分子量で判断できる。"
+        },
+        {
+          "label": "4",
+          "text": "すべての気体は空気と同じ重さである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量に応じて異なる。"
+        }
+      ],
+      "explanation": "同温・同圧の条件では、気体の密度は分子量に比例します。空気の見かけの分子量は約二十八・八であるため、これより分子量が小さい気体は空気より軽く、大きい気体は重くなります。水素（分子量約二）やヘリウム（分子量約四）は空気より軽い代表的な気体です。",
+      "evidence": [
+        {
+          "source_id": "4_2_tip_002",
+          "quote": "分子量2.0の水素は空気(28.8)より軽く、分子量44の二酸化炭素は重い"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_tip_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q027",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "classification",
+      "sub_category": "化学反応式とイオン反応式の違い",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "化学反応式とイオン反応式の違いについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "化学反応式は両辺で原子の種類と数を一致させる。イオン反応式ではさらに電荷の総和も一致させる必要がある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "化学反応式でもイオン反応式でも電荷のバランスを考慮する必要はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "イオン反応式では電荷のバランスが必須。"
+        },
+        {
+          "label": "3",
+          "text": "イオン反応式では原子の種類と数を一致させる必要はなく、電荷だけ合えばよい。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "原子の種類と数も一致させる必要がある。"
+        },
+        {
+          "label": "4",
+          "text": "化学反応式とイオン反応式は全く同じものであり区別する必要はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "表記方法が異なり、使い分ける。"
+        }
+      ],
+      "explanation": "化学反応式では反応前後で原子の種類と数が等しくなるよう係数を合わせます。イオン反応式では、それに加えて左辺と右辺の電荷の総和も等しくする必要があります。これは反応前後で電荷が保存されるためです。たとえば亜鉛と水素イオンの反応では、左辺の電荷がプラス二、右辺もプラス二で一致します。",
+      "evidence": [
+        {
+          "source_id": "4_4_def_001",
+          "quote": "左辺の原子の種類とその数 ＝ 右辺の原子の種類とその数"
+        },
+        {
+          "source_id": "4_4_def_001",
+          "quote": "イオン反応式では左辺の電荷の総和 ＝ 右辺の電荷の総和"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q028",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "classification",
+      "sub_category": "分子量と式量の使い分け",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水の相対質量と塩化ナトリウムの相対質量の呼び方について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水は分子をつくるので分子量（十八）を用い、塩化ナトリウムは分子をつくらないので式量（五十八・五）を用いる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水も塩化ナトリウムもどちらも式量を用いる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "水は分子をつくるため分子量を使う。"
+        },
+        {
+          "label": "3",
+          "text": "水も塩化ナトリウムもどちらも分子量を用いる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "塩化ナトリウムは分子をつくらないため分子量は使わない。"
+        },
+        {
+          "label": "4",
+          "text": "分子量と式量はまったく同じものであり、使い分けは不要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "適用対象が異なるため使い分ける。"
+        }
+      ],
+      "explanation": "分子量は水や酸素分子のように実際に分子として存在する物質の相対質量に使います。一方、塩化ナトリウムのようにイオン結晶で分子として存在しない物質の相対質量には式量を使います。水の分子量は水素の原子量一・〇の二倍と酸素の原子量十六の和で十八、塩化ナトリウムの式量はナトリウム二十三と塩素三十五・五の和で五十八・五です。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_003",
+          "quote": "分子量は分子を構成する元素の原子量の総和であり、式量はイオンの化学式や組成式に含まれる元素の原子量の総和である"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q029",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "classification",
+      "sub_category": "単原子イオンの式量",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "単原子イオンの式量について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電子の質量は無視できるほど小さいため、単原子イオンの式量はその原子の原子量に等しい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "単原子イオンの式量は原子量に電子の質量分を加えた値である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電子の質量は無視できるため加えない。"
+        },
+        {
+          "label": "3",
+          "text": "単原子イオンの式量はイオンの電荷の数値と等しい。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "式量は原子量と等しい。電荷の数値ではない。"
+        },
+        {
+          "label": "4",
+          "text": "イオンには式量という概念を適用できない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "イオンにも式量を適用する。"
+        }
+      ],
+      "explanation": "単原子イオンは原子が電子を失ったり受け取ったりしてイオンになったものですが、電子の質量は陽子や中性子の約千八百四十分の一と極めて小さいため無視できます。よって単原子イオンの式量はその元素の原子量と等しくなります。たとえばナトリウムイオンの式量はナトリウムの原子量と同じ二十三です。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_003",
+          "quote": "電子の質量は無視できるため、単原子イオンの式量はその原子の原子量に等しい"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q030",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "classification",
+      "sub_category": "係数の比が表す量の分類",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "化学反応式の係数の比が表す量について、誤りを含む記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "係数の比は粒子の数の比を表す。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "係数の比は物質量（モル）の比を表す。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "同温同圧の気体では係数の比は体積の比を表す。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "係数の比はそのまま質量の比を表す。",
+          "is_correct": true,
+          "trap_type": "concept_confusion",
+          "trap_detail": "質量の比にはモル質量をかける必要がある。係数の比は直接には質量比にならない。"
+        }
+      ],
+      "explanation": "化学反応式の係数の比は粒子の数の比（すなわち物質量の比）であり、同温同圧の気体では体積の比にもなります。しかし質量の比にはなりません。質量の関係を知るには、各物質の物質量にそれぞれのモル質量を掛ける必要があります。たとえば水素二モルと酸素一モルが反応する場合、質量比は水素四グラムと酸素三十二グラムで一対八です。",
+      "evidence": [
+        {
+          "source_id": "4_4_tip_001",
+          "quote": "質量の比には直接ならないので注意が必要"
+        },
+        {
+          "source_id": "4_4_tip_001",
+          "quote": "質量の関係は、係数の比ではなく、各物質のモル質量を掛けた値の比になる"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_tip_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q031",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "procedure",
+      "sub_category": "原子量の計算手順",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "原子量を計算する手順として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "各同位体の相対質量にその存在比を掛け合わせ、それらの総和を求める。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "各同位体の質量数の総和を求めればよい。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "存在比による重みづけが必要。単純な和ではない。"
+        },
+        {
+          "label": "3",
+          "text": "最も存在比の大きい同位体の質量数をそのまま原子量とする。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "それに近くなることはあるが加重平均を計算する必要がある。"
+        },
+        {
+          "label": "4",
+          "text": "陽子の数と中性子の数と電子の数の合計を原子量とする。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "質量数（陽子＋中性子）に近い概念だが、原子量は同位体の加重平均。"
+        }
+      ],
+      "explanation": "原子量を計算するには、まず各同位体の相対質量にその存在比を掛け、次にすべての値を足し合わせます。たとえば塩素は質量数三十五の同位体が約七十五パーセント、質量数三十七の同位体が約二十五パーセント存在するため、三十五かける〇・七五たす三十七かける〇・二五で約三十五・五が塩素の原子量になります。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_002",
+          "quote": "各同位体の相対質量と存在比を掛け合わせる"
+        },
+        {
+          "source_id": "4_1_def_002",
+          "quote": "それらの総和を求める"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q032",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "procedure",
+      "sub_category": "溶液の調製手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "正確なモル濃度の水溶液を調製する手順として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶質を正確にはかりとりビーカーで溶かした後、メスフラスコに移し、ビーカーの洗液も加え、標線まで水を入れてよく振り混ぜる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "メスフラスコに水を標線まで入れた後、溶質を加えてよく振り混ぜる。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "溶質を先に溶かし、最後に水で標線に合わせるのが正しい。逆の手順では体積が正確にならない。"
+        },
+        {
+          "label": "3",
+          "text": "溶質をメスシリンダーではかりとり、直接メスフラスコに入れて水を加える。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "質量は電子てんびんではかる。メスシリンダーは体積を測る器具。"
+        },
+        {
+          "label": "4",
+          "text": "ビーカーの洗液は捨てて、メスフラスコに移す必要はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "洗液にも溶質が残っているため、必ずメスフラスコに加える。"
+        }
+      ],
+      "explanation": "正確なモル濃度の溶液を調製するには、まず電子てんびんで必要量の溶質をビーカーにはかりとります。少量の純水で溶質を完全に溶かしたらメスフラスコに移し、ビーカーを数回洗ってその洗液もすべてメスフラスコに加えます。最後にメスフラスコの標線まで純水を加え、栓をしてよく振り混ぜて均一にします。",
+      "evidence": [
+        {
+          "source_id": "4_3_proc_001",
+          "quote": "電子てんびんを使って、必要な質量の溶質をビーカーに正確にはかりとる"
+        },
+        {
+          "source_id": "4_3_proc_001",
+          "quote": "ビーカーを純粋な水で洗い、その洗液もメスフラスコに入れる操作を数回繰り返す"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q033",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "procedure",
+      "sub_category": "濃度の換算手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "質量パーセント濃度からモル濃度への換算手順として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶液一リットルの質量を密度から求め、質量パーセント濃度から溶質の質量を計算し、モル質量で割って物質量にし、溶液一リットルあたりの値とする。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "質量パーセント濃度をそのまま百で割ればモル濃度になる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "密度とモル質量を使った変換が必要。そのまま変換はできない。"
+        },
+        {
+          "label": "3",
+          "text": "溶液の密度は濃度変換に不要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密度がなければ体積と質量の変換ができない。"
+        },
+        {
+          "label": "4",
+          "text": "溶質のモル質量は濃度変換に不要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "モル質量がなければ質量から物質量への変換ができない。"
+        }
+      ],
+      "explanation": "質量パーセント濃度からモル濃度への変換には四段階の手順があります。まず溶液一リットルの質量を密度から計算します。次にその質量に質量パーセント濃度の割合をかけて溶質の質量を求めます。そして溶質の質量をモル質量で割って物質量（モル）にし、最後にこれが溶液一リットル中の値なのでそのままモル濃度になります。",
+      "evidence": [
+        {
+          "source_id": "4_3_eq_001",
+          "quote": "溶液 1 L (1000 cm³) の質量を計算する（密度 d × 1000）"
+        },
+        {
+          "source_id": "4_3_eq_001",
+          "quote": "溶質の質量をモル質量 M で割り、物質量を求める"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_eq_001"
+      ],
+      "mnemonic": "濃度の換算は一リットルで考える"
+    },
+    {
+      "id": "ch1_4_q034",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "procedure",
+      "sub_category": "未定係数法の手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "未定係数法で化学反応式の係数を決める手順として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "各物質の係数を未知数で置き、原子ごとに連立方程式を立て、一つを仮定して解き、整数比に直す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "反応物と生成物の質量を直接比較するだけで係数が決まる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "質量ではなく原子の数のバランスで係数を決める。"
+        },
+        {
+          "label": "3",
+          "text": "すべての係数を同じ数字にすれば正しい化学反応式ができる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "各原子のバランスを取る必要があるため同じ数字にはならない。"
+        },
+        {
+          "label": "4",
+          "text": "係数を決める際に原子の種類と数を考慮する必要はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応前後で原子の種類と数を一致させることが係数決定の根拠。"
+        }
+      ],
+      "explanation": "未定係数法では、まず各物質の係数をアルファベットなどの未知数で表します。次に反応式の左辺と右辺で各原子の数が等しくなるように連立方程式を立てます。未知数の一つを仮に一とおいて方程式を解き、必要に応じて全体を整数倍して最も簡単な整数比にします。複雑な反応式もこの方法で体系的に係数を決定できます。",
+      "evidence": [
+        {
+          "source_id": "4_4_proc_002",
+          "quote": "各物質の係数を未知数として文字で置き、各原子について連立方程式を立てて解く"
+        },
+        {
+          "source_id": "4_4_proc_002",
+          "quote": "未知数のうちのどれか1つを1とする"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_proc_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q035",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "procedure",
+      "sub_category": "気体の体積から物質量を求める",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "標準状態の気体の体積から物質量を求める方法として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "気体の体積をモル体積（二十二・四リットル毎モル）で割って物質量を求める。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "気体の体積にモル体積をかけて物質量を求める。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "割るのが正しい。かけると体積の二乗のような無意味な値になる。"
+        },
+        {
+          "label": "3",
+          "text": "気体の体積をアボガドロ定数で割って物質量を求める。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "アボガドロ定数で割ると粒子数から物質量への変換。体積にはモル体積を使う。"
+        },
+        {
+          "label": "4",
+          "text": "気体の質量がわからなければ物質量は求められない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "標準状態なら体積だけで物質量が求められる。"
+        }
+      ],
+      "explanation": "標準状態ではすべての気体の一モルあたりの体積が二十二・四リットルであるため、気体の体積をこのモル体積で割ることで物質量が求められます。たとえば標準状態で四十四・八リットルの気体は、四十四・八割る二十二・四で二モルです。この方法は気体の種類を問わず適用できます。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_004",
+          "quote": "標準状態の気体の体積[L]を22.4L/molで割り、物質量[mol]を求める"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q036",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "procedure",
+      "sub_category": "反応の量的関係の計算",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "化学反応式を使った量的計算の手順として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "まず化学反応式の係数から物質量の比を読み取り、既知の物質量から未知の物質量を比例計算で求め、必要に応じて質量や体積に変換する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "化学反応式の係数から直接質量の比を読み取り、質量で比例計算する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "係数は質量の比ではなく物質量の比。"
+        },
+        {
+          "label": "3",
+          "text": "化学反応式なしでも反応物と生成物の量的関係は計算できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "化学反応式がなければ物質量の比がわからず計算できない。"
+        },
+        {
+          "label": "4",
+          "text": "係数の比は温度や圧力によって変化する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "係数の比は反応の本質であり条件によらず一定。"
+        }
+      ],
+      "explanation": "化学反応の量的計算では、化学反応式の係数が物質量の比を示しているという事実が出発点です。まず既知の量（質量・体積・粒子数など）を物質量に変換し、係数の比から目的物質の物質量を求め、最後に必要な単位（質量や体積）に変換します。この三段階が量的計算の基本です。",
+      "evidence": [
+        {
+          "source_id": "4_4_tip_001",
+          "quote": "化学反応式を用いて、ある物質の量（mol、質量、体積）から、別の反応物や生成物の量を計算する"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_tip_001",
+        "4_4_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q037",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "confusion",
+      "sub_category": "質量パーセント濃度の分母の誤り",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "質量パーセント濃度に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶液の質量は溶媒と溶質の質量の合計である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "質量パーセント濃度は溶質の質量を溶液の質量で割りパーセントにする。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "同じ溶質でも溶媒の量が変われば濃度は変わる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "質量パーセント濃度の分母は溶媒の質量のみである。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "分母は溶液全体（溶媒＋溶質）の質量。溶媒のみではない。"
+        }
+      ],
+      "explanation": "質量パーセント濃度で最も間違えやすいのが分母です。分母は溶媒の質量だけでなく溶質の質量も含めた溶液全体の質量です。溶媒のみを分母にすると計算結果が実際の濃度より大きくなってしまいます。この点は繰り返し出題される重要なひっかけポイントです。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "溶液の質量に対する溶質の質量の割合を百分率で表した濃度"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q038",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "confusion",
+      "sub_category": "モル濃度と質量モル濃度の混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "モル濃度と質量モル濃度に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "モル濃度は溶液の体積を基準とし、質量モル濃度は溶媒の質量を基準とする。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "モル濃度は温度によって値が変わりうる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "質量モル濃度は温度変化の影響を受けにくい。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "質量モル濃度の分母は溶液全体の質量である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "溶液全体ではなく溶媒のみの質量。"
+        }
+      ],
+      "explanation": "モル濃度と質量モル濃度の混同は頻出です。モル濃度の分母は溶液の体積（リットル）、質量モル濃度の分母は溶媒の質量（キログラム）です。質量モル濃度で溶液全体の質量を分母にするのは誤りです。温度変化で体積は変わりますが質量は変わらないため、質量モル濃度は温度依存性が小さいという利点があります。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_003",
+          "quote": "分母は溶液の質量ではなく、溶媒のみの質量(kg)である"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_002",
+        "4_3_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q039",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "confusion",
+      "sub_category": "原子量と分子量の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "原子量と分子量に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "原子量は元素一種の相対質量の代表値である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "分子量は分子を構成する原子の原子量の総和である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "原子量も分子量も単位はない。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "原子量は分子を構成する原子の原子量の総和であり、分子量は元素一種の代表値である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "原子量と分子量の定義を入れ替え。"
+        }
+      ],
+      "explanation": "原子量と分子量の定義を取り違えるのは基本的ですがよくある誤りです。原子量は元素一種類を代表する相対質量であり、同位体の加重平均です。分子量は分子を構成する全原子の原子量を合計したものです。選択肢四はこの二つの定義を入れ替えており誤りです。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_002",
+          "quote": "同位体の相対質量にそれぞれの存在比をかけて求めた平均値"
+        },
+        {
+          "source_id": "4_1_def_003",
+          "quote": "分子量は分子を構成する元素の原子量の総和"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_002",
+        "4_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q040",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "confusion",
+      "sub_category": "標準状態の温度の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "標準状態に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "標準状態の圧力は約一・〇一かける十の五乗パスカルである。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "標準状態で気体一モルの体積は二十二・四リットルである。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "標準状態は気体の種類によらず一定の条件である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "標準状態の温度は摂氏二十五度である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "化学における標準状態は零度（摂氏零度）。二十五度は熱力学における標準状態。"
+        }
+      ],
+      "explanation": "化学における気体の標準状態は零度、約一・〇一かける十の五乗パスカルです。摂氏二十五度を標準状態の温度と混同する受験生が多いですが、二十五度は熱力学で使われる標準状態です。この温度の違いを間違えると気体の体積計算が大幅に狂います。零度のときにのみモル体積は二十二・四リットル毎モルです。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_004",
+          "quote": "0℃、1.01×10^5 Pa（標準状態）"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q041",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "confusion",
+      "sub_category": "水和物の溶質の混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "水和物を水に溶かしたときの濃度計算に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水和水は溶媒の水の一部となる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "溶質として計算するのは無水物の質量のみである。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "硫酸銅五水和物の式量は約二百五十である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "硫酸銅五水和物を溶かした場合、五水和物全体の質量が溶質の質量となる。",
+          "is_correct": true,
+          "trap_type": "condition_change",
+          "trap_detail": "水和水は溶媒に移行するため、溶質は無水物の質量のみ。"
+        }
+      ],
+      "explanation": "水和物を水に溶かすと、水和水はただの水になり溶媒に合流します。硫酸銅五水和物の場合、式量約二百五十のうち無水硫酸銅の式量は約百六十、残りの約九十が水和水（水分子五個分）です。溶質として計算に用いるのは無水硫酸銅の質量のみであり、水和水は溶媒の水の量に加算します。",
+      "evidence": [
+        {
+          "source_id": "4_3_tip_001",
+          "quote": "水和水は溶媒の水の一部となり、無水物のみが溶質として計算される"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_tip_001",
+        "4_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q042",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "confusion",
+      "sub_category": "係数の比が質量比にならない",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "化学反応式の係数に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "係数の比は物質量の比である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "係数の比は粒子の数の比である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "同温同圧の気体では係数の比は体積の比になる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "係数の比はどのような場合でも質量の比になる。",
+          "is_correct": true,
+          "trap_type": "concept_confusion",
+          "trap_detail": "質量の比にするにはモル質量を掛ける必要がある。係数そのままでは質量比にならない。"
+        }
+      ],
+      "explanation": "化学反応式の係数の比は粒子数の比であり物質量の比でもありますが、質量の比には直接なりません。質量には物質固有のモル質量が関わるため、各物質の物質量にモル質量を掛けなければ質量の値は得られません。たとえば水素と酸素が二対一で反応しますが、質量比は四対三十二で一対八です。",
+      "evidence": [
+        {
+          "source_id": "4_4_tip_001",
+          "quote": "質量の比には直接ならないので注意が必要"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_tip_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q043",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "confusion",
+      "sub_category": "アボガドロの法則の適用範囲の誤り",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "アボガドロの法則に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "同温同圧同体積ならどのような気体も同数の分子を含む。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "気体の体積は物質量に比例する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "この法則は温度と圧力を一定にして考える必要がある。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "この法則は気体だけでなく液体や固体にもそのまま適用できる。",
+          "is_correct": true,
+          "trap_type": "condition_change",
+          "trap_detail": "気体のみに適用。液体や固体では分子間距離が大きく異なるため成り立たない。"
+        }
+      ],
+      "explanation": "アボガドロの法則は気体に限定された法則です。気体分子は互いにほぼ無限の距離を擬似的に持ち自由に運動しているため、種類によらず同じ条件下で同数の粒子が同体積を占めます。液体や固体では分子間の距離や配置が物質ごとに大きく異なるため、この法則は成り立ちません。",
+      "evidence": [
+        {
+          "source_id": "4_2_law_001",
+          "quote": "すべての気体は、同温・同圧・同体積中に同数の分子を含む"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q044",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "confusion",
+      "sub_category": "溶液の調製手順の誤り",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "正確なモル濃度の溶液を調製する手順に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶質の質量は電子てんびんで正確にはかる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "溶質をビーカーで完全に溶かしてからメスフラスコに移す。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "メスフラスコの標線まで純水を加えて全体の体積を正確に合わせる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ビーカーを洗う必要はなく、ビーカーに残った溶質は無視してよい。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "ビーカーに残った溶質もすべて回収しなければ正確な濃度にならない。"
+        }
+      ],
+      "explanation": "正確なモル濃度の溶液を調製する際、溶質を溶かしたビーカーには微量の溶質が残っています。このビーカーを純水で数回洗い、洗液もすべてメスフラスコに移す操作が不可欠です。これを省略すると溶質が減少し、計画した濃度より薄い溶液ができてしまいます。",
+      "evidence": [
+        {
+          "source_id": "4_3_proc_001",
+          "quote": "ビーカーを純粋な水で洗い、その洗液もメスフラスコに入れる操作を数回繰り返す"
+        },
+        {
+          "source_id": "4_3_proc_001",
+          "quote": "ビーカーに残った溶質をすべて回収するため"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q045",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "mnemonic",
+      "sub_category": "モル体積の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "標準状態での気体一モルの体積を覚える語呂合わせとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "『ににんがし（二十二・四）』で覚える。標準状態での気体一モルの体積が二十二・四リットルであることを意味する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "『ににんがし』は摂氏二十二・四度で気体が液化することを意味する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "温度ではなく体積。液化とは無関係。"
+        },
+        {
+          "label": "3",
+          "text": "『ににんがし』は二十二・四グラムが気体一モルの質量であることを意味する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "質量ではなく体積（リットル）。質量は物質ごとに異なる。"
+        },
+        {
+          "label": "4",
+          "text": "気体一モルの体積は物質の種類によって異なり、二十二・四リットルになるとは限らない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "標準状態では種類によらず二十二・四リットル。"
+        }
+      ],
+      "explanation": "『ににんがし』は九九の掛け算の響きと二十二・四を結びつけた語呂合わせで、標準状態（零度、一気圧）での気体一モルの体積が二十二・四リットルであることを記憶するためのものです。この値はすべての気体に共通であり、体積と物質量の変換に不可欠な数値です。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_004",
+          "quote": "気体1molは22.4L（ににんがし）"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_004"
+      ],
+      "mnemonic": "気体一モルは二十二・四リットル（ににんがし）"
+    },
+    {
+      "id": "ch1_4_q046",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "mnemonic",
+      "sub_category": "水和物の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "水和物の濃度計算に関する語呂合わせ『水和水、水に溶ければただの水』について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水和物を水に溶かすと水和水は溶媒の水と一体化し、溶質には含まれないことを意味する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水和水は溶解時にすべて蒸発して消えることを意味する。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "蒸発ではなく溶媒の一部になる。"
+        },
+        {
+          "label": "3",
+          "text": "水和水も溶質として計算に含めることを意味する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶質ではなく溶媒に移行することが語呂の意味。"
+        },
+        {
+          "label": "4",
+          "text": "この語呂合わせはアボガドロ定数の計算に関するものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "水和物の濃度計算に関する語呂合わせ。"
+        }
+      ],
+      "explanation": "この語呂合わせは水和物の濃度計算で最も重要な注意点を伝えています。水和物を水に溶かすと、結晶中に含まれていた水和水はただの水になり溶媒と一体化します。したがって溶質として計算するのは水和水を除いた無水物の質量のみであり、水和水分は溶媒の水に加算して計算します。",
+      "evidence": [
+        {
+          "source_id": "4_3_tip_001",
+          "quote": "水和水、水に溶ければただの水！"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_tip_001"
+      ],
+      "mnemonic": "水和水、水に溶ければただの水"
+    },
+    {
+      "id": "ch1_4_q047",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "mnemonic",
+      "sub_category": "モル濃度の計算の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "モル濃度の計算に関する語呂合わせ『シーブイ均一（濃度かける体積で物質量）』について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "モル濃度と溶液の体積をかけると溶質の物質量が得られるという計算式を覚えるためのものである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "体積と密度をかけると質量が得られるという計算式を覚えるためのものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "密度と体積の関係ではなく、モル濃度と体積の関係。"
+        },
+        {
+          "label": "3",
+          "text": "この語呂合わせは化学反応式の係数を決めるためのものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "濃度計算に関するもの。係数とは無関係。"
+        },
+        {
+          "label": "4",
+          "text": "モル濃度を体積で割ると物質量になるという式を表している。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "割るではなくかける。"
+        }
+      ],
+      "explanation": "『シーブイ均一』はモル濃度（シー）と体積（ブイ）のかけ算で溶質の物質量（モル）が得られるという重要な関係式を覚えるための語呂合わせです。体積の単位がリットルであることに注意し、ミリリットルの場合は千で割ってリットルに変換してから計算します。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_002",
+          "quote": "cV均一（モル濃度cと体積Vをかけると溶質の物質量になる）"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_002"
+      ],
+      "mnemonic": "シーブイ均一（濃度かける体積で物質量）"
+    },
+    {
+      "id": "ch1_4_q048",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "comprehensive",
+      "sub_category": "物質量を中心とする変換の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "物質量を中心とする変換に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "物質量は質量、粒子数、気体の体積の三者と相互に変換できる中心的な量であり、質量はモル質量で、粒子数はアボガドロ定数で、気体の体積はモル体積で変換する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "物質量は質量のみと変換可能であり、粒子数や体積とは直接の関係がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "粒子数（アボガドロ定数）、体積（モル体積）とも直接変換できる。"
+        },
+        {
+          "label": "3",
+          "text": "粒子数をモル質量で割ると物質量が得られる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "粒子数はアボガドロ定数で割る。モル質量は質量を変換する際に使う。"
+        },
+        {
+          "label": "4",
+          "text": "気体の体積をアボガドロ定数で割ると物質量が得られる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "体積はモル体積で割る。アボガドロ定数は粒子数を変換する際に使う。"
+        }
+      ],
+      "explanation": "物質量（モル）は化学計算の中心です。質量との変換にはモル質量を、粒子数との変換にはアボガドロ定数を、標準状態の気体の体積との変換にはモル体積を使います。物質量からはかけ算で各量が得られ、各量から物質量を求めるには割り算を行います。この関係を正確に把握しておくことが、すべての化学計算の基礎となります。",
+      "evidence": [
+        {
+          "source_id": "4_2_def_003",
+          "quote": "質量をモル質量で割り、物質量(mol)を求める"
+        },
+        {
+          "source_id": "4_2_def_004",
+          "quote": "標準状態の気体の体積[L]を22.4L/molで割り、物質量[mol]を求める"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_def_001",
+        "4_2_def_002",
+        "4_2_def_003",
+        "4_2_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q049",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "comprehensive",
+      "sub_category": "三種類の濃度の総合比較",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "三種類の濃度に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "質量パーセント濃度の分母は溶液全体の質量であり、モル濃度の分母は溶液の体積であり、質量モル濃度の分母は溶媒の質量である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "質量パーセント濃度からモル濃度への換算には密度とモル質量の情報が必要である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "水和物を水に溶かす場合、水和水は溶媒に移行するため溶質には含まれない。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "三種類の濃度はすべて溶液の体積を分母としており、互いに同じ値を示す。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "分母がそれぞれ異なり（質量、体積、溶媒質量）、値も一般に異なる。"
+        }
+      ],
+      "explanation": "三種類の濃度は分母の基準がすべて異なります。質量パーセント濃度は溶液の質量、モル濃度は溶液の体積、質量モル濃度は溶媒の質量を基準としています。したがって同じ溶液についてもそれぞれ異なる値をとります。質量パーセント濃度からモル濃度への変換には溶液の密度とモル質量が必要であり、単純に数値を変換することはできません。",
+      "evidence": [
+        {
+          "source_id": "4_3_def_001",
+          "quote": "溶液の質量に対する溶質の質量の割合"
+        },
+        {
+          "source_id": "4_3_def_002",
+          "quote": "溶液1L中の溶質の量を物質量で表した濃度"
+        },
+        {
+          "source_id": "4_3_def_003",
+          "quote": "溶媒1kgに溶かした溶質の量を物質量で表した濃度"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_def_001",
+        "4_3_def_002",
+        "4_3_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_4_q050",
+      "chapter": "1-4",
+      "chapter_title": "物質量と化学反応式",
+      "category": "comprehensive",
+      "sub_category": "第4章の全体総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "物質量と化学反応式に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "相対質量は質量数十二の炭素基準で、その加重平均が原子量。原子量に単位をつけるとモル質量。物質量はアボガドロ定数個でまとめて数える量で、標準状態の気体一モルは二十二・四リットル。化学反応式の係数は物質量の比を表す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "原子量にはグラムの単位がつく。物質量の単位はリットルである。気体のモル体積は物質によって異なる。化学反応式の係数は質量の比である。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。原子量は無単位、物質量はモル、モル体積は共通、係数は質量比ではない。"
+        },
+        {
+          "label": "3",
+          "text": "相対質量の基準は水素である。アボガドロ定数は物質ごとに異なる。標準状態の温度は二十五度である。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "基準は炭素、アボガドロ定数は共通、温度は零度。"
+        },
+        {
+          "label": "4",
+          "text": "質量パーセント濃度とモル濃度と質量モル濃度はすべて同じ分母を使う。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "三者の分母はすべて異なる。"
+        }
+      ],
+      "explanation": "第一章第四節の全体まとめです。相対質量は質量数十二の炭素原子を基準に定め、同位体の加重平均が原子量（単位なし）、グラム毎モルの単位をつけるとモル質量になります。物質量はアボガドロ定数（約六・〇二かける十の二十三乗）個をひとまとめにした量で、標準状態では気体一モルの体積が二十二・四リットルです。化学反応式の係数は物質量の比を示し、それを基礎に量的計算が行われます。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_001",
+          "quote": "質量数12の炭素原子1個の質量を12と決め"
+        },
+        {
+          "source_id": "4_1_def_002",
+          "quote": "同位体の相対質量にそれぞれの存在比をかけて求めた平均値"
+        },
+        {
+          "source_id": "4_2_def_003",
+          "quote": "物質1molあたりの質量をモル質量といい"
+        },
+        {
+          "source_id": "4_2_def_004",
+          "quote": "気体の種類に関わらず22.4L/mol"
+        },
+        {
+          "source_id": "4_4_tip_001",
+          "quote": "係数の比は物質量の比"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_001",
+        "4_1_def_002",
+        "4_2_def_001",
+        "4_2_def_003",
+        "4_2_def_004",
+        "4_4_tip_001"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 3,
+   "chapter_title": "物質の変化",
+   "section": 3,
+   "section_title": "化学平衡",
+   "page_range": [226, 239],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "3_3_sub_001",
+     "name": "窒素",
+     "formula": "N2",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "無臭",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": "アンモニア合成の主原料。"
+   },
+   {
+     "id": "3_3_sub_002",
+     "name": "水素",
+     "formula": "H2",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "無臭",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": "アンモニア合成の主原料。"
+   },
+   {
+     "id": "3_3_sub_003",
+     "name": "アンモニア",
+     "formula": "NH3",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "刺激臭",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に極めて溶けやすい",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["3_3_proc_001"],
+     "notes": "窒素と水素から工業的合成される（ハーバー・ボッシュ法）。"
+   },
+   {
+     "id": "3_3_sub_004",
+     "name": "ヨウ化水素",
+     "formula": "HI",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "刺激臭",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": "水素とヨウ素から生成する可逆反応の例として頻出。"
+   },
+   {
+     "id": "3_3_sub_005",
+     "name": "クロム酸イオン",
+     "formula": "CrO4^{2-}",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "黄色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["3_3_sub_006"],
+     "notes": "塩基性条件で安定。"
+   },
+   {
+     "id": "3_3_sub_006",
+     "name": "ニクロム酸イオン",
+     "formula": "Cr2O7^{2-}",
+     "aliases": ["重クロム酸イオン"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "赤橙色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["3_3_sub_005"],
+     "notes": "酸性条件で安定。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "3_3_def_001",
+     "type": "def",
+     "title": "可逆反応",
+     "prerequisite_ids": [],
+     "definition": "正反応（右向きの反応）と逆反応（左向きの反応）が、どちらの方向にも進行できる反応。",
+     "explanation": "反応物から生成物ができるだけでなく、生成物から反応物に戻ることもできる反応です。化学反応式では、両矢印（⇌）を使って表します。",
+     "conditions": ["密閉容器など、物質が系外に逃げない条件が必要な場合が多い。"],
+     "examples": [
+       {
+         "label": "アンモニアの生成と分解",
+         "substance_ids": ["3_3_sub_001", "3_3_sub_002", "3_3_sub_003"],
+         "description": "窒素と水素からアンモニアができる反応と、アンモニアが分解して窒素と水素に戻る反応。",
+         "values": []
+       }
+     ],
+     "counter_examples": ["燃焼反応など、一方の方向にしか進まない反応は「不可逆反応」と呼ばれる。"],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられた反応式が可逆反応か不可逆反応かを判別させる問題",
+         "key_concept_ids": ["3_3_def_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 226
+   },
+   {
+     "id": "3_3_def_002",
+     "type": "def",
+     "title": "化学平衡（平衡状態）",
+     "prerequisite_ids": ["3_3_def_001"],
+     "definition": "可逆反応において、正反応の反応速度と逆反応の反応速度が等しくなり、見かけ上反応が停止しているように見える状態。",
+     "explanation": "反応物も生成物も作られ続けていますが、作られるスピードと元に戻るスピードが全く同じになった状態です。そのため、全体の濃度や物質量は一定に保たれます。",
+     "conditions": [
+       "可逆反応であること。",
+       "一定時間経過すること。"
+     ],
+     "examples": [
+       {
+         "label": "ヨウ化水素の生成反応の平衡",
+         "substance_ids": ["3_3_sub_004"],
+         "description": "水素とヨウ素の反応において、十分な時間が経過すると各物質の濃度が一定になり、正逆の反応速度が等しくなる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "反応が完全に停止して分子の動きが止まっているわけではない（動的平衡）。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "平衡状態における正反応と逆反応の速度の関係（v1 = v2）を問う正誤問題",
+         "key_concept_ids": ["3_3_def_002", "3_3_tip_001"]
+       }
+     ],
+     "cross_refs": ["3_3_tip_001", "TBD:気液平衡", "TBD:溶解平衡", "TBD:電離平衡"],
+     "source_page": 227
+   },
+   {
+     "id": "3_3_tip_001",
+     "type": "tip",
+     "title": "平衡のイメージと反応速度",
+     "prerequisite_ids": ["3_3_def_002"],
+     "definition": "平衡状態は「行きと帰りの速度が同じ」であり、変化が停止しているわけではない。",
+     "explanation": "見かけ上変化がないように見えますが、ミクロな視点では常に反応が起きています。正反応と逆反応の速度が釣り合っているだけであることをしっかり認識しましょう。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [
+       "平衡は行きと帰りの速度が同じ"
+     ],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["3_3_def_002"],
+     "source_page": 227
+   },
+   {
+     "id": "3_3_law_001",
+     "type": "law",
+     "title": "化学平衡の法則（質量作用の法則）",
+     "prerequisite_ids": ["3_3_def_002"],
+     "definition": "一定温度において、可逆反応が平衡状態にあるとき、反応物の濃度の積と生成物の濃度の積の比は常に一定になるという法則。",
+     "explanation": "反応式が $aA + bB \\rightleftharpoons cC + dD$ のとき、各物質のモル濃度を用いて $K_c = \\frac{[C]^c[D]^d}{[A]^a[B]^b}$ で表されます。この一定値 $K_c$ を「濃度平衡定数」と呼びます。",
+     "conditions": [
+       "温度が一定であること。",
+       "固体が関与する場合は、固体の濃度は定数とみなして式に含めない。"
+     ],
+     "examples": [
+       {
+         "label": "ヨウ化水素の濃度平衡定数",
+         "substance_ids": ["3_3_sub_002", "3_3_sub_004"],
+         "description": "$H_2 + I_2 \\rightleftharpoons 2HI$ の平衡定数は $K_c = \\frac{[HI]^2}{[H_2][I_2]}$ となる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "化学反応式を見ただけで反応速度式を決定することはできないが、平衡定数の式は反応式の係数から直接決定できる。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられた初期量と平衡時の量から、表を作成して濃度平衡定数を算出する計算問題",
+         "key_concept_ids": ["3_3_law_001"]
+       }
+     ],
+     "cross_refs": ["3_3_eq_001", "3_3_def_004", "TBD:反応速度式"],
+     "source_page": 229
+   },
+   {
+     "id": "3_3_eq_001",
+     "type": "eq",
+     "title": "濃度平衡定数の式",
+     "prerequisite_ids": ["3_3_law_001"],
+     "definition": "一般式 $aA + bB \\rightleftharpoons cC + dD$ に対し、$K_c = \\frac{[C]^c[D]^d}{[A]^a[B]^b}$",
+     "explanation": "分子に右辺（生成物）、分母に左辺（反応物）のモル濃度を置き、反応式の係数をそれぞれ累乗します。",
+     "conditions": ["逆反応の平衡定数は、正反応の平衡定数の逆数になる。"],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["3_3_law_001"],
+     "source_page": 229
+   },
+   {
+     "id": "3_3_def_004",
+     "type": "def",
+     "title": "圧平衡定数",
+     "prerequisite_ids": ["3_3_law_001"],
+     "definition": "すべてが気体からなる平衡状態において、モル濃度の代わりに各成分気体の分圧を用いて表した平衡定数（$K_p$）。",
+     "explanation": "気体の反応では、モル濃度よりも分圧を使った方が計算しやすい場合があります。濃度平衡定数と同様に、分子に生成物、分母に反応物の分圧を配置し、係数で累乗します。",
+     "conditions": [
+       "対象となる物質がすべて気体であること。",
+       "温度が一定であること。"
+     ],
+     "examples": [
+       {
+         "label": "圧平衡定数と濃度平衡定数の関係",
+         "substance_ids": [],
+         "description": "気体の状態方程式 $p = [A]RT$ を用いると、$K_p = K_c \\times (RT)^{\\Delta n}$（$\\Delta n$ は生成物の係数和 - 反応物の係数和）となる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "分圧から圧平衡定数を求め、気体の状態方程式を利用して濃度平衡定数へ変換する問題",
+         "key_concept_ids": ["3_3_def_004"]
+       }
+     ],
+     "cross_refs": ["3_3_eq_002", "3_3_eq_003"],
+     "source_page": 231
+   },
+   {
+     "id": "3_3_eq_002",
+     "type": "eq",
+     "title": "圧平衡定数の式",
+     "prerequisite_ids": ["3_3_def_004"],
+     "definition": "一般式 $aA + bB \\rightleftharpoons cC + dD$ に対し、$K_p = \\frac{{p_C}^c {p_D}^d}{{p_A}^a {p_B}^b}$",
+     "explanation": "各気体の分圧を用いて計算します。両辺の係数の和が等しい（$a+b = c+d$）場合、$K_p = K_c$ となり、単位はつきません。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["3_3_def_004"],
+     "source_page": 231
+   },
+   {
+     "id": "3_3_tip_002",
+     "type": "tip",
+     "title": "触媒と平衡状態",
+     "prerequisite_ids": ["3_3_def_002"],
+     "definition": "触媒は、平衡状態に達するまでの時間を短縮するが、平衡時の物質の割合（平衡状態）は変えない。",
+     "explanation": "触媒を加えると正反応も逆反応も同じ割合で速くなるため、早く平衡に達するようになりますが、最終的な生成物の量や平衡定数は変わりません。反応エンタルピーも変化しません。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [
+       "触媒を加えると生成物の収量が増加する（誤り）。"
+     ],
+     "mnemonics": [
+       "平衡は触媒で速く行っても同じこと"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "触媒を添加したときの生成量や反応速度のグラフの経時変化を選ばせる問題",
+         "key_concept_ids": ["3_3_tip_002"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 229
+   },
+   {
+     "id": "3_3_def_005",
+     "type": "def",
+     "title": "平衡の移動",
+     "prerequisite_ids": ["3_3_def_002"],
+     "definition": "平衡状態にある反応系において、濃度・温度・圧力などの条件を変化させると、初めとは違った量的関係の新しい平衡状態になる現象。",
+     "explanation": "条件を変えることで、一時的に正反応と逆反応のバランスが崩れ、どちらか一方に反応が進みます。右辺の物質が増加する場合「右方向へ移動した」と表現します。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["3_3_law_002"],
+     "source_page": 233
+   },
+   {
+     "id": "3_3_law_002",
+     "type": "law",
+     "title": "ルシャトリエの原理（平衡移動の原理）",
+     "prerequisite_ids": ["3_3_def_005"],
+     "definition": "平衡の条件（濃度・温度・圧力）を変化させると、その変化による影響を緩和（相殺）する方向に平衡が移動する。",
+     "explanation": "まるで天秤のバランスを保とうとするように、加えた変化を「打ち消そうとする方向」に反応が進みます。例えば、温度を上げれば「温度を下げる方向（吸熱方向）」へ進みます。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [
+       "ルシャトリエの原理は鎮静剤。外からの影響をやわらげる。"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "条件変更（加熱・圧縮・物質添加など）を与えた際の、平衡の移動方向（右・左・移動しない）を判定する問題",
+         "key_concept_ids": ["3_3_law_002", "3_3_law_003", "3_3_law_004", "3_3_law_005"]
+       }
+     ],
+     "cross_refs": ["3_3_tip_003"],
+     "source_page": 233
+   },
+   {
+     "id": "3_3_law_003",
+     "type": "law",
+     "title": "濃度の変化と平衡の移動",
+     "prerequisite_ids": ["3_3_law_002"],
+     "definition": "特定の物質の濃度を増加させるとそれを減少させる方向へ、濃度を減少させるとそれを増加させる方向へ平衡が移動する。",
+     "explanation": "例えば $N_2$ を追加すると、$N_2$ を消費しようとして右向き（アンモニア生成方向）に反応が進みます。ただし、新しい平衡状態での $N_2$ の量は、追加直後よりは減りますが、最初よりは多くなります。",
+     "conditions": [
+       "温度が変わらない限り、濃度が変化しても平衡定数 K の値は一定に保たれる。"
+     ],
+     "examples": [
+       {
+         "label": "クロム酸イオンとニクロム酸イオンの平衡",
+         "substance_ids": ["3_3_sub_005", "3_3_sub_006"],
+         "description": "クロム酸イオン（黄）の水溶液に酸（H+）を加えると、H+を消費する方向（右）へ移動し、ニクロム酸イオン（赤橙）が生成して色が変化する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["3_3_law_002"],
+     "source_page": 233
+   },
+   {
+     "id": "3_3_law_004",
+     "type": "law",
+     "title": "温度の変化と平衡の移動",
+     "prerequisite_ids": ["3_3_law_002"],
+     "definition": "温度を高くすると吸熱反応の方向へ、温度を低くすると発熱反応の方向へ平衡が移動する。",
+     "explanation": "系を加熱（温度上昇）すると、その熱を吸収して温度を下げようとするため、吸熱方向へ移動します。この際、平衡定数自体の値も変化します（発熱反応を加熱するとKは小さくなる）。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "アンモニア生成（発熱反応）における温度変化",
+         "substance_ids": ["3_3_sub_003"],
+         "description": "$N_2 + 3H_2 \\rightleftharpoons 2NH_3 \\quad \\Delta H = -91.8 kJ$ の反応で温度を上げると、温度を下げる方向（左方向：吸熱方向）へ平衡が移動する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["3_3_law_002"],
+     "source_page": 235
+   },
+   {
+     "id": "3_3_law_005",
+     "type": "law",
+     "title": "圧力の変化と平衡の移動",
+     "prerequisite_ids": ["3_3_law_002"],
+     "definition": "全体の圧力を大きくすると気体分子の総数が減少する方向へ、圧力を小さくすると気体分子の総数が増加する方向へ平衡が移動する。",
+     "explanation": "圧縮して圧力を高めると、圧力を下げるために「粒の数」を減らそうとします。反応式の左右の係数の和を比べ、係数の和が小さい方へ平衡が移動します。",
+     "conditions": [
+       "両辺の気体の係数の和が等しい場合（例: H2 + I2 ⇌ 2HI）、圧力を変化させても平衡は移動しない。",
+       "温度一定であれば、圧力によって平衡定数は変化しない。"
+     ],
+     "examples": [
+       {
+         "label": "アンモニア生成系の圧力変化",
+         "substance_ids": ["3_3_sub_001", "3_3_sub_002", "3_3_sub_003"],
+         "description": "$N_2 + 3H_2 \\rightleftharpoons 2NH_3$ (左辺4分子 ⇌ 右辺2分子)。圧力を増すと、分子数が減る右方向へ移動する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "固体の物質は気体の平衡移動における分子数のカウントには含めない。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["3_3_law_002"],
+     "source_page": 236
+   },
+   {
+     "id": "3_3_law_006",
+     "type": "law",
+     "title": "不活性気体（希ガス等）の添加と平衡の移動",
+     "prerequisite_ids": ["3_3_law_005"],
+     "definition": "定積で加えた場合は平衡移動しないが、定圧で加えた場合は体積が増加するため、気体分子数が増加する方向へ平衡移動する。",
+     "explanation": "アルゴンなどを体積一定で加えても、元々ある気体の分圧は変わらないため平衡は動きません。しかし、圧力一定のまま加えると、容器が膨らんで元々の気体の分圧が下がるため、圧力を補おうと分子数が増える方向へ移動します。",
+     "conditions": [
+       "加える気体が反応系に関与しないこと（アルゴンなど）。"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "「体積一定」または「圧力一定」の条件下でアルゴンを加えた際の平衡移動の有無を問う問題",
+         "key_concept_ids": ["3_3_law_006"]
+       }
+     ],
+     "cross_refs": ["3_3_law_005"],
+     "source_page": 237
+   },
+   {
+     "id": "3_3_proc_001",
+     "type": "proc",
+     "title": "アンモニアの工業的製法（ハーバー・ボッシュ法）",
+     "prerequisite_ids": ["3_3_law_002", "3_3_law_004", "3_3_law_005", "3_3_tip_002"],
+     "definition": "窒素と水素を原料とし、触媒を用いて高温・高圧下でアンモニアを効率的に合成する工業的製法。",
+     "explanation": "アンモニア合成は「発熱反応」かつ「分子数が減る反応」です。平衡論から言えば「低温・高圧」が有利ですが、低温すぎると反応速度が遅くなります。そのため、速度と収率の妥協点として約400～600℃、10～30MPaの条件を用います。",
+     "conditions": [
+       "ルシャトリエの原理と反応速度の両方を考慮した妥協的な条件設定が行われる。"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "鉄を主成分とする触媒（四三酸化三鉄 $Fe_3O_4$ など）を用いる。",
+         "reason": "反応速度を大きくするため。"
+       },
+       {
+         "step": 2,
+         "action": "温度を約 400～600℃ に保つ。",
+         "reason": "平衡論的には低温が有利（発熱反応）だが、低温すぎると反応速度が実用的でなくなるため、妥協点として設定。"
+       },
+       {
+         "step": 3,
+         "action": "10～30 MPa の高圧を加える。",
+         "reason": "分子数が減少する方向（右方向）へ平衡を移動させるとともに、反応速度を高めるため。"
+       },
+       {
+         "step": 4,
+         "action": "生成したアンモニアを冷却・液化して取り除く。",
+         "reason": "生成物を系から除くことで、ルシャトリエの原理によりさらに右方向へ平衡を移動させるため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "ハーバー・ボッシュ法における最適な温度・圧力条件の理由を選択・記述させる問題",
+         "key_concept_ids": ["3_3_proc_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 238
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "3_3_law_001",
+     "to_id": "3_3_eq_001",
+     "relation_type": "is_applied_in",
+     "note": "化学平衡の法則は、濃度平衡定数の数式表現として適用される"
+   },
+   {
+     "from_id": "3_3_law_002",
+     "to_id": "3_3_law_003",
+     "relation_type": "is_prerequisite_of",
+     "note": "濃度変化による平衡移動はルシャトリエの原理の具体例"
+   },
+   {
+     "from_id": "3_3_law_002",
+     "to_id": "3_3_law_004",
+     "relation_type": "is_prerequisite_of",
+     "note": "温度変化による平衡移動はルシャトリエの原理の具体例"
+   },
+   {
+     "from_id": "3_3_law_002",
+     "to_id": "3_3_law_005",
+     "relation_type": "is_prerequisite_of",
+     "note": "圧力変化による平衡移動はルシャトリエの原理の具体例"
+   },
+   {
+     "from_id": "3_3_tip_002",
+     "to_id": "3_3_proc_001",
+     "relation_type": "is_applied_in",
+     "note": "触媒の性質は、ハーバー・ボッシュ法の工程設計の前提となる"
+   }
+ ]
+}

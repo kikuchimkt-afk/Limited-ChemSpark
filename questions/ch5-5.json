@@ -1,0 +1,2509 @@
+{
+  "metadata": {
+    "chapter": "5-5",
+    "chapter_title": "有機化合物と人間生活",
+    "source_file": "json_data/5-5有機化合物と人間生活.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    }
+  },
+  "questions": [
+    {
+      "id": "ch5_5_q001",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "definition",
+      "sub_category": "界面活性剤の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "界面活性剤について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "液体の表面に集まって表面張力を下げる物質。分子内に親水基（水になじむ部分）と疎水基（油になじむ部分）の両方を持つ。セッケンや合成洗剤に含まれる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "界面活性剤は表面張力を高める物質。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "下げる。"
+        },
+        {
+          "label": "3",
+          "text": "界面活性剤は親水基のみを持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "親水基と疎水基の両方。"
+        },
+        {
+          "label": "4",
+          "text": "界面活性剤は無機化合物に分類される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "有機化合物。"
+        }
+      ],
+      "explanation": "界面活性剤の最大の特徴は「両親媒性」です。一つの分子の中に水に溶けやすい部分と油に溶けやすい部分が共存していることで、水と油の境界（界面）に作用できます。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "液体の表面に集まって表面張力を下げる。親水基と疎水基を持つ"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q002",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "セッケンの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "セッケンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "高級脂肪酸のナトリウム塩。水溶液は弱塩基性を示す。硬水中ではカルシウムやマグネシウムのイオンと反応して沈殿を生じ洗浄力が低下する。陰イオン界面活性剤の一種。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "セッケンの水溶液は中性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "弱塩基性。中性は合成洗剤。"
+        },
+        {
+          "label": "3",
+          "text": "セッケンは硬水中でも洗浄力が低下しない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "低下する。低下しないのは合成洗剤。"
+        },
+        {
+          "label": "4",
+          "text": "セッケンは陽イオン界面活性剤。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陰イオン界面活性剤。"
+        }
+      ],
+      "explanation": "セッケンが弱塩基性を示すのは「弱酸＋強塩基の塩」だからです。高級脂肪酸（弱酸）＋水酸化ナトリウム（強塩基）→セッケン（弱塩基性の塩）。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_001",
+          "quote": "弱塩基性。硬水中で沈殿。陰イオン界面活性剤"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q003",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "合成洗剤の性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "合成洗剤（アルキルベンゼンスルホン酸ナトリウムなど）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水溶液は中性を示す。硬水中でもカルシウムイオンやマグネシウムイオンと沈殿を作らないため洗浄力は低下しない。陰イオン界面活性剤の一種。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "合成洗剤の水溶液は弱塩基性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "中性。弱塩基性はセッケン。"
+        },
+        {
+          "label": "3",
+          "text": "合成洗剤は硬水中で沈殿を生じる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "沈殿を生じない。生じるのはセッケン。"
+        },
+        {
+          "label": "4",
+          "text": "合成洗剤は陽イオン界面活性剤。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陰イオン界面活性剤。"
+        }
+      ],
+      "explanation": "合成洗剤が中性なのは「強酸＋強塩基の塩」だからです。スルホン酸（強酸）＋水酸化ナトリウム（強塩基）→中性の塩。セッケンとの違いを正確に覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_002",
+          "quote": "中性。硬水中でも沈殿を作らない。洗浄力低下なし"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q004",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "definition",
+      "sub_category": "洗浄のしくみ",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "界面活性剤による洗浄のしくみとして、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "まず浸透作用で繊維と汚れの間にしみ込み、次に乳化作用でミセルを形成して油汚れを取り込み、最後に分散作用でミセルが水中に散らばって流される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分散作用が最初で浸透作用が最後。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "浸透→乳化→分散の順。"
+        },
+        {
+          "label": "3",
+          "text": "洗浄では化学結合が切れて汚れが分解される。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "物理的に取り込んで洗い流す。化学分解ではない。"
+        },
+        {
+          "label": "4",
+          "text": "ミセルの形成は不要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ミセル形成が核心。"
+        }
+      ],
+      "explanation": "洗浄のしくみは「浸透→乳化→分散」の三段階です。ミセルとは界面活性剤の分子が多数集まって球状構造をとったもので、疎水基が内側（油汚れを包む）、親水基が外側（水に分散する）に向いています。",
+      "evidence": [
+        {
+          "source_id": "5_1_proc_001",
+          "quote": "浸透作用→乳化作用→分散作用"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_proc_001"
+      ],
+      "mnemonic": "浸・乳・散（シン・ニュウ・サン）"
+    },
+    {
+      "id": "ch5_5_q005",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "definition",
+      "sub_category": "ミセルの構造",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ミセルの構造として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "界面活性剤の分子が多数集まった球状の集合体。疎水基が内側に向き親水基が外側の水に面している。油汚れを内部に取り込んで水中に分散させる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ミセルは親水基が内側で疎水基が外側。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。疎水基が内側。"
+        },
+        {
+          "label": "3",
+          "text": "ミセルは一つの界面活性剤分子からなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多数の分子が集合。"
+        },
+        {
+          "label": "4",
+          "text": "ミセルは固体の結晶構造。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水溶液中のコロイド粒子。"
+        }
+      ],
+      "explanation": "ミセルの内側（疎水的空間）に油汚れが取り込まれ、外側の親水基のおかげで水に分散して流されるのが洗浄のカギです。",
+      "evidence": [
+        {
+          "source_id": "5_1_proc_001",
+          "quote": "ミセルを形成し油汚れを取り込んで水中に分散"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q006",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "セッケンと合成洗剤の液性の違い",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "セッケンと合成洗剤の液性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セッケン水溶液は弱塩基性。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "合成洗剤水溶液は中性。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "液性の違いは塩の構成（弱酸と強酸の塩の違い）による。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "セッケン水溶液は中性で、合成洗剤水溶液は弱塩基性。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。セッケンが弱塩基性、合成洗剤が中性。"
+        }
+      ],
+      "explanation": "セッケンは弱酸（脂肪酸）の塩→弱塩基性。合成洗剤は強酸（スルホン酸）の塩→中性。この入れ替えは頻出です。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_001",
+          "quote": "弱塩基性"
+        },
+        {
+          "source_id": "5_1_sub_002",
+          "quote": "中性"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_001",
+        "5_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q007",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "セッケンと合成洗剤の硬水中の挙動",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "セッケンと合成洗剤の硬水中での挙動に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セッケンは硬水中でカルシウムイオンやマグネシウムイオンと反応して沈殿を生じ洗浄力が低下する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "合成洗剤は硬水中でも沈殿を作らず洗浄力が低下しない。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "この違いは疎水基の構造の違いによる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "セッケンは硬水でも問題なく使えるが、合成洗剤は硬水で沈殿する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。セッケンが沈殿、合成洗剤は沈殿しない。"
+        }
+      ],
+      "explanation": "硬水中でセッケンが沈殿するのは脂肪酸イオンがカルシウムイオンと結合して不溶性の脂肪酸カルシウムになるためです。スルホン酸塩は同様の沈殿を作りません。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_001",
+          "quote": "硬水中で沈殿。洗浄力低下"
+        },
+        {
+          "source_id": "5_1_sub_002",
+          "quote": "硬水中でも沈殿を作らない"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_001",
+        "5_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q008",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "definition",
+      "sub_category": "陽イオン界面活性剤",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "陽イオン界面活性剤（逆性セッケン）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "親水性部分が陽イオンになる界面活性剤。殺菌・消毒作用がある。柔軟仕上げ剤にも使われる。セッケンとは逆の電荷を持つため逆性セッケンとも呼ばれる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "逆性セッケンは陰イオンになる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陽イオン。"
+        },
+        {
+          "label": "3",
+          "text": "逆性セッケンは洗浄力に優れている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "洗浄力よりも殺菌力が特徴。"
+        },
+        {
+          "label": "4",
+          "text": "柔軟仕上げ剤は陰イオン界面活性剤。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陽イオン界面活性剤。"
+        }
+      ],
+      "explanation": "陽イオン界面活性剤は「逆性セッケン」の名前の通り、通常のセッケン（陰イオン）と逆の電荷です。柔軟仕上げ剤が洗剤と一緒に使えないのは陽イオンと陰イオンが中和してしまうためです。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "陽イオン界面活性剤。殺菌・消毒剤。柔軟仕上げ剤"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q009",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "definition",
+      "sub_category": "対症療法薬の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "対症療法薬について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "病気の原因に直接作用しないが症状を緩和し苦痛を軽減する医薬品。解熱鎮痛剤や消炎剤が代表例。自然治癒力で回復に向かわせる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "対症療法薬は病気の原因を直接治療する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "それは化学療法薬。"
+        },
+        {
+          "label": "3",
+          "text": "対症療法薬は抗生物質のことである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "抗生物質は化学療法薬。"
+        },
+        {
+          "label": "4",
+          "text": "対症療法薬は副作用がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "副作用がある場合もある。"
+        }
+      ],
+      "explanation": "対症療法薬は「症状を抑える」、化学療法薬は「原因を攻撃する」。この違いが最も重要な区別です。例えば風邪薬の解熱剤は対症療法薬、抗生物質は化学療法薬です。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_001",
+          "quote": "病気の症状を緩和し苦痛を軽減する"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q010",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "definition",
+      "sub_category": "化学療法薬の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "化学療法薬について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "病気の原因に直接作用して治療する医薬品。サルファ剤や抗生物質（ペニシリンなど）が代表例。細菌の増殖を抑えたり死滅させたりする。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "化学療法薬は症状を緩和するだけで原因には作用しない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "それは対症療法薬。"
+        },
+        {
+          "label": "3",
+          "text": "アスピリンは化学療法薬。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "対症療法薬。"
+        },
+        {
+          "label": "4",
+          "text": "化学療法薬は解熱鎮痛剤のこと。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "解熱鎮痛剤は対症療法薬。"
+        }
+      ],
+      "explanation": "化学療法薬の代表例としてサルファ剤（スルファニルアミドなど）と抗生物質（ペニシリン、ストレプトマイシン）を覚えましょう。どちらも細菌を標的とする薬です。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_002",
+          "quote": "病気の原因に直接作用する。サルファ剤。抗生物質"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q011",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "アセチルサリチル酸（アスピリン）",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アセチルサリチル酸（アスピリン）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "サリチル酸の副作用（胃腸障害）を緩和するためにヒドロキシ基をアセチル化した解熱鎮痛剤。対症療法薬に分類される。世界で最も広く使われた医薬品の一つ。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アスピリンは化学療法薬に分類される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "対症療法薬。"
+        },
+        {
+          "label": "3",
+          "text": "アスピリンは抗生物質の一種。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "解熱鎮痛剤。"
+        },
+        {
+          "label": "4",
+          "text": "アスピリンはサリチル酸のカルボキシ基をアセチル化して作る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ヒドロキシ基。"
+        }
+      ],
+      "explanation": "アスピリンの正式名はアセチルサリチル酸です。サリチル酸を直接飲むと胃を荒らすため、ヒドロキシ基をアセチル化して副作用を軽減しました。百年以上使われ続けている古典的な医薬品です。",
+      "evidence": [
+        {
+          "source_id": "5_2_sub_001",
+          "quote": "サリチル酸の副作用を緩和。解熱鎮痛剤。対症療法薬"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q012",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "アセトアミノフェン",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アセトアミノフェンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アセトアニリドやフェナセチンの副作用（肝毒性など）を改良した解熱鎮痛剤。風邪薬の成分として広く使われる。対症療法薬。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アセトアミノフェンは化学療法薬。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "対症療法薬。"
+        },
+        {
+          "label": "3",
+          "text": "アセトアミノフェンは抗生物質の一種。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "解熱鎮痛剤。"
+        },
+        {
+          "label": "4",
+          "text": "アセトアミノフェンはサリチル酸から合成される。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "アニリン系（アセトアニリド系）の薬。"
+        }
+      ],
+      "explanation": "アセトアミノフェンは現在最も広く使われている解熱鎮痛剤の一つです。アスピリン（サリチル酸系）とは異なるアミド系の薬であることを区別しましょう。",
+      "evidence": [
+        {
+          "source_id": "5_2_sub_002",
+          "quote": "アセトアニリドの改良。解熱鎮痛剤。風邪薬"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q013",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "サルファ剤",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "サルファ剤について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "スルファニルアミドなどの化学合成された医薬品。大腸菌などの細菌の発育を阻害する化学療法薬。プロントジルの研究から発見された。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "サルファ剤は対症療法薬。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "化学療法薬。"
+        },
+        {
+          "label": "3",
+          "text": "サルファ剤は微生物が生産する天然物質。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "化学合成。微生物が生産するのは抗生物質。"
+        },
+        {
+          "label": "4",
+          "text": "サルファ剤は解熱鎮痛作用のみを持つ。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "抗菌作用。"
+        }
+      ],
+      "explanation": "サルファ剤は化学合成された最初の抗菌薬です。抗生物質（微生物由来）とは起源が異なりますが、どちらも化学療法薬に分類されます。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_002",
+          "quote": "サルファ剤。スルファニルアミド。大腸菌の発育を阻害"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q014",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "抗生物質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "抗生物質について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "微生物によって生産される物質で病原細菌を死滅させる。ペニシリンやストレプトマイシンが代表例。化学療法薬に分類される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "抗生物質は化学合成で作られ微生物は関係ない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "微生物によって生産される。"
+        },
+        {
+          "label": "3",
+          "text": "ペニシリンは対症療法薬。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "化学療法薬。"
+        },
+        {
+          "label": "4",
+          "text": "抗生物質は症状を抑えるだけで原因には作用しない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "原因菌に直接作用する。"
+        }
+      ],
+      "explanation": "抗生物質はフレミングがアオカビから発見したペニシリンが有名です。「微生物が作って、他の微生物をやっつける」物質です。このため化学合成のサルファ剤とは起源が異なります。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_002",
+          "quote": "微生物によって生産される。ペニシリン、ストレプトマイシン"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q015",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "definition",
+      "sub_category": "発色団と助色団",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "発色団と助色団について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "発色団は有機化合物が色を持つために必要な不飽和結合を含む原子団。アゾ基やカルボニル基が代表例。助色団は色を濃くしたり繊維への染着性を与える原子団で、ヒドロキシ基やアミノ基が代表例。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "助色団だけで色を持つことができる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "発色団が必要。助色団は補助的。"
+        },
+        {
+          "label": "3",
+          "text": "発色団はヒドロキシ基やアミノ基のこと。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "それは助色団。"
+        },
+        {
+          "label": "4",
+          "text": "アゾ基は助色団に分類される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "発色団。"
+        }
+      ],
+      "explanation": "発色団は「色を出す」原子団。助色団は「色を助ける」原子団。発色団の主な例はアゾ基（マイナスエヌ等エヌマイナス）、カルボニル基、ニトロソ基などの不飽和結合を含む構造です。",
+      "evidence": [
+        {
+          "source_id": "5_3_def_001",
+          "quote": "発色団は不飽和結合。助色団は色を濃くしたり染着性を与える"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q016",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "インジゴの染色",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "インジゴの染色法として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "インジゴは青色の染料で水に不溶。塩基性条件下で還元すると無色のロイコ体（水溶性）になり、これを繊維にしみ込ませた後空気中で酸化すると青色に戻る。この方法を建て染めという。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "インジゴは水に溶けやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水に不溶。"
+        },
+        {
+          "label": "3",
+          "text": "ロイコ体は青色である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "無色。"
+        },
+        {
+          "label": "4",
+          "text": "インジゴはそのまま直接繊維に染色できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "還元して水溶性にする必要がある。"
+        }
+      ],
+      "explanation": "建て染め（バット染め）は水に溶けない染料を還元して水溶性にし、染めた後に酸化で色を戻す手法です。デニム（ジーンズ）の藍色はまさにインジゴの建て染めです。",
+      "evidence": [
+        {
+          "source_id": "5_3_sub_001",
+          "quote": "青色。水に不溶。還元で無色のロイコ体。酸化で青色に戻る"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q017",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "対症療法薬と化学療法薬の区別",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "医薬品の分類に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "対症療法薬は症状を緩和する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "化学療法薬は病気の原因に作用する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アスピリンは対症療法薬、ペニシリンは化学療法薬。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ペニシリンは対症療法薬で、アスピリンは化学療法薬。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。ペニシリンは化学療法薬、アスピリンは対症療法薬。"
+        }
+      ],
+      "explanation": "アスピリン（症状を抑える）は対症療法薬。ペニシリン（細菌を殺す）は化学療法薬。入れ替えは定番です。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_001",
+          "quote": "アスピリンは対症療法薬"
+        },
+        {
+          "source_id": "5_2_def_002",
+          "quote": "ペニシリンは化学療法薬"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_001",
+        "5_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q018",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "サルファ剤と抗生物質の起源",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "サルファ剤と抗生物質に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "サルファ剤は化学合成された医薬品。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "抗生物質は微生物によって生産される物質。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "どちらも化学療法薬に分類される。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "サルファ剤は微生物が生産し、抗生物質は化学合成される。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。サルファ剤が化学合成、抗生物質が微生物由来。"
+        }
+      ],
+      "explanation": "サルファ剤は化学合成（人工的に作る）。抗生物質は微生物が生産（天然由来）。起源は異なりますが、どちらも細菌に作用する化学療法薬です。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_002",
+          "quote": "サルファ剤は化学合成。抗生物質は微生物が生産"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q019",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "発色団と助色団の入れ替え",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "染料に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "発色団は色を出すために必要な原子団。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "助色団は色を濃くしたり染着性を与える原子団。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アゾ基は代表的な発色団。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "アゾ基は助色団であり、ヒドロキシ基は発色団である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。アゾ基が発色団、ヒドロキシ基が助色団。"
+        }
+      ],
+      "explanation": "不飽和結合を含む原子団（アゾ基、カルボニル基など）が発色団。非共有電子対を含む原子団（ヒドロキシ基、アミノ基など）が助色団。役割を正確に区別しましょう。",
+      "evidence": [
+        {
+          "source_id": "5_3_def_001",
+          "quote": "発色団はアゾ基など。助色団はヒドロキシ基など"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q020",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "セッケンに塩酸を加えた場合",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "セッケン水溶液に塩酸を加えた場合の変化として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "弱酸である脂肪酸が遊離して白濁する。弱酸の遊離の反応。セッケンは弱酸の塩なので強酸を加えると弱酸が追い出される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "何も変化が起きない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "脂肪酸が遊離する。"
+        },
+        {
+          "label": "3",
+          "text": "セッケンの洗浄力が向上する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "低下する（脂肪酸が遊離して界面活性作用がなくなる）。"
+        },
+        {
+          "label": "4",
+          "text": "二酸化炭素が発生する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "二酸化炭素は炭酸塩＋酸で発生。脂肪酸は気体ではない。"
+        }
+      ],
+      "explanation": "弱酸の遊離は分離法でも学んだ重要概念です。セッケン（脂肪酸の塩）に強酸（塩酸）を加えると脂肪酸（弱酸）が遊離して水に不溶になるため白濁します。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_001",
+          "quote": "塩酸を加えると脂肪酸が遊離し白濁する"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q021",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "洗浄の手順の入れ替え",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "洗浄のしくみに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "浸透作用で界面活性剤が汚れと繊維の間にしみ込む。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "乳化作用でミセルが形成される。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "分散作用でミセルが水中に散らばる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "最初に分散作用が起き最後に浸透作用が起きる。",
+          "is_correct": true,
+          "trap_type": "step_order",
+          "trap_detail": "逆。浸透→乳化→分散の順。"
+        }
+      ],
+      "explanation": "洗浄の三段階は「浸透→乳化→分散」です。まずしみ込んで（浸透）、包み込んで（乳化）、散らして（分散）流す。この順序は論理的に理解すると間違えません。",
+      "evidence": [
+        {
+          "source_id": "5_1_proc_001",
+          "quote": "浸透作用→乳化作用→分散作用の順"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q022",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "セッケンの製法",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "セッケンの製法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "油脂（脂肪酸のグリセリンエステル）を水酸化ナトリウムでけん化して得られる。セッケン（脂肪酸ナトリウム）とグリセリンが生成する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "脂肪酸を直接水に溶かしたものがセッケン。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "脂肪酸は水に不溶。ナトリウム塩にする必要がある。"
+        },
+        {
+          "label": "3",
+          "text": "油脂に塩酸を加えてセッケンを作る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水酸化ナトリウム（塩基）。"
+        },
+        {
+          "label": "4",
+          "text": "セッケンの製造でエタノールが副生成物として得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "グリセリン。"
+        }
+      ],
+      "explanation": "油脂のけん化はエステルの塩基加水分解です。油脂＋水酸化ナトリウム→セッケン（脂肪酸ナトリウム）＋グリセリン。これがセッケンの語源「けん化」です。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_001",
+          "quote": "高級脂肪酸のナトリウム塩"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q023",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "ミセルの向き",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ミセルの構造に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "球状の集合体。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "多数の界面活性剤分子から構成される。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "油汚れを内部に取り込める。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "親水基が内側、疎水基が外側に向いている。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。疎水基が内側（油汚れを包む）、親水基が外側（水に接する）。"
+        }
+      ],
+      "explanation": "ミセルの向きは「内は疎（ソは油好き）、外は親（シンは水好き）」と覚えます。油を内側に取り込むために疎水基が内側を向くのは論理的に理解できます。",
+      "evidence": [
+        {
+          "source_id": "5_1_proc_001",
+          "quote": "ミセルの内側に油汚れを取り込んで水中に分散"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_proc_001"
+      ],
+      "mnemonic": "内は疎、外は親"
+    },
+    {
+      "id": "ch5_5_q024",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "アスピリンの分類",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "アスピリンの分類に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アスピリンは解熱鎮痛剤。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "アスピリンは対症療法薬。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アスピリンはサリチル酸の誘導体。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "アスピリンは抗生物質の一種である。",
+          "is_correct": true,
+          "trap_type": "concept_confusion",
+          "trap_detail": "解熱鎮痛剤（対症療法薬）。抗生物質ではない。"
+        }
+      ],
+      "explanation": "アスピリンをペニシリンなどの抗生物質と混同してはいけません。アスピリンは「熱を下げ痛みを抑える」対症療法薬。ペニシリンは「細菌を殺す」化学療法薬です。",
+      "evidence": [
+        {
+          "source_id": "5_2_sub_001",
+          "quote": "解熱鎮痛剤。対症療法薬"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q025",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "インジゴのロイコ体",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "インジゴの建て染めに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "インジゴは水に不溶な青色の染料。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "還元すると無色のロイコ体（水溶性）になる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "繊維に染み込ませた後、空気中で酸化して青色に発色する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "インジゴは酸化すると無色になり、還元すると青色になる。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。還元で無色（ロイコ体）、酸化で青色（インジゴ）。"
+        }
+      ],
+      "explanation": "「還元→無色→ロイコ（leucoは白い）」「酸化→青色」。ロイコのギリシャ語の意味「白い」を知っていると覚えやすいです。",
+      "evidence": [
+        {
+          "source_id": "5_3_sub_001",
+          "quote": "還元で無色のロイコ体。酸化で青色に戻る"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q026",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "definition",
+      "sub_category": "親水基と疎水基",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "界面活性剤の親水基と疎水基について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "親水基は水になじみやすい部分でイオン性を持つことが多い。疎水基は油になじみやすい部分で長い炭化水素鎖（アルキル基）が代表的。両者が一つの分子に共存することで界面活性作用が生まれる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "親水基は油になじみやすい。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水になじみやすい。"
+        },
+        {
+          "label": "3",
+          "text": "疎水基は水になじみやすい。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "油になじみやすい。"
+        },
+        {
+          "label": "4",
+          "text": "疎水基はイオン性を持つ。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "親水基がイオン性。疎水基は炭化水素鎖。"
+        }
+      ],
+      "explanation": "「親水は水が好き」「疎水は水を嫌う（すなわち油が好き）」と漢字の意味から覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "親水基と疎水基の両方を持つ"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q027",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "セッケンの弱塩基性の理由",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "セッケンの水溶液が弱塩基性を示す理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セッケンは弱酸（脂肪酸）と強塩基（水酸化ナトリウム）の塩であるため、加水分解により弱塩基性を示す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "セッケンは強酸と強塩基の塩だから弱塩基性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "強酸＋強塩基なら中性になる。"
+        },
+        {
+          "label": "3",
+          "text": "セッケンの疎水基が水と反応するため。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "塩の加水分解による。疎水基は関係ない。"
+        },
+        {
+          "label": "4",
+          "text": "ナトリウムイオンが弱塩基性を生む。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "脂肪酸イオンの加水分解による。"
+        }
+      ],
+      "explanation": "弱酸の塩は加水分解して弱塩基性を示します。脂肪酸イオン＋水→脂肪酸＋水酸化物イオン。この水酸化物イオンが塩基性の原因です。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_001",
+          "quote": "弱塩基性を示す"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q028",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "合成洗剤の環境問題",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "合成洗剤の環境問題として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "硬い分岐型の合成洗剤は微生物による分解が遅く環境中に残留しやすい。そのため直鎖型のアルキルベンゼンスルホン酸ナトリウムに改良された。生分解性の向上が課題となった。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "合成洗剤は環境問題を全く引き起こさない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "生分解性の問題がある。"
+        },
+        {
+          "label": "3",
+          "text": "セッケンの方が合成洗剤より環境に悪い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "セッケンは生分解されやすい。"
+        },
+        {
+          "label": "4",
+          "text": "分岐型の方が直鎖型より分解されやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "直鎖型の方が分解されやすい。"
+        }
+      ],
+      "explanation": "かつての分岐型合成洗剤は「ハード型」と呼ばれ、微生物分解を受けにくく河川の泡立ちなどの環境問題を引き起こしました。直鎖型（ソフト型）に変えることで改善されました。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_002",
+          "quote": "合成洗剤の環境問題。生分解性"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q029",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "医薬品の系統分類",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "医薬品の分類に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アセチルサリチル酸はサリチル酸系の対症療法薬。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "アセトアミノフェンはアミド系の対症療法薬。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "スルファニルアミドは化学合成のサルファ剤（化学療法薬）。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "アセトアミノフェンはサルファ剤の一種であり化学療法薬に分類される。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アセトアミノフェンはアミド系の解熱鎮痛剤（対症療法薬）。サルファ剤ではない。"
+        }
+      ],
+      "explanation": "アセトアミノフェンとサルファ剤は全く異なるカテゴリーです。アセトアミノフェンは解熱鎮痛（対症療法）。サルファ剤は抗菌（化学療法）。名前に惑わされないようにしましょう。",
+      "evidence": [
+        {
+          "source_id": "5_2_sub_002",
+          "quote": "アセトアミノフェンは解熱鎮痛剤（対症療法薬）"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q030",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "セッケンと合成洗剤の総合比較",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "セッケンと合成洗剤の比較として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セッケンは弱塩基性で硬水中では沈殿して洗浄力低下。合成洗剤は中性で硬水中でも洗浄力を維持。セッケンは生分解されやすい。合成洗剤は直鎖型なら生分解されやすいが分岐型は分解されにくい。どちらも陰イオン界面活性剤。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "セッケンは中性で合成洗剤は弱塩基性。硬水中ではセッケンが有利。合成洗剤は生分解されやすく環境問題なし。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて逆。"
+        },
+        {
+          "label": "3",
+          "text": "硬水中でどちらも同じ挙動を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "異なる。"
+        },
+        {
+          "label": "4",
+          "text": "セッケンは陽イオン界面活性剤で合成洗剤は陰イオン界面活性剤。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "どちらも陰イオン。"
+        }
+      ],
+      "explanation": "セッケンvs合成洗剤の総合比較は定番の出題テーマです。液性、硬水中の挙動、生分解性の三つの観点で整理しましょう。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_001",
+          "quote": "弱塩基性。硬水で沈殿"
+        },
+        {
+          "source_id": "5_1_sub_002",
+          "quote": "中性。硬水でも沈殿なし"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_001",
+        "5_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q031",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "アゾ染料",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アゾ染料について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アゾ基を発色団として持つ合成染料。ジアゾ化とカップリング反応で合成する。メチルオレンジやコンゴーレッドが代表例。鮮やかな色を示す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アゾ染料は天然に産出する染料。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "合成染料。天然はインジゴなど。"
+        },
+        {
+          "label": "3",
+          "text": "アゾ染料にはアゾ基が含まれていない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "含まれている。"
+        },
+        {
+          "label": "4",
+          "text": "アゾ染料の合成にエステル化反応を使う。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "ジアゾ化＋カップリング。"
+        }
+      ],
+      "explanation": "アゾ染料は合成染料の中で最も種類が多く、全合成染料の約半数を占めます。多様なジアゾ成分とカップリング成分の組み合わせでさまざまな色を作り出せます。",
+      "evidence": [
+        {
+          "source_id": "5_3_def_001",
+          "quote": "アゾ基は代表的な発色団"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q032",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "非イオン界面活性剤",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "非イオン界面活性剤について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水中でイオンにならない界面活性剤。親水基としてポリエチレングリコール鎖などを持つ。水溶液は中性。台所用洗剤や化粧品に利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "非イオン界面活性剤は陽イオンになる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "イオンにならない。"
+        },
+        {
+          "label": "3",
+          "text": "非イオン界面活性剤は水に溶けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "非イオン界面活性剤はセッケンの一種。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "セッケンは陰イオン界面活性剤。"
+        }
+      ],
+      "explanation": "界面活性剤には陰イオン型、陽イオン型、非イオン型（ノニオン型）、両性型の四種類があります。非イオン型はイオンにならないため硬水の影響を受けず、皮膚刺激も少ない特徴があります。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "界面活性剤の分類。イオンにならないタイプ"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q033",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "メチルオレンジ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "メチルオレンジについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アゾ染料の一種で酸塩基指示薬として使われる。酸性で赤色、中性〜アルカリ性で黄色に変化する。変色域はpH約三点一〜四点四。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "メチルオレンジは頣溶液指示薬ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸塩基指示薬として使われる。"
+        },
+        {
+          "label": "3",
+          "text": "メチルオレンジは酸性で黄色、アルカリ性で赤色。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。酸性で赤色、アルカリ性で黄色。"
+        },
+        {
+          "label": "4",
+          "text": "メチルオレンジは天然染料。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "合成染料（アゾ染料）。"
+        }
+      ],
+      "explanation": "メチルオレンジの色変化は「酸性→赤（メチルオレンジＲはレッド）」「アルカリ性→黄（メチルオレンジＹはイエロー）」と覚えます。",
+      "evidence": [
+        {
+          "source_id": "5_3_def_001",
+          "quote": "アゾ染料の応用。指示薬"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q034",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "天然染料と合成染料",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "染料に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "インジゴはアイから得られる天然染料。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "アゾ染料はジアゾ化とカップリングで合成する合成染料。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "モーブは最初の合成染料として知られる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "インジゴは代表的な合成染料で、アゾ染料は天然染料の一種。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。インジゴは天然染料、アゾ染料は合成染料。"
+        }
+      ],
+      "explanation": "インジゴは天然染料（植物のアイから得られる。のちに合成法も開発された）。アゾ染料は合成染料。この区別は重要です。",
+      "evidence": [
+        {
+          "source_id": "5_3_sub_001",
+          "quote": "アイから得られる植物染料"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q035",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "繊維の染色法",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "繊維の染色法について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "直接染料は繊維に直接吸着させる。媒染染料は金属イオン（媒染剤）を利用して繊維に固着させる。建て染め染料は還元して水溶性にしてから染色し酸化で発色させる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "すべての染料は直接繊維に吸着させるだけで染められる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "染色法は複数ある。"
+        },
+        {
+          "label": "3",
+          "text": "媒染染料は金属イオンを使わない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "使う。"
+        },
+        {
+          "label": "4",
+          "text": "建て染めでは酸化して水溶性にする。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "還元して水溶性にする。"
+        }
+      ],
+      "explanation": "染色法の三大分類は重要です。直接染色はそのまま吸着。媒染染色は金属イオンを橋渡しに利用。建て染めは還元→染色→酸化。",
+      "evidence": [
+        {
+          "source_id": "5_3_sub_001",
+          "quote": "還元で水溶性。酸化で青色に戻る（建て染め）"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q036",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "陰イオンと陽イオン界面活性剤",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "界面活性剤の分類に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セッケンは陰イオン界面活性剤。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "逆性セッケンは陽イオン界面活性剤。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "柔軟仕上げ剤は陽イオン界面活性剤を使う。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "セッケンは陽イオン界面活性剤であり殺菌作用がある。逆性セッケンは陰イオン界面活性剤で洗浄力が強い。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて逆。セッケンは陰イオンで洗浄力。逆性セッケンは陽イオンで殺菌。"
+        }
+      ],
+      "explanation": "セッケンは陰イオン系で洗浄作用をもちます。逆性セッケンは陽イオン系で殺菌作用をもちます。この対応関係の入れ替えは要注意です。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "陰イオン界面活性剤。陽イオン界面活性剤（逆性セッケン）"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q037",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "ペニシリンの発見",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ペニシリンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フレミングがアオカビから発見した抗生物質。病原細菌を死滅させる化学療法薬。世界で最初に実用化された抗生物質として知られる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ペニシリンは化学合成で作られた。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アオカビ（微生物）が生産。"
+        },
+        {
+          "label": "3",
+          "text": "ペニシリンは解熱鎮痛剤。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "抗生物質。"
+        },
+        {
+          "label": "4",
+          "text": "ペニシリンはコッホが発見した。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "フレミング。"
+        }
+      ],
+      "explanation": "一九二八年にフレミングが偶然発見したペニシリンは「奇跡の薬」と呼ばれ、第二次世界大戦中に多くの兵士の命を救いました。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_002",
+          "quote": "ペニシリン。微生物が生産。化学療法薬"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q038",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "乳化と分散の区別",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "乳化作用と分散作用の違いとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "乳化作用はミセルが油汚れを取り囲んで微小な粒（乳濁液）にする過程。分散作用はミセルが水中に均一に広がる過程。乳化が先で分散が後。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分散が先で乳化が後。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "逆。乳化→分散。"
+        },
+        {
+          "label": "3",
+          "text": "乳化と分散は同じ意味。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "異なる過程。"
+        },
+        {
+          "label": "4",
+          "text": "乳化は化学反応で分散は物理変化。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "どちらも物理的な過程。"
+        }
+      ],
+      "explanation": "乳化は「油汚れをミセルで包む」（エマルション形成）。分散は「ミセル粒を水中に散らばらせる」（コロイド分散）。二つの過程は連続していますが役割が異なります。",
+      "evidence": [
+        {
+          "source_id": "5_1_proc_001",
+          "quote": "乳化作用→分散作用"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q039",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "医薬品の総合",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "医薬品に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アスピリンは対症療法薬、ペニシリンは化学療法薬。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "サルファ剤は化学合成の化学療法薬。抗生物質は微生物由来の化学療法薬。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "対症療法薬は症状を緩和し、化学療法薬は原因に作用する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ペニシリンは対症療法薬で症状を緩和する。サルファ剤は微生物が生産する天然の抗生物質である。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "二か所誤り。ペニシリンは化学療法薬。サルファ剤は化学合成であり抗生物質ではない。"
+        }
+      ],
+      "explanation": "医薬品の分類の全体像を確認する問題です。対症vs化学療法、化学合成vs微生物由来の二つの軸で整理しましょう。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_001",
+          "quote": "症状を緩和＝対症療法薬"
+        },
+        {
+          "source_id": "5_2_def_002",
+          "quote": "ペニシリンは化学療法薬。サルファ剤は化学合成"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_001",
+        "5_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q040",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "染料の総合",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "染料に関する総合として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "発色団は色を出す原子団（アゾ基など）、助色団は色を補助する原子団（ヒドロキシ基など）。アゾ染料はジアゾ化＋カップリングで合成する合成染料。インジゴはアイから得る天然染料で建て染めに用いる。建て染めでは還元で無色にし染色後に酸化で発色させる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "発色団はヒドロキシ基。助色団はアゾ基。インジゴは合成染料。建て染めでは酸化で無色にする。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて逆。"
+        },
+        {
+          "label": "3",
+          "text": "すべての染料は直接染色で繊維に吸着できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "建て染めなど特殊な方法が必要な染料もある。"
+        },
+        {
+          "label": "4",
+          "text": "アゾ染料は天然に産出する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "合成染料。"
+        }
+      ],
+      "explanation": "染料の全体をまとめた問題です。発色団と助色団、合成と天然、染色法の種類を正確に整理しましょう。",
+      "evidence": [
+        {
+          "source_id": "5_3_def_001",
+          "quote": "発色団はアゾ基。助色団はヒドロキシ基"
+        },
+        {
+          "source_id": "5_3_sub_001",
+          "quote": "インジゴ。天然染料。建て染め"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_def_001",
+        "5_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q041",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "合成洗剤の中性の理由",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "合成洗剤の水溶液が中性を示す理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "合成洗剤は強酸（アルキルベンゼンスルホン酸）と強塩基（水酸化ナトリウム）の塩であり、強酸と強塩基の塩は加水分解を起こさないため中性を示す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "弱酸と強塩基の塩だから中性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "弱酸なら弱塩基性になる。合成洗剤は強酸の塩。"
+        },
+        {
+          "label": "3",
+          "text": "疎水基が水溶液の性質を決めるため。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "塩の構成による。"
+        },
+        {
+          "label": "4",
+          "text": "中和反応が起きるため。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "加水分解の有無の問題。"
+        }
+      ],
+      "explanation": "セッケン（弱酸の塩→弱塩基性）と合成洗剤（強酸の塩→中性）の液性の違いは塩の化学で説明できます。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_002",
+          "quote": "中性を示す"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q042",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "サリチル酸系とアミド系",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "解熱鎮痛剤の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アスピリン（アセチルサリチル酸）はサリチル酸系。アセトアミノフェンはアミド系。どちらも対症療法薬で解熱鎮痛作用がある。構造は異なるが作用は共通。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アスピリンはアミド系でアセトアミノフェンはサリチル酸系。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。"
+        },
+        {
+          "label": "3",
+          "text": "アスピリンとアセトアミノフェンは全く同じ構造の化合物。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "構造は異なる。"
+        },
+        {
+          "label": "4",
+          "text": "アセトアミノフェンは化学療法薬。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "対症療法薬。"
+        }
+      ],
+      "explanation": "サリチル酸系（アスピリンなど）とアミド系（アセトアミノフェンなど）は解熱鎮痛剤の二大系統です。構造が異なるので副作用のプロフィールも異なりますが、どちらも対症療法薬です。",
+      "evidence": [
+        {
+          "source_id": "5_2_sub_001",
+          "quote": "サリチル酸系"
+        },
+        {
+          "source_id": "5_2_sub_002",
+          "quote": "アミド系"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_sub_001",
+        "5_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q043",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "プロントジルとサルファ剤の関係",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "サルファ剤の歴史として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ドーマグが赤色のアゾ染料プロントジルに抗菌作用があることを発見。体内で分解されてスルファニルアミドになることがわかり、これがサルファ剤の開発につながった。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "フレミングがサルファ剤を発見した。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "フレミングはペニシリン。ドーマグがサルファ剤。"
+        },
+        {
+          "label": "3",
+          "text": "サルファ剤は微生物から発見された。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アゾ染料から。微生物由来は抗生物質。"
+        },
+        {
+          "label": "4",
+          "text": "プロントジルから得られたのはペニシリンである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "スルファニルアミド。"
+        }
+      ],
+      "explanation": "サルファ剤の発見はアゾ染料の研究から偶然生まれた歴史的なエピソードです。化学構造の研究が医薬品開発につながった好例です。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_002",
+          "quote": "サルファ剤。プロントジルの研究から発見"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q044",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "硬水と軟水の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "硬水と軟水について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カルシウムイオンやマグネシウムイオンを多く含む水が硬水、少ない水が軟水。日本の水道水は多くが軟水。ヨーロッパでは硬水が多い。セッケンは硬水中で沈殿する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "カルシウムイオンが少ない水が硬水。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多い方が硬水。"
+        },
+        {
+          "label": "3",
+          "text": "日本の水道水はすべて硬水。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多くは軟水。"
+        },
+        {
+          "label": "4",
+          "text": "硬水は洗濯に最適。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "セッケンが沈殿するため軟水の方が適している。"
+        }
+      ],
+      "explanation": "硬水の「硬い」は鉛板が硬くなるように見えることに由来する古い用語です。日本の軟水地域ではセッケンで問題なく洗えますが、ヨーロッパなどの硬水地域では合成洗剤の方が有利です。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_001",
+          "quote": "硬水中でカルシウムやマグネシウムと沈殿"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q045",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "property",
+      "sub_category": "媒染染料",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "媒染染料について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "金属イオン（媒染剤）を使って繊維に染料を固着させる方法。ミョウバン（アルミニウムイオン）が代表的な媒染剤。使う金属イオンによって同じ染料でも異なる色が出る。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "媒染染料は金属イオンを使わない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "使う。"
+        },
+        {
+          "label": "3",
+          "text": "どの金属イオンを使っても色は同じ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "異なる色が出る。"
+        },
+        {
+          "label": "4",
+          "text": "媒染剤は有機化合物のみ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "金属イオン（無機物）。"
+        }
+      ],
+      "explanation": "媒染染料の面白さは、同じ染料でも金属イオンを変えると色が変わることです。例えばアリザリンはアルミニウムイオンで赤色、クロムイオンで暗赤色になります。",
+      "evidence": [
+        {
+          "source_id": "5_3_def_001",
+          "quote": "染料の染色法。媒染"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q046",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "confusion",
+      "sub_category": "表面張力と界面活性剤",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "界面活性剤と表面張力に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "界面活性剤は表面張力を低下させる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "表面張力が下がると水は繊維に浸透しやすくなる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "界面活性剤を加えると水の「まとまる力」が弱くなる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "界面活性剤は表面張力を上昇させるため汚れが落ちにくくなる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "低下させる。低下によって汚れが落ちやすくなる。"
+        }
+      ],
+      "explanation": "界面活性剤が表面張力を下げるからこそ、水が繊維の隙間にしみ込みやすくなり汚れを落としやすくなるのです。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "表面張力を下げる"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q047",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "界面活性剤の総合",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "界面活性剤の総合として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "陰イオン型はセッケンや合成洗剤で洗浄力がある。陽イオン型は逆性セッケンで殺菌・柔軟作用がある。非イオン型は台所用洗剤に使われ中性。セッケンは弱塩基性で硬水に弱い。合成洗剤は中性で硬水に強い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "陰イオン型は殺菌作用。陽イオン型は洗浄力。セッケンは中性で硬水に強い。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて逆。"
+        },
+        {
+          "label": "3",
+          "text": "すべての界面活性剤が弱塩基性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "液性は種類により異なる。"
+        },
+        {
+          "label": "4",
+          "text": "非イオン型は水に溶けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶ける。"
+        }
+      ],
+      "explanation": "界面活性剤の四つの型（陰イオン・陽イオン・非イオン・両性）の特徴と用途を整理しましょう。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "陰イオン、陽イオン、非イオン"
+        },
+        {
+          "source_id": "5_1_sub_001",
+          "quote": "弱塩基性。硬水で沈殿"
+        },
+        {
+          "source_id": "5_1_sub_002",
+          "quote": "中性。硬水でも沈殿なし"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001",
+        "5_1_sub_001",
+        "5_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q048",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "章の総合その一",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "有機化合物と人間生活に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セッケンは弱塩基性で硬水に弱い。合成洗剤は中性で硬水に強い。洗浄は浸透→乳化→分散の順。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "アスピリンは対症療法薬。ペニシリンは化学療法薬。サルファ剤は化学合成の化学療法薬。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "発色団はアゾ基など、助色団はヒドロキシ基など。インジゴは天然染料で建て染めを用いる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "セッケンは中性で硬水に強い。ペニシリンは対症療法薬。発色団はヒドロキシ基。インジゴは酸化で無色になる。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所誤り。弱塩基性で硬水に弱い。化学療法薬。アゾ基が発色団。還元で無色。"
+        }
+      ],
+      "explanation": "章の全範囲を複合した最高難度の問題です。界面活性剤・医薬品・染料の三分野すべてを正確に把握する必要があります。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_001",
+          "quote": "弱塩基性。硬水で沈殿"
+        },
+        {
+          "source_id": "5_2_def_002",
+          "quote": "ペニシリンは化学療法薬"
+        },
+        {
+          "source_id": "5_3_def_001",
+          "quote": "発色団はアゾ基"
+        },
+        {
+          "source_id": "5_3_sub_001",
+          "quote": "還元で無色"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_001",
+        "5_2_def_002",
+        "5_3_def_001",
+        "5_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q049",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "建て染めの総合",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "建て染めに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "インジゴは水に不溶な青色染料。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "塩基性条件下で還元して無色のロイコ体にする。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ロイコ体は水に溶けるため繊維にしみ込む。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "繊維にしみ込ませた後、還元して青色に発色させる。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸化。空気中の酸素で酸化して青色に戻る。"
+        }
+      ],
+      "explanation": "建て染めの最終段階は「酸化」です。「還元で無色にして染色、酸化で色を戻す」。最後のステップを「還元」と入れ替えるのが定番ひっかけです。",
+      "evidence": [
+        {
+          "source_id": "5_3_sub_001",
+          "quote": "還元で無色。酸化で青色に戻る"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_5_q050",
+      "chapter": "5-5",
+      "chapter_title": "有機化合物と人間生活",
+      "category": "comprehensive",
+      "sub_category": "最終総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "有機化合物と人間生活の全範囲に関する最終総合として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セッケンは弱塩基性、合成洗剤は中性。硬水ではセッケンが沈殿するが合成洗剤は沈殿しない。陰イオン型は洗浄、陽イオン型（逆性セッケン）は殺菌。洗浄は浸透→乳化→分散。ミセルは疎水基が内側、親水基が外側。アスピリンは対症療法薬（サリチル酸系）。ペニシリンは化学療法薬（微生物由来の抗生物質）。サルファ剤は化学療法薬（化学合成）。発色団はアゾ基など。助色団はヒドロキシ基など。インジゴは天然染料で建て染め、還元で無色、酸化で青色。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "セッケンは中性。合成洗剤は弱塩基性。ミセルは親水基が内側。ペニシリンは対症療法薬。サルファ剤は微生物由来。発色団はヒドロキシ基。インジゴは酸化で無色。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて逆。"
+        },
+        {
+          "label": "3",
+          "text": "すべての界面活性剤は硬水で沈殿する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "合成洗剤は沈殿しない。"
+        },
+        {
+          "label": "4",
+          "text": "すべての医薬品は対症療法薬に分類される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "化学療法薬もある。"
+        }
+      ],
+      "explanation": "有機化合物と人間生活の全範囲を一問に凝縮した最終問題です。界面活性剤・洗浄・医薬品・染料の全体を正確に整理しましょう。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "界面活性剤"
+        },
+        {
+          "source_id": "5_1_sub_001",
+          "quote": "セッケン。弱塩基性"
+        },
+        {
+          "source_id": "5_1_sub_002",
+          "quote": "合成洗剤。中性"
+        },
+        {
+          "source_id": "5_1_proc_001",
+          "quote": "洗浄のしくみ"
+        },
+        {
+          "source_id": "5_2_def_001",
+          "quote": "対症療法薬"
+        },
+        {
+          "source_id": "5_2_def_002",
+          "quote": "化学療法薬"
+        },
+        {
+          "source_id": "5_3_def_001",
+          "quote": "発色団と助色団"
+        },
+        {
+          "source_id": "5_3_sub_001",
+          "quote": "インジゴ。建て染め"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001",
+        "5_1_sub_001",
+        "5_1_sub_002",
+        "5_1_proc_001",
+        "5_2_def_001",
+        "5_2_def_002",
+        "5_3_def_001",
+        "5_3_sub_001"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

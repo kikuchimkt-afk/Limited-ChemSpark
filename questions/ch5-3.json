@@ -1,0 +1,2559 @@
+{
+  "metadata": {
+    "chapter": "5-3",
+    "chapter_title": "アルコールと関連化合物",
+    "source_file": "json_data/5-3アルコールと関連化合物.rtf",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    }
+  },
+  "questions": [
+    {
+      "id": "ch5_3_q001",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "definition",
+      "sub_category": "アルコールの定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アルコールの定義として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "炭化水素の水素原子をヒドロキシ基で置き換えた化合物。ヒドロキシ基が結合した炭素に直接結合している他の炭素の数で第一級・第二級・第三級に分類される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルコールはカルボキシ基を持つ化合物である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ヒドロキシ基。カルボキシ基はカルボン酸。"
+        },
+        {
+          "label": "3",
+          "text": "アルコールはエーテル結合を持つ化合物である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "エーテル結合はエーテル。"
+        },
+        {
+          "label": "4",
+          "text": "アルコールの分類に第一級・第二級・第三級の区別はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "区別がある。"
+        }
+      ],
+      "explanation": "アルコールのヒドロキシ基（マイナスオーエイチ）は有機化学で最も重要な官能基の一つです。第一級アルコールは酸化するとアルデヒドに、第二級アルコールは酸化するとケトンになります。第三級は酸化されにくいという違いがあります。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "ヒドロキシ基を持つ有機化合物。第一級・第二級・第三級に分類"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q002",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "メタノールの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "メタノールについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色透明の液体で特有のにおいがある。沸点は六十五度。水によく溶ける。有毒であり少量の摂取で失明、大量に摂取すると死に至る。メチルアルコールとも呼ばれる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "メタノールは無毒で飲料として利用できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "有毒。失明や死亡の危険がある。"
+        },
+        {
+          "label": "3",
+          "text": "メタノールは水に溶けにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水によく溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "メタノールの沸点は百度を超える。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "六十五度。"
+        }
+      ],
+      "explanation": "メタノールの毒性は非常に重要です。体内で酸化されてホルムアルデヒドやギ酸になり、視神経を障害して失明を引き起こします。エタノール（お酒の成分）とは全く異なる毒性を持つので絶対に混同してはいけません。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "無色透明。沸点65度。水によく溶ける。有毒。失明"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q003",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "エタノールの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "エタノールについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色透明の液体で特有のにおいがある。沸点は七十八度。水によく溶ける。酒類の主成分で消毒作用もある。エチルアルコールとも呼ばれる。密度は約零点七九。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "エタノールの沸点は六十五度である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "六十五度はメタノール。エタノールは七十八度。"
+        },
+        {
+          "label": "3",
+          "text": "エタノールは水に溶けにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "よく溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "エタノールは有毒で失明の原因となる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "それはメタノール。エタノールは適量なら酒として安全。"
+        }
+      ],
+      "explanation": "エタノールとメタノールの沸点の入れ替えは頻出です。エタノール七十八度、メタノール六十五度。エタノールの方が分子量が大きいので沸点が高いです。七十〜八十パーセントの水溶液が消毒用アルコールとして使われます。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "無色透明。沸点78度。密度0.79。酒類の主成分。消毒作用"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q004",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "definition",
+      "sub_category": "エーテルの定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "エーテルの定義として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "二つの炭化水素基が酸素原子を介して結合した化合物。エーテル結合（シーオーシー結合）を持つ。アルコールと比べて反応性が低く中性の化合物。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "エーテルはヒドロキシ基を持つ化合物である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ヒドロキシ基はアルコール。"
+        },
+        {
+          "label": "3",
+          "text": "エーテルは強い反応性を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応性が低い。"
+        },
+        {
+          "label": "4",
+          "text": "エーテルは酸性の化合物である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "中性。"
+        }
+      ],
+      "explanation": "エーテルはアルコールの構造異性体ですが性質は大きく異なります。アルコールには水素結合を形成するヒドロキシ基がありますがエーテルにはないため、沸点が低く水に溶けにくい傾向があります。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_003",
+          "quote": "エーテル結合を持つ。反応性が低い。中性"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q005",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "ジエチルエーテルの性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ジエチルエーテルの性質として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色で特有の甘いにおいがある揮発性の液体。沸点は三十四度と低い。引火しやすく麻酔作用がある。水にはわずかしか溶けない。有機溶媒として分離・抽出に利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ジエチルエーテルの沸点は七十八度である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "七十八度はエタノール。ジエチルエーテルは三十四度。"
+        },
+        {
+          "label": "3",
+          "text": "ジエチルエーテルは水によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "わずかしか溶けない。"
+        },
+        {
+          "label": "4",
+          "text": "ジエチルエーテルは引火しにくい安全な溶媒である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "引火しやすく危険。"
+        }
+      ],
+      "explanation": "ジエチルエーテルの沸点が三十四度と非常に低いのは、エーテルにはヒドロキシ基がなく水素結合が形成されないため分子間力が弱いからです。エタノール（同じ分子式の異性体）の沸点七十八度と比べると大きな差があります。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_003",
+          "quote": "沸点34度。揮発性。引火しやすい。麻酔作用。水にわずかしか溶けない"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q006",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "definition",
+      "sub_category": "アルデヒドの定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アルデヒドの定義として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルデヒド基（マイナスシーエイチオー）を持つ有機化合物。第一級アルコールを酸化すると得られる。還元性があり銀鏡反応やフェーリング反応で検出できる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルデヒドはカルボニル基の両側に炭化水素基がある化合物。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "それはケトン。アルデヒドは片側が水素。"
+        },
+        {
+          "label": "3",
+          "text": "アルデヒドには還元性がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "還元性がある。"
+        },
+        {
+          "label": "4",
+          "text": "アルデヒドは第二級アルコールの酸化で得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "第一級アルコール。第二級はケトン。"
+        }
+      ],
+      "explanation": "アルデヒドの還元性は最も重要な性質です。アルデヒド基は酸化されやすく（カルボン酸になる）、その際に相手を還元します。銀鏡反応（銀イオン→銀）やフェーリング反応（銅二価イオン→酸化銅一の赤色沈殿）がこの性質を利用しています。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "アルデヒド基を持つ。第一級アルコールの酸化で得られる。還元性あり"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q007",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "ホルムアルデヒドの性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ホルムアルデヒドについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色で刺激臭のある気体。水によく溶け、約三十七パーセント水溶液をホルマリンという。防腐剤や消毒剤として使われる。メタノールの酸化で得られる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ホルムアルデヒドは液体である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "気体。"
+        },
+        {
+          "label": "3",
+          "text": "ホルマリンはホルムアルデヒドの百パーセント水溶液。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "約三十七パーセント水溶液。"
+        },
+        {
+          "label": "4",
+          "text": "ホルムアルデヒドはエタノールの酸化で得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "メタノールの酸化。エタノールの酸化ではアセトアルデヒド。"
+        }
+      ],
+      "explanation": "ホルムアルデヒドはアルデヒドの中で最も単純な構造です。メタノール→ホルムアルデヒド→ギ酸、エタノール→アセトアルデヒド→酢酸という酸化の対応関係は非常に重要です。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_001",
+          "quote": "無色。刺激臭。気体。約37%水溶液がホルマリン。メタノールの酸化"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q008",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "アセトアルデヒドの性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アセトアルデヒドについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色で刺激臭のある液体。沸点は二十度と低い。水によく溶ける。エタノールの酸化またはアセチレンへの水の付加で得られる。還元性がある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アセトアルデヒドはメタノールの酸化で得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "エタノール。メタノールの酸化ではホルムアルデヒド。"
+        },
+        {
+          "label": "3",
+          "text": "アセトアルデヒドには還元性がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ある。"
+        },
+        {
+          "label": "4",
+          "text": "アセトアルデヒドは沸点が高く揮発しにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "沸点二十度で揮発しやすい。"
+        }
+      ],
+      "explanation": "アセトアルデヒドはエタノールの酸化で得られる重要な化合物です。お酒を飲んだ後、体内でエタノールがアセトアルデヒドに酸化されて二日酔いの原因物質となります。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_002",
+          "quote": "沸点20度。エタノールの酸化で得られる。還元性あり"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q009",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "definition",
+      "sub_category": "ケトンの定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ケトンの定義として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カルボニル基の両側に炭化水素基が結合した化合物。第二級アルコールの酸化で得られる。アルデヒドと違い還元性がない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ケトンは第一級アルコールの酸化で得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "第二級。第一級はアルデヒド。"
+        },
+        {
+          "label": "3",
+          "text": "ケトンは還元性を持ち銀鏡反応を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "還元性がない。銀鏡反応はアルデヒド。"
+        },
+        {
+          "label": "4",
+          "text": "ケトンのカルボニル基には水素が一つ結合している。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水素が結合しているのはアルデヒド基。ケトンは両側が炭化水素基。"
+        }
+      ],
+      "explanation": "アルデヒドとケトンの違いは、カルボニル基に水素が結合しているかどうかです。アルデヒドは酸化されやすい（還元性あり）、ケトンは酸化されにくい（還元性なし）。この違いは銀鏡反応の有無で判定できます。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_002",
+          "quote": "カルボニル基の両側に炭化水素基。第二級アルコールの酸化。還元性なし"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q010",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "アセトンの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アセトンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色で特有のにおいがある液体。水によく溶ける。有機溶媒として広く使われ除光液の成分でもある。最も単純なケトン。ヨードホルム反応を示す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アセトンは銀鏡反応を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "示さない。銀鏡反応はアルデヒド。"
+        },
+        {
+          "label": "3",
+          "text": "アセトンは水に溶けにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "よく溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "アセトンはアルデヒドに分類される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ケトン。"
+        }
+      ],
+      "explanation": "アセトンは有機化学実験室で最も使われる有機溶媒の一つです。水にも有機溶媒にもよく溶けるため洗浄溶媒として重宝されます。ケトンなので還元性はありませんが、メチル基を持つためヨードホルム反応は陽性です。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_003",
+          "quote": "最も単純なケトン。水に溶ける。有機溶媒。ヨードホルム反応陽性"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q011",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "definition",
+      "sub_category": "カルボン酸の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "カルボン酸の定義として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カルボキシ基（マイナスシーオーオーエイチ）を持つ有機化合物。弱酸性を示す。アルデヒドをさらに酸化すると得られる。水溶液中で電離する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "カルボン酸はアルカリ性を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸性。"
+        },
+        {
+          "label": "3",
+          "text": "カルボン酸はケトンの酸化で得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アルデヒドの酸化。ケトンは酸化されにくい。"
+        },
+        {
+          "label": "4",
+          "text": "カルボン酸は水溶液中で電離しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電離する。"
+        }
+      ],
+      "explanation": "カルボン酸の酸性はカルボキシ基の水素が電離するためです。ただし強酸ではなく弱酸です。アルコール→アルデヒド→カルボン酸という酸化の段階を正確に覚えることが重要です。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_001",
+          "quote": "カルボキシ基を持つ。弱酸性。アルデヒドの酸化で得られる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q012",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "ギ酸の性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ギ酸について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色で刺激臭のある液体。最も簡単なカルボン酸。カルボン酸であると同時にアルデヒドの性質も持ち、銀鏡反応を示す（還元性がある）。蟻が分泌することが名前の由来。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ギ酸はカルボン酸なので還元性がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ギ酸は例外で還元性がある。"
+        },
+        {
+          "label": "3",
+          "text": "ギ酸は銀鏡反応を示さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "示す。"
+        },
+        {
+          "label": "4",
+          "text": "ギ酸は蜂の毒が名前の由来である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "蟻（アリ）。"
+        }
+      ],
+      "explanation": "ギ酸はカルボン酸でありながらアルデヒドの性質（還元性）も持つ特殊な化合物です。分子内にアルデヒド基に相当する構造（エイチシーオーオーエイチ）があるため銀鏡反応やフェーリング反応を示します。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_001",
+          "quote": "最も簡単なカルボン酸。還元性あり。銀鏡反応陽性"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q013",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "酢酸の性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "酢酸について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色で刺激臭のある液体。食酢の主成分で約三〜五パーセント含まれる。弱酸性を示す。純粋な酢酸は冬場に凍ることがあり氷酢酸と呼ばれる。融点は約十七度。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "酢酸は強酸に分類される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "弱酸。"
+        },
+        {
+          "label": "3",
+          "text": "純粋な酢酸は融点が非常に低く凍らない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "融点約十七度で冬に凍る。"
+        },
+        {
+          "label": "4",
+          "text": "酢酸はエタノールを還元して得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸化。"
+        }
+      ],
+      "explanation": "酢酸は身近なカルボン酸です。純粋な酢酸は融点が約十七度なので冬になると固まります。このことから「氷酢酸」と呼ばれます。食酢に含まれる約三〜五パーセントの酢酸があの酸っぱい味の正体です。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_002",
+          "quote": "食酢の主成分。弱酸性。氷酢酸。融点約17度"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q014",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "definition",
+      "sub_category": "エステルの定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "エステルの定義として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カルボン酸とアルコールから脱水縮合して生成する化合物。エステル結合（マイナスシーオーオーマイナス）を持つ。果実のような芳香を持つものが多い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "エステルはカルボン酸とエーテルの反応で生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アルコール。"
+        },
+        {
+          "label": "3",
+          "text": "エステル結合はエーテル結合と同じである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "異なる。"
+        },
+        {
+          "label": "4",
+          "text": "エステルは一般に臭いがなく無臭である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "芳香を持つ。"
+        }
+      ],
+      "explanation": "エステル化はカルボン酸のヒドロキシ基とアルコールの水素から水が取れて結合する反応です。酢酸エチル（接着剤のにおい）や酪酸エチル（パイナップルのにおい）など身近な芳香成分はエステルです。",
+      "evidence": [
+        {
+          "source_id": "3_4_def_001",
+          "quote": "カルボン酸とアルコールの脱水縮合。エステル結合。芳香"
+        }
+      ],
+      "related_concept_ids": [
+        "3_4_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q015",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "definition",
+      "sub_category": "銀鏡反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "銀鏡反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アンモニア性硝酸銀水溶液にアルデヒドを加えて温めると、銀が析出して試験管の壁に付着し鏡のようになる反応。アルデヒドの還元性を利用した検出反応である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "銀鏡反応はケトンでも起こる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ケトンでは起こらない。"
+        },
+        {
+          "label": "3",
+          "text": "銀鏡反応で銅が析出する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "銀。銅が析出するのはフェーリング反応に近い。"
+        },
+        {
+          "label": "4",
+          "text": "銀鏡反応ではアルデヒドが還元される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸化される。銀イオンが還元されて銀になる。"
+        }
+      ],
+      "explanation": "銀鏡反応のポイントは「アルデヒドが酸化され（カルボン酸になる）、銀イオンが還元されて金属銀になる」ことです。ケトンには還元性がないので銀鏡反応は陰性です。これがアルデヒドとケトンの区別法です。",
+      "evidence": [
+        {
+          "source_id": "3_2_rxn_001",
+          "quote": "アンモニア性硝酸銀水溶液で銀が析出。アルデヒドの検出"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q016",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "definition",
+      "sub_category": "フェーリング反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "フェーリング反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェーリング液（酒石酸カリウムナトリウムと水酸化ナトリウムの混合液に硫酸銅水溶液を加えたもの）にアルデヒドを加えて加熱すると赤色の酸化銅一の沈殿が生じる反応。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "フェーリング反応で銀色の沈殿が生じる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "赤色。銀色の析出は銀鏡反応。"
+        },
+        {
+          "label": "3",
+          "text": "フェーリング反応はケトンでも陽性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ケトンでは陰性。"
+        },
+        {
+          "label": "4",
+          "text": "フェーリング反応ではアルデヒドが還元される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸化される。"
+        }
+      ],
+      "explanation": "フェーリング反応でも銀鏡反応でも、アルデヒドは酸化される側です。銀鏡反応→銀が析出（銀色）。フェーリング反応→酸化銅一が沈殿（赤色）。色の違いで区別します。",
+      "evidence": [
+        {
+          "source_id": "3_2_rxn_002",
+          "quote": "フェーリング液を加熱すると赤色の酸化銅一が沈殿"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q017",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "definition",
+      "sub_category": "ヨードホルム反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ヨードホルム反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヨウ素と水酸化ナトリウム水溶液を加えて加熱するとヨードホルム（黄色沈殿）が生じる反応。メチル基がカルボニル基やヒドロキシ基に隣接する構造で陽性。エタノールやアセトアルデヒドやアセトンが陽性。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ヨードホルム反応で白色の沈殿が生じる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "黄色。"
+        },
+        {
+          "label": "3",
+          "text": "メタノールはヨードホルム反応陽性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "陰性。メタノールにはメチル基に隣接するカルボニルやヒドロキシ基がない構造条件を満たさない。"
+        },
+        {
+          "label": "4",
+          "text": "ヨードホルム反応はアルデヒドの検出反応である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "特定の構造（メチル基隣接）の検出反応。アルデヒドの検出は銀鏡反応。"
+        }
+      ],
+      "explanation": "ヨードホルム反応はシーエイチスリー基がカルボニル基またはシーエイチオーエイチ基に隣接している構造を検出します。エタノール・アセトアルデヒド・アセトン・二プロパノールなどが陽性ですが、メタノールや一プロパノールは陰性です。",
+      "evidence": [
+        {
+          "source_id": "3_2_rxn_003",
+          "quote": "ヨウ素と水酸化ナトリウムで黄色のヨードホルムが沈殿。エタノール、アセトアルデヒド、アセトンが陽性"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q018",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "definition",
+      "sub_category": "エステル化反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "エステル化反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カルボン酸とアルコールが脱水縮合してエステルと水が生成する反応。酸触媒（濃硫酸など）が必要。可逆反応であり加水分解の逆反応。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "エステル化反応は不可逆反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "可逆反応。"
+        },
+        {
+          "label": "3",
+          "text": "エステル化に触媒は不要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸触媒が必要。"
+        },
+        {
+          "label": "4",
+          "text": "エステル化では水素ガスが発生する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水が生成する。"
+        }
+      ],
+      "explanation": "エステル化は可逆反応なので平衡に達すると反応が止まります。生成するエステルの量を増やすには、水を除去する（ル・シャトリエの原理）か、一方の試薬を過剰に加える必要があります。",
+      "evidence": [
+        {
+          "source_id": "3_4_rxn_001",
+          "quote": "カルボン酸とアルコールが脱水縮合。酸触媒。可逆反応"
+        }
+      ],
+      "related_concept_ids": [
+        "3_4_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q019",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "definition",
+      "sub_category": "けん化",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "けん化について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "エステルを水酸化ナトリウム水溶液と加熱して加水分解し、カルボン酸のナトリウム塩とアルコールを生成する反応。不可逆反応である。石鹸の製造に利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "けん化は可逆反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不可逆反応。"
+        },
+        {
+          "label": "3",
+          "text": "けん化は酸触媒で行う。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩基（水酸化ナトリウム）。"
+        },
+        {
+          "label": "4",
+          "text": "けん化ではカルボン酸の遊離酸が直接生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ナトリウム塩が生成。"
+        }
+      ],
+      "explanation": "けん化は「石鹸化」とも書きます。エステルの加水分解を塩基で行うと不可逆になるのがポイントです。これは生成したカルボン酸が直ちに塩基と反応してナトリウム塩（石鹸）になるため逆反応が起こらないからです。",
+      "evidence": [
+        {
+          "source_id": "3_4_rxn_002",
+          "quote": "水酸化ナトリウムで加水分解。カルボン酸塩とアルコール。不可逆"
+        }
+      ],
+      "related_concept_ids": [
+        "3_4_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q020",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "酸化の段階",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "第一級アルコールの酸化の段階として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "第一級アルコール→アルデヒド→カルボン酸の順に酸化が進行する。メタノール→ホルムアルデヒド→ギ酸。エタノール→アセトアルデヒド→酢酸。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "第一級アルコール→ケトン→カルボン酸の順に酸化される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ケトンではなくアルデヒド。ケトンは第二級アルコールから。"
+        },
+        {
+          "label": "3",
+          "text": "第一級アルコール→カルボン酸→アルデヒドの順である。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "順序が逆。アルデヒドが先。"
+        },
+        {
+          "label": "4",
+          "text": "メタノールの酸化でアセトアルデヒドが生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ホルムアルデヒド。アセトアルデヒドはエタノールから。"
+        }
+      ],
+      "explanation": "酸化段階の覚え方：「アルコール→アルデヒド→酸（カルボン酸）」。炭素数が変わらないまま酸化度が上がります。必ず「メタノール→ホルムアルデヒド→ギ酸」「エタノール→アセトアルデヒド→酢酸」の対応関係を正確に覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "3_1_rxn_001",
+          "quote": "第一級アルコール→アルデヒド→カルボン酸"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_rxn_001"
+      ],
+      "mnemonic": "アルコール、アルデヒド、酸（ア・ア・サ）"
+    },
+    {
+      "id": "ch5_3_q021",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "メタノールとエタノールの毒性",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "メタノールとエタノールの毒性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "メタノールは有毒で失明の原因になる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "エタノールは酒類の主成分として広く消費される。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "メタノールとエタノールは構造は異なるが毒性は同等である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "メタノールは猛毒。エタノールは適量なら安全。"
+        },
+        {
+          "label": "4",
+          "text": "メタノールの毒性はホルムアルデヒドやギ酸が体内で生成されることによる。",
+          "is_correct": false
+        }
+      ],
+      "explanation": "メタノールとエタノールは炭素一つ分の違いですが毒性は全く異なります。メタノールは体内で酸化されてホルムアルデヒド→ギ酸になり、ミトコンドリアの呼吸鎖を阻害して視神経障害を引き起こします。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "メタノールは有毒。失明"
+        },
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "エタノールは酒類の主成分"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_001",
+        "3_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q022",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "エタノールの脱水反応の温度",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "エタノールの脱水反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "濃硫酸とともに約百七十度で加熱すると分子内脱水が起きてエチレンが生成する。約百四十度で加熱すると分子間脱水が起きてジエチルエーテルが生成する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "百四十度でエチレン、百七十度でジエチルエーテルが生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。百七十度でエチレン、百四十度でジエチルエーテル。"
+        },
+        {
+          "label": "3",
+          "text": "エタノールの脱水は触媒なしで起こる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "濃硫酸が必要。"
+        },
+        {
+          "label": "4",
+          "text": "どちらの温度でも同じ生成物が得られる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度によって生成物が異なる。"
+        }
+      ],
+      "explanation": "温度による脱水反応の違いは超重要です。「高温（一七〇）→分子内→エチレン」「低温（一四〇）→分子間→エーテル」。覚え方は「高温は内（なか）で、低温は間（あいだ）」です。",
+      "evidence": [
+        {
+          "source_id": "3_1_rxn_002",
+          "quote": "170度で分子内脱水→エチレン。140度で分子間脱水→ジエチルエーテル"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_rxn_002"
+      ],
+      "mnemonic": "一七〇度→ナカ（分子内）→エチレン。一四〇度→アイダ（分子間）→エーテル"
+    },
+    {
+      "id": "ch5_3_q023",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "ナトリウムとの反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アルコールとナトリウムの反応として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "エタノールにナトリウムを加えると水素が発生しナトリウムエトキシドが生成する。反応は水ほど激しくない。ヒドロキシ基の水素がナトリウムに置き換わる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "エタノールとナトリウムの反応で酸素ガスが発生する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水素。"
+        },
+        {
+          "label": "3",
+          "text": "エタノールはナトリウムと反応しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応する。"
+        },
+        {
+          "label": "4",
+          "text": "ジエチルエーテルもナトリウムと同様に反応する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "エーテルにはヒドロキシ基がないため反応しない。"
+        }
+      ],
+      "explanation": "アルコールのヒドロキシ基の水素は水と比べて酸性度が低いため反応は穏やかです。この反応はヒドロキシ基の有無を確認する方法としても使えます。エーテルにはヒドロキシ基がないのでナトリウムとは反応しません。",
+      "evidence": [
+        {
+          "source_id": "3_1_rxn_003",
+          "quote": "ナトリウムと反応して水素が発生。ナトリウムエトキシド生成"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q024",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "第二級アルコールの酸化",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "第二級アルコールの酸化について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "第二級アルコールを酸化するとケトンが得られる。例えば二プロパノールを酸化するとアセトンが生成する。ケトンはさらに酸化されにくい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "第二級アルコールを酸化するとアルデヒドが得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ケトン。アルデヒドは第一級。"
+        },
+        {
+          "label": "3",
+          "text": "ケトンはさらに酸化されてカルボン酸になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸化されにくい。"
+        },
+        {
+          "label": "4",
+          "text": "第三級アルコールも同様にケトンになる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "第三級は酸化されにくい。"
+        }
+      ],
+      "explanation": "酸化生成物のまとめ：第一級→アルデヒド（→カルボン酸）。第二級→ケトン（これ以上酸化されにくい）。第三級→酸化されにくい。この対応関係は問題で頻繁に入れ替えられます。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_002",
+          "quote": "第二級アルコールの酸化でケトン"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q025",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "アルデヒドとケトンの区別",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "アルデヒドとケトンの違いに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルデヒドには還元性がありケトンにはない。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "銀鏡反応やフェーリング反応はアルデヒドの検出に使える。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アルデヒドは第一級アルコールの酸化で生じケトンは第二級アルコールの酸化で生じる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ケトンは還元性を持ち銀鏡反応を示すがアルデヒドは示さない。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。アルデヒドが還元性・銀鏡反応陽性。ケトンは陰性。"
+        }
+      ],
+      "explanation": "「アルデヒドは還元性ありで銀鏡反応陽性。ケトンは還元性なしで銀鏡反応陰性」。この入れ替えは定番のひっかけです。",
+      "evidence": [
+        {
+          "source_id": "3_2_def_001",
+          "quote": "アルデヒドは還元性あり"
+        },
+        {
+          "source_id": "3_2_def_002",
+          "quote": "ケトンは還元性なし"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_def_001",
+        "3_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q026",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "ホルムアルデヒドとアセトアルデヒドの対応",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "酸化の対応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "メタノールの酸化でホルムアルデヒドが得られる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "エタノールの酸化でアセトアルデヒドが得られる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ホルムアルデヒドの酸化でギ酸が得られる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "メタノールの酸化でアセトアルデヒドが得られ、エタノールの酸化でホルムアルデヒドが得られる。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。メタノール→ホルムアルデヒド。エタノール→アセトアルデヒド。"
+        }
+      ],
+      "explanation": "メタノール（炭素一つ）→ホルムアルデヒド（炭素一つ）→ギ酸。エタノール（炭素二つ）→アセトアルデヒド（炭素二つ）→酢酸。炭素数が変わらないことを意識すると間違えにくくなります。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_001",
+          "quote": "メタノールの酸化でホルムアルデヒド"
+        },
+        {
+          "source_id": "3_2_sub_002",
+          "quote": "エタノールの酸化でアセトアルデヒド"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_001",
+        "3_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q027",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "銀鏡反応とフェーリング反応の沈殿色",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "アルデヒドの検出反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銀鏡反応では金属銀が析出する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "フェーリング反応では赤色の酸化銅一が沈殿する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "どちらもアルデヒドの還元性を利用した反応。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "銀鏡反応で赤色沈殿が生じ、フェーリング反応で銀が析出する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。銀鏡→銀析出。フェーリング→赤色沈殿。"
+        }
+      ],
+      "explanation": "「銀鏡→銀（銀色の鏡）。フェーリング→赤色沈殿」。生成物の色を逆にする入れ替えは非常に多いので注意しましょう。",
+      "evidence": [
+        {
+          "source_id": "3_2_rxn_001",
+          "quote": "銀が析出して鏡のようになる"
+        },
+        {
+          "source_id": "3_2_rxn_002",
+          "quote": "赤色の酸化銅一が沈殿"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_rxn_001",
+        "3_2_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q028",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "アルコールとエーテルの沸点差",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "エタノールとジエチルエーテルの沸点を比較して、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "エタノール（沸点七十八度）はジエチルエーテル（沸点三十四度）より沸点が高い。エタノールにはヒドロキシ基があり分子間に水素結合が形成されるため。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ジエチルエーテルの方がエタノールより沸点が高い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "逆。"
+        },
+        {
+          "label": "3",
+          "text": "両者の沸点はほぼ同じである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "大きく異なる。"
+        },
+        {
+          "label": "4",
+          "text": "沸点の違いは分子量の差による。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "水素結合の有無による。ジエチルエーテルの方が分子量は大きいのに沸点は低い。"
+        }
+      ],
+      "explanation": "エタノール（分子量四十六）の沸点七十八度に対し、ジエチルエーテル（分子量七十四）の沸点は三十四度。分子量はジエチルエーテルの方が大きいのに沸点が低いのは水素結合の有無が決め手です。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "エタノール沸点78度"
+        },
+        {
+          "source_id": "3_1_sub_003",
+          "quote": "ジエチルエーテル沸点34度"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_002",
+        "3_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q029",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "ギ酸の特殊性",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "ギ酸に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ギ酸は最も簡単なカルボン酸。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ギ酸はカルボン酸としての性質（弱酸性）を持つ。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ギ酸には還元性があり銀鏡反応を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "すべてのカルボン酸は還元性を持ち銀鏡反応を示す。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "ギ酸のみが例外。酢酸などには還元性がない。"
+        }
+      ],
+      "explanation": "ギ酸だけが還元性を持つ理由は、分子内にアルデヒド基に相当する部分構造があるからです。これは「カルボン酸は還元性なし」という一般則の重要な例外として覚えてください。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_001",
+          "quote": "ギ酸は還元性あり。例外"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q030",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "けん化と酸加水分解",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "エステルの加水分解に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸触媒による加水分解は可逆反応。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "塩基（水酸化ナトリウム水溶液）による加水分解はけん化と呼ばれ不可逆反応。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "けん化ではカルボン酸のナトリウム塩とアルコールが生成する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "けん化は可逆反応であり酸触媒による加水分解は不可逆反応である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。けん化が不可逆、酸加水分解が可逆。"
+        }
+      ],
+      "explanation": "エステルの加水分解は触媒によって可逆性が変わります。酸触媒→可逆（平衡に達する）。塩基→不可逆（けん化、石鹸が生成）。この違いの理由はカルボン酸が直ちに塩になるためです。",
+      "evidence": [
+        {
+          "source_id": "3_4_rxn_001",
+          "quote": "エステル化は可逆"
+        },
+        {
+          "source_id": "3_4_rxn_002",
+          "quote": "けん化は不可逆"
+        }
+      ],
+      "related_concept_ids": [
+        "3_4_rxn_001",
+        "3_4_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q031",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "酢酸エチルの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "酢酸エチルについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色で果実のような芳香を持つ液体。水にわずかに溶ける。酢酸とエタノールのエステル化で得られる。接着剤や有機溶媒として利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "酢酸エチルは無臭の液体。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "芳香がある。"
+        },
+        {
+          "label": "3",
+          "text": "酢酸エチルは水に非常によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "わずかに溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "酢酸エチルはギ酸とメタノールから生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酢酸とエタノールから。"
+        }
+      ],
+      "explanation": "酢酸エチルの芳香は有機化学実験で一番最初に体験する特徴的なにおいです。プラモデルの接着剤やマニキュアの除光液に含まれるあのにおいが酢酸エチルです。",
+      "evidence": [
+        {
+          "source_id": "3_4_sub_001",
+          "quote": "酢酸とエタノールのエステル。芳香。水にわずかに溶ける"
+        }
+      ],
+      "related_concept_ids": [
+        "3_4_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q032",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "ヨードホルム反応の陽性条件",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "ヨードホルム反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "エタノールはヨードホルム反応陽性。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "アセトンはヨードホルム反応陽性。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アセトアルデヒドはヨードホルム反応陽性。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "メタノールはヨードホルム反応陽性。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "メタノールは陰性。メチル基がカルボニルやヒドロキシ基に隣接していない。"
+        }
+      ],
+      "explanation": "ヨードホルム反応陽性の条件は「メチル基がカルボニル基またはシーエイチオーエイチ基に隣接する構造」です。エタノール（メチル基＋シーエイチオーエイチ）は陽性ですが、メタノール（メチル基自体がシーエイチオーエイチ）は条件を満たしません。",
+      "evidence": [
+        {
+          "source_id": "3_2_rxn_003",
+          "quote": "エタノール、アセトアルデヒド、アセトンが陽性"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q033",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "メタノールとエタノールの沸点",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "メタノールとエタノールの沸点に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "メタノールの沸点は六十五度。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "エタノールの沸点は七十八度。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "エタノールの方がメタノールより沸点が高い。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "メタノールの沸点は七十八度でエタノールの沸点は六十五度。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。メタノールが六十五度、エタノールが七十八度。"
+        }
+      ],
+      "explanation": "沸点の入れ替えは頻出です。分子量が大きい方が沸点が高い→エタノール（炭素二）＞メタノール（炭素一）。数値で覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "メタノール沸点65度"
+        },
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "エタノール沸点78度"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_001",
+        "3_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q034",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "アルコールの水素結合",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アルコールの沸点が同程度の分子量の炭化水素やエーテルより高い理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒドロキシ基の水素と酸素の間に分子間水素結合が形成され、分子間力が強くなるため沸点が高くなる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルコールの分子量が大きいため。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "分子量ではなく水素結合が原因。"
+        },
+        {
+          "label": "3",
+          "text": "アルコールが共有結合で結ばれているため。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "分子間力（水素結合）の問題。"
+        },
+        {
+          "label": "4",
+          "text": "アルコールには二重結合があるため。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "関係ない。"
+        }
+      ],
+      "explanation": "水素結合は沸点に大きく影響します。エタノール（分子量四十六、沸点七十八度）はジメチルエーテル（分子量四十六、沸点マイナス二十五度）の構造異性体ですが百度以上も沸点が異なります。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "ヒドロキシ基による水素結合で沸点が高い"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q035",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "エステル化の生成物",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "酢酸とメタノールのエステル化で得られる生成物として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酢酸メチルと水が生成する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "酢酸エチルと水が生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酢酸メチル。酢酸エチルは酢酸＋エタノール。"
+        },
+        {
+          "label": "3",
+          "text": "ギ酸メチルと水が生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酢酸メチル。ギ酸メチルはギ酸＋メタノール。"
+        },
+        {
+          "label": "4",
+          "text": "水は生成しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "脱水縮合で水が生成する。"
+        }
+      ],
+      "explanation": "エステルの命名は「カルボン酸名＋アルコール由来の名前」です。酢酸＋メタノール→酢酸メチル。酢酸＋エタノール→酢酸エチル。ギ酸＋エタノール→ギ酸エチル。対応関係を正確に覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "3_4_rxn_001",
+          "quote": "カルボン酸とアルコールが脱水縮合してエステルと水が生成"
+        }
+      ],
+      "related_concept_ids": [
+        "3_4_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q036",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "ホルマリンの濃度",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "ホルマリンに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ホルマリンはホルムアルデヒドの水溶液。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "約三十七パーセントの水溶液。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "防腐剤として使われる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ホルマリンはアセトアルデヒドの水溶液である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ホルムアルデヒド。アセトアルデヒドではない。"
+        }
+      ],
+      "explanation": "ホルマリンはホルムアルデヒドの約三十七パーセント水溶液。名前が似ている「ホルム」→「ホルムアルデヒド」と対応します。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_001",
+          "quote": "ホルムアルデヒドの約37%水溶液がホルマリン"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q037",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "脱水温度の入れ替え",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "エタノールの脱水に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "約百七十度で分子内脱水が起きエチレンが生成する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "約百四十度で分子間脱水が起きジエチルエーテルが生成する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "濃硫酸が触媒として必要。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "約百四十度で分子内脱水が起きエチレンが生成し、約百七十度で分子間脱水が起きジエチルエーテルが生成する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "温度と反応型が逆。百七十度で分子内→エチレン。百四十度で分子間→エーテル。"
+        }
+      ],
+      "explanation": "脱水反応の温度と生成物の対応は最頻出の入れ替えポイントです。高温→分子内（エチレン）、低温→分子間（エーテル）と記憶しましょう。",
+      "evidence": [
+        {
+          "source_id": "3_1_rxn_002",
+          "quote": "170度で分子内脱水→エチレン。140度で分子間脱水→エーテル"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q038",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "第一級と第二級の生成物",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "アルコールの酸化に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "第一級アルコールの酸化でアルデヒドが得られる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "第二級アルコールの酸化でケトンが得られる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "第三級アルコールは酸化されにくい。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "第一級アルコールの酸化でケトンが、第二級アルコールの酸化でアルデヒドが得られる。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。第一級→アルデヒド、第二級→ケトン。"
+        }
+      ],
+      "explanation": "第一級→アルデヒド、第二級→ケトン。この対応を入れ替えるのは定番のひっかけです。「一（イチ）→ア（アルデヒド）、二（ニ）→ケ（ケトン）」と頭文字で覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "3_1_rxn_001",
+          "quote": "第一級→アルデヒド"
+        },
+        {
+          "source_id": "3_2_def_002",
+          "quote": "第二級→ケトン"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_rxn_001",
+        "3_2_def_002"
+      ],
+      "mnemonic": "一→ア（アルデヒド）、二→ケ（ケトン）"
+    },
+    {
+      "id": "ch5_3_q039",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "氷酢酸の融点",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "酢酸の融点について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "純粋な酢酸の融点は約十七度で、冬場に固体になることがあるため氷酢酸と呼ばれる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "酢酸の融点は零度以下で凍ることはない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "約十七度で凍る。"
+        },
+        {
+          "label": "3",
+          "text": "氷酢酸とは薄い酢酸水溶液のこと。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "純粋な酢酸のこと。"
+        },
+        {
+          "label": "4",
+          "text": "酢酸は百度を超えないと固体にならない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "約十七度で固体になる。"
+        }
+      ],
+      "explanation": "氷酢酸の名前の由来は「氷のように固まる酢酸」です。十七度以下の室温で白い結晶になります。これは水の凍る温度より高いので冬の実験室では珍しくありません。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_002",
+          "quote": "融点約17度。氷酢酸"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q040",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "comprehensive",
+      "sub_category": "酸化段階の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "メタノール系列とエタノール系列の酸化について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "メタノール→ホルムアルデヒド→ギ酸。エタノール→アセトアルデヒド→酢酸。第一級アルコールの酸化段階。ギ酸のみカルボン酸で例外的に還元性あり。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "メタノール→アセトアルデヒド→酢酸。エタノール→ホルムアルデヒド→ギ酸。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "系列が逆。"
+        },
+        {
+          "label": "3",
+          "text": "両方の系列のカルボン酸（ギ酸・酢酸）とも還元性がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ギ酸のみ。酢酸は還元性なし。"
+        },
+        {
+          "label": "4",
+          "text": "アルデヒドからカルボン酸への酸化は起こらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "起こる。"
+        }
+      ],
+      "explanation": "二つの酸化系列を完全に整理した総合問題です。炭素数を軸にして対応関係を覚えることが重要です。",
+      "evidence": [
+        {
+          "source_id": "3_1_rxn_001",
+          "quote": "アルコール→アルデヒド→カルボン酸"
+        },
+        {
+          "source_id": "3_3_sub_001",
+          "quote": "ギ酸は還元性あり"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_rxn_001",
+        "3_2_sub_001",
+        "3_2_sub_002",
+        "3_3_sub_001",
+        "3_3_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q041",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "多価アルコール",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "多価アルコールについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒドロキシ基を二つ以上持つアルコール。エチレングリコール（二価）は不凍液に使われる。グリセリン（三価）は化粧品や爆薬（ニトログリセリン）の原料。いずれも粘性が高く水に溶けやすい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "エチレングリコールは一価アルコールである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二価。"
+        },
+        {
+          "label": "3",
+          "text": "グリセリンは水に溶けにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶けやすい。"
+        },
+        {
+          "label": "4",
+          "text": "多価アルコールは粘性が低くサラサラしている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "粘性が高い。"
+        }
+      ],
+      "explanation": "多価アルコールは分子内に複数のヒドロキシ基を持つため、分子間の水素結合がより強くなります。その結果、粘性が高く、沸点も高くなります。グリセリンが「とろみ」のある液体なのはこのためです。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_002",
+          "quote": "多価アルコール。エチレングリコール（二価）、グリセリン（三価）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q042",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "アセチレンの水付加との混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "各反応の生成物に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "エチレンに水を付加するとエタノールが生成する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "アセチレンに水を付加するとアセトアルデヒドが生成する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "エタノールを酸化するとアセトアルデヒドが生成する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "エチレンに水を付加するとアセトアルデヒドが生成し、アセチレンに水を付加するとエタノールが生成する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。エチレン→エタノール。アセチレン→アセトアルデヒド。"
+        }
+      ],
+      "explanation": "エチレン（二重結合）への水の付加→エタノール。アセチレン（三重結合）への水の付加→アセトアルデヒド。この対応は非常に重要で入れ替えが頻出です。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "エタノール"
+        },
+        {
+          "source_id": "3_2_sub_002",
+          "quote": "アセチレンの水付加でアセトアルデヒド"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_002",
+        "3_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q043",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "カルボン酸の水溶液の性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "カルボン酸の水溶液の性質として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "弱酸性を示す。カルボキシ基の水素が電離して水素イオンを放出する。炭酸より強い酸で炭酸ナトリウムに加えると二酸化炭素が発生する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "カルボン酸は強酸である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "弱酸。"
+        },
+        {
+          "label": "3",
+          "text": "カルボン酸は炭酸より弱い酸。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炭酸より強い。"
+        },
+        {
+          "label": "4",
+          "text": "カルボン酸の水溶液は塩基性である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸性。"
+        }
+      ],
+      "explanation": "カルボン酸＞炭酸の酸の強さの関係は重要です。この関係があるため、カルボン酸を炭酸塩に加えると弱酸の遊離の原理でカルボン酸塩が生成し二酸化炭素（炭酸が分解）が出ます。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_001",
+          "quote": "弱酸性。炭酸より強い"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q044",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "エステルの命名規則",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "エステルの命名法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カルボン酸の名前の後にアルコール由来の基（アルキル基）の名前を付ける。酢酸＋エタノール→酢酸エチル。ギ酸＋メタノール→ギ酸メチル。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルコール名の後にカルボン酸名を付ける。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "カルボン酸が先。"
+        },
+        {
+          "label": "3",
+          "text": "酢酸＋メタノール→酢酸エチル。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酢酸メチル。"
+        },
+        {
+          "label": "4",
+          "text": "ギ酸＋エタノール→ギ酸メチル。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ギ酸エチル。"
+        }
+      ],
+      "explanation": "エステルの名前は「酸＋アルキル基」の順です。エチルはエタノール由来、メチルはメタノール由来です。組み合わせを間違えないように注意しましょう。",
+      "evidence": [
+        {
+          "source_id": "3_4_def_001",
+          "quote": "カルボン酸名＋アルコール由来の名前"
+        }
+      ],
+      "related_concept_ids": [
+        "3_4_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q045",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "property",
+      "sub_category": "アルコールの水溶性",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アルコールの水溶性について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "メタノール・エタノール・プロパノールは水に任意の割合で混ざる。炭素数が大きくなると疎水性の炭化水素部分が大きくなるため水に溶けにくくなる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "すべてのアルコールは水によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炭素数が大きいと溶けにくい。"
+        },
+        {
+          "label": "3",
+          "text": "メタノールは水に溶けにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "よく溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "炭素数が増えると水溶性が高くなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "低くなる。"
+        }
+      ],
+      "explanation": "アルコールの水溶性はヒドロキシ基（親水性）と炭化水素鎖（疎水性）のバランスで決まります。低級アルコール（炭素一〜三）は親水性が勝ち水と任意に混合しますが、高級アルコール（炭素六以上）は疎水性が勝ちます。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "低級アルコールは水に溶けやすい。炭素数が増えると溶けにくくなる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q046",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "comprehensive",
+      "sub_category": "検出反応のまとめ",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "有機化合物の検出反応をまとめた記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銀鏡反応→アルデヒド検出（銀析出）。フェーリング反応→アルデヒド検出（赤色沈殿）。ヨードホルム反応→メチル基隣接カルボニル等の検出（黄色沈殿）。いずれもケトンには銀鏡反応・フェーリング反応は陰性。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "銀鏡反応で赤色沈殿が生じフェーリング反応で銀が析出する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。"
+        },
+        {
+          "label": "3",
+          "text": "ヨードホルム反応で白色沈殿が生じる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "黄色。"
+        },
+        {
+          "label": "4",
+          "text": "すべてのケトンが銀鏡反応陽性になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ケトンは陰性。"
+        }
+      ],
+      "explanation": "三大検出反応の結果を正確に一覧で覚えましょう。色のキーワードは「銀鏡→銀色、フェーリング→赤色、ヨードホルム→黄色」です。",
+      "evidence": [
+        {
+          "source_id": "3_2_rxn_001",
+          "quote": "銀鏡反応で銀析出"
+        },
+        {
+          "source_id": "3_2_rxn_002",
+          "quote": "フェーリング反応で赤色沈殿"
+        },
+        {
+          "source_id": "3_2_rxn_003",
+          "quote": "ヨードホルム反応で黄色沈殿"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_rxn_001",
+        "3_2_rxn_002",
+        "3_2_rxn_003"
+      ],
+      "mnemonic": "銀→銀色、フェ→赤、ヨード→黄色"
+    },
+    {
+      "id": "ch5_3_q047",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "confusion",
+      "sub_category": "アルコールとエーテルの反応性",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "アルコールとエーテルの反応性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルコールはナトリウムと反応して水素を発生する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "エーテルはナトリウムと反応しない。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アルコールは酸化されてアルデヒドやケトンになる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "エーテルはアルコールと同じくナトリウムと反応して水素を発生する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "エーテルにはヒドロキシ基がないため反応しない。"
+        }
+      ],
+      "explanation": "エーテルの反応性の低さはアルコールとの重要な違いです。ヒドロキシ基の有無がその差の原因です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_003",
+          "quote": "エーテルは反応性が低い"
+        },
+        {
+          "source_id": "3_1_rxn_003",
+          "quote": "アルコールはナトリウムと反応する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_003",
+        "3_1_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q048",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "comprehensive",
+      "sub_category": "官能基と化合物の対応",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "官能基と化合物の対応として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒドロキシ基→アルコール。エーテル結合→エーテル。アルデヒド基→アルデヒド。カルボニル基（両側炭化水素基）→ケトン。カルボキシ基→カルボン酸。エステル結合→エステル。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "カルボキシ基→アルデヒド。アルデヒド基→カルボン酸。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。"
+        },
+        {
+          "label": "3",
+          "text": "エーテル結合→エステル。エステル結合→エーテル。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。"
+        },
+        {
+          "label": "4",
+          "text": "カルボニル基（両側炭化水素基）→アルデヒド。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ケトン。"
+        }
+      ],
+      "explanation": "官能基と化合物名の対応は有機化学の基盤です。特にアルデヒド基とカルボキシ基、エーテル結合とエステル結合の入れ替えに注意してください。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "ヒドロキシ基→アルコール"
+        },
+        {
+          "source_id": "3_2_def_001",
+          "quote": "アルデヒド基→アルデヒド"
+        },
+        {
+          "source_id": "3_3_def_001",
+          "quote": "カルボキシ基→カルボン酸"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_003",
+        "3_2_def_001",
+        "3_2_def_002",
+        "3_3_def_001",
+        "3_4_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q049",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "comprehensive",
+      "sub_category": "章の総合その一",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "アルコールと関連化合物に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "メタノールは有毒で、エタノールは酒類の主成分。ともに水によく溶ける。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "第一級アルコール→アルデヒド→カルボン酸の順に酸化が進む。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "エタノールの脱水は百七十度でエチレン、百四十度でジエチルエーテル。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "メタノールの酸化でアセトアルデヒドが得られ、第一級アルコールの酸化でケトンが生成する。銀鏡反応はケトンで陽性である。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所誤り。メタノール→ホルムアルデヒド。第一級→アルデヒド。銀鏡反応はアルデヒドで陽性。"
+        }
+      ],
+      "explanation": "章全体の重要ポイントを複合した最高難度の問題です。酸化段階・生成物・検出反応の全てを正確に把握しないと正答できません。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "メタノール→ホルムアルデヒド"
+        },
+        {
+          "source_id": "3_1_rxn_001",
+          "quote": "第一級→アルデヒド"
+        },
+        {
+          "source_id": "3_2_rxn_001",
+          "quote": "銀鏡反応はアルデヒドで陽性"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_001",
+        "3_1_rxn_001",
+        "3_2_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_3_q050",
+      "chapter": "5-3",
+      "chapter_title": "アルコールと関連化合物",
+      "category": "comprehensive",
+      "sub_category": "最終総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "アルコールと関連化合物の全範囲を網羅した記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルコールはヒドロキシ基を持ち第一級の酸化→アルデヒド→カルボン酸。第二級→ケトン。エーテルは反応性低。メタノール→ホルムアルデヒド→ギ酸。エタノール→アセトアルデヒド→酢酸。銀鏡反応はアルデヒドで銀析出。フェーリングは赤色沈殿。ヨードホルムは黄色沈殿。エステル化は可逆。けん化は不可逆。エタノールの脱水は百七十度→エチレン、百四十度→エーテル。ギ酸のみカルボン酸で還元性あり。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "第一級→ケトン。第二級→アルデヒド。メタノール→アセトアルデヒド。銀鏡→赤色。フェーリング→銀色。けん化は可逆。百七十度→エーテル。すべてのカルボン酸に還元性あり。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて逆。"
+        },
+        {
+          "label": "3",
+          "text": "エーテルもアルコールと同じく反応性が高くナトリウムと反応する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "エーテルは反応性が低い。"
+        },
+        {
+          "label": "4",
+          "text": "ヨードホルム反応はメタノールで陽性。ケトンは銀鏡反応陽性。エステル化は不可逆。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて誤り。メタノールは陰性。ケトンは銀鏡陰性。エステル化は可逆。"
+        }
+      ],
+      "explanation": "章の全範囲を一問に凝縮した最終問題です。酸化段階・検出反応の色・エステル化の可逆性・けん化・脱水温度・ギ酸の特殊性まですべてを整理しましょう。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "ヒドロキシ基。アルコール"
+        },
+        {
+          "source_id": "3_1_rxn_001",
+          "quote": "酸化段階"
+        },
+        {
+          "source_id": "3_1_rxn_002",
+          "quote": "脱水温度"
+        },
+        {
+          "source_id": "3_2_rxn_001",
+          "quote": "銀鏡反応"
+        },
+        {
+          "source_id": "3_2_rxn_002",
+          "quote": "フェーリング反応"
+        },
+        {
+          "source_id": "3_2_rxn_003",
+          "quote": "ヨードホルム反応"
+        },
+        {
+          "source_id": "3_3_sub_001",
+          "quote": "ギ酸の還元性"
+        },
+        {
+          "source_id": "3_4_rxn_001",
+          "quote": "エステル化は可逆"
+        },
+        {
+          "source_id": "3_4_rxn_002",
+          "quote": "けん化は不可逆"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_003",
+        "3_1_rxn_001",
+        "3_1_rxn_002",
+        "3_2_def_001",
+        "3_2_def_002",
+        "3_2_rxn_001",
+        "3_2_rxn_002",
+        "3_2_rxn_003",
+        "3_3_def_001",
+        "3_3_sub_001",
+        "3_3_sub_002",
+        "3_4_def_001",
+        "3_4_rxn_001",
+        "3_4_rxn_002"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

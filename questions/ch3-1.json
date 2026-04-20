@@ -1,0 +1,2471 @@
+{
+  "metadata": {
+    "chapter": "3-1",
+    "chapter_title": "化学反応とエネルギー",
+    "source_file": "json_data/3-1化学反応とエネルギー.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    }
+  },
+  "questions": [
+    {
+      "id": "ch3_1_q001",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "definition",
+      "sub_category": "系と外界の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "系と外界について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "注目する化学反応が起きている部分を系といい、それ以外の部分を外界という。フラスコ内の反応では水溶液が系、フラスコや空気が外界である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "フラスコが系であり、中の水溶液が外界である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。水溶液が系、フラスコが外界。"
+        },
+        {
+          "label": "3",
+          "text": "系と外界は同じものを指す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "区別される概念。"
+        },
+        {
+          "label": "4",
+          "text": "外界とは反応が起きている部分のことである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "反応部分は系。外界はそれ以外。"
+        }
+      ],
+      "explanation": "化学反応のエネルギーを考える際、反応物質そのものを系、それを取り巻くフラスコや空気などを外界と呼びます。発熱反応では系から外界にエネルギーが移り、吸熱反応では外界から系にエネルギーが移ります。この区別がエンタルピーの符号を理解する基礎です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "注目すべき化学反応などが起きている観察対象となる部分を系といい、それ以外の部分を外界という"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q002",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "definition",
+      "sub_category": "発熱反応と吸熱反応",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "発熱反応と吸熱反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "系がエネルギーを外界に熱として放出するのが発熱反応であり周囲は熱くなる。外界の熱を吸収するのが吸熱反応であり周囲は冷たくなる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "発熱反応では周囲が冷たくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "熱を放出するため周囲は熱くなる。"
+        },
+        {
+          "label": "3",
+          "text": "吸熱反応では周囲が熱くなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "熱を吸収するため周囲は冷たくなる。"
+        },
+        {
+          "label": "4",
+          "text": "すべての化学反応は発熱反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "吸熱反応もある。"
+        }
+      ],
+      "explanation": "発熱反応では系が持っていたエネルギーを外界に放出するため、反応容器の周囲は温度が上がります。燃焼反応が典型例です。逆に吸熱反応では外界から熱を奪うため周囲の温度が下がります。冷却パックの仕組みは吸熱反応（溶解）を利用しています。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_002",
+          "quote": "発熱反応が起きると外界に熱が放出されるため周囲は熱くなります"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q003",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "definition",
+      "sub_category": "反応エンタルピーの定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "反応エンタルピーについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "一定圧力のもとで化学反応に伴って放出・吸収する熱量であり、発熱反応ではマイナス、吸熱反応ではプラスの値をとる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "発熱反応では反応エンタルピーはプラスになる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "発熱はマイナス。系からエネルギーが減るため。"
+        },
+        {
+          "label": "3",
+          "text": "吸熱反応では反応エンタルピーはマイナスになる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "吸熱はプラス。"
+        },
+        {
+          "label": "4",
+          "text": "反応エンタルピーは圧力に関係なく一定である。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "一定圧力のもとで定義される量。"
+        }
+      ],
+      "explanation": "反応エンタルピーは生成物のエンタルピーから反応物のエンタルピーを引いた値です。発熱反応では生成物のエンタルピーが反応物より低いためマイナスに、吸熱反応では生成物の方が高いためプラスになります。符号を間違えるのは非常によくあるミスです。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "発熱反応ではΔHはマイナスに、吸熱反応ではプラスになります"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": "発熱はマイナス、吸熱はプラス"
+    },
+    {
+      "id": "ch3_1_q004",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "definition",
+      "sub_category": "ヘスの法則",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ヘスの法則について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応エンタルピーの総和は変化の前後の物質の種類と状態だけで決まり、変化の経路には関係しない。直接測れない反応熱を間接的に計算できる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "反応エンタルピーは反応経路によって異なる値をとる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "経路に依存しない。"
+        },
+        {
+          "label": "3",
+          "text": "ヘスの法則は特定の反応にしか適用できない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "すべての反応に適用可能。"
+        },
+        {
+          "label": "4",
+          "text": "ヘスの法則は物質の状態（固体・液体・気体）を区別しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物質の種類と「状態」で決まるため状態を区別する。"
+        }
+      ],
+      "explanation": "ヘスの法則（総熱量保存の法則）は、反応エンタルピーが始状態と終状態だけで決まるという法則です。山に登るのにどのルートを通っても獲得する高さが同じことに例えられます。直接測定困難な反応のエンタルピーを、測定可能な他の反応から間接的に計算できるため非常に重要です。",
+      "evidence": [
+        {
+          "source_id": "1_1_law_001",
+          "quote": "変化の前後の物質の種類と状態だけで決まり、変化の経路や方法には関係しない"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q005",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "definition",
+      "sub_category": "生成エンタルピーと反応エンタルピー",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "生成エンタルピーから反応エンタルピーを求める式として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応エンタルピーイコール生成物の生成エンタルピーの総和マイナス反応物の生成エンタルピーの総和。すなわち「生成物引く反応物」である。単体の生成エンタルピーはゼロとする。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "反応エンタルピーイコール反応物の生成エンタルピーの総和マイナス生成物の生成エンタルピーの総和。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "引き算の順が逆。生成物から反応物を引く。"
+        },
+        {
+          "label": "3",
+          "text": "単体の生成エンタルピーもゼロではない特定の値をもつ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "単体の生成エンタルピーはゼロと定義される。"
+        },
+        {
+          "label": "4",
+          "text": "生成エンタルピーから反応エンタルピーを計算することはできない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ヘスの法則により計算可能。"
+        }
+      ],
+      "explanation": "生成エンタルピーを使った反応エンタルピー計算では「生成物引く反応物」の順で引き算します。単体の生成エンタルピーは基準としてゼロと定義されます。結合エネルギーの計算式（反応物引く生成物）とは引き算の順が逆なので混同に注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "1_1_eq_001",
+          "quote": "反応エンタルピー = (生成物の生成エンタルピーの総和) - (反応物の生成エンタルピーの総和)"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_eq_001"
+      ],
+      "mnemonic": "生成物引く反応物（後引く前）"
+    },
+    {
+      "id": "ch3_1_q006",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "definition",
+      "sub_category": "結合エネルギーの定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "結合エネルギーについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "気体分子中の共有結合一モルを切断するのに要するエネルギーであり、常に正の値をとる。結合を切るには吸熱が必要である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "結合エネルギーは負の値をとることがある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "常に正の値。"
+        },
+        {
+          "label": "3",
+          "text": "液体や固体の分子にも同じ値が適用される。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "気体状態の分子について定義される。"
+        },
+        {
+          "label": "4",
+          "text": "結合を切ると発熱する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "結合を切るには吸熱が必要。"
+        }
+      ],
+      "explanation": "結合エネルギーは原子間の共有結合という「接着剤」を引きはがすのに必要なエネルギーです。結合を切るためにはエネルギーを与える（吸熱する）必要があるため値は正です。逆に結合を作るときにはエネルギーが放出（発熱）されます。気体状態の分子について定義される点に注意です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "気体分子中の2個の原子の間の共有結合1molを切断するのに要するエネルギー"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q007",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "definition",
+      "sub_category": "結合エネルギーから反応エンタルピー",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "結合エネルギーから反応エンタルピーを求める式として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応エンタルピーイコール反応物の結合エネルギーの総和マイナス生成物の結合エネルギーの総和。すなわち「反応物引く生成物」であり、生成エンタルピーの計算とは引く順が逆である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "反応エンタルピーイコール生成物の結合エネルギーの総和マイナス反応物の結合エネルギーの総和。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "引き算の順が逆。結合エネルギーは「反応物引く生成物」。"
+        },
+        {
+          "label": "3",
+          "text": "結合エネルギーも生成エンタルピーも同じ順で引き算する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "順序が逆。よく出るひっかけ。"
+        },
+        {
+          "label": "4",
+          "text": "結合エネルギーから反応エンタルピーは計算できない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "計算可能。"
+        }
+      ],
+      "explanation": "結合エネルギーを使った計算では「反応物の結合を切る（吸熱）→ 生成物の結合を作る（発熱）」と考えます。切る方から作る方を引くので「反応物引く生成物」です。生成エンタルピーの「生成物引く反応物」と逆の順序であることが最大の注意点です。",
+      "evidence": [
+        {
+          "source_id": "1_1_eq_002",
+          "quote": "反応エンタルピー = (反応物の結合エネルギーの総和) - (生成物の結合エネルギーの総和)"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_eq_002"
+      ],
+      "mnemonic": "結合エネルギーは反応物引く生成物（前引く後）"
+    },
+    {
+      "id": "ch3_1_q008",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "definition",
+      "sub_category": "光化学反応の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "光化学反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "光の吸収によって開始される化学反応であり、紫外線は可視光線よりエネルギーが高いため反応を起こしやすい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "光化学反応は熱エネルギーのみで進行する反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "光のエネルギーで開始される反応。"
+        },
+        {
+          "label": "3",
+          "text": "可視光線の方が紫外線よりエネルギーが高い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "紫外線の方がエネルギーが高い。"
+        },
+        {
+          "label": "4",
+          "text": "光化学反応は理論上の概念であり実例はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水素と塩素の反応など多くの実例がある。"
+        }
+      ],
+      "explanation": "光化学反応は光のエネルギーをきっかけとして開始される反応です。紫外線は可視光線より波長が短くエネルギーが高いため、多くの化学結合を切断して反応を引き起こすことができます。水素と塩素の混合気体に強い光を当てると爆発的に塩化水素が生成するのが代表例です。",
+      "evidence": [
+        {
+          "source_id": "1_2_def_001",
+          "quote": "物質が光の吸収によって開始される化学反応"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q009",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "definition",
+      "sub_category": "化学発光の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "化学発光について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "化学反応のエネルギーが熱ではなく光として放出される現象であり、ホタルの発光やケミカルライト、ルミノール反応が例である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "化学発光は外部から光を当てて起こる現象である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "外部から光で起こるのは光化学反応。化学発光は反応が光を放出する現象。"
+        },
+        {
+          "label": "3",
+          "text": "すべての化学反応は光を発する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多くの反応は熱としてエネルギーを放出する。"
+        },
+        {
+          "label": "4",
+          "text": "化学発光は加熱によって光を出す現象である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "加熱による発光は白熱であり化学発光とは異なる。"
+        }
+      ],
+      "explanation": "化学発光は化学反応で生じたエネルギーが熱の代わりに光として放出される現象です。ホタルの発光（生物発光）、ケミカルライト、犯罪捜査で使われるルミノール反応が身近な例です。光化学反応（光で反応が起こる）とは方向が逆であることに注意しましょう。",
+      "evidence": [
+        {
+          "source_id": "1_2_def_003",
+          "quote": "化学反応に伴って、熱エネルギーを放出する代わりに、そのエネルギーを光の形で放出する現象"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q010",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "definition",
+      "sub_category": "光触媒の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "光触媒について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "光が当たることで化学反応を促進するが、自身は変化しない物質である。酸化チタンが代表例であり、汚れや細菌の分解に利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "光触媒は反応中に消費される物質である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "触媒なので自身は変化しない。"
+        },
+        {
+          "label": "3",
+          "text": "酸化チタンは光がなくても強い酸化力を発揮する。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "光（紫外線）が当たることで酸化力を発揮する。"
+        },
+        {
+          "label": "4",
+          "text": "光触媒は可視光線では全く機能しない。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "紫外線が主だが可視光応答型も開発されている。"
+        }
+      ],
+      "explanation": "光触媒は光を受けて化学反応を促進するが自身は変化しない物質です。酸化チタン（四価）が最も有名で、紫外線を受けると強い酸化力を発揮して有機汚れや細菌を分解します。建物の外壁やガラスのセルフクリーニングに実用化されています。",
+      "evidence": [
+        {
+          "source_id": "1_2_def_004",
+          "quote": "光が当たることによって、その物質自身は変化せずに化学反応を促進する働きを示す物質"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q011",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "definition",
+      "sub_category": "連鎖反応の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "連鎖反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応で生じた活性な粒子が次の反応を引き起こし、連続的に繰り返される反応である。水素と塩素の混合気体に光を当てたときの爆発的反応が例である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "反応が一回だけ起きて停止する反応を連鎖反応という。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "連続的に繰り返される反応のこと。"
+        },
+        {
+          "label": "3",
+          "text": "連鎖反応には活性な粒子は関与しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "活性種（ラジカル）が次の反応を引き起こす。"
+        },
+        {
+          "label": "4",
+          "text": "連鎖反応は光化学反応とは全く無関係である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "光化学反応で連鎖反応が起こることがある。"
+        }
+      ],
+      "explanation": "連鎖反応はドミノ倒しのように、一度始まると次々と反応が連鎖していく現象です。水素と塩素の光化学反応では、光で塩素分子が切断されて生じた塩素原子（ラジカル）が水素分子と反応し、新たな活性種を生み出して反応が連鎖的に進行します。",
+      "evidence": [
+        {
+          "source_id": "1_2_def_002",
+          "quote": "反応によって生じた活性な粒子が次の反応を引き起こし、それが連続的に繰り返される反応"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q012",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "definition",
+      "sub_category": "エンタルピー変化付き反応式",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "エンタルピー変化を付した反応式の書き方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "化学反応式の各物質に状態（気体・液体・固体など）を明記し、右辺の最後にエンタルピー変化を付記する。着目する物質一モルを基準にするため係数に分数が含まれてもよい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "状態を明記する必要はなく、化学式のみでよい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "状態によりエンタルピーが異なるため状態の明記が不可欠。"
+        },
+        {
+          "label": "3",
+          "text": "係数に分数は使えないため必ず整数にする。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "着目物質一モル基準のため分数も使える。"
+        },
+        {
+          "label": "4",
+          "text": "エンタルピー変化は反応式の左辺に書く。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "右辺の最後に書く。"
+        }
+      ],
+      "explanation": "エンタルピー変化を付した反応式では、物質の状態を必ず明記します。気体の水と液体の水ではエンタルピーが異なるため、状態の記載は不可欠です。また着目する物質一モルを基準にするため、他の物質の係数に分数（二分の一など）が含まれることがあります。",
+      "evidence": [
+        {
+          "source_id": "1_1_proc_001",
+          "quote": "着目する物質1molを基準にするため、係数に分数が含まれてもかまいません"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q013",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "property",
+      "sub_category": "炭素の燃焼熱",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "炭素（黒鉛）の燃焼について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "炭素（黒鉛）一モルが完全燃焼すると三百九十四キロジュールの熱が放出される。発熱反応であり反応エンタルピーはマイナスである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "炭素の燃焼は吸熱反応であり反応エンタルピーはプラスである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "燃焼は代表的な発熱反応。"
+        },
+        {
+          "label": "3",
+          "text": "炭素（黒鉛）の生成エンタルピーは三百九十四キロジュール毎モルである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "単体の生成エンタルピーはゼロ。三百九十四は燃焼エンタルピー。"
+        },
+        {
+          "label": "4",
+          "text": "炭素の燃焼では熱は発生しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "大量の熱が発生する。"
+        }
+      ],
+      "explanation": "炭素（黒鉛）の完全燃焼では一モルあたり三百九十四キロジュールの熱を外界に放出します。これは燃焼エンタルピーであり発熱反応なのでマイナスの値です。なお炭素は単体であるため生成エンタルピーは基準としてゼロです。この二つの値を混同しないようにしましょう。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_002",
+          "quote": "394kJの熱量を外界に放出する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_002",
+        "1_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q014",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "property",
+      "sub_category": "水素の結合エネルギー",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水素分子の結合エネルギーについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水素の水素間結合一モルを切断するのに四百三十六キロジュールのエネルギーが必要である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水素分子の結合は切断しなくてもエネルギーは不要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "結合切断にはエネルギーが必要。"
+        },
+        {
+          "label": "3",
+          "text": "結合エネルギーがマイナス四百三十六キロジュールである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "結合エネルギーは常に正の値。"
+        },
+        {
+          "label": "4",
+          "text": "この値は液体の水素にも適用される。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "気体状態の分子について定義。"
+        }
+      ],
+      "explanation": "水素分子の水素間結合一モルを切断するには四百三十六キロジュールのエネルギーが必要です。エネルギーを加えて結合を切るので必ず正の値となります。気体状態の分子で定義されている点に注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "H-H結合1molを切断するために436kJのエネルギーが必要"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q015",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "property",
+      "sub_category": "水酸化ナトリウムの溶解熱",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水酸化ナトリウムの水への溶解について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水酸化ナトリウムを水に溶かすと発熱する。溶解エンタルピーはマイナス四十四・五キロジュール毎モルであり、水溶液の温度が上昇する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水酸化ナトリウムの溶解は吸熱であり水溶液の温度が下がる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "発熱であり温度は上昇する。"
+        },
+        {
+          "label": "3",
+          "text": "溶解エンタルピーがマイナスということは吸熱反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "マイナスは発熱反応。"
+        },
+        {
+          "label": "4",
+          "text": "水酸化ナトリウムは水に溶けない。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "水によく溶ける。"
+        }
+      ],
+      "explanation": "水酸化ナトリウムを水に溶かすと大きな発熱が起こります。溶解エンタルピーはマイナス四十四・五キロジュール毎モルであり、系からエネルギーが放出されるため溶液の温度が上昇します。この発熱のため、水酸化ナトリウムを水に溶かすときは少しずつ加えて撹拌する必要があります。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_003",
+          "quote": "水への溶解エンタルピーは-44.5 kJ/mol"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q016",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "property",
+      "sub_category": "酸化チタンの光触媒特性",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "酸化チタン（四価）の特性として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "紫外線が当たると強い酸化力を発揮して有機物を分解し、超親水性を示す。建物の外壁の汚れ防止に利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "酸化チタンは光が当たると還元力を発揮する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸化力を発揮する。"
+        },
+        {
+          "label": "3",
+          "text": "酸化チタンは黒色の物質であり目立つため使いにくい。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "白色の物質。"
+        },
+        {
+          "label": "4",
+          "text": "光触媒として働いた後は酸化チタン自身が消費されてなくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "触媒なので自身は消費されない。"
+        }
+      ],
+      "explanation": "酸化チタン（四価）は白色の物質で、紫外線を受けると強力な酸化力を発揮して有機物を分解します。また超親水性（水が広がりやすい）を示す特性もあり、ガラスの曇り止めや建物の外壁のセルフクリーニングに実用されています。触媒なので自身は反応後も変化しません。",
+      "evidence": [
+        {
+          "source_id": "1_2_sub_001",
+          "quote": "強力な光触媒として働く"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_def_004",
+        "1_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q017",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "confusion",
+      "sub_category": "発熱と反応エンタルピーの符号の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "反応エンタルピーの符号に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "発熱反応では反応エンタルピーはマイナスである。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "吸熱反応では反応エンタルピーはプラスである。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "反応エンタルピーの符号はエネルギーの出入りの方向を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "発熱反応では系のエネルギーが増加するため反応エンタルピーはプラスになる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "発熱では系のエネルギーが減少するためマイナス。"
+        }
+      ],
+      "explanation": "発熱反応では系がエネルギーを外界に放出するため、系のエネルギーは減少します。したがって反応エンタルピーはマイナスです。「熱を出すはプラス」と直感的に誤解しやすいですが、系の視点で考えると減少なのでマイナスです。この符号の混同は最も多い誤りの一つです。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "発熱反応だからといってΔHがプラスになるわけではない。系からエネルギーが減るためΔHは負"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q018",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "confusion",
+      "sub_category": "生成エンタルピーと結合エネルギーの引き算順の混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "エンタルピー計算に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "生成エンタルピーの計算では「生成物引く反応物」の順で引く。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "結合エネルギーの計算では「反応物引く生成物」の順で引く。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "二つの計算式では引き算の順序が逆である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "生成エンタルピーも結合エネルギーも同じ「生成物引く反応物」で計算する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "結合エネルギーは逆の「反応物引く生成物」。"
+        }
+      ],
+      "explanation": "これは試験で最も間違えやすいポイントの一つです。生成エンタルピーからの計算は「後引く前」（生成物マイナス反応物）ですが、結合エネルギーからの計算は「前引く後」（反応物マイナス生成物）です。なぜ逆になるかというと、結合を切るのが吸熱、作るのが発熱だからです。",
+      "evidence": [
+        {
+          "source_id": "1_1_eq_002",
+          "quote": "生成エンタルピーの公式（生成物 - 反応物）と逆の引き算になるので注意"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_eq_001",
+        "1_1_eq_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q019",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "confusion",
+      "sub_category": "光化学反応と化学発光の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "光と化学反応の関係に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "光化学反応は光のエネルギーで反応が開始される。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "化学発光は反応のエネルギーが光として放出される。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ルミノール反応は化学発光の例である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "光化学反応と化学発光は同じ現象である。両方とも反応が光を放出する。",
+          "is_correct": true,
+          "trap_type": "concept_confusion",
+          "trap_detail": "光化学反応は光→反応、化学発光は反応→光。方向が逆。"
+        }
+      ],
+      "explanation": "光化学反応と化学発光はエネルギーの流れの方向が逆です。光化学反応は光のエネルギーを吸収して反応が開始されます（光→反応）。化学発光は反応のエネルギーが光として放出されます（反応→光）。この二つを混同しないようにしましょう。",
+      "evidence": [
+        {
+          "source_id": "1_2_def_001",
+          "quote": "物質が光の吸収によって開始される化学反応"
+        },
+        {
+          "source_id": "1_2_def_003",
+          "quote": "エネルギーを光の形で放出する現象"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_def_001",
+        "1_2_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q020",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "confusion",
+      "sub_category": "単体の生成エンタルピーの混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "生成エンタルピーに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "生成エンタルピーは化合物を構成する単体から一モル生成するときのエンタルピー変化である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "黒鉛の生成エンタルピーはゼロである。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "酸素分子の生成エンタルピーはゼロである。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "単体の生成エンタルピーは物質ごとに異なる値をもち、ゼロではない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "基準としてゼロと定義されている。"
+        }
+      ],
+      "explanation": "生成エンタルピーの計算では、最も安定な状態の単体の生成エンタルピーをゼロと定義します。炭素なら黒鉛（ダイヤモンドではない）、酸素なら酸素分子がゼロの基準です。この基準がないとヘスの法則による計算ができないため非常に重要な約束事です。",
+      "evidence": [
+        {
+          "source_id": "1_1_eq_001",
+          "quote": "単体の生成エンタルピーは0と考える"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q021",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "confusion",
+      "sub_category": "結合エネルギーの適用条件の誤り",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "結合エネルギーの計算に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "結合エネルギーは気体分子について定義される。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "結合エネルギーの値は常に正である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "反応物に液体が含まれる場合は蒸発エンタルピーの補正が必要である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "結合エネルギーの計算は液体の分子にもそのまま適用でき補正は不要である。",
+          "is_correct": true,
+          "trap_type": "condition_change",
+          "trap_detail": "液体が含まれる場合は蒸発エンタルピーの補正が必要。"
+        }
+      ],
+      "explanation": "結合エネルギーは気体分子中の共有結合について定義されています。したがって反応に液体状態の物質が含まれる場合は、まず液体を気体にするための蒸発エンタルピーを加えて補正する必要があります。たとえば水が液体として生成する場合は水の蒸発エンタルピーも考慮しなければなりません。",
+      "evidence": [
+        {
+          "source_id": "1_1_eq_002",
+          "quote": "液体が含まれる場合は蒸発エンタルピーの補正が必要"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_eq_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q022",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "confusion",
+      "sub_category": "ヘスの法則と経路依存",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ヘスの法則に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応エンタルピーは始状態と終状態だけで決まる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "直接測定できない反応熱もこの法則で計算できる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "山登りに例えると、どのルートでも登った高さは同じである。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "反応エンタルピーは反応経路によって異なる値になる。速い経路では大きく、遅い経路では小さい。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "経路に依存しない。速さも無関係。"
+        }
+      ],
+      "explanation": "ヘスの法則の核心は、反応エンタルピーが経路に依存しないという点です。一段階の反応でも多段階の反応でも、出発物質と到達物質が同じならエンタルピーの総変化量は同じです。反応速度の速い遅いもエンタルピーには影響しません。",
+      "evidence": [
+        {
+          "source_id": "1_1_law_001",
+          "quote": "変化の前後の物質の種類と状態だけで決まり、変化の経路や方法には関係しない"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q023",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "procedure",
+      "sub_category": "エンタルピー付き反応式の書き方手順",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "エンタルピー変化を付した反応式の作成手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "まず化学反応式を書き、次に着目物質の係数を一にして他を調整し、最後に各物質の状態を明記してエンタルピー変化を右端に書く。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "最初にエンタルピー変化を書き、次に反応式を書く。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "反応式が先、エンタルピー変化が最後。"
+        },
+        {
+          "label": "3",
+          "text": "状態の明記は最初の工程で行い、係数の調整は不要である。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "係数調整は重要な工程。"
+        },
+        {
+          "label": "4",
+          "text": "着目物質の係数は二にするのが標準である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一にするのが標準。"
+        }
+      ],
+      "explanation": "エンタルピー付き反応式は三段階の手順で作成します。第一に通常の化学反応式を書きます。第二に着目する物質の係数を一にしてバランスを取ります。第三に各物質に状態（気体・液体・固体・水溶液）を明記し、右端にエンタルピー変化を記載します。",
+      "evidence": [
+        {
+          "source_id": "1_1_proc_001",
+          "quote": "着目する物質の係数を1にし、他の係数を調整する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q024",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "procedure",
+      "sub_category": "ヘスの法則による計算手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ヘスの法則を使って目的の反応エンタルピーを求める手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "与えられた複数の反応式を必要に応じて逆向きにしたり係数を変えたりして組み合わせ、目的の反応式を導き出す。そのとき各エンタルピー変化も同様に操作して合算する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "反応式を逆にしてもエンタルピー変化の符号は変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "逆向きにすると符号が逆になる。"
+        },
+        {
+          "label": "3",
+          "text": "係数を二倍にしてもエンタルピー変化は変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "係数に比例してエンタルピー変化も変わる。"
+        },
+        {
+          "label": "4",
+          "text": "ヘスの法則では複数の反応式を組み合わせることはできない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "組み合わせこそがヘスの法則の本領。"
+        }
+      ],
+      "explanation": "ヘスの法則の計算では、与えられた反応式を代数的に操作して目的の反応式を作ります。反応式を逆向きにするとエンタルピーの符号が逆になり、係数を倍にするとエンタルピーも倍になります。これらを組み合わせて目的の式を導き、エンタルピーを合算すれば答えが得られます。",
+      "evidence": [
+        {
+          "source_id": "1_1_law_001",
+          "quote": "複数の反応式から目的の反応のエンタルピー変化を計算する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q025",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "classification",
+      "sub_category": "発熱反応と吸熱反応の分類",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "発熱反応と吸熱反応の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "燃焼・中和・多くの溶解は発熱反応、窒素と酸素から一酸化窒素が生成する反応は吸熱反応の例である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "燃焼は吸熱反応であり周囲は冷たくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "燃焼は代表的な発熱反応。"
+        },
+        {
+          "label": "3",
+          "text": "中和反応は吸熱反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "中和は発熱反応。"
+        },
+        {
+          "label": "4",
+          "text": "すべての溶解は吸熱反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水酸化ナトリウムの溶解は発熱。"
+        }
+      ],
+      "explanation": "発熱反応には燃焼、中和、水酸化ナトリウムの溶解などがあります。吸熱反応には窒素と酸素から一酸化窒素が生成する反応（百八十キロジュール吸収）などがあります。溶解にも発熱のもの（水酸化ナトリウム）と吸熱のもの（硝酸アンモニウム）があるので一概には言えません。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_002",
+          "quote": "炭素の完全燃焼は発熱反応、窒素と酸素から一酸化窒素生成は吸熱反応"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q026",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "classification",
+      "sub_category": "各種エンタルピーの分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "各種エンタルピーの分類として、正しい組み合わせを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "燃焼エンタルピー（物質一モルが完全燃焼するときの値）、生成エンタルピー（単体から化合物一モルが生成するときの値）、溶解エンタルピー（物質一モルが溶媒に溶けるときの値）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "燃焼エンタルピーと生成エンタルピーは同じ概念である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "異なる概念。"
+        },
+        {
+          "label": "3",
+          "text": "生成エンタルピーは化合物が分解するときの値である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "生成するときの値。"
+        },
+        {
+          "label": "4",
+          "text": "溶解エンタルピーは常にゼロである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物質によって正にも負にもなる。"
+        }
+      ],
+      "explanation": "反応エンタルピーにはいくつかの特定の名前がついたものがあります。燃焼エンタルピーは完全燃焼時の値、生成エンタルピーは最も安定な単体から化合物を合成する値、溶解エンタルピーは溶媒に溶かす値です。いずれも一モルを基準とします。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "化学反応に伴って放出・吸収する熱量"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q027",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "classification",
+      "sub_category": "光と反応の関係分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "光と化学反応の関係の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "光化学反応は光で反応が開始される現象、化学発光は反応で光が放出される現象、光触媒は光で触媒作用が活性化される現象。三つとも異なる概念である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "三つとも同じ現象の別名である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "すべて異なる概念。"
+        },
+        {
+          "label": "3",
+          "text": "光触媒は化学発光の一種である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "光触媒は光を吸収して触媒作用を示す。光を出すわけではない。"
+        },
+        {
+          "label": "4",
+          "text": "化学発光は光を吸収して反応する現象である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "光を放出する現象。吸収は光化学反応。"
+        }
+      ],
+      "explanation": "光と化学反応の関係は三種類に分類できます。光化学反応は光→反応（光が反応を起こす）、化学発光は反応→光（反応が光を出す）、光触媒は光→触媒活性化（光で触媒が働く）です。エネルギーの流れの方向で区別しましょう。",
+      "evidence": [
+        {
+          "source_id": "1_2_def_001",
+          "quote": "物質が光の吸収によって開始される化学反応"
+        },
+        {
+          "source_id": "1_2_def_003",
+          "quote": "エネルギーを光の形で放出する現象"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_def_001",
+        "1_2_def_003",
+        "1_2_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q028",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "property",
+      "sub_category": "水の蒸発エンタルピー",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水の蒸発エンタルピーについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "二十五度での蒸発エンタルピーは四十四キロジュール毎モルであり、百度では四十一キロジュール毎モルと温度によって値が異なる。蒸発は吸熱変化である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "蒸発エンタルピーはすべての温度で同じ値である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度によって異なる。"
+        },
+        {
+          "label": "3",
+          "text": "蒸発は発熱変化であり蒸発エンタルピーはマイナスである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "蒸発は吸熱変化でプラス。"
+        },
+        {
+          "label": "4",
+          "text": "百度での蒸発エンタルピーの方が二十五度での値より大きい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "百度の方が小さい（四十一対四十四）。"
+        }
+      ],
+      "explanation": "水の蒸発エンタルピーは温度によって異なります。二十五度では四十四キロジュール毎モル、百度では四十一キロジュール毎モルです。蒸発は液体から気体への変化で分子間力を切断する必要があるため吸熱です。温度が高いほど分子の運動が激しくなっていて必要なエネルギーが少なくなるため蒸発エンタルピーはやや小さくなります。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_002",
+          "quote": "蒸発エンタルピーは25℃で44 kJ/mol、100℃で41 kJ/mol"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q029",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "procedure",
+      "sub_category": "結合エネルギーによる計算手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "結合エネルギーを使った反応エンタルピーの計算手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応物のすべての結合エネルギーを合計し（結合を切る吸熱分）、生成物のすべての結合エネルギーを合計して（結合を作る発熱分）、前者から後者を引く。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "生成物の結合エネルギーの総和から反応物の結合エネルギーの総和を引く。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "生成エンタルピーの場合の順序と混同。結合エネルギーは逆順。"
+        },
+        {
+          "label": "3",
+          "text": "結合エネルギーの計算では物質の状態は考慮しなくてよい。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "気体状態が前提で液体含む場合は補正必要。"
+        },
+        {
+          "label": "4",
+          "text": "結合を切るのは発熱、結合を作るのは吸熱である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "逆。切る＝吸熱、作る＝発熱。"
+        }
+      ],
+      "explanation": "結合エネルギーの計算は「まず反応物の全結合を切る（吸熱）→ 次に生成物の全結合を作る（発熱）」という二段階で考えます。切った分（反応物の結合エネルギー合計）から作った分（生成物の結合エネルギー合計）を引いた値が反応エンタルピーです。",
+      "evidence": [
+        {
+          "source_id": "1_1_eq_002",
+          "quote": "「反応物の結合を切る（吸熱）」→「生成物の結合を作る（発熱）」"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_eq_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q030",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "confusion",
+      "sub_category": "状態記号の重要性の軽視",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "エンタルピー変化を付した反応式に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "各物質の状態を明記する必要がある。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "液体の水と気体の水ではエンタルピーが異なる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "着目物質の係数を一にするため分数係数を使うことがある。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "物質の状態（気体か液体か）はエンタルピーに影響しないため明記不要である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "状態によりエンタルピーが異なるため明記は不可欠。"
+        }
+      ],
+      "explanation": "物質のエンタルピーは状態（固体・液体・気体）によって異なります。水が液体なのか気体（水蒸気）なのかで蒸発エンタルピー分（四十四キロジュール毎モル）の差があります。この差を無視すると計算結果が大きくずれるため、状態の明記は不可欠です。",
+      "evidence": [
+        {
+          "source_id": "1_1_proc_001",
+          "quote": "状態（気、液、固）によってエネルギーが異なるため、必ず状態を記載します"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q031",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "property",
+      "sub_category": "水の比熱",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "水の比熱について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水の比熱は四・二ジュール毎グラム毎ケルビンであり多くの物質の中で非常に大きい値である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水の比熱は〇・四ジュール毎グラム毎ケルビンと非常に小さい。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "四・二であり〇・四ではない。"
+        },
+        {
+          "label": "3",
+          "text": "比熱は物質の種類に関係なくすべて同じ値である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物質固有の値。"
+        },
+        {
+          "label": "4",
+          "text": "比熱が大きいほど少量の熱で温度が上がりやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "比熱が大きいと温まりにくい。"
+        }
+      ],
+      "explanation": "水の比熱は四・二ジュール毎グラム毎ケルビンで、他の多くの物質に比べて非常に大きい値です。比熱が大きいということは温度を上げるのに多くの熱が必要であり、温まりにくく冷めにくいことを意味します。反応熱の計算で温度変化から熱量を求めるときに使います。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_002",
+          "quote": "比熱は4.2 J/(g・K)"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q032",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "confusion",
+      "sub_category": "触媒と光触媒の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "触媒と光触媒に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "触媒は反応速度を変えるが自身は消費されない物質である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "光触媒は光を受けて触媒作用を発揮する物質である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "酸化チタンは代表的な光触媒である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "光触媒は光がなくても常に同じ触媒作用を示す。光は無関係である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "光がなければ触媒作用を発揮しない。光が必須条件。"
+        }
+      ],
+      "explanation": "通常の触媒は光の有無に関係なく触媒作用を示しますが、光触媒は光（特に紫外線）が当たったときにのみ触媒作用を発揮します。光がなければ酸化チタンはただの白い粉であり酸化分解作用は示しません。光の有無が最も重要な条件です。",
+      "evidence": [
+        {
+          "source_id": "1_2_def_004",
+          "quote": "光が当たることによって、その物質自身は変化せずに化学反応を促進する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q033",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "mnemonic",
+      "sub_category": "発熱マイナスの語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "反応エンタルピーの符号の覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "「発熱はマイナス（熱を出すから系は減る）、吸熱はプラス（熱を吸うから系は増える）」で覚える。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "「発熱はプラス（出すのだからプラス）」で覚える。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "系の視点ではマイナス。"
+        },
+        {
+          "label": "3",
+          "text": "この覚え方は結合エネルギーの計算に関するものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "反応エンタルピーの符号に関する覚え方。"
+        },
+        {
+          "label": "4",
+          "text": "エンタルピーの符号に規則はなく覚える必要がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "符号は重要な規則。"
+        }
+      ],
+      "explanation": "反応エンタルピーの符号は「系の視点」で考えます。発熱反応では系がエネルギーを放出（出す）するため系のエネルギーは減少しマイナスです。吸熱反応では系がエネルギーを吸収するため系の増加でプラスです。外界ではなく系の視点であることがポイントです。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "発熱はマイナス（熱を出すから減る）、吸熱はプラス（熱を吸うから増える）"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": "発熱はマイナス、吸熱はプラス"
+    },
+    {
+      "id": "ch3_1_q034",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "mnemonic",
+      "sub_category": "エンタルピー計算の引き算順の覚え方",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "エンタルピー計算の引き算の順序の覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "生成エンタルピーは「生成物引く反応物（後引く前）」、結合エネルギーは「反応物引く生成物（前引く後）」と覚える。二つは逆順である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "どちらも「生成物引く反応物」で統一されている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "逆順。結合エネルギーは「反応物引く生成物」。"
+        },
+        {
+          "label": "3",
+          "text": "どちらも「反応物引く生成物」で統一されている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "逆順。生成エンタルピーは「生成物引く反応物」。"
+        },
+        {
+          "label": "4",
+          "text": "引き算の順序は結果に影響しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "順序を間違えると符号が反転する。"
+        }
+      ],
+      "explanation": "これは最も重要な覚え方の一つです。生成エンタルピーの計算は「後引く前」（生成物マイナス反応物）、結合エネルギーの計算は「前引く後」（反応物マイナス生成物）です。順序を逆にすると符号が反転してしまうため、試験で致命的な誤りになります。",
+      "evidence": [
+        {
+          "source_id": "1_1_eq_001",
+          "quote": "エンタルピー変化は『生成物引く反応物（後引く前）』"
+        },
+        {
+          "source_id": "1_1_eq_002",
+          "quote": "結合エネルギーの計算は『反応物引く生成物（前引く後）』"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_eq_001",
+        "1_1_eq_002"
+      ],
+      "mnemonic": "生成エンタルピー＝後引く前、結合エネルギー＝前引く後"
+    },
+    {
+      "id": "ch3_1_q035",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "classification",
+      "sub_category": "エネルギー図の読み取り",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "エネルギー図の読み取りとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "エネルギー図で反応物が生成物よりエネルギーが高い位置にある場合は発熱反応であり、反応エンタルピーはマイナスである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "反応物が高い位置なら吸熱反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "発熱反応。高い位置から低い位置にエネルギーが下がる。"
+        },
+        {
+          "label": "3",
+          "text": "エネルギー図は反応速度を示すグラフである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "エネルギーの高低を示す図。反応速度とは別。"
+        },
+        {
+          "label": "4",
+          "text": "エネルギー図からはエンタルピー変化の値は読み取れない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応物と生成物のエネルギー差として読み取れる。"
+        }
+      ],
+      "explanation": "エネルギー図では縦軸がエネルギー（エンタルピー）を表し、反応物と生成物の位置関係から反応の種類がわかります。反応物が高く生成物が低い場合はエネルギーが下がるため発熱反応（マイナス）です。逆に生成物が高ければ吸熱反応（プラス）です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "生成物がもつエンタルピーと反応物がもつエンタルピーの差"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q036",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "property",
+      "sub_category": "中和エンタルピー",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "中和エンタルピーについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "強酸と強塩基の希薄溶液の中和では、一モルの水が生成するごとに約五十六キロジュールの熱が放出される。酸塩基の種類に関係なくほぼ一定の値になる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "中和エンタルピーは酸と塩基の種類ごとに大きく異なる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "強酸と強塩基の場合ほぼ一定。"
+        },
+        {
+          "label": "3",
+          "text": "中和は吸熱反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "発熱反応。"
+        },
+        {
+          "label": "4",
+          "text": "弱酸や弱塩基でも中和エンタルピーは同じ値になる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "弱酸塩基では電離エンタルピーの分ずれる。"
+        }
+      ],
+      "explanation": "強酸と強塩基の中和では、水素イオンと水酸化物イオンが反応して水が生成する反応が本質です。どの強酸と強塩基を使っても同じイオン反応なので、中和エンタルピーはほぼ一定の約マイナス五十六キロジュール毎モルとなります。弱酸や弱塩基では電離に要するエンタルピー分がずれます。",
+      "evidence": [],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q037",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "confusion",
+      "sub_category": "結合を作るときの発熱の見落とし",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "結合エネルギーに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "結合を切るにはエネルギーが必要（吸熱）である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "結合を作るとエネルギーが放出（発熱）される。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "結合エネルギーの値は常に正である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "結合を切るのも作るのもどちらも吸熱である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "切るのは吸熱だが作るのは発熱。"
+        }
+      ],
+      "explanation": "結合エネルギーに関する計算で最も大切なのは、結合を切るは吸熱、結合を作るは発熱という対応関係です。結合を切るには「接着剤をはがす」ようにエネルギーが必要ですが、結合を作るときは「接着剤でくっつく」ようにエネルギーが放出されます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "結合を切るにはエネルギーを加える（吸熱）必要がある"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q038",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "property",
+      "sub_category": "ルミノール反応",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ルミノール反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩基性溶液中でルミノールを過酸化水素で酸化すると青白い光を発する化学発光反応であり、血痕の検出に利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ルミノール反応は光を当てて起こす光化学反応である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "化学発光であり光化学反応ではない。"
+        },
+        {
+          "label": "3",
+          "text": "ルミノール反応は赤い光を発する。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "青白い光を発する。"
+        },
+        {
+          "label": "4",
+          "text": "ルミノール反応は酸性溶液中で起こる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩基性溶液中。"
+        }
+      ],
+      "explanation": "ルミノール反応は代表的な化学発光です。塩基性条件下でルミノールが過酸化水素によって酸化されると、生成物が励起状態となり基底状態に戻る際に青白い光を放出します。血液中のヘモグロビンの鉄が触媒となるため犯罪捜査で血痕の検出に使われます。",
+      "evidence": [
+        {
+          "source_id": "1_2_def_003",
+          "quote": "塩基性溶液中でルミノールを過酸化水素で酸化すると、青白い光を発する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q039",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "property",
+      "sub_category": "吸熱反応の例",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "吸熱反応の例として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "窒素と酸素から一酸化窒素が生成する反応。外界から百八十キロジュールの熱を吸収する。反応エンタルピーはプラスである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "この反応は発熱反応であり百八十キロジュールの熱を放出する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "吸熱反応であり熱を吸収する。"
+        },
+        {
+          "label": "3",
+          "text": "この反応の反応エンタルピーはマイナス百八十キロジュールである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "吸熱なのでプラス。"
+        },
+        {
+          "label": "4",
+          "text": "炭素の燃焼も吸熱反応の例である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "燃焼は発熱反応。"
+        }
+      ],
+      "explanation": "窒素と酸素から二モルの一酸化窒素が生成する反応は百八十キロジュールの熱を外界から吸収する吸熱反応です。反応エンタルピーはプラスの値をとります。この反応は雷のような高温環境でのみ起こり、生成物のエネルギーの方が反応物より高いことを示しています。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_002",
+          "quote": "180kJの熱量を外界から吸収する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q040",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "confusion",
+      "sub_category": "生成エンタルピーと燃焼エンタルピーの混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "エンタルピーの種類に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "燃焼エンタルピーは物質一モルが完全燃焼するときのエンタルピー変化である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "生成エンタルピーは単体から化合物一モルが生成するときのエンタルピー変化である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "単体の生成エンタルピーはゼロと定義される。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "炭素（黒鉛）の生成エンタルピーは三百九十四キロジュール毎モルである。これは燃焼エンタルピーと同じ値である。",
+          "is_correct": true,
+          "trap_type": "concept_confusion",
+          "trap_detail": "炭素は単体なので生成エンタルピーはゼロ。三百九十四は燃焼エンタルピー。"
+        }
+      ],
+      "explanation": "炭素（黒鉛）は安定な単体であるため生成エンタルピーは基準のゼロです。三百九十四キロジュール毎モルは炭素の「燃焼エンタルピー」であり「生成エンタルピー」ではありません。燃焼エンタルピーと生成エンタルピーを混同するのは典型的な誤りです。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_001",
+          "quote": "生成エンタルピーの基準(0 kJ/mol)となる"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_001",
+        "1_1_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q041",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "comprehensive",
+      "sub_category": "エンタルピーの総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "化学反応とエネルギーに関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応エンタルピーは発熱でマイナス・吸熱でプラス。ヘスの法則により経路に依存しない。生成エンタルピーは「生成物引く反応物」で計算し、結合エネルギーは「反応物引く生成物」で計算する。単体の生成エンタルピーはゼロである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "発熱反応はプラス。ヘスの法則は経路に依存する。生成エンタルピーも結合エネルギーも同じ順で計算する。単体の生成エンタルピーはゼロではない。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "結合を切るのは発熱で、結合を作るのは吸熱である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "完全に逆。"
+        },
+        {
+          "label": "4",
+          "text": "反応エンタルピーは反応の速さによって変わる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "速さには依存しない。"
+        }
+      ],
+      "explanation": "この章の要点をまとめます。反応エンタルピーの符号は発熱がマイナス、吸熱がプラスです。ヘスの法則により経路に依存せず始状態と終状態で決まります。生成エンタルピーの計算は「後引く前」、結合エネルギーの計算は「前引く後」と引き算の順が逆です。単体の生成エンタルピーは基準のゼロです。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "発熱反応ではマイナス、吸熱反応ではプラス"
+        },
+        {
+          "source_id": "1_1_law_001",
+          "quote": "変化の経路や方法には関係しない"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003",
+        "1_1_law_001",
+        "1_1_eq_001",
+        "1_1_eq_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q042",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "comprehensive",
+      "sub_category": "光と反応の総合",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "光と化学反応に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "光化学反応は光のエネルギーで反応が開始される。連鎖反応を伴うことがある。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "化学発光は反応のエネルギーを光として放出する現象であり、ホタルの光やルミノール反応が例である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "光触媒は光を受けて触媒作用を発揮し、酸化チタンが代表例である。自身は消費されない。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "光化学反応も化学発光も光触媒もすべて同一の概念であり区別不要である。酸化チタンはホタルと同じしくみで光る。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三つは異なる概念。酸化チタンは光触媒であり自ら光るのではない。"
+        }
+      ],
+      "explanation": "光化学反応、化学発光、光触媒は光と反応の関わり方がそれぞれ異なる三つの概念です。光化学反応は光が反応を起こし、化学発光は反応が光を出し、光触媒は光で触媒が活性化されます。酸化チタンは光で酸化力を出す光触媒であり、ホタルのように自ら光る（化学発光）こととは全く異なります。",
+      "evidence": [
+        {
+          "source_id": "1_2_def_001",
+          "quote": "光の吸収によって開始される化学反応"
+        },
+        {
+          "source_id": "1_2_def_004",
+          "quote": "光が当たることによって化学反応を促進する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_def_001",
+        "1_2_def_003",
+        "1_2_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q043",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "property",
+      "sub_category": "溶解エンタルピーの正負",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "溶解エンタルピーの正負について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水酸化ナトリウムの溶解エンタルピーはマイナスであり発熱する。硝酸アンモニウムの溶解エンタルピーはプラスであり吸熱する。物質によって正にも負にもなる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "すべての物質の溶解エンタルピーはマイナスである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物質によって異なる。"
+        },
+        {
+          "label": "3",
+          "text": "すべての溶解は吸熱反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水酸化ナトリウムの溶解は発熱。"
+        },
+        {
+          "label": "4",
+          "text": "溶解エンタルピーは常にゼロである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物質固有のゼロでない値をもつ。"
+        }
+      ],
+      "explanation": "溶解エンタルピーは物質によって正（吸熱）にも負（発熱）にもなります。水酸化ナトリウムの溶解ではイオンの水和エネルギーが格子エネルギーを上回るためマイナス（発熱）です。硝酸アンモニウムの溶解は逆で吸熱のため冷却パックに利用されています。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_003",
+          "quote": "水への溶解エンタルピーは-44.5 kJ/mol"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q044",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "procedure",
+      "sub_category": "生成エンタルピーからの計算",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "各物質の生成エンタルピーから反応エンタルピーを求める手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "生成物の生成エンタルピーにそれぞれの係数を掛けて合計し、反応物についても同様に合計して、前者から後者を引く。単体が反応物や生成物にある場合は生成エンタルピーをゼロとする。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "反応物の合計から生成物の合計を引く。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "引く順が逆。生成エンタルピーでは「生成物引く反応物」。"
+        },
+        {
+          "label": "3",
+          "text": "係数は考慮せず一モルあたりの値をそのまま使う。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "係数を掛ける必要がある。"
+        },
+        {
+          "label": "4",
+          "text": "単体の生成エンタルピーは除外して計算する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ゼロとして含める（実質的には足してもゼロだが概念的には含む）。"
+        }
+      ],
+      "explanation": "生成エンタルピーからの計算では、各物質の生成エンタルピーにその物質の係数を掛けて総和を求めます。「生成物の総和」から「反応物の総和」を引くのが正しい順序です。反応式中に単体がある場合はその生成エンタルピーをゼロとして扱います。",
+      "evidence": [
+        {
+          "source_id": "1_1_eq_001",
+          "quote": "反応エンタルピー = (生成物の生成エンタルピーの総和) - (反応物の生成エンタルピーの総和)"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q045",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "classification",
+      "sub_category": "化学発光の応用分類",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "化学発光の応用例として、正しい組み合わせを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ホタルの発光（生物発光の一種）、ケミカルライト（コンサートのサイリウム）、ルミノール反応（血痕検出）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "太陽光発電、蛍光灯、LEDがすべて化学発光の例である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これらは光電変換や電気発光であり化学発光ではない。"
+        },
+        {
+          "label": "3",
+          "text": "酸化チタンの発光が化学発光の例である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "酸化チタンは光触媒であり発光しない。"
+        },
+        {
+          "label": "4",
+          "text": "化学発光の応用例はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多くの応用がある。"
+        }
+      ],
+      "explanation": "化学発光の身近な応用例には、ホタルの発光（ルシフェリンの酸化反応）、ケミカルライト/サイリウム（化学物質の混合で発光）、ルミノール反応（犯罪捜査での血痕検出）があります。いずれも化学反応のエネルギーが光として放出される現象です。",
+      "evidence": [
+        {
+          "source_id": "1_2_def_003",
+          "quote": "ホタルの光や、コンサートで使うケミカルライト（サイリウム）、血痕捜査のルミノール反応"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q046",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "confusion",
+      "sub_category": "反応式逆転時の符号変化",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "反応式の操作に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応式を逆向きにするとエンタルピー変化の符号が逆になる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "反応式の係数を二倍にするとエンタルピー変化も二倍になる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "複数の反応式を加え合わせるとエンタルピー変化も加え合わせることができる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "反応式を逆向きにしてもエンタルピー変化の値と符号はそのままである。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "逆向きにすると符号が逆転する。"
+        }
+      ],
+      "explanation": "ヘスの法則の計算で反応式を操作するとき、逆向きにすれば符号が反転し、係数を倍にすればエンタルピーも倍になります。これを正しく行わないと計算結果が合いません。符号が変わらないという選択肢四は誤りです。",
+      "evidence": [
+        {
+          "source_id": "1_1_law_001",
+          "quote": "複数の反応式から目的の反応のエンタルピー変化を計算する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q047",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "property",
+      "sub_category": "水素と塩素の光化学反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水素と塩素の光化学反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水素と塩素の混合気体に強い光を当てると、連鎖反応が起きて爆発的に塩化水素が生成する。光で塩素の結合が切れて活性な原子が生じることが引き金である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "光を当てなくても室温で爆発的に反応する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "光が引き金として必要。"
+        },
+        {
+          "label": "3",
+          "text": "光を当てても反応は穏やかに進む。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "爆発的に反応する。"
+        },
+        {
+          "label": "4",
+          "text": "この反応は連鎖反応ではなく一回だけの反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "典型的な連鎖反応。"
+        }
+      ],
+      "explanation": "水素と塩素の混合気体は暗所では安定ですが、強い光を当てると塩素分子の結合が切断されて塩素原子（ラジカル）が生じます。この活性種が水素分子と反応して塩化水素と水素原子を生じ、さらにこの水素原子が塩素分子と反応する…という連鎖が爆発的に進行します。",
+      "evidence": [
+        {
+          "source_id": "1_2_def_001",
+          "quote": "水素と塩素の混合気体に強い光を当てると、連鎖反応が起きて爆発的に塩化水素が生成する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_def_001",
+        "1_2_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q048",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "mnemonic",
+      "sub_category": "ヘスの法則の山登り例え",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ヘスの法則の理解を助ける例えとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "山登りに例えると、一気に頂上まで登っても休憩しながら登っても最終的な獲得高さは同じ。反応エンタルピーも経路に関係なく始点と終点で決まる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "速く登ると高さが変わるように反応速度でエンタルピーが変わる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "速さは高さに影響しない。"
+        },
+        {
+          "label": "3",
+          "text": "この例えは結合エネルギーの計算法に関するものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "ヘスの法則の考え方の例え。"
+        },
+        {
+          "label": "4",
+          "text": "ルートによって登る高さが変わるように経路で値は変わる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ルートに依存しない。"
+        }
+      ],
+      "explanation": "ヘスの法則は「エネルギーの登山」に例えるとわかりやすくなります。どんなルート（直登、回り道）で山に登っても、出発点と頂上の標高差（位置エネルギーの差）は同じです。同様に化学反応でも始状態と終状態が同じなら、どんな経路をたどってもエンタルピーの総変化は同じです。",
+      "evidence": [
+        {
+          "source_id": "1_1_law_001",
+          "quote": "一気に頂上まで登っても、途中で休憩しながら登っても、最終的に登った高さは同じ"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q049",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "comprehensive",
+      "sub_category": "結合エネルギーの総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "結合エネルギーに関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "結合エネルギーは気体分子中の結合一モルを切断するのに要するエネルギーであり常に正である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "結合エネルギーの計算は「反応物引く生成物」で生成エンタルピーとは逆順である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "液体が関わる場合は蒸発エンタルピーの補正が必要である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "結合エネルギーはマイナスの値をとることもあり、液体でも気体と同じ値がそのまま使え、計算式の引き算は生成エンタルピーと同じ順序である。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて誤り。正→負の値はなし、液体は補正必要、引き算の順が逆。"
+        }
+      ],
+      "explanation": "結合エネルギーに関する総合まとめです。値は常に正で、計算は「反応物引く生成物」（生成エンタルピーの逆順）、気体で定義されるため液体含む場合は蒸発エンタルピーの補正が必要です。選択肢四はこれら三つのポイントすべてを誤って記述しています。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "結合エネルギーの値は常に正"
+        },
+        {
+          "source_id": "1_1_eq_002",
+          "quote": "(反応物の結合エネルギーの総和) - (生成物の結合エネルギーの総和)"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004",
+        "1_1_eq_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch3_1_q050",
+      "chapter": "3-1",
+      "chapter_title": "化学反応とエネルギー",
+      "category": "comprehensive",
+      "sub_category": "第三章第一節の全体総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "化学反応とエネルギーに関する全体の総合記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "系が外界に熱を放出すると発熱反応で反応エンタルピーはマイナス。ヘスの法則は経路非依存。生成エンタルピーから計算するときは「生成物引く反応物」。結合エネルギーから計算するときは「反応物引く生成物」。光に関連する現象は光化学反応・化学発光・光触媒の三種類がある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "発熱はプラス。ヘスの法則は経路依存。引き算の順はどちらも同じ。結合を切るのは発熱。光に関連する現象は一種類のみ。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "五か所すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "反応エンタルピーの計算には生成エンタルピーか結合エネルギーが必要だが、ヘスの法則は使えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ヘスの法則こそが計算の根拠。"
+        },
+        {
+          "label": "4",
+          "text": "光触媒は自身が消費されて光る物質であり化学発光の一種である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "光触媒は消費されず光りもしない。化学発光とは異なる。"
+        }
+      ],
+      "explanation": "この章のすべてのポイントをまとめた問題です。発熱はマイナス、吸熱はプラス。ヘスの法則で経路に依存しない。生成エンタルピーは「後引く前」、結合エネルギーは「前引く後」。結合を切るのは吸熱、作るのは発熱。光と反応の関わりは光化学反応・化学発光・光触媒の三つに分類されます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "発熱反応ではマイナス"
+        },
+        {
+          "source_id": "1_1_law_001",
+          "quote": "経路や方法には関係しない"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_002",
+        "1_1_def_003",
+        "1_1_law_001",
+        "1_1_eq_001",
+        "1_1_eq_002",
+        "1_2_def_001",
+        "1_2_def_003",
+        "1_2_def_004"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

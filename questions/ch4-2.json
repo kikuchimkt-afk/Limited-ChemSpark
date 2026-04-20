@@ -1,0 +1,2442 @@
+{
+  "metadata": {
+    "chapter": "4-2",
+    "chapter_title": "金属元素(I)－典型元素－",
+    "source_file": "json_data/4-2金属元素(I)－典型元素－.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    }
+  },
+  "questions": [
+    {
+      "id": "ch4_2_q001",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "definition",
+      "sub_category": "アルカリ金属元素の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アルカリ金属元素について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "周期表第一族のうち水素を除いた元素をアルカリ金属元素という。価電子を一個持ち、一価の陽イオンになりやすい。イオン化傾向が大きく水と激しく反応する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水素もアルカリ金属元素に含まれる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水素は第一族だがアルカリ金属には含まれない。"
+        },
+        {
+          "label": "3",
+          "text": "アルカリ金属元素は二価の陽イオンになりやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一価。"
+        },
+        {
+          "label": "4",
+          "text": "アルカリ金属元素は水と反応しない安定な金属である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水と激しく反応する。"
+        }
+      ],
+      "explanation": "アルカリ金属は第一族から水素を除いた金属元素（リチウム、ナトリウム、カリウムなど）です。価電子が一個しかないため容易に電子を放出して一価の陽イオンになります。水との反応性が高いため、ナトリウムやカリウムは灯油中に保存します。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_001",
+          "quote": "1族のうちH以外の元素をアルカリ金属元素という。価電子1個"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q002",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "ナトリウムの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ナトリウムについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銀白色の柔らかい金属で密度が小さく約零点九七グラム毎立方センチメートル。水と激しく反応する。灯油中に保存する。炎色反応は黄色。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ナトリウムは水に沈む重い金属である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密度が約零点九七で水より軽く浮く。"
+        },
+        {
+          "label": "3",
+          "text": "ナトリウムは水中に保存する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水と反応するため灯油中に保存。"
+        },
+        {
+          "label": "4",
+          "text": "ナトリウムの炎色反応は赤色である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "黄色。赤はリチウム。"
+        }
+      ],
+      "explanation": "ナトリウムは密度が水より小さい（約零点九七）ため水に浮きますが、水と激しく反応して水素を発生し、発熱によって水素に引火することもあります。そのため水ではなく灯油中に保存します。炎色反応の黄色はトンネル照明（ナトリウムランプ）でおなじみの色です。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_001",
+          "quote": "銀白色、密度0.97、水と激しく反応、灯油中に保存、炎色反応:黄"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q003",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "水酸化ナトリウム",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水酸化ナトリウムについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "白色の固体で潮解性がある。水によく溶けて強い塩基性を示す。二酸化炭素を吸収しやすいため密栓して保存する。別名カセイソーダ。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水酸化ナトリウムは風解性がある。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "潮解性。風解性は炭酸ナトリウム十水和物。"
+        },
+        {
+          "label": "3",
+          "text": "水酸化ナトリウムは弱塩基である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "強塩基。"
+        },
+        {
+          "label": "4",
+          "text": "水酸化ナトリウムは二酸化炭素を吸収しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "吸収しやすいため密栓保存。"
+        }
+      ],
+      "explanation": "水酸化ナトリウムは空気中の水分を吸収して溶ける潮解性があります。また二酸化炭素も吸収して炭酸ナトリウムに変質するため、試薬瓶は必ず密栓して保存します。皮膚を侵す強い腐食性も重要な性質です。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_002",
+          "quote": "白色、潮解性あり、強い塩基性、二酸化炭素を吸収しやすい"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q004",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "潮解と風解の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "潮解と風解に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "潮解とは固体が空気中の水分を吸収して溶ける現象である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "水酸化ナトリウムは潮解性がある。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "炭酸ナトリウム十水和物は風解して白色粉末になる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "水酸化ナトリウムは風解性があり、炭酸ナトリウム十水和物は潮解性がある。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。水酸化ナトリウムが潮解性、炭酸ナトリウム十水和物が風解性。"
+        }
+      ],
+      "explanation": "潮解と風解は逆の現象です。潮解は空気中の水分を「吸収して溶ける」こと（水酸化ナトリウム）。風解は結晶水を「失って粉末になる」こと（炭酸ナトリウム十水和物）。入れ替えのひっかけが定番です。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_002",
+          "quote": "潮解性あり"
+        },
+        {
+          "source_id": "2_1_sub_003",
+          "quote": "十水和物は風解して白色粉末になる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_002",
+        "2_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q005",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "mnemonic",
+      "sub_category": "炎色反応の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "炎色反応の語呂合わせとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "「リアカー（リチウム赤）なき（ナトリウム黄）K村（カリウム赤紫）、どうせ（銅青緑）借るとう（カルシウム橙赤）するも紅（ストロンチウム紅）馬力（バリウム黄緑）」で覚える。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "この語呂合わせではナトリウムは赤色である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "黄色。赤はリチウム。"
+        },
+        {
+          "label": "3",
+          "text": "カルシウムの炎色反応は黄緑色である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "橙赤。黄緑はバリウム。"
+        },
+        {
+          "label": "4",
+          "text": "炎色反応は遷移元素のみに見られる現象である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アルカリ金属やアルカリ土類金属（典型元素）にも見られる。"
+        }
+      ],
+      "explanation": "炎色反応の語呂合わせは最も有名な化学の暗記法の一つです。リチウム赤、ナトリウム黄、カリウム赤紫、銅青緑、カルシウム橙赤、ストロンチウム紅、バリウム黄緑の七つを覚えます。花火の色はこれらの金属塩を利用しています。",
+      "evidence": [
+        {
+          "source_id": "2_1_tip_001",
+          "quote": "リアカー(Li:赤) なき(Na:黄) K村(K:赤紫)"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_tip_001"
+      ],
+      "mnemonic": "リアカーなきK村どうせ借るとうするも紅馬力"
+    },
+    {
+      "id": "ch4_2_q006",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "definition",
+      "sub_category": "アルカリ土類金属元素",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アルカリ土類金属元素について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "周期表第二族のうち、ベリリウムとマグネシウムを除いたカルシウム、ストロンチウム、バリウム、ラジウムなどを指す。二価の陽イオンになりやすく炎色反応を示す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ベリリウムもアルカリ土類金属である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ベリリウムとマグネシウムは除かれることが多い。"
+        },
+        {
+          "label": "3",
+          "text": "アルカリ土類金属は一価の陽イオンになりやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二価。"
+        },
+        {
+          "label": "4",
+          "text": "アルカリ土類金属は炎色反応を示さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炎色反応を示す（カルシウム橙赤、ストロンチウム紅、バリウム黄緑）。"
+        }
+      ],
+      "explanation": "アルカリ土類金属はカルシウム以降の第二族元素です。ベリリウムとマグネシウムは常温の水と反応しにくく炎色反応もない（マグネシウムはない）など性質が異なるため区別されることが多いです。カルシウムは橙赤、バリウムは黄緑の炎色反応を示します。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_001",
+          "quote": "Be, Mgを除く、Ca, Sr, Ba, Raなどの元素"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q007",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "カルシウムの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "カルシウムについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "常温の水と反応して水素を発生する。炎色反応は橙赤色。密度は約一点五五グラム毎立方センチメートルで水より重い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "カルシウムは水と反応しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "常温の水と反応する。"
+        },
+        {
+          "label": "3",
+          "text": "カルシウムの炎色反応は黄色である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "橙赤。黄色はナトリウム。"
+        },
+        {
+          "label": "4",
+          "text": "カルシウムは水より軽い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密度約一点五五で水より重い。"
+        }
+      ],
+      "explanation": "カルシウムはアルカリ土類金属の代表例でイオン化傾向が大きく常温の水とも反応して水素を発生します。ナトリウムほど激しくはありませんが、マグネシウム（熱水で反応）より反応性は高いです。",
+      "evidence": [
+        {
+          "source_id": "2_2_sub_001",
+          "quote": "常温で水と反応し水素発生。炎色反応: 橙赤。密度1.55"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q008",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "definition",
+      "sub_category": "両性金属",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "両性金属について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸にも強塩基にも溶けて水素を発生する金属。アルミニウム、亜鉛、スズ、鉛が代表例。「ああすんなり」と覚える。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "銅は両性金属である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "銅は両性金属ではない（酸にのみ溶ける場合がある）。"
+        },
+        {
+          "label": "3",
+          "text": "両性金属は酸にのみ溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸と強塩基の両方に溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "鉄は両性金属の代表例である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "鉄は両性金属ではない。"
+        }
+      ],
+      "explanation": "両性金属は酸にも強塩基にも溶ける特殊な金属です。アルミニウム、亜鉛、スズ、鉛の四つが代表で「ああ（アルミ・亜鉛）すんなり（スズ・鉛）」の語呂合わせで覚えます。両性酸化物・両性水酸化物も同様に酸と塩基の両方に溶けます。",
+      "evidence": [
+        {
+          "source_id": "2_3_def_001",
+          "quote": "酸の水溶液とも強塩基の水溶液とも反応して水素を発生。Al, Zn, Sn, Pb"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_def_001"
+      ],
+      "mnemonic": "ああすんなり（アルミ・亜鉛・スズ・鉛）"
+    },
+    {
+      "id": "ch4_2_q009",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "アルミニウムの性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アルミニウムについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銀白色の軽金属で酸にも強塩基にも溶ける両性金属。不動態をつくりやすく濃硝酸には溶けにくい。強い還元力を持ちテルミット反応に利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルミニウムは酸にのみ溶け塩基には溶けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両性金属で両方に溶ける。"
+        },
+        {
+          "label": "3",
+          "text": "アルミニウムは還元力が弱い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "強い還元力を持つ（テルミット反応）。"
+        },
+        {
+          "label": "4",
+          "text": "アルミニウムは不動態を形成しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不動態をつくりやすい。"
+        }
+      ],
+      "explanation": "アルミニウムは両性金属の代表で、一円硬貨やアルミ缶に使われる身近な金属です。酸にも水酸化ナトリウムなどの強塩基にも溶けます。濃硝酸では表面に緻密な酸化被膜（不動態）が形成されて溶けなくなります。",
+      "evidence": [
+        {
+          "source_id": "2_3_sub_001",
+          "quote": "酸・強塩基の両方に溶ける。両性金属。不動態をつくりやすい"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q010",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "procedure",
+      "sub_category": "アンモニアソーダ法",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "アンモニアソーダ法（ソルベー法）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "食塩水にアンモニアと二酸化炭素を吹き込み溶解度の小さい炭酸水素ナトリウムを沈殿させ、それを加熱して炭酸ナトリウムを得る工業的製法。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "食塩から直接炭酸ナトリウムが得られる一段階の反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二段階のプロセス。"
+        },
+        {
+          "label": "3",
+          "text": "中間生成物は炭酸ナトリウムで最終生成物は炭酸水素ナトリウムである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。中間が炭酸水素ナトリウム、最終が炭酸ナトリウム。"
+        },
+        {
+          "label": "4",
+          "text": "アンモニアソーダ法は硫酸の製法である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "炭酸ナトリウムの製法。"
+        }
+      ],
+      "explanation": "アンモニアソーダ法は二段階です。第一に食塩水にアンモニアと二酸化炭素を通じて溶解度の最も小さい炭酸水素ナトリウムを沈殿させる。第二にそれを加熱分解して炭酸ナトリウムと水と二酸化炭素にする。二酸化炭素は回収して再利用されます。",
+      "evidence": [
+        {
+          "source_id": "2_1_proc_001",
+          "quote": "溶解度の低い炭酸水素ナトリウムを沈殿させてから熱分解して炭酸ナトリウムを得る"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q011",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "procedure",
+      "sub_category": "ホール・エルー法",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "アルミニウムの工業的製法（ホール・エルー法）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ボーキサイトからアルミナを精製し、氷晶石を加えて融点を下げてから溶融塩電解を行い炭素電極でアルミニウムを得る。陽極の炭素は消費されるため補給が必要。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルミニウムは水溶液の電気分解で得られる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水溶液ではなく溶融塩電解が必要。"
+        },
+        {
+          "label": "3",
+          "text": "氷晶石を加える理由は酸化力を高めるためである。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "融点を下げるため。"
+        },
+        {
+          "label": "4",
+          "text": "陽極は消費されないため交換不要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炭素電極は消費されるため順次補給が必要。"
+        }
+      ],
+      "explanation": "ホール・エルー法のポイントは三つです。第一にアルミニウムはイオン化傾向が大きく水溶液の電気分解では析出しないため溶融塩電解を使う。第二にアルミナの融点は約二千度と高すぎるため氷晶石を加えて約千度に下げる。第三に陽極の炭素が酸素と反応して消費される。",
+      "evidence": [
+        {
+          "source_id": "2_3_proc_001",
+          "quote": "氷晶石で融点を下げて溶融塩電解。陽極の炭素は消費される"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q012",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "テルミット反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "テルミット反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルミニウムの粉末と酸化鉄（三価）の混合物に点火すると三千度以上の高温で反応し溶けた鉄が得られる。アルミニウムが還元剤としてはたらく。線路の溶接に利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "テルミット反応ではアルミニウムが酸化剤である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "還元剤。"
+        },
+        {
+          "label": "3",
+          "text": "テルミット反応では低温で穏やかに反応が進む。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "三千度以上の高温で激しく反応。"
+        },
+        {
+          "label": "4",
+          "text": "テルミット反応で得られるのは酸化鉄である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸化鉄は原料。得られるのは金属鉄。"
+        }
+      ],
+      "explanation": "テルミット反応はアルミニウムの強い還元力を利用した反応です。アルミニウムが酸化鉄の酸素を奪い取り、酸化アルミニウムと融けた金属鉄が得られます。発生する熱量が非常に大きく三千度以上に達するため、鉄道レールの現場溶接に利用されています。",
+      "evidence": [
+        {
+          "source_id": "2_3_rxn_003",
+          "quote": "3000℃以上の高温。アルミニウムの強い還元力により金属鉄を遊離"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q013",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "炭酸ナトリウム",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "炭酸ナトリウムについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "白色の固体で水溶液は塩基性を示す。別名ソーダ灰。十水和物は風解して白色粉末になる。熱しても分解しにくく融解する。ガラスの原料に使われる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "炭酸ナトリウムの水溶液は酸性である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "塩基性。"
+        },
+        {
+          "label": "3",
+          "text": "炭酸ナトリウムを加熱すると容易に分解する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分解しにくく融解する。"
+        },
+        {
+          "label": "4",
+          "text": "炭酸ナトリウム十水和物は潮解する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "風解する。潮解は水酸化ナトリウム。"
+        }
+      ],
+      "explanation": "炭酸ナトリウムは強塩基と弱酸の塩なので水溶液は塩基性（加水分解）になります。加熱に対しては安定で分解せず融解するのが特徴で、これに対し炭酸水素ナトリウムは加熱で容易に分解します。この区別が試験で頻出です。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_003",
+          "quote": "水溶液は塩基性。別名ソーダ灰。十水和物は風解"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q014",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "炎色反応の色の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "炎色反応の色に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "リチウムは赤色の炎色反応を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ナトリウムは黄色の炎色反応を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "カリウムは赤紫色の炎色反応を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "バリウムは橙赤色、カルシウムは黄緑色の炎色反応を示す。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。バリウムが黄緑、カルシウムが橙赤。"
+        }
+      ],
+      "explanation": "バリウムとカルシウムの炎色反応の色を入れ替えるのは超頻出のひっかけです。カルシウムが橙赤（だいだい色の赤）、バリウムが黄緑です。語呂合わせ「借るとう（カルシウム橙赤）するも紅 馬力（バリウム黄緑）」で区別しましょう。",
+      "evidence": [
+        {
+          "source_id": "2_1_tip_001",
+          "quote": "Ca:橙赤、Ba:黄緑"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_tip_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q015",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "アルカリ金属の保存",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "アルカリ金属の保存に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ナトリウムは水と激しく反応する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "空気中の酸素や水分と反応するため特別な保存が必要。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ナトリウムは灯油中に保存する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ナトリウムは水中に保存するのが安全である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "水と激しく反応するため水中保存は危険。灯油中に保存。"
+        }
+      ],
+      "explanation": "アルカリ金属の保存は試験必出です。ナトリウムやカリウムは空気中の酸素や水蒸気と反応するため灯油中（石油中）に保存します。特にカリウムは水との反応が激しく爆発することもあるため取り扱いに注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_001",
+          "quote": "灯油中に保存する"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q016",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "ベリリウムとマグネシウムの除外",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "アルカリ土類金属元素に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カルシウムは常温の水と反応する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "マグネシウムは熱水とは反応するが常温の水とは反応しにくい。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ベリリウムは他のアルカリ土類金属と性質が異なる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ベリリウムとマグネシウムは典型的なアルカリ土類金属であり炎色反応をはっきり示す。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "ベリリウムとマグネシウムはアルカリ土類金属から除かれることが多く、炎色反応も特徴的ではない。"
+        }
+      ],
+      "explanation": "ベリリウムとマグネシウムは第二族ですがアルカリ土類金属の典型的な性質（常温の水との反応、顕著な炎色反応）を示しません。そのためアルカリ土類金属に含めない分類が一般的です。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_001",
+          "quote": "Be, Mgは他のアルカリ土類金属と性質がかなり異なる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q017",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "両性金属の判定",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "両性金属に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルミニウムは酸にも強塩基にも溶ける。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "亜鉛は両性金属である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "鉛とスズは両性金属に分類される。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "鉄と銅は両性金属の代表例であり強塩基にも溶ける。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "鉄と銅は両性金属ではなく強塩基には溶けない。"
+        }
+      ],
+      "explanation": "両性金属はアルミニウム・亜鉛・スズ・鉛の四つだけが代表です。鉄や銅は酸には溶けますが強塩基には溶けないため両性金属ではありません。「ああすんなり」以外の金属を両性金属に含めないよう注意しましょう。",
+      "evidence": [
+        {
+          "source_id": "2_3_def_001",
+          "quote": "Al, Zn, Sn, Pbが代表例"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q018",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "ホール・エルー法での氷晶石の役割",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ホール・エルー法に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルミナの融点は非常に高い。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "氷晶石を加えて融点を下げる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アルミニウムは水溶液の電気分解では析出しない。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "氷晶石はアルミニウムの純度を上げるために加える添加物である。",
+          "is_correct": true,
+          "trap_type": "reason_swap",
+          "trap_detail": "氷晶石は融点を下げるために加える。純度向上のためではない。"
+        }
+      ],
+      "explanation": "氷晶石の役割は「融点を下げる」ことです。アルミナ単独の融点は約二千五十度ですが氷晶石を加えると約千度で電解できるようになります。「純度」や「導電性」のためと誤解しやすいポイントです。",
+      "evidence": [
+        {
+          "source_id": "2_3_proc_001",
+          "quote": "アルミナ単独では融点が高すぎるため氷晶石を加えて融点を下げる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q019",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "水酸化ナトリウムの保存",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "水酸化ナトリウムを密栓して保存する理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "空気中の水分を吸収して潮解する性質と、二酸化炭素を吸収して炭酸ナトリウムに変質する性質があるため。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "光によって分解するため。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "光分解は硝酸。"
+        },
+        {
+          "label": "3",
+          "text": "揮発性が高く蒸発するため。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "固体であり揮発しない。"
+        },
+        {
+          "label": "4",
+          "text": "保存方法は特に制限がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密栓保存が必要。"
+        }
+      ],
+      "explanation": "水酸化ナトリウムを密栓する理由は二つあります。一つは潮解性（空気中の水分で溶ける）、もう一つは二酸化炭素の吸収（炭酸ナトリウムへの変質）です。どちらも空気との接触が原因なので密栓が必要です。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_002",
+          "quote": "潮解性あり。二酸化炭素を吸収しやすい"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q020",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "炭酸水素ナトリウムと炭酸ナトリウムの加熱安定性",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "炭酸ナトリウムと炭酸水素ナトリウムの加熱に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "炭酸水素ナトリウムは加熱すると炭酸ナトリウムと水と二酸化炭素に分解する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "炭酸ナトリウムは加熱しても分解しにくく融解する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "加熱分解するかどうかで両者を区別できる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "炭酸ナトリウムも炭酸水素ナトリウムもどちらも加熱すると容易に分解する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "炭酸ナトリウムは分解しにくい。分解するのは炭酸水素ナトリウムのみ。"
+        }
+      ],
+      "explanation": "炭酸水素ナトリウムと炭酸ナトリウムの加熱安定性の違いは最頻出です。炭酸水素ナトリウム（重曹）は約二百七十度で分解しますが、炭酸ナトリウムは約八百五十度まで安定で融解します。入れ替えひっかけに注意です。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_003",
+          "quote": "熱しても分解しにくく融解する"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q021",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "comprehensive",
+      "sub_category": "アルカリ金属の総合",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "アルカリ金属元素に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "第一族で水素を除く。価電子一個。密度が小さく柔らかい。水と激しく反応。灯油中に保存。原子番号が大きくなるほど反応性が高い。ナトリウムの炎色反応は黄色。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "第一族すべてがアルカリ金属で、水素も含む。水中に保存。原子番号大で反応性低下。ナトリウムの炎色反応は赤。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "アルカリ金属は密度が大きく硬い金属である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密度が小さく柔らかい。"
+        },
+        {
+          "label": "4",
+          "text": "アルカリ金属は二価の陽イオンになりやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一価。"
+        }
+      ],
+      "explanation": "アルカリ金属の全体像を整理する問題です。密度が小さく（リチウム・ナトリウム・カリウムは水に浮く）、ナイフで切れるほど柔らかいのが特徴。原子番号が大きくなるとイオン化エネルギーが小さくなり反応性が上がります（リチウム＜ナトリウム＜カリウム＜ルビジウム＜セシウム）。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_001",
+          "quote": "価電子1個。イオン化傾向が大きく水と常温で激しく反応"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_001",
+        "2_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q022",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "テルミット反応の酸化剤と還元剤",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "テルミット反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルミニウムが還元剤としてはたらく。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "酸化鉄が酸化剤としてはたらく。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "反応で酸化アルミニウムと鉄が生成する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "テルミット反応では酸化鉄が還元剤、アルミニウムが酸化剤としてはたらく。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。アルミニウムが還元剤で酸化鉄が酸化剤。"
+        }
+      ],
+      "explanation": "テルミット反応ではアルミニウムが酸化鉄に含まれる酸素を奪い取ります。酸素を「奪う側」は還元剤（アルミニウム）、酸素を「取られる側」は酸化剤（酸化鉄）です。入れ替えのひっかけが頻出です。",
+      "evidence": [
+        {
+          "source_id": "2_3_rxn_003",
+          "quote": "アルミニウムの強い還元力により金属を遊離させる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q023",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "アルカリ金属の密度",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アルカリ金属の密度について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルカリ金属は全般に密度が小さく、リチウム・ナトリウム・カリウムは密度が水（一グラム毎立方センチメートル）より小さいため水に浮く。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルカリ金属はすべて密度が非常に大きい重金属である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密度が小さい軽金属。"
+        },
+        {
+          "label": "3",
+          "text": "ナトリウムの密度は鉄より大きい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "約零点九七でかなり小さい。"
+        },
+        {
+          "label": "4",
+          "text": "アルカリ金属は水に沈む。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "リチウム・ナトリウム・カリウムは浮く。"
+        }
+      ],
+      "explanation": "アルカリ金属の密度が小さいのは原子半径が大きいわりに質量が比較的小さいためです。ナトリウムの密度は約零点九七で水よりわずかに小さく、水に入れると水面に浮きながら激しく反応して水素を発生します。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_001",
+          "quote": "密度0.97"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q024",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "アンモニアソーダ法の中間生成物",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "アンモニアソーダ法に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "食塩水にアンモニアと二酸化炭素を吹き込む。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "中間で溶解度の小さい炭酸水素ナトリウムが沈殿する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "炭酸水素ナトリウムを加熱して炭酸ナトリウムを得る。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "中間で炭酸ナトリウムが沈殿し、それを加熱して炭酸水素ナトリウムを得るのが最終製品である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。沈殿するのは炭酸水素ナトリウム、最終製品は炭酸ナトリウム。"
+        }
+      ],
+      "explanation": "ソーダ灰（炭酸ナトリウム）の製法であるから最終製品は炭酸ナトリウムです。沈殿するのは炭酸水素ナトリウム（溶解度が最も小さい）であり、これを加熱分解して炭酸ナトリウムにします。名前が似ているため入れ替わりに注意。",
+      "evidence": [
+        {
+          "source_id": "2_1_proc_001",
+          "quote": "溶解度の低い炭酸水素ナトリウムを沈殿させてから熱分解して炭酸ナトリウムを得る"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q025",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "不動態とアルミニウム",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アルミニウムと不動態の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルミニウムは空気中で表面に薄い酸化被膜を形成し内部を保護する。濃硝酸ではさらに緻密な不動態が形成されて溶けなくなる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルミニウムは不動態を形成しないため濃硝酸に溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不動態を形成して溶けにくい。"
+        },
+        {
+          "label": "3",
+          "text": "すべての金属が濃硝酸で不動態を形成する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "鉄・アルミ・ニッケルなど特定の金属のみ。"
+        },
+        {
+          "label": "4",
+          "text": "酸化被膜があるためアルミニウムは塩基にも溶けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両性金属で強塩基には溶ける。"
+        }
+      ],
+      "explanation": "アルミニウムは空気中で自然に薄い酸化被膜ができます。これが保護膜となり内部の腐食を防ぎます。濃硝酸ではさらに緻密な不動態が形成されます。ただし強塩基（水酸化ナトリウム水溶液）には被膜ごと溶けてしまいます。",
+      "evidence": [
+        {
+          "source_id": "2_3_sub_001",
+          "quote": "不動態をつくりやすい"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q026",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "溶融塩電解の必要性",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "アルミニウムの製法に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ボーキサイトからアルミナを精製する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "溶融塩電解を行う必要がある。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "電解には大量の電力が消費される。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "アルミニウムは水溶液の電気分解で容易に析出する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "イオン化傾向が大きすぎるため水溶液では析出せず溶融塩電解が必要。"
+        }
+      ],
+      "explanation": "アルミニウムのイオン化傾向はかなり大きく、水溶液の電気分解では水（水素イオン）の還元が優先されてアルミニウムイオンは析出しません。そのため水を使わない溶融塩電解が必要です。大量の電力を消費するため「電気の缶詰」とも呼ばれます。",
+      "evidence": [
+        {
+          "source_id": "2_3_proc_001",
+          "quote": "水溶液の電気分解では析出しないため溶融塩電解を使う"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q027",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "mnemonic",
+      "sub_category": "両性金属の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "両性金属の語呂合わせとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "「ああすんなり」でアルミニウム、亜鉛、スズ、鉛の四つを覚える。これらの金属は酸にも強塩基にも溶ける。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "「ああすんなり」は鉄と銅を含む語呂合わせである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アルミニウム・亜鉛・スズ・鉛。鉄と銅は含まない。"
+        },
+        {
+          "label": "3",
+          "text": "この語呂合わせは炎色反応に関するものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "両性金属に関するもの。"
+        },
+        {
+          "label": "4",
+          "text": "両性金属は酸にのみ溶けるものを指す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸と強塩基の両方に溶ける。"
+        }
+      ],
+      "explanation": "「ああ（アルミ・亜鉛）すんなり（スズ・鉛）」は両性金属を覚える語呂合わせです。これら四つの金属は酸にも水酸化ナトリウム水溶液などの強塩基にも溶けて水素を発生します。酸化物や水酸化物も両性です。",
+      "evidence": [
+        {
+          "source_id": "2_3_def_001",
+          "quote": "ああすんなりと両性に愛される"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_def_001"
+      ],
+      "mnemonic": "ああすんなり"
+    },
+    {
+      "id": "ch4_2_q028",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "水素は第一族だがアルカリ金属ではない",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "第一族元素に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ナトリウムはアルカリ金属元素である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "カリウムはアルカリ金属元素である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "リチウムはアルカリ金属元素である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "水素はアルカリ金属元素である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "水素は第一族だがアルカリ金属には含まれない。"
+        }
+      ],
+      "explanation": "水素は周期表では第一族に分類されますが、金属ではなく非金属の気体であるためアルカリ金属元素には含まれません。アルカリ金属はリチウム以降の金属元素（リチウム、ナトリウム、カリウム、ルビジウム、セシウム、フランシウム）です。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_001",
+          "quote": "1族のうちH以外の元素をアルカリ金属元素という"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q029",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "ナトリウムの水との反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ナトリウムと水の反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ナトリウムは水と激しく反応して水酸化ナトリウムと水素を発生する。密度が水より小さいため水面に浮きながら反応する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ナトリウムは水に穏やかに溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "激しく反応する。"
+        },
+        {
+          "label": "3",
+          "text": "ナトリウムと水の反応で酸素が発生する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水素が発生する。"
+        },
+        {
+          "label": "4",
+          "text": "ナトリウムは水底に沈んで反応する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密度が小さいため水面に浮く。"
+        }
+      ],
+      "explanation": "ナトリウムの密度は約零点九七で水より小さいため水面に浮きます。水面で激しく反応して水素を発生し、反応熱で水素に引火することもあります。反応後の水溶液はフェノールフタレインで赤く染まります（強塩基性の水酸化ナトリウム水溶液）。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_001",
+          "quote": "水と激しく反応。密度0.97"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q030",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "comprehensive",
+      "sub_category": "典型金属の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "典型金属元素に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルカリ金属は第一族（水素除く）で灯油保存。アルカリ土類金属は第二族（ベリリウム・マグネシウム除く）。アルミニウムは両性金属で不動態形成。テルミット反応ではアルミニウムが還元剤。ホール・エルー法は溶融塩電解。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルカリ金属は水中保存。アルカリ土類金属はベリリウムを含む。アルミニウムは酸にのみ溶ける。テルミット反応でアルミが酸化剤。ホール・エルー法は水溶液の電解。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "五か所すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "水酸化ナトリウムは風解性があり炭酸ナトリウム十水和物は潮解性がある。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。"
+        },
+        {
+          "label": "4",
+          "text": "両性金属は鉄と銅と銀である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アルミ・亜鉛・スズ・鉛。"
+        }
+      ],
+      "explanation": "典型金属の章全体を網羅した総合問題です。アルカリ金属（水素除外・灯油保存）、アルカリ土類金属（ベリリウム・マグネシウム除外）、両性金属（ああすんなり）、テルミット反応（アルミは還元剤）、ホール・エルー法（溶融塩電解）のすべてをセットで覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_001",
+          "quote": "1族のうちH以外"
+        },
+        {
+          "source_id": "2_3_def_001",
+          "quote": "Al, Zn, Sn, Pb"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_001",
+        "2_2_def_001",
+        "2_3_def_001",
+        "2_3_rxn_003",
+        "2_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q031",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "炎色反応の銅と青の混同",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "炎色反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銅は青緑色の炎色反応を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ストロンチウムは紅色の炎色反応を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ナトリウムの黄色は花火の黄色に使われる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ナトリウムは赤色、リチウムは黄色の炎色反応を示す。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。ナトリウムが黄、リチウムが赤。"
+        }
+      ],
+      "explanation": "ナトリウムとリチウムの炎色反応の色を入れ替えるのもよくあるひっかけです。「リアカー（リチウム赤）なき（ナトリウム黄）」で確実に覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "2_1_tip_001",
+          "quote": "Li:赤、Na:黄"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_tip_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q032",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "カセイソーダの名称",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "「カセイソーダ」の正式名称として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水酸化ナトリウム。白色の固体で潮解性があり強い塩基性を示す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ソーダ灰と同じ物質である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "ソーダ灰は炭酸ナトリウム。"
+        },
+        {
+          "label": "3",
+          "text": "炭酸水素ナトリウムの別名である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "炭酸水素ナトリウムの別名は重曹。"
+        },
+        {
+          "label": "4",
+          "text": "塩化ナトリウムの別名である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "食塩。"
+        }
+      ],
+      "explanation": "ナトリウム化合物の別名は混同しやすいです。カセイソーダは水酸化ナトリウム、ソーダ灰は炭酸ナトリウム、重曹は炭酸水素ナトリウム、食塩は塩化ナトリウム。これらを確実に区別しましょう。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_002",
+          "quote": "別名カセイソーダ"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q033",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "陽極の炭素消費",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ホール・エルー法の電極に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電極材料は炭素（黒鉛）である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "陰極ではアルミニウムが析出する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "陽極では酸素が発生し炭素電極を消費する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "陽極も陰極も消費されないため交換は不要である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "陽極の炭素は酸素と反応して消費されるため順次補給が必要。"
+        }
+      ],
+      "explanation": "ホール・エルー法では陽極の炭素（黒鉛）が発生する酸素と反応して二酸化炭素になり消費されます。そのため陽極は定期的に補給・交換が必要です。陰極側ではアルミニウムが液体として析出します。",
+      "evidence": [
+        {
+          "source_id": "2_3_proc_001",
+          "quote": "陽極の炭素は消費されるため順次補給が必要"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q034",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "炭酸ナトリウムの用途",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "炭酸ナトリウムの用途として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ガラスの原料、染色、工業薬品として使われる。別名ソーダ灰。水溶液は塩基性を示す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "炭酸ナトリウムは食用として最もよく使われる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "食用は炭酸水素ナトリウム（重曹）。"
+        },
+        {
+          "label": "3",
+          "text": "炭酸ナトリウムの水溶液は酸性である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "塩基性。"
+        },
+        {
+          "label": "4",
+          "text": "炭酸ナトリウムは乾燥剤として使われる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "乾燥剤は濃硫酸や塩化カルシウムなど。"
+        }
+      ],
+      "explanation": "炭酸ナトリウムはガラスの原料として最も重要な用途を持ちます。ガラスは二酸化ケイ素・炭酸ナトリウム・炭酸カルシウムなどを融合して作られます。水溶液が塩基性を示すのは強塩基（水酸化ナトリウム）と弱酸（炭酸）の塩だからです。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_003",
+          "quote": "ガラスの原料や染色・工業薬品として使われる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q035",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "カルシウムの炎色反応",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "カルシウムの炎色反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カルシウムは炎色反応を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "カルシウムの炎色反応は花火に利用される。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "語呂合わせでは「借るとう」がカルシウムを示す。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "カルシウムの炎色反応は黄色である。",
+          "is_correct": true,
+          "trap_type": "property_swap",
+          "trap_detail": "橙赤色。黄色はナトリウム。"
+        }
+      ],
+      "explanation": "カルシウムの炎色反応は橙赤（だいだい色の赤）です。黄色はナトリウムの炎色反応です。語呂合わせでは「借るとう」の「とう」が「橙」を示しています。",
+      "evidence": [
+        {
+          "source_id": "2_2_sub_001",
+          "quote": "炎色反応: 橙赤"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q036",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "水酸化ナトリウムの腐食性",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "水酸化ナトリウムの危険性として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "強い塩基性を示し皮膚やタンパク質を侵す腐食性がある。取り扱い時は保護具が必要。別名「カセイソーダ」の「カセイ」は「苛性」で腐食性を意味する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水酸化ナトリウムは安全で素手で触れても問題ない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "腐食性があり素手では触れない。"
+        },
+        {
+          "label": "3",
+          "text": "水酸化ナトリウムは弱塩基で腐食性はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "強塩基で腐食性がある。"
+        },
+        {
+          "label": "4",
+          "text": "「カセイ」は「可燃性」を意味する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "「苛性」で腐食性の意味。"
+        }
+      ],
+      "explanation": "「苛性」（カセイ）は「腐食して侵す」という意味です。水酸化ナトリウム（苛性ソーダ）も水酸化カリウム（苛性カリ）も皮膚や有機物を分解する強い腐食性を持つため取り扱いには注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_002",
+          "quote": "皮膚などを侵す性質がある"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q037",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "風解の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "風解について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "結晶水を含む物質が空気中で結晶水を失い粉末状になる現象。炭酸ナトリウム十水和物が代表例。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "風解は空気中の水分を吸収する現象である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "それは潮解。風解は水分を失う。"
+        },
+        {
+          "label": "3",
+          "text": "水酸化ナトリウムが風解の代表例である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水酸化ナトリウムは潮解。風解は炭酸ナトリウム十水和物。"
+        },
+        {
+          "label": "4",
+          "text": "風解した物質は水溶液になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "粉末になる。溶液になるのは潮解。"
+        }
+      ],
+      "explanation": "風解は結晶水を失って「風化」してぼろぼろの粉末になる現象です。潮解は逆に空気中の水分を吸収して「潮」のようにべとべとに溶ける現象です。名前から連想すると覚えやすいです。風で乾く→風解、潮で湿る→潮解。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_003",
+          "quote": "十水和物は風解して白色粉末になる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q038",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "classification",
+      "sub_category": "アルカリ金属・アルカリ土類金属の分類",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アルカリ金属とアルカリ土類金属の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルカリ金属は第一族（水素除く）で一価の陽イオン。アルカリ土類金属は第二族（ベリリウム・マグネシウム除く）で二価の陽イオン。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルカリ金属は第二族で二価の陽イオンになる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "第一族で一価。"
+        },
+        {
+          "label": "3",
+          "text": "アルカリ土類金属は第一族の元素である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "第二族。"
+        },
+        {
+          "label": "4",
+          "text": "マグネシウムはアルカリ土類金属の代表例である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "除かれることが多い。"
+        }
+      ],
+      "explanation": "族の番号と価数が一致するのが典型元素の特徴です。第一族アルカリ金属は一価の陽イオン、第二族アルカリ土類金属は二価の陽イオンになります。ベリリウムとマグネシウムの除外は最重要の注意点です。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_001",
+          "quote": "1族のうちH以外。価電子1個で1価の陽イオン"
+        },
+        {
+          "source_id": "2_2_def_001",
+          "quote": "Be, Mgを除く"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_001",
+        "2_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q039",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "テルミット反応の条件",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "テルミット反応の点火条件として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "マグネシウムリボンなどを点火剤として用いて着火する。一度点火すると三千度以上の高温で自発的に反応が進行する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "マッチの炎で直接点火できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "着火温度が高いためマグネシウムリボンなどが必要。"
+        },
+        {
+          "label": "3",
+          "text": "常温で自然に反応が始まる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "点火が必要。"
+        },
+        {
+          "label": "4",
+          "text": "反応温度は約百度である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "三千度以上。"
+        }
+      ],
+      "explanation": "テルミット反応は着火温度が高いため普通のマッチでは点火できません。マグネシウムリボンの燃焼（約二千度）で着火させます。一度着火すると発生する熱で反応が自己持続し三千度以上に達します。",
+      "evidence": [
+        {
+          "source_id": "2_3_rxn_003",
+          "quote": "マグネシウムリボンなどを点火剤として用いる。3000℃以上"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q040",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "comprehensive",
+      "sub_category": "ナトリウム化合物の整理",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "ナトリウム化合物に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水酸化ナトリウムは潮解性があり強塩基。別名カセイソーダ。密栓保存。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "炭酸ナトリウムは別名ソーダ灰。水溶液は塩基性。ガラスの原料。加熱で分解しにくい。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "炭酸水素ナトリウムは重曹とも呼ばれ加熱すると分解する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "水酸化ナトリウムは風解性があり別名ソーダ灰。炭酸ナトリウムは潮解性があり別名カセイソーダ。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて逆。水酸化ナトリウムが潮解・カセイソーダ、炭酸ナトリウムが風解（十水和物）・ソーダ灰。"
+        }
+      ],
+      "explanation": "ナトリウム化合物の性質と別名を入れ替えるのは定番の複合ひっかけです。水酸化ナトリウム（カセイソーダ、潮解性）と炭酸ナトリウム（ソーダ灰、十水和物の風解）を正確に区別しましょう。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_002",
+          "quote": "潮解性。別名カセイソーダ"
+        },
+        {
+          "source_id": "2_1_sub_003",
+          "quote": "風解。別名ソーダ灰"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_002",
+        "2_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q041",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "アルカリ金属の反応性の傾向",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アルカリ金属の反応性の傾向として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "原子番号が大きくなるほどイオン化エネルギーが小さくなり反応性が高くなる。カリウムはナトリウムより水と激しく反応する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "原子番号が大きくなるほど反応性は低下する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応性は上がる。"
+        },
+        {
+          "label": "3",
+          "text": "リチウムが最も反応性が高い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "リチウムは最も低い（アルカリ金属の中では）。"
+        },
+        {
+          "label": "4",
+          "text": "すべてのアルカリ金属は同じ反応性である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "原子番号で変化する。"
+        }
+      ],
+      "explanation": "アルカリ金属は原子番号が大きくなるほど原子半径が大きくなりイオン化エネルギーが小さくなります。つまり電子を手放しやすくなるため反応性が上がります。セシウムはナトリウムよりはるかに危険で、水との反応は爆発的です。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_001",
+          "quote": "イオン化傾向が大きく水と常温で激しく反応"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q042",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "両性と両性酸化物の関係",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "両性金属の酸化物と水酸化物について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "両性金属の酸化物は両性酸化物であり、水酸化物は両性水酸化物である。酸にも塩基にも溶ける。酸化アルミニウムや水酸化アルミニウムが代表例。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "両性金属の酸化物は酸にのみ溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸にも塩基にも溶ける。"
+        },
+        {
+          "label": "3",
+          "text": "酸化アルミニウムは塩基性酸化物である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両性酸化物。"
+        },
+        {
+          "label": "4",
+          "text": "水酸化アルミニウムは強塩基である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両性水酸化物で弱塩基。"
+        }
+      ],
+      "explanation": "両性金属の「両性」は金属自体だけでなく酸化物と水酸化物にも受け継がれます。酸化アルミニウムは酸にも塩基にも溶ける両性酸化物であり、水酸化アルミニウムも同様に両性水酸化物です。",
+      "evidence": [
+        {
+          "source_id": "2_3_def_001",
+          "quote": "酸の水溶液とも強塩基の水溶液とも反応"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q043",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "ボーキサイトの精製",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ホール・エルー法の第一段階であるボーキサイトの精製として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ボーキサイトを濃い水酸化ナトリウム水溶液で処理して純粋なアルミナを得る。不純物の酸化鉄は水酸化ナトリウムに溶けないため分離できる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ボーキサイトを塩酸で処理する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水酸化ナトリウム水溶液。"
+        },
+        {
+          "label": "3",
+          "text": "不純物は主に二酸化ケイ素のみである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸化鉄（三価）が主な不純物。"
+        },
+        {
+          "label": "4",
+          "text": "ボーキサイトはそのまま電気分解に使える。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不純物が多いため精製が必要。"
+        }
+      ],
+      "explanation": "ボーキサイトからアルミナを精製するのにアルミニウムの両性性質を利用します。水酸化ナトリウム水溶液でアルミナだけが溶け（両性だから）、酸化鉄は溶けないため分離できます。溶液から再びアルミナを沈殿させて精製します。",
+      "evidence": [
+        {
+          "source_id": "2_3_proc_001",
+          "quote": "ボーキサイトを濃い水酸化ナトリウム水溶液で処理し純粋なアルミナを得る"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q044",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "アンモニアソーダ法でなぜ炭酸水素ナトリウムが沈殿するか",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "アンモニアソーダ法で炭酸水素ナトリウムが沈殿する理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応で生じる四つの塩のうち炭酸水素ナトリウムが最も溶解度が小さいため、溶液が飽和状態に達して沈殿する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "炭酸水素ナトリウムが最も溶解度が大きいため溶けきれずに沈殿する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "最も小さいから沈殿する。"
+        },
+        {
+          "label": "3",
+          "text": "反応温度が高すぎるため沈殿する。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "溶解度が小さいのが理由。"
+        },
+        {
+          "label": "4",
+          "text": "塩化アンモニウムが沈殿する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "沈殿するのは炭酸水素ナトリウム。"
+        }
+      ],
+      "explanation": "ソルベー法のポイントは溶解度の差を利用することです。食塩水にアンモニアと二酸化炭素を通じると四種類の塩が生成し得ますが、その中で炭酸水素ナトリウムの溶解度が最も小さいため先に飽和して結晶として沈殿します。",
+      "evidence": [
+        {
+          "source_id": "2_1_proc_001",
+          "quote": "最も溶解度が小さいNaHCO3が飽和状態となって沈殿する"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q045",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "アルミニウムと電気の缶詰",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アルミニウムが「電気の缶詰」と呼ばれる理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "製造の溶融塩電解に膨大な電力を消費するため、アルミニウム製品には大量の電気エネルギーが詰まっているという意味。リサイクルで大幅に電力を節約できる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルミニウムが電気をよく通すからそう呼ばれる。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "製造に大量の電力を使うから。"
+        },
+        {
+          "label": "3",
+          "text": "アルミニウムが蓄電池の材料だからそう呼ばれる。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "製造時の電力消費が理由。"
+        },
+        {
+          "label": "4",
+          "text": "アルミニウムの融点が極めて低いからそう呼ばれる。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "電力消費が理由。"
+        }
+      ],
+      "explanation": "アルミニウムの溶融塩電解には非常に大きな電力が必要です。新品のアルミを一キログラム作るのに約十五キロワット時の電力を消費します。リサイクル（再溶融）ならその約三パーセントで済むため、アルミ缶のリサイクルは環境的にも経済的にも重要です。",
+      "evidence": [
+        {
+          "source_id": "2_3_proc_001",
+          "quote": "溶融塩電解で膨大な電力を消費"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q046",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "カリウムの炎色反応",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "カリウムの炎色反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カリウムは炎色反応を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "語呂合わせでは「K村」がカリウムを示す。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "カリウムの炎色反応はコバルトガラスで確認しやすくなる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "カリウムの炎色反応は黄色である。",
+          "is_correct": true,
+          "trap_type": "property_swap",
+          "trap_detail": "赤紫。黄色はナトリウム。"
+        }
+      ],
+      "explanation": "カリウムの炎色反応は赤紫色ですが、ナトリウムの黄色に紛れて見えにくくなることがあります。そのためコバルトガラス（青色フィルター）を通してナトリウムの黄色の光を吸収してからカリウムの赤紫を確認します。",
+      "evidence": [
+        {
+          "source_id": "2_1_tip_001",
+          "quote": "K:赤紫"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_tip_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q047",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "property",
+      "sub_category": "水酸化ナトリウムの二酸化炭素吸収",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "水酸化ナトリウムが二酸化炭素を吸収するとどうなるか、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "二酸化炭素と反応して炭酸ナトリウムに変質する。これは水酸化ナトリウムの純度低下の原因となる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "二酸化炭素を吸収しても変化しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炭酸ナトリウムに変質する。"
+        },
+        {
+          "label": "3",
+          "text": "二酸化炭素と反応して塩化ナトリウムになる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "炭酸ナトリウム。"
+        },
+        {
+          "label": "4",
+          "text": "二酸化炭素で水酸化ナトリウムの塩基性が強くなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "弱くなる（炭酸ナトリウムに変質するため）。"
+        }
+      ],
+      "explanation": "水酸化ナトリウム（強塩基）が空気中の二酸化炭素（酸性ガス）と反応すると炭酸ナトリウムと水ができます。これにより水酸化ナトリウムの純度が下がるため、中和滴定などの実験に使う際は密栓保存された新鮮なものを使います。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_002",
+          "quote": "二酸化炭素を吸収しやすい"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q048",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "confusion",
+      "sub_category": "第二族全体とアルカリ土類金属の区別",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "第二族元素とアルカリ土類金属に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "マグネシウムは第二族元素である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "マグネシウムは常温の水とは反応しにくい。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "カルシウムはアルカリ土類金属の代表例である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "第二族元素はすべてアルカリ土類金属であり、性質に差はない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "ベリリウムとマグネシウムは性質が異なるためアルカリ土類金属から除かれることがある。"
+        }
+      ],
+      "explanation": "第二族元素がすべてアルカリ土類金属かどうかは教科書によって定義が異なりますが、ベリリウムとマグネシウムには「常温の水と反応しにくい」「炎色反応を示さない（マグネシウム）」などの違いがあるため別扱いされることが多いです。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_001",
+          "quote": "Be, Mgは他のアルカリ土類金属と性質がかなり異なる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q049",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "comprehensive",
+      "sub_category": "炎色反応の総合",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "炎色反応に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "リチウムは赤、ナトリウムは黄、カリウムは赤紫、銅は青緑。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "カルシウムは橙赤、ストロンチウムは紅、バリウムは黄緑。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "カリウムの炎色反応はコバルトガラスで確認しやすくなる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "リチウムは黄、ナトリウムは赤、カルシウムは黄緑、バリウムは橙赤である。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて入れ替わっている。"
+        }
+      ],
+      "explanation": "炎色反応の色を複数同時に入れ替えるのは最高難度のひっかけです。正しくはリチウムは赤、ナトリウムは黄、カルシウムは橙赤、バリウムは黄緑。語呂合わせを確実に覚えていれば一つずつ確認できます。",
+      "evidence": [
+        {
+          "source_id": "2_1_tip_001",
+          "quote": "Li:赤、Na:黄、K:赤紫、Cu:青緑、Ca:橙赤、Sr:紅、Ba:黄緑"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_tip_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_2_q050",
+      "chapter": "4-2",
+      "chapter_title": "金属元素(I)－典型元素－",
+      "category": "comprehensive",
+      "sub_category": "章全体の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "金属元素（典型元素）に関する全体の総合記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルカリ金属は第一族水素除く。灯油保存、炎色反応あり。水酸化ナトリウムは潮解性・カセイソーダ。炭酸ナトリウムはソーダ灰・十水和物が風解。アンモニアソーダ法で炭酸ナトリウム製造。アルカリ土類金属は第二族からベリリウム・マグネシウム除外。両性金属はアルミ・亜鉛・スズ・鉛。ホール・エルー法は溶融塩電解。テルミット反応でアルミが還元剤。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水素はアルカリ金属。水中保存。水酸化ナトリウムは風解性でソーダ灰。両性金属は鉄と銅。ホール・エルー法は水溶液電解。テルミット反応でアルミが酸化剤。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "六か所すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "アンモニアソーダ法では最終的に炭酸水素ナトリウムが製品である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "炭酸ナトリウムが最終製品。"
+        },
+        {
+          "label": "4",
+          "text": "アルカリ土類金属はベリリウムとマグネシウムを含む。マグネシウムは常温水と激しく反応する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "除外されることが多く、常温水とは反応しにくい。"
+        }
+      ],
+      "explanation": "この章全体の知識を一問に集約した最終問題です。すべてのキーポイントを正確に覚えることが重要です。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_001",
+          "quote": "1族のうちH以外"
+        },
+        {
+          "source_id": "2_3_def_001",
+          "quote": "Al, Zn, Sn, Pb"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_001",
+        "2_1_sub_001",
+        "2_1_sub_002",
+        "2_1_sub_003",
+        "2_1_proc_001",
+        "2_2_def_001",
+        "2_3_def_001",
+        "2_3_proc_001",
+        "2_3_rxn_003"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

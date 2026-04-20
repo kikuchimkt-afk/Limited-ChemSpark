@@ -1,0 +1,346 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 2,
+   "chapter_title": "脂肪族炭化水素",
+   "section": 1,
+   "section_title": "飽和炭化水素・不飽和炭化水素",
+   "page_range": [418, 431],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "2_1_sub_001",
+     "name": "メタン",
+     "formula": "CH4",
+     "aliases": ["沼気"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": -183, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": -161, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "無臭",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に溶けにくい",
+       "electrical_conductivity": "",
+       "other": ["可燃性の気体 [cite: 170]"]
+     },
+     "cross_refs": ["2_1_def_001", "2_1_rxn_001"],
+     "notes": "天然ガスや石炭層内に含まれるガスの主成分 [cite: 170]。"
+   },
+   {
+     "id": "2_1_sub_002",
+     "name": "エタン",
+     "formula": "C2H6",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": -89, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["2_1_def_001"],
+     "notes": "直鎖のアルカンの例 [cite: 13]。"
+   },
+   {
+     "id": "2_2_sub_001",
+     "name": "エチレン",
+     "formula": "C2H4",
+     "aliases": ["エテン"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": -104, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "かすかに甘いにおい",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["植物の成熟を促進する作用 [cite: 370]", "麻酔作用 [cite: 370]"]
+     },
+     "cross_refs": ["2_2_def_001", "2_2_rxn_001", "2_2_rxn_002"],
+     "notes": "最も簡単なアルケン [cite: 319]。"
+   },
+   {
+     "id": "2_2_sub_002",
+     "name": "アセチレン",
+     "formula": "C2H2",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": -74, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "無臭（純粋な場合）",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["2_2_def_004", "2_2_rxn_003"],
+     "notes": "燃焼する際の発熱量が大きく、酸素アセチレン炎として鉄の溶断や溶接に利用される [cite: 584]。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "2_1_def_001",
+     "type": "def",
+     "title": "アルカン",
+     "prerequisite_ids": [],
+     "definition": "鎖状の炭素骨格をもち、炭素原子間の結合がすべて単結合である鎖式飽和炭化水素をアルカンという [cite: 10, 11]。",
+     "explanation": "一般式はCnH2n+2で表されます [cite: 11]。極性が小さいため水に溶けにくく、有機溶媒に溶けやすい性質を持ちます [cite: 18, 19, 20]。化学的には比較的安定です [cite: 21, 22]。",
+     "conditions": [
+       "一般式のnの数が大きくなるに従って、沸点や融点が高くなる [cite: 14]。"
+     ],
+     "examples": [
+       {
+         "label": "直鎖アルカン",
+         "substance_ids": ["2_1_sub_001", "2_1_sub_002"],
+         "description": "メタン、エタンなど [cite: 13]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "アルカンやアルケンなどの化合物群を炭素数を用いた一般式で表させる問題 [cite: 721]。",
+         "key_concept_ids": ["2_1_def_001", "2_2_def_001", "2_2_def_004"]
+       }
+     ],
+     "cross_refs": ["TBD:有機化合物の命名法"],
+     "source_page": 418
+   },
+   {
+     "id": "2_1_rxn_001",
+     "type": "rxn",
+     "title": "置換反応",
+     "prerequisite_ids": ["2_1_def_001"],
+     "definition": "1つの分子中の原子(または基)が、他の原子(または基)で置き換えられる反応を置換反応という [cite: 116]。",
+     "explanation": "アルカンは常温では安定ですが、光や高温のもとでハロゲン単体を作用させると、水素原子がハロゲン原子と置き換わります [cite: 96, 111]。メタンと塩素の反応などが代表例です [cite: 111]。",
+     "conditions": [
+       "光や高温などのエネルギーが必要 [cite: 96]"
+     ],
+     "examples": [
+       {
+         "label": "メタンの塩素化",
+         "substance_ids": ["2_1_sub_001"],
+         "description": "メタンと塩素の混合気体に光を当てると、クロロメタンや塩化水素などが生成する [cite: 111, 112]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "メタンに紫外線を当てながら塩素を作用させた際に起こる反応名や、生成物の名称を答えさせる問題 [cite: 729, 730]。",
+         "key_concept_ids": ["2_1_rxn_001"]
+       }
+     ],
+     "cross_refs": ["TBD:ラジカル反応"],
+     "source_page": 419
+   },
+   {
+     "id": "2_2_def_001",
+     "type": "def",
+     "title": "アルケン",
+     "prerequisite_ids": [],
+     "definition": "炭素原子間の二重結合を1個もつ鎖式不飽和炭化水素をアルケンという [cite: 307]。",
+     "explanation": "一般式はCnH2nで表され、二重結合をもつために付加反応を起こす性質があります [cite: 307, 308]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "アルケンの例",
+         "substance_ids": ["2_2_sub_001"],
+         "description": "エチレン、プロペンなど [cite: 307, 308]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["2_2_rxn_001"],
+     "source_page": 424
+   },
+   {
+     "id": "2_2_def_002",
+     "type": "def",
+     "title": "シスートランス異性体（幾何異性体）",
+     "prerequisite_ids": ["2_2_def_001"],
+     "definition": "二重結合の一方の炭素原子を固定すると他方の炭素原子が自由に回転できないために生じる、原子や基の立体的な配置が異なる異性体 [cite: 403, 404]。",
+     "explanation": "二重結合をつらぬく線に対して、同じ側に特定の原子や基があるものをシス形、反対側にあるものをトランス形といいます [cite: 404]。",
+     "conditions": [
+       "二重結合のそれぞれの炭素原子に、異なる原子または原子団が結合していること [cite: 421]。",
+       "一方の炭素原子に同じ原子または原子団が結合していると存在しない [cite: 422]。"
+     ],
+     "examples": [
+       {
+         "label": "2-ブテンの異性体",
+         "substance_ids": [],
+         "description": "cis-2-ブテンとtrans-2-ブテン [cite: 405, 409]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "分子式を与えられ、その中のトランス形の名称と構造式を答えさせる問題 [cite: 731, 732]。",
+         "key_concept_ids": ["2_2_def_002"]
+       }
+     ],
+     "cross_refs": ["TBD:立体異性体"],
+     "source_page": 425
+   },
+   {
+     "id": "2_2_rxn_001",
+     "type": "rxn",
+     "title": "付加反応",
+     "prerequisite_ids": ["2_2_def_001", "2_2_def_004"],
+     "definition": "アルケンなどが他の分子と反応して、単結合をもった飽和化合物になる反応 [cite: 448]。",
+     "explanation": "二重結合の2本の結合のうち、1本の結合は弱くて切れやすいため、その結合が切れて新たな原子が付加します [cite: 448]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "エチレンへの水素付加",
+         "substance_ids": ["2_2_sub_001", "2_1_sub_002"],
+         "description": "エチレンに白金またはニッケル触媒上で水素を付加させるとエタンが生成する [cite: 449, 453, 457]。",
+         "values": []
+       },
+       {
+         "label": "臭素水の脱色",
+         "substance_ids": ["2_2_sub_001"],
+         "description": "赤褐色の臭素がアルケンに付加すると、無色の化合物になり脱色する。これを利用して二重結合の有無を判定できる [cite: 459, 471, 473]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "臭素とエチレンの反応名、生成物、および反応後の色を答えさせる問題 [cite: 730]。",
+         "key_concept_ids": ["2_2_rxn_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 426
+   },
+   {
+     "id": "2_2_law_001",
+     "type": "law",
+     "title": "マルコフニコフ則",
+     "prerequisite_ids": ["2_2_rxn_001"],
+     "definition": "非対称のアルケンの二重結合にHX型の分子が付加する場合、水素原子が多く結合している炭素原子にHX分子の水素原子が結合しやすいという経験則 [cite: 557, 558]。",
+     "explanation": "プロペンに水が付加する場合、末端の炭素（水素が2つ結合）に水の水素が付加した2-プロパノールが主生成物となります [cite: 558, 560, 564]。",
+     "conditions": [
+       "二重結合に対して非対称のアルケンであること [cite: 557]。",
+       "HX型の分子(HCl, H2Oなど)が付加すること [cite: 557]。",
+       "反応物質や条件によっては当てはまらない場合もある [cite: 558]。"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 428
+   },
+   {
+     "id": "2_2_def_004",
+     "type": "def",
+     "title": "アルキン",
+     "prerequisite_ids": [],
+     "definition": "炭素原子間に三重結合が1つある鎖式不飽和炭化水素をアルキンという [cite: 579]。",
+     "explanation": "一般式はCnH2n-2で表されます [cite: 579]。アセチレンなどが代表例で、三重結合をもつため付加反応を起こしやすいです [cite: 579, 595]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "アルキンの例",
+         "substance_ids": ["2_2_sub_002"],
+         "description": "アセチレン、プロピンなど [cite: 579]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [
+       {
+         "label": "二重結合・三重結合の特色",
+         "phrase": "二重三重に色を消す、二重三重に重ねる、二重三重に加える",
+         "meaning": "臭素やヨウ素を付加して脱色する。付加重合する。水素やハロゲンなどと付加反応を起こす [cite: 710, 714, 715, 716]。"
+       }
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "アセチレンを出発物質とした様々な付加反応の生成物の名称と構造式を答えさせる問題 [cite: 743, 757]。",
+         "key_concept_ids": ["2_2_rxn_003"]
+       }
+     ],
+     "cross_refs": ["2_2_rxn_003"],
+     "source_page": 428
+   },
+   {
+     "id": "2_2_rxn_003",
+     "type": "rxn",
+     "title": "アセチレンの付加反応",
+     "prerequisite_ids": ["2_2_def_004"],
+     "definition": "アセチレンの三重結合に水素、ハロゲン、水、塩化水素、酢酸、シアン化水素などが付加する反応 [cite: 595]。",
+     "explanation": "水銀触媒等を用いて塩化水素を付加すると塩化ビニルが [cite: 625, 626]、酢酸亜鉛触媒で酢酸を付加すると酢酸ビニルが生成します [cite: 629, 638]。これらは高分子の重要な原料です [cite: 678]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "アセチレンへの水の付加",
+         "substance_ids": ["2_2_sub_002"],
+         "description": "水を付加させると不安定なビニルアルコールを経て、直ちにアセトアルデヒドに変化する [cite: 612, 623, 624]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "アセチレンに水を付加した際に生成する不安定な中間物質の名称と構造式を答えさせる問題 [cite: 758]。",
+         "key_concept_ids": ["2_2_rxn_003"]
+       }
+     ],
+     "cross_refs": ["TBD:アセトアルデヒド"],
+     "source_page": 429
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "2_1_def_001",
+     "to_id": "2_2_def_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "飽和炭化水素（アルカン）の基本構造の理解が不飽和（アルケン）の理解の前提となる。"
+   },
+   {
+     "from_id": "2_2_sub_001",
+     "to_id": "2_2_rxn_001",
+     "relation_type": "is_example_of",
+     "note": "エチレンは付加反応を起こす代表的な物質である。"
+   },
+   {
+     "from_id": "2_2_rxn_001",
+     "to_id": "2_2_law_001",
+     "relation_type": "is_applied_in",
+     "note": "付加反応における生成物の偏りを説明する法則がマルコフニコフ則である。"
+   }
+ ]
+}

@@ -1,0 +1,2540 @@
+{
+  "metadata": {
+    "chapter": "6-2",
+    "chapter_title": "合成高分子化合物",
+    "source_file": "json_data/6-2合成高分子化合物.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    }
+  },
+  "questions": [
+    {
+      "id": "ch6_2_q001",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "definition",
+      "sub_category": "高分子化合物の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "高分子化合物について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子量が約一万以上の巨大な分子からなる物質。明確な分子量を持たず平均分子量で表す。明確な融点を持たず軟化点を持つものが多い。天然高分子（デンプン、セルロース）と合成高分子（ポリエチレンなど）に分けられる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "高分子化合物は決まった分子量を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "持たない。平均分子量で表す。"
+        },
+        {
+          "label": "3",
+          "text": "高分子化合物は明確な融点を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "持たない。軟化点で表す。"
+        },
+        {
+          "label": "4",
+          "text": "水やエタノールは高分子化合物である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "低分子化合物。"
+        }
+      ],
+      "explanation": "高分子化合物の特徴は「平均分子量」と「軟化点」です。低分子化合物のように決まった分子量や明確な融点を持たないことが最大の違いです。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_001",
+          "quote": "分子量が約1万以上。平均分子量で表す。軟化点"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q002",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "definition",
+      "sub_category": "単量体と重合体",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "単量体と重合体について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "高分子化合物を構成する低分子化合物を単量体（モノマー）、生成した高分子を重合体（ポリマー）という。単量体がつながる反応を重合、つながった数を重合度と呼ぶ。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "重合体を構成する単位がポリマーで、全体がモノマー。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。モノマーが単位、ポリマーが全体。"
+        },
+        {
+          "label": "3",
+          "text": "重合度は常に一つの値に決まる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "いろいろな値を取る。平均重合度。"
+        },
+        {
+          "label": "4",
+          "text": "ポリエチレンの単量体はプロピレン。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "エチレン。"
+        }
+      ],
+      "explanation": "モノは一つ（単量体）。ポリは多い（重合体）。ポリエチレンは「ポリ（多い）＋エチレン」で「エチレンが多数つながったもの」という意味です。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_002",
+          "quote": "単量体（モノマー）、重合体（ポリマー）、重合度"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q003",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "definition",
+      "sub_category": "付加重合",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "付加重合について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "二重結合を持つ分子が次々と付加反応を起こして重合体が生じる反応。水などの小さな分子は生じない。単量体の質量の合計がそのまま重合体の質量になる。ポリエチレンやポリ塩化ビニルが代表例。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "付加重合では水が生じる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "生じない。水が生じるのは縮合重合。"
+        },
+        {
+          "label": "3",
+          "text": "付加重合には二重結合は不要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "必要。"
+        },
+        {
+          "label": "4",
+          "text": "ナイロンは付加重合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "縮合重合。"
+        }
+      ],
+      "explanation": "付加重合では「何も取れない」ことが最大のポイントです。二重結合が開いて隣の分子と結合するだけなので副生成物がありません。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "二重結合を持つ分子が付加反応で重合。何も取れない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q004",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "definition",
+      "sub_category": "縮合重合",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "縮合重合について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "二つの単量体から水のような簡単な分子が取れて次々に縮合し高分子化合物ができる重合。ナイロン六十六（アミド結合）やポリエチレンテレフタラート（エステル結合）が代表例。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "縮合重合では副生成物は生じない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水が生じる。副生成物なしは付加重合。"
+        },
+        {
+          "label": "3",
+          "text": "ポリエチレンは縮合重合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "付加重合。"
+        },
+        {
+          "label": "4",
+          "text": "縮合重合には二重結合が必要。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "二つ以上の官能基が必要。二重結合は付加重合。"
+        }
+      ],
+      "explanation": "縮合重合のキーワードは「水（や塩化水素など）が取れる」ことです。ナイロンではアミド結合形成時に水が、ポリエステルではエステル結合形成時に水が副生します。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_002",
+          "quote": "水が取れて縮合。ナイロン66。ポリエステル"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q005",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "definition",
+      "sub_category": "付加縮合",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "付加縮合について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "付加反応と縮合反応を繰り返しながら高分子化合物が生成する反応。フェノール樹脂（フェノール＋ホルムアルデヒド）が代表例。網目状構造ができるため熱硬化性を示す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ポリエチレンは付加縮合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "付加重合。"
+        },
+        {
+          "label": "3",
+          "text": "付加縮合では鎖状構造ができる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "網目状構造。"
+        },
+        {
+          "label": "4",
+          "text": "ナイロンは付加縮合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "縮合重合。"
+        }
+      ],
+      "explanation": "付加縮合は付加重合でも縮合重合でもない第三の重合法です。フェノール樹脂、尿素樹脂、メラミン樹脂がこの方法で作られ、いずれも熱硬化性樹脂です。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_003",
+          "quote": "付加反応と縮合反応の繰り返し。フェノール樹脂"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q006",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "definition",
+      "sub_category": "熱可塑性と熱硬化性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "熱可塑性と熱硬化性の違いとして、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "熱可塑性は加熱すると軟らかくなり冷やすと硬くなる性質でリサイクル可能。鎖状分子の高分子に多い。熱硬化性は加熱で立体網目状構造ができて硬化し再び軟化しない。フェノール樹脂などが該当。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "熱硬化性樹脂は何度でも溶かして固められる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "一度硬化すると戻らない。何度も溶かせるのは熱可塑性。"
+        },
+        {
+          "label": "3",
+          "text": "ポリエチレンは熱硬化性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "熱可塑性。"
+        },
+        {
+          "label": "4",
+          "text": "フェノール樹脂は熱可塑性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "熱硬化性。"
+        }
+      ],
+      "explanation": "覚え方のたとえ：熱可塑性はチョコレート（溶かして固めてまた溶かせる）。熱硬化性はクッキー生地（焼いたら固まって戻らない）。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_003",
+          "quote": "熱可塑性は何度も軟化。熱硬化性は再び軟化しない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_003"
+      ],
+      "mnemonic": "チョコ＝熱可塑性。クッキー＝熱硬化性"
+    },
+    {
+      "id": "ch6_2_q007",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "ナイロン六十六",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ナイロン六十六について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヘキサメチレンジアミン（ジアミン）とアジピン酸（ジカルボン酸）の縮合重合で得られるポリアミド系合成繊維。アミド結合で単量体がつながり水が副生する。熱可塑性。名前の六十六は二つの単量体の炭素数（六と六）に由来。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ナイロン六十六は付加重合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "縮合重合。"
+        },
+        {
+          "label": "3",
+          "text": "ナイロン六十六はエステル結合を持つ。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アミド結合。エステル結合はポリエステル。"
+        },
+        {
+          "label": "4",
+          "text": "ナイロン六十六は熱硬化性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "熱可塑性。"
+        }
+      ],
+      "explanation": "ナイロン六十六の名前の由来は炭素数六のジアミンと炭素数六のジカルボン酸から作ることです。「六と六」で六十六です。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_005",
+          "quote": "ヘキサメチレンジアミン＋アジピン酸→ナイロン66。縮合重合。アミド結合"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_005",
+        "2_0_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q008",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "ビニロンの合成",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ビニロンの合成手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酢酸ビニルを付加重合→ポリ酢酸ビニル→けん化→ポリビニルアルコール→紡糸→ホルムアルデヒドでアセタール化→ビニロン。日本で開発された合成繊維で吸湿性に優れる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ビニルアルコールを直接重合してビニロンにする。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ビニルアルコールは不安定で単独では存在しない。"
+        },
+        {
+          "label": "3",
+          "text": "アセタール化の前にけん化を行わない。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "けん化が先。"
+        },
+        {
+          "label": "4",
+          "text": "ビニロンはアメリカで開発された。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "日本。"
+        }
+      ],
+      "explanation": "ビニロンの合成で最も重要なポイントは「ビニルアルコールが不安定なため直接重合できない」ことです。だから酢酸ビニルを迂回して使います。",
+      "evidence": [
+        {
+          "source_id": "2_0_proc_002",
+          "quote": "酢酸ビニル→ポリ酢酸ビニル→けん化→ポリビニルアルコール→アセタール化→ビニロン"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_proc_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q009",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "フェノール樹脂",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "フェノール樹脂（ベークライト）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェノールとホルムアルデヒドの付加縮合で得られる。熱硬化性樹脂。立体網目状構造。電気絶縁性に優れる。世界で最初に実用化された合成樹脂。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "フェノール樹脂は熱可塑性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "熱硬化性。"
+        },
+        {
+          "label": "3",
+          "text": "フェノール樹脂は付加重合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "付加縮合。"
+        },
+        {
+          "label": "4",
+          "text": "フェノール樹脂は鎖状構造。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "立体網目状構造。"
+        }
+      ],
+      "explanation": "フェノール樹脂のベークライトは千九百七年にベークランドが発明しました。電気のコンセントや鍋の取っ手など耐熱性が求められる用途に使われます。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_008",
+          "quote": "フェノール＋ホルムアルデヒド。付加縮合。熱硬化性。立体網目状"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_008",
+        "2_0_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q010",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "天然ゴムと加硫",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "天然ゴムと加硫について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "天然ゴムはイソプレンが付加重合した構造のポリイソプレンでシス形構造。生ゴムに数パーセントの硫黄を加えて加熱すると架橋構造ができ弾性が増す（加硫）。硫黄を三十〜四十パーセントにすると硬いエボナイトになる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "天然ゴムはトランス形構造。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "シス形。トランス形はグッタペルカ。"
+        },
+        {
+          "label": "3",
+          "text": "加硫では酸素を加える。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "硫黄。"
+        },
+        {
+          "label": "4",
+          "text": "硫黄を少量加えるとエボナイトになる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "少量で弾性ゴム。大量でエボナイト。"
+        }
+      ],
+      "explanation": "加硫の「硫」は硫黄の「硫」です。硫黄がゴム分子同士の橋渡し（架橋）をして弾性を与えます。タイヤは加硫ゴムの代表例です。",
+      "evidence": [
+        {
+          "source_id": "2_0_proc_003",
+          "quote": "硫黄で架橋。少量で弾性ゴム、大量でエボナイト"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_proc_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q011",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "付加重合と縮合重合の違い",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "重合反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "付加重合は二重結合が開いてつながる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "縮合重合では水が副生する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "付加縮合ではフェノール樹脂ができる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "付加重合では水が副生し、縮合重合では副生物がない。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。付加重合は副生物なし、縮合重合で水が副生。"
+        }
+      ],
+      "explanation": "付加重合は副生物なし。縮合重合は水が副生。この入れ替えは超頻出です。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "付加重合は副生物なし"
+        },
+        {
+          "source_id": "2_0_rxn_002",
+          "quote": "縮合重合で水が副生"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001",
+        "2_0_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q012",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "熱可塑性と熱硬化性の樹脂分類",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "樹脂の分類として、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ポリエチレンは熱可塑性。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "フェノール樹脂は熱硬化性。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ナイロンは熱可塑性。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ポリエチレンは熱硬化性で、フェノール樹脂は熱可塑性。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。ポリエチレンは熱可塑性、フェノール樹脂は熱硬化性。"
+        }
+      ],
+      "explanation": "鎖状分子→熱可塑性（ポリエチレン、ナイロンなど）。網目状構造→熱硬化性（フェノール樹脂、尿素樹脂、メラミン樹脂）。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_003",
+          "quote": "熱可塑性：ポリエチレン、ナイロン。熱硬化性：フェノール樹脂"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q013",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "ポリエチレンテレフタラート",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ポリエチレンテレフタラート（ペット）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "テレフタル酸とエチレングリコールの縮合重合で得られるポリエステル系合成繊維。エステル結合でつながる。ペットボトルの原料。熱可塑性でリサイクルしやすい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ペットはアミド結合を持つ。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "エステル結合。アミド結合はナイロン。"
+        },
+        {
+          "label": "3",
+          "text": "ペットは付加重合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "縮合重合。"
+        },
+        {
+          "label": "4",
+          "text": "ペットは熱硬化性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "熱可塑性。"
+        }
+      ],
+      "explanation": "ペットボトルの「ペット」はポリエチレンテレフタラート（PET）の略です。リサイクルマークの「1」はPETを表しています。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_002",
+          "quote": "テレフタル酸＋エチレングリコール→ポリエステル（PET）"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q014",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "ポリアミドとポリエステル",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ポリアミドとポリエステルに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ナイロン六十六はポリアミドでアミド結合。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ペットはポリエステルでエステル結合。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "どちらも縮合重合で合成する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ナイロンはエステル結合、ペットはアミド結合で構成される。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。ナイロン＝アミド結合、ペット＝エステル結合。"
+        }
+      ],
+      "explanation": "ポリアミドはアミド結合（ナイロン）。ポリエステルはエステル結合（ペット）。名前にそのまま結合の種類が入っていますので覚えやすいはずです。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_005",
+          "quote": "ナイロン＝ポリアミド"
+        },
+        {
+          "source_id": "2_0_rxn_002",
+          "quote": "PET＝ポリエステル"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_005",
+        "2_0_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q015",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "ビニロンの合成順序",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "ビニロンの合成に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酢酸ビニルを付加重合してポリ酢酸ビニルにする。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ポリ酢酸ビニルをけん化してポリビニルアルコールにする。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ホルムアルデヒドでアセタール化して耐水性を付与する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ビニルアルコールを直接付加重合してビニロンにする。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "ビニルアルコールは不安定で存在しない。酢酸ビニルを迂回する。"
+        }
+      ],
+      "explanation": "ビニルアルコールの不安定性はビニロンの出題で最も重要なポイントです。アセトアルデヒドに異性化してしまうため直接重合できません。",
+      "evidence": [
+        {
+          "source_id": "2_0_proc_002",
+          "quote": "ビニルアルコールは不安定。酢酸ビニル経由"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_proc_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q016",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "ポリ塩化ビニル",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ポリ塩化ビニルについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩化ビニルの付加重合で合成。硬質のものはパイプや窓枠、可塑剤を加えた軟質のものはホースや電線被覆に使われる。熱可塑性。難燃性。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ポリ塩化ビニルは縮合重合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "付加重合。"
+        },
+        {
+          "label": "3",
+          "text": "ポリ塩化ビニルは熱硬化性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "熱可塑性。"
+        },
+        {
+          "label": "4",
+          "text": "ポリ塩化ビニルは燃えやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "難燃性（塩素を含むため）。"
+        }
+      ],
+      "explanation": "ポリ塩化ビニルが難燃性なのは分子中に塩素を含むためです。燃やすと塩化水素ガスが発生する問題がありますが、消防服装などの耐火材料としても使われます。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "塩化ビニルの付加重合→ポリ塩化ビニル"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q017",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "ポリスチレン",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ポリスチレンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "スチレンの付加重合で合成。透明で硬い。熱可塑性。発泡させた発泡ポリスチレン（発泡スチロール）は断熱材や包装材に使われる。食品トレーにも利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ポリスチレンは熱硬化性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "熱可塑性。"
+        },
+        {
+          "label": "3",
+          "text": "ポリスチレンは縮合重合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "付加重合。"
+        },
+        {
+          "label": "4",
+          "text": "発泡スチロールはゴムの一種。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "合成樹脂。"
+        }
+      ],
+      "explanation": "ポリスチレンの名前の「スチレン」（スチレンモノマー）はベンゼン環にビニル基が結合した化合物です。透明性が高くCDケースなどにも使われていました。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "スチレンの付加重合→ポリスチレン"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q018",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "界面重合",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "界面重合によるナイロン六十六の合成として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヘキサメチレンジアミンの水溶液とアジピン酸ジクロリドのヘキサン溶液を重ねると、混ざり合わない二層の界面で重合が起こりナイロンの膜ができる。これをつまんで引き上げると糸状に取り出せる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "二つの溶液を完全に混合してから重合させる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "混合しない。界面のみで反応。"
+        },
+        {
+          "label": "3",
+          "text": "界面重合では付加重合が起こる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "縮合重合。"
+        },
+        {
+          "label": "4",
+          "text": "ポリエチレンを界面重合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ナイロン六十六。ポリエチレンは付加重合。"
+        }
+      ],
+      "explanation": "界面重合は教科書の実験でも有名な「ナイロンの糸を引き上げる実験」です。水層とヘキサン層の境目でだけ反応が起こるのがポイントです。",
+      "evidence": [
+        {
+          "source_id": "2_0_proc_001",
+          "quote": "界面で重合。膜を引き上げて糸に"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q019",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "尿素樹脂とメラミン樹脂",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "尿素樹脂とメラミン樹脂について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "どちらもホルムアルデヒドとの付加縮合で作られる熱硬化性樹脂。尿素樹脂は接着剤に、メラミン樹脂は食器や化粧板に使われる。メラミン樹脂は尿素樹脂より硬く耐水性に優れる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "尿素樹脂は熱可塑性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "熱硬化性。"
+        },
+        {
+          "label": "3",
+          "text": "メラミン樹脂はエチレンとの重合で作る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ホルムアルデヒドとの付加縮合。"
+        },
+        {
+          "label": "4",
+          "text": "尿素樹脂はメラミン樹脂より硬い。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。メラミンの方が硬い。"
+        }
+      ],
+      "explanation": "フェノール樹脂、尿素樹脂、メラミン樹脂の三つは、いずれもホルムアルデヒドとの付加縮合で作られる熱硬化性樹脂です。まとめて覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_003",
+          "quote": "熱硬化性：フェノール樹脂、尿素樹脂、メラミン樹脂"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_003",
+        "2_0_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q020",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "シス形とトランス形",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "天然ゴムに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "天然ゴムはポリイソプレン（シス形構造）。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "弾性がある。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "硫黄による加硫で架橋構造ができ弾性が増す。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "天然ゴムはトランス形構造を持つ。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "シス形。トランス形はグッタペルカ（プラスチック状で弾性なし）。"
+        }
+      ],
+      "explanation": "シス形は折れ曲がり構造で柔軟、ゴム弾性あり（天然ゴム）。トランス形は直線的構造で硬く、弾性なし（グッタペルカ）。立体構造が性質を決めます。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_009",
+          "quote": "シス形構造。弾性"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_009"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q021",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "合成ゴム",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "合成ゴムについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "スチレンブタジエンゴム（エスビーアール）はブタジエンとスチレンの共重合体で自動車タイヤに使われる。クロロプレンゴムは耐油性・耐候性に優れる。いずれも付加重合で合成する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "合成ゴムはすべて縮合重合で作る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "付加重合。"
+        },
+        {
+          "label": "3",
+          "text": "合成ゴムには二重結合がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一部二重結合が残る（加硫に必要）。"
+        },
+        {
+          "label": "4",
+          "text": "合成ゴムは天然ゴムより必ず性能が劣る。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "用途によっては優れる（耐油性など）。"
+        }
+      ],
+      "explanation": "合成ゴムは天然ゴムの代替として開発されました。用途に応じて異なる単量体を組み合わせることで、耐熱性・耐油性・耐候性など特定の性能を強化できます。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_009",
+          "quote": "ゴムの分類。合成ゴム"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_009"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q022",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "definition",
+      "sub_category": "重合度と分子量の関係",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "重合度と分子量の関係として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "重合体の平均分子量は構成単位の分子量（式量）に平均重合度を掛けて求める。縮合重合では、取れた後の構成単位の分子量を使う点に注意。単量体の分子量をそのまま使うミスが多い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "付加重合でも縮合重合でも同じ分子量を使う。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "縮合重合では水が取れた後の構成単位の分子量を使う。"
+        },
+        {
+          "label": "3",
+          "text": "重合度は平均分子量に無関係。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "直接関係する。"
+        },
+        {
+          "label": "4",
+          "text": "高分子化合物は正確な分子量を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "平均分子量。"
+        }
+      ],
+      "explanation": "縮合重合での計算ミスの例：ナイロン六十六の構成単位の分子量は単量体二つの分子量の和から水の分子量を引いた値です。水が取れることを忘れないようにしましょう。",
+      "evidence": [
+        {
+          "source_id": "2_0_eq_001",
+          "quote": "平均分子量＝構成単位の分子量×平均重合度"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q023",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "ナイロン六とナイロン六十六",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ナイロン六とナイロン六十六の違いとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ナイロン六はイプシロンカプロラクタム（環状アミド）の開環重合で合成。単量体は一種類で炭素数六。ナイロン六十六はヘキサメチレンジアミンとアジピン酸の縮合重合で合成。単量体二種類で炭素数が六と六。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ナイロン六は縮合重合、ナイロン六十六は開環重合。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。ナイロン六が開環重合。"
+        },
+        {
+          "label": "3",
+          "text": "どちらも同じ単量体から作る。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "単量体が異なる。"
+        },
+        {
+          "label": "4",
+          "text": "ナイロン六の名前の六は六種類の単量体を使うから。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "炭素数六のため。"
+        }
+      ],
+      "explanation": "ナイロン六は単量体一種類（炭素六）。ナイロン六十六は単量体二種類（炭素六＋六）。数字の意味が異なることに注意しましょう。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_005",
+          "quote": "ナイロン66は炭素6＋6"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q024",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "ポリプロピレン",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ポリプロピレンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "プロピレンの付加重合で合成。軽量で機械的強度が高い。耐薬品性に優れる。熱可塑性。食品容器や自動車部品に使われる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ポリプロピレンは縮合重合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "付加重合。"
+        },
+        {
+          "label": "3",
+          "text": "ポリプロピレンの単量体はエチレン。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "プロピレン。"
+        },
+        {
+          "label": "4",
+          "text": "ポリプロピレンは熱硬化性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "熱可塑性。"
+        }
+      ],
+      "explanation": "ポリプロピレンは汎用プラスチックの中で最も比重が小さい（水に浮く）ことが特徴です。弁当箱や食品保存容器に広く使われています。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "プロピレンの付加重合→ポリプロピレン"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q025",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "エボナイトとゴム",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "加硫に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "生ゴムに硫黄を加えて加熱する操作。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "硫黄が架橋構造を作り弾性が増す。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "硫黄の量が少ないと弾性ゴムになる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "硫黄を少量加えると硬いエボナイトに、大量に加えると弾性ゴムになる。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。少量で弾性ゴム、大量（30〜40%）でエボナイト。"
+        }
+      ],
+      "explanation": "硫黄が少ない→架橋が少ない→柔らかい→弾性ゴム。硫黄が多い→架橋が密→硬い→エボナイト。架橋の量と硬さの関係で理解しましょう。",
+      "evidence": [
+        {
+          "source_id": "2_0_proc_003",
+          "quote": "少量で弾性ゴム、30〜40%でエボナイト"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_proc_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q026",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "アクリル繊維",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アクリル繊維について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アクリロニトリルの付加重合で合成。羊毛に似た柔らかい触感。セーターや毛布に使われる。耐候性に優れ色褪せしにくい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アクリル繊維は縮合重合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "付加重合。"
+        },
+        {
+          "label": "3",
+          "text": "アクリル繊維は綿に似た触感。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "羊毛に似た触感。"
+        },
+        {
+          "label": "4",
+          "text": "アクリル繊維の単量体はスチレン。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アクリロニトリル。"
+        }
+      ],
+      "explanation": "アクリル繊維は合成繊維の中で最も羊毛に近い風合いを持ちます。「アクリルのセーター」は身近な例です。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "アクリロニトリルの付加重合→アクリル繊維"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q027",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "合成繊維の三大分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "合成繊維の三大分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ポリアミド系（ナイロン）、ポリエステル系（ペット繊維）、ポリアクリロニトリル系（アクリル）の三つ。ナイロンとペットは縮合重合、アクリルは付加重合で合成。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "三つともすべて付加重合で合成する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ナイロンとペットは縮合重合。"
+        },
+        {
+          "label": "3",
+          "text": "三つともすべて縮合重合で合成する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アクリルは付加重合。"
+        },
+        {
+          "label": "4",
+          "text": "合成繊維にはアミド結合を持つものはない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ナイロンはアミド結合。"
+        }
+      ],
+      "explanation": "合成繊維の三大分類とその重合法を整理：ナイロン（縮合重合、アミド結合）、ペット（縮合重合、エステル結合）、アクリル（付加重合）。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "付加重合の例"
+        },
+        {
+          "source_id": "2_0_rxn_002",
+          "quote": "縮合重合の例"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001",
+        "2_0_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q028",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "ポリテトラフルオロエチレン",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ポリテトラフルオロエチレン（テフロン）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "テトラフルオロエチレンの付加重合で合成。耐熱性と耐薬品性に非常に優れる。摩擦係数が極めて小さくフライパンのコーティングに使われる。ほぼすべての薬品に侵されない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "テフロンは水に溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶けない。"
+        },
+        {
+          "label": "3",
+          "text": "テフロンは縮合重合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "付加重合。"
+        },
+        {
+          "label": "4",
+          "text": "テフロンは燃えやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "難燃性。"
+        }
+      ],
+      "explanation": "テフロンのフッ素原子が化学的に極めて安定なため、酸にもアルカリにもほとんど侵されません。「滑る鍋」の正体がポリテトラフルオロエチレンです。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "テトラフルオロエチレンの付加重合→テフロン"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q029",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "共重合",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "共重合について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "二種類以上の単量体を混ぜて重合する方法。エチレンと酢酸ビニルの共重合やブタジエンとスチレンの共重合が例。単独の重合体にない性質を組み合わせることができる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "共重合は一種類の単量体のみ使う。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二種類以上。"
+        },
+        {
+          "label": "3",
+          "text": "共重合で機能性は変化しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "変化する（新しい性質が得られる）。"
+        },
+        {
+          "label": "4",
+          "text": "共重合は常に縮合重合である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "付加重合でも可能。"
+        }
+      ],
+      "explanation": "共重合はプラスチックやゴムの性能を調整する重要な手法です。ABSは三種の単量体（アクリロニトリル、ブタジエン、スチレン）の共重合体です。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "共重合。二種類以上の単量体"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q030",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "comprehensive",
+      "sub_category": "重合反応の分類まとめ",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "重合反応の分類の総合として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "付加重合は二重結合が開いてつながり副生物なし（ポリエチレン等）。縮合重合は水が副生しアミド結合やエステル結合ができる（ナイロン、ペット等）。付加縮合は付加と縮合の繰り返しで網目状構造ができる（フェノール樹脂等）。開環重合は環状分子が開いてつながる（ナイロン六等）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "縮合重合で網目状構造ができ、付加縮合では鎖状構造ができる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。"
+        },
+        {
+          "label": "3",
+          "text": "すべての重合で水が副生する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "付加重合では副生しない。"
+        },
+        {
+          "label": "4",
+          "text": "付加重合と縮合重合は同じ反応。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "異なる。"
+        }
+      ],
+      "explanation": "四種類の重合反応（付加・縮合・付加縮合・開環）を整理しましょう。それぞれの特徴と代表例をセットで覚えることが大切です。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "付加重合"
+        },
+        {
+          "source_id": "2_0_rxn_002",
+          "quote": "縮合重合"
+        },
+        {
+          "source_id": "2_0_rxn_003",
+          "quote": "付加縮合"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001",
+        "2_0_rxn_002",
+        "2_0_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q031",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "ポリビニルアルコールの水溶性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ポリビニルアルコールについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水溶性の高分子化合物。ヒドロキシ基を多数持つため親水性が高い。洗濯のりや接着剤に使われる。アセタール化すると水に不溶性のビニロンになる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ポリビニルアルコールは水に溶けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水溶性。"
+        },
+        {
+          "label": "3",
+          "text": "ポリビニルアルコールを直接重合して合成する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ポリ酢酸ビニルのけん化で合成。"
+        },
+        {
+          "label": "4",
+          "text": "アセタール化するとさらに水に溶けやすくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水に不溶になる。"
+        }
+      ],
+      "explanation": "ポリビニルアルコールが水溶性なのはヒドロキシ基が水素結合で水と親和するためです。アセタール化でヒドロキシ基が架橋に使われるため親水性が低下します。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_006",
+          "quote": "水溶性。ヒドロキシ基。アセタール化で不溶に"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_006"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q032",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "ポリメタクリル酸メチル",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ポリメタクリル酸メチル（アクリル樹脂）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "メタクリル酸メチルの付加重合で合成。透明度が高くガラスの代替品として使われる。コンタクトレンズや水族館の水槽にも利用される。熱可塑性。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アクリル樹脂は不透明。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "透明度が高い。"
+        },
+        {
+          "label": "3",
+          "text": "アクリル樹脂は熱硬化性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "熱可塑性。"
+        },
+        {
+          "label": "4",
+          "text": "アクリル樹脂は縮合重合で合成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "付加重合。"
+        }
+      ],
+      "explanation": "アクリル樹脂（有機ガラス）はガラスより軽く割れにくいため、水族館の巨大水槽や航空機の窓にも使われています。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "メタクリル酸メチルの付加重合→アクリル樹脂"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q033",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "付加重合の代表例一覧",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "付加重合で合成する高分子に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ポリエチレンは付加重合。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ポリ塩化ビニルは付加重合。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ポリスチレンは付加重合。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ナイロン六十六は付加重合で合成する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "縮合重合。"
+        }
+      ],
+      "explanation": "付加重合の代表例はポリエチレン、ポリ塩化ビニル、ポリスチレン、ポリプロピレン、アクリル繊維、テフロンなど。ナイロンとペットは縮合重合です。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "付加重合の例"
+        },
+        {
+          "source_id": "2_0_rxn_002",
+          "quote": "ナイロン66は縮合重合"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001",
+        "2_0_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q034",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "シリコーン樹脂",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "シリコーン樹脂について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ケイ素と酸素の骨格を持つ高分子化合物。耐熱性・耐候性・電気絶縁性に優れる。撥水性がある。医療器具やシーリング剤に使われる。炭素骨格ではなくケイ素骨格が特徴。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "シリコーンは炭素骨格の高分子。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ケイ素骨格。"
+        },
+        {
+          "label": "3",
+          "text": "シリコーンは吸水性に優れる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "撥水性。"
+        },
+        {
+          "label": "4",
+          "text": "シリコーンは導電性がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電気絶縁性。"
+        }
+      ],
+      "explanation": "シリコーンは「シリコン（ケイ素）」に由来する名前の通り、ケイ素と酸素が交互に並んだ骨格を持ちます。通常のプラスチック（炭素骨格）とは根本的に異なる構造です。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_001",
+          "quote": "高分子化合物の多様な種類"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q035",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "アミド結合とエステル結合の違い",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アミド結合とエステル結合の違いとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アミド結合はカルボキシ基とアミノ基の脱水で形成。エステル結合はカルボキシ基とヒドロキシ基の脱水で形成。ナイロンはアミド結合、ペットはエステル結合を持つ。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "どちらも同じ官能基同士の反応。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "異なる。"
+        },
+        {
+          "label": "3",
+          "text": "エステル結合はアミノ基が関与する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ヒドロキシ基。アミノ基はアミド結合。"
+        },
+        {
+          "label": "4",
+          "text": "ペットにはアミド結合がある。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "エステル結合。"
+        }
+      ],
+      "explanation": "アミド結合はマイナスシーオーエヌエイチマイナス（窒素を含む）。エステル結合はマイナスシーオーオーマイナス（酸素のみ）。窒素の有無が違いのカギです。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_002",
+          "quote": "アミド結合（ナイロン）、エステル結合（PET）"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q036",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "イオン交換樹脂",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "イオン交換樹脂について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水中のイオンを別のイオンと交換する機能を持つ合成樹脂。陽イオン交換樹脂（水素イオンを放出しカチオンを吸着）と陰イオン交換樹脂（水酸化物イオンを放出しアニオンを吸着）がある。純水の製造に利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "イオン交換樹脂は分子を交換する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオンを交換する。"
+        },
+        {
+          "label": "3",
+          "text": "陽イオン交換樹脂は陰イオンを吸着する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陽イオンを吸着。"
+        },
+        {
+          "label": "4",
+          "text": "イオン交換樹脂は天然物のみ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "合成樹脂。"
+        }
+      ],
+      "explanation": "陽イオン交換樹脂と陰イオン交換樹脂を両方通した水は不純物イオンがほぼ除去され、超純水（脱イオン水）になります。半導体製造にも欠かせません。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_001",
+          "quote": "高分子化合物の応用。イオン交換樹脂"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q037",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "ホルムアルデヒドとの反応",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ホルムアルデヒドに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェノール樹脂はフェノールとホルムアルデヒドから作る。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "尿素樹脂は尿素とホルムアルデヒドから作る。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ビニロンのアセタール化にホルムアルデヒドを使う。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ナイロン六十六の合成にホルムアルデヒドを使う。",
+          "is_correct": true,
+          "trap_type": "concept_confusion",
+          "trap_detail": "ナイロン六十六はヘキサメチレンジアミン＋アジピン酸。ホルムアルデヒドは使わない。"
+        }
+      ],
+      "explanation": "ホルムアルデヒドは熱硬化性樹脂（フェノール樹脂、尿素樹脂、メラミン樹脂）とビニロンのアセタール化に使われますが、ナイロンとは無関係です。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_003",
+          "quote": "フェノール＋ホルムアルデヒド"
+        },
+        {
+          "source_id": "2_0_proc_002",
+          "quote": "ホルムアルデヒドでアセタール化"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_003",
+        "2_0_proc_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q038",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "comprehensive",
+      "sub_category": "熱硬化性樹脂まとめ",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "熱硬化性樹脂のまとめとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェノール樹脂（フェノール＋ホルムアルデヒド）、尿素樹脂（尿素＋ホルムアルデヒド）、メラミン樹脂（メラミン＋ホルムアルデヒド）。いずれも付加縮合で合成。立体網目状構造で一度硬化すると溶けない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ポリエチレンは熱硬化性樹脂。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "熱可塑性。"
+        },
+        {
+          "label": "3",
+          "text": "熱硬化性樹脂は鎖状分子。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "網目状構造。"
+        },
+        {
+          "label": "4",
+          "text": "熱硬化性樹脂は何度も溶かせる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一度硬化すると溶けない。"
+        }
+      ],
+      "explanation": "熱硬化性樹脂は三つとも「○○＋ホルムアルデヒド」のパターンです。そしてすべて付加縮合で網目状構造をとります。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_003",
+          "quote": "熱硬化性：フェノール、尿素、メラミン"
+        },
+        {
+          "source_id": "2_0_rxn_003",
+          "quote": "付加縮合"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_003",
+        "2_0_rxn_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q039",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "ビニロンの特別な合成法",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "ビニロンの合成に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酢酸ビニルの付加重合でポリ酢酸ビニルを作る。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "けん化でポリビニルアルコールにする。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アセタール化で耐水性を付与する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "アセタール化にはアセトアルデヒドを使用する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ホルムアルデヒド。アセトアルデヒドではない。"
+        }
+      ],
+      "explanation": "ビニロンのアセタール化にはホルムアルデヒドを使います。ホルムアルデヒドがポリビニルアルコールのヒドロキシ基二つの間に架橋を作ります。",
+      "evidence": [
+        {
+          "source_id": "2_0_proc_002",
+          "quote": "ホルムアルデヒドでアセタール化"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_proc_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q040",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "吸水性高分子",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "吸水性高分子（高吸水性樹脂）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "自重の数百〜千倍の水を吸収できる高分子化合物。ポリアクリル酸ナトリウムなどが代表例。紙おむつや保冷剤に使われる。吸収した水をゲル状に保持する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "吸水性高分子は水をはじく材料。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "大量に吸収する。"
+        },
+        {
+          "label": "3",
+          "text": "自重の二〜三倍しか吸収できない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "数百〜千倍。"
+        },
+        {
+          "label": "4",
+          "text": "吸水性高分子は天然物のみ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "合成高分子。"
+        }
+      ],
+      "explanation": "高吸水性樹脂は高分子鎖の中にイオン性の基（カルボキシ基のナトリウム塩など）を持ち、浸透圧の原理で大量の水を吸い込みゲルとなります。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_001",
+          "quote": "高分子化合物の応用"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q041",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "単量体と重合体の対応",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "単量体と重合体の対応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "エチレン→ポリエチレン。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "スチレン→ポリスチレン。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "塩化ビニル→ポリ塩化ビニル。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "プロピレン→ポリスチレン。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ポリプロピレン。プロピレンからはポリプロピレンができる。"
+        }
+      ],
+      "explanation": "付加重合の名前は「ポリ＋単量体名」というパターンです。プロピレン→ポリプロピレン、スチレン→ポリスチレンと対応させましょう。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_002",
+          "quote": "単量体と重合体の関係"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q042",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "comprehensive",
+      "sub_category": "合成繊維の比較",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "合成繊維の比較として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ナイロン（ポリアミド系）は引張り強度が高い。ペット繊維（ポリエステル系）はしわになりにくい。アクリル繊維は羊毛に似た風合い。ビニロンは吸湿性に優れ日本で発明された。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ビニロンはアメリカで発明された。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "日本。"
+        },
+        {
+          "label": "3",
+          "text": "アクリル繊維は綿に似た風合い。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "羊毛に似た風合い。"
+        },
+        {
+          "label": "4",
+          "text": "すべてが縮合重合で合成する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アクリルとビニロンは付加重合（の一部を含む）。"
+        }
+      ],
+      "explanation": "各合成繊維の「ウリ」を覚えましょう。ナイロンは強い。ペットはしわに強い。アクリルはウール調。ビニロンは吸湿＋日本発。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_005",
+          "quote": "ナイロン"
+        },
+        {
+          "source_id": "2_0_sub_007",
+          "quote": "ビニロン。日本で開発。吸湿性"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_005",
+        "2_0_sub_007"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q043",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "網目状構造の樹脂",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "網目状（三次元）構造を持つ高分子に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェノール樹脂は立体網目状構造。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "エボナイトは網目状（架橋）構造。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "メラミン樹脂は網目状構造。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ポリエチレンは網目状構造を持つ。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "鎖状構造。網目状ではない。"
+        }
+      ],
+      "explanation": "ポリエチレンは鎖状分子なので網目状構造を持ちません。熱硬化性樹脂（フェノール、尿素、メラミン）やエボナイトが網目状です。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_003",
+          "quote": "鎖状→熱可塑性。網目状→熱硬化性"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q044",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "property",
+      "sub_category": "導電性高分子",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "導電性高分子について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ポリアセチレンにヨウ素を添加（ドーピング）すると電気を通すようになる。白川英樹が発見しノーベル化学賞を受賞。有機エレクトロニクス材料として注目されている。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "すべての高分子化合物は電気を通す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "通常は絶縁体。特殊なものだけ導電性。"
+        },
+        {
+          "label": "3",
+          "text": "導電性高分子にドーピングは不要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "必要。"
+        },
+        {
+          "label": "4",
+          "text": "導電性高分子は自然界に存在する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "人工的に合成。"
+        }
+      ],
+      "explanation": "白川英樹博士（二千年ノーベル化学賞）の業績は日本人の科学的成果として有名です。ポリアセチレンにヨウ素を少量加えるだけで金属並みの導電性を示します。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_001",
+          "quote": "高分子化合物の特別な性質。導電性高分子"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q045",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "confusion",
+      "sub_category": "再生繊維と合成繊維の違い",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "再生繊維と合成繊維の違いとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "再生繊維はセルロースなどの天然高分子を一度溶かして紡糸し直したもの（レーヨン、キュプラ）。合成繊維は低分子の単量体から重合して作ったもの（ナイロン、ペット）。半合成繊維はセルロースの官能基を化学修飾したもの（アセテート）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "レーヨンは合成繊維。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "再生繊維。"
+        },
+        {
+          "label": "3",
+          "text": "ナイロンは再生繊維。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "合成繊維。"
+        },
+        {
+          "label": "4",
+          "text": "すべての繊維は石油から作る。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "再生繊維はセルロース（植物由来）。"
+        }
+      ],
+      "explanation": "繊維の分類：天然繊維（綿、羊毛）→再生繊維（レーヨン）→半合成繊維（アセテート）→合成繊維（ナイロン等）。原料と加工法の違いで分類されます。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_001",
+          "quote": "繊維の分類"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q046",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "comprehensive",
+      "sub_category": "単量体から重合体を推定",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "単量体と重合体の関係に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "エチレン→ポリエチレン（付加重合）。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ヘキサメチレンジアミン＋アジピン酸→ナイロン六十六（縮合重合）。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "フェノール＋ホルムアルデヒド→フェノール樹脂（付加縮合）。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "テレフタル酸＋エチレングリコール→ナイロン六十六（縮合重合）。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "テレフタル酸＋エチレングリコール→ポリエチレンテレフタラート（ペット）。ナイロンではない。"
+        }
+      ],
+      "explanation": "テレフタル酸＋エチレングリコールはペット（ポリエステル）。ヘキサメチレンジアミン＋アジピン酸はナイロン六十六（ポリアミド）。原料と製品の対応を正確に覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_002",
+          "quote": "ナイロン66はヘキサメチレンジアミン＋アジピン酸"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q047",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "comprehensive",
+      "sub_category": "プラスチックのリサイクル",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "プラスチックのリサイクルについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "熱可塑性樹脂は加熱で溶かして再成形できるためリサイクルしやすい（マテリアルリサイクル）。熱硬化性樹脂は溶かせないためマテリアルリサイクルが困難。燃やして熱エネルギーを回収する方法もある（サーマルリサイクル）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "熱硬化性樹脂は何度でも溶かしてリサイクルできる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "できない。溶かせるのは熱可塑性。"
+        },
+        {
+          "label": "3",
+          "text": "すべてのプラスチックがマテリアルリサイクルできる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "熱硬化性は困難。"
+        },
+        {
+          "label": "4",
+          "text": "プラスチックは一切リサイクルできない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "熱可塑性はリサイクル可能。"
+        }
+      ],
+      "explanation": "3R（リデュース・リユース・リサイクル）の観点で、熱可塑性樹脂のリサイクルが重要です。ペットボトルのリサイクル率は日本で約九割に達しています。",
+      "evidence": [
+        {
+          "source_id": "2_0_def_003",
+          "quote": "熱可塑性は再び軟化可能→リサイクル"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q048",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "comprehensive",
+      "sub_category": "章の総合その一",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "合成高分子化合物に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "付加重合は副生物なし。縮合重合で水が副生。ナイロンはアミド結合。ペットはエステル結合。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "フェノール樹脂は熱硬化性。ポリエチレンは熱可塑性。天然ゴムはシス形。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ビニロンは酢酸ビニル経由で合成。ビニルアルコールが不安定なため。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "付加重合で水が副生する。ナイロンはエステル結合。フェノール樹脂は熱可塑性。天然ゴムはトランス形。ビニルアルコールを直接重合する。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "五か所すべて誤り。"
+        }
+      ],
+      "explanation": "章全体の重要ポイントを複合した最高難度の問題です。重合反応の種類、結合の種類、樹脂の分類、ゴムの構造、ビニロンの合成法のすべてを正確に把握しましょう。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "付加重合は副生物なし"
+        },
+        {
+          "source_id": "2_0_sub_005",
+          "quote": "ナイロンはアミド結合"
+        },
+        {
+          "source_id": "2_0_sub_008",
+          "quote": "フェノール樹脂は熱硬化性"
+        },
+        {
+          "source_id": "2_0_sub_009",
+          "quote": "天然ゴムはシス形"
+        },
+        {
+          "source_id": "2_0_proc_002",
+          "quote": "ビニルアルコールは不安定"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001",
+        "2_0_rxn_002",
+        "2_0_sub_005",
+        "2_0_sub_008",
+        "2_0_sub_009",
+        "2_0_proc_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q049",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "comprehensive",
+      "sub_category": "合成樹脂の用途",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "合成樹脂と用途の組み合わせとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ポリエチレン→ポリ袋、容器。ポリ塩化ビニル→パイプ、電線被覆。ポリスチレン→発泡スチロール。ペット→飲料ボトル。フェノール樹脂→電気部品。テフロン→フライパンコーティング。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "テフロンでポリ袋を作る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ポリエチレン。"
+        },
+        {
+          "label": "3",
+          "text": "発泡スチロールはポリエチレンから作る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ポリスチレン。"
+        },
+        {
+          "label": "4",
+          "text": "ペットボトルはポリ塩化ビニルで作る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ポリエチレンテレフタラート（ペット）。"
+        }
+      ],
+      "explanation": "身近な製品と合成樹脂の対応を覚えることで実生活と化学がつながります。リサイクルマークの番号も関連しています。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_002",
+          "quote": "ポリエチレンの用途"
+        },
+        {
+          "source_id": "2_0_sub_008",
+          "quote": "フェノール樹脂の用途"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_002",
+        "2_0_sub_008"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch6_2_q050",
+      "chapter": "6-2",
+      "chapter_title": "合成高分子化合物",
+      "category": "comprehensive",
+      "sub_category": "最終総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "合成高分子化合物の全範囲に関する最終総合として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "付加重合は二重結合が開く（副生物なし）。縮合重合は水が副生（アミド結合またはエステル結合）。付加縮合は網目状構造（熱硬化性）。熱可塑性は鎖状で再成形可能。熱硬化性は網目状で再軟化不可。ナイロンはアミド結合。ペットはエステル結合。フェノール樹脂は付加縮合、熱硬化性。ビニロンは酢酸ビニル→けん化→アセタール化。天然ゴムはシス形。加硫は硫黄で架橋。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "付加重合で水が副生。縮合重合で副生物なし。ナイロンはエステル結合。ペットはアミド結合。フェノール樹脂は熱可塑性。天然ゴムはトランス形。加硫は酸素で架橋。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて逆。"
+        },
+        {
+          "label": "3",
+          "text": "すべての高分子は熱硬化性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "熱可塑性のものも多い。"
+        },
+        {
+          "label": "4",
+          "text": "ビニルアルコールを直接重合してビニロンにする。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不安定で不可能。"
+        }
+      ],
+      "explanation": "合成高分子化合物の全範囲を凝縮した最終問題です。重合の三種類、結合の種類、樹脂分類、繊維の特徴、ゴムの性質すべてを正確に整理しましょう。",
+      "evidence": [
+        {
+          "source_id": "2_0_rxn_001",
+          "quote": "付加重合"
+        },
+        {
+          "source_id": "2_0_rxn_002",
+          "quote": "縮合重合"
+        },
+        {
+          "source_id": "2_0_rxn_003",
+          "quote": "付加縮合"
+        },
+        {
+          "source_id": "2_0_def_003",
+          "quote": "熱可塑性と熱硬化性"
+        },
+        {
+          "source_id": "2_0_sub_005",
+          "quote": "ナイロン"
+        },
+        {
+          "source_id": "2_0_sub_008",
+          "quote": "フェノール樹脂"
+        },
+        {
+          "source_id": "2_0_proc_002",
+          "quote": "ビニロン"
+        },
+        {
+          "source_id": "2_0_sub_009",
+          "quote": "天然ゴム"
+        },
+        {
+          "source_id": "2_0_proc_003",
+          "quote": "加硫"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_rxn_001",
+        "2_0_rxn_002",
+        "2_0_rxn_003",
+        "2_0_def_003",
+        "2_0_sub_005",
+        "2_0_sub_008",
+        "2_0_proc_002",
+        "2_0_sub_009",
+        "2_0_proc_003"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

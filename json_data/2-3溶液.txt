@@ -1,0 +1,298 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 3,
+   "chapter_title": "溶液",
+   "section": 1,
+   "section_title": "溶解のしくみと溶解度 / 希薄溶液の性質 / コロイド溶液",
+   "page_range": [158, 192],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "3_1_sub_001",
+     "name": "塩化ナトリウム",
+     "formula": "NaCl",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": 801, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水によく溶ける（約35.8g/100g水 20℃）",
+       "electrical_conductivity": "水溶液は電気を導く（電解質）",
+       "other": ["イオン結晶"]
+     },
+     "cross_refs": ["3_1_def_001", "3_1_def_004"],
+     "notes": "水中でNa+とCl-に電離し、それぞれが水和される。"
+   },
+   {
+     "id": "3_1_sub_002",
+     "name": "エタノール",
+     "formula": "C2H5OH",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水と自由に混じり合う",
+       "electrical_conductivity": "水溶液は電気を導かない（非電解質）",
+       "other": ["極性分子"]
+     },
+     "cross_refs": ["3_1_def_003"],
+     "notes": "ヒドロキシ基(-OH)が親水基として働き、水分子と水素結合を形成する。"
+   },
+   {
+     "id": "3_3_sub_001",
+     "name": "水酸化鉄(III)",
+     "formula": "Fe(OH)3",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "赤褐色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に不溶（コロイドとして分散する）",
+       "electrical_conductivity": "",
+       "other": ["正コロイド", "疎水コロイド"]
+     },
+     "cross_refs": ["3_3_def_002"],
+     "notes": "沸騰水に塩化鉄(III)水溶液を加えるとコロイド溶液となる。組成は複雑で厳密にはFe(OH)3だけではない。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "3_1_def_001",
+     "type": "def",
+     "title": "水和",
+     "prerequisite_ids": ["TBD:極性分子", "TBD:イオン結晶"],
+     "definition": "水分子が溶質粒子（イオンや分子など）に強く引きつけられる現象。",
+     "explanation": "極性を持つ水分子が、結晶表面のイオンや極性分子に静電気的な力や水素結合で引きつけられます。これにより、溶質粒子どうしの結合が弱まり、水中に拡散していきます。",
+     "conditions": ["溶媒が水であること"],
+     "examples": [
+       {
+         "label": "塩化ナトリウムの水和",
+         "substance_ids": ["3_1_sub_001"],
+         "description": "水分子のO(δ-)がNa+に、H(δ+)がCl-に強く引きつけられ、水和イオンとなって水中に拡散する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["3_1_def_003"],
+     "source_page": 158
+   },
+   {
+     "id": "3_1_def_003",
+     "type": "def",
+     "title": "親水基と疎水基",
+     "prerequisite_ids": ["3_1_def_001"],
+     "definition": "水和しやすい原子団を親水基、水分子となじまず水和しにくい原子団を疎水基（親油基）という。",
+     "explanation": "ヒドロキシ基(-OH)のような極性を持つ部分は水と仲が良く（親水基）、炭化水素基のような極性のない部分は水と反発します（疎水基）。分子内に親水基が多いほど水に溶けやすくなります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "アルコールの溶解性",
+         "substance_ids": ["3_1_sub_002"],
+         "description": "エタノールは親水基(-OH)の影響が強く水によく溶けるが、炭素鎖が長い1-ヘキサノールは疎水基(炭化水素基)が大きく水にほとんど溶けない。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "有機化合物の構造から水への溶解性の違いを説明・予測する問題",
+         "key_concept_ids": ["3_1_def_003"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 159
+   },
+   {
+     "id": "3_1_proc_001",
+     "type": "proc",
+     "title": "再結晶",
+     "prerequisite_ids": ["TBD:溶解度曲線", "TBD:飽和溶液"],
+     "definition": "温度による溶解度の差を利用して、不純物が混じった固体から純粋な結晶を取り出す精製操作。",
+     "explanation": "高温でたくさんの固体を溶かし、その後ゆっくりと冷やしていくと、溶けきれなくなった分が綺麗な結晶として現れます。不純物は元々の量が少ないため、冷やしても飽和量に達せず溶液中（母液）に残り続けます。",
+     "conditions": ["目的物質の溶解度が温度によって大きく変化すること"],
+     "examples": [
+       {
+         "label": "硝酸カリウムの精製",
+         "substance_ids": ["TBD:硝酸カリウム", "3_1_sub_001"],
+         "description": "少量の塩化ナトリウムを含む硝酸カリウムを熱水に溶かし、冷却して純粋な硝酸カリウムを得る。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "塩化ナトリウムのように温度による溶解度の変化が小さい物質は、再結晶による精製には向いていない。"
+     ],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "不純物を含む結晶をできるだけ少ない熱水に溶解させる。",
+         "reason": "高温で目的物質を限界まで溶かし込み、飽和溶液に近い状態を作るため。"
+       },
+       {
+         "step": 2,
+         "action": "保温漏斗を用いて熱いうちにろ過する。",
+         "reason": "ろ過の途中で液温が下がり、目的物質の結晶が析出してろ紙上に残ってしまい、収量が低下するのを防ぐため。"
+       },
+       {
+         "step": 3,
+         "action": "ろ液をゆっくりと冷却する。",
+         "reason": "急冷すると細かい結晶となり、結晶の隙間に不純物を巻き込みやすくなるため。"
+       },
+       {
+         "step": 4,
+         "action": "析出した結晶を常温でろ過して取り出す。",
+         "reason": "純粋な結晶と、不純物が溶けたままの溶液（ろ液）を分離するため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "溶解度曲線を与えられ、特定温度への冷却時に析出する結晶の質量を計算する問題",
+         "key_concept_ids": ["3_1_proc_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 167
+   },
+   {
+     "id": "3_1_law_001",
+     "type": "law",
+     "title": "ヘンリーの法則",
+     "prerequisite_ids": ["TBD:分圧"],
+     "definition": "気体の水への溶解量は、温度が変わらなければ、水に接している気体の圧力（分圧）に比例する。",
+     "explanation": "気体の圧力が高いほど、気体分子が水面にぶつかる回数が増えるため、水に溶け込む量（質量や物質量）が多くなります。ただし、溶けた気体の体積を「その時の圧力」で測ると、圧縮されるため見かけ上の体積は変わりません。",
+     "conditions": [
+       "温度が一定",
+       "溶解度があまり大きくない気体",
+       "水と反応したり電離したりしない気体",
+       "極端な高圧でないこと"
+     ],
+     "examples": [
+       {
+         "label": "炭酸飲料",
+         "substance_ids": ["TBD:二酸化炭素"],
+         "description": "高い圧力で二酸化炭素を溶かし込んでおり、栓を開けて圧力が下がると溶解度が減り、気泡となって逃げていく。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "アンモニアや塩化水素のように、水に非常によく溶けたり、水中で電離・反応したりする気体には適用できない。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "混合気体の分圧から、溶解する各気体の質量や標準状態での体積を計算する問題",
+         "key_concept_ids": ["3_1_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 168
+   },
+   {
+     "id": "3_2_law_001",
+     "type": "law",
+     "title": "沸点上昇とモル沸点上昇",
+     "prerequisite_ids": ["TBD:蒸気圧降下", "TBD:質量モル濃度"],
+     "definition": "非電解質の希薄水溶液の沸点上昇度Δtは、溶質の種類に無関係に、水溶液の質量モル濃度mに比例する（Δt = Kb m）。",
+     "explanation": "不揮発性のものが溶けていると水分子が蒸発しにくくなるため、沸騰させるにはより高い温度が必要になります。どれくらい温度が上がるかは、溶けている粒子の種類ではなく、粒子の「数（濃度）」だけで決まります。",
+     "conditions": ["希薄溶液", "不揮発性の溶質"],
+     "examples": [
+       {
+         "label": "水のモル沸点上昇",
+         "substance_ids": ["3_1_sub_002"],
+         "description": "水のモル沸点上昇Kbは0.515 K・kg/mol。",
+         "values": [
+           { "value": 0.515, "unit": "K・kg/mol", "condition": "水の場合" }
+         ]
+       }
+     ],
+     "counter_examples": [
+       "電解質の場合は、電離して粒子数が増えるため、電離後の全粒子の質量モル濃度を用いる必要がある。単なる物質量濃度で計算してはいけない。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "溶質の質量と溶媒の質量から水溶液の沸点を計算する問題",
+         "key_concept_ids": ["3_2_law_001"]
+       },
+       {
+         "pattern": "電解質水溶液の沸点上昇度から電離度を求める問題",
+         "key_concept_ids": ["3_2_law_001"]
+       }
+     ],
+     "cross_refs": ["3_2_law_002"],
+     "source_page": 171
+   },
+   {
+     "id": "3_3_def_002",
+     "type": "def",
+     "title": "凝析と塩析",
+     "prerequisite_ids": ["TBD:親水コロイド", "TBD:疎水コロイド"],
+     "definition": "疎水コロイドが少量の電解質で沈殿する現象を凝析、親水コロイドが多量の電解質で沈殿する現象を塩析という。",
+     "explanation": "疎水コロイドは粒子同士の電気的な反発力で分散していますが、反対の電荷を持つイオンを加えると反発力が消えてくっつき沈殿します（凝析）。一方、親水コロイドは水分子に覆われて安定していますが、大量のイオンを加えると水分子を奪われてしまい沈殿します（塩析）。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "水酸化鉄(III)コロイドの凝析",
+         "substance_ids": ["3_3_sub_001"],
+         "description": "正コロイドである水酸化鉄(III)にSO4^2-などを含む電解質を少量加えると凝析する。",
+         "values": []
+       },
+       {
+         "label": "豆腐の製造（塩析）",
+         "substance_ids": [],
+         "description": "豆乳（親水コロイド）ににがり（塩化マグネシウム）を加えると塩析が起こり、タンパク質が沈殿して豆腐ができる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "特定の疎水コロイドを凝析させるのに最も効果的な（価数の大きい）イオンを選ぶ問題",
+         "key_concept_ids": ["3_3_def_002"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 187
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "3_1_def_001",
+     "to_id": "3_1_def_003",
+     "relation_type": "is_prerequisite_of",
+     "note": "水和の概念が、親水基と疎水基の性質を理解するための基礎となる。"
+   },
+   {
+     "from_id": "TBD:蒸気圧降下",
+     "to_id": "3_2_law_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "蒸気圧降下が沸点上昇の根本的な原因となる。"
+   }
+ ]
+}

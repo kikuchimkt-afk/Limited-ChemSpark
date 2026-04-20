@@ -1,0 +1,2505 @@
+{
+  "metadata": {
+    "chapter": "5-4",
+    "chapter_title": "芳香族化合物",
+    "source_file": "json_data/5-4芳香族化合物.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    }
+  },
+  "questions": [
+    {
+      "id": "ch5_4_q001",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "definition",
+      "sub_category": "ベンゼンの構造",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ベンゼンの構造について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "六個の炭素原子が正六角形の平面構造を形成し、すべての原子が同一平面上にある。炭素間の結合距離はすべて等しく単結合と二重結合の中間の長さ。非常に安定な構造のため付加反応を起こしにくく置換反応が主。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ベンゼンの炭素間結合は単結合と二重結合が交互に存在する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "すべて等しい中間的な結合。ケクレ構造は簡略表記。"
+        },
+        {
+          "label": "3",
+          "text": "ベンゼンは立体的な構造を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "平面構造。"
+        },
+        {
+          "label": "4",
+          "text": "ベンゼンは付加反応を起こしやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "起こしにくい。置換反応が主。"
+        }
+      ],
+      "explanation": "ベンゼン環の安定性はパイ電子が環全体に均等に分布する（非局在化する）ためです。この安定性を崩さないよう、付加反応（環を壊す）ではなく置換反応（環を保つ）が優先されます。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_002",
+          "quote": "すべての原子が同一平面上。炭素間距離は単結合と二重結合の中間"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q002",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "property",
+      "sub_category": "ベンゼンの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ベンゼンの性質として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色で特有のにおいがある液体。沸点は八十度。水に溶けない。有機溶媒としてよく使われる。燃焼時はすすを多量に出す。石炭の乾留で得られるコールタールに含まれる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ベンゼンは水によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水に不溶。"
+        },
+        {
+          "label": "3",
+          "text": "ベンゼンは燃焼しても煤は出ない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "すすを多量に出す。"
+        },
+        {
+          "label": "4",
+          "text": "ベンゼンは石油の蒸留でのみ得られる。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "石炭の乾留でも得られる。"
+        }
+      ],
+      "explanation": "ベンゼンがすすを多く出して燃えるのは炭素の割合が高いためです。分子式はシーロクエイチロクで水素の割合がアルカンより少なく不完全燃焼しやすいのです。",
+      "evidence": [
+        {
+          "source_id": "4_1_sub_001",
+          "quote": "無色。特有のにおい。沸点80度。水に不溶。すすを多量に出す"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q003",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "definition",
+      "sub_category": "ベンゼンの置換反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ベンゼンの置換反応として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼンに濃硝酸と濃硫酸の混合物（混酸）を加えて加熱するとニトロベンゼンが生成する（ニトロ化）。ベンゼンに鉄触媒下で臭素を反応させるとブロモベンゼンが生成する（ハロゲン化）。ベンゼンに濃硫酸を加えて加熱するとベンゼンスルホン酸が生成する（スルホン化）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ベンゼンのニトロ化では希硝酸を使う。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "濃硝酸と濃硫酸の混酸。"
+        },
+        {
+          "label": "3",
+          "text": "ベンゼンの臭素化では触媒は不要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "鉄や臭化鉄触媒が必要。"
+        },
+        {
+          "label": "4",
+          "text": "ベンゼンの主な反応は付加反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "置換反応。"
+        }
+      ],
+      "explanation": "ベンゼンの三大置換反応はニトロ化・ハロゲン化・スルホン化です。いずれもベンゼン環の水素が他の原子団に置き換わる反応で、環の安定性が保たれます。",
+      "evidence": [
+        {
+          "source_id": "4_1_rxn_001",
+          "quote": "ニトロ化（混酸）、ハロゲン化（鉄触媒）、スルホン化（濃硫酸）"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q004",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "property",
+      "sub_category": "フェノールの性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "フェノールの性質として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色の結晶で特有のにおいがある。融点は四十一度。水にわずかに溶ける。弱酸性を示すが炭酸より弱い酸。皮膚や粘膜を強く侵す有毒物質。かつては消毒剤として使われた。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "フェノールは炭酸より強い酸である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炭酸より弱い。"
+        },
+        {
+          "label": "3",
+          "text": "フェノールは水によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "わずかに溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "フェノールは無毒で安全な化合物である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "有毒。"
+        }
+      ],
+      "explanation": "フェノールの酸性は炭酸より弱いことが非常に重要です。このため炭酸水素ナトリウム（重曹）水溶液を加えてもフェノールは塩にならず溶けません。カルボン酸は炭酸より強いので塩になります。この違いが分離法のカギです。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_001",
+          "quote": "無色。融点41度。弱酸性で炭酸より弱い。有毒"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q005",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "definition",
+      "sub_category": "クメン法",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "クメン法について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼンとプロペンからクメンを生成し、空気酸化してクメンヒドロペルオキシドにした後、希硫酸で分解してフェノールとアセトンを得る工業的製法。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "クメン法の副生成物はエタノールである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アセトン。"
+        },
+        {
+          "label": "3",
+          "text": "クメン法ではベンゼンとエチレンを出発物質とする。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "プロペン。"
+        },
+        {
+          "label": "4",
+          "text": "クメン法は実験室的な製法で工業的には使われない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "工業的製法。"
+        }
+      ],
+      "explanation": "クメン法は現代のフェノール製造の主流です。フェノールだけでなく有用なアセトンも同時に得られるため経済的に優れています。出発物質はベンゼンとプロペンであることを正確に覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "4_2_proc_001",
+          "quote": "ベンゼン＋プロペン→クメン→クメンヒドロペルオキシド→フェノール＋アセトン"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q006",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "property",
+      "sub_category": "サリチル酸の性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "サリチル酸について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色の針状結晶。融点は百五十九度。水にわずかに溶ける。一つの分子中にヒドロキシ基とカルボキシ基の両方を持つヒドロキシ酸。アセチルサリチル酸（解熱鎮痛剤）やサリチル酸メチル（消炎剤）の原料。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "サリチル酸はカルボキシ基のみを持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ヒドロキシ基も持つ。"
+        },
+        {
+          "label": "3",
+          "text": "サリチル酸は水によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "わずかに溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "サリチル酸は液体の化合物である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "固体（結晶）。"
+        }
+      ],
+      "explanation": "サリチル酸はヒドロキシ基に対する反応（アセチル化→アセチルサリチル酸はアスピリン）とカルボキシ基に対する反応（エステル化→サリチル酸メチル）の二つの反応ができる点が重要です。",
+      "evidence": [
+        {
+          "source_id": "4_3_sub_002",
+          "quote": "無色針状結晶。融点159度。ヒドロキシ基とカルボキシ基を持つ"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q007",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "property",
+      "sub_category": "アニリンの性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アニリンの性質として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色（酸化されると赤褐色に変色）の油状液体で特有の不快臭がある。弱塩基性を示す。水に溶けにくいが有機溶媒にはよく溶ける。有毒。ニトロベンゼンを還元して合成する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アニリンは弱酸性を示す。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "弱塩基性。"
+        },
+        {
+          "label": "3",
+          "text": "アニリンは水によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶けにくい。"
+        },
+        {
+          "label": "4",
+          "text": "アニリンは空気中で変色しない安定な化合物。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸化されて赤褐色に変色する。"
+        }
+      ],
+      "explanation": "アニリンのアミノ基は弱塩基性です。フェノールの弱酸性、酢酸の弱酸性、アニリンの弱塩基性をそれぞれ正確に区別することが大切です。アニリンが空気中で変色する性質は保管時の注意としても重要です。",
+      "evidence": [
+        {
+          "source_id": "4_4_sub_001",
+          "quote": "弱塩基性。水に溶けにくい。有毒。酸化されると赤褐色"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q008",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "definition",
+      "sub_category": "ジアゾ化",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ジアゾ化について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アニリンの塩酸塩を五度以下に冷却しながら亜硝酸ナトリウムを加えると塩化ベンゼンジアゾニウムが生成する反応。ジアゾニウム塩は不安定で温度が上がると分解してフェノールと窒素になる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ジアゾ化は常温で行う。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "五度以下に冷却が必要。"
+        },
+        {
+          "label": "3",
+          "text": "ジアゾニウム塩は非常に安定な化合物。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不安定。"
+        },
+        {
+          "label": "4",
+          "text": "ジアゾ化で使う試薬は硝酸ナトリウムである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "亜硝酸ナトリウム。"
+        }
+      ],
+      "explanation": "ジアゾ化の温度条件（五度以下）は頻出の出題ポイントです。ジアゾニウム塩が不安定なため加熱すると分解してフェノールと窒素ガスが発生します。この「ジアゾニウム塩の不安定さ」が低温の理由です。",
+      "evidence": [
+        {
+          "source_id": "4_4_rxn_002",
+          "quote": "5度以下に冷却。亜硝酸ナトリウム。不安定"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q009",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "definition",
+      "sub_category": "カップリング反応",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "カップリング反応（アゾカップリング）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩化ベンゼンジアゾニウムにナトリウムフェノキシドなどのフェノール類を反応させるとアゾ基（マイナスエヌ等エヌマイナス）で結合したアゾ化合物（アゾ染料）が生成する。パラヒドロキシアゾベンゼンは橙赤色の化合物。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "カップリング反応は高温で行う。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "ジアゾニウム塩が不安定なため低温で行う。"
+        },
+        {
+          "label": "3",
+          "text": "アゾ染料は無色の化合物。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "橙赤色など鮮やかな色。"
+        },
+        {
+          "label": "4",
+          "text": "カップリング反応でエーテルが生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アゾ化合物が生成する。"
+        }
+      ],
+      "explanation": "ジアゾ化→カップリングの一連の反応はアゾ染料の合成経路として非常に重要です。アゾ基の窒素二重結合による共役系が長いため可視光を吸収し、鮮やかな色を示します。",
+      "evidence": [
+        {
+          "source_id": "4_4_rxn_002",
+          "quote": "ジアゾニウム塩とフェノール類でアゾ化合物生成"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q010",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "definition",
+      "sub_category": "有機化合物の分離",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "有機化合物の分離の原理として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "有機化合物の酸性・塩基性の違いを利用し、塩にして水層に移行させることで分離する。炭酸水素ナトリウム水溶液を加えると炭酸より強い酸であるカルボン酸のみが塩になり水層に移動する。フェノールは炭酸より弱い酸なのでエーテル層に残る。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "炭酸水素ナトリウムでフェノールも塩になり水層に移動する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "フェノールは炭酸より弱いので塩にならない。"
+        },
+        {
+          "label": "3",
+          "text": "水酸化ナトリウムではフェノールは溶けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水酸化ナトリウムならフェノールも塩になり溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "アニリンは酸性物質なのでアルカリで分離する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アニリンは塩基性。塩酸で塩にして分離。"
+        }
+      ],
+      "explanation": "分離法の核心は「酸の強さの序列」です。塩酸・硫酸＞スルホン酸＞カルボン酸＞炭酸＞フェノール類。炭酸水素ナトリウムは「炭酸の塩」なので、炭酸より強い酸（カルボン酸）のみと反応します。",
+      "evidence": [
+        {
+          "source_id": "4_5_proc_001",
+          "quote": "炭酸水素ナトリウムでカルボン酸のみが塩になり水層へ。フェノールはエーテル層に残る"
+        }
+      ],
+      "related_concept_ids": [
+        "4_5_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q011",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "フェノールの酸性度",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "フェノールの酸性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェノールは弱酸性を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "フェノールは水酸化ナトリウムと反応して塩を生成する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "フェノールの酸性は炭酸より弱い。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "フェノールは炭酸水素ナトリウム水溶液と反応して塩になる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "フェノールは炭酸より弱い酸なので炭酸水素ナトリウムとは反応しない。"
+        }
+      ],
+      "explanation": "炭酸水素ナトリウムとの反応の有無はカルボン酸とフェノールを区別する最も重要なポイントです。カルボン酸は炭酸より強い→反応する。フェノールは炭酸より弱い→反応しない。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_001",
+          "quote": "弱酸性で炭酸より弱い"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q012",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "フェノールとアニリンの酸塩基",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "フェノールとアニリンの酸塩基性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェノールは弱酸性を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "アニリンは弱塩基性を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "フェノールはアルカリ（水酸化ナトリウム）と反応する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "フェノールは弱塩基性を示し、アニリンは弱酸性を示す。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。フェノールが弱酸性、アニリンが弱塩基性。"
+        }
+      ],
+      "explanation": "フェノールはヒドロキシ基をもち弱酸性。アニリンはアミノ基をもち弱塩基性。この入れ替えは超頻出です。官能基と酸塩基性の対応を正確に覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_001",
+          "quote": "弱酸性"
+        },
+        {
+          "source_id": "4_4_sub_001",
+          "quote": "弱塩基性"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_001",
+        "4_4_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q013",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "クメン法の副生成物",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "クメン法に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼンとプロペンを出発物質とする。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "中間体としてクメンヒドロペルオキシドが生成する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "最終的にフェノールが得られる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "副生成物はエタノールである。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アセトン。"
+        }
+      ],
+      "explanation": "クメン法の副生成物がアセトンであることは頻出です。「クメン法はフェノール＋アセトン」とセットで覚えましょう。エタノールは関係ありません。",
+      "evidence": [
+        {
+          "source_id": "4_2_proc_001",
+          "quote": "フェノールとアセトンを得る"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q014",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "ジアゾ化の温度条件",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ジアゾ化に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アニリンの塩酸塩に亜硝酸ナトリウムを加える。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "五度以下に冷却して行う。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "塩化ベンゼンジアゾニウムが生成する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ジアゾ化は加熱して行う方が反応が速く効率的。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "加熱すると分解する。五度以下で行う。"
+        }
+      ],
+      "explanation": "ジアゾニウム塩の不安定さを軽視する記述は誤りです。温度を上げると塩化ベンゼンジアゾニウムが加水分解してフェノールと窒素になってしまいます。",
+      "evidence": [
+        {
+          "source_id": "4_4_rxn_002",
+          "quote": "5度以下に冷却。温度が上がると分解"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q015",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "definition",
+      "sub_category": "フェノール類の検出",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "フェノール類の検出法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩化鉄三水溶液を加えると青紫色から赤紫色に呈色する。この反応はフェノール類に特有で、アルコールでは起こらない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "塩化鉄三での呈色はアルコールでも起こる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "フェノール類のみ。"
+        },
+        {
+          "label": "3",
+          "text": "塩化鉄三で黄色に変化する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "青紫〜赤紫色。"
+        },
+        {
+          "label": "4",
+          "text": "銀鏡反応でフェノールを検出する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "銀鏡反応はアルデヒド。"
+        }
+      ],
+      "explanation": "塩化鉄三によるフェノール類の呈色反応は非常に重要な検出法です。フェノールは青紫色、サリチル酸は赤紫色など物質によって色が異なります。",
+      "evidence": [
+        {
+          "source_id": "4_2_rxn_001",
+          "quote": "塩化鉄三水溶液で青紫〜赤紫色に呈色"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q016",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "サリチル酸の二つの反応",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "サリチル酸の反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒドロキシ基に無水酢酸を作用させるとアセチルサリチル酸（アスピリン、解熱鎮痛剤）が得られる。カルボキシ基にメタノールを反応させるとサリチル酸メチル（消炎剤）が得られる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "サリチル酸のカルボキシ基にアセチル化するとアスピリンになる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ヒドロキシ基のアセチル化でアスピリン。"
+        },
+        {
+          "label": "3",
+          "text": "サリチル酸のヒドロキシ基にメタノールを反応させるとサリチル酸メチルになる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "カルボキシ基にメタノール。"
+        },
+        {
+          "label": "4",
+          "text": "サリチル酸には官能基が一つしかないため反応は一種類のみ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二つの官能基を持ち二種類の反応ができる。"
+        }
+      ],
+      "explanation": "サリチル酸の反応先の区別は超重要です。「アセチル化（ヒドロキシ基）→アスピリン」「エステル化（カルボキシ基＋メタノール）→サリチル酸メチル」。反応する官能基を入れ替えるのが定番ひっかけです。",
+      "evidence": [
+        {
+          "source_id": "4_3_rxn_001",
+          "quote": "ヒドロキシ基のアセチル化→アスピリン"
+        },
+        {
+          "source_id": "4_3_rxn_002",
+          "quote": "カルボキシ基のエステル化→サリチル酸メチル"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_rxn_001",
+        "4_3_rxn_002"
+      ],
+      "mnemonic": "ヒ（ヒドロキシ基）→ア（アスピリン）、カ（カルボキシ基）→メ（サリチル酸メチル）"
+    },
+    {
+      "id": "ch5_4_q017",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "ニトロベンゼンとアニリンの関係",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ニトロベンゼンとアニリンの関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ニトロベンゼンをスズと塩酸で還元するとアニリンが得られる。ニトロ基がアミノ基に変換される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アニリンを酸化するとニトロベンゼンが得られる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "容易にはこの変換は起こらない。アニリンの酸化では赤褐色物質になる。"
+        },
+        {
+          "label": "3",
+          "text": "ベンゼンを直接還元するとアニリンが得られる。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "まずニトロ化してニトロベンゼンにする必要がある。"
+        },
+        {
+          "label": "4",
+          "text": "ニトロベンゼンの還元にはアルミニウムを使う。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "スズ（と塩酸）。"
+        }
+      ],
+      "explanation": "ベンゼン→（ニトロ化）→ニトロベンゼン→（還元）→アニリンという二段階の変換経路は重要です。還元にはスズと塩酸の組み合わせがよく使われます。",
+      "evidence": [
+        {
+          "source_id": "4_4_proc_001",
+          "quote": "ニトロベンゼンをスズと塩酸で還元→アニリン"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q018",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "分離法でのアニリンの抽出",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "有機化合物の分離において、アニリンを水層に抽出する方法として正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩酸を加えるとアニリン（弱塩基性）が塩酸と中和して塩になり水層に移動する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水酸化ナトリウムを加えるとアニリンが水層に移動する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アニリンは塩基性なので酸で塩にする。アルカリでは中和しない。"
+        },
+        {
+          "label": "3",
+          "text": "炭酸水素ナトリウムでアニリンを分離できる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "炭酸水素ナトリウムはカルボン酸の分離用。"
+        },
+        {
+          "label": "4",
+          "text": "アニリンは酸性物質なのでアルカリで塩にする。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩基性。酸で塩にする。"
+        }
+      ],
+      "explanation": "分離の試薬選びのルール：酸性物質にはアルカリ、塩基性物質には酸を加える。アニリン（塩基性）→塩酸で塩に。フェノール（弱酸性）→水酸化ナトリウムで塩に。カルボン酸（弱酸性だが炭酸より強い）→炭酸水素ナトリウムでも塩に。",
+      "evidence": [
+        {
+          "source_id": "4_5_proc_001",
+          "quote": "アニリンは塩酸で塩にして水層に抽出"
+        }
+      ],
+      "related_concept_ids": [
+        "4_5_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q019",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "ベンゼンの反応の種類",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "ベンゼンの反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼン環は非常に安定な構造。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ベンゼンの主な反応は置換反応。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ニトロ化、ハロゲン化、スルホン化は置換反応の例。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ベンゼンは付加反応を起こしやすく置換反応は起こさない。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。置換反応が主で付加反応は起こしにくい。"
+        }
+      ],
+      "explanation": "ベンゼンの安定性のため付加反応ではなく置換反応が主であることは基本事項です。ただし特殊条件下（高温高圧水素＋触媒）では付加反応も可能です（シクロヘキサンの合成）。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_002",
+          "quote": "付加反応を簡単には起こさない。安定"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q020",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "property",
+      "sub_category": "トルエンの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "トルエンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼンの水素一つをメチル基で置換した化合物。無色の液体で水に不溶。有機溶媒として広く使われる。酸化するとベンズアルデヒドを経て安息香酸になる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "トルエンは水によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水に不溶。"
+        },
+        {
+          "label": "3",
+          "text": "トルエンを酸化すると酢酸が得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "安息香酸。"
+        },
+        {
+          "label": "4",
+          "text": "トルエンはベンゼンにエチル基が結合した化合物。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "メチル基。エチル基はエチルベンゼン。"
+        }
+      ],
+      "explanation": "トルエンの側鎖メチル基が酸化されて安息香酸（カルボン酸）になる反応は重要です。ベンゼン環自体は安定で変化しません。",
+      "evidence": [
+        {
+          "source_id": "4_1_sub_001",
+          "quote": "トルエンはベンゼンのメチル置換体"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q021",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "アスピリンとサリチル酸メチル",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "サリチル酸から得られる医薬品に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アセチルサリチル酸（アスピリン）は解熱鎮痛剤。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "サリチル酸メチルは消炎剤として外用される。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アスピリンはサリチル酸のヒドロキシ基をアセチル化して得る。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "アスピリンはサリチル酸のカルボキシ基をアセチル化して、サリチル酸メチルはヒドロキシ基をメタノールでエステル化して得る。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "官能基が逆。アスピリン＝ヒドロキシ基のアセチル化。サリチル酸メチル＝カルボキシ基のエステル化。"
+        }
+      ],
+      "explanation": "サリチル酸の二つの反応先の入れ替えは最頻出ひっかけです。「ヒ→ア、カ→メ」（ヒドロキシ基→アスピリン、カルボキシ基→サリチル酸メチル）の語呂で覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "4_3_rxn_001",
+          "quote": "ヒドロキシ基のアセチル化→アスピリン"
+        },
+        {
+          "source_id": "4_3_rxn_002",
+          "quote": "カルボキシ基のエステル化→サリチル酸メチル"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_rxn_001",
+        "4_3_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q022",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "酸の強さの序列",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "酸の強さの序列として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "強酸（塩酸・硫酸）＞スルホン酸＞カルボン酸＞炭酸＞フェノール類の順。この序列を利用して有機化合物の分離を行う。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "フェノール＞炭酸＞カルボン酸の順。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "カルボン酸＞炭酸＞フェノール。"
+        },
+        {
+          "label": "3",
+          "text": "カルボン酸は炭酸より弱い酸。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炭酸より強い。"
+        },
+        {
+          "label": "4",
+          "text": "フェノールは炭酸より強い酸。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炭酸より弱い。"
+        }
+      ],
+      "explanation": "酸の強さの序列は分離法で最も重要な知識です。特に「カルボン酸＞炭酸＞フェノール」の関係は炭酸水素ナトリウムでカルボン酸だけを分離できる根拠です。",
+      "evidence": [
+        {
+          "source_id": "4_5_proc_001",
+          "quote": "強酸＞スルホン酸＞カルボン酸＞炭酸＞フェノール類"
+        }
+      ],
+      "related_concept_ids": [
+        "4_5_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q023",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "分離法の試薬選び",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "有機化合物の分離に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カルボン酸は炭酸水素ナトリウムで分離可。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "フェノールは水酸化ナトリウムで分離可。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アニリンは塩酸で分離可。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "フェノールは炭酸水素ナトリウムで分離可。アニリンは水酸化ナトリウムで分離可。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "両方誤り。フェノールは炭酸水素ナトリウムでは分離不可。アニリンは塩基性なので水酸化ナトリウムでは分離不可、塩酸が必要。"
+        }
+      ],
+      "explanation": "分離試薬の入れ替えは最難関問題です。ルール：酸性物質→塩基で塩に、塩基性物質→酸で塩に。フェノール（弱酸）→水酸化ナトリウムで塩に。アニリン（弱塩基）→塩酸で塩に。",
+      "evidence": [
+        {
+          "source_id": "4_5_proc_001",
+          "quote": "の酸性・塩基性の違いを利用し分離する"
+        }
+      ],
+      "related_concept_ids": [
+        "4_5_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q024",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "property",
+      "sub_category": "ニトロベンゼンの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ニトロベンゼンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "淡黄色の油状液体で特有のにおい（アーモンド臭）がある。水に溶けにくい。有毒。ベンゼンのニトロ化（混酸との反応）で得られる。スズと塩酸で還元するとアニリンが生成する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ニトロベンゼンは無色の結晶である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "淡黄色の油状液体。"
+        },
+        {
+          "label": "3",
+          "text": "ニトロベンゼンは水によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶けにくい。"
+        },
+        {
+          "label": "4",
+          "text": "ニトロベンゼンはアニリンの酸化で得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ベンゼンのニトロ化で得る。アニリンはニトロベンゼンの還元で得る。"
+        }
+      ],
+      "explanation": "ニトロベンゼンの合成経路（ベンゼン→ニトロベンゼン→アニリン）の方向を正確に覚えることが大切です。ニトロ化が先、還元が後です。",
+      "evidence": [
+        {
+          "source_id": "4_1_rxn_001",
+          "quote": "ベンゼンのニトロ化でニトロベンゼン"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q025",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "definition",
+      "sub_category": "芳香族の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "芳香族化合物の定義として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼン環を持つ化合物の総称。ベンゼン環は六員環で特に安定な環状構造。芳香族炭化水素・フェノール類・芳香族カルボン酸・芳香族アミンなどに分類される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "芳香族化合物は必ず芳香（よい匂い）を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "名前は「芳香」だが不快臭を持つものも多い。"
+        },
+        {
+          "label": "3",
+          "text": "芳香族化合物はすべて液体である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "固体（ナフタレン、サリチル酸など）もある。"
+        },
+        {
+          "label": "4",
+          "text": "芳香族化合物は鎖式化合物の一種である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "環式化合物。"
+        }
+      ],
+      "explanation": "「芳香族」という名前は、かつて発見された化合物に芳香があったことに由来しますが、現在は構造（ベンゼン環の存在）で定義されます。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_001",
+          "quote": "ベンゼン環を持つ化合物"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q026",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "ベンゼンスルホン酸",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ベンゼンのスルホン化について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼンに濃硫酸を加えて加熱するとベンゼンスルホン酸が生成する。スルホ基が導入される置換反応。ベンゼンスルホン酸は水に溶けやすい強酸性の化合物。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "スルホン化には希硫酸を使う。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "濃硫酸。"
+        },
+        {
+          "label": "3",
+          "text": "ベンゼンスルホン酸は弱酸性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "強酸性。"
+        },
+        {
+          "label": "4",
+          "text": "スルホン化は付加反応である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "置換反応。"
+        }
+      ],
+      "explanation": "ベンゼンスルホン酸はベンゼン誘導体の中では珍しく水に溶けやすい化合物です。これはスルホ基（マイナスエスオースリーエイチ）がイオン化しやすいためです。",
+      "evidence": [
+        {
+          "source_id": "4_1_rxn_001",
+          "quote": "濃硫酸で加熱→ベンゼンスルホン酸（スルホン化）"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q027",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "フェノールとアルコールの違い",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "フェノールとエタノールの違いとして、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "どちらもヒドロキシ基を持つが、フェノールはベンゼン環に直接結合しているため弱酸性を示し塩化鉄三で呈色する。エタノールは酸性を示さず塩化鉄三で呈色しない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "エタノールも弱酸性を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "エタノールはほぼ中性。"
+        },
+        {
+          "label": "3",
+          "text": "エタノールも塩化鉄三で呈色する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "フェノール類のみ。"
+        },
+        {
+          "label": "4",
+          "text": "フェノールは水酸化ナトリウムと反応しないがエタノールは反応する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。フェノールは弱酸性なので水酸化ナトリウムと中和する。"
+        }
+      ],
+      "explanation": "フェノールとアルコールの違いは「ヒドロキシ基がベンゼン環に直接結合しているかどうか」です。ベンゼン環の影響でフェノールのヒドロキシ基はより酸性的になります。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_001",
+          "quote": "弱酸性。塩化鉄三で呈色"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q028",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "property",
+      "sub_category": "安息香酸の性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "安息香酸について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼン環にカルボキシ基が結合した芳香族カルボン酸。白色結晶で水にわずかに溶ける。弱酸性を示し炭酸より強い酸。食品の防腐剤として利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "安息香酸は炭酸より弱い酸。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炭酸より強い。"
+        },
+        {
+          "label": "3",
+          "text": "安息香酸は液体である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "白色結晶。"
+        },
+        {
+          "label": "4",
+          "text": "安息香酸は炭酸水素ナトリウムとは反応しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炭酸より強いので反応する。"
+        }
+      ],
+      "explanation": "安息香酸はカルボン酸なので炭酸より強い酸です。したがって炭酸水素ナトリウム（重曹）と反応して塩になり水に溶けます。これが分離法で重要です。",
+      "evidence": [
+        {
+          "source_id": "4_3_sub_001",
+          "quote": "芳香族カルボン酸。弱酸性だが炭酸より強い"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q029",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "アニリンの合成経路",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "アニリンの合成に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼンを濃硝酸と濃硫酸の混酸でニトロ化してニトロベンゼンを得る。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ニトロベンゼンをスズと塩酸で還元するとアニリンが得られる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アニリンはアミノ基を持つ弱塩基性物質。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ベンゼンに直接アミノ基を導入してアニリンを合成する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "直接導入はできない。ニトロ化→還元の二段階が必要。"
+        }
+      ],
+      "explanation": "ベンゼンにアミノ基を直接導入することはできません。ニトロ化（置換反応）→還元の二段階経路が必要です。",
+      "evidence": [
+        {
+          "source_id": "4_4_proc_001",
+          "quote": "ベンゼン→ニトロベンゼン→アニリン"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q030",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "comprehensive",
+      "sub_category": "分離法の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "芳香族化合物（安息香酸・フェノール・アニリン・ニトロベンゼン）の分離として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "まず塩酸を加えてアニリン（塩基性）を塩にして水層に抽出。次に炭酸水素ナトリウム水溶液で安息香酸（カルボン酸、炭酸より強い酸）を水層に抽出。さらに水酸化ナトリウム水溶液でフェノール（炭酸より弱い酸）を水層に抽出。エーテル層にニトロベンゼン（中性）が残る。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "まず炭酸水素ナトリウムでフェノールを抽出する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "フェノールは炭酸より弱いので炭酸水素ナトリウムでは抽出できない。"
+        },
+        {
+          "label": "3",
+          "text": "水酸化ナトリウムでアニリンを抽出する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アニリンは塩基性なので酸（塩酸）で抽出。"
+        },
+        {
+          "label": "4",
+          "text": "すべての化合物が最初から水に溶けるため分離は不要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "有機化合物は水に溶けにくいものが多い。"
+        }
+      ],
+      "explanation": "分離法のフローチャートは芳香族化合物の章で最も重要な総合テーマです。塩基性物質→酸で、強い酸性物質→弱塩基で、弱い酸性物質→強塩基でという段階的な分離を行います。",
+      "evidence": [
+        {
+          "source_id": "4_5_proc_001",
+          "quote": "酸性・塩基性の違いを利用して段階的に分離"
+        }
+      ],
+      "related_concept_ids": [
+        "4_5_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q031",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "property",
+      "sub_category": "ナフタレンの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ナフタレンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼン環が二つ縮合した構造を持つ白色結晶。昇華しやすく独特のにおいがある。かつては防虫剤として使われた。コールタールに含まれる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ナフタレンは液体の化合物。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "白色結晶（固体）。"
+        },
+        {
+          "label": "3",
+          "text": "ナフタレンは昇華しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "昇華しやすい。"
+        },
+        {
+          "label": "4",
+          "text": "ナフタレンはベンゼン環を一つだけ持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二つ縮合している。"
+        }
+      ],
+      "explanation": "ナフタレンの昇華性は有名です。防虫剤として衣類と一緒に入れると固体から直接気体になり（昇華）、防虫効果を発揮します。",
+      "evidence": [
+        {
+          "source_id": "4_1_sub_001",
+          "quote": "ナフタレン。ベンゼン環二つ。昇華しやすい"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q032",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "ニトロ化の試薬",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ベンゼンのニトロ化に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "濃硝酸と濃硫酸の混合物（混酸）を使用する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ベンゼンの水素がニトロ基に置き換わる置換反応。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "生成物はニトロベンゼン。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "希硝酸のみでニトロ化は完了する。濃硫酸は不要。",
+          "is_correct": true,
+          "trap_type": "condition_change",
+          "trap_detail": "濃硝酸と濃硫酸の混酸が必要。硫酸は脱水剤として作用。"
+        }
+      ],
+      "explanation": "ニトロ化での濃硫酸の役割は、硝酸からニトロニウムイオンを生成させる触媒兼脱水剤です。希硝酸だけでは反応は起こりません。",
+      "evidence": [
+        {
+          "source_id": "4_1_rxn_001",
+          "quote": "濃硝酸と濃硫酸の混酸"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q033",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "フェノールの塩との反応",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ナトリウムフェノキシド水溶液に二酸化炭素を吹き込んだときの反応として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェノール（弱酸）が遊離し、炭酸ナトリウムが生成する。フェノールは炭酸より弱い酸なので、炭酸（強い方の酸）によってフェノール（弱い方の酸）が塩から追い出される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "二酸化炭素とは反応しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応する（弱酸の遊離）。"
+        },
+        {
+          "label": "3",
+          "text": "炭酸ナトリウムが分解する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "炭酸ナトリウムが生成する。"
+        },
+        {
+          "label": "4",
+          "text": "ナトリウムフェノキシドがさらに安定な塩になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "フェノールが遊離して溶液が濁る。"
+        }
+      ],
+      "explanation": "弱酸の遊離の反応は分離法の基本原理です。「強い酸の塩＋弱い酸→弱い酸の塩＋強い酸の遊離」ではなく「弱い酸の塩＋強い酸→強い酸の塩＋弱い酸の遊離」です。炭酸＞フェノールなので炭酸がフェノールを追い出します。",
+      "evidence": [
+        {
+          "source_id": "4_5_proc_001",
+          "quote": "弱酸の遊離を活用した分離"
+        }
+      ],
+      "related_concept_ids": [
+        "4_5_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q034",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "property",
+      "sub_category": "アゾ染料の色",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アゾ染料について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アゾ基を持つ化合物で鮮やかな色を示す染料。パラヒドロキシアゾベンゼンは橙赤色。メチルオレンジやコンゴーレッドもアゾ染料の例。繊維の染色に利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アゾ染料は無色透明。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "鮮やかな色。"
+        },
+        {
+          "label": "3",
+          "text": "アゾ染料にはアゾ基が含まれない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アゾ基が必須。"
+        },
+        {
+          "label": "4",
+          "text": "アゾ染料はエステル化で合成する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "ジアゾ化とカップリングで合成。"
+        }
+      ],
+      "explanation": "アゾ染料が色を持つのはアゾ基の窒素二重結合が分子全体の共役系を拡張し、可視光を吸収するためです。共役系が長いほど吸収波長が長くなり（赤方偏移）鮮やかな色になります。",
+      "evidence": [
+        {
+          "source_id": "4_4_rxn_002",
+          "quote": "アゾ化合物。橙赤色"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q035",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "クメン法の出発物質",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "クメン法に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼンとプロペンが出発物質。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "クメンが中間体となる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "フェノールとアセトンが最終生成物。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ベンゼンとエチレンが出発物質であり最終生成物はフェノールとエタノール。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "二か所誤り。プロペン（エチレンではない）。アセトン（エタノールではない）。"
+        }
+      ],
+      "explanation": "クメン法の出発物質と生成物の正確な覚え方が求められます。プロペン（炭素三つ）＋ベンゼン→フェノール＋アセトン（炭素三つ）。プロペンの炭素三つがアセトンの炭素三つに対応します。",
+      "evidence": [
+        {
+          "source_id": "4_2_proc_001",
+          "quote": "ベンゼン＋プロペン→フェノール＋アセトン"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q036",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "property",
+      "sub_category": "フェノールの融点",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "フェノールに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェノールは無色の結晶。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "融点は四十一度。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "水にわずかに溶ける。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "フェノールは常温で気体。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "融点四十一度なので常温では結晶（固体）。夏場は液体になることもある。"
+        }
+      ],
+      "explanation": "フェノールの融点四十一度は、室温が二十〜二十五度ではいつも固体であること、真夏には液体になる可能性があることを示しています。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_001",
+          "quote": "融点41度。無色の結晶"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q037",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "ハロゲン化の触媒",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ベンゼンのハロゲン化として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "鉄や臭化鉄の触媒存在下でベンゼンに臭素を作用させるとブロモベンゼンと臭化水素が生成する。ベンゼン環の水素が臭素に置き換わる置換反応。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "触媒なしで臭素水を加えるだけでベンゼンのハロゲン化が起こる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "触媒が必要。触媒なしでは反応しない。"
+        },
+        {
+          "label": "3",
+          "text": "この反応は付加反応である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "置換反応。"
+        },
+        {
+          "label": "4",
+          "text": "白金触媒を使う。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "鉄または臭化鉄。白金はアルケンの水素化など。"
+        }
+      ],
+      "explanation": "ベンゼンの臭素化では触媒が必要ですが、フェノールはベンゼン環が活性化されているため触媒なしで臭素水と反応して白色沈殿（トリブロモフェノール）が生じます。この違いも重要です。",
+      "evidence": [
+        {
+          "source_id": "4_1_rxn_001",
+          "quote": "鉄触媒下で臭素→ブロモベンゼン（ハロゲン化）"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q038",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "ジアゾニウム塩の分解",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "塩化ベンゼンジアゾニウムを加熱した場合の生成物として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェノールと窒素ガスが生成する。ジアゾニウム塩が加水分解されるため。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アニリンが再生される。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "アニリンには戻らない。フェノールになる。"
+        },
+        {
+          "label": "3",
+          "text": "ベンゼンと塩化水素が生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "フェノールと窒素。"
+        },
+        {
+          "label": "4",
+          "text": "加熱しても安定で変化しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不安定で分解する。"
+        }
+      ],
+      "explanation": "ジアゾニウム塩の加水分解：塩化ベンゼンジアゾニウム＋水→フェノール＋窒素ガス＋塩化水素。この分解を防ぐために五度以下に冷却するのです。",
+      "evidence": [
+        {
+          "source_id": "4_4_rxn_002",
+          "quote": "温度が上がると加水分解してフェノールと窒素になる"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q039",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "property",
+      "sub_category": "フェノールの応用",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "フェノールの工業的用途として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェノール樹脂（ベークライト）の原料。医薬品（サリチル酸誘導体）の原料。染料や合成繊維の原料。かつては消毒剤として使われた。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "フェノールは食品添加物として使われる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "有毒なので使えない。"
+        },
+        {
+          "label": "3",
+          "text": "フェノールは現在も主要な消毒剤として使われている。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "かつて使われたが現在はより安全な消毒剤に置き換わった。"
+        },
+        {
+          "label": "4",
+          "text": "フェノールは工業的に全く利用されない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非常に多く利用される。"
+        }
+      ],
+      "explanation": "フェノール樹脂はベークライトとも呼ばれ、世界初の合成樹脂として有名です。フェノールとホルムアルデヒドの縮合重合で作られます。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_001",
+          "quote": "かつては消毒剤。フェノール樹脂の原料"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q040",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "フェノールの臭素化",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "フェノールに臭素水を加えたときの反応として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "触媒なしで反応が起こり、白色沈殿のトリブロモフェノールが生成する。ベンゼンとは異なり触媒が不要なのはヒドロキシ基の影響でベンゼン環が活性化されているため。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "フェノールと臭素水は反応しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応する。"
+        },
+        {
+          "label": "3",
+          "text": "フェノールの臭素化には鉄触媒が必要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "触媒不要。"
+        },
+        {
+          "label": "4",
+          "text": "モノブロモフェノールのみが生成する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "トリブロモフェノール（三か所置換）が主。"
+        }
+      ],
+      "explanation": "フェノールの臭素化は活性化されたベンゼン環の性質を示す重要な例です。オルトとパラの三位置すべてに臭素が入り白色沈殿が生じます。これはフェノール類の検出にも使えます。",
+      "evidence": [
+        {
+          "source_id": "4_2_rxn_001",
+          "quote": "臭素水でトリブロモフェノールの白色沈殿"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q041",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "亜硝酸ナトリウムと硝酸ナトリウム",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ジアゾ化に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アニリンの塩酸塩を五度以下で冷却する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "亜硝酸ナトリウムを加える。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "塩化ベンゼンジアゾニウムが生成する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "硝酸ナトリウムを使用する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "亜硝酸ナトリウム。硝酸ナトリウムではない。"
+        }
+      ],
+      "explanation": "亜硝酸ナトリウム（エヌエーエヌオーツー）と硝酸ナトリウム（エヌエーエヌオースリー）は名前がよく似ているため混同しやすいです。ジアゾ化には亜硝酸（エヌオーツー由来）が必要です。",
+      "evidence": [
+        {
+          "source_id": "4_4_rxn_002",
+          "quote": "亜硝酸ナトリウムを作用させる"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q042",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "comprehensive",
+      "sub_category": "ベンゼンの合成経路",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ベンゼンからの合成経路の全体として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼン→（ニトロ化）→ニトロベンゼン→（還元）→アニリン→（ジアゾ化）→塩化ベンゼンジアゾニウム→（カップリング）→アゾ染料。別の経路では、ベンゼン→（スルホン化）→ベンゼンスルホン酸→（アルカリ融解）→フェノール。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ベンゼンから直接アニリンを合成できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ニトロ化→還元の二段階。"
+        },
+        {
+          "label": "3",
+          "text": "ベンゼンのスルホン化で直接フェノールが得られる。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "アルカリ融解がさらに必要。"
+        },
+        {
+          "label": "4",
+          "text": "アニリンから直接アゾ染料が得られる。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "ジアゾ化→カップリングの二段階。"
+        }
+      ],
+      "explanation": "芳香族化合物の合成経路全体を正確に理解することが重要です。どの反応も直接一段階ではなく複数段階を経ることに注意しましょう。",
+      "evidence": [
+        {
+          "source_id": "4_1_rxn_001",
+          "quote": "ニトロ化、スルホン化"
+        },
+        {
+          "source_id": "4_4_rxn_002",
+          "quote": "ジアゾ化、カップリング"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_rxn_001",
+        "4_4_proc_001",
+        "4_4_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q043",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "サリチル酸の塩化鉄三呈色",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "サリチル酸の塩化鉄三による呈色として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "サリチル酸はフェノール性ヒドロキシ基を持つため塩化鉄三水溶液で赤紫色に呈色する。フェノールは青紫色を示す。化合物によって呈色の色調が異なる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "サリチル酸は塩化鉄三で呈色しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "呈色する。"
+        },
+        {
+          "label": "3",
+          "text": "フェノールもサリチル酸も同じ色に呈色する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "フェノールは青紫、サリチル酸は赤紫。"
+        },
+        {
+          "label": "4",
+          "text": "アセチルサリチル酸も同様に呈色する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アセチルサリチル酸はヒドロキシ基がアセチル化されているので呈色しない。"
+        }
+      ],
+      "explanation": "塩化鉄三の呈色は「フェノール性ヒドロキシ基」が自由であること（アセチル化されていないこと）が条件です。アスピリン（アセチルサリチル酸）ではヒドロキシ基がブロックされているため呈色しません。",
+      "evidence": [
+        {
+          "source_id": "4_3_sub_002",
+          "quote": "サリチル酸はヒドロキシ基を持つ"
+        },
+        {
+          "source_id": "4_2_rxn_001",
+          "quote": "塩化鉄三で呈色するのはフェノール性ヒドロキシ基"
+        }
+      ],
+      "related_concept_ids": [
+        "4_3_sub_002",
+        "4_2_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q044",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "property",
+      "sub_category": "アニリンの塩酸塩",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アニリンの塩酸塩について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アニリン（弱塩基性）に塩酸を加えると中和してアニリン塩酸塩が生成し水に溶ける。これに水酸化ナトリウムを加えるとアニリンが遊離する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アニリン塩酸塩は水に溶けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "塩なので水に溶ける。"
+        },
+        {
+          "label": "3",
+          "text": "アニリン塩酸塩に酸を加えるとアニリンが遊離する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩基（水酸化ナトリウム）を加える。"
+        },
+        {
+          "label": "4",
+          "text": "アニリンは酸性物質である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩基性。"
+        }
+      ],
+      "explanation": "弱塩基の塩に強塩基（水酸化ナトリウム）を加えると弱塩基が遊離します。「弱塩基の遊離」の反応です。分離法で水層からアニリンを回収する際に使います。",
+      "evidence": [
+        {
+          "source_id": "4_4_sub_001",
+          "quote": "弱塩基性。塩酸で塩に"
+        }
+      ],
+      "related_concept_ids": [
+        "4_4_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q045",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "乾留とは",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "石炭の乾留について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "石炭を空気を遮断して強熱する操作。コークス、コールタール、石炭ガス（水素、メタンなど）が得られる。コールタールを分留するとベンゼン、トルエン、ナフタレンなどが得られる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "乾留は空気中で石炭を燃やすこと。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "空気を遮断する。燃やすと燃焼。"
+        },
+        {
+          "label": "3",
+          "text": "乾留で得られるのはコークスのみ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "コールタールや石炭ガスも得られる。"
+        },
+        {
+          "label": "4",
+          "text": "コールタールからアルカンが得られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "芳香族化合物（ベンゼンなど）が得られる。"
+        }
+      ],
+      "explanation": "乾留は「蒸し焼き」のことです。空気を遮断することで燃焼ではなく熱分解が起こり、さまざまな有用物質が得られます。",
+      "evidence": [
+        {
+          "source_id": "4_1_sub_001",
+          "quote": "石炭の乾留で生成するコールタールを分留"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q046",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "confusion",
+      "sub_category": "配向性",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ベンゼン環の配向性について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒドロキシ基やアミノ基などの電子供与基が結合していると、ベンゼン環のオルト位とパラ位に次の置換基が入りやすくなる（オルトパラ配向性）。ニトロ基やカルボキシ基などの電子吸引基はメタ位に配向する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ヒドロキシ基はメタ配向性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "オルトパラ配向性。"
+        },
+        {
+          "label": "3",
+          "text": "ニトロ基はオルトパラ配向性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "メタ配向性。"
+        },
+        {
+          "label": "4",
+          "text": "すべての置換基はオルトパラ配向性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電子吸引基はメタ配向性。"
+        }
+      ],
+      "explanation": "配向性は有機合成の設計で重要です。フェノールがトリブロモフェノールを生じるのはヒドロキシ基のオルトパラ配向性で三か所（オルト二つ＋パラ一つ）に臭素が入るためです。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_002",
+          "quote": "ベンゼン環の置換反応の配向性"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q047",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "comprehensive",
+      "sub_category": "芳香族の検出反応まとめ",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "芳香族化合物の検出反応のまとめとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フェノール類→塩化鉄三で青紫〜赤紫呈色。アニリン→さらし粉で赤紫色。フェノール→臭素水で白色沈殿。いずれも特定の官能基を検出する反応。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アニリンは銀鏡反応で検出する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "銀鏡反応はアルデヒド。アニリンはさらし粉。"
+        },
+        {
+          "label": "3",
+          "text": "塩化鉄三の呈色反応はすべてのアルコールで起こる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "フェノール類のみ。"
+        },
+        {
+          "label": "4",
+          "text": "フェノールに臭素水を加えても変化しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "白色沈殿が生じる。"
+        }
+      ],
+      "explanation": "芳香族化合物の検出反応をまとめて覚えることは重要です。官能基ごとに対応する試薬と変化を正確に整理しましょう。",
+      "evidence": [
+        {
+          "source_id": "4_2_rxn_001",
+          "quote": "塩化鉄三で呈色。臭素水で白色沈殿"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q048",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "comprehensive",
+      "sub_category": "章の総合その一",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "芳香族化合物に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼンは平面正六角形で安定。主な反応は置換反応。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "フェノールは弱酸性で炭酸より弱い。アニリンは弱塩基性。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "クメン法ではフェノールとアセトンが得られる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "フェノールは炭酸より強い酸で炭酸水素ナトリウムに溶ける。アニリンは弱酸性で水酸化ナトリウムで分離する。ジアゾ化は加熱して行う。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所誤り。フェノールは炭酸より弱い。アニリンは弱塩基性で塩酸で分離。ジアゾ化は五度以下。"
+        }
+      ],
+      "explanation": "章全体の重要ポイントを複合した問題です。フェノールの酸性度、アニリンの酸塩基性、ジアゾ化の温度の三つが同時に入れ替えられています。",
+      "evidence": [
+        {
+          "source_id": "4_2_sub_001",
+          "quote": "炭酸より弱い"
+        },
+        {
+          "source_id": "4_4_sub_001",
+          "quote": "弱塩基性"
+        },
+        {
+          "source_id": "4_4_rxn_002",
+          "quote": "5度以下"
+        }
+      ],
+      "related_concept_ids": [
+        "4_2_sub_001",
+        "4_4_sub_001",
+        "4_4_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q049",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "comprehensive",
+      "sub_category": "合成経路の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "ベンゼンからアゾ染料に至る合成経路として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼン→（混酸でニトロ化）→ニトロベンゼン→（スズ＋塩酸で還元）→アニリン→（五度以下で亜硝酸ナトリウムによるジアゾ化）→塩化ベンゼンジアゾニウム→（ナトリウムフェノキシドとカップリング）→パラヒドロキシアゾベンゼン（橙赤色のアゾ染料）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ベンゼン→アニリン→ニトロベンゼンの順。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "逆。ニトロベンゼンが先。"
+        },
+        {
+          "label": "3",
+          "text": "ジアゾ化には硝酸ナトリウムを使い常温で行う。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "亜硝酸ナトリウム。五度以下。"
+        },
+        {
+          "label": "4",
+          "text": "アゾ染料はエステル化で合成する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "ジアゾ化＋カップリング。"
+        }
+      ],
+      "explanation": "ベンゼンからアゾ染料に至る四段階の合成経路（ニトロ化→還元→ジアゾ化→カップリング）は芳香族化合物の最も重要な合成フローです。",
+      "evidence": [
+        {
+          "source_id": "4_1_rxn_001",
+          "quote": "ニトロ化"
+        },
+        {
+          "source_id": "4_4_proc_001",
+          "quote": "還元→アニリン"
+        },
+        {
+          "source_id": "4_4_rxn_002",
+          "quote": "ジアゾ化→カップリング→アゾ染料"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_rxn_001",
+        "4_4_proc_001",
+        "4_4_rxn_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_4_q050",
+      "chapter": "5-4",
+      "chapter_title": "芳香族化合物",
+      "category": "comprehensive",
+      "sub_category": "最終総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "芳香族化合物の全範囲に関する最終総合として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ベンゼンは平面正六角形で安定、置換反応が主。フェノールは弱酸性で炭酸より弱く塩化鉄三で呈色。アニリンは弱塩基性。クメン法でフェノール＋アセトン。サリチル酸のヒドロキシ基アセチル化→アスピリン、カルボキシ基エステル化→サリチル酸メチル。ジアゾ化は五度以下で亜硝酸ナトリウム。カルボン酸は炭酸水素ナトリウムで分離可、フェノールは不可。アニリンは塩酸で分離。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "フェノールは炭酸より強い酸。アニリンは弱酸性。ジアゾ化は加熱。クメン法の副生成物はエタノール。サリチル酸のカルボキシ基アセチル化→アスピリン。ベンゼンは付加反応が主。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "炭酸水素ナトリウムでフェノールもカルボン酸も同時に分離できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "カルボン酸のみ。"
+        },
+        {
+          "label": "4",
+          "text": "ベンゼンから直接アニリンを合成でき、直接アゾ染料にできる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多段階が必要。"
+        }
+      ],
+      "explanation": "芳香族化合物の全範囲を一問に凝縮しました。ベンゼンの構造・反応、フェノールの酸性度、アニリンの塩基性、クメン法、サリチル酸の二つの反応、ジアゾ化、分離法のすべてを正確に把握しましょう。",
+      "evidence": [
+        {
+          "source_id": "4_1_def_002",
+          "quote": "平面正六角形"
+        },
+        {
+          "source_id": "4_2_sub_001",
+          "quote": "弱酸性で炭酸より弱い"
+        },
+        {
+          "source_id": "4_4_sub_001",
+          "quote": "弱塩基性"
+        },
+        {
+          "source_id": "4_2_proc_001",
+          "quote": "クメン法→フェノール＋アセトン"
+        },
+        {
+          "source_id": "4_3_rxn_001",
+          "quote": "ヒドロキシ基アセチル化→アスピリン"
+        },
+        {
+          "source_id": "4_4_rxn_002",
+          "quote": "5度以下でジアゾ化"
+        },
+        {
+          "source_id": "4_5_proc_001",
+          "quote": "分離法"
+        }
+      ],
+      "related_concept_ids": [
+        "4_1_def_002",
+        "4_1_rxn_001",
+        "4_2_sub_001",
+        "4_2_proc_001",
+        "4_3_sub_002",
+        "4_3_rxn_001",
+        "4_3_rxn_002",
+        "4_4_sub_001",
+        "4_4_rxn_002",
+        "4_5_proc_001"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

@@ -1,0 +1,651 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学基礎",
+   "chapter": 2,
+   "chapter_title": "物質の構成粒子",
+   "section": 1,
+   "section_title": "原子と電子配置・イオン・元素の周期律",
+   "page_range": [40, 61],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "2_1_sub_001",
+     "name": "軽水素",
+     "formula": "1H",
+     "aliases": ["ふつうの水素"],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["質量数1", "陽子1", "中性子0", "存在比99.9885%"]
+     },
+     "cross_refs": ["2_1_def_004"],
+     "notes": "水素の同位体"
+   },
+   {
+     "id": "2_1_sub_002",
+     "name": "重水素",
+     "formula": "2H",
+     "aliases": ["ジュウテリウム"],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["質量数2", "陽子1", "中性子1", "存在比0.0115%"]
+     },
+     "cross_refs": ["2_1_def_004"],
+     "notes": "水素の同位体"
+   },
+   {
+     "id": "2_1_sub_003",
+     "name": "炭素14",
+     "formula": "14C",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["半減期約5730年", "年代測定に利用される"]
+     },
+     "cross_refs": ["2_1_def_005"],
+     "notes": "炭素の放射性同位体"
+   },
+   {
+     "id": "2_2_sub_001",
+     "name": "ナトリウムイオン",
+     "formula": "Na+",
+     "aliases": [],
+     "type": "単原子イオン",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["ネオン(Ne)と同じ電子配置をもつ"]
+     },
+     "cross_refs": ["2_2_def_001"],
+     "notes": "1価の陽イオン"
+   },
+   {
+     "id": "2_2_sub_002",
+     "name": "塩化物イオン",
+     "formula": "Cl-",
+     "aliases": [],
+     "type": "単原子イオン",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["アルゴン(Ar)と同じ電子配置をもつ"]
+     },
+     "cross_refs": ["2_2_def_002"],
+     "notes": "1価の陰イオン"
+   },
+   {
+     "id": "2_2_sub_003",
+     "name": "硫酸イオン",
+     "formula": "SO4 2-",
+     "aliases": [],
+     "type": "多原子イオン",
+     "properties": {
+       "melting_point": { "value": null, "unit": "", "condition": "" },
+       "boiling_point": { "value": null, "unit": "", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["S原子1個とO原子4個が結合し、全体で-2の電荷をもつ"]
+     },
+     "cross_refs": ["2_2_def_003"],
+     "notes": "2価の陰イオン（多原子イオン）"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "2_1_def_001",
+     "type": "def",
+     "title": "原子",
+     "prerequisite_ids": [],
+     "definition": "物質を構成する最小単位の粒子で、中心にある正の電荷をもつ原子核と、そのまわりを取り巻く負の電荷をもつ電子からなる。",
+     "explanation": "すべての物質の「もと」となる非常に小さな粒です。中心にはプラスの電気を持った「原子核」があり、その周りをマイナスの電気を持った「電子」が飛んでいます。原子全体では電気的に中性（プラマイゼロ）です。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "原子の大きさ",
+         "substance_ids": [],
+         "description": "直径はおおよそ $10^{-10}$ m。地球をゴルフボールサイズに縮小したとき、ゴルフボールをさらに同じ倍率で縮小したサイズに相当する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "原子の構造（陽子・中性子・電子の電荷と質量の比較）に関する正誤問題",
+         "key_concept_ids": ["2_1_def_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 40
+   },
+   {
+     "id": "2_1_def_002",
+     "type": "def",
+     "title": "原子番号",
+     "prerequisite_ids": ["2_1_def_001"],
+     "definition": "原子核の中にある陽子の数。",
+     "explanation": "元素の種類を決める背番号のようなものです。陽子の数と電子の数は等しいため、「原子番号 ＝ 陽子の数 ＝ 電子の数」となります。",
+     "conditions": ["電気的に中性な原子であること（イオンではないこと）"],
+     "examples": [
+       {
+         "label": "水素とヘリウム",
+         "substance_ids": ["2_1_sub_001"],
+         "description": "原子番号1は水素（陽子1個、電子1個）。原子番号2はヘリウム（陽子2個、電子2個）。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "原子番号を与えられ、陽子や電子の数を答えさせる問題",
+         "key_concept_ids": ["2_1_def_002"]
+       }
+     ],
+     "cross_refs": ["2_1_def_003"],
+     "source_page": 41
+   },
+   {
+     "id": "2_1_def_003",
+     "type": "def",
+     "title": "質量数",
+     "prerequisite_ids": ["2_1_def_001"],
+     "definition": "原子核中の陽子の数と中性子の数の和。",
+     "explanation": "原子の重さはほとんど原子核（陽子と中性子）で決まります。電子は非常に軽いため（陽子の約1840分の1）、無視して考えます。そのため、「陽子数＋中性子数」を質量数として原子の重さの目安にします。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "ナトリウムの質量数",
+         "substance_ids": ["2_2_sub_001"],
+         "description": "陽子11個、中性子12個をもつナトリウム原子の質量数は23である。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "質量数と原子番号から中性子の数を計算させる問題",
+         "key_concept_ids": ["2_1_def_002", "2_1_def_003"]
+       }
+     ],
+     "cross_refs": ["2_1_def_002", "2_1_def_004"],
+     "source_page": 43
+   },
+   {
+     "id": "2_1_def_004",
+     "type": "def",
+     "title": "同位体 (アイソトープ)",
+     "prerequisite_ids": ["2_1_def_002", "2_1_def_003"],
+     "definition": "原子番号（陽子数）が同じで質量数（中性子数）が異なる原子どうし。",
+     "explanation": "同じ種類の元素でも、中性子の数が違って重さが異なる原子のことです。化学的な性質はほとんど同じですが、物理的な性質（重さなど）がわずかに異なります。元素記号の左上に質量数、左下に原子番号を書いて区別します。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "水素の同位体",
+         "substance_ids": ["2_1_sub_001", "2_1_sub_002"],
+         "description": "軽水素(1H)、重水素(2H)、三重水素(3H)が存在する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       {
+         "label": "同素体との違い",
+         "description": "同素体は「単体（物質）」の種類の違い（例：ダイヤモンドと黒鉛）。同位体は「原子」の種類の違い。"
+       }
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "同位体の定義や、互いに同位体である原子の組み合わせを選ばせる問題",
+         "key_concept_ids": ["2_1_def_004"]
+       }
+     ],
+     "cross_refs": ["TBD:同素体", "2_1_def_005"],
+     "source_page": 44
+   },
+   {
+     "id": "2_1_def_005",
+     "type": "def",
+     "title": "放射性同位体 (ラジオアイソトープ)",
+     "prerequisite_ids": ["2_1_def_004"],
+     "definition": "原子核が不安定で、放射線（α線、β線、γ線など）を放出して別の原子核に自然に変化する性質をもつ同位体。",
+     "explanation": "同位体の中には、不安定で自ら放射線を出して別の原子に変わってしまうものがあります。もとの量の半分になるまでの時間を「半減期」といい、化石の年代測定や医療に利用されます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "年代測定",
+         "substance_ids": ["2_1_sub_003"],
+         "description": "炭素14 (14C) の半減期（約5730年）を利用して、遺跡の木片などが生きていた年代を推定する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "半減期を用いて、資料の年代や残存量を計算させる問題",
+         "key_concept_ids": ["2_1_def_005"]
+       }
+     ],
+     "cross_refs": ["TBD:半減期"],
+     "source_page": 45
+   },
+   {
+     "id": "2_1_def_006",
+     "type": "def",
+     "title": "電子殻",
+     "prerequisite_ids": ["2_1_def_001"],
+     "definition": "原子核のまわりで電子が存在している、いくつかの層。内側からK殻、L殻、M殻、N殻と呼ばれる。",
+     "explanation": "電子が飛ぶ軌道（マンションの階数のようなもの）です。原子核に近い（低い階）ほど安定しています。各層に入れる電子の定員（最大収容電子数）は決まっています。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "各電子殻の最大収容電子数を答えさせる問題",
+         "key_concept_ids": ["2_1_def_006", "2_1_eq_001"]
+       }
+     ],
+     "cross_refs": ["2_1_eq_001"],
+     "source_page": 46
+   },
+   {
+     "id": "2_1_eq_001",
+     "type": "eq",
+     "title": "最大収容電子数の公式",
+     "prerequisite_ids": ["2_1_def_006"],
+     "definition": "内側から $n$ 番目の電子殻（主量子数 $n$）の最大収容電子数 $N$ は、$N = 2n^2$ で表される。",
+     "explanation": "K殻(n=1)は2個、L殻(n=2)は8個、M殻(n=3)は18個、N殻(n=4)は32個まで電子が入ります。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["2_1_def_006"],
+     "source_page": 46
+   },
+   {
+     "id": "2_1_def_007",
+     "type": "def",
+     "title": "価電子 (最外殻電子)",
+     "prerequisite_ids": ["2_1_def_006"],
+     "definition": "最も外側の電子殻に入っている電子。原子がイオンになったり結合したりするときに重要な役割を果たす。",
+     "explanation": "一番外側を飛んでいる電子のことです。この電子の数が、その原子の「化学的なキャラクター（性質）」を決定します。※ただし、18族の貴ガスは極めて安定しているため、価電子の数は「0個」とします。",
+     "conditions": ["貴ガス元素の価電子の数は0個として扱うこと"],
+     "examples": [
+       {
+         "label": "塩素の価電子",
+         "substance_ids": [],
+         "description": "塩素(Cl, 原子番号17)の電子配置はK(2), L(8), M(7)。最外殻電子は7個であり、価電子も7個。",
+         "values": []
+       },
+       {
+         "label": "ネオンの価電子",
+         "substance_ids": [],
+         "description": "ネオン(Ne, 原子番号10)の電子配置はK(2), L(8)。最外殻電子は8個だが、貴ガスなので価電子は0個。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "原子の電子配置を書き、価電子の数を答えさせる問題",
+         "key_concept_ids": ["2_1_def_007", "2_1_tip_001"]
+       }
+     ],
+     "cross_refs": ["2_1_def_008"],
+     "source_page": 47
+   },
+   {
+     "id": "2_1_def_008",
+     "type": "def",
+     "title": "閉殻",
+     "prerequisite_ids": ["2_1_def_006"],
+     "definition": "最大収容電子数まで電子がいっぱいに入って満たされた電子殻。",
+     "explanation": "K殻なら2個、L殻なら8個など、定員ぴったりまで電子が入った状態です。また、最外殻に8個の電子が入った状態（オクテット）も非常に安定します。貴ガス（He, Ne, Ar等）がこの状態です。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["2_1_def_007"],
+     "source_page": 48
+   },
+   {
+     "id": "2_1_tip_001",
+     "type": "tip",
+     "title": "原子番号1〜20の元素の覚え方",
+     "prerequisite_ids": ["2_1_def_002"],
+     "definition": "原子番号1番(H)から20番(Ca)までの元素記号の順序を覚える語呂合わせ。",
+     "explanation": "「水兵リーベ僕の船、ななまがりシップスクラークか」と覚えます。これを利用して電子配置を書く基礎を作ります。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": ["水(H)兵(He) リー(Li)ベ(Be) 僕(B C)の(N O) 船(F Ne)、 な(Na)な(Mg)まがり(Al) シッ(Si)プ(P)ス(S) クラー(Cl Ar)ク(K) か(Ca)"],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 41
+   },
+   {
+     "id": "2_2_def_001",
+     "type": "def",
+     "title": "陽イオン",
+     "prerequisite_ids": ["2_1_def_001", "2_1_def_007"],
+     "definition": "原子が電子を放出し、全体として正（プラス）の電荷をもつようになった粒子。",
+     "explanation": "価電子が1〜3個の原子（金属など）は、外側の電子を捨てて安定な貴ガスと同じ電子配置になろうとします。マイナスの電子が減るため、トータルでプラスの電気を帯びます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "ナトリウムイオン",
+         "substance_ids": ["2_2_sub_001"],
+         "description": "Naが価電子1個を放出し、Neと同じ電子配置をもつ1価の陽イオン(Na+)になる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "原子がイオンになったときの電子配置図を選ばせる、または化学式を書かせる問題",
+         "key_concept_ids": ["2_2_def_001", "2_2_def_002"]
+       }
+     ],
+     "cross_refs": ["2_2_def_004", "2_2_def_006"],
+     "source_page": 50
+   },
+   {
+     "id": "2_2_def_002",
+     "type": "def",
+     "title": "陰イオン",
+     "prerequisite_ids": ["2_1_def_001", "2_1_def_007"],
+     "definition": "原子が電子を受け取り、全体として負（マイナス）の電荷をもつようになった粒子。",
+     "explanation": "価電子が6〜7個の原子（非金属など）は、外部から電子をもらって安定な貴ガスと同じ電子配置になろうとします。マイナスの電子が増えるため、トータルでマイナスの電気を帯びます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "塩化物イオン",
+         "substance_ids": ["2_2_sub_002"],
+         "description": "Clが電子を1個受け取り、Arと同じ電子配置をもつ1価の陰イオン(Cl-)になる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "イオンの名称と化学式の組み合わせを答える問題",
+         "key_concept_ids": ["2_2_def_001", "2_2_def_002", "2_2_def_003"]
+       }
+     ],
+     "cross_refs": ["2_2_def_005", "2_2_def_007"],
+     "source_page": 50
+   },
+   {
+     "id": "2_2_def_003",
+     "type": "def",
+     "title": "多原子イオン",
+     "prerequisite_ids": ["2_2_def_001", "2_2_def_002"],
+     "definition": "2個以上の原子が結合した原子団が、全体として電荷をもったイオン。",
+     "explanation": "複数の原子がくっついたグループごと、電子を余分に持っていたり足りなかったりしてイオンになったものです。硫酸イオン($SO_4^{2-}$)やアンモニウムイオン($NH_4^+$)などがあります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "多原子イオンの例",
+         "substance_ids": ["2_2_sub_003"],
+         "description": "水酸化物イオン(OH-)、硫酸イオン(SO4 2-)など。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "多原子イオンが持つ電子の総数を計算させる問題",
+         "key_concept_ids": ["2_2_def_003", "2_2_eq_001"]
+       }
+     ],
+     "cross_refs": ["2_2_eq_001"],
+     "source_page": 51
+   },
+   {
+     "id": "2_2_eq_001",
+     "type": "eq",
+     "title": "イオンがもつ電子の総数の計算",
+     "prerequisite_ids": ["2_2_def_001", "2_2_def_002", "2_2_def_003"],
+     "definition": "$n$ 価の陽イオンの電子数 ＝ (原子番号の総和) $- n$。$n$ 価の陰イオンの電子数 ＝ (原子番号の総和) $+ n$。",
+     "explanation": "イオンが持っている電子の数を計算する方法です。陽イオンの場合はプラスになった分だけ電子が減っているので引き算、陰イオンの場合はマイナスになった分だけ電子が増えているので足し算をします。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "硫酸イオンの電子数",
+         "substance_ids": ["2_2_sub_003"],
+         "description": "S(原子番号16)×1 + O(原子番号8)×4 + 2(2価の陰イオン) = 16 + 32 + 2 = 50個。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 51
+   },
+   {
+     "id": "2_2_def_004",
+     "type": "def",
+     "title": "イオン化エネルギー",
+     "prerequisite_ids": ["2_2_def_001"],
+     "definition": "気体状態の原子から電子1個を取り去って、1価の陽イオンにするのに必要な最小のエネルギー。",
+     "explanation": "原子から電子を引きはがすのに必要なパワーのことです。この値が「小さい」ほど、少ない力で電子を取れる（＝陽イオンになりやすい）ことを意味します。アルカリ金属などで小さく、貴ガスで最大になります。",
+     "conditions": ["第一イオン化エネルギーを指す場合が多い"],
+     "examples": [],
+     "counter_examples": [
+       {
+         "label": "イオン化エネルギーが大きい＝陽イオンになりやすい（誤り）",
+         "description": "イオン化エネルギーは「必要なエネルギー」なので、大きいほど電子を引きはがしにくく、陽イオンになりにくい。"
+       }
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "グラフからイオン化エネルギーの周期性を読み取る、または最小・最大の元素を選ばせる問題",
+         "key_concept_ids": ["2_2_def_004", "2_3_def_001"]
+       }
+     ],
+     "cross_refs": ["2_2_def_005", "2_3_def_001"],
+     "source_page": 53
+   },
+   {
+     "id": "2_2_def_005",
+     "type": "def",
+     "title": "電子親和力",
+     "prerequisite_ids": ["2_2_def_002"],
+     "definition": "気体状態の原子が電子1個を受け取って、1価の陰イオンになるときに放出されるエネルギー。",
+     "explanation": "原子が電子を「キャッチ」したときに外に出すエネルギーのことです。この値が「大きい」ほど、電子をもらってより安定になる（＝陰イオンになりやすい）ことを意味します。ハロゲン（フッ素や塩素）で大きくなります。",
+     "conditions": ["貴ガスは電子を受け入れてエネルギーを放出しないため考慮しない"],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "電子親和力最大の元素を選ばせる問題",
+         "key_concept_ids": ["2_2_def_005", "2_3_def_001"]
+       }
+     ],
+     "cross_refs": ["2_2_def_004", "2_3_def_001"],
+     "source_page": 54
+   },
+   {
+     "id": "2_2_def_006",
+     "type": "def",
+     "title": "原子とイオンの大きさの比較",
+     "prerequisite_ids": ["2_2_def_001", "2_2_def_002"],
+     "definition": "①陽イオンはもとの原子より小さくなる。②陰イオンはもとの原子より大きくなる。③電子配置が同じイオンでは、原子番号が大きいほど小さくなる。",
+     "explanation": "原子が電子を捨てて陽イオンになると、一番外側の電子殻がなくなるためギュッと小さくなります。逆に電子をもらって陰イオンになると、電子同士の反発で少し膨らんで大きくなります。また、Na+、Mg2+、F-、O2-のように「ネオンと同じ電子配置」のイオン同士を比べると、原子核のプラスの力が強い（原子番号が大きい）ほど、電子を強く引きつけるため小さくなります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "電子配置が同じイオンの大きさ",
+         "substance_ids": ["2_2_sub_001"],
+         "description": "O2- > F- > Na+ > Mg2+ > Al3+ の順に小さくなる（すべてNeと同じ10個の電子をもつが、原子核の正電荷が大きくなるほど強く引きつけられるため）。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられたイオンをイオン半径の大きい（小さい）順に並べさせる問題",
+         "key_concept_ids": ["2_2_def_006"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 59
+   },
+   {
+     "id": "2_3_def_001",
+     "type": "def",
+     "title": "元素の周期律",
+     "prerequisite_ids": ["2_1_def_002"],
+     "definition": "元素を原子番号の順に並べると、性質のよく似た元素が一定の間隔で周期的に現れる規則性。",
+     "explanation": "元素を番号順に並べると、価電子の数が1、2、3…と増えていってまた1に戻る、という繰り返しが起きます。これに伴って、イオンのなりやすさや原子の大きさなどの性質も、波のように周期的に繰り返されます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "イオン化エネルギーの周期性",
+         "substance_ids": [],
+         "description": "原子番号順に並べると、1族元素（アルカリ金属）で極小となり、18族元素（貴ガス）で極大となる波を繰り返す。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "縦軸が何の性質（価電子、イオン化エネルギー、原子半径など）を表すグラフか選ばせる問題",
+         "key_concept_ids": ["2_3_def_001", "2_2_def_004"]
+       }
+     ],
+     "cross_refs": ["2_3_def_002"],
+     "source_page": 55
+   },
+   {
+     "id": "2_3_def_002",
+     "type": "def",
+     "title": "元素の周期表",
+     "prerequisite_ids": ["2_3_def_001"],
+     "definition": "元素を原子番号順に並べ、性質のよく似た元素が同じ縦の列（族）に並ぶようにまとめた表。",
+     "explanation": "メンデレーエフが基礎を作った、化学の「カレンダー」のような表です。縦の列を「族（1〜18族）」、横の行を「周期（第1〜7周期）」と呼びます。同じ族にある元素（同族元素）は、価電子の数が同じなので化学的な性質が似ています。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "族の名称",
+         "substance_ids": [],
+         "description": "1族（Hを除く）はアルカリ金属、2族はアルカリ土類金属、17族はハロゲン、18族は貴ガスと呼ばれる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       {
+         "label": "水素はアルカリ金属ではない",
+         "description": "水素は1族であるが、非金属元素でありアルカリ金属元素には含めない。"
+       }
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "周期表上の位置（族や周期）に関する正誤問題や名称を問う問題",
+         "key_concept_ids": ["2_3_def_002"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 56
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "2_1_def_004",
+     "to_id": "2_1_def_002",
+     "relation_type": "is_prerequisite_of",
+     "note": "同位体は原子番号が等しいことを前提とするため。"
+   },
+   {
+     "from_id": "2_1_def_004",
+     "to_id": "2_1_def_003",
+     "relation_type": "is_prerequisite_of",
+     "note": "同位体は質量数が異なることを前提とするため。"
+   },
+   {
+     "from_id": "2_1_def_007",
+     "to_id": "2_2_def_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "価電子を放出することで陽イオンになるため。"
+   },
+   {
+     "from_id": "2_2_def_004",
+     "to_id": "2_3_def_001",
+     "relation_type": "is_applied_in",
+     "note": "イオン化エネルギーは周期性を説明する代表的な性質の一つ。"
+   }
+ ]
+}

@@ -1,0 +1,377 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 5,
+   "chapter_title": "酸化還元反応と電池・電気分解",
+   "section": 1,
+   "section_title": "酸化と還元",
+   "page_range": [282, 324],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "5_1_sub_001",
+     "name": "酸化銅(II)",
+     "formula": "CuO",
+     "aliases": ["酸化第二銅"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "黒色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に不溶",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["5_1_def_001"],
+     "notes": "銅を空気中で加熱すると生成する。"
+   },
+   {
+     "id": "5_2_sub_001",
+     "name": "過マンガン酸カリウム",
+     "formula": "KMnO4",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "黒紫色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に可溶",
+       "electrical_conductivity": "",
+       "other": ["水溶液は過マンガン酸イオン(MnO4-)による濃い赤紫色を呈する"]
+     },
+     "cross_refs": ["5_2_def_001"],
+     "notes": "強力な酸化剤。酸性条件ではMn2+（淡桃色/無色）に還元される。"
+   },
+   {
+     "id": "5_2_sub_002",
+     "name": "過酸化水素",
+     "formula": "H2O2",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に可溶",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["5_2_def_001", "5_2_def_002"],
+     "notes": "相手によって酸化剤にも還元剤にもなる物質（二刀流）。"
+   },
+   {
+     "id": "5_4_sub_001",
+     "name": "酸化鉛(IV)",
+     "formula": "PbO2",
+     "aliases": ["二酸化鉛"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "褐色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に不溶",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["5_4_rxn_001"],
+     "notes": "鉛蓄電池の正極活物質。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "5_1_def_001",
+     "type": "def",
+     "title": "酸化と還元（酸素・水素・電子による定義）",
+     "prerequisite_ids": [],
+     "definition": "酸化とは物質が酸素を受け取る、水素を失う、または電子を失う反応であり、還元とは物質が酸素を失う、水素を受け取る、または電子を受け取る反応である。",
+     "explanation": "化学反応において、酸素や水素のやり取りだけでは説明できない反応も、電子のやり取りに注目することで酸化・還元として統一的に説明できます。電子を失うと「酸化された」、電子を受け取ると「還元された」と判断します。酸化と還元は必ず同時に起こります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "銅の酸化",
+         "substance_ids": ["5_1_sub_001"],
+         "description": "2Cu + O2 -> 2CuO (Cuは酸素を受け取り、電子を失って酸化される)",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "「銅は酸化して酸化銅(II)になる」という表現は誤り。正しくは「銅は酸化されて（受け身形）」である。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられた化学反応式から、酸化された物質と還元された物質を判定する問題",
+         "key_concept_ids": ["5_1_def_001", "5_1_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 283
+   },
+   {
+     "id": "5_1_law_001",
+     "type": "law",
+     "title": "酸化数の決め方",
+     "prerequisite_ids": ["5_1_def_001"],
+     "definition": "物質中の原子の酸化・還元の度合いを示す数値であり、単体の原子は0、化合物中の酸素は通常-2、水素は通常+1とし、化合物全体の酸化数の総和は0、多原子イオンの総和はそのイオンの価数に等しいとする規則。",
+     "explanation": "分子どうしの反応など、電子の移動が直接見えにくい場合に便利です。酸化数が増加すればその原子は「酸化された」、減少すれば「還元された」と判断します。",
+     "conditions": [
+       "過酸化物(H2O2など)中のOの酸化数は-1となる例外がある。",
+       "金属の水素化物(LiHなど)中のHの酸化数は-1となる例外がある。"
+     ],
+     "examples": [
+       {
+         "label": "過マンガン酸カリウム(KMnO4)中のMnの酸化数",
+         "substance_ids": ["5_2_sub_001"],
+         "description": "(+1) + x + (-2)*4 = 0 より、x = +7",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "H2OのHの酸化数を +1 × 2 = +2 としてはいけない。酸化数は原子1つ1つについて示す。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "化学式中の特定の原子の酸化数を求める問題",
+         "key_concept_ids": ["5_1_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 284
+   },
+   {
+     "id": "5_2_def_001",
+     "type": "def",
+     "title": "酸化剤と還元剤",
+     "prerequisite_ids": ["5_1_def_001", "5_1_law_001"],
+     "definition": "酸化剤は他の物質を酸化する（自身は還元される）物質であり、還元剤は他の物質を還元する（自身は酸化される）物質である。",
+     "explanation": "酸化剤は電子を受け取りやすい物質（最高酸化数の原子を含むことが多い）で、還元剤は電子を放出しやすい物質（最低酸化数の原子を含むことが多い）です。過酸化水素や二酸化硫黄のように、相手によってどちらにもなれる物質も存在します。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "代表的な酸化剤と還元剤",
+         "substance_ids": ["5_2_sub_001", "5_2_sub_002"],
+         "description": "KMnO4（強力な酸化剤）、H2S（強い還元剤）",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "酸化剤・還元剤のはたらきを示す半反応式を書く問題",
+         "key_concept_ids": ["5_2_def_001", "5_2_proc_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 287
+   },
+   {
+     "id": "5_2_proc_001",
+     "type": "proc",
+     "title": "酸化還元反応の化学反応式のつくり方",
+     "prerequisite_ids": ["5_2_def_001"],
+     "definition": "酸化剤と還元剤の電子を含む反応式（半反応式）の電子(e-)の数を揃えて足し合わせ、イオン反応式を作った後、省略されていたイオンを補って完成させる手順。",
+     "explanation": "酸化還元反応では、酸化剤が受け取る電子の数と還元剤が放出する電子の数は等しくならなければなりません。そのため、2つの式のe-の最小公倍数を求めて係数を掛け、足し合わせます。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "酸化剤と還元剤のはたらきを示す反応式（電子を含む反応式）をそれぞれ書く。",
+         "reason": "各物質の電子の授受を明確にするため。"
+       },
+       {
+         "step": 2,
+         "action": "それぞれの式のe-の数が等しくなるように、式全体を整数倍する。",
+         "reason": "授受される電子の総数を一致させるため。"
+       },
+       {
+         "step": 3,
+         "action": "2つの式を辺々足し合わせ、e-を消去してイオン反応式を作る。",
+         "reason": "正味の酸化還元反応式を得るため。"
+       },
+       {
+         "step": 4,
+         "action": "反応に直接関係ないために省略されていたイオン（K+やSO4^2-など）を両辺に同数加え、化学反応式を完成させる。",
+         "reason": "実際の試薬に基づいた完全な化学反応式にするため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "2つの試薬を混ぜた際の酸化還元反応の化学反応式を記述する問題",
+         "key_concept_ids": ["5_2_proc_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 289
+   },
+   {
+     "id": "5_3_law_001",
+     "type": "law",
+     "title": "金属のイオン化傾向",
+     "prerequisite_ids": ["5_1_def_001"],
+     "definition": "金属が水または水溶液と接しているとき、電子を放出して陽イオンになろうとする傾向の大きさ。",
+     "explanation": "イオン化傾向が大きい金属ほど、電子を失いやすく酸化されやすい（還元性が強い）性質があります。金属の反応性を比較する上で非常に重要な指標であり、水や酸との反応性、電池の極性判定などに使われます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "金属と水・酸の反応",
+         "substance_ids": [],
+         "description": "Naは常温の水と激しく反応するが、Mgは熱水、Feは高温の水蒸気と反応する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "王水（濃硝酸と濃塩酸の体積比1:3の混合物）には、イオン化傾向が極めて小さいPtやAuも溶ける。"
+     ],
+     "mnemonics": [
+       "リッチ(Li)に(K)貸(Ca)そう(Na)か(Mg)、間(Al)が(Zn)あ(Fe)る(Ni)。すん(Sn)な(Pb)ひ(H2)ど(Cu)す(Hg)ぎる(Ag)借(Pt)金(Au)"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "複数の金属と水溶液の反応結果から、イオン化傾向の順序を決定する問題",
+         "key_concept_ids": ["5_3_law_001"]
+       }
+     ],
+     "cross_refs": ["TBD:不動態", "TBD:王水"],
+     "source_page": 299
+   },
+   {
+     "id": "5_4_def_001",
+     "type": "def",
+     "title": "電池",
+     "prerequisite_ids": ["5_3_law_001"],
+     "definition": "酸化還元反応に伴って放出される化学エネルギーを電気エネルギーに変換して取り出す装置。",
+     "explanation": "イオン化傾向の異なる2種類の金属を導線で結び、電解質水溶液に浸すことで作られます。イオン化傾向の大きい金属が負極（電子が流れ出る極）になり、小さい金属が正極（電子が流れ込む極）になります。",
+     "conditions": [
+       "イオン化傾向に差がある2種の電極と、電解質水溶液が必要。"
+     ],
+     "examples": [
+       {
+         "label": "ボルタ電池",
+         "substance_ids": [],
+         "description": "Zn板とCu板を希硫酸に浸した電池。",
+         "values": [
+           { "value": 1.1, "unit": "V", "condition": "起電力" }
+         ]
+       }
+     ],
+     "counter_examples": [
+       "電流の向きは、電子の流れと逆の向き（正極から負極）であることに注意。"
+     ],
+     "mnemonics": [
+       "電池：イオン化傾向の大きいほうがマイナス（負極）だ"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられた電極の組み合わせから、正極・負極を判定し、各極の反応式を記述する問題",
+         "key_concept_ids": ["5_4_def_001", "5_3_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 304
+   },
+   {
+     "id": "5_4_rxn_001",
+     "type": "rxn",
+     "title": "鉛蓄電池の充放電",
+     "prerequisite_ids": ["5_4_def_001"],
+     "definition": "負極に鉛(Pb)、正極に酸化鉛(IV)(PbO2)、電解液に希硫酸(H2SO4)を用いた二次電池の反応。",
+     "explanation": "放電すると、正極・負極の両方で水に不溶な硫酸鉛(II)(PbSO4)が生成し、電解液の硫酸が消費されて水が生成するため、溶液の密度（濃度）が低下します。外部電源を逆につなぐと充電でき、反応が元に戻ります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "鉛蓄電池の全体反応（放電）",
+         "substance_ids": ["5_4_sub_001"],
+         "description": "Pb + PbO2 + 2H2SO4 -> 2PbSO4 + 2H2O",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "充電する際は、外部電源の負極を鉛蓄電池の負極(Pb)に、正極を正極(PbO2)につなぐ必要がある。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "放電時に流れた電気量（電子の物質量）から、電極や電解液の質量変化を計算する問題",
+         "key_concept_ids": ["5_4_rxn_001", "5_4_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 309
+   },
+   {
+     "id": "5_4_law_001",
+     "type": "law",
+     "title": "ファラデーの法則",
+     "prerequisite_ids": ["5_4_def_001"],
+     "definition": "電気分解によって電極で変化する（析出または溶解する）物質の物質量は、通じた電気量（流れた電子の物質量）に比例するという法則。",
+     "explanation": "電流 $i$ [A] を時間 $t$ [s] 流したときの電気量 $Q$ [C] は $Q = i \\times t$ で求まります。電子1 molあたりの電気量であるファラデー定数 $F$ ($9.65 \\times 10^4$ C/mol) を用いると、流れた電子の物質量が計算でき、そこから生成物の質量や体積を求めることができます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "流れた電子の物質量の計算",
+         "substance_ids": [],
+         "description": "電気量 Q [C] = 電流 i [A] × 時間 t [s] 。 電子の物質量 = (i × t) / (9.65 × 10^4) [mol]",
+         "values": [
+           { "value": 9.65e4, "unit": "C/mol", "condition": "ファラデー定数" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "電流と通電時間から、電極で発生・析出する物質の質量や体積を求める計算問題",
+         "key_concept_ids": ["5_4_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 319
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "5_1_law_001",
+     "to_id": "5_1_def_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "酸化数の概念は酸化還元の定義を拡張したものである"
+   },
+   {
+     "from_id": "5_3_law_001",
+     "to_id": "5_4_def_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "電池の正極負極の決定にはイオン化傾向の理解が必須である"
+   },
+   {
+     "from_id": "5_4_law_001",
+     "to_id": "5_4_rxn_001",
+     "relation_type": "is_applied_in",
+     "note": "鉛蓄電池の質量変化計算にファラデーの法則の考え方が応用される"
+   }
+ ]
+}

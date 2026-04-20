@@ -1,0 +1,528 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 2,
+   "chapter_title": "合成高分子化合物",
+   "section": 0,
+   "section_title": "合成高分子化合物全体",
+   "page_range": [508, 521],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "2_0_sub_001",
+     "name": "エチレン",
+     "formula": "CH2=CH2",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["二重結合をもつ単量体"]
+     },
+     "cross_refs": ["2_0_rxn_001", "2_0_sub_002"],
+     "notes": "付加重合によりポリエチレンとなる。"
+   },
+   {
+     "id": "2_0_sub_002",
+     "name": "ポリエチレン",
+     "formula": "-(CH2-CH2)n-",
+     "aliases": ["PE"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "透明〜不透明",
+       "odor": "無臭",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "溶媒に溶けにくい",
+       "electrical_conductivity": "絶縁体",
+       "other": ["熱可塑性", "軟化点をもつ"]
+     },
+     "cross_refs": ["2_0_sub_001", "2_0_rxn_001"],
+     "notes": "代表的な付加重合による合成樹脂。"
+   },
+   {
+     "id": "2_0_sub_003",
+     "name": "ヘキサメチレンジアミン",
+     "formula": "H2N-(CH2)6-NH2",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["鎖状のジアミン"]
+     },
+     "cross_refs": ["2_0_sub_004", "2_0_sub_005", "2_0_rxn_002"],
+     "notes": "ナイロン66の単量体の一つ。"
+   },
+   {
+     "id": "2_0_sub_004",
+     "name": "アジピン酸",
+     "formula": "HOOC-(CH2)4-COOH",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["鎖状のジカルボン酸"]
+     },
+     "cross_refs": ["2_0_sub_003", "2_0_sub_005", "2_0_rxn_002"],
+     "notes": "ナイロン66の単量体の一つ。"
+   },
+   {
+     "id": "2_0_sub_005",
+     "name": "ナイロン66",
+     "formula": "[-NH-(CH2)6-NH-CO-(CH2)4-CO-]n",
+     "aliases": ["6,6-ナイロン"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "白色など（用途による）",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["ポリアミド系合成繊維", "熱可塑性"]
+     },
+     "cross_refs": ["2_0_sub_003", "2_0_sub_004", "2_0_rxn_002", "2_0_proc_001"],
+     "notes": "アジピン酸とヘキサメチレンジアミンの縮合重合によって得られる。衣料などに用いられる。"
+   },
+   {
+     "id": "2_0_sub_006",
+     "name": "ポリビニルアルコール",
+     "formula": "-(CH2-CH(OH))n-",
+     "aliases": ["PVA"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水溶性",
+       "electrical_conductivity": "",
+       "other": ["親水基をもつ"]
+     },
+     "cross_refs": ["2_0_sub_007", "2_0_proc_002"],
+     "notes": "ポリ酢酸ビニルのけん化によって得られる水溶性の高分子化合物。"
+   },
+   {
+     "id": "2_0_sub_007",
+     "name": "ビニロン",
+     "formula": "ポリビニルアルコールのアセタール化物",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "不溶",
+       "electrical_conductivity": "",
+       "other": ["吸湿性に優れる", "難燃性"]
+     },
+     "cross_refs": ["2_0_sub_006", "2_0_proc_002"],
+     "notes": "日本で開発された合成繊維。作業着やロープに用いられる。"
+   },
+   {
+     "id": "2_0_sub_008",
+     "name": "フェノール樹脂",
+     "formula": "立体網目状構造",
+     "aliases": ["ベークライト"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "褐色、黒、赤など不透明",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "不溶",
+       "electrical_conductivity": "絶縁体",
+       "other": ["熱硬化性"]
+     },
+     "cross_refs": ["2_0_rxn_003"],
+     "notes": "フェノールとホルムアルデヒドの付加縮合で得られる。"
+   },
+   {
+     "id": "2_0_sub_009",
+     "name": "天然ゴム",
+     "formula": "-(C5H8)n-",
+     "aliases": ["生ゴム", "ポリイソプレン"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "乳白色〜褐色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["シス形構造", "弾性"]
+     },
+     "cross_refs": ["2_0_proc_003"],
+     "notes": "イソプレンが付加重合した構造をもつ。加硫により強度が上がる。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "2_0_def_001",
+     "type": "def",
+     "title": "高分子化合物",
+     "prerequisite_ids": [],
+     "definition": "一般に分子量が約1万以上の巨大な分子からなる物質。",
+     "explanation": "小さな分子（単量体）が多数結合してできた大きな分子です。明確な分子量をもたず、さまざまな分子量の集まりとして存在するため、平均分子量で表されます。明確な融点をもたず、ある温度で軟らかくなる（軟化点）ものが多いです。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "天然高分子化合物",
+         "substance_ids": ["TBD:デンプン", "TBD:セルロース", "2_0_sub_009"],
+         "description": "自然界に存在する高分子。",
+         "values": []
+       },
+       {
+         "label": "合成高分子化合物",
+         "substance_ids": ["2_0_sub_002", "2_0_sub_005", "2_0_sub_007"],
+         "description": "人工的に合成された高分子。",
+         "values": []
+       }
+     ],
+     "counter_examples": ["低分子化合物（水やエタノールなど決まった分子量をもつ）"],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["2_0_def_002"],
+     "source_page": 508
+   },
+   {
+     "id": "2_0_def_002",
+     "type": "def",
+     "title": "単量体と重合体",
+     "prerequisite_ids": ["2_0_def_001"],
+     "definition": "高分子化合物を構成する低分子化合物を単量体（モノマー）、生成した高分子化合物を重合体（ポリマー）という。",
+     "explanation": "ブロック（単量体）をつなぎ合わせて作った大きなお城（重合体）のような関係です。つながる反応を「重合」と呼び、つながったブロックの数を「重合度」と呼びます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "ポリエチレンの例",
+         "substance_ids": ["2_0_sub_001", "2_0_sub_002"],
+         "description": "単量体がエチレン、重合体がポリエチレン。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "特定の高分子化合物の単量体を答えさせる問題",
+         "key_concept_ids": ["2_0_sub_001", "2_0_sub_002"]
+       },
+       {
+         "pattern": "平均分子量と構成単位の分子量から重合度を計算させる問題",
+         "key_concept_ids": ["2_0_eq_001"]
+       }
+     ],
+     "cross_refs": ["2_0_eq_001"],
+     "source_page": 509
+   },
+   {
+     "id": "2_0_eq_001",
+     "type": "eq",
+     "title": "重合度と分子量の関係",
+     "prerequisite_ids": ["2_0_def_002"],
+     "definition": "重合体の平均分子量 = 単量体（または構成単位）の分子量（式量） × 平均重合度",
+     "explanation": "一つのブロックの重さにブロックの個数をかければ、全体の重さになるというシンプルな計算です。ただし、縮合重合のように水などが取れてつながる場合は、取れた後の「構成単位」の分子量を使うことに注意してください。",
+     "conditions": ["両末端の構造の違いは無視できるほど大きい分子であること"],
+     "examples": [],
+     "counter_examples": ["縮合重合において、単量体の分子量をそのまま使ってしまうミス"],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "平均分子量が与えられ、重合度を計算する問題",
+         "key_concept_ids": ["2_0_eq_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 509
+   },
+   {
+     "id": "2_0_def_003",
+     "type": "def",
+     "title": "熱可塑性と熱硬化性",
+     "prerequisite_ids": ["2_0_def_001"],
+     "definition": "加熱すると軟らかくなり冷やすと硬くなる性質を熱可塑性、加熱により立体網目状構造ができて硬化し、再び軟化しない性質を熱硬化性という。",
+     "explanation": "熱可塑性はチョコレートのように何度も溶かして固められる性質です。鎖状の分子からなる樹脂に見られます。一方、熱硬化性はクッキーの生地のように一度焼いて固まると、もう熱しても溶けない性質です。分子間に橋渡し（網目状構造）ができるためです。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "熱可塑性樹脂",
+         "substance_ids": ["2_0_sub_002", "2_0_sub_005"],
+         "description": "ポリエチレン、ポリ塩化ビニル、ナイロンなど。付加重合でできたものが多い。",
+         "values": []
+       },
+       {
+         "label": "熱硬化性樹脂",
+         "substance_ids": ["2_0_sub_008", "2_0_sub_021", "2_0_sub_023"],
+         "description": "フェノール樹脂、尿素樹脂、メラミン樹脂など。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "樹脂の名称から熱可塑性か熱硬化性かを選択させる問題",
+         "key_concept_ids": ["2_0_def_003"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 510
+   },
+   {
+     "id": "2_0_rxn_001",
+     "type": "rxn",
+     "title": "付加重合",
+     "prerequisite_ids": ["2_0_def_002"],
+     "definition": "二重結合をもつ分子どうしが、次々と付加反応を起こして重合体が生じる反応。",
+     "explanation": "炭素間の二重結合が一つ開いて手となり、隣の分子と次々に手をつないでいく反応です。何も取れたり余ったりしないので、単量体の質量の合計がそのまま重合体の質量になります。",
+     "conditions": ["単量体が二重結合をもつこと"],
+     "examples": [
+       {
+         "label": "ポリエチレンの生成",
+         "substance_ids": ["2_0_sub_001", "2_0_sub_002"],
+         "description": "n CH2=CH2 -> -(CH2-CH2)n-",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["2_0_sub_001"],
+     "source_page": 511
+   },
+   {
+     "id": "2_0_rxn_002",
+     "type": "rxn",
+     "title": "縮合重合",
+     "prerequisite_ids": ["2_0_def_002"],
+     "definition": "2つの単量体から、水のような簡単な分子が取れて次々に縮合し、高分子化合物ができる重合。",
+     "explanation": "分子の端っこ同士がくっつくときに、水などの小さな分子が抜け落ちながらつながっていく反応です。代表的なものに、アミド結合を作るポリアミドや、エステル結合を作るポリエステルがあります。",
+     "conditions": ["単量体が反応できる官能基を分子内に2つ以上もつこと"],
+     "examples": [
+       {
+         "label": "ナイロン66の生成",
+         "substance_ids": ["2_0_sub_003", "2_0_sub_004", "2_0_sub_005"],
+         "description": "ヘキサメチレンジアミンとアジピン酸から水が取れてアミド結合ができる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "構成単位から生じる水の質量を計算する問題",
+         "key_concept_ids": ["2_0_eq_001"]
+       }
+     ],
+     "cross_refs": ["2_0_sub_005"],
+     "source_page": 511
+   },
+   {
+     "id": "2_0_proc_001",
+     "type": "proc",
+     "title": "界面重合によるナイロン66の合成",
+     "prerequisite_ids": ["2_0_rxn_002"],
+     "definition": "混ざり合わない2つの溶液の境界面（界面）で重合反応を起こさせる方法。",
+     "explanation": "水と油のように混ざらない2つの液体の境目でだけ反応が起こり、膜（ポリマー）ができます。その膜をつまんで引き上げると、次々と新しい境界面ができて糸のように連続して取り出せます。",
+     "conditions": ["互いに溶け合わない溶媒を使用する"],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "ヘキサメチレンジアミンのアルカリ水溶液の上に、アジピン酸ジクロリドのヘキサン溶液を静かに注ぐ。",
+         "reason": "水とヘキサンが混ざらず、二層に分離させるため。"
+       },
+       {
+         "step": 2,
+         "action": "2層の界面にできた膜をピンセットで引き上げる。",
+         "reason": "界面でのみ重合が起こるため、引き上げることで連続して糸状のナイロン66が得られる。"
+       }
+     ],
+     "related_problems": [],
+     "cross_refs": ["2_0_sub_005"],
+     "source_page": 512
+   },
+   {
+     "id": "2_0_proc_002",
+     "type": "proc",
+     "title": "ビニロンの合成手順",
+     "prerequisite_ids": ["2_0_rxn_001"],
+     "definition": "酢酸ビニルの付加重合、けん化、紡糸、アセタール化の工程を経てビニロンを合成する一連の操作。",
+     "explanation": "ビニルアルコールは不安定で単独では存在できないため、まず酢酸ビニルを重合させてから、エステル部分をアルコール部分に変え（けん化）、水に溶けにくくする処理（アセタール化）を行って丈夫な糸にします。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "酢酸ビニルを付加重合させ、ポリ酢酸ビニルを作る。",
+         "reason": "ビニルアルコール単体は不安定で重合できないため。"
+       },
+       {
+         "step": 2,
+         "action": "ポリ酢酸ビニルを水酸化ナトリウム水溶液でけん化（またはメタノールでエステル交換）し、ポリビニルアルコールにする。",
+         "reason": "アセチル基をヒドロキシ基に変換するため。"
+       },
+       {
+         "step": 3,
+         "action": "ポリビニルアルコールの熱水溶液を、硫酸アンモニウム飽和水溶液中に押し出して紡糸する。",
+         "reason": "塩析効果を利用して、水溶性のポリマーを糸状に不溶化させるため。"
+       },
+       {
+         "step": 4,
+         "action": "ホルムアルデヒドと反応させ、アセタール化する。",
+         "reason": "ヒドロキシ基の一部を架橋させて、実用的な強度と耐水性をもたせるため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "アセタール化の反応量から必要なホルムアルデヒドの質量を計算させる問題",
+         "key_concept_ids": ["2_0_proc_002", "2_0_sub_007"]
+       }
+     ],
+     "cross_refs": ["2_0_sub_006", "2_0_sub_007"],
+     "source_page": 514
+   },
+   {
+     "id": "2_0_rxn_003",
+     "type": "rxn",
+     "title": "付加縮合",
+     "prerequisite_ids": ["2_0_def_002"],
+     "definition": "単量体が、付加反応と縮合反応を繰り返しながら重合して高分子化合物が生成する反応。",
+     "explanation": "まず分子同士がくっつき（付加）、そこから水などの小さな分子が取れてしっかりつながる（縮合）というステップを繰り返して網目状に広がっていく反応です。フェノール樹脂などがこの方法で作られます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "フェノール樹脂の生成",
+         "substance_ids": ["2_0_sub_008"],
+         "description": "フェノールとホルムアルデヒドから付加縮合で生成する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["2_0_sub_008"],
+     "source_page": 517
+   },
+   {
+     "id": "2_0_proc_003",
+     "type": "proc",
+     "title": "加硫",
+     "prerequisite_ids": ["2_0_def_001"],
+     "definition": "生ゴムに数%の硫黄を加えて加熱し、強度と弾性を増す処理。",
+     "explanation": "ゴムの分子はひも状なので引っ張るとズレてしまいますが、硫黄を加えて熱すると、硫黄がひもとひもの間をつないで橋（架橋構造）を作ってくれます。これでゴムはよく伸びて、また元に戻る強い弾性を持つようになります。",
+     "conditions": ["ゴム分子内に二重結合が存在すること"],
+     "examples": [
+       {
+         "label": "弾性ゴムとエボナイト",
+         "substance_ids": ["2_0_sub_009"],
+         "description": "少量の硫黄で弾性ゴム、30〜40%の大量の硫黄で硬いエボナイトになる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "ゴムの強度を上げる操作の名称（加硫）を答えさせる問題",
+         "key_concept_ids": ["2_0_proc_003"]
+       }
+     ],
+     "cross_refs": ["2_0_sub_009"],
+     "source_page": 519
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "2_0_sub_001",
+     "to_id": "2_0_sub_002",
+     "relation_type": "produces",
+     "note": "エチレンの付加重合によりポリエチレンが生成する"
+   },
+   {
+     "from_id": "2_0_sub_003",
+     "to_id": "2_0_sub_005",
+     "relation_type": "produces",
+     "note": "アジピン酸とともにナイロン66の原料となる"
+   },
+   {
+     "from_id": "2_0_sub_004",
+     "to_id": "2_0_sub_005",
+     "relation_type": "produces",
+     "note": "ヘキサメチレンジアミンとともにナイロン66の原料となる"
+   },
+   {
+     "from_id": "2_0_sub_006",
+     "to_id": "2_0_sub_007",
+     "relation_type": "produces",
+     "note": "アセタール化によりビニロンとなる"
+   },
+   {
+     "from_id": "2_0_def_001",
+     "to_id": "2_0_def_002",
+     "relation_type": "is_prerequisite_of",
+     "note": "高分子化合物を構成する単位を理解するために必要"
+   },
+   {
+     "from_id": "2_0_rxn_001",
+     "to_id": "2_0_sub_002",
+     "relation_type": "is_applied_in",
+     "note": "ポリエチレンの合成に適用される"
+   },
+   {
+     "from_id": "2_0_rxn_002",
+     "to_id": "2_0_sub_005",
+     "relation_type": "is_applied_in",
+     "note": "ナイロン66の合成に適用される"
+   },
+   {
+     "from_id": "2_0_rxn_003",
+     "to_id": "2_0_sub_008",
+     "relation_type": "is_applied_in",
+     "note": "フェノール樹脂の合成に適用される"
+   }
+ ]
+}

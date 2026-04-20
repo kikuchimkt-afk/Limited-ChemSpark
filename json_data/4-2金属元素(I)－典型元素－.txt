@@ -1,0 +1,357 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "第4編 無機物質",
+   "chapter": 2,
+   "chapter_title": "金属元素(I)－典型元素－",
+   "section": 1,
+   "section_title": "アルカリ金属元素・アルカリ土類金属元素・アルミニウム・スズ・鉛",
+   "page_range": [358, 372],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "2_1_sub_001",
+     "name": "ナトリウム",
+     "formula": "Na",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": 97.8, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "銀白色",
+       "odor": "",
+       "density": { "value": 0.97, "unit": "g/cm³", "condition": "" },
+       "solubility": "水と激しく反応 [cite: 14]",
+       "electrical_conductivity": "",
+       "other": ["炎色反応: 黄 [cite: 34]"]
+     },
+     "cross_refs": ["2_1_def_001", "2_1_rxn_001"],
+     "notes": "灯油中に保存する [cite: 29]。"
+   },
+   {
+     "id": "2_1_sub_002",
+     "name": "水酸化ナトリウム",
+     "formula": "NaOH",
+     "aliases": ["カセイソーダ [cite: 94]"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "比較的低い [cite: 93]" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "白色 [cite: 93]",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "水によく溶ける [cite: 94]",
+       "electrical_conductivity": "",
+       "other": ["潮解性あり [cite: 93]", "強い塩基性 [cite: 94]"]
+     },
+     "cross_refs": ["2_1_def_002"],
+     "notes": "固体や水溶液は二酸化炭素を吸収しやすい [cite: 95]。皮膚などを侵す性質がある [cite: 123]。"
+   },
+   {
+     "id": "2_1_sub_003",
+     "name": "炭酸ナトリウム",
+     "formula": "Na2CO3",
+     "aliases": ["ソーダ灰 [cite: 100]"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "熱しても分解しにくく、融解する [cite: 145]" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "白色",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "水溶液は塩基性を示す [cite: 137]",
+       "electrical_conductivity": "",
+       "other": ["十水和物は風解して白色粉末になる [cite: 146]"]
+     },
+     "cross_refs": ["2_1_proc_001"],
+     "notes": "ガラスの原料や染色・工業薬品として使われる [cite: 147]。"
+   },
+   {
+     "id": "2_2_sub_001",
+     "name": "カルシウム",
+     "formula": "Ca",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": 839, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": 1.55, "unit": "g/cm³", "condition": "" },
+       "solubility": "常温で水と反応し水素発生 [cite: 210, 217]",
+       "electrical_conductivity": "",
+       "other": ["炎色反応: 橙赤 [cite: 207]"]
+     },
+     "cross_refs": ["2_2_def_001"],
+     "notes": ""
+   },
+   {
+     "id": "2_3_sub_001",
+     "name": "アルミニウム",
+     "formula": "Al",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "銀白色",
+       "odor": "",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "酸・強塩基の両方に溶ける [cite: 392]",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["2_3_def_001", "2_3_proc_001"],
+     "notes": "両性金属である [cite: 392]。不動態をつくりやすい [cite: 349]。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "2_1_def_001",
+     "type": "def",
+     "title": "アルカリ金属元素",
+     "prerequisite_ids": [],
+     "definition": "周期表1族のうちで、H以外の元素をアルカリ金属元素という [cite: 12]。",
+     "explanation": "価電子1個をもつ典型元素です [cite: 12]。イオン化傾向が大きく、水と常温で激しく反応して1価の陽イオンになりやすい特徴があります [cite: 14]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "代表的なアルカリ金属",
+         "substance_ids": ["2_1_sub_001", "TBD:カリウム", "TBD:リチウム"],
+         "description": "Li, Na, K, Rb, Csなど [cite: 34]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "水素(H)は1族元素ですが、アルカリ金属元素には含まれません [cite: 12]。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "アルカリ金属の単体の保存方法を問う問題",
+         "key_concept_ids": ["2_1_rxn_001"]
+       }
+     ],
+     "cross_refs": ["TBD:イオン化傾向"],
+     "source_page": 358
+   },
+   {
+     "id": "2_1_tip_001",
+     "type": "tip",
+     "title": "炎色反応の覚え方",
+     "prerequisite_ids": ["2_1_def_001", "2_2_def_001"],
+     "definition": "アルカリ金属元素・アルカリ土類金属元素等の炎色反応を暗記するための語呂合わせ [cite: 79]。",
+     "explanation": "炎色反応を示す金属とその色を紐づけた有名な覚え方です [cite: 79]。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [
+       "リアカー(Li:赤) なき(Na:黄) K村(K:赤紫)、どうせ(Cu:青緑) 借るとう(Ca:橙赤) するも紅(Sr:紅) 馬力(Ba:黄緑) [cite: 79, 80, 81, 82]"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "炎色反応の色から元素を特定する問題",
+         "key_concept_ids": ["2_1_def_001", "2_2_def_001"]
+       }
+     ],
+     "cross_refs": ["TBD:炎色反応"],
+     "source_page": 359
+   },
+   {
+     "id": "2_1_proc_001",
+     "type": "proc",
+     "title": "アンモニアソーダ法（ソルベー法）",
+     "prerequisite_ids": ["TBD:溶解度"],
+     "definition": "塩化ナトリウムから炭酸ナトリウムを工業的に製造する方法 [cite: 97, 100, 102]。",
+     "explanation": "食塩水にアンモニアと二酸化炭素を吹き込み、溶解度の低い炭酸水素ナトリウムを沈殿させてから、それを熱分解して炭酸ナトリウムを得ます [cite: 97, 100]。 ",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "塩化ナトリウムの飽和水溶液にアンモニアを吸収させてから二酸化炭素を通じる [cite: 97]。",
+         "reason": "$NaCl + NH_{3} + CO_{2} + H_{2}O \\longrightarrow NaHCO_{3} \\downarrow + NH_{4}Cl$ の反応で、最も溶解度が小さい$NaHCO_{3}$が飽和状態となって沈殿するため [cite: 97, 98, 134]。"
+       },
+       {
+         "step": 2,
+         "action": "生じた$NaHCO_{3}$を集めて焼く [cite: 100]。",
+         "reason": "$2NaHCO_{3} \\longrightarrow Na_{2}CO_{3} + H_{2}O + CO_{2} \\uparrow$ の熱分解反応により、目的物の炭酸ナトリウムが得られるため [cite: 100]。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "塩化ナトリウムからの炭酸ナトリウムの生成量の理論値計算 [cite: 156]",
+         "key_concept_ids": ["2_1_proc_001"]
+       },
+       {
+         "pattern": "アンモニアソーダ法の中間生成物や各工程の反応式を問う問題 [cite: 173, 174]",
+         "key_concept_ids": ["2_1_proc_001"]
+       }
+     ],
+     "cross_refs": ["2_1_sub_003"],
+     "source_page": 360
+   },
+   {
+     "id": "2_2_def_001",
+     "type": "def",
+     "title": "アルカリ土類金属元素",
+     "prerequisite_ids": [],
+     "definition": "周期表2族元素のうち、Be, Mgを除く、Ca, Sr, Ba, Raなどの元素のこと。※教科書によっては2族全体(Be, Mg, Ca, Sr, Ba)をアルカリ土類金属元素とよぶこともある [cite: 204, 205, 213]。",
+     "explanation": "価電子2個をもつ典型元素です [cite: 204]。Be, Mgは他のアルカリ土類金属と性質がかなり異なり、例えば常温の水と反応しにくいなどの違いがあります [cite: 210, 213]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "代表的なアルカリ土類金属",
+         "substance_ids": ["2_2_sub_001", "TBD:バリウム", "TBD:ストロンチウム"],
+         "description": "Ca, Sr, Ba [cite: 207, 213]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "Be, Mgは2族元素ですが、アルカリ土類金属に特有の炎色反応を示さず、硫酸塩が水に溶けやすいなど性質が異なるため区別されることがあります [cite: 210, 213]。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "Be・MgとCa・Sr・Baの化学的性質の違いを問う問題",
+         "key_concept_ids": ["2_2_def_001"]
+       }
+     ],
+     "cross_refs": ["2_1_def_001"],
+     "source_page": 363
+   },
+   {
+     "id": "2_3_def_001",
+     "type": "def",
+     "title": "両性金属（両性元素）",
+     "prerequisite_ids": ["TBD:酸と塩基"],
+     "definition": "酸の水溶液とも強塩基の水溶液とも反応して水素を発生し塩をつくる金属元素 [cite: 390, 392]。",
+     "explanation": "通常、金属は酸としか反応しませんが、アルミニウムや亜鉛などは強アルカリ（強塩基）とも反応して水素を出して溶けます [cite: 387, 390, 392]。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "両性金属の例",
+         "substance_ids": ["2_3_sub_001", "TBD:亜鉛", "TBD:スズ", "TBD:鉛"],
+         "description": "Al, Zn, Sn, Pb [cite: 392, 395]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [
+       "「ああ(Al, Zn) すんなり(Sn, Pb)と 両性に 愛される(両性金属)」 [cite: 394, 395, 396, 397, 398, 399]"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "酸にも強塩基にも溶ける金属を選択させる問題",
+         "key_concept_ids": ["2_3_def_001"]
+       }
+     ],
+     "cross_refs": ["2_3_rxn_001", "2_3_rxn_002"],
+     "source_page": 369
+   },
+   {
+     "id": "2_3_rxn_003",
+     "type": "rxn",
+     "title": "テルミット反応",
+     "prerequisite_ids": ["TBD:酸化還元"],
+     "definition": "アルミニウムの粉末と金属酸化物の混合物を燃焼させ、アルミニウムの強い還元力により高温で金属を遊離させる反応 [cite: 353, 354, 356, 358, 359]。",
+     "explanation": "アルミニウムの粉末と酸化鉄(III)の混合物に点火すると、3000℃以上の高温を出して激しく反応し、融けた鉄が得られます [cite: 353, 354, 355]。",
+     "conditions": [
+       "マグネシウムリボンなどを点火剤として用いる [cite: 354]"
+     ],
+     "examples": [
+       {
+         "label": "酸化鉄(III)の還元",
+         "substance_ids": ["2_3_sub_001", "TBD:酸化鉄(III)", "TBD:鉄"],
+         "description": "$Fe_{2}O_{3} + 2Al \\longrightarrow 2Fe + Al_{2}O_{3}$ [cite: 357]",
+         "values": [
+           { "value": 3000, "unit": "℃", "condition": "以上" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "テルミット反応における還元剤を特定する問題",
+         "key_concept_ids": ["2_3_rxn_003"]
+       }
+     ],
+     "cross_refs": ["TBD:還元作用"],
+     "source_page": 368
+   },
+   {
+     "id": "2_3_proc_001",
+     "type": "proc",
+     "title": "ホール・エルー法",
+     "prerequisite_ids": ["TBD:溶融塩電解"],
+     "definition": "氷晶石を融解させたものにアルミナを溶かし、炭素電極を用いて溶融塩電解を行いアルミニウムの単体を得る製法 [cite: 330]。",
+     "explanation": "アルミニウムは水溶液の電気分解では析出しないため、水を介さない溶融塩電解を使います [cite: 330]。アルミナ単独では融点が高すぎるため、氷晶石を加えて融点を下げてから電気分解を行います [cite: 330]。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "ボーキサイトを濃い水酸化ナトリウム水溶液で処理し、純粋なアルミナ(Al2O3)を得る [cite: 330]。",
+         "reason": "ボーキサイトには酸化鉄(III)などの不純物が多量に含まれているため [cite: 330]。"
+       },
+       {
+         "step": 2,
+         "action": "氷晶石を融解させたものにアルミナを溶かす [cite: 330]。",
+         "reason": "アルミナ単独では融点が高く溶融塩電解が困難なため（暗黙の知識・文脈より補足）。"
+       },
+       {
+         "step": 3,
+         "action": "炭素電極を用いて溶融塩電解を行う [cite: 330]。",
+         "reason": "陰極で $Al^{3+} + 3e^{-} \\longrightarrow Al$ となり、アルミニウムが析出する [cite: 333]。陽極の炭素は消費されるため順次補給が必要 [cite: 331]。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "アルミニウムの工業的製法において氷晶石を加える理由を問う問題",
+         "key_concept_ids": ["2_3_proc_001"]
+       },
+       {
+         "pattern": "電極反応式の記述、および陽極が消費される理由の説明 [cite: 331, 333, 334, 335]",
+         "key_concept_ids": ["2_3_proc_001"]
+       }
+     ],
+     "cross_refs": ["TBD:ボーキサイト", "TBD:アルミナ"],
+     "source_page": 367
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "2_1_proc_001",
+     "to_id": "2_1_sub_003",
+     "relation_type": "produces",
+     "note": "アンモニアソーダ法は炭酸ナトリウム(Na2CO3)を製造する [cite: 100]。"
+   },
+   {
+     "from_id": "2_3_def_001",
+     "to_id": "2_3_sub_001",
+     "relation_type": "is_example_of",
+     "note": "アルミニウムは両性金属の代表例である [cite: 392]。"
+   },
+   {
+     "from_id": "2_3_rxn_003",
+     "to_id": "2_3_sub_001",
+     "relation_type": "is_applied_in",
+     "note": "アルミニウムの還元作用を利用したのがテルミット反応である [cite: 356]。"
+   }
+ ]
+}

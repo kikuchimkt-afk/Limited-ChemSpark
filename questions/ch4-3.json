@@ -1,0 +1,2428 @@
+{
+  "metadata": {
+    "chapter": "4-3",
+    "chapter_title": "金属元素(II)－遷移元素－",
+    "source_file": "json_data/4-3金属元素(II)－遷移元素－.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    }
+  },
+  "questions": [
+    {
+      "id": "ch4_3_q001",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "definition",
+      "sub_category": "遷移元素の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "遷移元素について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "周期表の第三族から第十二族に属する元素の総称ですべて金属元素。最外殻電子数が一個か二個で族が異なっても性質が似ている。有色のイオンや化合物を作り複数の酸化数を持つ。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "遷移元素は非金属元素を含む。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "すべて金属元素。"
+        },
+        {
+          "label": "3",
+          "text": "遷移元素のイオンはすべて無色である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "有色のイオンが多い。"
+        },
+        {
+          "label": "4",
+          "text": "遷移元素は一つの酸化数しか取らない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "複数の酸化数を持つ。"
+        }
+      ],
+      "explanation": "遷移元素は典型元素と大きく異なる特徴を持ちます。族が変わっても最外殻電子数が同じ（一個か二個）なので性質が似ています。また内殻の電子配置の違いにより有色のイオンや複数の酸化状態が生じます。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "3〜12族に属する元素の総称。すべて金属元素。有色のイオンや化合物。複数の酸化数"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q002",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "definition",
+      "sub_category": "錯イオンの定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "錯イオンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "非共有電子対を持った分子やイオン（配位子）が中心の金属イオンに配位結合してできたイオン。配位子がくっつく数を配位数という。テトラアンミン銅（二価）イオンは深青色の代表例。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "錯イオンは共有結合で形成される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "配位結合。"
+        },
+        {
+          "label": "3",
+          "text": "錯イオンには色がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "深青色などの有色イオンが多い。"
+        },
+        {
+          "label": "4",
+          "text": "錯イオンは非金属同士で形成される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "中心は金属イオン。"
+        }
+      ],
+      "explanation": "錯イオンは金属イオンを中心にアンモニアや水酸化物イオンなどの配位子が配位結合でくっついた構造です。テトラアンミン銅（二価）イオンは銅（二価）イオンにアンモニアが四つ配位した深青色の正方形構造です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_002",
+          "quote": "非共有電子対をもった分子やイオンが中心の金属イオンと配位結合してできたイオン"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q003",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "銅の性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "銅について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "赤色の金属で展性・延性に富み電気伝導性が高い。塩酸や希硫酸には溶けないが希硝酸・濃硝酸・熱濃硫酸には溶ける。湿った空気中で緑青ができる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "銅は塩酸に溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "イオン化傾向が水素より小さいため塩酸には溶けない。"
+        },
+        {
+          "label": "3",
+          "text": "銅は銀白色の金属である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "赤色。銀白色は銀。"
+        },
+        {
+          "label": "4",
+          "text": "銅は電気をほとんど通さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "良導体。"
+        }
+      ],
+      "explanation": "銅は特徴的な赤色をした金属です。イオン化傾向が水素より小さいため塩酸や希硫酸（水素を発生する酸）には溶けませんが、酸化力のある酸（硝酸や熱濃硫酸）には溶けます。表面にできる緑青は炭酸銅と水酸化銅の混合物です。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_001",
+          "quote": "赤色。塩酸や希硫酸には溶けない。酸化力の強い酸には溶解する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q004",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "銀の性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "銀について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銀白色で展性・延性に富み電気伝導性が全金属中最大。塩酸や希硫酸には溶けないが酸化力の強い酸には溶ける。硫化水素に触れると黒色の硫化銀になる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "銀の電気伝導性は銅より低い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "全金属中最大で銅より高い。"
+        },
+        {
+          "label": "3",
+          "text": "銀は塩酸に溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶けない。"
+        },
+        {
+          "label": "4",
+          "text": "銀は空気中で変色しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "硫化水素で黒変する。"
+        }
+      ],
+      "explanation": "銀は電気伝導性が全金属中最大ですがコストの関係で電線には銅が使われます。銀のスプーンが温泉卵で黒くなるのは硫化水素と反応して硫化銀が生成するためです。塩酸の塩化物イオンとは不溶性の塩化銀（白色沈殿）を作ります。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_002",
+          "quote": "電気伝導性は金属の中で最大。硫化水素に触れると黒色の硫化銀になる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q005",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "金の性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "金について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "黄金色で全金属中最も展性・延性に富む。イオン化傾向が非常に小さく王水にのみ溶ける。電気伝導性も高い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "金は希硝酸に溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "王水にのみ溶ける。"
+        },
+        {
+          "label": "3",
+          "text": "金の展性は鉄より劣る。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "全金属中最大。"
+        },
+        {
+          "label": "4",
+          "text": "金は銀白色の金属である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "黄金色。"
+        }
+      ],
+      "explanation": "金はイオン化傾向が最も小さい金属の一つで、通常の酸には全く溶けません。唯一王水（濃硝酸と濃塩酸の一対三混合物）にのみ溶けます。一グラムの金を約三千メートルの線に引き伸ばせるほど延性が大きいです。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_003",
+          "quote": "黄金色。最も展性・延性に富む。王水に溶解"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q006",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "procedure",
+      "sub_category": "銅の電解精錬",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "銅の電解精錬について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "粗銅を陽極、純銅を陰極として硫酸銅水溶液中で低電圧で電気分解する。陽極の粗銅が溶けて陰極に純銅が析出する。金や銀は陽極泥として底に沈む。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "粗銅を陰極、純銅を陽極にする。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。粗銅が陽極。"
+        },
+        {
+          "label": "3",
+          "text": "陽極泥には亜鉛や鉄が含まれる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "亜鉛や鉄はイオン化傾向が大きいため溶液中に溶け込む。陽極泥は金・銀などイオン化傾向が小さい金属。"
+        },
+        {
+          "label": "4",
+          "text": "高電圧で電気分解する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "零点三〜零点四ボルトの低電圧。"
+        }
+      ],
+      "explanation": "電解精錬のポイントは「粗銅が陽極で溶ける、純銅が陰極で析出する」です。低電圧にすることで銅のみが選択的に反応し、イオン化傾向の小さい金・銀は溶けずに陽極泥として沈殿します。この陽極泥は貴金属の回収に利用されます。",
+      "evidence": [
+        {
+          "source_id": "3_2_proc_001",
+          "quote": "粗銅を陽極、純銅を陰極。0.3〜0.4Vの低い電圧。金や銀は陽極泥"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q007",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "クロム酸イオンの平衡",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "クロム酸イオンとニクロム酸イオンの関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "クロム酸イオンは黄色でニクロム酸イオンは赤橙色。酸性にするとニクロム酸イオンに変化し、塩基性にするとクロム酸イオンに戻る可逆反応。クロムの酸化数はプラス六のまま変化しない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "クロム酸イオンは赤橙色である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "黄色。赤橙色はニクロム酸イオン。"
+        },
+        {
+          "label": "3",
+          "text": "この反応は不可逆反応である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "可逆反応。"
+        },
+        {
+          "label": "4",
+          "text": "この反応でクロムの酸化数が変化する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "プラス六のまま変化しない。酸化還元反応ではない。"
+        }
+      ],
+      "explanation": "クロム酸イオン（黄色）とニクロム酸イオン（赤橙色）の相互変換は液性の変化（酸性・塩基性）による平衡移動です。酸化還元反応ではない（酸化数不変）がポイントです。色の変化で液性のリトマス試験紙的な役割を果たします。",
+      "evidence": [
+        {
+          "source_id": "3_3_rxn_001",
+          "quote": "クロム酸イオン（黄色）とニクロム酸イオン（赤橙色）。クロムの酸化数は+6のまま"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q008",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "procedure",
+      "sub_category": "鉄の製錬",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "鉄の製錬について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶鉱炉に鉄鉱石とコークスと石灰石を入れ高温にする。コークスから生じた一酸化炭素が鉄鉱石を段階的に還元して銑鉄を得る。銑鉄は炭素を多く含む。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "コークスが直接鉄鉱石を還元する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一酸化炭素が還元剤。"
+        },
+        {
+          "label": "3",
+          "text": "石灰石は原料として鉄の一部になる。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "石灰石は不純物除去（スラグ生成）のため。"
+        },
+        {
+          "label": "4",
+          "text": "溶鉱炉で得られるのは純鉄である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "銑鉄（炭素約四パーセント含む）。"
+        }
+      ],
+      "explanation": "鉄の製錬で重要なのは一酸化炭素が還元剤として働くことです。酸化鉄は段階的に還元されます（三価→四分の三価→二価→金属鉄）。石灰石は二酸化ケイ素などの不純物と反応してスラグ（かす）として除去するために加えます。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_002",
+          "quote": "一酸化炭素による還元反応で銑鉄を得る。銑鉄は炭素を多く含む"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q009",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "procedure",
+      "sub_category": "金属イオンの系統分析",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "金属イオンの系統分析の手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "第一に希塩酸で銀イオンと鉛イオンを沈殿。第二に酸性で硫化水素を通じて銅イオンなどを沈殿。第三に煮沸後アンモニア水で鉄イオンとアルミニウムイオンを沈殿。第四に塩基性で硫化水素を通じて亜鉛イオンを沈殿。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "最初にアンモニア水を加える。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "最初は希塩酸。"
+        },
+        {
+          "label": "3",
+          "text": "二段階だけで全ての金属イオンを分離できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "四段階以上必要。"
+        },
+        {
+          "label": "4",
+          "text": "試薬を加える順序は自由である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "決められた順序で行う必要がある。"
+        }
+      ],
+      "explanation": "系統分析は試薬を加える順序が厳密に決まっています。希塩酸→（酸性）硫化水素→アンモニア水→（塩基性）硫化水素の順です。順序を変えると正しく分離できません。各段階で沈殿する金属イオンのグループを覚えることが重要です。",
+      "evidence": [
+        {
+          "source_id": "3_5_proc_001",
+          "quote": "希塩酸→酸性で硫化水素→アンモニア水→塩基性で硫化水素"
+        }
+      ],
+      "related_concept_ids": [
+        "3_5_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q010",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "mnemonic",
+      "sub_category": "溶解性ルール",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "金属塩の溶解性ルールの語呂合わせとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "「塩化物は銀と鉛が沈殿（銀閣寺でなまり）」「硫酸塩はバカにするな（バリウム・カルシウム・ストロンチウム・鉛）」と覚える。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "塩化物はすべて水に溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "塩化銀や塩化鉛は沈殿する。"
+        },
+        {
+          "label": "3",
+          "text": "硫酸塩はすべて水に溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "硫酸バリウムなどは沈殿する。"
+        },
+        {
+          "label": "4",
+          "text": "硝酸塩は水に溶けにくいものが多い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "硝酸塩はほぼすべて水に溶ける。"
+        }
+      ],
+      "explanation": "溶解性ルールは系統分析や沈殿反応の基本です。塩化物の例外（銀・鉛）と硫酸塩の例外（バリウム・カルシウム・ストロンチウム・鉛）を語呂合わせで覚えましょう。硝酸塩は例外なくすべて水に溶けます。",
+      "evidence": [
+        {
+          "source_id": "3_6_law_001",
+          "quote": "塩化物は銀、鉛が沈殿。硫酸塩はBa, Ca, Sr, Pbが沈殿"
+        }
+      ],
+      "related_concept_ids": [
+        "3_6_law_001"
+      ],
+      "mnemonic": "銀閣寺でなまり、バカにするな"
+    },
+    {
+      "id": "ch4_3_q011",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "銅と銀の酸への溶解性",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "銅と銀の酸への溶解性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銅も銀も塩酸には溶けない。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "銅も銀も酸化力のある酸には溶ける。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "銅も銀もイオン化傾向が水素より小さい。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "銅も銀も希硫酸に溶けて水素を発生する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "イオン化傾向が水素より小さいため希硫酸では水素は発生せず溶けない。"
+        }
+      ],
+      "explanation": "銅と銀はイオン化傾向が水素より小さいため、水素を発生するタイプの酸（塩酸・希硫酸）には溶けません。硝酸のような酸化力のある酸でのみ溶けます。これは「水素より下」の金属共通の特徴です。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_001",
+          "quote": "塩酸や希硫酸には溶けない。酸化力の強い酸には溶解"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_001",
+        "3_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q012",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "電解精錬の極の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "銅の電解精錬に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "陽極の粗銅が溶けてイオンになる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "陰極に純銅が析出する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "陽極泥には金や銀が含まれる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "純銅を陽極にすると効率よく精錬できる。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "粗銅を陽極にする。純銅は陰極。"
+        }
+      ],
+      "explanation": "電解精錬の極の配置は最も間違えやすいポイントです。「粗銅は陽極（溶ける側）、純銅は陰極（析出する側）」と覚えましょう。陽極で不純物が溶けたり沈んだりすることで精錬が達成されます。",
+      "evidence": [
+        {
+          "source_id": "3_2_proc_001",
+          "quote": "粗銅を陽極、純銅を陰極"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q013",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "クロム酸イオンの色の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "クロム酸イオンとニクロム酸イオンの色に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "クロム酸イオンは黄色である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ニクロム酸イオンは赤橙色である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "酸性にするとニクロム酸イオンに変化する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "クロム酸イオンが赤橙色で、ニクロム酸イオンが黄色である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。クロム酸が黄、ニクロム酸が赤橙。"
+        }
+      ],
+      "explanation": "クロム酸イオン（黄色・塩基性）とニクロム酸イオン（赤橙色・酸性）の色を入れ替えるのは定番のひっかけです。「クロム黄（クロム酸カリウムは黄色い絵の具）」と覚えると混乱しにくいです。",
+      "evidence": [
+        {
+          "source_id": "3_3_rxn_001",
+          "quote": "クロム酸イオン（黄色）ニクロム酸イオン（赤橙色）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q014",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "銑鉄と鋼の違い",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "鉄の製錬に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銑鉄は炭素を約四パーセント含み硬くてもろい。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "鋼は銑鉄から炭素を減らしたもので適度な強度と加工性がある。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "溶鉱炉で得られるのは銑鉄である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "溶鉱炉で直接純鉄が得られ、これを鋼という。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "溶鉱炉で得られるのは銑鉄。鋼は銑鉄を転炉で精錬して炭素を減らしたもの。"
+        }
+      ],
+      "explanation": "溶鉱炉→銑鉄（炭素約四パーセント、硬いがもろい）→転炉→鋼（炭素約零点二〜二パーセント、強靭）→純鉄（炭素ほぼゼロ、柔らかい）の順に炭素が減っていきます。実用に最も適しているのは鋼です。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_002",
+          "quote": "銑鉄は炭素を多く含む"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q015",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "系統分析の順序",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "系統分析に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "第一段階で希塩酸を加えて塩化銀や塩化鉛を沈殿させる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "第二段階で酸性条件で硫化水素を通じて硫化銅などを沈殿させる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "第三段階で煮沸後にアンモニア水を加えて鉄とアルミニウムの水酸化物を沈殿させる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "試薬を加える順序は任意でよく、どの順番で加えても同じ結果が得られる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "順序は厳密に決まっている。変えると正しく分離できない。"
+        }
+      ],
+      "explanation": "系統分析の順序は厳密に決まっています。例えば先にアンモニア水を加えると銅がアンミン錯イオンを形成して溶けたままになり沈殿しません。また煮沸で硫化水素を除去しないと次のステップで余分な硫化物が沈殿してしまいます。",
+      "evidence": [
+        {
+          "source_id": "3_5_proc_001",
+          "quote": "指定された順序で試薬を加えること"
+        }
+      ],
+      "related_concept_ids": [
+        "3_5_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q016",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "テトラアンミン銅イオン",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "テトラアンミン銅（二価）イオンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銅（二価）イオンにアンモニアが四つ配位した深青色の錯イオン。正方形構造をとる。銅（二価）イオンの水溶液に過剰のアンモニア水を加えると生成する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "テトラアンミン銅イオンは無色である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "深青色。"
+        },
+        {
+          "label": "3",
+          "text": "配位子は水酸化物イオンである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アンモニア。"
+        },
+        {
+          "label": "4",
+          "text": "正四面体構造をとる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "正方形。"
+        }
+      ],
+      "explanation": "テトラアンミン銅イオンは銅イオンの水溶液（淡青色）に過剰のアンモニア水を加えると生成する深青色のイオンです。「テトラ」は四つ、「アンミン」はアンモニアを意味します。正方形の平面構造が特徴です。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_004",
+          "quote": "深青色。正方形。錯イオン"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q017",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "陽極泥の成分",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "銅の電解精錬における陽極泥に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "陽極泥には金が含まれる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "陽極泥には銀が含まれる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "陽極泥は貴金属の回収に利用される。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "陽極泥には亜鉛と鉄が豊富に含まれる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "亜鉛と鉄はイオン化傾向が大きいため溶液中にイオンとして溶け込む。陽極泥には含まれない。"
+        }
+      ],
+      "explanation": "電解精錬ではイオン化傾向の大きさで運命が分かれます。銅より大きい亜鉛・鉄→溶液に溶け込む（しかし低電圧なので陰極に析出しない）。銅より小さい金・銀→溶けずに陽極泥として沈殿。銅→陽極で溶けて陰極で析出。",
+      "evidence": [
+        {
+          "source_id": "3_2_proc_001",
+          "quote": "イオン化傾向の小さい金や銀は溶けずに底に沈みます（陽極泥）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q018",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "亜鉛の性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "亜鉛について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銀白色の金属で両性金属である。希硫酸や希塩酸にも強塩基の水溶液にも溶けて水素を発生する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "亜鉛は酸にのみ溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両性金属で強塩基にも溶ける。"
+        },
+        {
+          "label": "3",
+          "text": "亜鉛は赤色の金属である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "銀白色。赤色は銅。"
+        },
+        {
+          "label": "4",
+          "text": "亜鉛は遷移元素ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "第十二族の遷移元素。"
+        }
+      ],
+      "explanation": "亜鉛は両性金属（ああすんなりの「あ」）であり遷移元素（第十二族）でもあります。トタン板（鉄に亜鉛めっき）やボルタ電池の負極に使われます。亜鉛が先に酸化されることで鉄の腐食を防ぐ「犠牲防食」の原理です。",
+      "evidence": [
+        {
+          "source_id": "3_4_sub_005",
+          "quote": "希硫酸や希塩酸、強塩基の水溶液に溶ける。両性金属"
+        }
+      ],
+      "related_concept_ids": [
+        "3_4_sub_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q019",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "遷移元素と典型元素の違い",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "遷移元素の特徴に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "遷移元素は複数の酸化数をとることが多い。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "遷移元素のイオンや化合物は有色のものが多い。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "遷移元素の最外殻電子数は一個か二個である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "遷移元素は族が異なると性質が大きく異なり、典型元素は族が異なっても性質が似ている。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。遷移元素は族が異なっても性質が似ている。典型元素は同族で性質が似る。"
+        }
+      ],
+      "explanation": "遷移元素と典型元素の性質の傾向は逆です。遷移元素は最外殻電子数がほぼ同じ（一か二個）なので族が違っても性質が似ています。典型元素は族番号と価電子数が対応するため同族で性質が似ます。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "族が違っても性質が似ている"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q020",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "銀と硫化水素",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "銀が黒くなる原因として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "硫化水素や硫黄を含む物質に触れると表面に黒色の硫化銀が生成するため。銀食器が温泉卵で黒くなるのもこの反応。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "銀は空気中の酸素と反応して酸化銀（黒色）になるため。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "酸化ではなく硫化。"
+        },
+        {
+          "label": "3",
+          "text": "銀は塩酸と反応して黒くなる。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "塩酸ではない。硫化水素。"
+        },
+        {
+          "label": "4",
+          "text": "銀は変色しない安定な金属である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "硫化水素で変色する。"
+        }
+      ],
+      "explanation": "銀が黒くなるのは「さび」ではなく「硫化」です。空気中の硫化水素（ごく微量）や食品中の硫黄化合物と反応して黒色の硫化銀ができます。金は硫化にも酸化にもほとんど反応せず変色しないのが金と銀の大きな違いです。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_002",
+          "quote": "硫化水素に触れると黒色の硫化銀になる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q021",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "金の溶媒の限定",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "金の溶解性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "金は王水に溶ける。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "金はイオン化傾向が非常に小さい。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "金は塩酸にも希硝酸にも濃硝酸にも溶けない。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "金は濃硝酸に容易に溶ける。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "金は濃硝酸にも溶けない。王水のみ。"
+        }
+      ],
+      "explanation": "金は通常のどの酸にも溶けません。銅や銀が溶ける硝酸にすら金は溶けません。王水（濃硝酸一対濃塩酸三の混合物）にのみ溶けるという極めて高い化学的安定性が金の最大の特徴です。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_003",
+          "quote": "王水に溶解する。イオン化傾向が非常に小さい"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q022",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "銅の緑青",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "銅の表面にできる緑色のさびについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "湿った空気中で長時間放置すると緑青と呼ばれる緑色のさびができる。これは塩基性炭酸銅を主成分とする被膜である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "緑青は黒色の被膜である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "緑色。"
+        },
+        {
+          "label": "3",
+          "text": "銅は湿った空気中でもさびない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "緑青ができる。"
+        },
+        {
+          "label": "4",
+          "text": "緑青は酸化銅である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩基性炭酸銅。"
+        }
+      ],
+      "explanation": "銅の緑青は鎌倉の大仏や自由の女神の緑色でおなじみです。湿気・二酸化炭素・酸素の三つが関わって生成します。緑青は緻密な被膜を形成するため内部の腐食を防ぐ保護作用もあります。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_001",
+          "quote": "湿った空気中で緑青とよばれる緑色のさびができる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q023",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "電気伝導性の順位",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "金属の電気伝導性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銀が全金属中最大の電気伝導性を持つ。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "銅も非常に高い電気伝導性を持つ。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "電線には銀ではなくコスト面から銅が使われている。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "銅の電気伝導性が全金属中最大で銀は二番目である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。銀が一位で銅が二位。"
+        }
+      ],
+      "explanation": "電気伝導性のトップは銀で、次いで銅、金の順です。実用面ではコストの関係で電線には銅が使われますが、高性能な電子部品には銀や金のめっきが使われることがあります。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_002",
+          "quote": "電気伝導性は金属の中で最大"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q024",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "鉄の製錬の原料",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "溶鉱炉に投入する三つの原料として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "鉄鉱石（酸化鉄）、コークス（炭素）、石灰石（炭酸カルシウム）の三つ。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "鉄鉱石と水と食塩である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "正しい原料はコークスと石灰石。"
+        },
+        {
+          "label": "3",
+          "text": "鉄鉱石とアルミニウムである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "アルミニウムはテルミット反応で使う。"
+        },
+        {
+          "label": "4",
+          "text": "原料は鉄鉱石のみで十分である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "コークスと石灰石も必要。"
+        }
+      ],
+      "explanation": "溶鉱炉の三つの原料の役割を覚えましょう。鉄鉱石は鉄の原料。コークスは燃料兼還元剤（一酸化炭素を発生）。石灰石は不純物処理（スラグ生成）です。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_002",
+          "quote": "鉄鉱石、コークス、石灰石を入れる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q025",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "配位結合と共有結合の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "錯イオンの結合に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "錯イオンは配位結合で形成される。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "配位結合では一方の原子が非共有電子対を提供する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アンモニアなどが配位子として働く。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "錯イオンは通常の共有結合で形成されるため配位結合とは無関係である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "錯イオンは配位結合で形成される。"
+        }
+      ],
+      "explanation": "配位結合は共有結合の一種ですが、結合に使う電子対を一方の原子（配位子）のみが提供する点が通常の共有結合と異なります。錯イオンの形成は必ずこの配位結合によって行われます。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_002",
+          "quote": "非共有電子対をもった分子やイオンが中心の金属イオンと配位結合してできた"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q026",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "ニクロム酸カリウム",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ニクロム酸カリウムについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "赤橙色の結晶で水に溶け、強い酸化作用を持つ。酸化還元滴定に使われる代表的な酸化剤。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ニクロム酸カリウムは還元剤である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸化剤。"
+        },
+        {
+          "label": "3",
+          "text": "ニクロム酸カリウムは無色透明である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "赤橙色。"
+        },
+        {
+          "label": "4",
+          "text": "ニクロム酸カリウムは水に溶けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水に溶ける。"
+        }
+      ],
+      "explanation": "ニクロム酸カリウムは赤橙色の結晶でクロムの酸化数がプラス六の強力な酸化剤です。酸性条件で用いる酸化還元滴定（化学的酸素要求量の測定など）に使われます。過マンガン酸カリウムと並ぶ代表的な酸化剤です。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_006",
+          "quote": "赤橙色。水に溶ける。強い酸化作用"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_006"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q027",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "塩化物と硫酸塩の沈殿",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "金属塩の溶解性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩化銀は水に溶けない白色沈殿である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "硫酸バリウムは水に溶けない白色沈殿である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "硝酸塩はほぼすべて水に溶ける。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "塩化ナトリウムは水に溶けないため食塩は沈殿する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "塩化ナトリウムは水に非常によく溶ける。"
+        }
+      ],
+      "explanation": "アルカリ金属の塩（ナトリウム塩・カリウム塩）と硝酸塩はほぼすべて水に溶けます。食塩は塩化ナトリウムで水によく溶ける代表例です。沈殿するのは塩化銀・塩化鉛・硫酸バリウムなどの特定の組み合わせだけです。",
+      "evidence": [
+        {
+          "source_id": "3_6_law_001",
+          "quote": "ほとんどの塩（アルカリ金属や硝酸塩）は水に溶ける"
+        }
+      ],
+      "related_concept_ids": [
+        "3_6_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q028",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "系統分析の煮沸の理由",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "系統分析で第三段階の前に煮沸する理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶液中に残っている硫化水素を追い出すため。硫化水素が残っていると次の段階で余分な硫化物が沈殿してしまう。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "温度を上げて反応速度を速めるため。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "硫化水素の除去が目的。"
+        },
+        {
+          "label": "3",
+          "text": "水を蒸発させて濃縮するため。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "硫化水素の除去が目的。"
+        },
+        {
+          "label": "4",
+          "text": "沈殿を溶かすため。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "沈殿はろ過で分離済み。"
+        }
+      ],
+      "explanation": "第二段階で使った硫化水素が溶液中に残っていると第三段階以降で鉄やアルミニウムの硫化物が余分に沈殿してしまいます。煮沸によって溶解している硫化水素を気体として追い出してから次のステップに進みます。",
+      "evidence": [
+        {
+          "source_id": "3_5_proc_001",
+          "quote": "煮沸はH2Sを除去するため"
+        }
+      ],
+      "related_concept_ids": [
+        "3_5_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q029",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "鉄の還元剤の特定",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "鉄の製錬における還元剤に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "コークスが燃焼して一酸化炭素が生じる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "一酸化炭素が鉄鉱石を還元する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "段階的に酸化鉄が金属鉄へと還元される。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "石灰石が還元剤として鉄鉱石を直接還元する。",
+          "is_correct": true,
+          "trap_type": "reason_swap",
+          "trap_detail": "石灰石は不純物除去のため。還元剤は一酸化炭素。"
+        }
+      ],
+      "explanation": "石灰石の役割は不純物の二酸化ケイ素と反応してスラグを作り除去することです。還元剤として働くのは一酸化炭素です。コークスは直接還元剤として働くのではなく、燃焼して一酸化炭素を発生させる間接的な役割です。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_002",
+          "quote": "一酸化炭素による還元反応。石灰石は不純物をスラグとして除去"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q030",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "comprehensive",
+      "sub_category": "遷移元素の総合",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "遷移元素に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "第三〜十二族ですべて金属。有色イオンや複数の酸化数が特徴。銅は赤色で塩酸に溶けない。銀は電気伝導性最大で硫化水素で黒変。金は王水のみに溶ける。錯イオンは配位結合で形成。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "遷移元素に非金属を含む。銅は銀白色で塩酸に溶ける。銀の電気伝導性は低い。金は硝酸に溶ける。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "遷移元素のイオンはすべて無色で一つの酸化数しか取らない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "有色で複数の酸化数。"
+        },
+        {
+          "label": "4",
+          "text": "銅の電気伝導性が全金属中最大である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "銀が最大。"
+        }
+      ],
+      "explanation": "遷移元素の章全体を網羅した問題です。定義（第三〜十二族・全金属）、特徴（有色イオン・複数酸化数）、銅（赤色・酸化力ある酸にのみ溶解）、銀（電気伝導性最大・硫化）、金（王水のみ）、錯イオン（配位結合）を体系的に理解しましょう。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "3〜12族。すべて金属。有色イオン"
+        },
+        {
+          "source_id": "3_2_sub_001",
+          "quote": "赤色"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_002",
+        "3_2_sub_001",
+        "3_2_sub_002",
+        "3_2_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q031",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "classification",
+      "sub_category": "系統分析の各段階で沈殿するイオン",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "系統分析の各段階で沈殿する金属イオンの分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "第一段階（希塩酸）で銀と鉛。第二段階（酸性硫化水素）で銅など。第三段階（アンモニア水）で鉄とアルミニウム。第四段階（塩基性硫化水素）で亜鉛。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "第一段階で鉄が沈殿する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "鉄は第三段階。"
+        },
+        {
+          "label": "3",
+          "text": "第二段階で亜鉛が沈殿する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "亜鉛は第四段階。酸性では沈殿しない。"
+        },
+        {
+          "label": "4",
+          "text": "第四段階で銀が沈殿する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "銀は第一段階。"
+        }
+      ],
+      "explanation": "各段階でどのイオンが沈殿するかを正確に覚えることが系統分析の核心です。特に重要なのは亜鉛が「塩基性」硫化水素でのみ沈殿するという点です。酸性では硫化亜鉛の溶解度積に達しないため沈殿しません。",
+      "evidence": [
+        {
+          "source_id": "3_5_proc_001",
+          "quote": "希塩酸→Ag,Pb、酸性H2S→Cu、アンモニア水→Fe,Al、塩基性H2S→Zn"
+        }
+      ],
+      "related_concept_ids": [
+        "3_5_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q032",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "銅と水",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "銅と水の反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銅はイオン化傾向が水素より小さいため常温の水とも熱水とも反応しない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "銅は常温の水と反応する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応しない。"
+        },
+        {
+          "label": "3",
+          "text": "銅は熱水と反応して水素を発生する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応しない。"
+        },
+        {
+          "label": "4",
+          "text": "銅はイオン化傾向が水素より大きい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "小さい。"
+        }
+      ],
+      "explanation": "イオン化傾向が水素より小さい金属（銅より下）は水と反応しません。酸化力のない酸（塩酸・希硫酸）にも溶けません。溶かすには酸化力のある酸（硝酸など）が必要です。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_001",
+          "quote": "塩酸や希硫酸には溶けない"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q033",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "錯イオンの命名法",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "錯イオンの命名法について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "配位子の数をギリシャ語の数詞（ジ・トリ・テトラなど）で表し、配位子名、金属名の順に並べる。陰イオンの場合はさらに「酸」をつける。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "配位子の数は日本語の一二三で表す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ギリシャ語の数詞。"
+        },
+        {
+          "label": "3",
+          "text": "命名では金属名を先に記す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "配位子名が先。"
+        },
+        {
+          "label": "4",
+          "text": "陽イオンも陰イオンも同じ名称の付け方である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "陰イオンには「酸」をつける。"
+        }
+      ],
+      "explanation": "錯イオンの命名は語呂合わせ「崇拝するイオンさん。婦人ならさらにさんをつける」で覚えます。「す（数詞）」「はい（配位子）」する「イオン」さん（酸：陰イオンの場合）です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_002",
+          "quote": "崇拝するイオンさん。婦人ならさらにさんをつける"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_002"
+      ],
+      "mnemonic": "崇拝するイオンさん"
+    },
+    {
+      "id": "ch4_3_q034",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "クロムの酸化数変化の誤認",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "クロム酸イオンとニクロム酸イオンの平衡に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "この変換は液性の変化による平衡移動である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "クロムの酸化数はプラス六のまま変化しない。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "塩基性にすると黄色のクロム酸イオンに戻る。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "この反応は酸化還元反応であり、クロムの酸化数がプラス六からプラス三に変化する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "酸化還元反応ではない。クロムの酸化数は変化しない。"
+        }
+      ],
+      "explanation": "クロム酸イオンとニクロム酸イオンの相互変換は単なる酸塩基平衡であり酸化還元反応ではありません。クロムの酸化数はどちらもプラス六で変化しません。プラス三に変化するのはニクロム酸イオンが還元された場合（別の反応）です。",
+      "evidence": [
+        {
+          "source_id": "3_3_rxn_001",
+          "quote": "これは酸化還元反応ではない（クロムの酸化数は+6のまま）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_rxn_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q035",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "comprehensive",
+      "sub_category": "電解精錬の総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "銅の電解精錬に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "粗銅を陽極に接続し、陽極で銅がイオンとなって溶解する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "陰極の純銅板に銅が析出して純度九十九点九九パーセントの銅が得られる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "低電圧で行うのは銅のみを選択的に反応させるため。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "純銅を陽極に接続する。陽極泥は亜鉛と鉄を含み、金銀は溶液に溶け込む。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて誤り。粗銅が陽極。陽極泥は金銀を含む。亜鉛と鉄は溶液に溶ける。"
+        }
+      ],
+      "explanation": "電解精錬の全体像を一つの問題に凝縮しました。粗銅は陽極、純銅は陰極。陽極泥は金・銀（イオン化傾向小→溶けない→沈殿）。亜鉛・鉄はイオン化傾向大→溶液に溶け込むが低電圧のため陰極に析出しない。",
+      "evidence": [
+        {
+          "source_id": "3_2_proc_001",
+          "quote": "粗銅を陽極、純銅を陰極。金や銀は陽極泥"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q036",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "金の展性延性",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "金の展性と延性について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "金は全金属中最も展性・延性に富む。一グラムの金を約三千メートルの細い線に引き伸ばすことができる。金箔は数万分の一ミリメートルの薄さになる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "鉄が最も展性に富む。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "金が最大。"
+        },
+        {
+          "label": "3",
+          "text": "金は硬くて加工しにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "柔らかく加工しやすい。"
+        },
+        {
+          "label": "4",
+          "text": "展性と延性は同じ意味である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "展性は薄く広がる、延性は細く伸びる性質。"
+        }
+      ],
+      "explanation": "展性（叩くと薄く広がる）と延性（引っ張ると細く伸びる）は異なる性質ですが金はどちらも全金属中最大です。金箔は厚さ約零点零零一ミリメートル（一マイクロメートル）まで薄く伸ばせます。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_003",
+          "quote": "金属の中で最も展性・延性に富む"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q037",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "硫酸塩の沈殿",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "硫酸塩の溶解性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "硫酸バリウムは水に溶けない。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "硫酸カルシウムは水に溶けにくい。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "硫酸ナトリウムは水によく溶ける。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "すべての硫酸塩は水に溶けない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "バリウム・カルシウム・ストロンチウム・鉛の硫酸塩が溶けないのであり、他は溶ける。"
+        }
+      ],
+      "explanation": "硫酸塩の例外（溶けないもの）は「バカにするな（バリウム・カルシウム・ストロンチウム・鉛）」で覚えます。硫酸ナトリウムや硫酸銅は水によく溶けます。沈殿するのは特定の組み合わせだけです。",
+      "evidence": [
+        {
+          "source_id": "3_6_law_001",
+          "quote": "硫酸塩はBa, Ca, Sr, Pbが沈殿"
+        }
+      ],
+      "related_concept_ids": [
+        "3_6_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q038",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "遷移元素の有色イオン",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "遷移元素のイオンの色として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銅（二価）イオンは青色。鉄（三価）イオンは黄褐色。鉄（二価）イオンは淡緑色。過マンガン酸イオンは赤紫色。クロム酸イオンは黄色。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "銅（二価）イオンは無色である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "青色。"
+        },
+        {
+          "label": "3",
+          "text": "鉄イオンはすべて同じ色である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二価は淡緑、三価は黄褐色。"
+        },
+        {
+          "label": "4",
+          "text": "遷移元素のイオンはすべて無色透明である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "有色のものが多い。"
+        }
+      ],
+      "explanation": "遷移元素のイオンは内殻の電子配置の影響で可視光を吸収し有色になります。同じ金属でも酸化数が異なると色が変わります。鉄（二価）は淡緑、鉄（三価）は黄褐色はその典型例です。試験では色とイオンの対応が頻出です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "有色のイオンや化合物を作る"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q039",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "銅と希硝酸・濃硝酸の反応の違い",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "銅と硝酸の反応の違いとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銅と希硝酸では一酸化窒素（無色）が発生する。銅と濃硝酸では二酸化窒素（赤褐色）が発生する。どちらの場合も銅は溶けて青色の銅（二価）イオンになる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "希硝酸でも濃硝酸でも同じ気体が発生する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "異なる気体が発生する。"
+        },
+        {
+          "label": "3",
+          "text": "希硝酸で赤褐色の気体、濃硝酸で無色の気体が発生する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。"
+        },
+        {
+          "label": "4",
+          "text": "銅は硝酸に溶けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶ける。"
+        }
+      ],
+      "explanation": "銅と硝酸の反応で発生する気体の違いは超頻出です。希硝酸→一酸化窒素（無色、空気中で酸化されて赤褐色の二酸化窒素になる）。濃硝酸→二酸化窒素（赤褐色の有毒気体）。「希で一酸化、濃で二酸化」と覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_001",
+          "quote": "希硝酸、濃硝酸、熱濃硫酸に溶解"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_001"
+      ],
+      "mnemonic": "希で一酸化、濃で二酸化"
+    },
+    {
+      "id": "ch4_3_q040",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "comprehensive",
+      "sub_category": "鉄の製錬の総合",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "鉄の製錬に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶鉱炉に鉄鉱石・コークス・石灰石を入れて高温にする。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "コークスから一酸化炭素が生じ、これが鉄鉱石を還元する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "銑鉄は炭素を多く含み硬くてもろい。転炉で炭素を減らして鋼にする。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "石灰石が還元剤として鉄鉱石を段階的に還元し、溶鉱炉で直接純鉄が得られる。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "二か所誤り。還元剤は一酸化炭素、得られるのは銑鉄。"
+        }
+      ],
+      "explanation": "石灰石は還元剤ではなくスラグ（かす）を形成して不純物を除去する役割です。また溶鉱炉で得られるのは純鉄ではなく炭素を多く含む銑鉄です。鋼にするには転炉でさらに精錬が必要です。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_002",
+          "quote": "一酸化炭素による還元。銑鉄を得る"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q041",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "遷移元素の触媒としての利用",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "遷移元素が触媒として利用される理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "複数の酸化数をとれるため中間体を安定化させやすくまた表面吸着能力が高いため。鉄（ハーバー法）、白金（オストワルト法）、酸化バナジウム（接触法）などが代表例。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "遷移元素は触媒として使われない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "工業的に多用される。"
+        },
+        {
+          "label": "3",
+          "text": "典型元素の方が触媒として優れている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "遷移元素の方が触媒に適している。"
+        },
+        {
+          "label": "4",
+          "text": "遷移元素は一つの酸化数しか取らないため触媒に向いている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "複数の酸化数を取れることが触媒に向いている理由。"
+        }
+      ],
+      "explanation": "遷移元素が触媒に多用される理由は複数の酸化状態を取れることと表面で反応物を吸着しやすいことです。鉄（ハーバー法）、白金（オストワルト法・排ガス触媒）、酸化バナジウム（接触法）、ニッケル（水素化触媒）など実例は非常に多いです。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "複数の酸化数を持つ"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q042",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "塩化鉛の溶解性例外",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "塩化鉛の溶解性について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩化鉛は冷水に溶けにくく白色沈殿になるが、熱水には溶けやすい。そのため系統分析では塩酸で沈殿させた後に熱水を加えると塩化鉛のみが再溶解し銀と分離できる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "塩化鉛は熱水にも溶けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "熱水には溶ける。"
+        },
+        {
+          "label": "3",
+          "text": "塩化銀も熱水に溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "塩化銀は熱水にも溶けない。"
+        },
+        {
+          "label": "4",
+          "text": "塩化鉛は常に水に溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "冷水には溶けにくい。"
+        }
+      ],
+      "explanation": "塩化鉛が熱水に溶けるのは系統分析での銀と鉛の分離に利用される重要な性質です。塩酸で白色沈殿（塩化銀＋塩化鉛）を得た後、熱水を加えると塩化鉛のみが溶けて塩化銀が残ります。",
+      "evidence": [
+        {
+          "source_id": "3_6_law_001",
+          "quote": "塩化物は銀、鉛が沈殿"
+        }
+      ],
+      "related_concept_ids": [
+        "3_6_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q043",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "definition",
+      "sub_category": "配位数",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "配位数について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "中心の金属イオンに配位結合している配位子の数。テトラアンミン銅（二価）イオンでは配位数が四である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "配位数は金属イオンの酸化数と同じ値になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "必ずしも一致しない。"
+        },
+        {
+          "label": "3",
+          "text": "配位数とは溶液中のイオンの総数である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "配位子の数。"
+        },
+        {
+          "label": "4",
+          "text": "すべての錯イオンで配位数は二である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二・四・六などさまざま。"
+        }
+      ],
+      "explanation": "配位数は錯イオンの構造を決める重要な数字です。配位数二なら直線形、四なら正四面体形か正方形、六なら正八面体形になりやすいです。テトラアンミン銅イオン（配位数四）は正方形です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_002",
+          "quote": "くっつく数を配位数と呼ぶ"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q044",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "銅と銀の色の区別",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "銅と銀の色に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銅は赤色の金属である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "銀は銀白色の金属である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "金は黄金色の金属である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "銅は銀白色で銀は赤色の金属である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。銅が赤色、銀が銀白色。"
+        }
+      ],
+      "explanation": "銅と銀の色の入れ替えはシンプルですが意外と間違えやすいポイントです。銅は赤色（十円硬貨の色）、銀は銀白色（銀食器の色）、金は黄金色です。",
+      "evidence": [
+        {
+          "source_id": "3_2_sub_001",
+          "quote": "赤色"
+        },
+        {
+          "source_id": "3_2_sub_002",
+          "quote": "銀白色"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_sub_001",
+        "3_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q045",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "comprehensive",
+      "sub_category": "系統分析の総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "系統分析に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "第一段階の希塩酸で銀と鉛イオンが塩化物として沈殿する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "酸性硫化水素で銅イオンが硫化銅（黒色沈殿）として沈殿する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "煮沸は残留する硫化水素を除去するために行う。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "試薬の順序は自由。亜鉛は第一段階で沈殿する。煮沸は不要。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて誤り。順序は厳密。亜鉛は第四段階。煮沸は必要。"
+        }
+      ],
+      "explanation": "系統分析の全体を確認する最高難度の問題です。順序は厳密に決まっている、亜鉛は塩基性硫化水素でのみ沈殿（第四段階）、煮沸は硫化水素除去のために必須です。",
+      "evidence": [
+        {
+          "source_id": "3_5_proc_001",
+          "quote": "指定された順序で試薬を加える。煮沸はH2S除去。亜鉛は塩基性H2Sで沈殿"
+        }
+      ],
+      "related_concept_ids": [
+        "3_5_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q046",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "亜鉛のめっき",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "亜鉛めっき（トタン）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "鉄板に亜鉛をめっきしたもの。亜鉛はイオン化傾向が鉄より大きいため傷がついても亜鉛が先に酸化されて鉄を守る犠牲防食の効果がある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "鉄板にスズをめっきしたものがトタンである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "スズめっきはブリキ。トタンは亜鉛めっき。"
+        },
+        {
+          "label": "3",
+          "text": "亜鉛は鉄よりイオン化傾向が小さい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "大きい。"
+        },
+        {
+          "label": "4",
+          "text": "傷がつくと鉄が先に酸化される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "亜鉛が先。"
+        }
+      ],
+      "explanation": "トタン（亜鉛めっき）とブリキ（スズめっき）の区別は必出です。トタンは傷がついても亜鉛が犠牲的に酸化されて鉄を守ります。ブリキは傷がつくとスズ（イオン化傾向が鉄より小さい）は酸化されず鉄が先に腐食します。",
+      "evidence": [
+        {
+          "source_id": "3_4_sub_005",
+          "quote": "亜鉛は両性金属"
+        }
+      ],
+      "related_concept_ids": [
+        "3_4_sub_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q047",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "confusion",
+      "sub_category": "トタンとブリキの混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "トタンとブリキに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "トタンは亜鉛めっきの鉄板である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ブリキはスズめっきの鉄板である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "トタンは傷がついても亜鉛が先に酸化されて鉄を守る。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "トタンはスズめっき、ブリキは亜鉛めっきである。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。トタンが亜鉛、ブリキがスズ。"
+        }
+      ],
+      "explanation": "トタンとブリキは入れ替えが定番のひっかけです。「トタンのト→亜（ア→ア→亜鉛）」「ブリキのブ→Sn（スズ）」など独自の覚え方をすると間違えにくくなります。",
+      "evidence": [
+        {
+          "source_id": "3_4_sub_005",
+          "quote": "亜鉛は両性金属"
+        }
+      ],
+      "related_concept_ids": [
+        "3_4_sub_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q048",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "property",
+      "sub_category": "硫化物の色",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "系統分析で生じる硫化物の沈殿の色として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "硫化銅は黒色、硫化亜鉛は白色、硫化鉛は黒色、硫化銀は黒色。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "硫化銅は白色である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "黒色。"
+        },
+        {
+          "label": "3",
+          "text": "硫化亜鉛は黒色である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "白色。"
+        },
+        {
+          "label": "4",
+          "text": "すべての硫化物は黄色である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "色はさまざま。"
+        }
+      ],
+      "explanation": "系統分析では沈殿の色も重要な情報です。硫化銅・硫化鉛・硫化銀・硫化鉄は黒色、硫化亜鉛は白色、硫化カドミウムは黄色です。沈殿の色からどの金属イオンが含まれているか推定します。",
+      "evidence": [
+        {
+          "source_id": "3_5_proc_001",
+          "quote": "硫化物として沈殿分離する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_5_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q049",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "comprehensive",
+      "sub_category": "溶解性ルールの総合",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "金属塩の溶解性に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルカリ金属の塩はほぼすべて水に溶ける。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "硝酸塩はほぼすべて水に溶ける。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "塩化銀と塩化鉛は水に溶けない。硫酸バリウムも水に溶けない。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "塩化ナトリウムは水に溶けない。硝酸銀は水に溶けない。硫酸ナトリウムも水に溶けない。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三つとも水によく溶ける。"
+        }
+      ],
+      "explanation": "溶解性ルールの例外を問う総合問題です。塩化ナトリウム・硝酸銀・硫酸ナトリウムはすべて水によく溶けます。溶けないのは塩化銀・塩化鉛、硫酸バリウムなどの特定の組み合わせだけです。",
+      "evidence": [
+        {
+          "source_id": "3_6_law_001",
+          "quote": "ほとんどの塩（アルカリ金属や硝酸塩）は水に溶ける"
+        }
+      ],
+      "related_concept_ids": [
+        "3_6_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch4_3_q050",
+      "chapter": "4-3",
+      "chapter_title": "金属元素(II)－遷移元素－",
+      "category": "comprehensive",
+      "sub_category": "遷移元素の全体総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "遷移元素に関する全体の総合記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "第三〜十二族の金属。有色イオンと複数の酸化数が特徴。銅は赤色で希硝酸と濃硝酸に溶ける。銀は電気伝導性最大で硫化で黒変。金は王水のみに溶ける。錯イオンは配位結合。電解精錬で粗銅は陽極。鉄の製錬では一酸化炭素が還元剤。系統分析は四段階。塩化物の沈殿は銀と鉛。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "遷移元素はすべて無色のイオンで一つの酸化数のみ。銅は銀白色で塩酸に溶ける。銀の電気伝導性は低い。金は硝酸に溶ける。電解精錬で純銅が陽極。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "多数箇所誤り。"
+        },
+        {
+          "label": "3",
+          "text": "鉄の製錬では石灰石が還元剤で純鉄が得られる。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "二か所誤り。"
+        },
+        {
+          "label": "4",
+          "text": "系統分析は一段階で完了し順序は不問。塩化ナトリウムは沈殿する。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所誤り。"
+        }
+      ],
+      "explanation": "遷移元素の章のすべてを一つの問題に集約しました。定義、銅・銀・金の性質、錯イオン、電解精錬、鉄の製錬、系統分析、溶解性ルールのすべてを体系的に理解することが試験対策の鍵です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "3〜12族の金属"
+        },
+        {
+          "source_id": "3_2_proc_001",
+          "quote": "粗銅を陽極"
+        },
+        {
+          "source_id": "3_3_proc_002",
+          "quote": "一酸化炭素による還元"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_002",
+        "3_2_sub_001",
+        "3_2_sub_002",
+        "3_2_sub_003",
+        "3_2_proc_001",
+        "3_3_proc_002",
+        "3_5_proc_001",
+        "3_6_law_001"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

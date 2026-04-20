@@ -1,0 +1,535 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 4,
+   "chapter_title": "酸と塩基の反応",
+   "section": 0,
+   "section_title": "全体（第1節〜第4節）",
+   "page_range": [240, 281],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "4_1_sub_001",
+     "name": "塩化水素",
+     "formula": "HCl",
+     "aliases": ["塩酸"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "刺激臭",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に極めてよく溶ける",
+       "electrical_conductivity": "水溶液は導電性あり",
+       "other": ["強酸", "1価の酸"]
+     },
+     "cross_refs": ["4_1_def_001", "4_3_rxn_001"],
+     "notes": "水溶液は塩酸と呼ばれる。アレニウスの定義における代表的な強酸。"
+   },
+   {
+     "id": "4_1_sub_002",
+     "name": "水酸化ナトリウム",
+     "formula": "NaOH",
+     "aliases": ["苛性ソーダ"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "白色",
+       "odor": "無臭",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水によく溶ける",
+       "electrical_conductivity": "水溶液は導電性あり",
+       "other": ["強塩基", "1価の塩基"]
+     },
+     "cross_refs": ["4_1_def_001", "4_3_rxn_001"],
+     "notes": "アレニウスの定義における代表的な強塩基。"
+   },
+   {
+     "id": "4_1_sub_003",
+     "name": "アンモニア",
+     "formula": "NH3",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "刺激臭",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に非常によく溶ける",
+       "electrical_conductivity": "水溶液は弱い導電性あり",
+       "other": ["弱塩基", "1価の塩基"]
+     },
+     "cross_refs": ["4_1_def_002", "4_4_law_002"],
+     "notes": "分子内にOHを持たないが、水と反応してOH⁻を生じるため塩基としてはたらく。"
+   },
+   {
+     "id": "4_1_sub_004",
+     "name": "酢酸",
+     "formula": "CH3COOH",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "刺激臭（酸味）",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水によく溶ける",
+       "electrical_conductivity": "水溶液は弱い導電性あり",
+       "other": ["弱酸", "1価の酸"]
+     },
+     "cross_refs": ["4_1_eq_001", "4_4_def_002"],
+     "notes": "電離度が1より十分小さい弱酸の代表例。緩衝液の形成にも用いられる。"
+   },
+   {
+     "id": "4_3_sub_001",
+     "name": "シュウ酸二水和物",
+     "formula": "(COOH)2・2H2O",
+     "aliases": ["シュウ酸"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "白色",
+       "odor": "無臭",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に溶ける",
+       "electrical_conductivity": "",
+       "other": ["弱酸", "2価の酸", "標準物質"]
+     },
+     "cross_refs": ["4_3_proc_001"],
+     "notes": "固体であり質量を正確に量りやすく、空気中で安定なため、中和滴定の標準液の調製に用いられる。"
+   },
+   {
+     "id": "4_4_sub_001",
+     "name": "塩化銀",
+     "formula": "AgCl",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "白色",
+       "odor": "無臭",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "難溶",
+       "electrical_conductivity": "",
+       "other": ["難溶性塩"]
+     },
+     "cross_refs": ["4_4_def_003"],
+     "notes": "溶解度積が小さく、水溶液中で沈殿を形成しやすい代表的な物質。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "4_1_def_001",
+     "type": "def",
+     "title": "アレニウスの酸・塩基の定義",
+     "prerequisite_ids": [],
+     "definition": "水に溶かしたとき、電離してオキソニウムイオンH3O+（水素イオンH+）を生じる水素化合物を酸といい、水酸化物イオンOH-を生じる化合物を塩基という。",
+     "explanation": "一番基本的でわかりやすい酸と塩基の定義です。水の中で「H+を出すのが酸」「OH-を出すのが塩基」と覚えます。ただし、水溶液の反応にしか適用できないという弱点があります。",
+     "conditions": [
+       "水溶液中での反応に限定される"
+     ],
+     "examples": [
+       {
+         "label": "酸の例",
+         "substance_ids": ["4_1_sub_001"],
+         "description": "塩化水素を水に溶かすと、H+とCl-に分かれるため酸である。",
+         "values": []
+       },
+       {
+         "label": "塩基の例",
+         "substance_ids": ["4_1_sub_002"],
+         "description": "水酸化ナトリウムを水に溶かすと、Na+とOH-に分かれるため塩基である。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "アンモニア（NH3）は分子内にOHを持たないため、一見するとアレニウスの定義に当てはまらないように見えるが、水と反応してOH-を生じるため塩基として扱われる。"
+     ],
+     "mnemonics": [
+       "水の中で、Hプラスをアゲるのが酸、OHマイナスをアゲるのが塩基（アレニウス）"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "物質がアレニウスの定義における酸・塩基のどちらとしてはたらいているかを判別する問題",
+         "key_concept_ids": ["4_1_def_001"]
+       }
+     ],
+     "cross_refs": ["4_1_def_002"],
+     "source_page": 240
+   },
+   {
+     "id": "4_1_def_002",
+     "type": "def",
+     "title": "ブレンステッド・ローリーの酸・塩基の定義",
+     "prerequisite_ids": ["4_1_def_001"],
+     "definition": "他の物質に水素イオンH+（陽子）を与えることができるものが酸、H+を受け取ることができるものが塩基である。",
+     "explanation": "「H+のキャッチボール」で酸と塩基を決める定義です。H+を投げた方が酸、受け取った方が塩基になります。これにより、水溶液以外の反応（気体同士の反応など）でも酸・塩基を決められるようになります。",
+     "conditions": [
+       "H+の移動を伴う反応すべてに適用可能"
+     ],
+     "examples": [
+       {
+         "label": "気体の反応例",
+         "substance_ids": ["4_1_sub_001", "4_1_sub_003"],
+         "description": "NH3(気) + HCl(気) → NH4Cl(固) の反応において、HClはH+を与えているので酸、NH3はH+を受け取っているので塩基としてはたらく。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "水分子(H2O)は、相手によってH+を与えたり受け取ったりするため、反応によって酸としても塩基としてもはたらく両性物質である。"
+     ],
+     "mnemonics": [
+       "ブレンステッドは「プロトン（H+）のピッチャーが酸、キャッチャーが塩基」"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられた反応式中で、下線部の物質がブレンステッド・ローリーの定義における酸・塩基のどちらとしてはたらいているかを判定する問題",
+         "key_concept_ids": ["4_1_def_002"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 241
+   },
+   {
+     "id": "4_1_law_001",
+     "type": "law",
+     "title": "電離平衡と電離定数（Ka, Kb）",
+     "prerequisite_ids": ["4_1_sub_004"],
+     "definition": "弱酸や弱塩基の水溶液中で、電離していない分子と電離して生じたイオンとの間に成り立つ化学平衡。その平衡定数を電離定数といい、温度が一定であれば濃度によらず一定である。",
+     "explanation": "弱酸や弱塩基は水の中でほんの少ししかイオンになりません。「分子のままのもの」と「イオンになったもの」の割合が一定のバランスで釣り合っている状態を電離平衡と呼びます。このバランスを示す数値（電離定数）は、温度が変わらなければ、水で薄めても一定です。",
+     "conditions": [
+       "温度が一定であること",
+       "弱酸または弱塩基であること"
+     ],
+     "examples": [
+       {
+         "label": "酢酸の電離平衡",
+         "substance_ids": ["4_1_sub_004"],
+         "description": "CH3COOH ⇌ CH3COO- + H+ において、Ka = [CH3COO-][H+] / [CH3COOH]",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "強酸（HClなど）や強塩基（NaOHなど）はほぼ100%電離するため、電離平衡は考えない（分母がほぼ0になるため）。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられたモル濃度と電離定数Kaから、近似を用いて水素イオン濃度[H+]や電離度αを求める問題",
+         "key_concept_ids": ["4_1_eq_001"]
+       }
+     ],
+     "cross_refs": ["4_1_eq_001", "TBD:化学平衡の法則"],
+     "source_page": 246
+   },
+   {
+     "id": "4_1_eq_001",
+     "type": "eq",
+     "title": "弱酸の水素イオン濃度と電離度の近似式",
+     "prerequisite_ids": ["4_1_law_001"],
+     "definition": "弱酸の濃度をc [mol/L]、電離定数をKaとしたとき、電離度αと水素イオン濃度[H+]を求める近似式。",
+     "explanation": "電離度αが1と比べて十分に小さい（α≪1）とき、$1 - \\alpha \\approx 1$ とみなすことで計算を楽にする公式です。濃度が薄いほど電離度αは大きくなります（オストワルトの希釈律）。",
+     "conditions": [
+       "電離度αが1より十分に小さい（目安として0.05以下）こと"
+     ],
+     "examples": [],
+     "counter_examples": [
+       "濃度が極端に薄い（例：1.0×10^-4 mol/L以下）弱酸の場合、αが大きくなるため「1 - α ≒ 1」の近似が使えず、二次方程式の解の公式で解く必要がある。"
+     ],
+     "mnemonics": [
+       "水素イオン濃度は「ルートcK（シーケー）」、電離度は「ルートKa割るc（カク）」"
+     ],
+     "steps": [
+       {
+         "step": 1,
+         "action": "電離度を $\\alpha = \\sqrt{\\frac{K_a}{c}}$ で求める",
+         "reason": "$K_a = c\\alpha^2$ を $\\alpha$ について解くため"
+       },
+       {
+         "step": 2,
+         "action": "水素イオン濃度を $[H^+] = c\\alpha = \\sqrt{cK_a}$ で求める",
+         "reason": "電離して生じるH+の濃度は元の濃度cに電離度αをかけたものだから"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "弱酸の濃度をn倍に薄めたときの電離度や水素イオン濃度の変化倍率を答える問題",
+         "key_concept_ids": ["4_1_eq_001"]
+       }
+     ],
+     "cross_refs": ["4_1_law_001", "4_2_def_001"],
+     "source_page": 247
+   },
+   {
+     "id": "4_2_def_001",
+     "type": "def",
+     "title": "水素イオン指数（pH）",
+     "prerequisite_ids": [],
+     "definition": "水溶液中の水素イオン濃度[H+]を a mol/L とするとき、aの逆数の常用対数をとった値。",
+     "explanation": "水素イオンの濃度は0.0000001のように非常に小さな数字になるため、扱いやすくするために作られた「酸性・アルカリ性のものさし」です。pH=7が中性、7より小さいほど酸性が強く、7より大きいほど塩基性が強くなります。",
+     "conditions": [
+       "温度によって中性のpHは変動する（25℃のときpH=7が中性）"
+     ],
+     "examples": [
+       {
+         "label": "中性のpH",
+         "substance_ids": ["4_1_sub_004"],
+         "description": "25℃の純水は [H+] = 1.0×10^-7 mol/L なので、pH = 7 となる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "pHが1小さくなると、[H+]は10倍になる。2倍ではないことに注意。",
+       "pH=5の塩酸を1000倍に薄めてもpH=8（塩基性）にはならない。水の電離を無視できなくなり、pHは7に近づくのみ。"
+     ],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "$[H^+] = a \\times 10^{-n}$ の形に整理する",
+         "reason": "対数計算をスムーズに行うため"
+       },
+       {
+         "step": 2,
+         "action": "$pH = n - \\log_{10}a$ の公式に当てはめる",
+         "reason": "対数の性質 $\\log_{10}(a \\times 10^{-n}) = \\log_{10}a - n$ を利用して符号を反転させるため"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "与えられたモル濃度と電離度から、近似対数（log2=0.30など）を用いてpHを小数第1位まで計算する問題",
+         "key_concept_ids": ["4_2_def_001"]
+       },
+       {
+         "pattern": "塩基の濃度から水のイオン積Kwを用いて[H+]を求め、pHを計算する問題",
+         "key_concept_ids": ["4_2_def_001", "4_2_eq_001"]
+       }
+     ],
+     "cross_refs": ["4_2_eq_001"],
+     "source_page": 250
+   },
+   {
+     "id": "4_2_eq_001",
+     "type": "eq",
+     "title": "水のイオン積（Kw）",
+     "prerequisite_ids": [],
+     "definition": "水溶液中の水素イオン濃度[H+]と水酸化物イオン濃度[OH-]の積。25℃では常に Kw = [H+][OH-] = 1.0 × 10^-14 (mol/L)^2 で一定となる。",
+     "explanation": "どんな水溶液（酸性でも塩基性でも）であっても、同じ温度なら水の中のH+とOH-を掛け算した答えは常に一定の数字になる、というルールです。片方が増えれば、もう片方は必ず減るシーソーのような関係です。",
+     "conditions": [
+       "温度が一定であること（温度が上がるとKwの値は大きくなる）"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "塩基性水溶液の[OH-]から[H+]を逆算し、pHを求める問題",
+         "key_concept_ids": ["4_2_eq_001", "4_2_def_001"]
+       }
+     ],
+     "cross_refs": ["4_2_def_001"],
+     "source_page": 249
+   },
+   {
+     "id": "4_3_proc_001",
+     "type": "proc",
+     "title": "中和滴定に用いる器具の扱い方",
+     "prerequisite_ids": [],
+     "definition": "濃度が未知の酸・塩基の濃度を正確に求める中和滴定において、メスフラスコ、ホールピペット、ビュレット、コニカルビーカーを正しく扱うための手順と注意点。",
+     "explanation": "中和滴定では「正確に体積を測ること」が命です。器具に水滴が残っていると濃度が変わってしまうため、「そのまま使える（純水で濡れていてOK）」器具と、「使う溶液で洗わなければいけない（共洗いが必要）」器具を厳密に区別します。",
+     "conditions": [
+       "加熱乾燥は絶対に行わない（ガラスが熱膨張で変形し、体積の目盛りが狂うため）"
+     ],
+     "examples": [],
+     "counter_examples": [
+       "メスフラスコやコニカルビーカーを共洗いしてしまう（濃度が変わったり、物質量が増えたりするためNG）。",
+       "ホールピペットやビュレットを純水で濡れたまま使う（溶液が薄まってしまうためNG）。"
+     ],
+     "mnemonics": [
+       "共洗いが必要なのは『量る』細長いヤツ（ピペット、ビュレット）。純水で洗って濡れたまま使うのは『入れる』太いヤツ（フラスコ、ビーカー）。"
+     ],
+     "steps": [
+       {
+         "step": 1,
+         "action": "メスフラスコとコニカルビーカーは純水で洗い、濡れたまま使用する",
+         "reason": "メスフラスコは標線まで水を足すため、コニカルビーカーは中に入れる溶質の物質量（モル）さえ変わらなければ水が混ざっても中和に必要な滴下量に影響しないため"
+       },
+       {
+         "step": 2,
+         "action": "ホールピペットとビュレットは純水で洗った後、使用する溶液で内部を2〜3回すすぐ（共洗い）",
+         "reason": "純水で濡れたまま使用すると、はかり取る（または滴下する）溶液の濃度が薄まって誤差が生じるため"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "実験手順の説明文の中から、不適切な器具の洗い方（純水洗浄か共洗いか）や乾燥方法を指摘する問題",
+         "key_concept_ids": ["4_3_proc_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 258
+   },
+   {
+     "id": "4_4_law_001",
+     "type": "law",
+     "title": "塩の加水分解",
+     "prerequisite_ids": ["4_4_def_001"],
+     "definition": "弱酸や弱塩基から生じた塩が水に溶けたとき、生じたイオンの一部が水分子と反応して、もとの弱酸や弱塩基の分子に戻る変化。これにより水溶液が酸性や塩基性を示す。",
+     "explanation": "強い酸と弱い塩基からできた塩は酸性に、弱い酸と強い塩基からできた塩は塩基性になる現象の理由です。「弱い」側のイオンが水からH+やOH-を奪って分子に戻ろうとするため、水の中に残ったH+やOH-が影響して液性が傾きます。",
+     "conditions": [
+       "塩を構成する成分に弱酸の陰イオン、または弱塩基の陽イオンが含まれていること"
+     ],
+     "examples": [
+       {
+         "label": "酢酸ナトリウム（弱酸＋強塩基の塩）",
+         "substance_ids": ["4_1_sub_002", "4_1_sub_004"],
+         "description": "CH3COO- + H2O ⇌ CH3COOH + OH-。OH-が生じるため塩基性を示す。",
+         "values": []
+       },
+       {
+         "label": "塩化アンモニウム（強酸＋弱塩基の塩）",
+         "substance_ids": ["4_1_sub_001", "4_1_sub_003"],
+         "description": "NH4+ + H2O ⇌ NH3 + H3O+。H3O+（H+）が生じるため酸性を示す。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "塩化ナトリウム（NaCl）のような「強酸＋強塩基」の正塩は、加水分解を起こさないため水溶液は中性である。"
+     ],
+     "mnemonics": [
+       "塩の性質は「強い親の遺伝子を継ぐ（強酸・弱塩基なら酸性）」"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられた塩の水溶液が酸性・中性・塩基性のどれを示すかを判別する問題",
+         "key_concept_ids": ["4_4_law_001"]
+       },
+       {
+         "pattern": "塩の加水分解定数Khから水素イオン濃度を計算する問題",
+         "key_concept_ids": ["4_4_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 264
+   },
+   {
+     "id": "4_4_def_002",
+     "type": "def",
+     "title": "緩衝液",
+     "prerequisite_ids": ["4_1_law_001", "4_4_law_001"],
+     "definition": "外部から少量の酸（H+）や塩基（OH-）を加えても、水溶液中の[H+]や[OH-]が変化しにくく、pHがほぼ一定に保たれる溶液。",
+     "explanation": "外から酸やアルカリが入ってきても、それを吸収してpHの変化を最小限に抑える「クッション」のような働きをする液です。通常、「弱酸とその塩」または「弱塩基とその塩」を混ぜ合わせて作ります。",
+     "conditions": [
+       "弱酸とその塩（例：CH3COOHとCH3COONa）、または弱塩基とその塩（例：NH3とNH4Cl）が十分な濃度で混合されていること"
+     ],
+     "examples": [
+       {
+         "label": "酢酸と酢酸ナトリウムの緩衝液",
+         "substance_ids": ["4_1_sub_004"],
+         "description": "酸(H+)を加えると酢酸イオン(CH3COO-)と反応して酢酸分子になり、塩基(OH-)を加えると酢酸分子と中和して水になるため、H+が直接増減しない。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "強酸と強塩基の塩の混合液（HClとNaClなど）は緩衝作用を持たない。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "緩衝液に少量の酸や塩基を加えたときに起こる反応をイオン反応式で記述する問題",
+         "key_concept_ids": ["4_4_def_002"]
+       },
+       {
+         "pattern": "弱酸と強塩基を中和点より手前まで混合した溶液（緩衝液）のpHを求める計算問題",
+         "key_concept_ids": ["4_4_def_002", "4_1_law_001"]
+       }
+     ],
+     "cross_refs": ["4_1_law_001"],
+     "source_page": 270
+   },
+   {
+     "id": "4_4_def_003",
+     "type": "def",
+     "title": "溶解度積（Ksp）",
+     "prerequisite_ids": ["4_4_law_001"],
+     "definition": "難溶性塩の飽和水溶液における、電離して生じた陽イオンと陰イオンのモル濃度の積。温度が一定であれば常に一定の値をとる。",
+     "explanation": "水に溶けにくい塩であっても、ほんのわずかは溶けてイオンになります。その「溶けている限界の量」を示す定数です。溶液中のイオンの濃度の掛け算がこの値を超えようとすると、溶けきれずに沈殿が発生します。",
+     "conditions": [
+       "難溶性塩の飽和溶液であること",
+       "温度が一定であること"
+     ],
+     "examples": [
+       {
+         "label": "塩化銀の溶解度積",
+         "substance_ids": ["4_4_sub_001"],
+         "description": "AgCl(固) ⇌ Ag+ + Cl- において、Ksp = [Ag+][Cl-]",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "混合直後の各イオンの仮想的な濃度（沈殿が起きていないと仮定した濃度）を計算する",
+         "reason": "混合によって体積が変わるため、希釈後の濃度を求める必要がある"
+       },
+       {
+         "step": 2,
+         "action": "イオン濃度の積（イオン積）を計算し、Kspと比較する",
+         "reason": "イオン積 > Ksp ならば沈殿が生じ、イオン積 ≦ Ksp ならば沈殿は生じないから"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "2つの水溶液を混合した際に、沈殿が生成するかどうかをイオン濃度の積とKspを比較して判定する問題",
+         "key_concept_ids": ["4_4_def_003"]
+       },
+       {
+         "pattern": "Kspの値から飽和溶液中に溶けている難溶性塩の質量(mg)を逆算する問題",
+         "key_concept_ids": ["4_4_def_003"]
+       }
+     ],
+     "cross_refs": ["TBD:共通イオン効果", "TBD:金属イオンの分離"],
+     "source_page": 274
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "4_1_def_001",
+     "to_id": "4_1_def_002",
+     "relation_type": "is_prerequisite_of",
+     "note": "アレニウスの定義を拡張したものがブレンステッド・ローリーの定義である"
+   },
+   {
+     "from_id": "4_1_law_001",
+     "to_id": "4_1_eq_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "電離平衡の法則から近似を用いて導出される"
+   },
+   {
+     "from_id": "4_4_law_001",
+     "to_id": "4_4_def_002",
+     "relation_type": "is_prerequisite_of",
+     "note": "緩衝液のメカニズムを理解するには塩の加水分解の知識が不可欠である"
+   }
+ ]
+}

@@ -1,0 +1,405 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 2,
+   "chapter_title": "化学反応の速さとしくみ",
+   "section": 1,
+   "section_title": "化学反応の速さ",
+   "page_range": [212, 225],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "2_1_sub_001",
+     "name": "亜鉛",
+     "formula": "Zn",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": "原子量65.4"
+   },
+   {
+     "id": "2_1_sub_002",
+     "name": "過酸化水素",
+     "formula": "H2O2",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": "分解すると水と酸素になる。"
+   },
+   {
+     "id": "2_1_sub_003",
+     "name": "酸化マンガン(IV)",
+     "formula": "MnO2",
+     "aliases": ["二酸化マンガン"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "黒色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["2_2_def_002"],
+     "notes": "過酸化水素の分解において不均一系触媒としてはたらく。"
+   },
+   {
+     "id": "2_1_sub_004",
+     "name": "五酸化二窒素",
+     "formula": "N2O5",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["2_1_def_003"],
+     "notes": "分解反応は多段階反応である。"
+   },
+   {
+     "id": "2_1_sub_005",
+     "name": "ヨウ化水素",
+     "formula": "HI",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": ["2_2_def_001"],
+     "notes": "約400℃に熱すると水素とヨウ素に分解する。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "2_1_def_001",
+     "type": "def",
+     "title": "反応速度",
+     "prerequisite_ids": [],
+     "definition": "化学反応の進行度を表すもので、単位時間に変化する物質の質量、物質量、濃度、体積などで表される。",
+     "explanation": "化学反応がどれくらい速く進むかを表す指標です。通常は、1秒間や1分間あたりに反応物がどれくらい減ったか、あるいは生成物がどれくらい増えたかで計算します。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "希硫酸と亜鉛の反応",
+         "substance_ids": ["2_1_sub_001"],
+         "description": "最初の4分間に亜鉛が3.27g減少した場合、単位時間あたりの減少量や濃度の変化で速度を表すことができる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 212
+   },
+   {
+     "id": "2_1_eq_001",
+     "type": "eq",
+     "title": "平均の反応速度",
+     "prerequisite_ids": ["2_1_def_001"],
+     "definition": "ある一定時間内における反応速度の平均値。|着目した物質の濃度変化| / かかった時間 で表される。",
+     "explanation": "反応の速さは時間とともに変わることが多いため、ある区間の平均的な速さを求める式です。反応物は減少して濃度変化がマイナスになるため、絶対値をつけて正の値にして扱います。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "時刻 t1 における着目物質の濃度を測定する。",
+         "reason": "変化前の状態を記録するため"
+       },
+       {
+         "step": 2,
+         "action": "時刻 t2 における着目物質の濃度を測定する。",
+         "reason": "変化後の状態を記録するため"
+       },
+       {
+         "step": 3,
+         "action": "濃度の変化量（t2での濃度 - t1での濃度）の絶対値を、かかった時間（t2 - t1）で割る。",
+         "reason": "単位時間あたりの変化量を正の値で求めるため"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "グラフから特定の時間間隔における平均の反応速度を求める問題",
+         "key_concept_ids": ["2_1_eq_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 213
+   },
+   {
+     "id": "2_1_eq_002",
+     "type": "eq",
+     "title": "反応速度式",
+     "prerequisite_ids": ["2_1_def_001"],
+     "definition": "反応速度 v と反応物のモル濃度 [A], [B] などの関係を表した式。v = k[A]^a[B]^b (k: 速度定数) と表される。",
+     "explanation": "反応の速さが、反応物の濃度とどう関係しているかを示す式です。指数の a や b は反応式の係数と必ずしも一致せず、実験によってのみ決まります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "五酸化二窒素の分解",
+         "substance_ids": ["2_1_sub_004"],
+         "description": "v = k[N2O5] となり、N2O5の濃度の1乗に比例する一次反応である。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "化学反応式の係数がそのまま指数 a, b になるとは限らない。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "実験データ（初濃度と反応速度の表）から反応速度式の指数 a, b および速度定数 k を決定する問題",
+         "key_concept_ids": ["2_1_eq_002"]
+       }
+     ],
+     "cross_refs": ["2_1_def_002"],
+     "source_page": 215
+   },
+   {
+     "id": "2_1_def_002",
+     "type": "def",
+     "title": "速度定数",
+     "prerequisite_ids": ["2_1_eq_002"],
+     "definition": "反応速度式 v = k[A]^a[B]^b における比例定数 k。",
+     "explanation": "反応の種類と温度が決まれば一定になる値です。この値が大きいほど、その反応は速く進むことを意味します。反応物の濃度がすべて1 mol/Lのときの反応速度に等しいです。",
+     "conditions": [
+       "温度が一定であれば一定"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["TBD:触媒"],
+     "source_page": 215
+   },
+   {
+     "id": "2_1_def_003",
+     "type": "def",
+     "title": "多段階反応",
+     "prerequisite_ids": [],
+     "definition": "1つの化学反応式で表される反応が、実際には複数の反応が段階的に連続して起こっている反応。",
+     "explanation": "多くの化学反応は、パッと一回で終わるのではなく、いくつかの細かいステップ（素反応）が連続して起きています。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "五酸化二窒素の分解",
+         "substance_ids": ["2_1_sub_004"],
+         "description": "2N2O5 → 2N2O4 + O2 の反応は4つの素反応からなる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["2_1_def_004"],
+     "source_page": 216
+   },
+   {
+     "id": "2_1_def_004",
+     "type": "def",
+     "title": "律速段階",
+     "prerequisite_ids": ["2_1_def_003"],
+     "definition": "多段階反応において、最も反応速度が遅い反応段階。",
+     "explanation": "複数のステップで進む反応の中で、一番時間がかかるステップのことです。この一番遅いステップの速さが、反応全体の速さを決定してしまいます。渋滞の先頭のようなものです。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 217
+   },
+   {
+     "id": "2_2_law_001",
+     "type": "law",
+     "title": "反応速度と濃度の関係",
+     "prerequisite_ids": ["2_1_def_001"],
+     "definition": "反応物の濃度を大きくすると、単位時間あたりの粒子どうしの衝突回数が増加し、反応速度は大きくなる。",
+     "explanation": "狭い部屋にたくさんの人がいるとぶつかりやすくなるのと同じで、物質の濃度を濃くすると粒子同士がぶつかる回数が増え、結果として反応が速く進みます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "スチールウールの燃焼",
+         "substance_ids": [],
+         "description": "空気中（酸素濃度約21%）よりも純酸素中の方が激しく燃焼する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 218
+   },
+   {
+     "id": "2_2_def_001",
+     "type": "def",
+     "title": "遷移状態",
+     "prerequisite_ids": [],
+     "definition": "化学反応が進行する過程で経由する、反応物よりエネルギーが高い中間状態。活性化状態ともいう。",
+     "explanation": "反応物から生成物に変わる途中の、最もエネルギーが高くて不安定な状態のことです。山の頂上に例えられます。この状態に達した分子の集まりを「活性錯体」と呼びます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "ヨウ化水素の熱分解",
+         "substance_ids": ["2_1_sub_005"],
+         "description": "HI分子同士が衝突し、H2とI2になる途中のHとIが弱く結合し合った状態。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["2_2_def_003"],
+     "source_page": 220
+   },
+   {
+     "id": "2_2_def_003",
+     "type": "def",
+     "title": "活性化エネルギー",
+     "prerequisite_ids": ["2_2_def_001"],
+     "definition": "反応物を遷移状態にするのに要するエネルギー。遷移状態のエネルギーと反応物のエネルギーとの差。",
+     "explanation": "化学反応を起こすために越えなければならない「エネルギーの壁」の高さです。この壁が低いほど、反応は簡単に（速く）進みます。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "エネルギー図から活性化エネルギーや反応エンタルピーを読み取る問題",
+         "key_concept_ids": ["2_2_def_003"]
+       }
+     ],
+     "cross_refs": ["2_2_law_004"],
+     "source_page": 221
+   },
+   {
+     "id": "2_2_def_004",
+     "type": "def",
+     "title": "触媒",
+     "prerequisite_ids": ["2_2_def_003"],
+     "definition": "反応速度を著しく増大させるが、反応の前後においてそれ自身は変化しない物質。",
+     "explanation": "自分自身は変化せずに、化学反応が起きるための別ルート（トンネルのようなもの）を作り出して、反応を速く進ませる助けをする物質です。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "過酸化水素の分解に対する酸化マンガン(IV)",
+         "substance_ids": ["2_1_sub_002", "2_1_sub_003"],
+         "description": "過酸化水素水にMnO2を加えると、激しく酸素が発生する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "触媒は反応の前後で変化しないが、反応の途中で中間体を作るなど化学的には関与している。"
+     ],
+     "mnemonics": [
+       "触媒は汗水たらす要もなし（活性化エネルギーの小さな別ルートなので、反応速度が大きくなる）"
+     ],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["2_2_law_004"],
+     "source_page": 219
+   },
+   {
+     "id": "2_2_law_004",
+     "type": "law",
+     "title": "触媒と活性化エネルギー",
+     "prerequisite_ids": ["2_2_def_003", "2_2_def_004"],
+     "definition": "触媒を用いると、活性化エネルギーのより小さな別の反応経路を通るため、反応速度が大きくなる。反応エンタルピーは変化しない。",
+     "explanation": "触媒を使うと、高い山を越える代わりに、低い峠を越える新しいルートができます。壁が低くなるので、多くの分子が壁を越えられるようになり反応が速くなります。ただし、出発地点と到着地点の高さの差（反応熱）は変わりません。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [
+       "触媒を入れても、得られる生成物の総量や反応エンタルピーは変わらない。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "触媒を加えたときのエネルギー図の変化を選択・記述する問題",
+         "key_concept_ids": ["2_2_law_004", "2_2_def_003"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 222
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "2_1_def_001",
+     "to_id": "2_1_eq_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "反応速度の概念を理解した上で平均を求める"
+   },
+   {
+     "from_id": "2_1_def_003",
+     "to_id": "2_1_def_004",
+     "relation_type": "is_prerequisite_of",
+     "note": "多段階反応の中で律速段階が定義される"
+   },
+   {
+     "from_id": "2_2_def_001",
+     "to_id": "2_2_def_003",
+     "relation_type": "is_prerequisite_of",
+     "note": "遷移状態になるためのエネルギーが活性化エネルギー"
+   },
+   {
+     "from_id": "2_2_def_003",
+     "to_id": "2_2_law_004",
+     "relation_type": "is_prerequisite_of",
+     "note": "触媒は活性化エネルギーを下げるはたらきをする"
+   }
+ ]
+}

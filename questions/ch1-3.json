@@ -1,0 +1,2566 @@
+{
+  "metadata": {
+    "chapter": "1-3",
+    "chapter_title": "化学結合",
+    "source_file": "json_data/1-3化学結合.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "すべての文字列は日本語読み上げ可能な形式で記述。化学式・数式は日本語名に置換済み。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true,
+      "temperature_unit": "度",
+      "percent_unit": "パーセント"
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワード1語をすり替え",
+      "concept_confusion": "類似概念の混同",
+      "property_swap": "物質の性質を別物質と入れ替え",
+      "condition_change": "成立条件の変更",
+      "step_order": "手順の順序入れ替え",
+      "reason_swap": "正しい操作に誤った理由を付与",
+      "partial_truth": "前半は正しく後半だけ誤り",
+      "multiple_swap": "複数箇所を同時にすり替え",
+      "allotrope_mix": "同素体の性質を入れ替え",
+      "negation": "肯定否定を入れ替え"
+    },
+    "category_distribution": {
+      "definition": 12,
+      "property": 10,
+      "classification": 8,
+      "procedure": 6,
+      "confusion": 8,
+      "mnemonic": 3,
+      "comprehensive": 3
+    }
+  },
+  "questions": [
+    {
+      "id": "ch1_3_q001",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "definition",
+      "sub_category": "イオン結合の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "イオン結合について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "陽イオンと陰イオンが静電気力（クーロン力）によって引き合ってできる結合である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "二つの原子が互いに電子を出し合い、共有してできる結合である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "共有結合の定義にすり替え。"
+        },
+        {
+          "label": "3",
+          "text": "多数の金属原子が自由電子を介して結びつく結合である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "金属結合の定義にすり替え。"
+        },
+        {
+          "label": "4",
+          "text": "分子と分子の間にはたらく弱い引力による結合である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "分子間力（ファンデルワールス力）の定義にすり替え。"
+        }
+      ],
+      "explanation": "イオン結合は、金属元素の原子が電子を放出して陽イオンに、非金属元素の原子が電子を受け取って陰イオンになり、これらが静電気力で引き合ってできる結合です。塩化ナトリウムがその代表例で、ナトリウムイオンと塩化物イオンが交互に規則正しく並んだ結晶をつくります。選択肢二は共有結合、三は金属結合、四は分子間力であり、いずれもイオン結合とは異なる概念です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "陽イオンと陰イオンとが静電気力（クーロン力）によって引き合ってできる結合。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q002",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "definition",
+      "sub_category": "共有結合の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "共有結合について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "二個の原子がそれぞれの価電子を出し合い、電子対を共有してできる結合である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "陽イオンと陰イオンが静電気力で引き合ってできる結合である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン結合の定義にすり替え。"
+        },
+        {
+          "label": "3",
+          "text": "一方の原子から他方の原子へ電子が完全に移動してできる結合である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "電子の移動はイオン結合。共有結合は電子を共有する。"
+        },
+        {
+          "label": "4",
+          "text": "自由電子が金属原子全体を結びつける結合である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "金属結合の定義にすり替え。"
+        }
+      ],
+      "explanation": "共有結合はおもに非金属元素の原子どうしが、互いの不対電子を出し合って電子対をつくり、それを共有することで行われる結合です。水素分子では二個の水素原子がそれぞれの価電子一個ずつを出し合い、一組の共有電子対をつくります。電子の移動ではなく共有である点が、イオン結合との最も大きな違いです。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_003",
+          "quote": "2個の原子間で、それぞれの原子の価電子を共有してできる結合。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_003"
+      ],
+      "mnemonic": "共有はたがいに出し合い八となる"
+    },
+    {
+      "id": "ch1_3_q003",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "definition",
+      "sub_category": "配位結合の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "配位結合について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "一方の原子の非共有電子対が他方に提供され、共有されてできる共有結合の一種で、結合後は通常の共有結合と区別できない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "二つの原子が互いに電子を出し合ってできる結合であり、通常の共有結合とは全く異なる性質をもつ。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "通常の共有結合とは区別できないのが正しい。性質が異なるは誤り。"
+        },
+        {
+          "label": "3",
+          "text": "陽イオンと陰イオンの静電気力で結びつく結合である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン結合の定義にすり替え。"
+        },
+        {
+          "label": "4",
+          "text": "金属原子が自由電子を放出して結びつく結合である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "金属結合の定義にすり替え。"
+        }
+      ],
+      "explanation": "配位結合は、片方の原子がもつ非共有電子対をもう一方に提供する形で形成される共有結合の一種です。たとえばアンモニア分子の窒素原子にある非共有電子対に水素イオンが結合して、アンモニウムイオンが生じます。結合ができた後は通常の共有結合と見分けがつかないため、結合の性質自体に違いはありません。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_006",
+          "quote": "一方の原子の非共有電子対が、他方の原子（またはイオン）に提供され、共有されてできる新しい共有結合。"
+        },
+        {
+          "source_id": "3_1_def_006",
+          "quote": "配位結合は形成される過程が異なるだけで、形成後は他の共有結合と区別できない。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_006",
+        "3_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q004",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "definition",
+      "sub_category": "金属結合の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "金属結合について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "多数の金属原子が価電子を放出して陽イオンとなり、放出された自由電子が全体を動き回ることで結びつける結合である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "多数の非金属原子が互いに電子を共有して結びついた結合である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "『金属原子』を『非金属原子』にすり替え。共有結合の説明に近い。"
+        },
+        {
+          "label": "3",
+          "text": "陽イオンと陰イオンが交互に配列して静電気力で結びつく結合である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン結合の定義にすり替え。"
+        },
+        {
+          "label": "4",
+          "text": "金属原子が電子を受け取って陰イオンになり、互いに反発して結合する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "金属原子は電子を手放して陽イオンになる。陰イオンではない。"
+        }
+      ],
+      "explanation": "金属結合では、多数の金属原子が価電子を放出して陽イオンとなります。放出された電子は自由電子として結晶中を自由に動き回り、正電荷をもつ金属イオンどうしを結びつけます。これは『電子の海に浮かぶ金属イオン』と表現されます。自由電子が存在するため金属は電気や熱をよく通します。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_013",
+          "quote": "多数の金属原子が価電子を放出して陽イオンとなり、放出された自由電子が全体を動き回ることで、金属原子どうしを結びつける結合。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_013"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q005",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "definition",
+      "sub_category": "電気陰性度の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "電気陰性度について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "共有結合において原子が共有電子対を引きつける強さの度合いを表した数値で、フッ素が最大である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "原子が電子を放出して陽イオンになるのに必要なエネルギーである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン化エネルギーの定義にすり替え。"
+        },
+        {
+          "label": "3",
+          "text": "原子が電子を受け取って陰イオンになるときに放出するエネルギーである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "電子親和力の定義にすり替え。"
+        },
+        {
+          "label": "4",
+          "text": "共有結合において原子が共有電子対を引きつける強さで、ナトリウムが最大である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "フッ素が最大。ナトリウムは電気陰性度が小さい金属元素。"
+        }
+      ],
+      "explanation": "電気陰性度は共有結合中で原子が共有電子対をどれだけ強く引きつけるかを数値化したものです。周期表の右上に位置する元素ほど大きく、フッ素が最大値をとります。左下に位置する金属元素ほど小さくなります。貴ガスはほとんど化合物をつくらないため通常は電気陰性度を考えません。選択肢二はイオン化エネルギー、三は電子親和力との混同です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_009",
+          "quote": "共有結合において、原子が共有電子対を引きつける強さの度合いを表した数値。"
+        },
+        {
+          "source_id": "3_1_def_009",
+          "quote": "周期表の右上に行くほど大きく（フッ素が最大）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_009"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q006",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "definition",
+      "sub_category": "水素結合の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水素結合について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電気陰性度の大きいフッ素、酸素、窒素に結合した水素原子が、隣接する分子の非共有電子対と静電気的に引き合う結合であり、分子間力の一種である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水素原子どうしが直接共有結合してできる結合であり、水素分子の形成に関与する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "水素分子の共有結合と混同。水素結合は分子間力。"
+        },
+        {
+          "label": "3",
+          "text": "すべての水素化合物に見られる結合であり、例外はない。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "フッ素、酸素、窒素と結合した場合に限る。"
+        },
+        {
+          "label": "4",
+          "text": "共有結合やイオン結合と同程度に強い化学結合である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水素結合は分子間力の一種であり、化学結合よりはるかに弱い。"
+        }
+      ],
+      "explanation": "水素結合は、電気陰性度の大きいフッ素・酸素・窒素に共有結合した水素原子が、正に帯電しているために隣接分子の非共有電子対と引き合う現象です。化学結合ではなく分子間力の一種ですが、通常のファンデルワールス力よりはずっと強いため、水やフッ化水素、アンモニアは同族元素の水素化合物に比べて異常に高い沸点を示します。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_012",
+          "quote": "電気陰性度の大きい原子(F, O, N)に結合して正に帯電した水素原子が、隣接する分子の電気陰性度の大きい原子の非共有電子対と静電気力によって引き合う結合。"
+        },
+        {
+          "source_id": "3_1_def_012",
+          "quote": "水素結合という名前だが、共有結合やイオン結合のような強い化学結合ではなく、あくまで「強い分子間力」の一種である。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_012",
+        "3_1_def_009"
+      ],
+      "mnemonic": "フォン水素はフッ素・酸素・窒素と握手する"
+    },
+    {
+      "id": "ch1_3_q007",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "definition",
+      "sub_category": "組成式の書き方",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "イオンからなる物質の組成式の書き方として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "陽イオンを先に、陰イオンを後に書き、全体の電荷が中性になるよう各イオンの数の比を整数で求めて右下に記す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "陰イオンを先に、陽イオンを後に書き、各イオンの電荷をそのまま付けて表す。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "順序が逆であり、電荷はつけない。"
+        },
+        {
+          "label": "3",
+          "text": "陽イオンと陰イオンの電荷の合計が正になるように数の比を決める。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "正ではなく中性（零）が正しい。"
+        },
+        {
+          "label": "4",
+          "text": "組成式では原子の種類だけを書き、数の比は表さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "数の比を示すのが組成式の目的。"
+        }
+      ],
+      "explanation": "イオン結合でできた物質の組成式は、まず陽イオンを先に陰イオンを後に書きます。次に全体の電荷が零（中性）になるよう、それぞれのイオンの数の最も簡単な整数比を求め、右下に記します。一の場合は省略します。たとえばカルシウムイオン（二価の陽イオン）と塩化物イオン（一価の陰イオン）なら一対二となり、塩化カルシウムの組成式になります。",
+      "evidence": [
+        {
+          "source_id": "3_1_proc_001",
+          "quote": "陽イオンを先に、陰イオンを後に書く（イオンの電荷はつけない）。"
+        },
+        {
+          "source_id": "3_1_proc_001",
+          "quote": "全体が電気的に中性になるようにするため。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_proc_001",
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q008",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "definition",
+      "sub_category": "共有電子対と非共有電子対",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "共有結合における電子対の種類について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "結合に使われている電子対を共有電子対、結合に使われていない電子対を非共有電子対（孤立電子対）という。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "結合に使われている電子対を非共有電子対、結合に使われていない電子対を共有電子対という。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "共有と非共有の名称を逆転。"
+        },
+        {
+          "label": "3",
+          "text": "共有電子対も非共有電子対も同じものであり、区別する必要はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "明確に区別される。配位結合や分子の形に関わる。"
+        },
+        {
+          "label": "4",
+          "text": "非共有電子対は配位結合に関与しないため重要ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "配位結合はまさに非共有電子対が提供されて形成される。"
+        }
+      ],
+      "explanation": "共有結合では、結合に使われている二個の電子を共有電子対と呼びます。一方、結合に使われずに原子上にそのまま残っている電子対を非共有電子対（孤立電子対）と呼びます。非共有電子対は配位結合の際に重要な役割を果たし、水素結合の受け手にもなるため、その存在を正しく把握することが大切です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_003",
+          "quote": "互いの不対電子を出し合って電子対（共有電子対）を作り"
+        },
+        {
+          "source_id": "3_1_def_006",
+          "quote": "一方の原子の非共有電子対が、他方の原子（またはイオン）に提供され"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_003",
+        "3_1_def_006"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q009",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "definition",
+      "sub_category": "イオン結合の成り立ち",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "イオン結合が成立する過程として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "陽性の強い金属元素の原子が電子を放出して陽イオンになり、陰性の強い非金属元素の原子が電子を受け取って陰イオンになり、静電気力で結合する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "二つの非金属元素の原子が互いに電子を共有して結合する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "共有結合の成り立ちにすり替え。"
+        },
+        {
+          "label": "3",
+          "text": "金属元素の原子どうしが自由電子を介して結合する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "金属結合の成り立ちにすり替え。"
+        },
+        {
+          "label": "4",
+          "text": "陽性の強い非金属元素の原子が陰イオンになり、陰性の強い金属元素の原子が陽イオンになる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "金属と非金属の役割を逆転。金属が陽イオン、非金属が陰イオン。"
+        }
+      ],
+      "explanation": "イオン結合は典型的には金属元素と非金属元素の間で生じます。金属元素は陽性が強く（イオン化エネルギーが小さく）電子を放出して陽イオンになり、非金属元素は陰性が強く（電子親和力が大きく）電子を受け取って陰イオンになります。この陽イオンと陰イオンが静電気的な引力で引き合ってイオン結合が形成されます。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "陽性の強い金属元素の原子と陰性の強い非金属元素の原子の間で電子の授受が起こり、生じた陽イオンと陰イオンが電気的な引力で結びつく結合です。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": "イオン結合は取って取られて八となる"
+    },
+    {
+      "id": "ch1_3_q010",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "definition",
+      "sub_category": "自由電子の役割",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "金属結合における自由電子の役割として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "自由電子が結晶中を自由に動き回ることで、金属イオンどうしを結びつけ、電気や熱の良導性の原因となっている。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "自由電子は結晶中で固定されており、動くことができないため絶縁体となる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "自由電子は動き回るから良導体。固定されるは逆。"
+        },
+        {
+          "label": "3",
+          "text": "自由電子は金属原子の内殻にあり、原子核から離れることはない。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "自由電子は価電子が放出されたもの。内殻電子ではない。"
+        },
+        {
+          "label": "4",
+          "text": "自由電子は陰イオンに捕獲されて結合を形成する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "金属結合に陰イオンは関与しない。イオン結合との混同。"
+        }
+      ],
+      "explanation": "金属結合では、金属原子から放出された価電子が自由電子として結晶全体を自由に動き回ります。この自由電子が金属陽イオンどうしを結びつける接着剤の役割を果たします。また自由電子が動けることが、電気をよく通す性質（電気伝導性）や熱をよく伝える性質（熱伝導性）の直接的な原因です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_013",
+          "quote": "放出された自由電子が全体を動き回ることで、金属原子どうしを結びつける結合。"
+        },
+        {
+          "source_id": "3_1_def_013",
+          "quote": "自由電子が動き回るため、電気や熱をよく通し"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_013"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q011",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "definition",
+      "sub_category": "水素結合の条件",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "水素結合が形成される条件として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水素原子がフッ素、酸素、窒素のいずれかと共有結合していることが必要である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水素原子が任意の元素と結合していれば水素結合は形成される。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "フッ素・酸素・窒素に限定される。任意の元素ではない。"
+        },
+        {
+          "label": "3",
+          "text": "水素原子がイオン結合で結びついている必要がある。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "共有結合であることが前提。イオン結合ではない。"
+        },
+        {
+          "label": "4",
+          "text": "水素結合は気体状態でのみ観察され、液体や固体では存在しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "液体や固体で特に重要。水の高い沸点は液体中の水素結合による。"
+        }
+      ],
+      "explanation": "水素結合が形成されるためには、水素原子がフッ素、酸素、窒素のいずれかの電気陰性度の大きい原子と共有結合している必要があります。これらの原子は電子を強く引きつけるため、水素原子が正に帯電し、隣接する分子の非共有電子対と静電気的に引き合います。水素結合は液体状態で特に重要であり、水の異常に高い沸点の原因です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_012",
+          "quote": "H原子がF, O, Nのいずれかと共有結合していること"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_012"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q012",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "definition",
+      "sub_category": "配位結合の具体例",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "配位結合の具体例として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アンモニア分子の窒素原子にある非共有電子対に水素イオンが結合してアンモニウムイオンが生成する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ナトリウム原子が電子を放出してナトリウムイオンになり塩化物イオンと結合する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン結合の例。配位結合ではない。"
+        },
+        {
+          "label": "3",
+          "text": "水素原子どうしが互いに電子を出し合って水素分子をつくる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "通常の共有結合の例。"
+        },
+        {
+          "label": "4",
+          "text": "鉄原子が自由電子を放出して金属結晶をつくる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "金属結合の例。"
+        }
+      ],
+      "explanation": "配位結合の代表例はアンモニウムイオンの生成です。アンモニア分子の窒素原子には非共有電子対が一組あり、この電子対を水素イオンに一方的に提供して新しい共有結合を形成します。同様に、水分子の酸素原子にある非共有電子対に水素イオンが結合してオキソニウムイオンが生成するのも配位結合の例です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_006",
+          "quote": "アンモニア分子のN原子の非共有電子対に、水素イオン(H+)が結合してNH4+ができる。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_006"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q013",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "property",
+      "sub_category": "イオン結晶の電気伝導性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "塩化ナトリウムの電気伝導性について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "固体の状態では電気を通さないが、融解した状態や水に溶かした状態では電気を通す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "固体の状態でも融解した状態でも、どちらも電気を通さない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "融解状態ではイオンが動くため電気を通す。"
+        },
+        {
+          "label": "3",
+          "text": "固体の状態で自由電子が存在するため、電気をよく通す。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "自由電子があるのは金属。イオン結晶に自由電子はない。"
+        },
+        {
+          "label": "4",
+          "text": "どのような状態でも電気を通し、優れた導体である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "固体状態では通さない。"
+        }
+      ],
+      "explanation": "塩化ナトリウムは代表的なイオン結晶で、固体状態ではイオンが規則正しく固定されて動けないため電気を通しません。しかし融解すると（液体になると）イオンが自由に動けるようになるため、また水に溶かすとイオンが水中に分散して動けるようになるため、どちらの場合も電気を通します。これは金属の電気伝導性（自由電子による）とは仕組みが異なります。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "固体は通さないが、融解状態や水溶液は通す"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_001",
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q014",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "property",
+      "sub_category": "金属の展性・延性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "金属が展性と延性を示す理由として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "自由電子がクッションの役割を果たし、金属イオンの配列がずれても結合が保たれるため、薄く広がったり細く伸ばしたりできる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "イオン結合で規則正しく配列されているため、力を加えると同符号イオンが反発して割れやすい。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン結晶の性質。金属は割れずに変形する。"
+        },
+        {
+          "label": "3",
+          "text": "共有結合の方向性が弱いため、力を加えると結合が切れて粉々になる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "共有結合結晶の性質に近い。金属は粉々にはならない。"
+        },
+        {
+          "label": "4",
+          "text": "金属原子の間に分子間力しかはたらいていないため、容易に変形する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "金属結合であり分子間力ではない。"
+        }
+      ],
+      "explanation": "金属が叩くと薄く広がる性質（展性）や、引っ張ると細く伸びる性質（延性）を示すのは、金属結合の特徴です。金属イオンの配列が力によってずれても、自由電子が全体を覆って結合を維持するため、割れずに変形できます。これに対しイオン結晶では、配列がずれると同符号のイオンどうしが隣り合って反発が生じ、割れてしまいます。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_013",
+          "quote": "叩くと薄く広がる（展性）などの金属特有の性質を示します。"
+        },
+        {
+          "source_id": "3_1_def_013",
+          "quote": "イオン結晶のように強い力を加えると割れることはなく、形が変形するだけ（展性・延性）。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_013"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q015",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "property",
+      "sub_category": "ダイヤモンドの性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ダイヤモンドが全物質中で最も硬い理由として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "すべての価電子が共有結合に使われ、正四面体形の三次元立体構造で強固に結びついているためである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "自由電子が結晶全体を強く結びつけているためである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "金属結合の説明。ダイヤモンドは共有結合結晶で自由電子なし。"
+        },
+        {
+          "label": "3",
+          "text": "陽イオンと陰イオンが強い静電気力で結合しているためである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン結晶の説明。ダイヤモンドは共有結合結晶。"
+        },
+        {
+          "label": "4",
+          "text": "分子間にはたらく水素結合が極めて強いためである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "ダイヤモンドに水素結合は存在しない。"
+        }
+      ],
+      "explanation": "ダイヤモンドは炭素原子がすべての価電子（四個）を使って周囲の四個の炭素原子と共有結合で結びつき、正四面体形の立体的な網目構造を形成した共有結合結晶です。すべての原子が強い共有結合のネットワークに参加しているため、全物質中で最も硬い物質となっています。また電気は通しません。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "最も硬い物質 正四面体形の三次元立体構造"
+        },
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "すべての価電子が共有結合に使われている。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q016",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "property",
+      "sub_category": "水の異常に高い沸点",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水が同族元素の水素化合物に比べて異常に高い沸点を示す理由として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水分子間に水素結合がはたらき、分子どうしが強く引き合っているためである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水分子間にイオン結合がはたらいているためである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "水は共有結合の分子。分子間はイオン結合ではない。"
+        },
+        {
+          "label": "3",
+          "text": "水分子が金属結合で結びついているためである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "水は金属ではない。"
+        },
+        {
+          "label": "4",
+          "text": "水分子の分子量が同族の水素化合物より極めて大きいためである。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "水は同族中で分子量が最小だが沸点は最高。分子量の大きさが理由ではない。"
+        }
+      ],
+      "explanation": "水の沸点が百度と高いのは、水分子間に水素結合がはたらいているためです。酸素原子の電気陰性度が大きいため、水素原子が正に帯電し、隣接する水分子の酸素原子の非共有電子対と強く引き合います。同族元素（硫黄やセレンなど）の水素化合物では水素結合が形成されないため沸点がずっと低くなります。分子量で見ると水は最小ですが沸点は最高という逆転が起きています。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_003",
+          "quote": "水素結合により、同族元素の水素化合物に比べて異常に高い沸点を持つ。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_012",
+        "3_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q017",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "property",
+      "sub_category": "塩化ナトリウムの融点",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "塩化ナトリウムの性質について、誤りを含む記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色あるいは白色の結晶である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "水に溶けやすい。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "融点は約八百一度と高い。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "固体でも液体でも電気を通さない。",
+          "is_correct": true,
+          "trap_type": "partial_truth",
+          "trap_detail": "固体では通さないが正しいが、融解状態や水溶液では通す。"
+        }
+      ],
+      "explanation": "塩化ナトリウムは無色（白色）の結晶で水に溶けやすく、融点は約八百一度と高いイオン結晶です。固体状態ではイオンが固定されているため電気を通しませんが、融解状態や水溶液ではイオンが自由に動けるため電気を通します。選択肢四は『液体でも通さない』の部分が誤りです。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "固体は通さないが、融解状態や水溶液は通す"
+        },
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "melting_point 801"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q018",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "property",
+      "sub_category": "電気陰性度の周期表での傾向",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "電気陰性度の周期表での変化の傾向として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "同一周期では右に行くほど大きくなり、同一族では上に行くほど大きくなる。つまり周期表の右上ほど大きい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "同一周期では左に行くほど大きくなり、同一族では下に行くほど大きくなる。つまり周期表の左下ほど大きい。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "傾向を完全に逆転。"
+        },
+        {
+          "label": "3",
+          "text": "すべての元素で電気陰性度は同じ値である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "元素ごとに異なる。"
+        },
+        {
+          "label": "4",
+          "text": "電気陰性度は周期表の中央部で最大となる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "右上が最大。中央部ではない。"
+        }
+      ],
+      "explanation": "電気陰性度は周期表の右上にある元素ほど大きく、左下にある元素ほど小さくなります。最大はフッ素（約四・〇）で、酸素、窒素、塩素と続きます。貴ガスは通常考慮しません。この傾向は結合の極性や水素結合の有無を判断する際に重要です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_009",
+          "quote": "周期表の右上に行くほど大きく（フッ素が最大）、左下に行くほど小さくなります。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_009"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q019",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "property",
+      "sub_category": "ダイヤモンドの電気伝導性",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ダイヤモンドの性質について、誤りを含む記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "炭素原子が共有結合で三次元的に結びついた共有結合結晶である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "無色透明で、全物質中で最も硬い。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "融点が非常に高い。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "自由電子をもつため、電気をよく通す。",
+          "is_correct": true,
+          "trap_type": "allotrope_mix",
+          "trap_detail": "電気を通すのは同素体の黒鉛。ダイヤモンドは不導体。"
+        }
+      ],
+      "explanation": "ダイヤモンドは共有結合結晶であり、すべての価電子が共有結合に使われているため自由電子は存在しません。したがって電気を通しません（不導体）。電気をよく通すのは同じ炭素の同素体である黒鉛の性質です。黒鉛では層内の一部の電子が自由に動けるため電気を通します。同素体どうしの性質入れ替えは典型的なひっかけです。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "通さない（不導体）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q020",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "property",
+      "sub_category": "金属光沢の理由",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "金属が光沢をもつ理由として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "自由電子が光を吸収して再び放出するため、金属表面が輝いて見える。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "イオン結晶のように規則正しい配列が光を反射するためである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン結晶ではなく金属結合の自由電子が原因。"
+        },
+        {
+          "label": "3",
+          "text": "共有結合が光を屈折させるためである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "共有結合結晶の性質ではない。"
+        },
+        {
+          "label": "4",
+          "text": "金属は透明であるため内部の構造が見えて光沢に見える。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "金属は不透明。透明なのはガラスなどの別の物質。"
+        }
+      ],
+      "explanation": "金属光沢は自由電子が光（電磁波）を吸収し、すぐに再放出することで生じます。この過程で光が金属表面から反射されるため独特の輝きが見えます。金属が不透明であるのも自由電子が光を吸収してしまうためです。金属光沢は金属結合の特徴的な性質の一つです。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_013",
+          "quote": "金属光沢、電気・熱の良導性、展性・延性"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_013"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q021",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "property",
+      "sub_category": "水分子の形",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水分子の形について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "折れ線形の分子であり、極性をもつ。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "直線形の分子であり、極性をもたない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "折れ線形を直線形にすり替え。直線形で極性なしは二酸化炭素に近い。"
+        },
+        {
+          "label": "3",
+          "text": "正四面体形の分子であり、極性をもたない。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "正四面体形で無極性はメタンに近い。水は折れ線形。"
+        },
+        {
+          "label": "4",
+          "text": "平面三角形の分子であり、極性をもつ。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "平面三角形は三フッ化ホウ素などの形。水は折れ線形。"
+        }
+      ],
+      "explanation": "水分子は酸素原子に二つの水素原子が結合した折れ線形の構造をとっています。酸素原子には二組の非共有電子対があるため直線形にはならず、約百四・五度の角度で折れ曲がっています。酸素と水素の電気陰性度の差により結合に極性があり、さらに分子の形が折れ線形で対称性が低いため、分子全体としても極性をもちます。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_003",
+          "quote": "折れ線形分子"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_003",
+        "3_1_def_009"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q022",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "property",
+      "sub_category": "イオン結晶の硬さ",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "イオン結晶に力を加えたときの性質として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "一定方向に力を加えると、同じ電荷をもつイオンどうしが隣り合って反発し、割れやすい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "自由電子がクッションの役割を果たし、変形しても結合が保たれるため割れにくい。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "金属結合の性質。イオン結晶に自由電子はない。"
+        },
+        {
+          "label": "3",
+          "text": "イオンの配列がずれても結合が保たれるため、柔軟に変形する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "金属の展性の説明。イオン結晶はずれると割れる。"
+        },
+        {
+          "label": "4",
+          "text": "分子間力が弱いため、わずかな力で簡単に変形する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "分子結晶の説明。イオン結晶は分子間力ではなくイオン結合で結ばれている。"
+        }
+      ],
+      "explanation": "イオン結晶では陽イオンと陰イオンが交互に規則正しく配列されています。外部から力が加わって配列がずれると、同じ符号の電荷をもつイオンどうしが隣り合う位置関係になり、強い反発力が生じて結晶が割れます。これは金属結合の場合とは対照的です。金属では自由電子が接着剤の役割を果たすため、配列がずれても割れません。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_013",
+          "quote": "イオン結晶のように強い力を加えると割れることはなく、形が変形するだけ（展性・延性）。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_013"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q023",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "classification",
+      "sub_category": "イオン結合でできている物質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "イオン結合でできている物質として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩化ナトリウム",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "水は共有結合でできた分子。"
+        },
+        {
+          "label": "3",
+          "text": "ダイヤモンド",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "ダイヤモンドは共有結合結晶。"
+        },
+        {
+          "label": "4",
+          "text": "銅",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "銅は金属結合。"
+        }
+      ],
+      "explanation": "塩化ナトリウムはナトリウムイオン（陽イオン）と塩化物イオン（陰イオン）がイオン結合で結びついた代表的なイオン結晶です。水は酸素と水素が共有結合でつながった分子、ダイヤモンドは炭素原子が共有結合で結びついた共有結合結晶、銅は金属原子が金属結合で結びついた金属結晶です。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "Na+とCl-が交互に規則正しく並んだ立方体の構造"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q024",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "classification",
+      "sub_category": "共有結合結晶の判別",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "共有結合結晶の特徴として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "多数の原子が共有結合で三次元的につながった結晶で、融点が非常に高く、硬い。ダイヤモンドや二酸化ケイ素が該当する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分子がファンデルワールス力で集まった結晶で、融点が低く軟らかい。ドライアイスが該当する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "分子結晶の特徴にすり替え。"
+        },
+        {
+          "label": "3",
+          "text": "陽イオンと陰イオンが交互に並んだ結晶で、硬いが割れやすい。塩化ナトリウムが該当する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン結晶の特徴にすり替え。"
+        },
+        {
+          "label": "4",
+          "text": "金属原子が自由電子で結びついた結晶で、電気をよく通す。鉄が該当する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "金属結晶の特徴にすり替え。"
+        }
+      ],
+      "explanation": "共有結合結晶（原子結晶）は、多数の原子が共有結合で三次元的に連なった構造をもつ結晶です。すべての結合が強い共有結合であるため、融点が非常に高く、極めて硬いのが特徴です。代表例としてダイヤモンド、二酸化ケイ素、炭化ケイ素などがあります。黒鉛も共有結合結晶ですが層状構造のため性質がやや異なります。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "正四面体形の三次元立体構造"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q025",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "classification",
+      "sub_category": "結合の種類の判別",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "結合の種類と関与する粒子の組合せとして、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン結合は陽イオンと陰イオン、共有結合は非金属の原子どうし、金属結合は金属原子と自由電子が関与する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "イオン結合は非金属の原子どうし、共有結合は陽イオンと陰イオン、金属結合は分子間力で結びつく。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三種の結合をすべて入れ替え。"
+        },
+        {
+          "label": "3",
+          "text": "三つの結合はすべて自由電子が関与する点で共通している。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "自由電子が関与するのは金属結合のみ。"
+        },
+        {
+          "label": "4",
+          "text": "三つの結合はすべて共有電子対が関与する点で共通している。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "共有電子対が関与するのは共有結合のみ。"
+        }
+      ],
+      "explanation": "化学結合の三種類はそれぞれ異なる仕組みで成り立っています。イオン結合は陽イオンと陰イオンの静電気力、共有結合は非金属原子どうしの電子の共有、金属結合は金属原子から放出された自由電子が接着剤の役割を果たします。これらの違いを正確に把握することが結合の種類を判別する基礎です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "陽イオンと陰イオンとが静電気力によって引き合ってできる結合。"
+        },
+        {
+          "source_id": "3_1_def_003",
+          "quote": "2個の原子間で、それぞれの原子の価電子を共有してできる結合。"
+        },
+        {
+          "source_id": "3_1_def_013",
+          "quote": "多数の金属原子が価電子を放出して陽イオンとなり、放出された自由電子が全体を動き回ることで結びつける結合。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_003",
+        "3_1_def_013"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q026",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "classification",
+      "sub_category": "結晶の種類と性質の対応",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "結晶の種類とその性質の組合せとして、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン結晶は硬いが割れやすく、金属結晶は展性・延性をもち、分子結晶は柔らかく融点が低い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "イオン結晶は展性・延性をもち、金属結晶は硬いが割れやすく、分子結晶は融点が非常に高い。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "イオン結晶と金属結晶の性質を入れ替え、分子結晶も逆。"
+        },
+        {
+          "label": "3",
+          "text": "すべての結晶は同じ硬さと融点を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "結晶の種類により大きく異なる。"
+        },
+        {
+          "label": "4",
+          "text": "分子結晶は融点が極めて高く、共有結合結晶は融点が低い。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。共有結合結晶は融点が非常に高く、分子結晶は低い。"
+        }
+      ],
+      "explanation": "四種類の結晶にはそれぞれ特徴があります。イオン結晶は静電気力による強い結合のため硬いですが、配列がずれると同符号イオンの反発で割れます。金属結晶は自由電子のおかげで展性・延性があり変形に強い。分子結晶は分子間力（弱い力）で結ばれているため柔らかく融点も低い。共有結合結晶は最も硬く融点が非常に高いのが特徴です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_013",
+          "quote": "イオン結晶のように強い力を加えると割れることはなく、形が変形するだけ（展性・延性）。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_013"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q027",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "classification",
+      "sub_category": "極性分子と無極性分子",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "極性分子と無極性分子の違いについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "結合に極性があっても、分子全体の構造が対称的で極性が打ち消し合えば無極性分子になる。水は折れ線形で非対称なため極性分子である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分子を構成する原子が同じ種類であれば常に極性分子である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "同じ原子どうしなら結合に極性はなく無極性分子。"
+        },
+        {
+          "label": "3",
+          "text": "共有結合の結合に極性があれば、分子は必ず極性分子になる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "結合の極性があっても対称構造なら打ち消されて無極性になる場合がある。"
+        },
+        {
+          "label": "4",
+          "text": "極性分子と無極性分子は全く同じ性質をもつ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶解性や沸点などの性質が異なる。"
+        }
+      ],
+      "explanation": "分子が極性をもつかどうかは、結合の極性だけでなく分子全体の形（対称性）によって決まります。たとえば二酸化炭素は直線形で結合の極性が打ち消し合い無極性分子ですが、水は折れ線形で極性が打ち消されず極性分子です。メタンは正四面体形で結合の極性が打ち消し合い無極性分子です。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_003",
+          "quote": "折れ線形分子"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_009",
+        "3_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q028",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "classification",
+      "sub_category": "水素結合をもつ物質の判別",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水素結合を形成する物質の組合せとして、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水、フッ化水素、アンモニアは水素結合を形成する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "メタン、塩化水素、硫化水素は水素結合を形成する。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "これらは水素原子がフッ素・酸素・窒素と結合しておらず水素結合をつくらない。"
+        },
+        {
+          "label": "3",
+          "text": "すべての水素を含む化合物が水素結合を形成する。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "フッ素・酸素・窒素と結合した場合に限る。"
+        },
+        {
+          "label": "4",
+          "text": "二酸化炭素と窒素は水素結合を形成する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "水素原子を含まないため水素結合は不可能。"
+        }
+      ],
+      "explanation": "水素結合が形成されるのは、水素原子がフッ素、酸素、窒素のいずれかの電気陰性度の大きい原子と共有結合している場合に限られます。水（酸素と水素）、フッ化水素（フッ素と水素）、アンモニア（窒素と水素）はいずれもこの条件を満たします。塩化水素やメタンは水素を含みますが、塩素や炭素の電気陰性度が不十分なため水素結合は形成しません。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_012",
+          "quote": "H原子がF, O, Nのいずれかと共有結合していること"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_012"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q029",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "classification",
+      "sub_category": "電気伝導性による結晶分類",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "固体状態で電気を通す結晶の種類として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "金属結晶は自由電子があるため固体でも電気を通す。黒鉛も層内に自由に動ける電子があるため電気を通す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "イオン結晶は固体の状態で電気をよく通す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "イオン結晶は固体では通さない。融解や溶解で通す。"
+        },
+        {
+          "label": "3",
+          "text": "分子結晶は固体の状態で電気をよく通す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子結晶は通さない。"
+        },
+        {
+          "label": "4",
+          "text": "ダイヤモンドは固体の状態で電気をよく通す。",
+          "is_correct": false,
+          "trap_type": "allotrope_mix",
+          "trap_detail": "ダイヤモンドは不導体。電気を通すのは同素体の黒鉛。"
+        }
+      ],
+      "explanation": "固体状態で電気を通すのは主に金属結晶です。金属では自由電子が結晶中を自由に動き回れるため電気伝導性があります。例外的に共有結合結晶の黒鉛も層内の電子が動けるため電気を通します。イオン結晶はイオンが固定されているため固体では通しません。ダイヤモンドは自由電子がなく不導体です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_013",
+          "quote": "自由電子が動き回るため、電気や熱をよく通し"
+        },
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "通さない（不導体）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_013",
+        "3_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q030",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "classification",
+      "sub_category": "塩化ナトリウムの結晶構造",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "塩化ナトリウムの結晶構造について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ナトリウムイオンと塩化物イオンが交互に規則正しく並んだ立方体の構造をとる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ナトリウム原子と塩素原子が共有結合で結びついた分子が規則正しく並んでいる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "塩化ナトリウムはイオン結晶であり分子ではない。"
+        },
+        {
+          "label": "3",
+          "text": "自由電子による金属結合で結びついた構造をとる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "金属結晶の構造にすり替え。"
+        },
+        {
+          "label": "4",
+          "text": "一つのナトリウムイオンと一つの塩化物イオンが対になった分子として存在する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン結晶には特定の分子は存在しない。全体が一つの巨大構造。"
+        }
+      ],
+      "explanation": "塩化ナトリウムはイオン結晶であり、ナトリウムイオンと塩化物イオンが三次元的に交互に配列した結晶構造をとっています。特定の一対一の分子として存在するのではなく、結晶全体が一つの巨大な構造です。そのためイオン結晶は分子式ではなく組成式で表されます。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "Na+とCl-が交互に規則正しく並んだ立方体の構造"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_001",
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q031",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "procedure",
+      "sub_category": "組成式を決める手順",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "カルシウムイオン（二価の陽イオン）と塩化物イオン（一価の陰イオン）からなる物質の組成式を決める手順として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "カルシウムイオンを先に書き、全体の電荷が中性になるよう、カルシウムイオン一個に対し塩化物イオン二個の比とする。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "塩化物イオンを先に書き、カルシウムイオン二個に対し塩化物イオン一個の比とする。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "順序と比率の両方を入れ替え。"
+        },
+        {
+          "label": "3",
+          "text": "イオンの電荷をそのまま右下に書き、結晶全体の電荷は考慮しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電荷を中性にすることが必須。"
+        },
+        {
+          "label": "4",
+          "text": "陽イオンと陰イオンを常に一対一の比で書く。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "イオンの価数に応じて比が変わる。"
+        }
+      ],
+      "explanation": "組成式を決めるには、まず陽イオンを先に書きます。次にカルシウムイオンの電荷がプラス二、塩化物イオンの電荷がマイナス一なので、全体が中性になるにはカルシウムイオン一個に対し塩化物イオン二個が必要です。よって比は一対二となり、塩化カルシウムの組成式が求まります。",
+      "evidence": [
+        {
+          "source_id": "3_1_proc_001",
+          "quote": "Ca2+とCl-が1:2の比で結合し、CaCl2となる。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q032",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "procedure",
+      "sub_category": "組成式の表記ルール",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "組成式を書く際の表記ルールとして、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオンの数が一の場合は数字を省略し、多原子イオンが二個以上の場合は括弧でくくる。イオンの電荷はつけない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "イオンの数が一の場合も必ず数字の一を書き、電荷も記す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一は省略し、電荷はつけない。"
+        },
+        {
+          "label": "3",
+          "text": "多原子イオンが何個あっても括弧は使わず、すべて並べて書く。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二個以上の場合は括弧でくくる。"
+        },
+        {
+          "label": "4",
+          "text": "陰イオンを先に、陽イオンを後に書くのが正式な表記である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陽イオンが先。"
+        }
+      ],
+      "explanation": "組成式の表記ルールでは、数が一の場合は右下の数字を省略します。また多原子イオン（硫酸イオンなど）が二個以上必要な場合は、多原子イオン全体を括弧でくくって右下に個数を記します。組成式にはイオンの電荷は記さず、あくまで構成原子の種類と最簡比のみを示します。陽イオンを先に書くのが慣例です。",
+      "evidence": [
+        {
+          "source_id": "3_1_proc_001",
+          "quote": "求めた比を、それぞれのイオンの右下に書く（1の場合は省略）。多原子イオンが2個以上の場合は()でくくる。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q033",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "procedure",
+      "sub_category": "結合の種類の判定手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "物質の化学結合の種類を判定する手順として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "金属元素と非金属元素の組合せならイオン結合、非金属元素どうしなら共有結合、金属元素どうしなら金属結合と判断する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "すべての物質はイオン結合で結合しているため、元素の種類による判定は不要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "結合の種類は複数あり判定が必要。"
+        },
+        {
+          "label": "3",
+          "text": "非金属元素どうしの場合はイオン結合、金属と非金属の場合は共有結合と判断する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。非金属どうしは共有結合、金属と非金属はイオン結合。"
+        },
+        {
+          "label": "4",
+          "text": "金属元素どうしの場合は共有結合、非金属元素どうしの場合は金属結合と判断する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "完全に入れ替え。"
+        }
+      ],
+      "explanation": "化学結合の種類を判定する基本的な指針として、金属元素と非金属元素の間ではイオン結合が形成されやすく、非金属元素どうしでは共有結合が形成されやすく、金属元素どうしでは金属結合が形成されます。もちろん例外はありますが、この基本パターンを押さえておくことが重要です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "陽性の強い金属元素の原子と陰性の強い非金属元素の原子の間で"
+        },
+        {
+          "source_id": "3_1_def_003",
+          "quote": "おもに非金属元素の原子どうしが"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_003",
+        "3_1_def_013"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q034",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "procedure",
+      "sub_category": "極性の判定手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "分子が極性をもつかどうかを判定する手順として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "まず結合の極性を確認し、次に分子の形から極性が打ち消し合うかどうかを判断する。打ち消されなければ極性分子である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分子の形に関係なく、結合に極性があれば必ず極性分子になる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "対称構造では打ち消されて無極性になる場合がある。"
+        },
+        {
+          "label": "3",
+          "text": "分子量が大きければ極性分子、小さければ無極性分子である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "分子量と極性は無関係。"
+        },
+        {
+          "label": "4",
+          "text": "同じ元素のみからなる分子は極性分子である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "同一元素なら結合に極性がなく無極性分子。"
+        }
+      ],
+      "explanation": "分子の極性を判定するには二段階で考えます。まず構成原子の電気陰性度の差から結合の極性を確認します。次に分子の形（直線形、折れ線形、正四面体形など）を考慮し、極性のベクトルが打ち消し合うかどうかを判断します。直線形の二酸化炭素や正四面体形のメタンは打ち消されて無極性、折れ線形の水は打ち消されず極性分子です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_009",
+          "quote": "共有結合において、原子が共有電子対を引きつける強さの度合いを表した数値。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_009"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q035",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "procedure",
+      "sub_category": "水素結合の有無の判定",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ある物質が水素結合を形成するかどうかの判定手順として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子中に水素原子がフッ素、酸素、窒素のいずれかと共有結合しているかを確認する。していれば水素結合を形成する可能性が高い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分子中に水素原子が含まれていれば、結合相手に関係なく水素結合を形成する。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "結合相手がフッ素・酸素・窒素でなければ形成しない。"
+        },
+        {
+          "label": "3",
+          "text": "分子量が百以上であれば水素結合を形成する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "分子量と水素結合は無関係。水の分子量は約十八だが水素結合する。"
+        },
+        {
+          "label": "4",
+          "text": "金属元素を含む物質のみが水素結合を形成する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "水素結合は非金属元素間で形成される。金属は無関係。"
+        }
+      ],
+      "explanation": "水素結合の有無を判定するには、その物質の分子中に水素原子がフッ素・酸素・窒素のいずれかと共有結合しているかを確認します。これらの元素は電気陰性度が特に大きいため、結合した水素原子を正に帯電させ、隣接分子の非共有電子対との水素結合を可能にします。塩素は電気陰性度がやや足りないため塩化水素は水素結合をつくりません。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_012",
+          "quote": "H原子がF, O, Nのいずれかと共有結合していること"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_012"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q036",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "procedure",
+      "sub_category": "配位結合の識別法",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "配位結合を含む粒子を識別する方法として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "非共有電子対をもつ原子に、電子を持たないイオンや原子が近づいて新しい結合が生じた場合、その結合は配位結合である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "結合が形成された後の状態を観察するだけで、配位結合と共有結合を区別できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "形成後は区別できない。形成過程で判断する。"
+        },
+        {
+          "label": "3",
+          "text": "すべての共有結合は配位結合でもある。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "配位結合は共有結合の一種だが、逆は成り立たない。"
+        },
+        {
+          "label": "4",
+          "text": "配位結合は金属元素の間でのみ形成される。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "非金属元素や金属イオンとの複合で形成される。"
+        }
+      ],
+      "explanation": "配位結合は非共有電子対を持つ原子から、空の軌道を持つ粒子に電子対が一方的に提供されて形成されます。代表例はアンモニアの窒素の非共有電子対に水素イオンが結合する場合です。重要なのは、いったん配位結合が形成されてしまうと通常の共有結合と見分けがつかないため、形成過程を追うことで識別するという点です。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_006",
+          "quote": "一方の粒子が非共有電子対を持ち、他方が電子を受け入れられる空の軌道を持つこと"
+        },
+        {
+          "source_id": "3_1_def_006",
+          "quote": "配位結合は形成される過程が異なるだけで、形成後は他の共有結合と区別できない。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_006"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q037",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "confusion",
+      "sub_category": "イオン結合と共有結合の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "化学結合に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン結合では電子の授受が起き、陽イオンと陰イオンが形成される。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "共有結合では原子どうしが電子を共有し、安定な電子配置を達成する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "金属結合では自由電子が金属原子間を動き回り結合を維持する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "共有結合では一方の原子から他方へ電子が完全に移動するため、陽イオンと陰イオンが生じる。",
+          "is_correct": true,
+          "trap_type": "concept_confusion",
+          "trap_detail": "電子が完全に移動するのはイオン結合。共有結合は電子を共有する。"
+        }
+      ],
+      "explanation": "共有結合は原子間で電子を共有する結合であり、電子の完全な移動は起こりません。電子が一方から他方へ完全に移動してイオンが生じるのはイオン結合の特徴です。この二つの結合の根本的な違い（共有か移動か）は最も基本的で重要なポイントです。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "共有結合とは異なり、電子を共有するわけではない。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q038",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "confusion",
+      "sub_category": "金属とイオン結晶の展性の混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "金属結晶とイオン結晶の性質に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "金属結晶は自由電子がクッションの役割をするため展性がある。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "イオン結晶は力を加えると配列がずれて同符号イオンが反発し割れる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "金属結晶は電気をよく通し、イオン結晶は固体で通さない。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "イオン結晶は自由電子のおかげで展性と延性に富み、変形しやすい。",
+          "is_correct": true,
+          "trap_type": "property_swap",
+          "trap_detail": "展性・延性は金属結晶の性質。イオン結晶は割れやすい。自由電子もない。"
+        }
+      ],
+      "explanation": "展性（叩くと薄く広がる性質）と延性（引くと伸びる性質）は金属結晶の特徴であり、自由電子が配列のずれを許容するために生じます。イオン結晶には自由電子がなく、力で配列がずれると同じ電荷のイオンどうしが反発して割れてしまいます。選択肢四はイオン結晶と金属結晶の性質を完全に取り違えた誤りです。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_013",
+          "quote": "イオン結晶のように強い力を加えると割れることはなく、形が変形するだけ（展性・延性）。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_013",
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q039",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "confusion",
+      "sub_category": "水素結合と共有結合の混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "水素結合に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水素結合は分子間力の一種であり、ファンデルワールス力より強い。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "水やフッ化水素の沸点が異常に高いのは水素結合の影響である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "水素結合は水素がフッ素、酸素、窒素と結合している場合に形成される。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "水素結合は共有結合やイオン結合と同じ強さをもつ化学結合であり、結合エネルギーが非常に大きい。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "水素結合は分子間力の一種で化学結合より弱い。同じ強さではない。"
+        }
+      ],
+      "explanation": "水素結合はその名前に『結合』とありますが、化学結合（共有結合・イオン結合・金属結合）ではなく、分子間力の一種です。結合エネルギーは化学結合の十分の一程度であり、はるかに弱いです。ただし通常のファンデルワールス力よりは強いため、水素結合をもつ物質は沸点が高くなります。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_012",
+          "quote": "水素結合という名前だが、共有結合やイオン結合のような強い化学結合ではなく、あくまで「強い分子間力」の一種である。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_012"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q040",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "confusion",
+      "sub_category": "電気陰性度の最大元素の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "電気陰性度に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電気陰性度は周期表の右上ほど大きくなる傾向がある。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "フッ素は全元素中で電気陰性度が最大である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "電気陰性度の差が大きい二原子間の結合ほど極性が大きくなる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "電気陰性度が最も大きい元素は酸素であり、フッ素は二番目である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "最大はフッ素で酸素は二番目。順位を入れ替え。"
+        }
+      ],
+      "explanation": "電気陰性度が最大の元素はフッ素（約四・〇）であり、酸素（約三・四）は二番目です。この順位の入れ替えは典型的なひっかけです。電気陰性度は周期表の右上にある元素ほど大きくなる傾向があり、二原子間の電気陰性度の差が大きいほど結合の極性は大きくなります。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_009",
+          "quote": "フッ素が最大"
+        },
+        {
+          "source_id": "3_1_def_009",
+          "quote": "F(4.0) > O(3.4)"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_009"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q041",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "confusion",
+      "sub_category": "ダイヤモンドと黒鉛の混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "ダイヤモンドに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ダイヤモンドは炭素原子が正四面体形に共有結合した三次元構造をもつ。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ダイヤモンドは全物質中で最も硬い。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ダイヤモンドは無色透明な結晶である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ダイヤモンドは層状構造をもち、層と層の間がすべりやすいため軟らかい。",
+          "is_correct": true,
+          "trap_type": "allotrope_mix",
+          "trap_detail": "層状構造で軟らかいのは同素体の黒鉛の性質。ダイヤモンドは三次元構造で最も硬い。"
+        }
+      ],
+      "explanation": "層状構造をもち軟らかいのはダイヤモンドではなく、同じ炭素の同素体である黒鉛の性質です。黒鉛は層内では共有結合で強固に結ばれていますが、層間はファンデルワールス力による弱い結合のため滑りやすく軟らかいのです。ダイヤモンドは三次元のネットワーク構造を持ち、全方向に強い共有結合があるため最も硬い物質です。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "最も硬い物質 正四面体形の三次元立体構造"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q042",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "confusion",
+      "sub_category": "配位結合と通常の共有結合の混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "配位結合に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アンモニウムイオン中には配位結合が一つ含まれる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "配位結合は非共有電子対が提供されることで形成される。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "オキソニウムイオンの生成にも配位結合が関与する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "配位結合で形成された結合は、通常の共有結合よりも弱く、容易に切れる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "形成後は通常の共有結合と区別できない。強さも同じ。"
+        }
+      ],
+      "explanation": "配位結合は形成の過程が異なるだけで、いったんできた後は通常の共有結合と全く同じ性質をもちます。結合の強さに違いはなく、容易に切れるということもありません。アンモニウムイオン中の四つの窒素と水素の結合はすべて等価であり、どれが配位結合で形成されたかを結合の状態だけからは判別できません。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_006",
+          "quote": "配位結合は形成される過程が異なるだけで、形成後は他の共有結合と区別できない。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_006"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q043",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "confusion",
+      "sub_category": "イオン結晶の電気伝導性の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "結晶の電気伝導性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "金属結晶は固体でも電気を通す。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "イオン結晶は融解状態や水溶液では電気を通す。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ダイヤモンドは電気を通さない不導体である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "イオン結晶は固体状態でも自由に動けるイオンがあるため電気をよく通す。",
+          "is_correct": true,
+          "trap_type": "partial_truth",
+          "trap_detail": "イオン結晶は固体ではイオンが固定されており動けない。融解すれば動ける。"
+        }
+      ],
+      "explanation": "イオン結晶は固体状態ではイオンが格子点に固定されて動けないため、電気を通しません。しかし融解状態（液体）になるとイオンが自由に動けるようになり、また水に溶かしてもイオンが分散して動けるため、これらの状態では電気を通します。固体でも通すのは金属結晶（自由電子による）の特徴です。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "固体は通さないが、融解状態や水溶液は通す"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_001",
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q044",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "confusion",
+      "sub_category": "沸点と水素結合の誤った理由づけ",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "水の沸点に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水の沸点が百度と高いのは水分子間の水素結合の影響である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "同族の硫化水素は水素結合をつくらないため、水より沸点が低い。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "フッ化水素やアンモニアも水素結合をつくるため、沸点が予想より高い。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "水の沸点が高いのは水の分子量が同族の水素化合物の中で最も大きいからである。",
+          "is_correct": true,
+          "trap_type": "reason_swap",
+          "trap_detail": "水は同族中で分子量最小だが沸点は最高。理由は水素結合であり分子量ではない。"
+        }
+      ],
+      "explanation": "水の沸点が予想よりはるかに高い原因は分子量ではなく水素結合です。実際、水（分子量約十八）は同族の硫化水素（分子量約三十四）、セレン化水素（分子量約八十一）、テルル化水素（分子量約百三十）よりも分子量が小さいにもかかわらず、沸点は最も高くなっています。これは水分子間の強い水素結合のためです。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_003",
+          "quote": "水素結合により、同族元素の水素化合物に比べて異常に高い沸点を持つ。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_012",
+        "3_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q045",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "mnemonic",
+      "sub_category": "水素結合の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "水素結合を形成する元素を覚える語呂合わせ『フォン水素はフッ素・酸素・窒素と握手する』について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水素結合はフッ素、酸素、窒素の三元素と結合した水素が関与するということを表している。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水素結合はフッ素、酸素、塩素の三元素と結合した水素が関与するということを表している。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "窒素を塩素にすり替え。塩素は水素結合をつくらない。"
+        },
+        {
+          "label": "3",
+          "text": "この語呂合わせはイオン結合の条件を覚えるためのものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "水素結合の語呂合わせであり、イオン結合ではない。"
+        },
+        {
+          "label": "4",
+          "text": "フッ素、酸素、窒素以外の元素でも水素結合は自由に形成される。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "この三元素に限定される。"
+        }
+      ],
+      "explanation": "水素結合は水素原子がフッ素、酸素、窒素のいずれかの電気陰性度が大きい元素と共有結合している場合に形成されます。『フォン』の語呂で覚えると、この三元素を正確に記憶できます。塩素は電気陰性度が酸素や窒素に近いものの、水素結合には不十分とされています。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_012",
+          "quote": "フォン水素はFONと握手する (F, O, N)"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_012"
+      ],
+      "mnemonic": "フォン水素はフッ素・酸素・窒素と握手する"
+    },
+    {
+      "id": "ch1_3_q046",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "mnemonic",
+      "sub_category": "イオン結合と共有結合の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "イオン結合と共有結合の語呂合わせについて、正しい組合せを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン結合は『取って取られて八となる』、共有結合は『たがいに出し合い八となる』で覚える。この八は安定な電子配置（オクテット）を意味する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "イオン結合は『たがいに出し合い八となる』、共有結合は『取って取られて八となる』で覚える。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "語呂合わせの対応を逆転。"
+        },
+        {
+          "label": "3",
+          "text": "どちらの語呂合わせも金属結合を覚えるためのものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン結合と共有結合に関するもの。"
+        },
+        {
+          "label": "4",
+          "text": "この八は原子核中の陽子の数を意味する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "八は最外殻電子が八個（オクテット）で安定するという意味。"
+        }
+      ],
+      "explanation": "イオン結合は電子を『取って取られて』（授受して）互いにオクテットを達成する結合です。共有結合は電子を『たがいに出し合い』（共有して）オクテットを達成する結合です。語呂合わせの『八』は最外殻電子が八個で安定な貴ガスの電子配置（オクテット）達成を意味しています。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "イオン結合は取って取られて 8 となる"
+        },
+        {
+          "source_id": "3_1_def_003",
+          "quote": "共有はたがいに出し合い 8 となる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_003"
+      ],
+      "mnemonic": "イオン結合は取って取られて八となる、共有はたがいに出し合い八となる"
+    },
+    {
+      "id": "ch1_3_q047",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "mnemonic",
+      "sub_category": "配位結合の語呂合わせ",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "配位結合に関する語呂合わせ『仲間に入れて（配位結合はどれ？区別なし）』が伝えている内容として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "配位結合は一方が電子対を提供して結合に『仲間入り』させるが、形成後は他の共有結合と区別がつかない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "配位結合は結合後も容易に見分けることができ、特別な記号で表される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "形成後は区別できない。"
+        },
+        {
+          "label": "3",
+          "text": "配位結合はイオン結合の別名である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "共有結合の一種。イオン結合ではない。"
+        },
+        {
+          "label": "4",
+          "text": "配位結合は金属結合の一種である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "共有結合の一種。金属結合ではない。"
+        }
+      ],
+      "explanation": "『仲間に入れて〜（配位結合はどれ？区別なし）』という語呂合わせは、配位結合の本質をうまく表しています。一方の原子が非共有電子対を提供して新しい粒子を『仲間に入れる』ことで配位結合が形成されますが、形成後は他の共有結合と完全に等価であり、見分けがつかない（区別なし）のです。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_006",
+          "quote": "仲間に 入れて〜（配位結合はどれ？区別なし）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_006"
+      ],
+      "mnemonic": "仲間に入れて（配位結合はどれ？区別なし）"
+    },
+    {
+      "id": "ch1_3_q048",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "comprehensive",
+      "sub_category": "三大結合の総合比較",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "化学結合の三大種類に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン結合は陽イオンと陰イオンの静電気力による結合であり、イオン結晶は融点が高く、融解すると電気を通す。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "共有結合は原子間で電子を共有する結合であり、共有結合結晶は極めて硬く融点が非常に高い。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "金属結合は自由電子が金属イオンを結びつける結合であり、金属は展性・延性をもち電気や熱をよく通す。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "イオン結合と共有結合と金属結合は同じ仕組みの結合であり、結晶の性質にも差はない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "三者はそれぞれ異なる仕組みであり、結晶の性質も大きく異なる。"
+        }
+      ],
+      "explanation": "化学結合の三大種類は、イオン結合（静電気力）、共有結合（電子の共有）、金属結合（自由電子）と、それぞれ異なる仕組みで成り立っています。結晶の性質も大きく異なり、イオン結晶は硬いが割れやすく融解で電気を通す、共有結合結晶は極めて硬く融点が非常に高い、金属結晶は展性・延性があり電気をよく通すという特徴があります。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "陽イオンと陰イオンとが静電気力によって引き合ってできる結合。"
+        },
+        {
+          "source_id": "3_1_def_003",
+          "quote": "2個の原子間で、それぞれの原子の価電子を共有してできる結合。"
+        },
+        {
+          "source_id": "3_1_def_013",
+          "quote": "多数の金属原子が価電子を放出して陽イオンとなり、放出された自由電子が全体を動き回ることで結びつける結合。"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_003",
+        "3_1_def_013"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q049",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "comprehensive",
+      "sub_category": "分子間力と結合力の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "分子間力と化学結合に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水素結合はファンデルワールス力より強いが共有結合やイオン結合よりはるかに弱い分子間力の一種であり、フッ素・酸素・窒素と結合した水素がある場合に形成される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水素結合は共有結合やイオン結合より強い力であり、すべての水素含有化合物で形成される。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "強さと条件の両方が誤り。"
+        },
+        {
+          "label": "3",
+          "text": "ファンデルワールス力は化学結合の中で最も強い力であり、すべての結晶を支配している。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ファンデルワールス力は最も弱い分子間力。"
+        },
+        {
+          "label": "4",
+          "text": "分子間力は化学結合と同じ強さであるため、両者に区別はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子間力は化学結合よりはるかに弱い。明確に区別される。"
+        }
+      ],
+      "explanation": "力の強さは、共有結合やイオン結合のような化学結合が最も強く、次に水素結合、最も弱いのがファンデルワールス力という順序です。水素結合は分子間力の中では最も強い部類に入りますが、化学結合の十分の一程度の強さしかありません。水素結合の形成条件は、水素がフッ素・酸素・窒素の三元素のいずれかと共有結合していることです。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_012",
+          "quote": "水素結合という名前だが、共有結合やイオン結合のような強い化学結合ではなく、あくまで「強い分子間力」の一種である。"
+        },
+        {
+          "source_id": "3_1_def_012",
+          "quote": "H原子がF, O, Nのいずれかと共有結合していること"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_012",
+        "3_1_def_003",
+        "3_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_3_q050",
+      "chapter": "1-3",
+      "chapter_title": "化学結合",
+      "category": "comprehensive",
+      "sub_category": "結合・結晶・性質の全体総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "化学結合・結晶・物質の性質に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩化ナトリウムはイオン結合でできたイオン結晶で融点が高く固体では電気を通さない。ダイヤモンドは共有結合結晶で最も硬く不導体である。金属は金属結合で展性・延性と電気伝導性をもつ。水は折れ線形の極性分子で、水素結合により沸点が高い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "塩化ナトリウムは共有結合結晶で軟らかい。ダイヤモンドは金属結晶で電気をよく通す。金属はイオン結晶で割れやすい。水は直線形の無極性分子である。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべての対応を入れ替え。"
+        },
+        {
+          "label": "3",
+          "text": "すべての物質は同じ種類の結合で結ばれており、性質に差はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "結合の種類によって性質は大きく異なる。"
+        },
+        {
+          "label": "4",
+          "text": "ダイヤモンドは分子結晶であり融点が低く、塩化ナトリウムは金属結合の結晶で展性がある。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "結晶の分類が完全に誤り。"
+        }
+      ],
+      "explanation": "第一章第三節の総まとめです。塩化ナトリウムはイオン結晶で融点八百一度、固体は絶縁体ですが融解・水溶液で電気を通します。ダイヤモンドは共有結合結晶で最も硬く不導体です。金属は金属結合で展性・延性があり電気・熱の良導体です。水は折れ線形の極性分子で、水素結合の影響で沸点が百度と高くなっています。これらの結合と結晶の性質の対応関係を正確に把握することが重要です。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "固体は通さないが、融解状態や水溶液は通す"
+        },
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "最も硬い物質 通さない（不導体）"
+        },
+        {
+          "source_id": "3_1_def_013",
+          "quote": "金属光沢、電気・熱の良導性、展性・延性"
+        },
+        {
+          "source_id": "3_1_sub_003",
+          "quote": "折れ線形分子 水素結合を形成する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_003",
+        "3_1_def_013",
+        "3_1_def_012",
+        "3_1_sub_001",
+        "3_1_sub_002",
+        "3_1_sub_003"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

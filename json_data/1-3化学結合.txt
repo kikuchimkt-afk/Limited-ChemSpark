@@ -1,0 +1,324 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 3,
+   "chapter_title": "化学結合",
+   "section": 1,
+   "section_title": "イオン結合から金属結合まで",
+   "page_range": [62, 99],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "3_1_sub_001",
+     "name": "塩化ナトリウム",
+     "formula": "NaCl",
+     "aliases": ["食塩"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": 801, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色（白色）",
+       "odor": "",
+       "density": { "value": 2.17, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に溶けやすい",
+       "electrical_conductivity": "固体は通さないが、融解状態や水溶液は通す",
+       "other": ["塩化ナトリウム型結晶構造をとる"]
+     },
+     "cross_refs": ["3_1_def_001"],
+     "notes": "Na+とCl-が交互に規則正しく並んだ立方体の構造"
+   },
+   {
+     "id": "3_1_sub_002",
+     "name": "ダイヤモンド",
+     "formula": "C",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "非常に高い" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色透明",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "通さない（不導体）",
+       "other": ["最も硬い物質", "正四面体形の三次元立体構造"]
+     },
+     "cross_refs": ["3_1_def_008"],
+     "notes": "炭素の同素体。すべての価電子が共有結合に使われている。"
+   },
+   {
+     "id": "3_1_sub_003",
+     "name": "水",
+     "formula": "H2O",
+     "aliases": ["氷（固体時）"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": 0, "unit": "℃", "condition": "1気圧" },
+       "boiling_point": { "value": 100, "unit": "℃", "condition": "1気圧" },
+       "color": "無色",
+       "odor": "無臭",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "非電解質",
+       "other": ["折れ線形分子", "水素結合を形成する"]
+     },
+     "cross_refs": ["3_1_def_010", "3_1_def_012"],
+     "notes": "水素結合により、同族元素の水素化合物に比べて異常に高い沸点を持つ。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "3_1_def_001",
+     "type": "def",
+     "title": "イオン結合",
+     "prerequisite_ids": ["TBD:陽イオン", "TBD:陰イオン", "TBD:静電気力"],
+     "definition": "陽イオンと陰イオンとが静電気力（クーロン力）によって引き合ってできる結合。",
+     "explanation": "陽性の強い金属元素の原子と陰性の強い非金属元素の原子の間で電子の授受が起こり、生じた陽イオンと陰イオンが電気的な引力で結びつく結合です。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "塩化ナトリウムの生成",
+         "substance_ids": ["3_1_sub_001"],
+         "description": "Naが電子を1個放出してNa+になり、Clが電子を1個受け取ってCl-になり、これらが結合する。",
+         "values": []
+       }
+     ],
+     "counter_examples": ["共有結合とは異なり、電子を共有するわけではない。"],
+     "mnemonics": ["イオン結合は取って取られて 8 となる"],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "与えられた物質群の中から、イオン結合でできているものを選ぶ問題",
+         "key_concept_ids": ["3_1_def_001"]
+       }
+     ],
+     "cross_refs": ["3_1_def_002"],
+     "source_page": 63
+   },
+   {
+     "id": "3_1_proc_001",
+     "type": "proc",
+     "title": "組成式の書き方",
+     "prerequisite_ids": ["3_1_def_001"],
+     "definition": "イオンからなる物質を、構成する原子の種類とその数の最も簡単な整数比で表す手順。",
+     "explanation": "イオン結晶全体で電気的に中性になるように、陽イオンと陰イオンの数を調整して化学式を書く方法です。",
+     "conditions": ["全体として電気的に中性になること"],
+     "examples": [
+       {
+         "label": "塩化カルシウムの組成式",
+         "substance_ids": [],
+         "description": "Ca2+とCl-が1:2の比で結合し、CaCl2となる。",
+         "values": []
+       }
+     ],
+     "counter_examples": ["酢酸イオン(CH3COO-)などの有機化合物の塩は、陰イオンを先に書くことが多い（例: CH3COONa）。"],
+     "mnemonics": [],
+     "steps": [
+       { "step": 1, "action": "陽イオンを先に、陰イオンを後に書く（イオンの電荷はつけない）。", "reason": "慣例的な表記ルールに従うため。ただし酢酸塩は例外。" },
+       { "step": 2, "action": "陽イオンの電荷の絶対値 × 陽イオンの数 ＝ 陰イオンの電荷の絶対値 × 陰イオンの数 となるように整数の比を求める。", "reason": "全体が電気的に中性になるようにするため。" },
+       { "step": 3, "action": "求めた比を、それぞれのイオンの右下に書く（1の場合は省略）。多原子イオンが2個以上の場合は()でくくる。", "reason": "構成比を明確に示すため。" }
+     ],
+     "related_problems": [
+       {
+         "pattern": "陽イオンと陰イオンの組み合わせから、正しい組成式を導く問題",
+         "key_concept_ids": ["3_1_proc_001"]
+       }
+     ],
+     "cross_refs": ["3_1_def_001"],
+     "source_page": 64
+   },
+   {
+     "id": "3_1_def_003",
+     "type": "def",
+     "title": "共有結合",
+     "prerequisite_ids": ["TBD:不対電子", "TBD:価電子"],
+     "definition": "2個の原子間で、それぞれの原子の価電子を共有してできる結合。",
+     "explanation": "おもに非金属元素の原子どうしが、互いの不対電子を出し合って電子対（共有電子対）を作り、それを共有することで希ガスと同じ安定な電子配置になる結合です。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "水素分子の生成",
+         "substance_ids": [],
+         "description": "2個のH原子がそれぞれの価電子を出し合い、1組の電子対を共有してH2分子となる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": ["共有はたがいに出し合い 8 となる"],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "分子の電子式や構造式を書かせる問題",
+         "key_concept_ids": ["3_1_def_003"]
+       }
+     ],
+     "cross_refs": ["3_1_def_004", "3_1_def_005"],
+     "source_page": 69
+   },
+   {
+     "id": "3_1_def_006",
+     "type": "def",
+     "title": "配位結合",
+     "prerequisite_ids": ["3_1_def_003", "TBD:非共有電子対"],
+     "definition": "一方の原子の非共有電子対が、他方の原子（またはイオン）に提供され、共有されてできる新しい共有結合。",
+     "explanation": "電子対を「片方から一方的に貸して共有する」形の結合です。結合ができてしまえば、通常の共有結合と区別はつきません。",
+     "conditions": ["一方の粒子が非共有電子対を持ち、他方が電子を受け入れられる空の軌道を持つこと"],
+     "examples": [
+       {
+         "label": "アンモニウムイオンの生成",
+         "substance_ids": [],
+         "description": "アンモニア分子のN原子の非共有電子対に、水素イオン(H+)が結合してNH4+ができる。",
+         "values": []
+       },
+       {
+         "label": "オキソニウムイオンの生成",
+         "substance_ids": ["3_1_sub_003"],
+         "description": "水分子のO原子の非共有電子対に、H+が結合してH3O+ができる。",
+         "values": []
+       }
+     ],
+     "counter_examples": ["配位結合は形成される過程が異なるだけで、形成後は他の共有結合と区別できない。"],
+     "mnemonics": ["仲間に 入れて〜（配位結合はどれ？区別なし）"],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "分子やイオンがもつ配位結合の数を答えさせる問題",
+         "key_concept_ids": ["3_1_def_006"]
+       }
+     ],
+     "cross_refs": ["3_1_def_007"],
+     "source_page": 73
+   },
+   {
+     "id": "3_1_def_009",
+     "type": "def",
+     "title": "電気陰性度",
+     "prerequisite_ids": ["3_1_def_003"],
+     "definition": "共有結合において、原子が共有電子対を引きつける強さの度合いを表した数値。",
+     "explanation": "原子が電子を引っ張る力のことです。周期表の右上に行くほど大きく（フッ素が最大）、左下に行くほど小さくなります。希ガスは通常考えません。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "電気陰性度の大小",
+         "substance_ids": [],
+         "description": "F(4.0) > O(3.4) > N(3.0) ≒ Cl(3.2)",
+         "values": []
+       }
+     ],
+     "counter_examples": ["希ガス元素はほとんど化合物をつくらないため、通常は電気陰性度の値が与えられない。"],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "結合の極性の向きや大きさを判定させる問題",
+         "key_concept_ids": ["3_1_def_009", "3_1_def_010"]
+       }
+     ],
+     "cross_refs": ["3_1_def_010"],
+     "source_page": 81
+   },
+   {
+     "id": "3_1_def_012",
+     "type": "def",
+     "title": "水素結合",
+     "prerequisite_ids": ["3_1_def_009", "3_1_def_010"],
+     "definition": "電気陰性度の大きい原子(F, O, N)に結合して正に帯電した水素原子が、隣接する分子の電気陰性度の大きい原子の非共有電子対と静電気力によって引き合う結合。",
+     "explanation": "極性が非常に大きいため、分子と分子の間で特別な引力が働きます。水素結合を持つ物質（水、アンモニア、フッ化水素など）は、同じ仲間の物質と比べて沸点が異常に高くなります。",
+     "conditions": ["H原子がF, O, Nのいずれかと共有結合していること"],
+     "examples": [
+       {
+         "label": "HF, H2O, NH3 の沸点",
+         "substance_ids": ["3_1_sub_003"],
+         "description": "同族元素の水素化合物に比べて異常に沸点が高い。",
+         "values": []
+       }
+     ],
+     "counter_examples": ["水素結合という名前だが、共有結合やイオン結合のような強い化学結合ではなく、あくまで「強い分子間力」の一種である。"],
+     "mnemonics": ["フォン水素はFONと握手する (F, O, N)"],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "水素化合物の沸点のグラフから、水素結合の影響を説明する問題",
+         "key_concept_ids": ["3_1_def_012"]
+       }
+     ],
+     "cross_refs": ["3_1_def_011"],
+     "source_page": 86
+   },
+   {
+     "id": "3_1_def_013",
+     "type": "def",
+     "title": "金属結合",
+     "prerequisite_ids": ["TBD:自由電子"],
+     "definition": "多数の金属原子が価電子を放出して陽イオンとなり、放出された自由電子が全体を動き回ることで、金属原子どうしを結びつける結合。",
+     "explanation": "「電子の海に浮かぶ金属原子」とも表現されます。自由電子が動き回るため、電気や熱をよく通し、叩くと薄く広がる（展性）などの金属特有の性質を示します。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "金属の性質",
+         "substance_ids": [],
+         "description": "金属光沢、電気・熱の良導性、展性・延性",
+         "values": []
+       }
+     ],
+     "counter_examples": ["イオン結晶のように強い力を加えると割れることはなく、形が変形するだけ（展性・延性）。"],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "金属が電気を通す理由や、展性・延性を示す理由を説明する問題",
+         "key_concept_ids": ["3_1_def_013"]
+       }
+     ],
+     "cross_refs": ["3_1_def_014"],
+     "source_page": 89
+   },
+   {
+     "id": "3_1_tip_001",
+     "type": "tip",
+     "title": "密度の計算公式の覚え方",
+     "prerequisite_ids": ["3_1_def_014"],
+     "definition": "結晶格子の密度を求める公式の語呂合わせ。",
+     "explanation": "密度(d) = 単位格子中の原子の質量 / 単位格子の体積(a^3)。アボガドロ定数(NA)とモル質量(M)を用いる。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": ["ひみつは グランパ CM 参上 (密度は [質量÷体積] g/cm3)"],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "単位格子の一辺の長さと原子量などから密度を計算する問題",
+         "key_concept_ids": ["3_1_tip_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 79
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "3_1_def_001",
+     "to_id": "3_1_proc_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "イオン結合の仕組みを理解していることが、組成式を作成する前提となる。"
+   },
+   {
+     "from_id": "3_1_def_009",
+     "to_id": "3_1_def_012",
+     "relation_type": "is_prerequisite_of",
+     "note": "電気陰性度の差による極性が、水素結合の発生原因である。"
+   },
+   {
+     "from_id": "3_1_def_003",
+     "to_id": "3_1_def_006",
+     "relation_type": "is_prerequisite_of",
+     "note": "共有結合の一種として配位結合が存在する。"
+   }
+ ]
+}

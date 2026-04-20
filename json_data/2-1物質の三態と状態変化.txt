@@ -1,0 +1,652 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 1,
+   "chapter_title": "物質の三態と状態変化",
+   "section": 1,
+   "section_title": "粒子の熱運動と三態の変化",
+   "page_range": [124, 135],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "1_1_sub_001",
+     "name": "ヨウ素",
+     "formula": "I2",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": 114, "unit": "℃", "condition": "標準大気圧" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "黒紫色（固体）、紫〜赤紫色（気体・溶液）",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": [
+         "昇華しやすい",
+         "昇華熱は25℃で62.3kJ/mol"
+       ]
+     },
+     "cross_refs": ["1_1_def_011"],
+     "notes": "ヨウ素デンプン反応で青〜青紫色を示す"
+   },
+   {
+     "id": "1_1_sub_002",
+     "name": "水",
+     "formula": "H2O",
+     "aliases": ["氷", "水蒸気"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": 0, "unit": "℃", "condition": "1.01×10^5 Pa" },
+       "boiling_point": { "value": 100, "unit": "℃", "condition": "1.01×10^5 Pa" },
+       "color": "無色",
+       "odor": "無臭",
+       "density": { "value": 1.0000, "unit": "g/cm³", "condition": "4℃" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": [
+         "氷の融解熱は6.0kJ/mol",
+         "蒸発熱は25℃で44.0kJ/mol、100℃で40.7kJ/mol",
+         "4℃で密度が最大になる"
+       ]
+     },
+     "cross_refs": ["1_1_def_013", "TBD:水素結合"],
+     "notes": "氷は水分子どうしが水素結合により引き合ってすき間の多い結晶構造をしているため、液体の水より密度が小さく水に浮く。"
+   },
+   {
+     "id": "1_1_sub_003",
+     "name": "エタノール",
+     "formula": "C2H6O",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": 78, "unit": "℃", "condition": "1.01×10^5 Pa" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": [
+         "固体の密度は液体より大きい"
+       ]
+     },
+     "cross_refs": [],
+     "notes": ""
+   },
+   {
+     "id": "1_1_sub_004",
+     "name": "ジエチルエーテル",
+     "formula": "",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": 34, "unit": "℃", "condition": "1.01×10^5 Pa" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": []
+     },
+     "cross_refs": [],
+     "notes": "蒸気圧が大きく、揮発しやすい"
+   },
+   {
+     "id": "1_1_sub_005",
+     "name": "ナフタレン",
+     "formula": "",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "白色",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": [
+         "昇華しやすい"
+       ]
+     },
+     "cross_refs": ["1_1_def_011"],
+     "notes": ""
+   }
+ ],
+ "concepts": [
+   {
+     "id": "1_1_def_001",
+     "type": "def",
+     "title": "拡散",
+     "prerequisite_ids": ["1_1_def_002"],
+     "definition": "外部から力を加えなくても、物質を構成する粒子が気体や液体の中を自然にゆっくり広がっていく現象。",
+     "explanation": "すべての気体や液体の分子が常に熱運動しており、互いに衝突しながら移動しているために起こります。物質が互いに混じり合ってばらばらになる方が安定なため、拡散の逆の現象は自然には起こりません。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "花の香り",
+         "substance_ids": [],
+         "description": "室内の隅に置いた花の香りが、風もないのに室内全体に広がる。",
+         "values": []
+       },
+       {
+         "label": "水中への食塩の拡散",
+         "substance_ids": ["TBD:塩化ナトリウム"],
+         "description": "水中に食塩の結晶を入れて静置すると、ナトリウムイオンと塩化物イオンが水中に拡散し均一な溶液となる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "個々の分子の運動速度は大きいが、他の分子と頻繁に衝突して進路が変わるため、拡散が広がる速度自体はゆっくりとしている。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "現象の名称を問う問題（香りの広がりやインクの広がりから「拡散」を答えさせる）",
+         "key_concept_ids": ["1_1_def_001"]
+       }
+     ],
+     "cross_refs": ["TBD:溶液", "TBD:エントロピー"],
+     "source_page": 124
+   },
+   {
+     "id": "1_1_def_002",
+     "type": "def",
+     "title": "熱運動",
+     "prerequisite_ids": [],
+     "definition": "物質を構成する粒子が、その温度に応じて行う不規則な運動。",
+     "explanation": "高温になるほど、粒子の熱運動は激しくなります。気体の温度が高いということは、気体分子のもつ運動エネルギーが大きいことを意味します。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "酸素分子の真空中での速度",
+         "substance_ids": ["TBD:酸素"],
+         "description": "25℃で約482m/s、100℃で約540m/sとなる。",
+         "values": [
+           { "value": 482, "unit": "m/s", "condition": "25℃" },
+           { "value": 540, "unit": "m/s", "condition": "100℃" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["1_1_eq_001", "1_1_law_001"],
+     "source_page": 125
+   },
+   {
+     "id": "1_1_law_001",
+     "type": "law",
+     "title": "気体分子の速度分布（マクスウェル・ボルツマン分布）",
+     "prerequisite_ids": ["1_1_def_002"],
+     "definition": "ある温度における気体分子の集団は、すべて同じ速度ではなく、ある一定の速度分布をもつ。",
+     "explanation": "温度が高くなると、高速で運動する分子の割合が増えるため、速度分布曲線の山の頂点は右（高速側）へ移動し、山の高さは低く（なだらかに）なります。曲線と横軸で囲まれた面積は常に一定（全分子数）です。",
+     "conditions": ["一定量の気体"],
+     "examples": [
+       {
+         "label": "窒素分子と水素分子の速度分布の違い",
+         "substance_ids": ["TBD:窒素", "TBD:水素"],
+         "description": "同じ0℃でも、分子量の小さい水素の方が高速側に分布が偏る（分子数最多の速度：H2は1680m/s、N2は425m/s）。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "温度が等しければすべての分子の速度が等しい、というのは誤り（常に極端に遅い分子や速い分子が存在する）。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "温度を変化させたときの速度分布曲線の形（山の高さ、頂点の位置）の変化を選ぶ問題",
+         "key_concept_ids": ["1_1_law_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 125
+   },
+   {
+     "id": "1_1_eq_001",
+     "type": "eq",
+     "title": "絶対温度",
+     "prerequisite_ids": ["1_1_def_002"],
+     "definition": "分子の熱運動が停止すると考えられる最も低い温度（-273℃）を絶対零度（0K）とし、セ氏温度と同じ目盛りの間隔で表した温度。",
+     "explanation": "セ氏温度を t [℃]、絶対温度を T [K] とすると、T = t + 273 の関係が成り立ちます。絶対温度はマイナスの値にはなりません。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "0℃の絶対温度",
+         "substance_ids": [],
+         "description": "0℃は273Kに等しい。",
+         "values": [
+           { "value": 273, "unit": "K", "condition": "0℃" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [
+       "セルシウス 273 で絶対絶命（絶体絶命）！ T = t + 273"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "セ氏温度から絶対温度への変換計算",
+         "key_concept_ids": ["1_1_eq_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 126
+   },
+   {
+     "id": "1_1_def_003",
+     "type": "def",
+     "title": "融解",
+     "prerequisite_ids": ["1_1_def_002"],
+     "definition": "固体を加熱したとき、熱運動が激しくなり分子間力に打ち勝って規則正しい配列が崩れ、液体になる状態変化。",
+     "explanation": "固体が完全に液体になるまで、加えられた熱エネルギーはすべて融解（状態変化）に使われるため、温度は一定に保たれます。このときの温度を融点と呼びます。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "加熱曲線のグラフから融点や状態（固体・液体の共存）を読み取る問題",
+         "key_concept_ids": ["1_1_def_003"]
+       }
+     ],
+     "cross_refs": ["1_1_def_004"],
+     "source_page": 127
+   },
+   {
+     "id": "1_1_def_004",
+     "type": "def",
+     "title": "蒸発",
+     "prerequisite_ids": ["1_1_def_002"],
+     "definition": "液体の表面近くにある分子のうち、運動エネルギーの大きな分子が分子間力に打ち勝って液面から上部の空間に飛び出す現象。",
+     "explanation": "液体の温度が高いほど、大きな運動エネルギーを持つ分子の割合が増えるため、蒸発がより盛んになります。蒸発は液体の表面でのみ起こります。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [
+       "蒸発は沸点未満の温度でも、液体の表面で常に起こっている（沸騰との違い）。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["1_1_def_005"],
+     "source_page": 129
+   },
+   {
+     "id": "1_1_def_005",
+     "type": "def",
+     "title": "沸騰",
+     "prerequisite_ids": ["1_1_def_004", "1_1_def_008"],
+     "definition": "液体の蒸気圧が外圧と等しくなり、液体の内部からも盛んに気化（蒸発）が起こる現象。",
+     "explanation": "温度が上がり、液体内部にできた気泡の圧力（飽和蒸気圧）が大気圧（外圧）と等しくなると、泡がつぶれずに液面まで上昇できるようになります。この状態が沸騰です。この時の温度を沸点と言います。",
+     "conditions": ["飽和蒸気圧 ＝ 外圧"],
+     "examples": [
+       {
+         "label": "富士山頂での沸騰",
+         "substance_ids": ["1_1_sub_002"],
+         "description": "気圧が低い（約6.25×10^4 Pa）ため、水は約88℃で蒸気圧と外圧が等しくなり沸騰する。",
+         "values": [
+           { "value": 88, "unit": "℃", "condition": "外圧 6.25×10^4 Pa" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "蒸気圧曲線を用いて、特定外圧下での沸点を読み取る問題",
+         "key_concept_ids": ["1_1_def_005", "1_1_def_008"]
+       }
+     ],
+     "cross_refs": ["1_1_def_008"],
+     "source_page": 131
+   },
+   {
+     "id": "1_1_def_006",
+     "type": "def",
+     "title": "凝固",
+     "prerequisite_ids": ["1_1_def_002"],
+     "definition": "液体を冷却したとき、運動エネルギーの小さくなった分子が分子間力に捕らえられ、規則正しく配列し固体になる現象。",
+     "explanation": "純物質では凝固が始まってから終わるまで温度が一定に保たれます。この温度（凝固点）は同じ純物質の融点と等しいです。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["1_1_def_003"],
+     "source_page": 128
+   },
+   {
+     "id": "1_1_def_007",
+     "type": "def",
+     "title": "気液平衡（蒸発平衡）",
+     "prerequisite_ids": ["1_1_def_004"],
+     "definition": "密閉容器内で、液体から蒸発する分子の数と、気体から凝縮する分子の数が等しくなり、見かけ上蒸発が停止したような状態。",
+     "explanation": "蒸発と凝縮が同じ速度で起こっているため、空間の気体分子の数（圧力）が一定に保たれます。この時の圧力を飽和蒸気圧と呼びます。",
+     "conditions": ["密閉容器内", "温度一定", "液体と気体が共存"],
+     "examples": [],
+     "counter_examples": [
+       "平衡状態では蒸発も凝縮も停止しているわけではない（動的平衡）。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "気液平衡状態における蒸発速度と凝縮速度の関係を問う正誤問題",
+         "key_concept_ids": ["1_1_def_007"]
+       }
+     ],
+     "cross_refs": ["1_1_def_008"],
+     "source_page": 130
+   },
+   {
+     "id": "1_1_def_008",
+     "type": "def",
+     "title": "飽和蒸気圧（蒸気圧）",
+     "prerequisite_ids": ["1_1_def_007"],
+     "definition": "気液平衡の状態にあるときの蒸気が示す圧力。",
+     "explanation": "蒸気圧は物質の種類と「温度」だけで決まり、容器の体積や液体の量には依存しません。温度が高くなると、空間に飛び出す分子の数が増えるため蒸気圧は大きくなります。",
+     "conditions": ["気液平衡が成立していること"],
+     "examples": [
+       {
+         "label": "水とエタノールとジエチルエーテルの蒸気圧比較",
+         "substance_ids": ["1_1_sub_002", "1_1_sub_003", "1_1_sub_004"],
+         "description": "同じ温度では、分子間力が弱いジエチルエーテルの方が水よりも蒸気圧が大きい。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "「液体の量が多いほど蒸気圧が大きくなる」「容器の体積を小さくすると蒸気圧が大きくなる」は誤り。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "蒸気圧曲線のグラフから物質間の分子間力の強弱を判定する問題",
+         "key_concept_ids": ["1_1_def_008", "1_1_tip_001"]
+       }
+     ],
+     "cross_refs": ["1_1_tip_001", "1_1_def_013"],
+     "source_page": 130
+   },
+   {
+     "id": "1_1_def_009",
+     "type": "def",
+     "title": "融解熱",
+     "prerequisite_ids": ["1_1_def_003"],
+     "definition": "物質1molを、融点において完全に液体にするために必要な熱量（kJ/mol）。",
+     "explanation": "固体から液体に変わる際、分子の規則正しい配列を崩すために吸収されるエネルギーです。",
+     "conditions": ["温度は融点で一定"],
+     "examples": [
+       {
+         "label": "氷の融解熱",
+         "substance_ids": ["1_1_sub_002"],
+         "description": "氷の融解熱は6.0 kJ/mol。",
+         "values": [
+           { "value": 6.0, "unit": "kJ/mol", "condition": "" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "加熱曲線の水平部分の長さ（加えた熱量）から融解熱を比較・計算する問題",
+         "key_concept_ids": ["1_1_def_009"]
+       }
+     ],
+     "cross_refs": ["1_1_def_010"],
+     "source_page": 128
+   },
+   {
+     "id": "1_1_def_010",
+     "type": "def",
+     "title": "蒸発熱",
+     "prerequisite_ids": ["1_1_def_004"],
+     "definition": "ある一定温度で、1molの液体が蒸発して同温の気体になるときに吸収する熱量（kJ/mol）。",
+     "explanation": "液体分子間にはたらく分子間力をすべて切断して、気体分子にするために必要な熱エネルギーです。そのため、一般に融解熱よりも蒸発熱の方がかなり大きくなります。",
+     "conditions": ["温度一定"],
+     "examples": [
+       {
+         "label": "水の蒸発熱",
+         "substance_ids": ["1_1_sub_002"],
+         "description": "水の蒸発熱は100℃で40.7 kJ/mol。",
+         "values": [
+           { "value": 40.7, "unit": "kJ/mol", "condition": "100℃" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "加熱曲線で、融解の水平部分と沸騰の水平部分の長さを比較する問題（蒸発熱の方が大きいから長い）",
+         "key_concept_ids": ["1_1_def_010"]
+       }
+     ],
+     "cross_refs": ["1_1_tip_001"],
+     "source_page": 129
+   },
+   {
+     "id": "1_1_def_011",
+     "type": "def",
+     "title": "昇華",
+     "prerequisite_ids": [],
+     "definition": "固体が直接気体に変化する現象（または気体が直接固体になる変化を含むこともある）。",
+     "explanation": "分子間力の小さい固体において、表面の分子が分子間力に打ち勝って直接気体として飛び出します。ヨウ素やドライアイスなどで見られます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "昇華しやすい物質",
+         "substance_ids": ["1_1_sub_001", "1_1_sub_005", "TBD:ドライアイス"],
+         "description": "ヨウ素、ナフタレン、ドライアイス（固体二酸化炭素）。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "混合物からのヨウ素の分離（精製）方法として昇華を選ぶ問題",
+         "key_concept_ids": ["1_1_def_011", "1_1_proc_001"]
+       }
+     ],
+     "cross_refs": ["1_1_proc_001"],
+     "source_page": 132
+   },
+   {
+     "id": "1_1_proc_001",
+     "type": "proc",
+     "title": "昇華による精製",
+     "prerequisite_ids": ["1_1_def_011"],
+     "definition": "昇華しやすい物質を含む混合物を加熱し、気体となった物質を冷却して再び固体として回収することで純度を高める操作。",
+     "explanation": "不純物を含んだヨウ素などを穏やかに加熱し、生じた蒸気を冷やしたフラスコの底などに当てて結晶化させます。",
+     "conditions": ["目的物質が昇華しやすいこと"],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "不純物を含むヨウ素をビーカーに入れ、冷水を入れた丸底フラスコを上に乗せる。",
+         "reason": "昇華したヨウ素の蒸気を直ちに冷却して凝華させるため。"
+       },
+       {
+         "step": 2,
+         "action": "ビーカーをガスバーナーで穏やかに温める。",
+         "reason": "ヨウ素の融点は低く（114℃）、強く加熱すると昇華せずに融解してしまうため。"
+       }
+     ],
+     "related_problems": [],
+     "cross_refs": ["1_1_sub_001"],
+     "source_page": 132
+   },
+   {
+     "id": "1_1_tip_001",
+     "type": "tip",
+     "title": "分子量と沸点・融点の関係",
+     "prerequisite_ids": ["1_1_def_003", "1_1_def_005"],
+     "definition": "構造がよく似た分子からなる物質どうしでは、分子量の大きい分子ほど分子間力が大きくなり、融点や沸点が高くなる傾向がある。",
+     "explanation": "重い分子は引き合う力も強くなります。そのため、気体になりにくく（蒸気圧が下がり）、沸騰させるためにはより高い温度が必要になります。",
+     "conditions": ["分子の構造がよく似ている場合（水素結合などの影響を強く受けない場合）"],
+     "examples": [
+       {
+         "label": "ハロゲンの沸点比較",
+         "substance_ids": ["TBD:塩素", "TBD:臭素", "1_1_sub_001"],
+         "description": "塩素（分子量71）、臭素（分子量160）、ヨウ素（分子量254）の順に分子間力が強くなり沸点・融点が高くなる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "水やフッ化水素のように分子量が小さくても、強い水素結合がはたらく場合は例外的に融点・沸点が異常に高くなる。"
+     ],
+     "mnemonics": [
+       "重い分子は引くのも強い（融点や沸点は分子間力の大きさのめやす）"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "複数の物質を沸点の高い順（または蒸気圧の高い順）に並べ替える問題",
+         "key_concept_ids": ["1_1_tip_001"]
+       }
+     ],
+     "cross_refs": ["1_1_law_002"],
+     "source_page": 133
+   },
+   {
+     "id": "1_1_law_002",
+     "type": "law",
+     "title": "結合力の強さの順列",
+     "prerequisite_ids": ["TBD:共有結合", "TBD:イオン結合", "TBD:金属結合", "TBD:水素結合", "TBD:ファンデルワールス力"],
+     "definition": "物質を構成する粒子間にはたらく力の大小関係。",
+     "explanation": "化学結合（共有結合、イオン結合、金属結合）は、分子間力（水素結合、ファンデルワールス力）に比べて極めて強力です。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "共有結合の結晶と分子結晶の融点の違い",
+         "substance_ids": ["TBD:水晶", "1_1_sub_002"],
+         "description": "水晶（共有結合）の融点は1550℃と非常に高いが、氷（分子結晶）は0℃。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [
+       "共有結合 > イオン結合・金属結合 ≫ 水素結合 > ファンデルワールス力"
+     ],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 133
+   },
+   {
+     "id": "1_1_def_012",
+     "type": "def",
+     "title": "状態図",
+     "prerequisite_ids": ["1_1_def_003", "1_1_def_005", "1_1_def_011"],
+     "definition": "温度と圧力を軸として、物質が固体・液体・気体のどの状態にあるかを示した図。",
+     "explanation": "3つの状態の境界を示す3本の曲線（融解曲線、蒸気圧曲線、昇華圧曲線）で区切られています。水の場合、融解曲線がわずかに左上（負の傾き）に向かっているのが大きな特徴です。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "水の状態図での加圧",
+         "substance_ids": ["1_1_sub_002"],
+         "description": "0℃の氷を加圧していくと、融解曲線を越えて液体（水）になる。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "状態図上の特定の温度・圧力変化に伴う状態変化を問う問題",
+         "key_concept_ids": ["1_1_def_012", "1_1_def_013"]
+       }
+     ],
+     "cross_refs": ["1_1_def_013"],
+     "source_page": 134
+   },
+   {
+     "id": "1_1_def_013",
+     "type": "def",
+     "title": "三重点",
+     "prerequisite_ids": ["1_1_def_012"],
+     "definition": "状態図において、固体・液体・気体の3つの状態が共存し、平衡状態を保っている点。",
+     "explanation": "水の場合、三重点は 0.01℃、600 Pa (0.006×10^5 Pa) に存在し、この温度は非常に正確であるため温度基準の定義定点とされています。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "水の三重点",
+         "substance_ids": ["1_1_sub_002"],
+         "description": "0.01℃、600Pa",
+         "values": [
+           { "value": 0.01, "unit": "℃", "condition": "" },
+           { "value": 600, "unit": "Pa", "condition": "" }
+         ]
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 134
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "1_1_def_002",
+     "to_id": "1_1_eq_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "絶対零度は熱運動が停止する温度として定義される。"
+   },
+   {
+     "from_id": "1_1_def_005",
+     "to_id": "1_1_def_008",
+     "relation_type": "is_applied_in",
+     "note": "沸騰は液体の飽和蒸気圧が外圧に等しくなったときに起こる。"
+   },
+   {
+     "from_id": "1_1_tip_001",
+     "to_id": "1_1_def_008",
+     "relation_type": "is_applied_in",
+     "note": "分子間力が大きい物質ほど、同温での蒸気圧は低くなる。"
+   },
+   {
+     "from_id": "1_1_sub_001",
+     "to_id": "1_1_proc_001",
+     "relation_type": "is_applied_in",
+     "note": "ヨウ素の昇華しやすい性質を利用して精製を行う。"
+   },
+   {
+     "from_id": "1_1_def_003",
+     "to_id": "1_1_def_009",
+     "relation_type": "is_prerequisite_of",
+     "note": "融解熱は融解に伴って吸収されるエネルギー量である。"
+   },
+   {
+     "from_id": "1_1_def_004",
+     "to_id": "1_1_def_010",
+     "relation_type": "is_prerequisite_of",
+     "note": "蒸発熱は蒸発に伴って吸収されるエネルギー量である。"
+   }
+ ]
+}

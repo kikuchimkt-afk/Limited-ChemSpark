@@ -1,0 +1,2563 @@
+{
+  "metadata": {
+    "chapter": "2-1",
+    "chapter_title": "物質の三態と状態変化",
+    "source_file": "json_data/2-1物質の三態と状態変化.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "すべての文字列は日本語読み上げ可能な形式で記述。化学式・数式は日本語名に置換済み。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true,
+      "temperature_unit": "度",
+      "percent_unit": "パーセント"
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワード1語をすり替え",
+      "concept_confusion": "類似概念の混同",
+      "property_swap": "物質の性質を別物質と入れ替え",
+      "condition_change": "成立条件の変更",
+      "step_order": "手順の順序入れ替え",
+      "reason_swap": "正しい操作に誤った理由を付与",
+      "partial_truth": "前半は正しく後半だけ誤り",
+      "multiple_swap": "複数箇所を同時にすり替え",
+      "allotrope_mix": "同素体の性質を入れ替え",
+      "negation": "肯定否定を入れ替え"
+    },
+    "category_distribution": {
+      "definition": 12,
+      "property": 10,
+      "classification": 8,
+      "procedure": 6,
+      "confusion": 8,
+      "mnemonic": 3,
+      "comprehensive": 3
+    }
+  },
+  "questions": [
+    {
+      "id": "ch2_1_q001",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "definition",
+      "sub_category": "熱運動の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "熱運動について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "物質を構成する粒子が温度に応じて行う不規則な運動であり、高温になるほど激しくなる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "物質を構成する粒子が外部から力を加えられたときにのみ行う運動である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "外部からの力がなくても粒子は常に熱運動している。"
+        },
+        {
+          "label": "3",
+          "text": "温度が高くなるほど、粒子の熱運動は穏やかになる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高温ほど熱運動は激しくなる。"
+        },
+        {
+          "label": "4",
+          "text": "固体の粒子は熱運動を全く行わない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "固体でも粒子は一定の位置で振動しており、熱運動している。"
+        }
+      ],
+      "explanation": "熱運動とは、物質を構成する粒子（原子・分子・イオン）が温度に応じて行う不規則な運動です。気体では空間を自由に飛び回り、液体では位置を変えながら動き、固体でも一定の位置で振動しています。温度が高いほど運動エネルギーが大きくなるため、熱運動はより激しくなります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_002",
+          "quote": "物質を構成する粒子が、その温度に応じて行う不規則な運動"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q002",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "definition",
+      "sub_category": "拡散の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "拡散について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "外部から力を加えなくても、粒子が気体や液体の中を自然にゆっくり広がっていく現象である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "外部から圧力を加えたときにだけ起こる現象である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "外部から力を加えなくても自然に起こる。"
+        },
+        {
+          "label": "3",
+          "text": "個々の分子の速度が遅いため、拡散が起こる。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "分子の速度自体は大きいが、頻繁な衝突で方向が変わるため拡散の広がりは遅い。"
+        },
+        {
+          "label": "4",
+          "text": "拡散は一方向にのみ進み、逆方向への移動は起こらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "拡散は不規則な運動であり、全方向に広がる。"
+        }
+      ],
+      "explanation": "拡散とは、物質の粒子が気体や液体中を自然に広がっていく現象です。花の香りが風もないのに部屋全体に広がるのはこの例です。個々の分子は非常に速い速度で運動していますが、他の分子と頻繁に衝突して進路が変わるため、全体としては拡散がゆっくり進行します。拡散の逆の現象は自然には起こりません。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "外部から力を加えなくても、物質を構成する粒子が気体や液体の中を自然にゆっくり広がっていく現象"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001",
+        "1_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q003",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "definition",
+      "sub_category": "絶対温度の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "絶対温度について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子の熱運動が停止すると考えられるマイナス二百七十三度を零ケルビンとし、セ氏温度と同じ目盛り間隔で表した温度である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水が凍る温度を零ケルビンとし、セ氏温度と同じ目盛り間隔で表した温度である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "零ケルビンはマイナス二百七十三度であり、水の凝固点（零度）ではない。"
+        },
+        {
+          "label": "3",
+          "text": "絶対温度はマイナスの値をとることがある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "絶対温度は常にゼロ以上の値である。"
+        },
+        {
+          "label": "4",
+          "text": "セ氏温度に百を加えると絶対温度になる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "百ではなく二百七十三を加える。"
+        }
+      ],
+      "explanation": "絶対温度は分子の熱運動が完全に停止すると考えられるマイナス二百七十三度を起点（零ケルビン）として、セ氏温度と同じ目盛り間隔で表す温度です。セ氏温度をティー度とすると、絶対温度ティーケルビンはティーたす二百七十三で表されます。絶対温度は常にゼロ以上の値をとり、マイナスにはなりません。",
+      "evidence": [
+        {
+          "source_id": "1_1_eq_001",
+          "quote": "分子の熱運動が停止すると考えられる最も低い温度（-273℃）を絶対零度（0K）とし"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_eq_001"
+      ],
+      "mnemonic": "絶対絶命、にーなーさん（二百七十三）"
+    },
+    {
+      "id": "ch2_1_q004",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "definition",
+      "sub_category": "融解の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "融解について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "固体を加熱したとき、粒子の熱運動が激しくなり分子間力に打ち勝って規則正しい配列が崩れ、液体になる状態変化である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "液体が冷却されて固体に変わる状態変化である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これは凝固の定義。融解は固体から液体への変化。"
+        },
+        {
+          "label": "3",
+          "text": "液体の内部から盛んに気化が起こる現象である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これは沸騰の定義。"
+        },
+        {
+          "label": "4",
+          "text": "固体が直接気体に変わる状態変化である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これは昇華の定義。"
+        }
+      ],
+      "explanation": "融解とは固体が加熱されて液体に変わる状態変化のことです。固体の粒子は規則正しく配列していますが、熱エネルギーが加わると熱運動が激しくなり、分子間力に打ち勝って配列が崩れ始めます。融解が進行している間は加えた熱が状態変化に使われるため温度は一定に保たれ、この温度を融点と呼びます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "固体を加熱したとき、熱運動が激しくなり分子間力に打ち勝って規則正しい配列が崩れ、液体になる状態変化"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q005",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "definition",
+      "sub_category": "蒸発の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "蒸発について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "液体の表面近くにある運動エネルギーの大きな分子が、分子間力に打ち勝って液面から飛び出す現象であり、沸点より低い温度でも起こる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "液体の内部からも盛んに気化が起こる現象である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "内部からの気化は沸騰。蒸発は表面のみで起こる。"
+        },
+        {
+          "label": "3",
+          "text": "蒸発は沸点に達して初めて起こる現象であり、沸点未満では発生しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "蒸発は沸点未満の温度でも液体の表面で常に起こっている。"
+        },
+        {
+          "label": "4",
+          "text": "蒸発とは固体が直接気体になる変化のことである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "固体から気体は昇華。蒸発は液体の表面から気体になること。"
+        }
+      ],
+      "explanation": "蒸発は液体の表面で起こる気化現象です。液体中のすべての分子は同じ速度で運動しているわけではなく、速度にはばらつきがあります。表面近くで特に大きな運動エネルギーを持った分子は分子間力に打ち勝って液面から飛び出すことがあり、これが蒸発です。沸騰とは異なり、蒸発は沸点より低い温度でも常に起こっています。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "液体の表面近くにある分子のうち、運動エネルギーの大きな分子が分子間力に打ち勝って液面から上部の空間に飛び出す現象"
+        },
+        {
+          "source_id": "1_1_def_004",
+          "quote": "蒸発は沸点未満の温度でも、液体の表面で常に起こっている"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004",
+        "1_1_def_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q006",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "definition",
+      "sub_category": "沸騰の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "沸騰について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "液体の蒸気圧が外圧と等しくなり、液体の内部からも盛んに気化が起こる現象である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "液体の表面のみから穏やかに気化が起こる現象である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "表面のみの気化は蒸発。沸騰は内部からも気化が起こる。"
+        },
+        {
+          "label": "3",
+          "text": "蒸気圧が外圧より大きくなったときに起こる現象である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "大きくなるではなく等しくなったときに起こる。"
+        },
+        {
+          "label": "4",
+          "text": "温度や圧力に関係なく一定の温度で起こる現象である。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "沸点は外圧によって変わる。高い山では低い温度で沸騰する。"
+        }
+      ],
+      "explanation": "沸騰は液体の飽和蒸気圧が外圧（大気圧）と等しくなったとき、液体の内部にできた気泡がつぶれずに液面まで上昇できるようになる現象です。このときの温度が沸点です。外圧が低い場所（たとえば高い山の上）では蒸気圧が早い段階で外圧に達するため、低い温度で沸騰が起こります。富士山頂では水は約八十八度で沸騰します。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_005",
+          "quote": "液体の蒸気圧が外圧と等しくなり、液体の内部からも盛んに気化（蒸発）が起こる現象"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_005",
+        "1_1_def_008"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q007",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "definition",
+      "sub_category": "気液平衡の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "気液平衡について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "密閉容器内で、蒸発する分子の数と凝縮する分子の数が等しくなり、見かけ上蒸発が停止したように見える状態である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "蒸発と凝縮の両方が完全に停止した状態である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "動的平衡であり、蒸発も凝縮も継続している。速度が等しいだけ。"
+        },
+        {
+          "label": "3",
+          "text": "開放容器でも成立する平衡状態である。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "密閉容器内でなければ蒸気が逃げるため気液平衡は成立しない。"
+        },
+        {
+          "label": "4",
+          "text": "温度を上げても蒸気圧は変化しない状態である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度を上げると蒸気圧は大きくなる。"
+        }
+      ],
+      "explanation": "気液平衡とは密閉容器内で液体からの蒸発と気体からの凝縮が同じ速度で起こっている動的平衡状態です。見かけ上は変化が起こっていないように見えますが、分子レベルでは蒸発と凝縮が絶えず起こり続けています。この状態における蒸気の圧力が飽和蒸気圧です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_007",
+          "quote": "蒸発する分子の数と、気体から凝縮する分子の数が等しくなり、見かけ上蒸発が停止したような状態"
+        },
+        {
+          "source_id": "1_1_def_007",
+          "quote": "平衡状態では蒸発も凝縮も停止しているわけではない（動的平衡）"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_007",
+        "1_1_def_008"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q008",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "definition",
+      "sub_category": "飽和蒸気圧の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "飽和蒸気圧について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "気液平衡の状態にあるときの蒸気が示す圧力であり、物質の種類と温度だけで決まる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "容器の体積が大きいほど飽和蒸気圧は大きくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "容器の体積には依存しない。物質と温度だけで決まる。"
+        },
+        {
+          "label": "3",
+          "text": "液体の量が多いほど飽和蒸気圧は大きくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "液体の量には依存しない。"
+        },
+        {
+          "label": "4",
+          "text": "温度が高くなると飽和蒸気圧は小さくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度が高くなると蒸気圧は大きくなる。"
+        }
+      ],
+      "explanation": "飽和蒸気圧は気液平衡が成立しているときの蒸気の圧力です。重要なのは、この値が物質の種類と温度だけで決まり、容器の大きさや液体の量には全く影響されないということです。温度が上がると多くの分子が液面から飛び出すため蒸気圧は大きくなり、逆に温度を下げると蒸気圧は小さくなります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_008",
+          "quote": "蒸気圧は物質の種類と「温度」だけで決まり、容器の体積や液体の量には依存しません"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_008",
+        "1_1_def_007"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q009",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "definition",
+      "sub_category": "融解熱の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "融解熱について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "物質一モルを融点において完全に液体にするために必要な熱量であり、融解中は温度が一定に保たれる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "物質一モルを沸点において完全に気体にするために必要な熱量である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これは蒸発熱の定義。融解熱は固体から液体への変化に関する熱量。"
+        },
+        {
+          "label": "3",
+          "text": "融解中も温度は上がり続ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "融解中は加えた熱がすべて状態変化に使われるため温度は一定。"
+        },
+        {
+          "label": "4",
+          "text": "融解熱は蒸発熱より大きい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一般に蒸発熱のほうが融解熱よりかなり大きい。"
+        }
+      ],
+      "explanation": "融解熱は一モルの固体を融点において完全に液体にするために必要な熱量です。融解中は加えた熱エネルギーがすべて分子配列を崩すために使われるため、温度は融点のまま一定に保たれます。水の場合、融解熱は六・〇キロジュール毎モルです。なお蒸発熱は四十・七キロジュール毎モル（百度）であり、融解熱よりはるかに大きいです。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_009",
+          "quote": "物質1molを、融点において完全に液体にするために必要な熱量"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_009",
+        "1_1_def_010"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q010",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "definition",
+      "sub_category": "蒸発熱の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "蒸発熱について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "一定温度で一モルの液体が蒸発して同温の気体になるときに吸収する熱量であり、一般に融解熱より大きい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "蒸発のときに放出する熱量のことであり、周囲の温度を上げる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "蒸発では熱を吸収する（吸熱変化）。放出ではない。"
+        },
+        {
+          "label": "3",
+          "text": "蒸発熱は融解熱よりも小さいのが一般的である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "蒸発熱は融解熱よりかなり大きい。分子間力をすべて切断するため。"
+        },
+        {
+          "label": "4",
+          "text": "蒸発熱は物質の種類に関係なく一定の値をとる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物質の分子間力の大きさによって異なる。"
+        }
+      ],
+      "explanation": "蒸発熱は一モルの液体が気体に変わるとき吸収する熱量です。液体から気体への変化では分子間の結びつきをほぼ完全に切る必要があるため、分子の配列を崩すだけの融解と比べてはるかに多くのエネルギーが必要です。水の場合、融解熱は六・〇キロジュール毎モルですが、蒸発熱は百度で四十・七キロジュール毎モルと約七倍です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_010",
+          "quote": "一般に融解熱よりも蒸発熱の方がかなり大きくなります"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_010",
+        "1_1_def_009"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q011",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "definition",
+      "sub_category": "昇華の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "昇華について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "固体が液体を経ずに直接気体に変化する現象であり、ヨウ素やナフタレン、ドライアイスで見られる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "液体が加熱されて気体に変化する現象である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これは蒸発や沸騰の定義。昇華は固体から直接気体。"
+        },
+        {
+          "label": "3",
+          "text": "気体が冷却されて液体に変化する現象である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これは凝縮の定義。"
+        },
+        {
+          "label": "4",
+          "text": "すべての固体で容易に起こる一般的な変化である。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "分子間力の小さい特定の固体でのみ見られる。"
+        }
+      ],
+      "explanation": "昇華とは固体が液体の状態を経ずに直接気体へ変化する現象です。分子間力が比較的小さい固体で起こりやすく、代表例としてヨウ素、ナフタレン、ドライアイス（固体の二酸化炭素）があります。逆に気体が直接固体になる変化も昇華（または凝華）と呼ばれることがあります。この性質を利用してヨウ素の精製を行うことができます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_011",
+          "quote": "固体が直接気体に変化する現象"
+        },
+        {
+          "source_id": "1_1_def_011",
+          "quote": "ヨウ素、ナフタレン、ドライアイス（固体二酸化炭素）"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_011"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q012",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "definition",
+      "sub_category": "状態図と三重点の定義",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "状態図と三重点について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "状態図は温度と圧力を軸として物質の三態の領域を示した図であり、三重点は固体・液体・気体の三つの状態が共存する点である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "三重点では固体と液体の二つの状態のみが共存する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "二つではなく三つの状態が共存する。"
+        },
+        {
+          "label": "3",
+          "text": "状態図の横軸は体積、縦軸は温度である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "横軸は温度、縦軸は圧力である。"
+        },
+        {
+          "label": "4",
+          "text": "三重点は物質の種類によらず共通の温度・圧力である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "三重点は物質ごとに異なる固有の値。"
+        }
+      ],
+      "explanation": "状態図は横軸に温度、縦軸に圧力をとり、固体・液体・気体のどの状態にあるかを示す図です。三つの状態の境界線（融解曲線、蒸気圧曲線、昇華圧曲線）が一点に交わるところが三重点であり、ここでは固体・液体・気体の三態が同時に共存しています。水の三重点は〇・〇一度、六百パスカルです。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_012",
+          "quote": "温度と圧力を軸として、物質が固体・液体・気体のどの状態にあるかを示した図"
+        },
+        {
+          "source_id": "1_1_def_013",
+          "quote": "固体・液体・気体の3つの状態が共存し、平衡状態を保っている点"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_012",
+        "1_1_def_013"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q013",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "property",
+      "sub_category": "水の融解曲線の特殊性",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "水の状態図に関する記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水の融解曲線は負の傾きをもち、圧力を上げると氷が融解して水になるという特徴がある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水の融解曲線は正の傾きをもち、ほとんどの物質と同じ傾向を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水は例外的に負の傾き。ほとんどの物質は正の傾き。"
+        },
+        {
+          "label": "3",
+          "text": "氷を加圧すると融点が上がるため、より高い温度にしないと融解しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "加圧すると融点が下がるため、零度以下でも融解が起こりうる。"
+        },
+        {
+          "label": "4",
+          "text": "水と他の物質の融解曲線の傾きに違いはない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水はほとんどの物質と異なり負の傾きをもつ。"
+        }
+      ],
+      "explanation": "ほとんどの物質は加圧すると融点が上がりますが、水は例外的に加圧すると融点が下がります。これは氷の密度が水より小さい（氷が水に浮く）ことと関係しています。状態図上では融解曲線がわずかに左上に向かう負の傾きとして表れます。スケートの刃で氷が滑りやすいのもこの性質が一因とされています。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_012",
+          "quote": "水の場合、融解曲線がわずかに左上（負の傾き）に向かっているのが大きな特徴"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_012",
+        "1_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q014",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "property",
+      "sub_category": "蒸気圧と分子間力",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "同じ温度における複数の液体の蒸気圧の大小関係について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子間力が弱い物質ほど蒸気圧が大きく、揮発しやすい。そのため沸点は低い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分子間力が強い物質ほど蒸気圧が大きく、揮発しやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子間力が強いと分子が飛び出しにくいため蒸気圧は小さくなる。"
+        },
+        {
+          "label": "3",
+          "text": "蒸気圧の大小は分子間力とは無関係であり、分子量だけで決まる。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "分子量も影響するが、分子間力の強さが本質的な要因。"
+        },
+        {
+          "label": "4",
+          "text": "蒸気圧が大きい物質ほど沸点が高い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "蒸気圧が大きい＝蒸発しやすい＝沸点が低い。"
+        }
+      ],
+      "explanation": "同じ温度で比較すると、分子間力が弱い物質は分子が液面から飛び出しやすいため蒸気圧が大きくなります。蒸気圧が大きい物質は低い温度で蒸気圧が外圧に達するため、沸点が低くなります。ジエチルエーテルは分子間力が弱く蒸気圧が大きいため沸点は三十四度と低く、水は水素結合で分子間力が強いため蒸気圧は小さく沸点は百度です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_008",
+          "quote": "分子間力が弱いジエチルエーテルの方が水よりも蒸気圧が大きい"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_008",
+        "1_1_tip_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q015",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "property",
+      "sub_category": "水の密度の特殊性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水と氷の密度について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "氷は水素結合によりすき間の多い結晶構造をもつため、液体の水より密度が小さく水に浮く。水は四度で密度が最大になる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "氷は液体の水より密度が大きいため水に沈む。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "氷の密度は水より小さいため浮く。"
+        },
+        {
+          "label": "3",
+          "text": "水は零度で密度が最大になる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "四度で最大であり零度ではない。"
+        },
+        {
+          "label": "4",
+          "text": "固体の方が液体より密度が小さいのはすべての物質に共通の性質である。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "これは水の特殊な性質。ほとんどの物質では固体の方が密度が大きい。"
+        }
+      ],
+      "explanation": "水は他の多くの物質と異なり、固体（氷）の方が液体（水）より密度が小さいという特殊な性質をもちます。これは氷の結晶中で水分子が水素結合によってすき間の多い構造（六角形の配列）をとるためです。また水は四度で密度が最大になります。この性質があるため冬に湖の表面だけが凍り、底の水は四度を保って生物が生存できます。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_002",
+          "quote": "氷は水分子どうしが水素結合により引き合ってすき間の多い結晶構造をしているため、液体の水より密度が小さく水に浮く"
+        },
+        {
+          "source_id": "1_1_sub_002",
+          "quote": "4℃で密度が最大になる"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q016",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "property",
+      "sub_category": "分子量と沸点の関係",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "分子量と沸点の関係について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "構造がよく似た分子どうしでは、分子量が大きいほど分子間力が大きくなり、沸点が高くなる傾向がある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分子量が大きいほど沸点は低くなる傾向がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量が大きいほど分子間力が強く沸点は高くなる。"
+        },
+        {
+          "label": "3",
+          "text": "分子量と沸点には一切関係がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子間力を通じて密接に関係している。"
+        },
+        {
+          "label": "4",
+          "text": "水素結合を形成する分子も、分子量だけで沸点が決まる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "水素結合がある場合、分子量が小さくても例外的に高い沸点となる。"
+        }
+      ],
+      "explanation": "同族の分子（構造が似た分子）では分子量が大きいほどファンデルワールス力が強くなるため、沸点は高くなります。ただし水やフッ化水素のように強い水素結合がはたらく分子は、分子量が小さくても例外的に沸点が高くなります。沸点の議論では分子間力の種類と大きさを総合的に考える必要があります。",
+      "evidence": [
+        {
+          "source_id": "1_1_tip_001",
+          "quote": "分子量の大きい分子ほど分子間力が大きくなり、融点や沸点が高くなる傾向がある"
+        },
+        {
+          "source_id": "1_1_tip_001",
+          "quote": "水やフッ化水素のように分子量が小さくても、強い水素結合がはたらく場合は例外的に融点・沸点が異常に高い"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_tip_001"
+      ],
+      "mnemonic": "重い分子は引くのも強い"
+    },
+    {
+      "id": "ch2_1_q017",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "property",
+      "sub_category": "結合力の強さの順序",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "物質を構成する粒子間にはたらく力の大小関係について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "化学結合（共有結合・イオン結合・金属結合）は、分子間力（水素結合・ファンデルワールス力）に比べて極めて強力である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ファンデルワールス力は共有結合より強い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "共有結合のほうがはるかに強い。"
+        },
+        {
+          "label": "3",
+          "text": "水素結合は共有結合より強い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水素結合は分子間力であり共有結合より弱い。"
+        },
+        {
+          "label": "4",
+          "text": "水素結合とファンデルワールス力は同じ強さである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水素結合のほうがファンデルワールス力より強い。"
+        }
+      ],
+      "explanation": "結合力の大小関係は、共有結合が最も強く、続いてイオン結合・金属結合が来ます。これらの化学結合は分子間力に比べて桁違いに強力です。分子間力の中では水素結合が最も強く、ファンデルワールス力が最も弱いです。共有結合の結晶（水晶など）の融点が非常に高いのに対し、分子結晶（氷など）の融点が低いのはこの力の差によります。",
+      "evidence": [
+        {
+          "source_id": "1_1_law_002",
+          "quote": "化学結合（共有結合、イオン結合、金属結合）は、分子間力（水素結合、ファンデルワールス力）に比べて極めて強力"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_law_002"
+      ],
+      "mnemonic": "共有 ＞ イオン・金属 ≫ 水素結合 ＞ ファンデルワールス力"
+    },
+    {
+      "id": "ch2_1_q018",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "property",
+      "sub_category": "気体分子の速度分布",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "気体分子の速度分布について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度が高くなると高速で運動する分子の割合が増え、速度分布曲線の山は低くなだらかになり、頂点は高速側へ移動する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ある温度における気体分子はすべて同じ速度で運動している。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "速度にはばらつきがあり分布をもつ。"
+        },
+        {
+          "label": "3",
+          "text": "温度が高くなると速度分布曲線の山は高く鋭くなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "低くなだらかになる。"
+        },
+        {
+          "label": "4",
+          "text": "温度が上がると速度分布曲線の面積が変化する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "面積は全分子数を表すため常に一定。"
+        }
+      ],
+      "explanation": "気体分子の速度はマクスウェル・ボルツマン分布に従います。すべての分子が同じ速度ではなく、遅い分子も速い分子も存在します。温度が上がると高速の分子の割合が増えるため、分布曲線の山の頂点は右（高速側）に移動し、山は低くなだらかになります。ただし曲線と横軸で囲まれた面積は全分子数を表すため変わりません。",
+      "evidence": [
+        {
+          "source_id": "1_1_law_001",
+          "quote": "温度が高くなると、高速で運動する分子の割合が増えるため、速度分布曲線の山の頂点は右（高速側）へ移動し、山の高さは低く（なだらかに）なります"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q019",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "property",
+      "sub_category": "ヨウ素の性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ヨウ素の性質について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "黒紫色の固体で昇華しやすい性質をもち、気体や溶液では紫色から赤紫色を示す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "白色の固体であり、加熱すると融解してから気化する。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "白色の固体はナフタレン。ヨウ素は黒紫色。"
+        },
+        {
+          "label": "3",
+          "text": "昇華しにくく、常温では液体として存在する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "昇華しやすい。常温では固体。"
+        },
+        {
+          "label": "4",
+          "text": "無色無臭の気体として存在する。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "ヨウ素は常温で固体。気体は紫色。"
+        }
+      ],
+      "explanation": "ヨウ素は常温で黒紫色の固体であり、昇華しやすいことで有名です。加熱すると紫色の気体となります。融点は百十四度ですが、昇華により固体の段階から直接気体になる性質があります。ヨウ素はでんぷんと反応して青色から青紫色を示す（ヨウ素でんぷん反応）ことでも知られています。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_001",
+          "quote": "黒紫色（固体）、紫〜赤紫色（気体・溶液）"
+        },
+        {
+          "source_id": "1_1_sub_001",
+          "quote": "昇華しやすい"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_001",
+        "1_1_def_011"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q020",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "property",
+      "sub_category": "沸点と外圧の関係",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "沸点と外圧の関係について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "外圧が低いほど沸点は低くなる。富士山頂では水は約八十八度で沸騰する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "外圧が低いほど沸点は高くなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "逆。外圧が低いと蒸気圧が早く外圧に達するため沸点は下がる。"
+        },
+        {
+          "label": "3",
+          "text": "沸点は外圧に関係なく常に一定である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "沸点は外圧によって変わる。"
+        },
+        {
+          "label": "4",
+          "text": "富士山頂では水は百二十度で沸騰する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "百二十度ではなく約八十八度。低気圧で沸点は下がる。"
+        }
+      ],
+      "explanation": "沸騰は液体の蒸気圧が外圧と等しくなったときに起こります。外圧が低い場所では蒸気圧が少ない温度上昇で外圧に達するため、低い温度で沸騰します。標高の高い富士山頂では気圧が約六万二千五百パスカルと低いため、水は約八十八度で沸騰します。逆に圧力鍋は内部の圧力を高めることで百度以上で沸騰させます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_005",
+          "quote": "気圧が低い（約6.25×10^4 Pa）ため、水は約88℃で蒸気圧と外圧が等しくなり沸騰する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_005",
+        "1_1_def_008"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q021",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "property",
+      "sub_category": "エタノールの固体と液体の密度",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "エタノールの固体と液体の密度関係について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "エタノールの固体は液体より密度が大きく、液体に沈む。これはほとんどの物質に共通する性質である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "エタノールの固体は液体より密度が小さく、液体に浮く。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "浮くのは水（氷）の特殊な性質。エタノールは一般的で固体が沈む。"
+        },
+        {
+          "label": "3",
+          "text": "エタノールの固体と液体の密度は全く同じである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "固体の方が密度が大きい。"
+        },
+        {
+          "label": "4",
+          "text": "すべての物質で固体は液体より密度が小さい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "普通は固体の方が密度が大きい。水（氷）が例外。"
+        }
+      ],
+      "explanation": "ほとんどの物質は液体より固体の方が密度が大きく、固体を液体に入れると沈みます。エタノールもその一般則に従います。例外として水は氷（固体）の密度が水（液体）より小さいため氷が水に浮くという特殊な性質を示します。これは試験でよく問われるひっかけポイントです。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_003",
+          "quote": "固体の密度は液体より大きい"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_003",
+        "1_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q022",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "property",
+      "sub_category": "凝固点と融点の関係",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "凝固について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "純物質の凝固点は融点と等しく、凝固が始まってから終わるまで温度は一定に保たれる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "凝固点は融点より低い温度にある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "純物質では凝固点と融点は同じ温度。"
+        },
+        {
+          "label": "3",
+          "text": "凝固中も温度は下がり続ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "凝固中は凝固熱が放出されるため温度は一定に保たれる。"
+        },
+        {
+          "label": "4",
+          "text": "混合物も純物質と同じく一定の凝固点をもつ。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "混合物は凝固点が一定にならず徐々に低下する。"
+        }
+      ],
+      "explanation": "凝固とは液体が冷却されて固体になる変化です。純物質では凝固中に凝固熱が放出されるため温度は一定に保たれ、この温度（凝固点）は同じ物質の融点と等しくなります。混合物の場合は凝固中に温度が徐々に変化するため、一定の凝固点を示しません。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_006",
+          "quote": "純物質では凝固が始まってから終わるまで温度が一定に保たれます。この温度（凝固点）は同じ純物質の融点と等しいです"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_006",
+        "1_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q023",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "classification",
+      "sub_category": "六つの状態変化の名称",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "六つの状態変化の名称の組み合わせとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "固体から液体は融解、液体から固体は凝固、液体から気体は蒸発（気化）、気体から液体は凝縮、固体から気体は昇華、気体から固体も昇華（凝華）である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "固体から液体は凝固、液体から固体は融解である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "融解と凝固が逆。"
+        },
+        {
+          "label": "3",
+          "text": "液体から気体は凝縮、気体から液体は蒸発である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "蒸発と凝縮が逆。"
+        },
+        {
+          "label": "4",
+          "text": "固体から気体の変化には名称がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "昇華という名称がある。"
+        }
+      ],
+      "explanation": "物質の三態間の変化には六つの名称があります。固体から液体が融解、その逆が凝固。液体から気体が蒸発または気化で、その逆が凝縮（液化）。固体から直接気体になるのが昇華で、気体から直接固体になるのも昇華（または凝華）です。試験ではこれらの名称の入れ替えがよく出題されます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "固体を加熱したとき...液体になる状態変化"
+        },
+        {
+          "source_id": "1_1_def_006",
+          "quote": "液体を冷却したとき...固体になる現象"
+        },
+        {
+          "source_id": "1_1_def_011",
+          "quote": "固体が直接気体に変化する現象"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003",
+        "1_1_def_004",
+        "1_1_def_005",
+        "1_1_def_006",
+        "1_1_def_011"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q024",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "classification",
+      "sub_category": "昇華しやすい物質の分類",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "昇華しやすい物質として正しい組み合わせを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヨウ素、ナフタレン、ドライアイス（固体の二酸化炭素）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ヨウ素、食塩、鉄。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "食塩や鉄はイオン結晶・金属で昇華しない。"
+        },
+        {
+          "label": "3",
+          "text": "エタノール、水、酸素。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "これらは昇華しやすい物質ではない。"
+        },
+        {
+          "label": "4",
+          "text": "ダイヤモンド、水晶、食塩。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "共有結合の結晶やイオン結晶は非常に高い融点をもち昇華しない。"
+        }
+      ],
+      "explanation": "昇華しやすい物質は分子間力が比較的小さい分子結晶です。代表例はヨウ素（黒紫色固体）、ナフタレン（白色固体、防虫剤の原料）、ドライアイス（固体の二酸化炭素）です。これらは加熱すると液体を経ずに直接気体になります。イオン結晶や共有結合結晶は結合力が強いため昇華しません。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_011",
+          "quote": "ヨウ素、ナフタレン、ドライアイス（固体二酸化炭素）"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_011",
+        "1_1_sub_001",
+        "1_1_sub_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q025",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "classification",
+      "sub_category": "蒸発と沸騰の比較",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "蒸発と沸騰の違いについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "蒸発は液体の表面でのみ起こりどの温度でも起こるが、沸騰は蒸気圧が外圧に等しくなったときに液体の内部からも起こる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "蒸発は沸点以上でのみ起こり、沸騰は沸点未満でも起こる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。蒸発は沸点未満でも起こり、沸騰は沸点で起こる。"
+        },
+        {
+          "label": "3",
+          "text": "蒸発も沸騰も液体の内部から起こる現象であり違いはない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "蒸発は表面のみ、沸騰は内部からも起こる。"
+        },
+        {
+          "label": "4",
+          "text": "沸騰は表面でのみ起こり、蒸発は内部から起こる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "蒸発と沸騰の特徴が逆。"
+        }
+      ],
+      "explanation": "蒸発は液面（表面）から起こる気化であり、温度が沸点以下であっても起こります。洗濯物が室温で乾くのは蒸発の例です。一方、沸騰は液体の蒸気圧が外圧に達した沸点で液体の内部からも盛んに気泡が発生する現象です。蒸発はどの温度でも穏やかに起こりますが、沸騰は特定の温度（沸点）でのみ起こる激しい変化です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "蒸発は沸点未満の温度でも、液体の表面で常に起こっている（沸騰との違い）"
+        },
+        {
+          "source_id": "1_1_def_005",
+          "quote": "液体の蒸気圧が外圧と等しくなり、液体の内部からも盛んに気化（蒸発）が起こる現象"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004",
+        "1_1_def_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q026",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "classification",
+      "sub_category": "吸熱と発熱の分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "状態変化における吸熱・発熱の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "融解・蒸発・昇華（固体から気体）は吸熱変化であり、凝固・凝縮・昇華（気体から固体）は発熱変化である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "融解と凝固はどちらも吸熱変化である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "凝固は発熱変化。固体になる際にエネルギーが放出される。"
+        },
+        {
+          "label": "3",
+          "text": "蒸発は発熱変化であり、凝縮は吸熱変化である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "蒸発が吸熱、凝縮が発熱。"
+        },
+        {
+          "label": "4",
+          "text": "すべての状態変化は吸熱変化である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "粒子の自由度が増す方向が吸熱、減る方向が発熱。"
+        }
+      ],
+      "explanation": "状態変化のうち、粒子の運動が自由になる方向（固体→液体→気体）は分子間力に打ち勝つためにエネルギーが必要で吸熱です。逆に粒子の運動が制限される方向（気体→液体→固体）は分子間力によりエネルギーが放出されるため発熱です。この関係を理解しておくと融解熱・蒸発熱の符号が正しく判断できます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_009",
+          "quote": "固体から液体に変わる際、分子の規則正しい配列を崩すために吸収されるエネルギー"
+        },
+        {
+          "source_id": "1_1_def_010",
+          "quote": "1molの液体が蒸発して同温の気体になるときに吸収する熱量"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_009",
+        "1_1_def_010"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q027",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "classification",
+      "sub_category": "三態の粒子の運動に関する分類",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "固体・液体・気体それぞれの粒子の運動について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "固体の粒子は一定の位置で振動し、液体の粒子は位置を変えながら動き、気体の粒子は空間を自由に飛び回る。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "固体の粒子は全く運動しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "振動運動は行っている。"
+        },
+        {
+          "label": "3",
+          "text": "液体の粒子は固体と同じく規則正しく配列している。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "液体では配列が崩れ、粒子は移動できる。"
+        },
+        {
+          "label": "4",
+          "text": "気体の粒子は隣の粒子に束縛されてゆっくり動く。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "気体は束縛されず自由かつ高速に運動する。"
+        }
+      ],
+      "explanation": "物質の三態は粒子の運動の自由度で区別できます。固体では粒子が規則正しく配列され、一定の位置で振動運動を行います。液体では配列が崩れ、粒子は互いの位置を交換しながら動きます。気体では粒子は分子間力からほぼ自由になり、高速で空間を飛び回ります。温度が上がるとこの自由度が増し、固体→液体→気体と変化します。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_002",
+          "quote": "物質を構成する粒子が、その温度に応じて行う不規則な運動"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q028",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "classification",
+      "sub_category": "分子間力の種類の分類",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "分子間力の分類について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子間力にはファンデルワールス力と水素結合があり、ファンデルワールス力はすべての分子間にはたらくが、水素結合は特定の組み合わせでのみはたらく。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ファンデルワールス力は水素結合をもつ分子にはたらかない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ファンデルワールス力はすべての分子間にはたらく。水素結合があるなしに無関係。"
+        },
+        {
+          "label": "3",
+          "text": "水素結合はすべての分子間にはたらく。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸素や窒素やフッ素に結合した水素がある場合のみ。"
+        },
+        {
+          "label": "4",
+          "text": "分子間力はイオン結晶にのみはたらく力である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン結晶にはたらくのはイオン結合。分子間力は分子間にはたらく。"
+        }
+      ],
+      "explanation": "分子間にはたらく引力である分子間力は大きくファンデルワールス力と水素結合に分けられます。ファンデルワールス力は極性の有無にかかわらずすべての分子間にはたらきまます。一方、水素結合は酸素・窒素・フッ素のような電気陰性度の大きい原子に結合した水素がある場合にのみはたらく比較的強い分子間力です。",
+      "evidence": [
+        {
+          "source_id": "1_1_law_002",
+          "quote": "水素結合、ファンデルワールス力"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_law_002",
+        "1_1_tip_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q029",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "classification",
+      "sub_category": "状態図上の領域の分類",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "状態図に関する記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "状態図には融解曲線、蒸気圧曲線、昇華圧曲線の三本の曲線があり、三本が交わる点が三重点である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "状態図には曲線が一本だけあり、三重点は存在しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "三本の曲線と三重点がある。"
+        },
+        {
+          "label": "3",
+          "text": "蒸気圧曲線は固体と液体の境界を示す曲線である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "固体と液体の境界は融解曲線。蒸気圧曲線は液体と気体の境界。"
+        },
+        {
+          "label": "4",
+          "text": "融解曲線は液体と気体の境界を示す曲線である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "融解曲線は固体と液体の境界。"
+        }
+      ],
+      "explanation": "状態図には三つの境界線があります。融解曲線は固体と液体の境界、蒸気圧曲線は液体と気体の境界、昇華圧曲線は固体と気体の境界を示します。これら三本の曲線が交わる点が三重点であり、ここでは固体・液体・気体の三態が同時に共存する特別な状態にあります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_012",
+          "quote": "3つの状態の境界を示す3本の曲線（融解曲線、蒸気圧曲線、昇華圧曲線）で区切られています"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_012",
+        "1_1_def_013"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q030",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "classification",
+      "sub_category": "水の三重点の値",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "水の三重点について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水の三重点は〇・〇一度、六百パスカルに存在し、温度の定義定点として利用される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水の三重点は百度、大気圧に存在する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "百度・大気圧は水の沸点。三重点は〇・〇一度・六百パスカル。"
+        },
+        {
+          "label": "3",
+          "text": "水の三重点は零度、一気圧に存在する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "融点に近いが正確には〇・〇一度、六百パスカル。"
+        },
+        {
+          "label": "4",
+          "text": "三重点の温度は不正確であり、基準には使えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非常に正確であるため温度基準の定義定点とされている。"
+        }
+      ],
+      "explanation": "水の三重点は〇・〇一度、六百パスカルという条件下にあります。この点では氷と水と水蒸気の三態が平衡状態で共存しています。三重点の温度は物質固有の値であり、非常に精密に再現できるため、国際的な温度の定義定点（基準点）として利用されています。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_013",
+          "quote": "水の場合、三重点は 0.01℃、600 Pa に存在し、この温度は非常に正確であるため温度基準の定義定点とされています"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_013"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q031",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "procedure",
+      "sub_category": "昇華による精製の手順",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ヨウ素の昇華による精製の手順として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "不純物を含むヨウ素をビーカーに入れ、冷水を入れた丸底フラスコを上に乗せ、穏やかに加熱して昇華させ、蒸気を冷却して結晶を回収する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ヨウ素を強く加熱して液体にし、ろ過して不純物を除く。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "強く加熱するとヨウ素が融解してしまう。穏やかに加熱して昇華させるのが正しい。"
+        },
+        {
+          "label": "3",
+          "text": "丸底フラスコに熱湯を入れて上に乗せる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "冷水を入れる。熱湯では蒸気を冷却できない。"
+        },
+        {
+          "label": "4",
+          "text": "昇華した蒸気をそのまま空気中に放出して回収する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "蒸気を冷却して固体として回収する必要がある。"
+        }
+      ],
+      "explanation": "昇華による精製では、不純物を含むヨウ素をビーカーに入れ、その上に冷水を入れた丸底フラスコを乗せます。穏やかに加熱すると、ヨウ素だけが昇華して気体となり、冷たいフラスコの底で再び固体の結晶として付着します。不純物は昇華しないためビーカーに残り、純粋なヨウ素が得られます。",
+      "evidence": [
+        {
+          "source_id": "1_1_proc_001",
+          "quote": "不純物を含むヨウ素をビーカーに入れ、冷水を入れた丸底フラスコを上に乗せる"
+        },
+        {
+          "source_id": "1_1_proc_001",
+          "quote": "ヨウ素の融点は低く（114℃）、強く加熱すると昇華せずに融解してしまうため"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_proc_001",
+        "1_1_def_011"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q032",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "procedure",
+      "sub_category": "加熱曲線の読み取り手順",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "純物質の加熱曲線の読み取りについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度が一定になる水平部分が二か所あり、低温側が融点（融解中）、高温側が沸点（沸騰中）を示す。高温側の水平部分の方が長い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "加熱曲線には温度が一定になる部分はなく、加熱するとずっと温度が上がり続ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "融解中と沸騰中に温度が一定になる水平部分がある。"
+        },
+        {
+          "label": "3",
+          "text": "低温側の水平部分が沸点、高温側が融点を示す。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "低温が融点、高温が沸点。"
+        },
+        {
+          "label": "4",
+          "text": "融解の水平部分の方が沸騰の水平部分より長い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "蒸発熱は融解熱より大きいため、沸騰の水平部分の方が長い。"
+        }
+      ],
+      "explanation": "純物質を加熱すると、温度が上昇する部分と一定に保たれる水平部分が交互に現れます。最初の水平部分が融点であり固体と液体が共存しています。二番目の水平部分が沸点で液体と気体が共存しています。蒸発熱は融解熱よりかなり大きいため、同じ加熱速度なら沸騰中の水平部分の方が長くなります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "温度は一定に保たれます。このときの温度を融点と呼びます"
+        },
+        {
+          "source_id": "1_1_def_010",
+          "quote": "一般に融解熱よりも蒸発熱の方がかなり大きくなります"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003",
+        "1_1_def_009",
+        "1_1_def_010"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q033",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "procedure",
+      "sub_category": "蒸気圧曲線の利用手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "蒸気圧曲線を利用した沸点の求め方として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "蒸気圧曲線上で縦軸の値が外圧と等しくなる点を探し、その点に対応する横軸の温度が沸点である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "蒸気圧曲線上の最高点に対応する温度が沸点である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "蒸気圧曲線は温度とともに単調に増加するため最高点は存在しない。"
+        },
+        {
+          "label": "3",
+          "text": "蒸気圧曲線の傾きが最大になる温度が沸点である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "傾きではなく蒸気圧の値が外圧と等しくなる温度が沸点。"
+        },
+        {
+          "label": "4",
+          "text": "蒸気圧曲線の横軸切片が沸点である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "横軸切片は蒸気圧がゼロの点であり沸点とは無関係。"
+        }
+      ],
+      "explanation": "蒸気圧曲線は物質の飽和蒸気圧が温度とともにどう変化するかを示したグラフです。沸騰は蒸気圧が外圧と等しくなったときに起こるため、蒸気圧曲線上で蒸気圧の値が外圧（通常は大気圧）に一致する点を探し、そのときの温度を読み取れば沸点がわかります。外圧が変われば沸点も変わります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_005",
+          "quote": "蒸気圧曲線を用いて、特定外圧下での沸点を読み取る問題"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_005",
+        "1_1_def_008"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q034",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "procedure",
+      "sub_category": "セ氏温度と絶対温度の変換",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "セ氏温度と絶対温度の変換方法として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "セ氏温度に二百七十三を加えると絶対温度になる。零度は二百七十三ケルビンである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "セ氏温度から二百七十三を引くと絶対温度になる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "引くのではなく加える。"
+        },
+        {
+          "label": "3",
+          "text": "セ氏温度に百を加えると絶対温度になる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "百ではなく二百七十三。"
+        },
+        {
+          "label": "4",
+          "text": "セ氏温度と絶対温度は同じ値である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二百七十三の差がある。"
+        }
+      ],
+      "explanation": "絶対温度とセ氏温度の間には、ティーケルビンはティー度たす二百七十三という関係があります。水が凍る零度は二百七十三ケルビン、水が沸騰する百度は三百七十三ケルビンです。絶対零度の零ケルビンはセ氏マイナス二百七十三度に相当し、これより低い温度は存在しないと考えられています。",
+      "evidence": [
+        {
+          "source_id": "1_1_eq_001",
+          "quote": "T = t + 273 の関係が成り立ちます"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_eq_001"
+      ],
+      "mnemonic": "セ氏にニーナーサン加えれば絶対温度"
+    },
+    {
+      "id": "ch2_1_q035",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "procedure",
+      "sub_category": "蒸気圧曲線での分子間力比較",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "蒸気圧曲線を使った分子間力の比較方法として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "同じ温度で蒸気圧が大きい物質ほど分子間力が弱いと判断できる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "同じ温度で蒸気圧が大きい物質ほど分子間力が強いと判断できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "逆。蒸気圧が大きい＝分子が飛び出しやすい＝分子間力が弱い。"
+        },
+        {
+          "label": "3",
+          "text": "蒸気圧曲線からは分子間力の強さを判断することはできない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "蒸気圧の大小から分子間力の相対的な強さが判断できる。"
+        },
+        {
+          "label": "4",
+          "text": "蒸気圧曲線の形はすべての物質で同一である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物質ごとに異なる曲線を描く。"
+        }
+      ],
+      "explanation": "蒸気圧曲線は分子間力の比較に利用できます。同じ温度で蒸気圧が大きい物質は分子が液面から飛び出しやすいということを意味するため、分子間力が弱いと判断できます。たとえば同温ではジエチルエーテルの方が水より蒸気圧が大きく、分子間力が弱い（水素結合がない）ことがわかります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_008",
+          "quote": "蒸気圧曲線のグラフから物質間の分子間力の強弱を判定する問題"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_008",
+        "1_1_tip_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q036",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "procedure",
+      "sub_category": "状態図の読み取り手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "水の状態図の読み取りについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "零度の氷に圧力をかけていくと、融解曲線を越えて液体の領域に入り、氷が融解して水になる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "零度の氷に圧力をかけると固体のまま温度が上がる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "圧力を上げても温度は上がらない。水の場合は融解が起こる。"
+        },
+        {
+          "label": "3",
+          "text": "零度の氷に圧力をかけると気体になる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "加圧で気体にはならない。液体になる。"
+        },
+        {
+          "label": "4",
+          "text": "圧力を上げても水の状態は変化しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "状態図上で圧力を変えれば境界線を越えて状態が変化する。"
+        }
+      ],
+      "explanation": "水の状態図の特徴として、融解曲線が負の傾きであることが挙げられます。このため零度付近の氷に圧力を加えると、融解曲線を横切って液体の領域に入り、氷が融けて水になります。これは水特有の性質であり、他の多くの物質では加圧すると逆に固体が安定になります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_012",
+          "quote": "0℃の氷を加圧していくと、融解曲線を越えて液体（水）になる"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_012"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q037",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "confusion",
+      "sub_category": "蒸発と沸騰の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "蒸発と沸騰に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "蒸発は液体表面で起こる気化現象である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "沸騰は液体内部からも気化が起こる現象である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "蒸発は沸点より低い温度でも起こる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "蒸発は沸点に達したときにのみ起こり、それ以下の温度では一切起こらない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "蒸発は沸点未満でも常に液面で起こっている。"
+        }
+      ],
+      "explanation": "蒸発と沸騰の混同は頻出です。蒸発は液体の表面で起こる穏やかな気化であり、沸点に達していなくても常に起こっています。洗濯物が室温で乾くのはこの例です。一方、沸騰は蒸気圧が外圧に等しくなった沸点で液体の内部からも激しく気化が起こる現象です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "蒸発は沸点未満の温度でも、液体の表面で常に起こっている"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004",
+        "1_1_def_005"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q038",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "confusion",
+      "sub_category": "飽和蒸気圧の依存性の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "飽和蒸気圧に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "飽和蒸気圧は物質の種類と温度だけで決まる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "温度が高くなると飽和蒸気圧は大きくなる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "気液平衡が成立していることが前提である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "容器の体積を小さくすると飽和蒸気圧は大きくなる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "飽和蒸気圧は容器の体積に依存しない。"
+        }
+      ],
+      "explanation": "飽和蒸気圧は物質の種類と温度だけで決まり、容器の体積や液体の量には影響されません。容器の体積を小さくしても気液平衡が成立していれば蒸気圧は変わりません。体積を半分にすると一時的に蒸気密度が上がりますが、凝縮が進んで再び同じ蒸気圧に戻ります。この点はよく出題されるひっかけです。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_008",
+          "quote": "「容器の体積を小さくすると蒸気圧が大きくなる」は誤り"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_008"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q039",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "confusion",
+      "sub_category": "気液平衡の動的平衡の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "気液平衡に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "気液平衡では蒸発の速度と凝縮の速度が等しい。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "気液平衡では蒸気の圧力が一定に保たれる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "気液平衡は密閉容器内で成立する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "気液平衡に達すると、蒸発も凝縮もすべて停止する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "蒸発と凝縮は継続しており、速度が等しいだけ（動的平衡）。"
+        }
+      ],
+      "explanation": "気液平衡は「動的平衡」であることが重要です。見かけ上は変化がないように見えますが、分子レベルでは蒸発と凝縮が同じ速度で絶えず起こり続けています。完全に停止しているのではなく、二つの変化が釣り合っているだけです。この理解が不十分だと平衡に関する問題を誤ります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_007",
+          "quote": "平衡状態では蒸発も凝縮も停止しているわけではない（動的平衡）"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_007"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q040",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "confusion",
+      "sub_category": "融解熱と蒸発熱の大小の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "融解熱と蒸発熱の大小に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水の融解熱は六・〇キロジュール毎モルである。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "水の蒸発熱は百度で四十・七キロジュール毎モルである。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "蒸発熱が融解熱より大きいのは、液体から気体への変化の方がより多くの分子間力を切断する必要があるためである。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "融解熱は常に蒸発熱より大きい値である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "逆。蒸発熱が融解熱よりかなり大きい。"
+        }
+      ],
+      "explanation": "融解熱と蒸発熱の大小関係はよく出題されます。融解では規則正しい配列を崩して粒子が動けるようにするだけですが、蒸発では分子間力をほぼ完全に切断して粒子を自由にする必要があります。そのため蒸発熱は融解熱よりかなり大きくなります。水の場合、融解熱六・〇に対し蒸発熱は四十・七と約七倍です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_010",
+          "quote": "一般に融解熱よりも蒸発熱の方がかなり大きくなります"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_009",
+        "1_1_def_010"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q041",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "confusion",
+      "sub_category": "速度分布の均一性の誤り",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "気体分子の速度分布に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "気体分子の速度にはばらつきがあり、分布をもつ。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "温度が上がると分布曲線の山は低くなだらかになる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "分布曲線で囲まれた面積は全分子数に対応し常に一定である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "温度が等しければ、すべての気体分子は全く同じ速度で運動している。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "速度にはばらつきがあり、極端に遅い分子や速い分子が存在する。"
+        }
+      ],
+      "explanation": "気体分子は同じ温度でもすべてが同じ速度ではなく、速い分子もあれば遅い分子もいます。この分布はマクスウェル・ボルツマン分布に従います。温度が上がると全体的に速度が上がり高速分子の割合が増えますが、それでも速度にはばらつきがあります。分布曲線の面積は全分子数に対応するため一定です。",
+      "evidence": [
+        {
+          "source_id": "1_1_law_001",
+          "quote": "温度が等しければすべての分子の速度が等しい、というのは誤り"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q042",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "confusion",
+      "sub_category": "水の密度と氷の密度の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "水と氷の密度に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "氷は水に浮かぶ。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "氷の密度は水より小さい。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "水は四度で密度が最大になる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "すべての物質で固体は液体より密度が小さい。",
+          "is_correct": true,
+          "trap_type": "condition_change",
+          "trap_detail": "水（氷）は例外。ほとんどの物質では固体の方が密度が大きい。"
+        }
+      ],
+      "explanation": "ほとんどの物質は固体の方が液体より密度が大きく、固体は液体に沈みます。しかし水は例外で、氷（固体）は水素結合によるすき間の多い結晶構造をとるため密度が水（液体）より小さくなり、水に浮きます。この例外的性質を「すべての物質に共通」と誤認させるのが典型的なひっかけです。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_002",
+          "quote": "氷は水分子どうしが水素結合により引き合ってすき間の多い結晶構造をしているため、液体の水より密度が小さく水に浮く"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_002",
+        "1_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q043",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "confusion",
+      "sub_category": "沸点と蒸気圧の逆関係の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "沸点と蒸気圧の関係に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子間力が弱い物質ほど蒸気圧が大きい。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "蒸気圧が大きい物質ほど沸点が低い。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ジエチルエーテルは水より蒸気圧が大きく沸点が低い。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "蒸気圧が大きい物質ほど沸点が高い。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "逆。蒸気圧大＝沸点低。蒸気圧が大きいと低温で外圧に達するため。"
+        }
+      ],
+      "explanation": "蒸気圧と沸点は逆の関係にあります。蒸気圧が大きい物質は低い温度で蒸気圧が外圧に達するため沸点が低くなります。つまり「蒸気圧が大きいは揮発しやすいは沸点が低い」です。この逆の関係を正しく理解しないと蒸気圧曲線の問題で誤ります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_008",
+          "quote": "分子間力が弱いジエチルエーテルの方が水よりも蒸気圧が大きい"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_008",
+        "1_1_tip_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q044",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "confusion",
+      "sub_category": "昇華精製での加熱強度の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "昇華による精製に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "昇華しやすい物質を含む混合物を加熱して精製する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "冷却面に付着した結晶を回収すれば純度の高い物質が得られる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ヨウ素は昇華しやすい代表的な物質である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ヨウ素を強火で急激に加熱すべきである。",
+          "is_correct": true,
+          "trap_type": "reason_swap",
+          "trap_detail": "強く加熱するとヨウ素が昇華せず融解してしまう。穏やかに加熱すべき。"
+        }
+      ],
+      "explanation": "ヨウ素の昇華精製では穏やかに加熱することが重要です。ヨウ素の融点は百十四度と比較的低いため、強火で急激に加熱するとヨウ素が融解して液体になってしまい、昇華による精製が行えなくなります。穏やかに加熱して固体から直接気体にし、冷却面で凝華させることが正しい手順です。",
+      "evidence": [
+        {
+          "source_id": "1_1_proc_001",
+          "quote": "ヨウ素の融点は低く（114℃）、強く加熱すると昇華せずに融解してしまうため"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q045",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "mnemonic",
+      "sub_category": "絶対温度の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "絶対温度を覚える語呂合わせとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "『セルシウスに二七三で絶対絶命』で覚える。セ氏温度に二百七十三を加えると絶対温度になることを意味する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "『セルシウスに百で絶対絶命』で覚える。セ氏温度に百を加えると絶対温度になることを意味する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "百ではなく二百七十三。"
+        },
+        {
+          "label": "3",
+          "text": "この語呂合わせは蒸気圧の計算に関するものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "絶対温度の変換に関する語呂合わせ。"
+        },
+        {
+          "label": "4",
+          "text": "セ氏温度から二百七十三を引くと絶対温度になることを意味する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "引くのではなく加える。"
+        }
+      ],
+      "explanation": "この語呂合わせは、セ氏温度に二百七十三を加えると絶対温度（ケルビン）になるという変換式を覚えるためのものです。「絶対絶命」と「絶対温度」の語感を使い、「二七三」の数字を記憶に結びつけています。零ケルビンはマイナス二百七十三度、つまり分子の熱運動が理論上停止する温度です。",
+      "evidence": [
+        {
+          "source_id": "1_1_eq_001",
+          "quote": "セルシウス 273 で絶対絶命（絶体絶命）！"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_eq_001"
+      ],
+      "mnemonic": "セルシウスに二七三で絶対絶命"
+    },
+    {
+      "id": "ch2_1_q046",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "mnemonic",
+      "sub_category": "分子間力と沸点の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "分子間力と沸点の関係を覚える語呂合わせとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "『重い分子は引くのも強い』で覚える。分子量が大きいほど分子間力が大きくなり沸点が高くなることを意味する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "『重い分子は軽く飛ぶ』で覚える。分子量が大きいほど沸点が低いことを意味する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量が大きいほど沸点は高い。"
+        },
+        {
+          "label": "3",
+          "text": "この語呂合わせは絶対温度の変換に関するものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "分子間力と沸点の関係。"
+        },
+        {
+          "label": "4",
+          "text": "この法則に例外はなく、すべての物質に当てはまる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "水素結合をもつ物質は例外。"
+        }
+      ],
+      "explanation": "『重い分子は引くのも強い』は、構造がよく似た分子どうしでは分子量が大きいほど分子間力が強くなり、その結果沸点や融点が高くなるという傾向を覚えるための語呂合わせです。ただし水やフッ化水素のように水素結合がはたらく分子は、分子量が小さくても沸点が例外的に高くなることに注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "1_1_tip_001",
+          "quote": "重い分子は引くのも強い"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_tip_001"
+      ],
+      "mnemonic": "重い分子は引くのも強い"
+    },
+    {
+      "id": "ch2_1_q047",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "mnemonic",
+      "sub_category": "結合力の強さの順列の語呂合わせ",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "結合力の強さの覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "共有結合が最も強く、次にイオン結合・金属結合、そして水素結合、最後にファンデルワールス力の順である。化学結合は分子間力より桁違いに強い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ファンデルワールス力が最も強い結合である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "最も弱い。共有結合が最強。"
+        },
+        {
+          "label": "3",
+          "text": "水素結合は共有結合より強い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水素結合は分子間力であり共有結合より弱い。"
+        },
+        {
+          "label": "4",
+          "text": "分子間力と化学結合は同じ程度の強さである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "化学結合は分子間力より桁違いに強い。"
+        }
+      ],
+      "explanation": "結合力の強さの順序は化学の基本です。共有結合が最も強く、イオン結合と金属結合が続きます。これら化学結合は分子間力に比べて桁違いに強力です。分子間力の中では水素結合がファンデルワールス力より強いです。この順序が理解できると、各結晶の融点の差を説明できます。",
+      "evidence": [
+        {
+          "source_id": "1_1_law_002",
+          "quote": "共有結合 > イオン結合・金属結合 ≫ 水素結合 > ファンデルワールス力"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_law_002"
+      ],
+      "mnemonic": "共有 ＞ イオン・金属 ≫ 水素結合 ＞ ファンデルワールス力"
+    },
+    {
+      "id": "ch2_1_q048",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "comprehensive",
+      "sub_category": "状態変化とエネルギーの総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "物質の状態変化とエネルギーに関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "状態変化中は加えた熱が分子間力の切断や再形成に使われるため温度は一定である。融解熱より蒸発熱の方が大きく、融解中より沸騰中の方が長い時間加熱が必要である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "状態変化中も温度は上がり続ける。融解熱と蒸発熱は常に同じ値である。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "状態変化中は温度一定。融解熱と蒸発熱は異なる値。"
+        },
+        {
+          "label": "3",
+          "text": "蒸発熱が融解熱より小さいため、融解中の方が長時間の加熱が必要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "蒸発熱の方が大きいため沸騰中の方が長い。"
+        },
+        {
+          "label": "4",
+          "text": "凝固は吸熱変化であり、蒸発は発熱変化である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。凝固は発熱、蒸発は吸熱。"
+        }
+      ],
+      "explanation": "純物質の加熱曲線では、融解中と沸騰中に温度が一定になる水平部分が現れます。これは加えた熱がすべて分子間力の切断（固体→液体、液体→気体）に使われ、温度上昇には使われないためです。蒸発熱は融解熱よりかなり大きいため、水平部分は沸騰中の方が長くなります。また凝固・凝縮は発熱変化、融解・蒸発は吸熱変化です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "温度は一定に保たれます"
+        },
+        {
+          "source_id": "1_1_def_010",
+          "quote": "一般に融解熱よりも蒸発熱の方がかなり大きくなります"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003",
+        "1_1_def_009",
+        "1_1_def_010"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q049",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "comprehensive",
+      "sub_category": "蒸気圧と沸騰の総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "蒸気圧と沸騰に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "飽和蒸気圧は物質の種類と温度で決まり、容器の体積や液体の量には依存しない。蒸気圧が外圧に等しくなると沸騰が起こる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "外圧が低い場所では沸点が低くなる。富士山頂では水が約八十八度で沸騰する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "分子間力が弱い物質ほど蒸気圧が大きく沸点が低い。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "液体の量が多いほど蒸気圧が大きくなり、沸点が高くなる。蒸気圧は容器の体積が小さいほど大きくなる。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "蒸気圧は液体の量にも容器の体積にも依存しない。二か所誤り。"
+        }
+      ],
+      "explanation": "飽和蒸気圧は物質の種類と温度だけで決まるという点が最も重要です。液体の量を増やしても容器を小さくしても蒸気圧は変わりません。蒸気圧と外圧が等しくなると沸騰が起こり、この温度が沸点です。外圧が低ければ低い温度で沸騰し、分子間力が弱い物質ほど蒸気圧が大きいため沸点は低くなります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_008",
+          "quote": "蒸気圧は物質の種類と「温度」だけで決まり、容器の体積や液体の量には依存しません"
+        },
+        {
+          "source_id": "1_1_def_008",
+          "quote": "「液体の量が多いほど蒸気圧が大きくなる」は誤り"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_005",
+        "1_1_def_008"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_1_q050",
+      "chapter": "2-1",
+      "chapter_title": "物質の三態と状態変化",
+      "category": "comprehensive",
+      "sub_category": "第2章第1節の全体総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "物質の三態と状態変化に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "物質の三態は粒子の熱運動の激しさで決まり、固体→液体（融解）→気体（蒸発・沸騰）と変化する。飽和蒸気圧は温度と物質で決まり容器に依存しない。水は例外的に固体（氷）が液体より密度が小さい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "すべての物質で固体は液体より密度が小さく浮く。蒸気圧は容器の体積で決まる。融解熱は蒸発熱より大きい。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて誤り。密度は水が例外、蒸気圧は温度で決まる、蒸発熱が大きい。"
+        },
+        {
+          "label": "3",
+          "text": "蒸発は沸点に達しないと起こらない。気液平衡では蒸発も凝縮も停止している。絶対温度はセ氏に百を加えた値である。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "蒸発は常に起こる、動的平衡、二百七十三を加える。"
+        },
+        {
+          "label": "4",
+          "text": "三重点では固体と気体の二態のみが共存する。水の融解曲線は正の傾きである。昇華はすべての固体で起こる。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三態が共存、負の傾き、特定の物質のみ。"
+        }
+      ],
+      "explanation": "物質の三態と状態変化の全体をまとめます。三態は粒子の熱運動の激しさによって決まり、温度を上げると固体→液体→気体と変化します。飽和蒸気圧は物質の種類と温度だけで決まり、容器の大きさや液体の量には依存しません。水は例外的に氷の密度が水より小さく、融解曲線が負の傾きをもつ特殊な物質です。蒸発は沸点以下でも表面で常に起こり、気液平衡は動的平衡です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_002",
+          "quote": "物質を構成する粒子が、その温度に応じて行う不規則な運動"
+        },
+        {
+          "source_id": "1_1_def_008",
+          "quote": "蒸気圧は物質の種類と「温度」だけで決まり"
+        },
+        {
+          "source_id": "1_1_sub_002",
+          "quote": "液体の水より密度が小さく水に浮く"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_002",
+        "1_1_def_003",
+        "1_1_def_004",
+        "1_1_def_005",
+        "1_1_def_008",
+        "1_1_sub_002"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

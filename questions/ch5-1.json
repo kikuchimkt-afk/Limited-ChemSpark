@@ -1,0 +1,2456 @@
+{
+  "metadata": {
+    "chapter": "5-1",
+    "chapter_title": "有機化合物の分類と分析",
+    "source_file": "json_data/5-1有機化合物の分類と分析.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    }
+  },
+  "questions": [
+    {
+      "id": "ch5_1_q001",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "definition",
+      "sub_category": "有機化合物の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "有機化合物について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "炭素原子を骨格とした化合物を有機化合物という。構成元素は炭素に加え水素・酸素・窒素などの少数の元素で種類が非常に多い。共有結合が大部分である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "有機化合物は金属元素を主成分とする。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非金属元素（炭素など）が主成分。"
+        },
+        {
+          "label": "3",
+          "text": "有機化合物の種類は無機化合物より少ない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "はるかに多い。"
+        },
+        {
+          "label": "4",
+          "text": "有機化合物はイオン結合が大部分である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "共有結合が大部分。"
+        }
+      ],
+      "explanation": "有機化合物は炭素の四本の手（四つの共有結合）を利用して無限に近い構造を作れるため種類が膨大です。現在知られている化合物の大半は有機化合物です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "炭素原子を骨格とした化合物を有機化合物"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q002",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "有機化合物の一般的性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "有機化合物の一般的な性質として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "可燃性で融点が低い。水に溶けにくく有機溶媒に溶けやすい。非電解質が多い。反応が遅いことが多い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "有機化合物は不燃性である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "可燃性。"
+        },
+        {
+          "label": "3",
+          "text": "有機化合物は水に溶けやすいものが多い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶けにくいものが多い。"
+        },
+        {
+          "label": "4",
+          "text": "有機化合物のほとんどは電解質である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非電解質が多い。"
+        }
+      ],
+      "explanation": "有機化合物と無機化合物の性質の対比は頻出です。有機→低融点・可燃・水に溶けにくい・非電解質・反応が遅い。無機→高融点・不燃が多い・水に溶けやすいものが多い・電解質が多い・反応が速い。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "可燃性で融点が低く水に溶けにくい非電解質が多い"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q003",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "definition",
+      "sub_category": "ウェーラーの合成",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "有機化合物の歴史的な発見として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ウェーラーが無機化合物であるシアン酸アンモニウムから有機化合物である尿素を人工的に合成し、生命力説を覆した。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "有機化合物は現在でも生物からのみ得られる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "人工合成が可能。"
+        },
+        {
+          "label": "3",
+          "text": "ウェーラーは無機化合物を合成した。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "有機化合物（尿素）を合成。"
+        },
+        {
+          "label": "4",
+          "text": "尿素は無機化合物である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "有機化合物。"
+        }
+      ],
+      "explanation": "千八百二十八年にウェーラーがシアン酸アンモニウム（無機）の水溶液を濃縮して尿素（有機）を得たことで、有機化合物は生物のみが作れるという「生命力説」が否定されました。化学史上最も重要な実験の一つです。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_001",
+          "quote": "ウェーラーによって初めて人工的に合成された有機化合物"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q004",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "definition",
+      "sub_category": "飽和と不飽和",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "飽和化合物と不飽和化合物について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "炭素間の結合がすべて単結合のものが飽和化合物。二重結合や三重結合を含むものが不飽和化合物。飽和化合物の代表例はエタン、不飽和化合物の代表例はエチレンやアセチレン。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "二重結合を含むものが飽和化合物である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "不飽和化合物。"
+        },
+        {
+          "label": "3",
+          "text": "飽和と不飽和は結合の種類とは関係ない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "結合の種類で区別する。"
+        },
+        {
+          "label": "4",
+          "text": "アセチレンは飽和化合物である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "三重結合を持つ不飽和化合物。"
+        }
+      ],
+      "explanation": "「飽和」は「満席」のイメージです。炭素の四本の手がすべて別の原子と単結合で結ばれて席が空いていない状態。「不飽和」は二重結合や三重結合があり、まだ他の原子を付加できる余地がある状態です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_002",
+          "quote": "単結合のみが飽和、二重結合や三重結合を含むものが不飽和"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q005",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "definition",
+      "sub_category": "炭化水素の分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "炭化水素の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルカンは単結合のみで一般式シーエヌエイチ二エヌプラス二。アルケンは二重結合一つで一般式シーエヌエイチ二エヌ。アルキンは三重結合一つで一般式シーエヌエイチ二エヌマイナス二。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルカンは二重結合を持つ。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "単結合のみ。"
+        },
+        {
+          "label": "3",
+          "text": "アルケンは三重結合を持つ。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "二重結合一つ。三重結合はアルキン。"
+        },
+        {
+          "label": "4",
+          "text": "アルキンは単結合のみを持つ。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "三重結合一つ。"
+        }
+      ],
+      "explanation": "炭化水素の分類は語呂合わせ「歩かん（アルカンは単結合）、歩けん（アルケンは二重結合）、歩きは禁止（アルキンは三重結合）」で覚えます。一般式の水素数は単結合が最多（二エヌプラス二）、結合次数が上がるほど水素が減ります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "アルカン:単結合、アルケン:二重結合、アルキン:三重結合"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": "歩かん（単結合）歩けん（二重結合）歩きは禁止（三重結合）"
+    },
+    {
+      "id": "ch5_1_q006",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "definition",
+      "sub_category": "官能基",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "官能基について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "物質の性質を決定している原子または原子団を官能基という。同じ官能基を持つ化合物は化学的性質がよく似ている。ヒドロキシ基はアルコール類、カルボキシ基はカルボン酸類を構成する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "官能基は物質の性質に影響しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "性質を決定する。"
+        },
+        {
+          "label": "3",
+          "text": "ヒドロキシ基はカルボン酸を構成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アルコール。カルボン酸はカルボキシ基。"
+        },
+        {
+          "label": "4",
+          "text": "カルボキシ基はアルコール類を構成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "カルボン酸類。"
+        }
+      ],
+      "explanation": "官能基は有機化学の最重要概念です。ヒドロキシ基（マイナスオーエイチ）→アルコール、カルボキシ基（マイナスシーオーオーエイチ）→カルボン酸、アミノ基（マイナスエヌエイチ二）→アミン、アルデヒド基（マイナスシーエイチオー）→アルデヒドなど。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "物質の性質を決定している原子または原子団を官能基"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q007",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "procedure",
+      "sub_category": "元素分析の手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "リービッヒの元素分析の手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "試料を酸化銅（二価）とともに酸素気流中で完全燃焼させる。発生した気体をまず塩化カルシウム管に通して水を吸収し、次にソーダ石灰管に通して二酸化炭素を吸収する。各管の質量増加から炭素と水素の量を求める。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ソーダ石灰管を先に、塩化カルシウム管を後につなぐ。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "逆。塩化カルシウム管が先。"
+        },
+        {
+          "label": "3",
+          "text": "塩化カルシウム管で二酸化炭素を吸収する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水を吸収する。二酸化炭素はソーダ石灰管。"
+        },
+        {
+          "label": "4",
+          "text": "窒素気流中で燃焼させる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸素気流中。"
+        }
+      ],
+      "explanation": "元素分析で最も重要なのは吸収管の順序です。ソーダ石灰は水も二酸化炭素も吸収しますが、塩化カルシウムは水のみ吸収します。だから塩化カルシウム管を先にして水だけを捕捉し、残りの二酸化炭素をソーダ石灰管で捕捉します。順序を逆にするとソーダ石灰が水も吸収してしまい水と二酸化炭素を分離できません。",
+      "evidence": [
+        {
+          "source_id": "1_2_proc_001",
+          "quote": "塩化カルシウム管でH2Oを、ソーダ石灰管でCO2を吸収。必ず塩化カルシウム管を先に"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q008",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "procedure",
+      "sub_category": "組成式の決定",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "元素分析から組成式を決定する手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "二酸化炭素の質量から炭素の質量を、水の質量から水素の質量を計算する。試料全体の質量から炭素と水素を引いて酸素の質量を求める。各質量を原子量で割って最も簡単な整数比を出し組成式とする。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水の質量から炭素の質量を求める。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水からは水素。炭素は二酸化炭素から。"
+        },
+        {
+          "label": "3",
+          "text": "酸素の質量は二酸化炭素から直接求める。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "引き算で求める。"
+        },
+        {
+          "label": "4",
+          "text": "質量の比がそのまま組成式の係数になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "原子量で割ってモル比にする必要がある。"
+        }
+      ],
+      "explanation": "組成式の決定で最も間違えやすいのは酸素の求め方です。酸素は燃焼で使った外部の酸素と区別できないため、直接測定できません。「試料全体 − 炭素 − 水素 は 酸素」の引き算で求めます。",
+      "evidence": [
+        {
+          "source_id": "1_2_eq_001",
+          "quote": "CO2からC、H2OからH、残りがO。各質量を原子量で割ってモル比"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q009",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "procedure",
+      "sub_category": "分子式の決定",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "組成式から分子式を決定する方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "組成式の式量を計算し、別途測定した分子量を式量で割って倍率エヌを求める。組成式の各原子数をエヌ倍して分子式とする。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "組成式がそのまま分子式である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "組成式は比率のみで分子量の情報がない。"
+        },
+        {
+          "label": "3",
+          "text": "分子量がなくても分子式は決定できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量が必要。"
+        },
+        {
+          "label": "4",
+          "text": "組成式の式量を分子量で割って倍率を求める。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。分子量÷式量。"
+        }
+      ],
+      "explanation": "組成式と分子式の違いを理解しましょう。例えば酢酸の組成式はシーエイチツーオーですが分子式はシーツーエイチフォーオーツーです。組成式の式量三十に対し分子量六十なので倍率二。組成式を二倍して分子式を得ます。",
+      "evidence": [
+        {
+          "source_id": "1_2_eq_002",
+          "quote": "分子量÷式量＝倍率n。組成式をn倍して分子式"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_eq_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q010",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "有機と無機の境界",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "有機化合物と無機化合物の分類に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "一酸化炭素は炭素を含むが無機化合物に分類される。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "二酸化炭素は炭素を含むが無機化合物に分類される。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "炭酸カルシウムは炭素を含むが無機化合物に分類される。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "炭素を含む化合物はすべて有機化合物である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "一酸化炭素・二酸化炭素・炭酸塩・シアン化物は例外で無機。"
+        }
+      ],
+      "explanation": "有機化合物の定義の例外は超重要です。炭素の酸化物（一酸化炭素・二酸化炭素）、炭酸塩（炭酸カルシウムなど）、炭酸水素塩（炭酸水素ナトリウム）、シアン化物（シアン化カリウム）は炭素を含みますが無機化合物に分類されます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "例外: CO, CO2, 炭酸塩, シアン化物"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q011",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "吸収管の順序",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "元素分析の吸収管に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩化カルシウム管は水を吸収する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ソーダ石灰管は二酸化炭素を吸収する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ソーダ石灰は水と二酸化炭素の両方を吸収する性質がある。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ソーダ石灰管を塩化カルシウム管より先につなげばよい。",
+          "is_correct": true,
+          "trap_type": "step_order",
+          "trap_detail": "逆。塩化カルシウム管を先にする。ソーダ石灰が先だと水も吸収してしまう。"
+        }
+      ],
+      "explanation": "この順序の問題は入試で最頻出です。ソーダ石灰は水も二酸化炭素も吸収してしまうため先に置くと水と二酸化炭素を分離できません。塩化カルシウムは水のみ吸収するので先に置いて水だけ捕捉し、残りの二酸化炭素をソーダ石灰で捕捉します。",
+      "evidence": [
+        {
+          "source_id": "1_2_proc_001",
+          "quote": "ソーダ石灰はH2Oも吸収するため、必ず塩化カルシウム管を先に"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q012",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "アルカンとアルケンの混同",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "炭化水素の分類に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "メタンはアルカンの代表例である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "エチレンはアルケンの代表例である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アセチレンはアルキンの代表例である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "エチレンはアルカンでありアセチレンはアルケンである。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。エチレンがアルケン（二重結合）、アセチレンがアルキン（三重結合）。"
+        }
+      ],
+      "explanation": "エチレン（二重結合）はアルケン、アセチレン（三重結合）はアルキン。名前の最後に「エン」がつくのが不飽和の目印です（アルケンの「エン」は二重結合、アルキンの「イン」は三重結合）。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "アルケン:エチレン、アルキン:アセチレン"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q013",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "官能基と化合物群の対応",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "官能基と化合物群の対応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒドロキシ基を持つ化合物はアルコール類に分類される。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "カルボキシ基を持つ化合物はカルボン酸類に分類される。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "同じ官能基を持つ化合物は化学的性質がよく似ている。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ヒドロキシ基を持つ化合物はカルボン酸類、カルボキシ基を持つ化合物はアルコール類に分類される。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。ヒドロキシ基→アルコール、カルボキシ基→カルボン酸。"
+        }
+      ],
+      "explanation": "ヒドロキシ基とカルボキシ基の混同は定番です。ヒドロキシ基（マイナスオーエイチ）はアルコールの官能基で中性。カルボキシ基（マイナスシーオーオーエイチ）はカルボン酸の官能基で酸性を示します。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "ヒドロキシ基→アルコール、カルボキシ基→カルボン酸"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q014",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "酸化銅の役割",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "元素分析で酸化銅（二価）を併用する理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "試料を完全燃焼させるための酸化剤として使用する。不完全燃焼を防いで炭素と水素をすべて二酸化炭素と水に変換する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水を吸収するために使う。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "水の吸収は塩化カルシウム。"
+        },
+        {
+          "label": "3",
+          "text": "二酸化炭素を吸収するために使う。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "二酸化炭素の吸収はソーダ石灰。"
+        },
+        {
+          "label": "4",
+          "text": "試料の温度を下げるための冷却剤として使う。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "加熱時の酸化剤。"
+        }
+      ],
+      "explanation": "有機化合物の中には燃えにくいものもあるため酸素だけでは完全燃焼しないことがあります。酸化銅を一緒に入れることで酸素の供給源が増え確実に完全燃焼させることができます。",
+      "evidence": [
+        {
+          "source_id": "1_2_sub_001",
+          "quote": "試料を完全燃焼させるための酸化剤として使用"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q015",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "塩化カルシウムとソーダ石灰の吸収物質",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "元素分析の試薬に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩化カルシウムは水を吸収する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ソーダ石灰は二酸化炭素と水の両方を吸収する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "元素分析では塩化カルシウム管を先につなぐ。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "塩化カルシウムは二酸化炭素を吸収し、ソーダ石灰は水のみを吸収する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。塩化カルシウムが水、ソーダ石灰が二酸化炭素（と水）。"
+        }
+      ],
+      "explanation": "塩化カルシウムとソーダ石灰の役割を入れ替えるのは超定番のひっかけです。塩化カルシウムは水のみ吸収。ソーダ石灰は水と二酸化炭素の両方吸収（だから先に置けない）。",
+      "evidence": [
+        {
+          "source_id": "1_2_sub_002",
+          "quote": "ソーダ石灰は水分や二酸化炭素の吸収に使う"
+        },
+        {
+          "source_id": "1_2_sub_003",
+          "quote": "塩化カルシウムはH2Oを吸収する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_sub_002",
+        "1_2_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q016",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "ベンゼンの特徴",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ベンゼンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "六個の炭素が環状に結合した芳香族炭化水素の基本骨格。特別な環の構造により安定で付加反応より置換反応を起こしやすい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ベンゼンは鎖状の化合物である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "環状。"
+        },
+        {
+          "label": "3",
+          "text": "ベンゼンは脂肪族炭化水素に分類される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "芳香族。"
+        },
+        {
+          "label": "4",
+          "text": "ベンゼンは不安定で付加反応を起こしやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "安定で置換反応を起こしやすい。"
+        }
+      ],
+      "explanation": "ベンゼンの六つの炭素原子は正六角形に配置され、特殊な結合（共役二重結合）により非常に安定です。この安定性のため、普通のアルケンのように付加反応を起こしにくく、代わりに置換反応を起こします。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_004",
+          "quote": "芳香族炭化水素の基本骨格。6個の炭素原子が特別な環の構造"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q017",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "脂肪族と芳香族の区別",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "有機化合物の分類に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "脂肪族化合物は鎖状や環状の化合物でベンゼン環を持たない。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "芳香族化合物はベンゼン環を持つ化合物である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "メタンは脂肪族炭化水素に分類される。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "メタンは芳香族炭化水素でベンゼンは脂肪族炭化水素である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。メタンが脂肪族、ベンゼンが芳香族。"
+        }
+      ],
+      "explanation": "有機化合物はベンゼン環の有無で脂肪族と芳香族に大別されます。メタン・エタン・エチレンなどは脂肪族。ベンゼン・トルエン・フェノールなどは芳香族です。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_003",
+          "quote": "アルカンの代表例"
+        },
+        {
+          "source_id": "1_1_sub_004",
+          "quote": "芳香族炭化水素の基本骨格"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_003",
+        "1_1_sub_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q018",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "酸素の質量の求め方",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "元素分析における酸素の質量の求め方に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸素の質量は試料の質量から炭素と水素の質量を引いて求める。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "酸素は直接測定できない。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "燃焼に使った外部の酸素と試料中の酸素を区別するために引き算を用いる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "酸素の質量は二酸化炭素の質量から直接計算できる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "二酸化炭素からは炭素の質量が分かる。酸素は引き算。"
+        }
+      ],
+      "explanation": "燃焼で生じた二酸化炭素中の酸素は外部から供給された酸素も含むため、試料中の酸素を直接測定する方法はありません。「全体−炭素−水素は酸素」の引き算が唯一の方法です。",
+      "evidence": [
+        {
+          "source_id": "1_2_eq_001",
+          "quote": "Oの質量＝試料全体−C−H"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q019",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "mnemonic",
+      "sub_category": "炭化水素の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アルカン・アルケン・アルキンの語呂合わせとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "「歩かん（アルカンは単結合のみ）、歩けん（アルケンは二重結合）、歩きは禁止（アルキンは三重結合）」と覚える。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "この語呂合わせではアルカンが三重結合を表す。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "単結合。"
+        },
+        {
+          "label": "3",
+          "text": "この語呂合わせは官能基に関するものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "炭化水素の結合に関するもの。"
+        },
+        {
+          "label": "4",
+          "text": "アルケンは三重結合を表す。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "二重結合。三重結合はアルキン。"
+        }
+      ],
+      "explanation": "この語呂合わせは「歩かん→歩けない→もう歩くのは禁止」と結合が強くなる（二重→三重）につれて「歩けなくなる」イメージで覚えるものです。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "いざ歩かん、歩けん、歩きは禁止"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": "歩かん歩けん歩きは禁止"
+    },
+    {
+      "id": "ch5_1_q020",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "comprehensive",
+      "sub_category": "有機化合物の総合",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "有機化合物の分類と分析に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "有機化合物は炭素骨格で種類が多い。アルカンは単結合、アルケンは二重結合、アルキンは三重結合。官能基が性質を決定。元素分析では塩化カルシウム管（水吸収）を先にソーダ石灰管（二酸化炭素吸収）を後に接続。組成式に分子量を使って分子式を決定。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "有機化合物は無機化合物より種類が少ない。アルカンは二重結合。ソーダ石灰管を先に接続。組成式がそのまま分子式。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "炭素を含む化合物はすべて有機化合物とされ例外はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "例外がある（一酸化炭素・二酸化炭素など）。"
+        },
+        {
+          "label": "4",
+          "text": "官能基は物質の性質に影響しない装飾的なものである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "性質を決定する重要な部分。"
+        }
+      ],
+      "explanation": "有機化合物の分類と分析の章全体を網羅した総合問題です。定義（炭素骨格・例外あり）、炭化水素の分類（アルカン・アルケン・アルキン）、官能基、元素分析（吸収管の順序・組成式・分子式）のすべてを正確に理解しましょう。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "炭素原子を骨格"
+        },
+        {
+          "source_id": "1_2_proc_001",
+          "quote": "塩化カルシウム管を先に"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001",
+        "1_1_def_003",
+        "1_1_def_004",
+        "1_2_proc_001",
+        "1_2_eq_001",
+        "1_2_eq_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q021",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "有機と無機の性質比較",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "有機化合物と無機化合物の性質比較に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "有機化合物は一般に融点が低い。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "無機化合物は水に溶けやすいものが多い。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "有機化合物は可燃性のものが多い。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "有機化合物は融点が高く不燃性で電解質が多い。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて逆。低融点・可燃・非電解質。"
+        }
+      ],
+      "explanation": "有機化合物と無機化合物の性質を入れ替えたひっかけです。有機は低融点・可燃・水に溶けにくい・非電解質。無機は高融点・不燃（多い）・水に溶けやすい（多い）・電解質（多い）。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "可燃性で融点が低く水に溶けにくい非電解質が多い"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q022",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "構造異性体",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "構造異性体について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子式が同じで構造式が異なる化合物どうしを構造異性体という。炭素数が増えると構造異性体の数が急激に増加する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分子式が異なるのに同じ構造を持つ化合物を構造異性体という。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子式が同じで構造が異なる。"
+        },
+        {
+          "label": "3",
+          "text": "構造異性体は常に同じ性質を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "性質が異なる。"
+        },
+        {
+          "label": "4",
+          "text": "メタンには構造異性体がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "メタンは構造異性体がない（炭素一つ）。"
+        }
+      ],
+      "explanation": "構造異性体は有機化合物の種類が膨大になる大きな理由です。例えばブタン（炭素四つ）にはノルマルブタンとイソブタン（二メチルプロパン）の二つの構造異性体があります。炭素十で七万五以上の異性体が存在します。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "有機化合物は種類が非常に多い"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q023",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "ソーダ石灰の成分",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ソーダ石灰の成分として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸化カルシウムを濃い水酸化ナトリウム水溶液で練って加熱乾燥し粒状にしたもの。水分と二酸化炭素の両方を吸収する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ソーダ石灰は塩化カルシウムからできている。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "別の物質。"
+        },
+        {
+          "label": "3",
+          "text": "ソーダ石灰は水のみを吸収する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水と二酸化炭素の両方。"
+        },
+        {
+          "label": "4",
+          "text": "ソーダ石灰は酸性物質である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "塩基性（水酸化ナトリウムを含む）。"
+        }
+      ],
+      "explanation": "ソーダ石灰は水酸化ナトリウムと酸化カルシウムの混合物です。塩基性なので酸性の二酸化炭素を中和吸収し、潮解性の水酸化ナトリウムにより水分も吸収します。",
+      "evidence": [
+        {
+          "source_id": "1_2_sub_002",
+          "quote": "CaOを濃NaOH水溶液で練って熱し乾燥。水分や二酸化炭素の吸収に使う"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q024",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "炭素の質量の計算",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "元素分析で二酸化炭素の質量から炭素の質量を計算する方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "二酸化炭素の質量に十二分の四十四分の十二（すなわち十二割る四十四）を掛ける。二酸化炭素の分子量四十四のうち炭素の原子量は十二だから。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "二酸化炭素の質量に十六割る四十四を掛ける。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "十六は酸素の原子量。炭素は十二。"
+        },
+        {
+          "label": "3",
+          "text": "水の質量に十二割る十八を掛ける。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水からは水素。炭素は二酸化炭素から。"
+        },
+        {
+          "label": "4",
+          "text": "二酸化炭素の質量がそのまま炭素の質量である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量の比で換算が必要。"
+        }
+      ],
+      "explanation": "二酸化炭素（分子量四十四）に含まれる炭素の質量は十二割る四十四の比率です。同様に水（分子量十八）に含まれる水素の質量は二割る十八の比率です。この換算が元素分析計算の基本です。",
+      "evidence": [
+        {
+          "source_id": "1_2_eq_001",
+          "quote": "Cの質量＝CO2の質量×(12/44)"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q025",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "組成式と分子式の違い",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "組成式と分子式に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "組成式は原子の最も簡単な整数比を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "分子式は実際の原子の数を示す。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "分子式を決定するには分子量が必要。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "組成式と分子式は常に同じである。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "異なる場合がある。例えば酢酸は組成式シーエイチツーオーだが分子式はシーツーエイチフォーオーツー。"
+        }
+      ],
+      "explanation": "組成式はあくまで原子の比率です。酢酸（シーツーエイチフォーオーツー）の組成式はシーエイチツーオー（二分の一倍）。ホルムアルデヒドも組成式はシーエイチツーオーで酢酸と同じ比率ですが分子量が異なるため分子式は違います。",
+      "evidence": [
+        {
+          "source_id": "1_2_eq_002",
+          "quote": "組成式は比率のみで分子量の情報がない"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_eq_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q026",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "有機化合物の構成元素",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "有機化合物の構成元素として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "炭素を必ず含み水素・酸素・窒素・硫黄・リン・ハロゲンなどの少数の元素で構成される。構成元素は少ないが組み合わせにより種類は膨大。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "有機化合物には炭素は含まれない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "必ず炭素を含む。"
+        },
+        {
+          "label": "3",
+          "text": "有機化合物は百種類以上の元素から構成される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "少数の元素。"
+        },
+        {
+          "label": "4",
+          "text": "構成元素が多いため有機化合物の種類が多い。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "構成元素は少ないが炭素の結合の多様性により種類が多い。"
+        }
+      ],
+      "explanation": "有機化合物を構成する元素は少数（主にC, H, O, N, S, P, ハロゲン）ですが、炭素の四本の手が作る構造のバリエーションが無限に近いため種類が膨大になります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "構成元素はCに加えH, O, N, P, S, ハロゲンなど少数"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q027",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "完全燃焼の確認",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "元素分析で完全燃焼が重要な理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "不完全燃焼すると一酸化炭素やすすが生成して二酸化炭素と水に完全に変換されないため正確な測定ができなくなる。そのため酸化銅を併用して完全燃焼を確保する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "不完全燃焼でも測定結果は変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "結果が不正確になる。"
+        },
+        {
+          "label": "3",
+          "text": "完全燃焼すると測定が不正確になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "完全燃焼が正確な測定の前提。"
+        },
+        {
+          "label": "4",
+          "text": "酸化銅は燃焼を抑制するために使う。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "促進するため。"
+        }
+      ],
+      "explanation": "元素分析は「炭素→二酸化炭素、水素→水」の定量的な変換に基づいています。不完全燃焼で一酸化炭素やすすができると炭素の一部が二酸化炭素にならず、炭素量が実際より少なく測定されてしまいます。",
+      "evidence": [
+        {
+          "source_id": "1_2_proc_001",
+          "quote": "完全燃焼。不完全燃焼を防ぐために酸化銅も併用"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q028",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "definition",
+      "sub_category": "示性式",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "示性式について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "官能基が分かるように記した化学式を示性式という。エタノールの示性式ではヒドロキシ基が明示される。分子式よりも化合物の性質が推定しやすい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "示性式と分子式は全く同じものである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "官能基を明示する点が異なる。"
+        },
+        {
+          "label": "3",
+          "text": "示性式では官能基は省略される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "官能基を明示する。"
+        },
+        {
+          "label": "4",
+          "text": "示性式から性質を推定することはできない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "官能基が分かるため性質の推定が可能。"
+        }
+      ],
+      "explanation": "示性式は分子式と構造式の中間的な表記法です。例えばエタノールは分子式シーツーエイチシックスオーですが、示性式ではシーツーエイチファイブオーエイチと書いてヒドロキシ基を明示します。これによりアルコールであることが一目で分かります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "官能基が性質を決定"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q029",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "分子量の測定法",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "分子式を決定するために分子量を測定する方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "気体の状態方程式を利用する方法、溶液の沸点上昇や凝固点降下を利用する方法、浸透圧を利用する方法などがある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "元素分析だけで分子量が求められる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "元素分析で求まるのは組成式まで。"
+        },
+        {
+          "label": "3",
+          "text": "分子量は組成式から自動的に求まる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "別途測定が必要。"
+        },
+        {
+          "label": "4",
+          "text": "分子量の測定なしに分子式は決定できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量が必要。"
+        }
+      ],
+      "explanation": "分子式の決定には組成式（元素分析から）と分子量（別の方法から）の二つの情報が必要です。分子量の測定法はいくつかあり、物質の状態（気体か溶液か）に応じて使い分けます。",
+      "evidence": [
+        {
+          "source_id": "1_2_eq_002",
+          "quote": "気体の状態方程式や浸透圧などで分子量が測定されていること"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_eq_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q030",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "comprehensive",
+      "sub_category": "元素分析の総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "元素分析に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "試料を酸化銅とともに酸素気流中で完全燃焼させる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "塩化カルシウム管で水を吸収した後ソーダ石灰管で二酸化炭素を吸収する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "二酸化炭素から炭素、水から水素の質量を求め残りが酸素。モル比で組成式を得る。分子量から分子式を決定。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ソーダ石灰管を先に接続する。酸素の質量は二酸化炭素から直接求める。組成式がそのまま分子式で分子量は不要。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて誤り。"
+        }
+      ],
+      "explanation": "元素分析の全体を確認する最高難度の問題です。吸収管の順序（塩化カルシウム先）、酸素の求め方（引き算）、分子式の決定（分子量が必要）の三つのポイントすべてが複合ひっかけになっています。",
+      "evidence": [
+        {
+          "source_id": "1_2_proc_001",
+          "quote": "塩化カルシウム管を先に"
+        },
+        {
+          "source_id": "1_2_eq_001",
+          "quote": "Oは引き算"
+        },
+        {
+          "source_id": "1_2_eq_002",
+          "quote": "分子量が必要"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_proc_001",
+        "1_2_eq_001",
+        "1_2_eq_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q031",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "メタンの特徴",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "メタンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "天然ガスの主成分でアルカンの代表例。単結合のみを持ち正四面体構造。炭素数一で最も単純な炭化水素。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "メタンは二重結合を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "単結合のみ。"
+        },
+        {
+          "label": "3",
+          "text": "メタンは液体として存在する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "常温常圧で気体。"
+        },
+        {
+          "label": "4",
+          "text": "メタンは芳香族化合物である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "脂肪族炭化水素。"
+        }
+      ],
+      "explanation": "メタンは最も単純なアルカンで天然ガスの約九十パーセントを占めます。炭素一個に水素四個が正四面体構造で結合しています。温室効果ガスとしても重要です。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_003",
+          "quote": "天然ガスの主成分。アルカンの代表例"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q032",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "カルボキシ基の性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "カルボキシ基の性質として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸性を示す。アルコールと反応してエステルを作る。カルボン酸の官能基。水溶液中で水素イオンを放出する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "カルボキシ基は塩基性を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸性。"
+        },
+        {
+          "label": "3",
+          "text": "カルボキシ基はアルコールの官能基である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "カルボン酸の官能基。"
+        },
+        {
+          "label": "4",
+          "text": "カルボキシ基はエステル反応を起こさない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アルコールとエステルを作る。"
+        }
+      ],
+      "explanation": "カルボキシ基は酸性を示すため水溶液中で水素イオンを電離します。酢酸（カルボキシ基を持つ）はまさに「酸」の代表例です。アルコールのヒドロキシ基と脱水縮合してエステル結合を作る反応も重要です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "カルボキシ基→カルボン酸。酸性を示しアルコールとエステルをつくる"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q033",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "生命力説",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "有機化合物の歴史に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "かつて有機化合物は生物のみが作ると考えられていた（生命力説）。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "ウェーラーが尿素を人工合成して生命力説を覆した。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "現在では有機化合物は人工合成可能である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "有機化合物は現在でも生物からのみ得られ人工合成は不可能である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "人工合成が可能。ウェーラーの合成で証明済み。"
+        }
+      ],
+      "explanation": "生命力説は千八百二十八年のウェーラーによる尿素の合成で否定されました。現在では医薬品・プラスチック・染料など数え切れないほどの有機化合物が人工的に合成されています。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_001",
+          "quote": "ウェーラーによって初めて人工的に合成された"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q034",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "アルカンの一般式",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アルカンの一般式として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "シーエヌエイチ二エヌプラス二。すべて単結合で飽和炭化水素。エヌが一のときメタン、エヌが二のときエタン。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルカンの一般式はシーエヌエイチ二エヌで二重結合を含む。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "それはアルケンの一般式。"
+        },
+        {
+          "label": "3",
+          "text": "アルカンの一般式はシーエヌエイチ二エヌマイナス二で三重結合を含む。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "それはアルキン。"
+        },
+        {
+          "label": "4",
+          "text": "アルカンは不飽和炭化水素に分類される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "飽和。"
+        }
+      ],
+      "explanation": "アルカンは飽和炭化水素で炭素間の結合がすべて単結合です。炭素数が一つ増えるごとに水素が二つ増えるパターンです。一（メタン）、二（エタン）、三（プロパン）、四（ブタン）の命名も覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "アルカン: CnH2n+2。単結合のみ"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q035",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "水素の質量の計算",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "元素分析で水の質量から水素の質量を計算する方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水の質量に二割る十八を掛ける。水の分子量十八のうち水素は二だから。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水の質量に十二割る十八を掛ける。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "十二は炭素の原子量。水素は二。"
+        },
+        {
+          "label": "3",
+          "text": "水の質量がそのまま水素の質量である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量比で換算が必要。"
+        },
+        {
+          "label": "4",
+          "text": "二酸化炭素の質量に二割る四十四を掛ける。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "二酸化炭素からは炭素。水素は水から。"
+        }
+      ],
+      "explanation": "水の分子量は十八（水素二＋酸素十六）です。水素の割合は二割る十八、すなわち約九分の一です。同様に二酸化炭素からは炭素を十二割る四十四で求めます。",
+      "evidence": [
+        {
+          "source_id": "1_2_eq_001",
+          "quote": "Hの質量＝H2Oの質量×(2/18)"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q036",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "definition",
+      "sub_category": "アルコールの官能基",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "アルコール類の官能基として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒドロキシ基。水溶液は中性。ナトリウム金属と反応して水素を発生する。エタノールやメタノールがアルコールの代表例。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルコールの官能基はカルボキシ基である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ヒドロキシ基。カルボキシ基はカルボン酸。"
+        },
+        {
+          "label": "3",
+          "text": "アルコール類は強い酸性を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "中性。"
+        },
+        {
+          "label": "4",
+          "text": "アルコール類は水と反応しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "エタノールなどは水と自由に混合する。"
+        }
+      ],
+      "explanation": "ヒドロキシ基は水のエイチの一つが炭素鎖に置き換わった構造です。アルコールのヒドロキシ基は水と水素結合するため低分子量のアルコール（メタノール・エタノール）は水とよく混合します。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "ヒドロキシ基→アルコール類。水溶液は中性"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q037",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "一般式の水素数の比較",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "炭化水素の一般式に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アルカンの水素数は二エヌプラス二で最も多い。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "アルケンの水素数は二エヌでアルカンより二少ない。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アルキンの水素数は二エヌマイナス二でさらに二少ない。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "アルキンの水素数が最も多くアルカンが最も少ない。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。アルカンが最多、アルキンが最少。"
+        }
+      ],
+      "explanation": "結合次数が高い（二重→三重）ほど水素が少なくなります。これは炭素間の多重結合に使う手が増えると水素と結合する手が減るためです。アルカン＞アルケン＞アルキンの順に水素が少なくなります。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "CnH2n+2 > CnH2n > CnH2n-2"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q038",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "有機化合物の結合",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "有機化合物の結合について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "有機化合物の結合は大部分が共有結合。炭素は四本の共有結合の手を持ち他の炭素や水素・酸素などと結合する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "有機化合物はイオン結合が大部分である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "共有結合。"
+        },
+        {
+          "label": "3",
+          "text": "炭素は二本の手しか持たない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "四本。"
+        },
+        {
+          "label": "4",
+          "text": "有機化合物は金属結合でできている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "共有結合。"
+        }
+      ],
+      "explanation": "炭素原子が四つの共有結合を形成できる（四価）ことが有機化合物の多様性の根源です。単結合で四つ、二重結合一つと単結合二つ、三重結合一つと単結合一つなど、さまざまな組み合わせが可能です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "共有結合が大部分"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q039",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "二酸化炭素は有機か無機か",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "二酸化炭素の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "炭素を含むが無機化合物に分類される。炭素の酸化物（一酸化炭素・二酸化炭素）は有機化合物の定義から除外される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "二酸化炭素は有機化合物である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "無機化合物。"
+        },
+        {
+          "label": "3",
+          "text": "炭素を含まない化合物であるため無機化合物に分類される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炭素を含むが例外として無機に分類。"
+        },
+        {
+          "label": "4",
+          "text": "有機化合物から例外として除外される化合物はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "複数の例外がある。"
+        }
+      ],
+      "explanation": "二酸化炭素は炭素を含みますが有機化合物ではありません。同様に一酸化炭素、炭酸塩（炭酸カルシウムなど）、炭酸水素塩、シアン化物も例外として無機化合物に分類されます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "例外: CO, CO2, 炭酸塩"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q040",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "comprehensive",
+      "sub_category": "分類の総合",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "有機化合物の分類に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "脂肪族化合物はベンゼン環を持たない有機化合物。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "芳香族化合物はベンゼン環を持つ有機化合物。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "飽和化合物は単結合のみ、不飽和化合物は多重結合を含む。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "アルカンは不飽和炭化水素で二重結合を持ち、アルキンは飽和炭化水素で単結合のみ。ベンゼンは脂肪族。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて逆。アルカンが飽和で単結合、アルキンが不飽和で三重結合、ベンゼンが芳香族。"
+        }
+      ],
+      "explanation": "有機化合物の分類体系を確認する総合問題です。脂肪族vs芳香族（ベンゼン環の有無）、飽和vs不飽和（単結合のみかどうか）、アルカン（飽和・単結合）vsアルケン（不飽和・二重結合）vsアルキン（不飽和・三重結合）。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_002",
+          "quote": "飽和＝単結合のみ、不飽和＝多重結合含む"
+        },
+        {
+          "source_id": "1_1_def_003",
+          "quote": "アルカン＝単結合、アルキン＝三重結合"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_002",
+        "1_1_def_003",
+        "1_1_sub_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q041",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "アルケンの付加反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アルケンの反応性として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "二重結合があるため付加反応を起こしやすい。臭素水を脱色する反応で不飽和結合の検出ができる。アルカンより反応性が高い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アルケンは付加反応を起こさない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "起こしやすい。"
+        },
+        {
+          "label": "3",
+          "text": "アルケンはアルカンより反応性が低い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高い。"
+        },
+        {
+          "label": "4",
+          "text": "アルケンは臭素水と反応しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "臭素水を脱色する。"
+        }
+      ],
+      "explanation": "不飽和結合の検出には臭素水の脱色反応が使われます。アルケンの二重結合に臭素が付加すると橙赤色の臭素が消費されて無色になります。アルカン（飽和）ではこの反応が起こらないため区別できます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_002",
+          "quote": "二重結合を含むものが不飽和化合物"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q042",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "尿素の原料",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "ウェーラーの尿素合成に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "原料はシアン酸アンモニウムという無機化合物である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "シアン酸アンモニウムの水溶液を濃縮すると尿素が得られた。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "この発見は生命力説を覆す画期的なものだった。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ウェーラーは有機化合物から無機化合物を合成した。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。無機化合物から有機化合物（尿素）を合成した。"
+        }
+      ],
+      "explanation": "ウェーラーの業績は「無機→有機」の変換を実証したことです。シアン酸アンモニウム（無機）→尿素（有機）の変換により、有機化合物は生物の力なしにも人工的に作れることが証明されました。",
+      "evidence": [
+        {
+          "source_id": "1_1_sub_002",
+          "quote": "この水溶液を濃縮することで尿素が得られる"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_sub_001",
+        "1_1_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q043",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "官能基の種類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "代表的な官能基の種類として、正しい組み合わせを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒドロキシ基（アルコール）、カルボキシ基（カルボン酸）、アミノ基（アミン）、アルデヒド基（アルデヒド）、ケトン基（ケトン）、エーテル結合（エーテル）、エステル結合（エステル）。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "すべての有機化合物は同一の官能基を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "さまざまな官能基がある。"
+        },
+        {
+          "label": "3",
+          "text": "官能基は二種類しかない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多数の種類がある。"
+        },
+        {
+          "label": "4",
+          "text": "エーテル結合はカルボン酸の官能基である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "エーテルの官能基。"
+        }
+      ],
+      "explanation": "官能基は有機化学の分類の基本です。官能基ごとに化学的性質が決まるため、官能基を見ればその化合物の反応性が予測できます。これが有機化学の「文法」といえます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "物質の性質を決定している原子または原子団を官能基"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q044",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "倍率エヌの計算",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "分子式を決定する際の倍率エヌの計算に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "エヌは分子量を組成式の式量で割った値である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "エヌは正の整数になる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "エヌが一のとき組成式と分子式は同じになる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "エヌは組成式の式量を分子量で割った値である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。分子量÷式量。"
+        }
+      ],
+      "explanation": "エヌは分子量を式量で割った値です。式量を分子量で割ると分数（一未満）になってしまいます。例えば酢酸の組成式シーエイチツーオーの式量は三十、分子量は六十なので、六十を三十で割ると二。組成式の各原子数を二倍して分子式を得ます。",
+      "evidence": [
+        {
+          "source_id": "1_2_eq_002",
+          "quote": "n＝分子量÷式量"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_eq_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q045",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "有機化合物の有機溶媒への溶解性",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "有機化合物の溶解性として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "有機化合物は一般に水に溶けにくく有機溶媒（ジエチルエーテル・ヘキサンなど）によく溶ける。「似たものは似たものを溶かす」の原則に従う。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "有機化合物は水によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一般に溶けにくい。"
+        },
+        {
+          "label": "3",
+          "text": "有機化合物は有機溶媒に溶けにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "よく溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "すべての有機化合物は水にも有機溶媒にも溶けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "有機溶媒には溶ける。"
+        }
+      ],
+      "explanation": "有機化合物は非極性の共有結合が主体なので極性の高い水には溶けにくく、非極性の有機溶媒にはよく溶けます。ただしアルコールや酢酸などヒドロキシ基やカルボキシ基を持つものは水にも溶けます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "水に溶けにくい"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q046",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "ヒドロキシ基の酸性・塩基性",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "ヒドロキシ基に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒドロキシ基はアルコールの官能基である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "アルコールの水溶液は中性である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "アルコールはナトリウムと反応して水素を発生する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "アルコールの水溶液は強い酸性を示す。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "中性。酸性を示すのはカルボン酸（カルボキシ基）。"
+        }
+      ],
+      "explanation": "ヒドロキシ基を持つアルコールは中性であり酸性ではありません。酸性を示すのはカルボキシ基を持つカルボン酸です。フェノールのヒドロキシ基は弱い酸性を示しますが、通常のアルコールは中性です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "ヒドロキシ基→アルコール。水溶液は中性"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q047",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "property",
+      "sub_category": "窒素の検出",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "有機化合物中の窒素の検出方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "試料をソーダ石灰と混ぜて加熱するとアンモニアが発生するので、湿らせた赤いリトマス紙が青色に変化するかどうかで窒素の有無を確認する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "窒素の検出には臭素水を使う。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "臭素水は不飽和結合の検出。"
+        },
+        {
+          "label": "3",
+          "text": "窒素の検出にはフェーリング液を使う。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "フェーリング液はアルデヒドの検出。"
+        },
+        {
+          "label": "4",
+          "text": "リトマス紙が赤くなれば窒素が存在する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アンモニアは塩基性なので青くなる。"
+        }
+      ],
+      "explanation": "窒素の検出は「ソーダ石灰と加熱→アンモニア発生→リトマス紙が青」の流れです。アンモニアは塩基性のためリトマス紙は赤→青に変化します。窒素を含まない有機化合物ではアンモニアが発生しません。",
+      "evidence": [
+        {
+          "source_id": "1_2_sub_002",
+          "quote": "ソーダ石灰"
+        }
+      ],
+      "related_concept_ids": [
+        "1_2_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q048",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "confusion",
+      "sub_category": "シクロアルカンとアルケンの区別",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "シクロアルカンについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "環状の飽和炭化水素で一般式はシーエヌエイチ二エヌ。アルケンと分子式は同じだが構造が異なる（構造異性体）。シクロアルカンは飽和で臭素水を脱色しない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "シクロアルカンは不飽和炭化水素である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "飽和（単結合のみ）。"
+        },
+        {
+          "label": "3",
+          "text": "シクロアルカンは臭素水を脱色する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "飽和なので脱色しない。"
+        },
+        {
+          "label": "4",
+          "text": "シクロアルカンの一般式はシーエヌエイチ二エヌプラス二である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "シーエヌエイチ二エヌ。プラス二はアルカン。"
+        }
+      ],
+      "explanation": "シクロアルカンとアルケンは一般式が同じですが飽和度が異なります。シクロアルカンは環を閉じるために水素が二つ減りますが二重結合はなく飽和です。アルケンは二重結合があるため不飽和です。臭素水の脱色反応で区別できます。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_003",
+          "quote": "アルケン: CnH2n。二重結合"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q049",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "comprehensive",
+      "sub_category": "官能基の総合",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "官能基に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒドロキシ基はアルコールの官能基で中性。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "カルボキシ基はカルボン酸の官能基で酸性。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "カルボキシ基とアルコールのヒドロキシ基が反応してエステルが生成する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "ヒドロキシ基を持つ化合物は酸性、カルボキシ基を持つ化合物は中性で、両者の反応ではエーテルが生成する。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて逆。ヒドロキシ基→中性、カルボキシ基→酸性、生成物→エステル。"
+        }
+      ],
+      "explanation": "官能基の性質と反応を複合的に入れ替えたひっかけです。ヒドロキシ基（中性）＋カルボキシ基（酸性）→エステル。この脱水縮合反応はエステル化と呼ばれ有機化学の最重要反応の一つです。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_004",
+          "quote": "ヒドロキシ基→中性。カルボキシ基→酸性→エステルをつくる"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_004"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch5_1_q050",
+      "chapter": "5-1",
+      "chapter_title": "有機化合物の分類と分析",
+      "category": "comprehensive",
+      "sub_category": "章全体の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "有機化合物の分類と分析に関する全体の総合記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "有機化合物は炭素骨格の化合物で例外あり（一酸化炭素・二酸化炭素・炭酸塩・シアン化物は無機）。低融点・可燃・水に溶けにくい・非電解質が特徴。アルカンは飽和、アルケンは二重結合、アルキンは三重結合。官能基が性質を決定。元素分析は塩化カルシウム管で水→ソーダ石灰管で二酸化炭素の順。組成式から分子量を使って分子式を決定。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "炭素を含めばすべて有機。高融点・不燃・電解質。アルカンは二重結合。ソーダ石灰管を先に接続。分子量は不要。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "六か所すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "ウェーラーは有機化合物から無機化合物を合成した。これにより生命力説が確認された。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。無機→有機。生命力説は否定された。"
+        },
+        {
+          "label": "4",
+          "text": "ヒドロキシ基はカルボン酸の官能基で酸性。カルボキシ基はアルコールの官能基で中性。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "すべて逆。"
+        }
+      ],
+      "explanation": "有機化合物の分類と分析の章すべてを一つの問題に集約した最終問題です。定義と例外、性質比較、炭化水素の分類、官能基、元素分析、組成式と分子式のすべてを正確に把握することが必要です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "炭素骨格。例外あり"
+        },
+        {
+          "source_id": "1_2_proc_001",
+          "quote": "塩化カルシウム管を先に"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001",
+        "1_1_def_002",
+        "1_1_def_003",
+        "1_1_def_004",
+        "1_2_proc_001",
+        "1_2_eq_001",
+        "1_2_eq_002"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

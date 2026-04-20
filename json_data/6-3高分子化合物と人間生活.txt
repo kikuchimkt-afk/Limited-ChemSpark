@@ -1,0 +1,413 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "化学",
+   "chapter": 3,
+   "chapter_title": "高分子化合物と人間生活",
+   "section": 1,
+   "section_title": "食品 / 繊維 / いろいろな合成樹脂",
+   "page_range": [522, 531],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "3_1_sub_001",
+     "name": "リノール酸",
+     "formula": "C17H31COOH",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["必須脂肪酸の一種", "不飽和脂肪酸"]
+     },
+     "cross_refs": [],
+     "notes": "ヒトの生存に不可欠だが体内で合成されない必須脂肪酸の1つ。"
+   },
+   {
+     "id": "3_2_sub_001",
+     "name": "ケラチン",
+     "formula": "",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["親水基をもつ", "酸や塩基に弱い"]
+     },
+     "cross_refs": ["TBD:p.499_タンパク質"],
+     "notes": "羊毛（ウール）を構成するタンパク質。アルファヘリックス構造をもつ。"
+   },
+   {
+     "id": "3_3_sub_001",
+     "name": "陽イオン交換樹脂",
+     "formula": "",
+     "aliases": [],
+     "type": "混合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に不溶",
+       "electrical_conductivity": "",
+       "other": ["立体網目状構造", "酸性の基（スルホ基など）をもつ"]
+     },
+     "cross_refs": ["3_3_def_001", "3_3_proc_001"],
+     "notes": "スチレンとp-ジビニルベンゼンを共重合させ、濃硫酸でスルホン化したものがよく用いられる。"
+   },
+   {
+     "id": "3_3_sub_002",
+     "name": "ポリアクリル酸ナトリウム",
+     "formula": "[-CH2-CH(COONa)-]n",
+     "aliases": ["吸水性高分子", "高吸水性樹脂"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水と和してゲル化",
+       "electrical_conductivity": "",
+       "other": ["わずかに架橋した立体網目状構造"]
+     },
+     "cross_refs": ["3_3_def_002"],
+     "notes": "アクリル酸ナトリウムを付加重合させた合成樹脂。短時間に多量の水を吸収する。"
+   },
+   {
+     "id": "3_3_sub_003",
+     "name": "ポリアセチレン",
+     "formula": "[-CH=CH-]n",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "条件付きで導電性あり",
+       "other": ["二重結合を多くもつ"]
+     },
+     "cross_refs": ["3_3_def_003"],
+     "notes": "ハロゲンを少量加えることで高い電気伝導性をもつ導電性高分子となる。"
+   },
+   {
+     "id": "3_3_sub_004",
+     "name": "ポリ乳酸",
+     "formula": "[-O-CH(CH3)-CO-]n",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "",
+       "electrical_conductivity": "",
+       "other": ["生分解性をもつ"]
+     },
+     "cross_refs": ["3_3_def_004"],
+     "notes": "代表的な生分解性高分子。自然環境下で分解され、外科手術用の縫合糸などにも用いられる。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "3_1_def_001",
+     "type": "def",
+     "title": "栄養素と三大栄養素・五大栄養素",
+     "prerequisite_ids": [],
+     "definition": "食品中の成分のうち、体内に取り入れられ、成長および生活力の維持に役立つものを栄養素という。",
+     "explanation": "栄養素は化学構造とはたらきにより、糖質、タンパク質、脂質、無機質、ビタミンの5つに分類され、これらを五大栄養素と呼びます。このうち、生体の構成物質やエネルギー源として特に重要な糖質、タンパク質、脂質を三大栄養素と呼びます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "三大栄養素の発熱量",
+         "substance_ids": [],
+         "description": "各栄養素が1gあたりに供給するエネルギー量",
+         "values": [
+           { "value": 17, "unit": "kJ/g", "condition": "糖質" },
+           { "value": 17, "unit": "kJ/g", "condition": "タンパク質" },
+           { "value": 38, "unit": "kJ/g", "condition": "脂質" }
+         ]
+       }
+     ],
+     "counter_examples": [
+       "水は生命維持に最も重要だが、自然に摂取しているため通常は栄養素とはみなさない。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "三大栄養素・五大栄養素の名称や発熱量（kJ/g または kcal/g）を問う穴埋め・計算問題",
+         "key_concept_ids": ["3_1_def_001", "3_1_def_002"]
+       }
+     ],
+     "cross_refs": ["TBD:p.484_糖類", "TBD:p.450_油脂"],
+     "source_page": 522
+   },
+   {
+     "id": "3_1_def_002",
+     "type": "def",
+     "title": "食品の変質（腐敗と発酵・酸敗）",
+     "prerequisite_ids": [],
+     "definition": "食品を室温に放置し、食品成分が変化して食用にたえられなくなることを変質という。",
+     "explanation": "微生物が有機物を分解する過程で、人間生活に役立つ場合を「発酵」、悪臭や有毒物質が生じ害を与える場合を「腐敗」と呼び区別します。また、空気中の酸素や光によって油脂が酸化され、異臭を生じることを「酸敗」と呼びます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "食品の保存方法",
+         "substance_ids": [],
+         "description": "微生物の増殖を防ぐための工夫",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": ["TBD:p.15_保存方法"],
+     "source_page": 524
+   },
+   {
+     "id": "3_2_def_001",
+     "type": "def",
+     "title": "天然繊維（植物繊維と動物繊維）",
+     "prerequisite_ids": [],
+     "definition": "天然繊維は、セルロースを主成分とする植物繊維と、タンパク質を主成分とする動物繊維に大別される。",
+     "explanation": "植物繊維（綿や麻）は水素結合により強度が大きく、吸湿性が高いのが特徴です。動物繊維（羊毛や絹）はペプチド結合や親水基を多く持ち吸湿性・染色性に優れますが、酸や塩基に弱く虫に食われやすい欠点があります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "植物繊維の例",
+         "substance_ids": [],
+         "description": "綿（コットン）、麻",
+         "values": []
+       },
+       {
+         "label": "動物繊維の例",
+         "substance_ids": ["3_2_sub_001"],
+         "description": "羊毛（ウール: ケラチン）、絹（シルク: フィブロインとセリシン）",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "天然繊維に対して、化学的に合成・加工されたものを化学繊維（再生繊維・半合成繊維・合成繊維）と呼ぶ。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "天然繊維と化学繊維の分類、構成成分（セルロースかタンパク質か）、性質（吸湿性、耐薬品性）を判定する正誤問題",
+         "key_concept_ids": ["3_2_def_001"]
+       }
+     ],
+     "cross_refs": ["TBD:p.492_セルロース", "TBD:p.499_タンパク質"],
+     "source_page": 526
+   },
+   {
+     "id": "3_3_def_001",
+     "type": "def",
+     "title": "イオン交換樹脂",
+     "prerequisite_ids": [],
+     "definition": "電解質水溶液中で、自身のもつイオン（H+やOH-）を放出し、水溶液中の他のイオンと結合することができる立体網目状構造をもつ合成樹脂。",
+     "explanation": "陽イオン交換樹脂は酸性の基（-SO3Hなど）を持ち、水中の陽イオン（Na+など）と自身のH+を交換します。陰イオン交換樹脂は塩基性の基（-N+(CH3)3OH-など）を持ち、水中の陰イオン（Cl-など）と自身のOH-を交換します。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "陽イオン交換樹脂の反応",
+         "substance_ids": ["3_3_sub_001"],
+         "description": "R-SO3H + Na+ -> R-SO3Na + H+",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "イオン交換樹脂に通じた後の水溶液のpH変化や、交換された物質量を求める中和滴定の計算問題",
+         "key_concept_ids": ["3_3_def_001", "3_3_proc_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 528
+   },
+   {
+     "id": "3_3_proc_001",
+     "type": "proc",
+     "title": "脱イオン水の製造と樹脂の再生",
+     "prerequisite_ids": ["3_3_def_001"],
+     "definition": "陽イオン交換樹脂と陰イオン交換樹脂を用いて、水中の不純物イオンをH+およびOH-と交換し、純粋な水（脱イオン水）を得る操作。",
+     "explanation": "塩化物イオンやナトリウムイオンを含む水を両方の樹脂に通すと、すべての陽イオンはH+に、陰イオンはOH-に置き換わり、それらが結合して水になるため、イオンを含まない脱イオン水が得られます。使用済みの樹脂は、酸や塩基を通すことで元の状態に戻せます（再生）。",
+     "conditions": [
+       "陽イオン交換樹脂と陰イオン交換樹脂を併用するか、混合して使用する"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "不純物を含む水溶液を陽イオン交換樹脂に通す。",
+         "reason": "水中の陽イオン（Na+など）が樹脂に捕捉され、代わりにH+が水溶液中に放出されるため。"
+       },
+       {
+         "step": 2,
+         "action": "続いて、その水溶液を陰イオン交換樹脂に通す。",
+         "reason": "水中の陰イオン（Cl-など）が樹脂に捕捉され、代わりにOH-が放出されるため。"
+       },
+       {
+         "step": 3,
+         "action": "放出されたH+とOH-が中和反応を起こす。",
+         "reason": "H+ + OH- -> H2O となり、イオンを含まない脱イオン水となる。"
+       },
+       {
+         "step": 4,
+         "action": "使用済みの陽イオン交換樹脂に塩酸（または陰イオン交換樹脂に水酸化ナトリウム水溶液）を通す。",
+         "reason": "高濃度のH+（またはOH-）を与えることで平衡が逆向きに移動し、樹脂が元の状態に再生されるため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "脱イオン水に硝酸銀水溶液を加えたときの反応（白濁しないこと）を問う問題",
+         "key_concept_ids": ["3_3_proc_001"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 528
+   },
+   {
+     "id": "3_3_def_002",
+     "type": "def",
+     "title": "吸水性高分子（高吸水性樹脂）",
+     "prerequisite_ids": [],
+     "definition": "わずかに架橋させた立体網目状構造をもち、短時間に多量の水を内部に取り込んで膨潤する合成樹脂。",
+     "explanation": "ポリアクリル酸ナトリウムなどが代表例です。水が入り込むと、-COONaが電離して生じた-COO-同士が反発して網目が広がり、さらに内部のイオン濃度が高まることで浸透圧が働き、大量の水を閉じ込めることができます。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "吸水性高分子の用途",
+         "substance_ids": ["3_3_sub_002"],
+         "description": "紙おむつ、調湿剤、砂漠緑化用土壌保水材など",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "機能性高分子の名称と用途・原理を紐付ける穴埋め問題",
+         "key_concept_ids": ["3_3_def_002", "3_3_def_003", "3_3_def_004"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 529
+   },
+   {
+     "id": "3_3_def_003",
+     "type": "def",
+     "title": "導電性高分子",
+     "prerequisite_ids": [],
+     "definition": "分子内に二重結合を多くもつ高分子化合物にハロゲンなどを少量加える（ドープする）ことで、高い電気伝導性をもたせた合成樹脂。",
+     "explanation": "通常のプラスチックは電気を通さない絶縁体ですが、ポリアセチレンにヨウ素などを吸わせると金属に近い導電性を示します。白川英樹博士がこれを発見し、ノーベル化学賞を受賞しました。電池や表示素子に利用されます。",
+     "conditions": [
+       "分子鎖内に共役二重結合を多く持つこと",
+       "臭素やヨウ素などの電子を奪う性質をもつハロゲンをドーピングすること"
+     ],
+     "examples": [
+       {
+         "label": "導電性高分子の代表例",
+         "substance_ids": ["3_3_sub_003"],
+         "description": "ポリアセチレンにヨウ素をドープしたもの",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [],
+     "cross_refs": [],
+     "source_page": 530
+   },
+   {
+     "id": "3_3_def_004",
+     "type": "def",
+     "title": "生分解性高分子",
+     "prerequisite_ids": [],
+     "definition": "使用後に自然界に廃棄された際、土壌や水中の微生物によって最終的に水と二酸化炭素にまで分解される合成樹脂。",
+     "explanation": "従来のプラスチックが自然界に長期間残留する問題を解決するために開発されました。ポリ乳酸などが代表的で、体内でも安全に分解吸収されるため、外科手術用の縫合糸としても利用されています。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "生分解性高分子の例",
+         "substance_ids": ["3_3_sub_004"],
+         "description": "ポリ乳酸、ポリ(3-ヒドロキシブタン酸)、ポリ(ε-カプロラクトン)",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "環境に優しいプラスチックの名称や、医療用（手術糸など）に使われる理由を問う問題",
+         "key_concept_ids": ["3_3_def_004"]
+       }
+     ],
+     "cross_refs": [],
+     "source_page": 530
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "3_3_sub_001",
+     "to_id": "3_3_def_001",
+     "relation_type": "is_example_of",
+     "note": "陽イオン交換樹脂はイオン交換樹脂の代表例"
+   },
+   {
+     "from_id": "3_3_proc_001",
+     "to_id": "3_3_def_001",
+     "relation_type": "is_applied_in",
+     "note": "脱イオン水の精製にはイオン交換樹脂の性質が利用される"
+   },
+   {
+     "from_id": "3_3_sub_002",
+     "to_id": "3_3_def_002",
+     "relation_type": "is_example_of",
+     "note": "ポリアクリル酸ナトリウムは吸水性高分子の代表例"
+   },
+   {
+     "from_id": "3_3_sub_003",
+     "to_id": "3_3_def_003",
+     "relation_type": "is_example_of",
+     "note": "ポリアセチレンは導電性高分子の骨格となる"
+   },
+   {
+     "from_id": "3_3_sub_004",
+     "to_id": "3_3_def_004",
+     "relation_type": "is_example_of",
+     "note": "ポリ乳酸は生分解性高分子の代表例"
+   }
+ ]
+}

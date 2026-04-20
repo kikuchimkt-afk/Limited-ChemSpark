@@ -1,0 +1,2482 @@
+{
+  "metadata": {
+    "chapter": "2-2",
+    "chapter_title": "気体",
+    "source_file": "json_data/2-2気体.txt",
+    "textbook": "化学",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "すべての文字列は日本語読み上げ可能な形式で記述。化学式・数式は日本語名に置換済み。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワード1語をすり替え",
+      "concept_confusion": "類似概念の混同",
+      "property_swap": "物質の性質を別物質と入れ替え",
+      "condition_change": "成立条件の変更",
+      "step_order": "手順の順序入れ替え",
+      "reason_swap": "正しい操作に誤った理由を付与",
+      "partial_truth": "前半は正しく後半だけ誤り",
+      "multiple_swap": "複数箇所を同時にすり替え",
+      "negation": "肯定否定を入れ替え"
+    }
+  },
+  "questions": [
+    {
+      "id": "ch2_2_q001",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "definition",
+      "sub_category": "ボイルの法則の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ボイルの法則について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "一定温度で一定量の気体の体積は圧力に反比例する。温度と物質量が一定のとき、圧力と体積の積は一定である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "一定温度で一定量の気体の体積は圧力に比例する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "比例ではなく反比例。"
+        },
+        {
+          "label": "3",
+          "text": "一定圧力で一定量の気体の体積は温度に反比例する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これはシャルルの法則のようだが、温度に比例するのが正しい。"
+        },
+        {
+          "label": "4",
+          "text": "温度や物質量が変化しても成り立つ法則である。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "温度と物質量が一定であることが条件。"
+        }
+      ],
+      "explanation": "ボイルの法則は、温度と気体の量が一定のとき、気体の体積は圧力に反比例するという法則です。圧力を二倍にすれば体積は半分になります。これは圧力と体積の積が一定であることを意味します。気体を凝縮して液体にしてしまうとこの法則は適用できなくなります。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_001",
+          "quote": "一定温度で、一定量の気体の体積は圧力に反比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q002",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "definition",
+      "sub_category": "シャルルの法則の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "シャルルの法則について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "一定圧力の下で一定量の気体の体積は絶対温度に比例する。温度はセ氏ではなく絶対温度（ケルビン）で表す必要がある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "一定圧力の下で一定量の気体の体積は絶対温度に反比例する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "反比例ではなく比例。"
+        },
+        {
+          "label": "3",
+          "text": "一定圧力の下で気体の体積はセ氏温度に比例する。セ氏温度をそのまま使ってよい。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "セ氏温度ではなく絶対温度を使わなければならない。"
+        },
+        {
+          "label": "4",
+          "text": "一定温度の下で気体の体積は圧力に反比例する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これはボイルの法則。"
+        }
+      ],
+      "explanation": "シャルルの法則は、圧力と物質量が一定のとき、気体の体積が絶対温度に比例するという法則です。温度を二倍にすれば体積も二倍になります。セ氏温度をそのまま使うのは非常に多いミスです。必ず二百七十三を足して絶対温度に変換してから計算する必要があります。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_002",
+          "quote": "一定圧力の下で、一定量の気体の体積は絶対温度に比例する"
+        },
+        {
+          "source_id": "2_1_law_002",
+          "quote": "セルシウス温度（℃）をそのまま使ってしまうミスが非常に多い"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q003",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "definition",
+      "sub_category": "ボイル・シャルルの法則",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ボイル・シャルルの法則について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "一定量の気体の体積は圧力に反比例し絶対温度に比例する。変化の前後で「圧力かける体積わる絶対温度」の値が等しい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "一定量の気体の体積は圧力に比例し絶対温度に反比例する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "比例と反比例が逆。"
+        },
+        {
+          "label": "3",
+          "text": "気体の量が変わっても成り立つ法則である。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "気体の物質量が一定であることが条件。"
+        },
+        {
+          "label": "4",
+          "text": "圧力と温度のどちらか一方だけが変化する場合にしか使えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両方同時に変化する場合にも使える。"
+        }
+      ],
+      "explanation": "ボイル・シャルルの法則はボイルの法則とシャルルの法則を組み合わせたもので、圧力と温度が同時に変化する場合にも使えます。気体の物質量が一定であれば、変化の前後で圧力かける体積わる絶対温度の値は一定です。コックを開けて気体を逃がしたり化学反応で分子数が変わった場合には適用できません。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_003",
+          "quote": "一定量の気体の体積は圧力に反比例し、絶対温度に比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q004",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "definition",
+      "sub_category": "気体の状態方程式の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "気体の状態方程式について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "圧力、体積、物質量、気体定数、絶対温度の間に成り立つ関係式であり、すべての理想気体について成り立つ。圧力かける体積イコール物質量かける気体定数かける絶対温度である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "圧力、体積、温度、質量の四つだけで成り立ち、気体定数は不要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "気体定数は不可欠。"
+        },
+        {
+          "label": "3",
+          "text": "実在気体でのみ成り立ち、理想気体には適用できない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "理想気体で厳密に成り立つ。実在気体では近似。"
+        },
+        {
+          "label": "4",
+          "text": "温度はセ氏温度で代入してもよい。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "必ず絶対温度を使う。"
+        }
+      ],
+      "explanation": "気体の状態方程式は気体の圧力、体積、物質量、絶対温度の四つの状態量を結ぶ万能な式です。三つが分かれば残りの一つが求められます。すべての理想気体について成り立ち、実在気体でも近似的に使えます。温度には必ず絶対温度（ケルビン）を使い、圧力と体積の単位にも注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "2_2_law_001",
+          "quote": "気体の「圧力・体積・温度・物質量」の4つの状態量のうち、3つが分かれば残りの1つが計算できる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q005",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "definition",
+      "sub_category": "ドルトンの分圧の法則",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ドルトンの分圧の法則について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "混合気体の全圧は各成分気体の分圧の和に等しい。分圧とは各成分気体が単独で同体積・同温度を占めたときに示す圧力である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "混合気体の全圧は各成分気体の分圧の積に等しい。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "積ではなく和。"
+        },
+        {
+          "label": "3",
+          "text": "気体同士が化学反応を起こしていても適用できる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "反応しないことが条件。"
+        },
+        {
+          "label": "4",
+          "text": "分圧とは各成分気体が異なる温度・体積を占めたときの圧力である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "同体積・同温度を占めたときの圧力。"
+        }
+      ],
+      "explanation": "ドルトンの分圧の法則は、混合気体の全圧が各成分気体の分圧の和に等しいという法則です。それぞれの気体は独立に壁に衝突して圧力を生じ、その合計が全圧になります。ただし、アンモニアと塩化水素のように混合すると反応する場合には適用できません。",
+      "evidence": [
+        {
+          "source_id": "2_3_law_001",
+          "quote": "混合気体の全圧は、各成分気体が単独で同体積・同温度を占めたときに示す圧力（分圧）の和に等しい"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_law_001"
+      ],
+      "mnemonic": "全圧は分圧の和（分身の輪）"
+    },
+    {
+      "id": "ch2_2_q006",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "definition",
+      "sub_category": "分圧とモル分率の関係",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "分圧とモル分率の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ある成分気体の分圧は全圧にその気体のモル分率を掛けたものに等しい。分圧の比は物質量の比と一致する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分圧とモル分率は無関係である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分圧はモル分率に比例する。"
+        },
+        {
+          "label": "3",
+          "text": "分圧の比は質量の比と一致する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "質量ではなく物質量（モル数）の比。"
+        },
+        {
+          "label": "4",
+          "text": "モル分率が大きいほど分圧は小さくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "モル分率が大きいほど分圧は大きい。"
+        }
+      ],
+      "explanation": "混合気体中のある成分の分圧は、全圧にモル分率を掛けることで求められます。モル分率とはその成分の物質量を全物質量で割った値です。分圧の比はそのまま物質量の比、同温同圧での体積の比にも等しくなります。空気中で窒素と酸素が四対一であれば、分圧も四対一です。",
+      "evidence": [
+        {
+          "source_id": "2_3_eq_001",
+          "quote": "分圧の比＝物質量の比＝（同温・同圧で取り出したときの）体積の比"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q007",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "definition",
+      "sub_category": "理想気体の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "理想気体について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子自身の体積をゼロ、分子間力をゼロとみなした仮想的な気体であり、気体の状態方程式に厳密に従う。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分子の体積は考慮するが、分子間力だけをゼロとした気体である。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "分子の体積もゼロとする。"
+        },
+        {
+          "label": "3",
+          "text": "実在するすべての気体は理想気体である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "理想気体は仮想的なもの。実在気体は近似的にしか一致しない。"
+        },
+        {
+          "label": "4",
+          "text": "低温・高圧の条件で実在気体は理想気体に近づく。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "高温・低圧が近づく条件。"
+        }
+      ],
+      "explanation": "理想気体とは分子自体の大きさ（体積）と分子間の引力（分子間力）をいずれもゼロとみなした仮想的な気体です。気体の状態方程式に厳密に従います。実在気体を理想気体に近づけるには高温・低圧の条件が必要です。ヘリウムや水素は分子間力が小さく分子も小さいため、理想気体に最も近い振る舞いをします。",
+      "evidence": [
+        {
+          "source_id": "2_4_def_001",
+          "quote": "分子自身の体積を0、分子間力を0とみなした、気体の状態方程式に厳密に従う仮想的な気体"
+        }
+      ],
+      "related_concept_ids": [
+        "2_4_def_001"
+      ],
+      "mnemonic": "理想に近づくには高温・低圧"
+    },
+    {
+      "id": "ch2_2_q008",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "definition",
+      "sub_category": "状態方程式からの分子量導出",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "気体の状態方程式を用いた分子量の求め方について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "気体の質量、圧力、体積、温度を測定すれば、状態方程式を変形して分子量を計算できる。分子量イコール質量かける気体定数かける絶対温度わる圧力かける体積である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "質量がわからなくても圧力と体積だけから分子量を求められる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "質量の情報が必要。"
+        },
+        {
+          "label": "3",
+          "text": "分子量は温度に依存し、温度によって値が変わる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量は物質固有の値で温度に依存しない。"
+        },
+        {
+          "label": "4",
+          "text": "気体ではなく液体の状態でないと分子量は測定できない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "気体の状態で測定する。"
+        }
+      ],
+      "explanation": "気体の状態方程式を変形すると、気体の質量、圧力、体積、温度の四つの測定値から分子量を計算できます。また密度を使えば、分子量イコール密度かける気体定数かける絶対温度わる圧力、という形でも求められます。この方法は未知の気体の同定に非常に有用です。",
+      "evidence": [
+        {
+          "source_id": "2_2_eq_001",
+          "quote": "気体の質量m、圧力p、体積V、温度Tを測定すれば、その気体の分子量Mを計算できます"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q009",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "definition",
+      "sub_category": "圧縮率因子の定義",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "圧縮率因子ゼットについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "実在気体の状態方程式への一致度を示す指標であり、理想気体では常に一である。ゼットイコール圧力かける体積わる物質量かける気体定数かける絶対温度で表される。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "理想気体ではゼットがゼロになる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ゼロではなく一。"
+        },
+        {
+          "label": "3",
+          "text": "ゼットは常にすべての気体で一である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "実在気体では一からずれる。"
+        },
+        {
+          "label": "4",
+          "text": "ゼットが一より大きいことはありえない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高圧では分子体積の影響で一を超えることがある。"
+        }
+      ],
+      "explanation": "圧縮率因子ゼットは実在気体が理想気体からどれだけずれているかを示す指標です。理想気体では常にゼットが一ですが、実在気体では条件によって一からずれます。低圧で分子間力が効いてくるとゼットは一より小さくなり、高圧で分子体積が無視できなくなるとゼットは一より大きくなります。",
+      "evidence": [
+        {
+          "source_id": "2_4_eq_001",
+          "quote": "理想気体では常にZ=1となる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_4_eq_001",
+        "2_4_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q010",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "definition",
+      "sub_category": "水上置換法と分圧",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水上置換法で捕集した気体の圧力について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水上置換で集めた気体は水蒸気との混合気体であり、目的気体の分圧は全圧（大気圧）から水蒸気圧を引いて求める。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水上置換で集めた気体には水蒸気は混ざらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水蒸気が必ず含まれる。"
+        },
+        {
+          "label": "3",
+          "text": "全圧に水蒸気圧を足して目的気体の分圧を求める。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "足すのではなく引く。"
+        },
+        {
+          "label": "4",
+          "text": "水面の高さを合わせる必要はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "内外の水面一致が全圧＝大気圧の条件。"
+        }
+      ],
+      "explanation": "水上置換法で気体を集めると、水から蒸発した水蒸気も必ず混ざります。捕集容器内の全圧は大気圧と等しくなり（内外の水面を一致させた場合）、目的気体の分圧は大気圧から飽和水蒸気圧を差し引いて求めます。この操作を忘れると物質量の計算で確実に誤答になります。",
+      "evidence": [
+        {
+          "source_id": "2_3_proc_001",
+          "quote": "全圧(大気圧)から水蒸気圧を引いて求める"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q011",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "property",
+      "sub_category": "理想気体に近い実在気体",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "理想気体に近い振る舞いをする実在気体として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヘリウムや水素。分子間力が小さく分子のサイズも小さいため、理想気体に最も近い振る舞いをする。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アンモニア。極性分子で水素結合を形成するため理想気体に最も近い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アンモニアは分子間力が大きく理想気体からのずれが大きい。"
+        },
+        {
+          "label": "3",
+          "text": "二酸化炭素。分子量が大きいため理想気体に最も近い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量が大きいとファンデルワールス力が強く理想からずれる。"
+        },
+        {
+          "label": "4",
+          "text": "標準状態で最もモル体積がずれているアンモニアが理想気体に最も近い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ずれが大きいということは理想から最も遠い。"
+        }
+      ],
+      "explanation": "理想気体に近い実在気体は分子間力が小さく分子自身のサイズも小さい気体です。ヘリウムは単原子分子で最も小さく、水素も二原子分子の中で最も小さいため、いずれも理想気体に極めて近い振る舞いをします。逆にアンモニアは極性分子で水素結合があるため、標準状態でのモル体積が二十二・〇九リットル毎モルと理想値の二十二・四リットルからのずれが最も大きいです。",
+      "evidence": [
+        {
+          "source_id": "2_4_def_001",
+          "quote": "ヘリウムや水素は分子間力が小さく分子も小さいため、実在気体の中で最も理想気体に近い"
+        }
+      ],
+      "related_concept_ids": [
+        "2_4_def_001",
+        "2_0_sub_001",
+        "2_0_sub_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q012",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "property",
+      "sub_category": "アンモニアの理想気体からのずれ",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アンモニアが理想気体から大きくずれる理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アンモニアは極性分子であり水素結合を形成するため分子間力が大きく、標準状態でのモル体積が理想値より小さくなる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アンモニアは無極性分子であるため分子間力が全くなく理想気体と一致する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "極性分子であり分子間力は大きい。"
+        },
+        {
+          "label": "3",
+          "text": "アンモニアは分子量が非常に大きいためずれる。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "分子量は比較的小さい。水素結合が主因。"
+        },
+        {
+          "label": "4",
+          "text": "アンモニアは水に溶けにくいためずれる。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "水に極めてよく溶ける。"
+        }
+      ],
+      "explanation": "アンモニアは窒素原子に水素原子が三つ結合した極性分子であり、分子間で水素結合を形成します。そのため分子間力が大きく、気体分子同士が互いに引き合って理想気体の状態方程式からのずれが大きくなります。標準状態でのモル体積は二十二・〇九リットルと、理想値（約二十二・四リットル）より小さくなっています。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_003",
+          "quote": "極性分子であり水素結合を形成するため、分子間力が大きく、理想気体からのずれが大きい"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_003",
+        "2_4_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q013",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "property",
+      "sub_category": "圧縮率因子と分子間力・分子体積",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "圧縮率因子ゼットと圧力の関係について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子間力の影響が大きいとゼットは一より小さくなり、高圧で分子自身の体積が無視できなくなるとゼットは一より大きくなる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "分子間力が大きいとゼットは一より大きくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子間力の影響ではゼットは一より小さくなる。"
+        },
+        {
+          "label": "3",
+          "text": "圧力を上げても常にゼットは一のままである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "圧力によってゼットは変化する。"
+        },
+        {
+          "label": "4",
+          "text": "分子の体積の影響ではゼットは一より小さくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子体積の影響ではゼットは一より大きくなる。"
+        }
+      ],
+      "explanation": "実在気体の圧縮率因子ゼットは圧力によって変化します。比較的低い圧力では分子間力（引力）の影響で気体は理想気体よりも圧縮され、ゼットは一より小さくなります。しかし超高圧になると分子自身の体積が無視できなくなり、気体は理想気体よりも大きな体積を占めるようになるためゼットは一を超えます。",
+      "evidence": [
+        {
+          "source_id": "2_4_eq_001",
+          "quote": "分子間力が影響するとZは1より小さくなり、分子の大きさが影響する高圧条件ではZは1より大きくなります"
+        }
+      ],
+      "related_concept_ids": [
+        "2_4_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q014",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "property",
+      "sub_category": "二酸化炭素の液化しやすさ",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "二酸化炭素の液化しやすさについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "二酸化炭素は分子量が比較的大きくファンデルワールス力が強いため、常温付近でも高圧で容易に液化する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "二酸化炭素は分子間力が極めて小さいため液化しにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量が大きくファンデルワールス力は比較的強い。"
+        },
+        {
+          "label": "3",
+          "text": "二酸化炭素は水素結合を形成するため液化しやすい。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "無極性分子であり水素結合は形成しない。ファンデルワールス力が原因。"
+        },
+        {
+          "label": "4",
+          "text": "すべての気体は同じ条件で液化する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "液化条件は物質ごとに異なる。"
+        }
+      ],
+      "explanation": "二酸化炭素は分子量四十四と比較的大きいため、ファンデルワールス力が強く、常温付近でも高圧をかけるだけで容易に液化（凝縮）します。圧縮率因子のグラフでは圧力が低い段階でゼットが大きく一を下回り、分子間力の影響が顕著であることがわかります。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_004",
+          "quote": "分子量が比較的大きいためファンデルワールス力が強く、常温付近でも高圧で容易に液化（凝縮）する"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_004",
+        "2_4_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q015",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "property",
+      "sub_category": "ボイルの法則の限界",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ボイルの法則が適用できない場合として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "気体が圧縮されて凝縮し液体になってしまった場合。液体になると蒸気圧一定となりボイルの法則は成り立たない。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "温度が一定に保たれている場合にボイルの法則は使えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度一定はボイルの法則の条件であり、まさに使える場合。"
+        },
+        {
+          "label": "3",
+          "text": "理想気体にはボイルの法則は適用できない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "理想気体で成り立つ法則。"
+        },
+        {
+          "label": "4",
+          "text": "低圧の気体にはボイルの法則は使えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "低圧は理想気体に近い条件であり使える。"
+        }
+      ],
+      "explanation": "ボイルの法則は気体が気体のまま存在している限り成り立ちますが、圧力を上げすぎて気体が凝縮して液体になると適用できません。液体状態では蒸気圧が一定になるため、いくら体積を小さくしても圧力は蒸気圧以上にはなりません。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_001",
+          "quote": "気体が凝縮して液体になってしまうと、この法則は適用できない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q016",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "property",
+      "sub_category": "気体定数の単位の注意",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "気体の状態方程式における気体定数に関して、誤りを含む記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "気体定数の値は圧力と体積の単位の組み合わせによって変わる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "圧力がパスカル、体積がリットルのとき、気体定数は八・三かける十の三乗を用いる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "単位の不一致による計算ミスに注意が必要である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "気体定数はどんな単位系でも同じ数値で使える。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "気体定数の数値は単位系によって異なる。"
+        }
+      ],
+      "explanation": "気体定数の値は使用する圧力と体積の単位によって変わります。圧力をパスカル、体積をリットルで計算する場合は八・三かける十の三乗を使いますが、圧力を気圧で使う場合は別の値になります。単位の不一致は計算ミスの最も多い原因であり、常に注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "2_2_law_001",
+          "quote": "圧力の単位がPa、体積の単位がLのとき、Rは8.3×10^3を用いる。単位の不一致による計算ミスに注意"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q017",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "property",
+      "sub_category": "高温低圧と理想気体",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "実在気体が理想気体に近づく条件として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "高温かつ低圧の条件。高温では分子の運動が激しく分子間力の影響が小さくなり、低圧では分子間の距離が大きく分子の体積が無視できるため。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "低温かつ高圧の条件。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "これは理想から最も遠い条件。"
+        },
+        {
+          "label": "3",
+          "text": "低温かつ低圧の条件。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "低圧は正しいが低温は逆。"
+        },
+        {
+          "label": "4",
+          "text": "高温かつ高圧の条件。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "高温は正しいが高圧では分子体積の影響が大きくなる。"
+        }
+      ],
+      "explanation": "実在気体を理想気体に近づけるには高温・低圧が必要です。高温にすると分子の運動エネルギーが大きくなり、分子間力の影響が相対的に小さくなります。低圧にすると分子間の平均距離が大きくなり、分子自身の体積も全体に比べて無視できるようになります。逆に低温・高圧では液化が起こり理想から最も外れます。",
+      "evidence": [
+        {
+          "source_id": "2_4_def_001",
+          "quote": "実在気体を理想気体とみなせるのは、高温・低圧の条件"
+        }
+      ],
+      "related_concept_ids": [
+        "2_4_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q018",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "property",
+      "sub_category": "モル体積の比較",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "標準状態における各気体のモル体積の比較として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水素のモル体積は二十二・四二リットル毎モル、ヘリウムは二十二・四三リットル毎モルとほぼ理想的な二十二・四に近いが、アンモニアは二十二・〇九リットル毎モルと小さい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アンモニアのモル体積が最も大きく理想気体に最も近い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アンモニアは最も小さく理想から遠い。"
+        },
+        {
+          "label": "3",
+          "text": "すべての実在気体で標準状態のモル体積は完全に二十二・四リットルである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "実在気体はわずかにずれる。"
+        },
+        {
+          "label": "4",
+          "text": "モル体積の差は分子間力とは関係がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子間力が大きいほどモル体積は理想値から下にずれる。"
+        }
+      ],
+      "explanation": "標準状態でのモル体積を比較すると、水素やヘリウムは理想値の二十二・四リットルにほぼ一致しますが、アンモニアは二十二・〇九リットルとかなり小さくなっています。これはアンモニアの分子間力が大きく、分子同士が引き合って体積が減少するためです。モル体積の理想値からのずれは分子間力の大きさの指標になります。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_001",
+          "quote": "モル体積 22.42 L/mol"
+        },
+        {
+          "source_id": "2_0_sub_003",
+          "quote": "モル体積 22.09 L/mol"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_001",
+        "2_0_sub_002",
+        "2_0_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q019",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "classification",
+      "sub_category": "ボイルとシャルルの法則の分類",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ボイルの法則とシャルルの法則の成立条件の違いとして、正しい組み合わせを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ボイルの法則は温度一定・物質量一定が条件であり、シャルルの法則は圧力一定・物質量一定が条件である。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ボイルの法則は圧力一定が条件であり、シャルルの法則は温度一定が条件である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "条件が逆。"
+        },
+        {
+          "label": "3",
+          "text": "どちらの法則も温度一定が条件である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "シャルルの法則は圧力一定。"
+        },
+        {
+          "label": "4",
+          "text": "どちらの法則も物質量が変化しても成り立つ。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "どちらも物質量一定が条件。"
+        }
+      ],
+      "explanation": "ボイルの法則は温度と物質量が一定のとき、体積が圧力に反比例するという法則です。一方シャルルの法則は圧力と物質量が一定のとき、体積が絶対温度に比例するという法則です。両方とも物質量が一定であることが共通の前提条件であり、それぞれ固定する変数が異なります。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_001",
+          "quote": "温度(T)が一定、気体の物質量(n)が一定"
+        },
+        {
+          "source_id": "2_1_law_002",
+          "quote": "圧力(p)が一定、気体の物質量(n)が一定"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_001",
+        "2_1_law_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q020",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "classification",
+      "sub_category": "理想気体からのずれの原因分類",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "実在気体が理想気体からずれる二つの原因の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子間力（引力）の存在と、分子自身の体積が有限であること。前者はゼットを一より小さくし、後者はゼットを一より大きくする。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "温度の存在と圧力の存在。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "温度と圧力は理想気体でも関係する。ずれの原因は分子間力と分子体積。"
+        },
+        {
+          "label": "3",
+          "text": "分子間力は常にゼットを大きくし、分子体積はゼットを小さくする。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。分子間力→小、分子体積→大。"
+        },
+        {
+          "label": "4",
+          "text": "ずれの原因は一つしかない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二つの独立した原因がある。"
+        }
+      ],
+      "explanation": "実在気体が理想からずれる原因は二つあります。一つ目は分子間力（引力）で、分子同士が引き合うため体積が理想より小さくなりゼットは一より小さくなります。二つ目は分子自身の体積で、高圧下では分子の大きさが無視できなくなり、体積が理想より大きくなってゼットは一を超えます。",
+      "evidence": [
+        {
+          "source_id": "2_4_eq_001",
+          "quote": "分子間力が影響するとZは1より小さく、分子の大きさが影響する高圧条件ではZは1より大きく"
+        }
+      ],
+      "related_concept_ids": [
+        "2_4_eq_001",
+        "2_4_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q021",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "procedure",
+      "sub_category": "デュマ法の手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "蒸気密度法（デュマ法）の実験手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "丸底フラスコに液体試料を入れアルミ箔で蓋をして穴を開け、熱湯に浸けて完全に気化させた後、取り出して冷却し凝縮した液体の質量を測定する。気体の圧力は大気圧に等しい。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "フラスコを密閉して加熱し、蒸気を逃さない状態で質量を測定する。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "穴から余分な蒸気を逃がして大気圧に等しくするのがポイント。"
+        },
+        {
+          "label": "3",
+          "text": "高温のまま質量を測定する。冷却する必要はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "冷却して凝縮させてから測定する。高温のままでは浮力の影響で不正確。"
+        },
+        {
+          "label": "4",
+          "text": "試料の沸点が測定温度より高くても実施できる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "試料の沸点が測定温度より低いことが必要。"
+        }
+      ],
+      "explanation": "デュマ法は揮発性液体の分子量を測定する方法です。フラスコにアルミ箔で蓋をして小さな穴を開けるのは、気化した試料で内部を満たしつつ余分な蒸気を逃がして内圧を大気圧と等しくするためです。完全に気化した後に取り出して冷却し、凝縮した液体の質量を測ります。この質量と気体だった時の体積、温度、圧力を状態方程式に代入して分子量を求めます。",
+      "evidence": [
+        {
+          "source_id": "2_2_proc_001",
+          "quote": "余分な蒸気を穴から逃がして内圧を大気圧と等しく保つため"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_proc_001",
+        "2_2_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q022",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "procedure",
+      "sub_category": "水上置換法の手順",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水上置換法で集めた気体から正しい物質量を求める手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "まず捕集容器内外の水面を一致させ全圧を大気圧とする。次にその温度での飽和水蒸気圧を引いて目的気体の分圧を求め、最後にこの分圧を用いて状態方程式で物質量を計算する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "全圧をそのまま使って状態方程式で物質量を計算すればよい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水蒸気圧を引かないと実際より多い値になる。"
+        },
+        {
+          "label": "3",
+          "text": "水面の高さを合わせる代わりに、全圧にさらに水蒸気圧を足す。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "足すのではなく引く。"
+        },
+        {
+          "label": "4",
+          "text": "水に溶けやすい気体（アンモニアなど）でも水上置換法で正確に捕集できる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "水に溶けにくい気体でなければ正確に捕集できない。"
+        }
+      ],
+      "explanation": "水上置換法での計算では三つのステップが重要です。まず内外の水面を合わせて全圧イコール大気圧とします。次に全圧から飽和水蒸気圧を差し引いて目的気体の分圧を求めます。最後にこの正しい分圧で状態方程式を使います。水蒸気圧を引き忘れると物質量が実際より多く計算されてしまいます。",
+      "evidence": [
+        {
+          "source_id": "2_3_proc_001",
+          "quote": "捕集容器の内側と外側の水面を一致させ...全圧(大気圧)からその温度での飽和水蒸気圧を引く"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q023",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "confusion",
+      "sub_category": "ボイルとシャルルの混同",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "ボイルの法則に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度一定のとき、気体の体積は圧力に反比例する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "圧力を二倍にすると体積は半分になる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "圧力と体積の積は一定である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "圧力一定のとき、気体の体積は温度に比例する。",
+          "is_correct": true,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これはシャルルの法則。ボイルの法則の条件は温度一定。"
+        }
+      ],
+      "explanation": "ボイルの法則は温度一定が条件であり、圧力と体積の関係を述べます。選択肢四は「圧力一定で体積が温度に比例」というシャルルの法則の内容です。ボイルの法則とシャルルの法則の条件の違い（温度一定か圧力一定か）は試験でよく混同されるポイントです。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_001",
+          "quote": "一定温度で、一定量の気体の体積は圧力に反比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_001",
+        "2_1_law_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q024",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "confusion",
+      "sub_category": "セ氏温度での計算ミス",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "気体の法則の計算に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "シャルルの法則では温度を絶対温度で表す必要がある。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "二十七度は三百ケルビンに変換してから計算する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "気体の状態方程式でも温度は絶対温度を使う。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "シャルルの法則ではセ氏温度をそのまま使ってよい。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "セ氏温度をそのまま使うのは最も多い計算ミス。"
+        }
+      ],
+      "explanation": "気体に関するあらゆる計算式で温度は必ず絶対温度（ケルビン）を使います。セ氏温度をそのまま代入するのは非常に多い計算ミスです。たとえば零度をゼロとして代入すると体積もゼロになるという明らかにおかしい結果になります。必ず二百七十三を加えて変換してください。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_002",
+          "quote": "計算時にセルシウス温度（℃）をそのまま使ってしまうミスが非常に多い。必ずKに直すこと"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_002",
+        "2_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q025",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "confusion",
+      "sub_category": "分圧の和と積の混同",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "ドルトンの分圧の法則に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "全圧は各成分気体の分圧の和に等しい。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "分圧とは各成分が単独で同体積・同温度を占めたときの圧力である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "混合気体では分圧の比がモル分率の比と等しい。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "全圧は各成分気体の分圧の積に等しい。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "積ではなく和。"
+        }
+      ],
+      "explanation": "ドルトンの分圧の法則では全圧は各成分気体の分圧の和であり、積ではありません。これは各気体が独立に壁に衝突して生じる圧力がそのまま足し合わされるという物理的な意味から理解できます。和と積の混同は基本的ですが確実に得点を失うため注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "2_3_law_001",
+          "quote": "p = pA + pB + pC"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q026",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "confusion",
+      "sub_category": "ボイル・シャルルの適用条件の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ボイル・シャルルの法則に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "圧力も温度も同時に変化する場合に適用できる。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "気体の物質量が一定であることが条件である。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "変化前後で圧力かける体積わる絶対温度が等しい。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "コックを開けて気体を外に逃がした場合にも適用できる。",
+          "is_correct": true,
+          "trap_type": "condition_change",
+          "trap_detail": "物質量が変化するため適用できない。"
+        }
+      ],
+      "explanation": "ボイル・シャルルの法則は気体の物質量が一定であることが前提です。コックを開けて気体を逃がすと物質量が変わるため適用できません。同様に化学反応で気体分子の数が増減する場合も適用不可です。密閉容器で物質量が保存される場合にのみ使えます。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_003",
+          "quote": "容器のコックを開けて気体を外に逃がした場合には適用できない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q027",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "confusion",
+      "sub_category": "水上置換法での水蒸気圧の扱い",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "水上置換法に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "捕集した気体は水蒸気との混合気体になっている。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "内外の水面を一致させると全圧は大気圧に等しい。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "水上置換法は水に溶けにくい気体に適用する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "目的気体の分圧は大気圧そのものであり、水蒸気圧を考慮する必要はない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "水蒸気が混ざっているため、大気圧から水蒸気圧を引く必要がある。"
+        }
+      ],
+      "explanation": "水上置換法では集めた気体に水蒸気が必ず含まれるため、目的気体の分圧は大気圧から水蒸気圧を引いた値になります。この減算を忘れると物質量の計算が過大になります。水蒸気圧は温度に依存するため、測定時の温度に対応する飽和水蒸気圧を用いる必要があります。",
+      "evidence": [
+        {
+          "source_id": "2_3_proc_001",
+          "quote": "大気圧と水面を一致させたときのフラスコ内の圧力から水蒸気の圧力を引かないと正しい圧力が計算できません"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q028",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "confusion",
+      "sub_category": "分子量の温度依存性の誤り",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "気体の分子量に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子量は物質固有の値であり測定条件が変わっても値は同じである。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "気体の質量、圧力、体積、温度から分子量を求めることができる。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "密度から分子量を計算することも可能である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "分子量は温度によって変化し、高温ほど分子量は大きくなる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "分子量は物質固有の値であり温度で変化しない。"
+        }
+      ],
+      "explanation": "分子量は物質の分子を構成する原子の原子量の総和であり、物質ごとに決まった固有の値です。温度や圧力などの測定条件によって変わることはありません。状態方程式から分子量を求める計算では温度や圧力の値を使いますが、正しく計算すればどの条件で測定しても同じ分子量が得られます。",
+      "evidence": [
+        {
+          "source_id": "2_2_eq_001",
+          "quote": "その気体の分子量Mを計算できます"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q029",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "confusion",
+      "sub_category": "理想気体に近い気体の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "理想気体に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヘリウムは理想気体に非常に近い振る舞いをする。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "水素も理想気体に近い振る舞いをする。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "高温・低圧の条件で実在気体は理想気体に近づく。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "アンモニアは理想気体に最も近い実在気体である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "アンモニアは極性・水素結合のため理想から最もずれる。"
+        }
+      ],
+      "explanation": "アンモニアは極性分子であり水素結合を形成するため分子間力が大きく、理想気体からのずれが最も大きい気体の一つです。標準状態でのモル体積も二十二・〇九リットルと理想値から大きくずれています。理想気体に最も近いのはヘリウムや水素のように分子間力が極めて小さい気体です。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_003",
+          "quote": "極性分子であり水素結合を形成するため、分子間力が大きく、理想気体からのずれが大きい"
+        }
+      ],
+      "related_concept_ids": [
+        "2_4_def_001",
+        "2_0_sub_003"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q030",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "confusion",
+      "sub_category": "比例と反比例の混同",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "気体の法則に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ボイルの法則では体積は圧力に反比例する。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "シャルルの法則では体積は絶対温度に比例する。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "ボイル・シャルルの法則は上の二つを統合したものである。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "シャルルの法則では体積は絶対温度に反比例する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "反比例ではなく比例。"
+        }
+      ],
+      "explanation": "シャルルの法則は体積が絶対温度に比例するという法則です。反比例ではありません。温度を二倍にすれば体積も二倍になります。ボイルの法則（圧力に反比例）とシャルルの法則（温度に比例）の比例・反比例の区別は基本中の基本ですが混同しがちです。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_002",
+          "quote": "一定量の気体の体積は絶対温度に比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q031",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "procedure",
+      "sub_category": "混合気体の全圧計算手順",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "異なる容器に入った気体をコックで接続して混合したとき、全圧を求める手順として正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "各気体の物質量を状態方程式で求め、混合後の全体積と温度を使って全物質量から全圧を計算する。または混合後の各分圧をドルトンの法則で足す。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "各容器の圧力をそのまま足せば全圧になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "体積が変わるため単純な足し算ではない。"
+        },
+        {
+          "label": "3",
+          "text": "混合前の圧力の平均が全圧になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "体積が異なれば平均にはならない。"
+        },
+        {
+          "label": "4",
+          "text": "混合後の全圧は混合前より必ず低くなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "低くなるとは限らない。"
+        }
+      ],
+      "explanation": "異なる容器の気体をコックを開けて混合するとき、各気体は新しい全体積に広がります。各気体の物質量は保存されるため、それぞれの分圧を混合後の条件で再計算し、ドルトンの法則で合計すれば全圧が求まります。単純に圧力を足すのは体積が変わることを無視した誤りです。",
+      "evidence": [
+        {
+          "source_id": "2_3_law_001",
+          "quote": "異なる容器に入った気体をコックを開いて混合した後の全圧・分圧を求める問題"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_law_001",
+        "2_1_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q032",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "procedure",
+      "sub_category": "密度から分子量を求める手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "気体の密度から分子量を求める方法として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "密度、気体定数、絶対温度、圧力を用いて、分子量イコール密度かける気体定数かける絶対温度わる圧力で求められる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "密度だけがわかれば分子量が求められる。温度や圧力は不要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度と圧力の情報も必要。"
+        },
+        {
+          "label": "3",
+          "text": "密度が大きい気体ほど分子量が小さい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "同じ条件ならば密度が大きいほど分子量は大きい。"
+        },
+        {
+          "label": "4",
+          "text": "この計算は液体にのみ適用でき気体には使えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "気体の状態方程式から導かれた関係式。"
+        }
+      ],
+      "explanation": "気体の状態方程式で質量を体積で割った密度に置き換えると、分子量イコール密度かける気体定数かける絶対温度わる圧力という式が得られます。この式を使えば密度と温度と圧力の三つの測定値から分子量を簡単に計算できます。同じ温度・圧力では密度が大きい気体ほど分子量が大きい関係にあります。",
+      "evidence": [
+        {
+          "source_id": "2_2_eq_001",
+          "quote": "M = dRT/p と変形して密度から直接分子量を求めることができる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q033",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "classification",
+      "sub_category": "水上置換法が使える気体の分類",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "水上置換法で捕集できる気体の条件として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水に溶けにくい気体であること。水素や酸素などが適している。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水に極めてよく溶ける気体が最も適している。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水に溶けやすいと捕集できない。"
+        },
+        {
+          "label": "3",
+          "text": "空気より軽い気体のみに限られる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "密度に関係なく水に溶けにくければ使える。"
+        },
+        {
+          "label": "4",
+          "text": "アンモニアは水上置換法で最も正確に捕集できる。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "アンモニアは水に非常に溶けやすいため水上置換には不適。"
+        }
+      ],
+      "explanation": "水上置換法は水に溶けにくい気体の捕集に適した方法です。水素や酸素などが典型例です。アンモニアのように水に極めてよく溶ける気体は水に吸収されてしまうため水上置換法では正確に捕集できません。そのような気体は上方置換法や下方置換法を使います。",
+      "evidence": [
+        {
+          "source_id": "2_3_proc_001",
+          "quote": "水に溶けにくい気体であること"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q034",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "classification",
+      "sub_category": "三つの法則の関係分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ボイルの法則、シャルルの法則、ボイル・シャルルの法則の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ボイルの法則とシャルルの法則を統合したものがボイル・シャルルの法則であり、さらにアボガドロの法則を加えると気体の状態方程式が導かれる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "気体の状態方程式からボイルの法則やシャルルの法則は導けない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "状態方程式は最も一般的な式であり、条件を固定すれば各法則が導ける。"
+        },
+        {
+          "label": "3",
+          "text": "ボイル・シャルルの法則は気体の状態方程式より一般的である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "状態方程式の方が一般的。物質量の変化も扱える。"
+        },
+        {
+          "label": "4",
+          "text": "これらの三つの法則はそれぞれ独立しており関係がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "階層的な関係がある。"
+        }
+      ],
+      "explanation": "気体の法則は階層的な関係にあります。ボイルの法則（温度一定・圧力反比例）とシャルルの法則（圧力一定・温度比例）を統合するとボイル・シャルルの法則になります。これにアボガドロの法則（同温同圧で同体積に同数の分子）を組み合わせると、最も一般的な気体の状態方程式が得られます。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_003",
+          "quote": "ボイル・シャルルの法則にアボガドロの法則を組み合わせることで状態方程式が導出される"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_001",
+        "2_1_law_002",
+        "2_1_law_003",
+        "2_2_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q035",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "classification",
+      "sub_category": "化学反応する混合気体の分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ドルトンの分圧の法則が適用できない場合として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "アンモニアと塩化水素のように混合すると化学反応して固体（塩化アンモニウム）が生じる場合。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "窒素と酸素を混合する場合（常温で反応しない）。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応しないため適用できる。"
+        },
+        {
+          "label": "3",
+          "text": "異なる容器の気体をコックで接続する場合。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応しなければ適用可能。"
+        },
+        {
+          "label": "4",
+          "text": "全圧が大気圧に等しい場合。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "圧力の大きさに関係なく適用可能。"
+        }
+      ],
+      "explanation": "ドルトンの分圧の法則は気体同士が化学反応しないことが前提です。アンモニアと塩化水素を混合すると白煙を生じて固体の塩化アンモニウムが生成するため、気体の分子数が減少し分圧の法則をそのまま適用することはできません。反応しない気体の混合であれば問題なく使えます。",
+      "evidence": [
+        {
+          "source_id": "2_3_law_001",
+          "quote": "アンモニアと塩化水素のように、混合すると反応して固体になる場合は適用できない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q036",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "procedure",
+      "sub_category": "デュマ法のアルミ箔に穴を開ける理由",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "デュマ法でアルミ箔に小さな穴を開ける理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "気化した試料でフラスコ内を満たしつつ、余分な蒸気を穴から逃がしてフラスコ内の圧力を大気圧と等しく保つため。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "外部の空気を中に入れて気体の密度を高めるため。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "空気を入れるのではなく蒸気を逃がすため。"
+        },
+        {
+          "label": "3",
+          "text": "フラスコが加熱で破裂するのを防ぐことだけが目的である。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "破裂防止も兼ねるが本質的な目的ではない。"
+        },
+        {
+          "label": "4",
+          "text": "穴は開けず完全に密封するのが正しい手順である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "穴から蒸気を逃がすのが重要な手順。"
+        }
+      ],
+      "explanation": "デュマ法では穴付きのアルミ箔で蓋をすることが鍵です。穴があるため加熱時に気化した試料蒸気のうち余分な分が穴から逃げ、フラスコ内の圧力は大気圧と等しく保たれます。この結果、フラスコの容積分だけの試料蒸気が大気圧下で存在することになり、状態方程式で分子量を計算できます。",
+      "evidence": [
+        {
+          "source_id": "2_2_proc_001",
+          "quote": "気化した試料でフラスコ内を満たしつつ、余分な蒸気を穴から逃がして内圧を大気圧と等しく保つため"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q037",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "property",
+      "sub_category": "ボイルの法則の分子論的説明",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ボイルの法則が成り立つ分子論的な理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "体積を半分にすると分子が壁に衝突する回数が二倍になるため圧力が二倍になる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "体積を半分にすると分子の速度が二倍になるため圧力が二倍になる。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "速度は変わらない（温度一定）。衝突回数が変わる。"
+        },
+        {
+          "label": "3",
+          "text": "体積を半分にすると分子の数が半分になるため圧力は変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密閉容器では分子数は変わらない。"
+        },
+        {
+          "label": "4",
+          "text": "体積を半分にすると温度が上がるため圧力が増す。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "ボイルの法則の条件は温度一定。"
+        }
+      ],
+      "explanation": "ボイルの法則は分子運動論から説明できます。温度が一定なので分子の平均速度は変わりません。体積を半分にすると単位体積あたりの分子数が二倍になり、壁の単位面積あたりに衝突する分子の回数が二倍になるため、圧力が二倍になります。分子の速度が変わるのではなく衝突頻度が変わるのがポイントです。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_001",
+          "quote": "体積を半分にすると、中の気体分子が壁に衝突する回数が2倍になり、圧力が2倍になる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q038",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "property",
+      "sub_category": "シャルルの法則の分子論的説明",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "シャルルの法則が成り立つ分子論的な理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度を上げると分子の運動が激しくなり、同じ圧力を保つには体積が膨張する必要があるため。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "温度を上げると分子の数が増えるため体積が大きくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度で分子の数は変わらない。"
+        },
+        {
+          "label": "3",
+          "text": "温度を上げると分子間力が強くなるため体積が収縮する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子間力は弱くなり、膨張する。"
+        },
+        {
+          "label": "4",
+          "text": "温度を上げても分子の運動には変化がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "運動が激しくなる。"
+        }
+      ],
+      "explanation": "シャルルの法則は温度上昇による分子の運動エネルギーの増加で説明できます。温度を上げると分子の平均速度が大きくなり、壁への衝突が激しくなります。圧力を一定に保つためには容器が膨張して分子のぶつかる頻度を下げなければなりません。その結果、温度に比例して体積が増加します。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_002",
+          "quote": "気体を温めると分子の動きが激しくなり、同じ圧力を保とうとすれば膨張して体積が大きくなる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_002"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q039",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "confusion",
+      "sub_category": "デュマ法で冷却しない誤り",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "デュマ法（蒸気密度法）に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "試料の沸点が測定温度より低いことが必要条件である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "穴の開いたアルミ箔で蓋をする。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "冷却して凝縮させてから質量を測定する。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "フラスコを高温のまま質量を測定すれば十分である。冷却は不要である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "高温のまま測ると浮力の影響で正確な質量が得られない。"
+        }
+      ],
+      "explanation": "デュマ法では加熱後にフラスコを取り出して冷却し、蒸気を凝縮させてから質量を測定する必要があります。高温のまま測定すると、フラスコ内の高温の気体の密度が周囲の空気より小さくなり浮力が生じるため、正確な質量測定ができません。冷却は正確な実験結果を得るために不可欠なステップです。",
+      "evidence": [
+        {
+          "source_id": "2_2_proc_001",
+          "quote": "フラスコを冷やさずに高温のまま質量を測ろうとすると、空気に比べて密度が小さくなり浮力の影響で正確な質量が測定できない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q040",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "confusion",
+      "sub_category": "絶対零度到達の誤解",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "絶対温度に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "絶対零度はマイナス二百七十三度である。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "絶対温度はマイナスの値にはならない。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "セ氏温度に二百七十三を加えると絶対温度になる。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "実在の気体は絶対零度に達すると体積が完全にゼロになる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "実在気体は絶対零度に達する前に液化・凝固し体積ゼロにはならない。"
+        }
+      ],
+      "explanation": "シャルルの法則の外挿では気体の体積がゼロになる温度として絶対零度が定義されますが、実在の気体はそこに達する前に液化や凝固してしまいます。したがって体積が完全にゼロになることは実際にはありえません。絶対零度はあくまで理論上の最低温度という概念的な基準です。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_001",
+          "quote": "実際の気体は絶対零度に達する前に液化・凝固するため、体積が完全に0になることはない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q041",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "mnemonic",
+      "sub_category": "絶対温度の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "絶対温度の語呂合わせとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "『兄さん（二七三）を足して絶対温度』で覚える。セ氏温度に二百七十三を加えるとケルビンになる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "百を足すと絶対温度になる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "百ではなく二百七十三。"
+        },
+        {
+          "label": "3",
+          "text": "この語呂合わせは分圧の計算に関するものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "絶対温度の変換に関する語呂合わせ。"
+        },
+        {
+          "label": "4",
+          "text": "セ氏温度から二百七十三を引くと絶対温度になる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "引くのではなく加える。"
+        }
+      ],
+      "explanation": "『兄さん（にーさんは二七三）を足して絶対温度』は、セ氏温度に二百七十三を加えると絶対温度（ケルビン）になるという変換式を覚えるための語呂合わせです。たとえば二十七度なら二百七十三を足して三百ケルビン、零度なら二百七十三ケルビンです。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_001",
+          "quote": "兄さん（273）を足して絶対温度"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_001"
+      ],
+      "mnemonic": "兄さんを足して絶対温度"
+    },
+    {
+      "id": "ch2_2_q042",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "mnemonic",
+      "sub_category": "分圧の法則の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "分圧の法則の覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "『全圧は分圧の和（分身の輪）』で覚える。混合気体の全圧は各成分の分圧を足し合わせたものであることを意味する。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "『全圧は分圧の積』で覚える。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "積ではなく和。"
+        },
+        {
+          "label": "3",
+          "text": "この語呂合わせはシャルルの法則に関するものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "分圧の法則に関する語呂合わせ。"
+        },
+        {
+          "label": "4",
+          "text": "分圧の比は質量の比に等しいことを覚えるものである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "物質量（モル数）の比。"
+        }
+      ],
+      "explanation": "『全圧は分圧の和（分身の輪）』はドルトンの分圧の法則を覚えるための語呂合わせです。各成分気体の分圧（分身）がつながって環（輪）のように全圧を構成するイメージです。分圧の比はモル分率の比と等しく、物質量の比や同温同圧での体積の比にも等しくなります。",
+      "evidence": [
+        {
+          "source_id": "2_3_law_001",
+          "quote": "全圧は分圧の和（分身の輪）"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_law_001"
+      ],
+      "mnemonic": "全圧は分圧の和（分身の輪）"
+    },
+    {
+      "id": "ch2_2_q043",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "mnemonic",
+      "sub_category": "理想気体の条件の覚え方",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "理想気体に近づける条件の覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "『高温・低圧で理想に近づく』で覚える。高温で分子間力の影響が減り、低圧で分子体積が無視できるため。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "『低温・高圧で理想に近づく』で覚える。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。低温・高圧では理想から遠ざかる。"
+        },
+        {
+          "label": "3",
+          "text": "理想気体の条件は温度や圧力と無関係である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度と圧力に密接に関係する。"
+        },
+        {
+          "label": "4",
+          "text": "すべての実在気体は常に理想気体として扱える。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "条件によってずれが生じる。"
+        }
+      ],
+      "explanation": "実在気体を理想気体に近づけるには高温・低圧の条件が必要です。高温では分子の運動エネルギーが大きく分子間力（引力）の影響が相対的に小さくなります。低圧では分子間の平均距離が大きく分子自身の体積が全体積に対して無視できるようになります。",
+      "evidence": [
+        {
+          "source_id": "2_4_def_001",
+          "quote": "実在気体を理想に近づけるには「高温・低圧」"
+        }
+      ],
+      "related_concept_ids": [
+        "2_4_def_001"
+      ],
+      "mnemonic": "高温・低圧で理想に近づく"
+    },
+    {
+      "id": "ch2_2_q044",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "comprehensive",
+      "sub_category": "気体法則の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "気体の法則に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ボイルの法則（温度一定・圧力反比例）とシャルルの法則（圧力一定・温度比例）を統合したのがボイル・シャルルの法則であり、さらにアボガドロの法則を加えると状態方程式が導かれる。温度は必ず絶対温度を用いる。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "ボイルの法則は圧力一定、シャルルの法則は温度一定が条件であり、両方を合わせると状態方程式になる。温度はセ氏温度を用いる。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "条件が逆、セ氏温度は誤り。"
+        },
+        {
+          "label": "3",
+          "text": "気体の法則は実在気体にのみ適用でき、理想気体には使えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "理想気体で厳密に成り立つ。"
+        },
+        {
+          "label": "4",
+          "text": "状態方程式は物質量が変化しても使える。ボイル・シャルルの法則とまったく同じ式である。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "状態方程式は物質量を含む。ボイル・シャルルは物質量一定前提。"
+        }
+      ],
+      "explanation": "気体の法則は体系的に構成されています。ボイルの法則は温度一定で体積が圧力に反比例、シャルルの法則は圧力一定で体積が絶対温度に比例します。この二つを統合したボイル・シャルルの法則にアボガドロの法則を加えると、すべての条件を統一的に扱える気体の状態方程式が得られます。すべての計算で温度は絶対温度を使います。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_001",
+          "quote": "一定温度で、一定量の気体の体積は圧力に反比例する"
+        },
+        {
+          "source_id": "2_1_law_002",
+          "quote": "一定圧力の下で、一定量の気体の体積は絶対温度に比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_001",
+        "2_1_law_002",
+        "2_1_law_003",
+        "2_2_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q045",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "comprehensive",
+      "sub_category": "分圧と水上置換の総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "分圧と水上置換法に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "全圧は各成分の分圧の和であり、分圧の比はモル分率の比に等しい。",
+          "is_correct": false
+        },
+        {
+          "label": "2",
+          "text": "水上置換法では集めた気体に水蒸気が混ざるため、目的気体の分圧は全圧から水蒸気圧を引いて求める。",
+          "is_correct": false
+        },
+        {
+          "label": "3",
+          "text": "水上置換法は水に溶けにくい気体に用いる方法である。",
+          "is_correct": false
+        },
+        {
+          "label": "4",
+          "text": "水上置換法で集めた気体の全圧をそのまま状態方程式に代入すれば正しい物質量が得られる。水蒸気の存在を考慮する必要はない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "水蒸気圧を引かないと物質量が過大になる。"
+        }
+      ],
+      "explanation": "水上置換法では水蒸気が必ず含まれるため、全圧をそのまま使うと水蒸気分が加算された過大な圧力で計算してしまいます。正しくは全圧から飽和水蒸気圧を引いて目的気体だけの分圧を求め、その分圧を状態方程式に代入して物質量を計算します。",
+      "evidence": [
+        {
+          "source_id": "2_3_proc_001",
+          "quote": "大気圧から水蒸気圧を引いて求める"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_law_001",
+        "2_3_proc_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q046",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "comprehensive",
+      "sub_category": "理想気体と実在気体の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "理想気体と実在気体に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "理想気体は分子体積ゼロ・分子間力ゼロの仮想気体であり、実在気体は高温・低圧で理想に近づく。ヘリウムや水素が最も理想に近く、アンモニアは最もずれが大きい。圧縮率因子ゼットが一からずれる原因は分子間力と分子体積の二つである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "アンモニアが最も理想気体に近い。低温・高圧で理想に近づく。ゼットは常に一から変化しない。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて誤り。"
+        },
+        {
+          "label": "3",
+          "text": "実在気体が理想からずれる原因は一つだけであり、分子間力のみである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子体積も原因。二つある。"
+        },
+        {
+          "label": "4",
+          "text": "理想気体は実在し、すべての気体は完全に状態方程式に従う。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "理想気体は仮想的な概念。"
+        }
+      ],
+      "explanation": "この問題は理想気体と実在気体に関する知識を総合的にまとめています。理想気体は分子体積ゼロ・分子間力ゼロの仮想概念であり、高温・低圧で実在気体が近づきます。最も近いのはヘリウム・水素、最も遠いのはアンモニアです。ずれは分子間力（ゼットを小さくする）と分子体積（ゼットを大きくする）の二つの原因で生じます。",
+      "evidence": [
+        {
+          "source_id": "2_4_def_001",
+          "quote": "分子自身の体積を0、分子間力を0とみなした仮想的な気体"
+        },
+        {
+          "source_id": "2_4_eq_001",
+          "quote": "分子間力が影響するとZは1より小さく、分子の大きさが影響する高圧条件ではZは1より大きく"
+        }
+      ],
+      "related_concept_ids": [
+        "2_4_def_001",
+        "2_4_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q047",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "procedure",
+      "sub_category": "空気の分圧計算",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "大気圧一・〇かける十の五乗パスカルの空気の分圧計算として、正しいものを選びなさい。ただし窒素と酸素の物質量比を四対一とする。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "窒素の分圧は全圧の五分の四で八・〇かける十の四乗パスカル、酸素の分圧は全圧の五分の一で二・〇かける十の四乗パスカルである。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "窒素と酸素の分圧はどちらも全圧の半分である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物質量比が四対一なので分圧も四対一。"
+        },
+        {
+          "label": "3",
+          "text": "酸素の分圧は全圧の五分の四である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "五分の四は窒素。酸素は五分の一。"
+        },
+        {
+          "label": "4",
+          "text": "分圧の計算にモル分率は使えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分圧はモル分率に全圧を掛けて求められる。"
+        }
+      ],
+      "explanation": "分圧はモル分率に全圧を掛けて求めます。空気中の窒素と酸素の比が四対一であれば、窒素のモル分率は五分の四、酸素は五分の一です。全圧が一・〇かける十の五乗パスカルなら、窒素の分圧は八・〇かける十の四乗パスカル、酸素は二・〇かける十の四乗パスカルになります。",
+      "evidence": [
+        {
+          "source_id": "2_3_eq_001",
+          "quote": "窒素の分圧は全圧の4/5、酸素の分圧は全圧の1/5"
+        }
+      ],
+      "related_concept_ids": [
+        "2_3_eq_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q048",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "classification",
+      "sub_category": "反比例と比例の整理",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "気体の体積との関係を整理した記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "圧力とは反比例の関係、絶対温度とは比例の関係、物質量とは比例の関係にある。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "圧力とは比例の関係、絶対温度とは反比例の関係にある。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "比例と反比例が逆。"
+        },
+        {
+          "label": "3",
+          "text": "物質量とは反比例の関係にある。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "物質量とは比例。"
+        },
+        {
+          "label": "4",
+          "text": "圧力と温度のどちらとも反比例する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度とは比例。"
+        }
+      ],
+      "explanation": "気体の状態方程式から、体積は圧力に反比例（圧力を上げると体積は減る）、絶対温度に比例（温度を上げると体積は増える）、物質量に比例（分子の数を増やすと体積は増える）という三つの関係が導かれます。この三つの関係を正確に覚えていることが計算問題を解く基礎になります。",
+      "evidence": [
+        {
+          "source_id": "2_1_law_001",
+          "quote": "体積は圧力に反比例"
+        },
+        {
+          "source_id": "2_1_law_002",
+          "quote": "体積は絶対温度に比例"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_law_001",
+        "2_1_law_002",
+        "2_2_law_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q049",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "property",
+      "sub_category": "水素のモル体積と理想値",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "水素の標準状態でのモル体積について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水素のモル体積は二十二・四二リットルで、理想値二十二・四リットルにほぼ一致する。理想気体に極めて近い振る舞いをする。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "水素のモル体積は二十二・〇九リットルで理想からのずれが大きい。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "二十二・〇九はアンモニアの値。"
+        },
+        {
+          "label": "3",
+          "text": "水素は分子間力が大きいため理想からずれる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子間力は非常に小さい。"
+        },
+        {
+          "label": "4",
+          "text": "水素は水に極めてよく溶ける。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "水に溶けにくい。"
+        }
+      ],
+      "explanation": "水素は分子間力が非常に小さく分子サイズも最小クラスのため、標準状態でのモル体積は二十二・四二リットルと理想値にほぼ一致します。このため理想気体に最も近い実在気体の一つとされています。水には溶けにくく、水上置換法で捕集するのに適しています。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_001",
+          "quote": "モル体積 22.42 L/mol"
+        },
+        {
+          "source_id": "2_0_sub_001",
+          "quote": "理想気体に最も近い実在気体の一つ"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_001"
+      ],
+      "mnemonic": null
+    },
+    {
+      "id": "ch2_2_q050",
+      "chapter": "2-2",
+      "chapter_title": "気体",
+      "category": "property",
+      "sub_category": "ヘリウムの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ヘリウムの性質について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色無臭の単原子分子であり、水に溶けにくい。分子間力が極めて小さいため理想気体に非常に近い。沸点はマイナス二百六十九度と全元素中で最も低い。",
+          "is_correct": true
+        },
+        {
+          "label": "2",
+          "text": "二原子分子であり、水で溶けやすい気体である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "単原子分子であり水に溶けにくい。"
+        },
+        {
+          "label": "3",
+          "text": "分子間力が大きいため液化しやすい気体である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子間力は極めて小さく最も液化しにくい。"
+        },
+        {
+          "label": "4",
+          "text": "理想気体からのずれが最も大きい気体の一つである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "最も理想に近い気体の一つ。"
+        }
+      ],
+      "explanation": "ヘリウムは原子番号二の希ガス元素で、単原子分子として存在します。無色無臭で水に溶けにくく、分子間力はすべての物質の中で最小レベルです。そのため沸点はマイナス二百六十九度と全元素中で最も低く、理想気体に最も近い振る舞いを示します。標準状態でのモル体積は二十二・四三リットルです。",
+      "evidence": [
+        {
+          "source_id": "2_0_sub_002",
+          "quote": "水素と同様に理想気体に極めて近い振る舞いをする単原子分子"
+        }
+      ],
+      "related_concept_ids": [
+        "2_0_sub_002"
+      ],
+      "mnemonic": null
+    }
+  ]
+}

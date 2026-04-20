@@ -1,0 +1,515 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "4-1非金属元素",
+   "chapter": 1,
+   "chapter_title": "非金属元素",
+   "section": 1,
+   "section_title": "非金属元素",
+   "page_range": [326, 357],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "1_4_sub_001",
+     "name": "フッ素",
+     "formula": "F2",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": -220, "unit": "℃", "condition": "常圧" },
+       "boiling_point": { "value": -188, "unit": "℃", "condition": "常圧" },
+       "color": "淡黄色",
+       "odor": "特異臭（毒性あり）",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "水と激しく反応してO2を発生",
+       "electrical_conductivity": "",
+       "other": ["酸化力が最も強い", "低温・暗所でも水素と爆発的に反応"]
+     },
+     "cross_refs": ["1_4_def_001"],
+     "notes": "陰性が最大の元素。水と反応して酸素（一部オゾン）を発生する。"
+   },
+   {
+     "id": "1_4_sub_002",
+     "name": "塩素",
+     "formula": "Cl2",
+     "aliases": [],
+     "type": "単体",
+     "properties": {
+       "melting_point": { "value": -101, "unit": "℃", "condition": "常圧" },
+       "boiling_point": { "value": -34, "unit": "℃", "condition": "常圧" },
+       "color": "黄緑色",
+       "odor": "刺激臭",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "水に溶けやすい（一部が反応して塩酸と次亜塩素酸を生じる）",
+       "electrical_conductivity": "",
+       "other": ["有毒", "漂白作用", "殺菌作用"]
+     },
+     "cross_refs": ["1_4_rxn_001", "1_4_def_001", "1_8_proc_001"],
+     "notes": "湿ったヨウ化カリウムデンプン紙を青変させる。"
+   },
+   {
+     "id": "1_4_sub_003",
+     "name": "フッ化水素",
+     "formula": "HF",
+     "aliases": ["フッ化水素酸（水溶液）"],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": 20, "unit": "℃", "condition": "常圧" },
+       "color": "無色",
+       "odor": "刺激臭",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "水によく溶ける",
+       "electrical_conductivity": "",
+       "other": ["弱酸", "発煙性の液体または気体", "ガラスを腐食する"]
+     },
+     "cross_refs": ["1_4_rxn_002"],
+     "notes": "他のハロゲン化水素と異なり弱酸。水素結合により沸点が高い。ガラス（二酸化ケイ素）を溶かすためポリエチレン容器などで保存する。"
+   },
+   {
+     "id": "1_5_sub_001",
+     "name": "硫酸（濃硫酸）",
+     "formula": "H2SO4",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": 340, "unit": "℃", "condition": "約98%水溶液" },
+       "color": "無色",
+       "odor": "無臭",
+       "density": { "value": 1.83, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に溶解する際、多量に発熱する",
+       "electrical_conductivity": "ほとんど電離していないため導電性は低い（希硫酸は高い）",
+       "other": ["不揮発性", "吸湿性", "脱水性", "酸化作用（熱濃硫酸）"]
+     },
+     "cross_refs": ["1_5_rxn_001", "1_8_proc_002"],
+     "notes": "粘性が高い重い液体。希釈する際は、水に濃硫酸を少しずつ注ぐ必要がある。"
+   },
+   {
+     "id": "1_6_sub_001",
+     "name": "アンモニア",
+     "formula": "NH3",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "刺激臭",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "水にきわめてよく溶ける（弱塩基性）",
+       "electrical_conductivity": "",
+       "other": ["空気より軽い", "凝縮しやすい"]
+     },
+     "cross_refs": ["1_6_rxn_001", "1_8_proc_001"],
+     "notes": "濃塩酸を近づけると塩化アンモニウムの白煙を生じる。"
+   },
+   {
+     "id": "1_6_sub_002",
+     "name": "硝酸",
+     "formula": "HNO3",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色",
+       "odor": "刺激臭",
+       "density": { "value": null, "unit": "", "condition": "" },
+       "solubility": "水に溶けやすい",
+       "electrical_conductivity": "",
+       "other": ["強い酸化力", "光分解性", "不動態を形成"]
+     },
+     "cross_refs": ["1_6_rxn_002"],
+     "notes": "水素よりイオン化傾向の小さいCuやAgも溶かす。光で分解しやすいため褐色瓶で保存する。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "1_1_def_001",
+     "type": "def",
+     "title": "典型元素",
+     "prerequisite_ids": [],
+     "definition": "元素の周期律の考えがよく成り立ち、族の番号と価電子の数や性質の規則性が明確な元素。",
+     "explanation": "周期表の1、2族および13〜18族の元素のことです。族番号の下一桁が価電子の数と一致するため、同じ族の元素は化学的性質がよく似ています。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "典型元素の例",
+         "substance_ids": ["TBD:ナトリウム", "TBD:塩素", "1_4_sub_001"],
+         "description": "アルカリ金属やハロゲンなど",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "典型元素と遷移元素の特徴の正誤問題",
+         "key_concept_ids": ["1_1_def_001", "TBD:1_1_def_002"]
+       }
+     ],
+     "cross_refs": ["TBD:1_1_def_002"],
+     "source_page": 326
+   },
+   {
+     "id": "1_4_def_001",
+     "type": "law",
+     "title": "ハロゲンの酸化力と反応性の傾向",
+     "prerequisite_ids": ["1_4_sub_001", "1_4_sub_002"],
+     "definition": "ハロゲン単体の酸化力および化学的反応性は、原子番号が小さい（原子量が小さい）ほど強い。",
+     "explanation": "ハロゲン元素は、周期表の上にいくほど原子半径が小さく、電子を引き付ける力（電気陰性度）が強くなります。そのため、電子を奪う力＝酸化力がF2 > Cl2 > Br2 > I2の順に強くなります。",
+     "conditions": ["17族元素の単体間での比較"],
+     "examples": [
+       {
+         "label": "水素との反応",
+         "substance_ids": ["1_4_sub_001", "1_4_sub_002"],
+         "description": "フッ素は低温暗所でも爆発的に反応し、塩素は光照射で爆発的に反応する。",
+         "values": []
+       }
+     ],
+     "counter_examples": [],
+     "mnemonics": [
+       "ハロゲンは小さいものほど力持ち（反応性が高い）：F2 > Cl2 > Br2 > I2"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "ハロゲン単体の酸化力の強さを不等号で並べる問題",
+         "key_concept_ids": ["1_4_def_001"]
+       }
+     ],
+     "cross_refs": ["1_4_sub_001", "1_4_sub_002"],
+     "source_page": 331
+   },
+   {
+     "id": "1_4_rxn_001",
+     "type": "proc",
+     "title": "塩素の実験室的製法と捕集",
+     "prerequisite_ids": ["1_4_sub_002"],
+     "definition": "酸化マンガン(IV)に濃塩酸を加えて加熱し、不純物を洗気瓶で除去して下方置換で塩素を得る手順。",
+     "explanation": "塩酸中の塩化物を酸化マンガン(IV)で酸化して塩素を取り出します。発生したガスには未反応の塩化水素ガスと水蒸気が混じっているため、必ず水→濃硫酸の順番で洗気瓶を通し、不純物を取り除きます。",
+     "conditions": ["加熱が必要", "必ず濃塩酸を用いる（希塩酸では反応しない）"],
+     "examples": [],
+     "counter_examples": [
+       "洗気瓶の順番を「濃硫酸→水」にしてはいけない（最後に水を通すと再び水蒸気が混じってしまうため）。"
+     ],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "丸底フラスコに酸化マンガン(IV)を入れ、濃塩酸を滴下して加熱する。",
+         "reason": "MnO2の酸化作用によりCl2を発生させるため。"
+       },
+       {
+         "step": 2,
+         "action": "発生した気体を、水の入った洗気瓶に通す。",
+         "reason": "揮発してきた塩化水素(HCl)ガスを水に溶かして除去するため。"
+       },
+       {
+         "step": 3,
+         "action": "次に、濃硫酸の入った洗気瓶に通す。",
+         "reason": "気体に含まれる水分（水蒸気）を濃硫酸の吸湿性を利用して除去するため。"
+       },
+       {
+         "step": 4,
+         "action": "気体導入管を集気瓶の底に近づけ、下方置換で集める。",
+         "reason": "塩素は空気よりも重く、水に溶けやすいため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "塩素発生装置の洗気瓶の順番とそれぞれの役割を記述させる問題",
+         "key_concept_ids": ["1_4_rxn_001", "1_8_proc_002"]
+       }
+     ],
+     "cross_refs": ["1_4_sub_002", "1_5_sub_001", "1_8_proc_001", "1_8_proc_002"],
+     "source_page": 333
+   },
+   {
+     "id": "1_4_rxn_002",
+     "type": "rxn",
+     "title": "フッ化水素によるガラスの腐食反応",
+     "prerequisite_ids": ["1_4_sub_003"],
+     "definition": "フッ化水素酸がガラスの主成分である二酸化ケイ素(SiO2)と反応し、ヘキサフルオロケイ酸や四フッ化ケイ素を生じる反応。",
+     "explanation": "フッ化水素はガラスを溶かす特異な性質を持っています。そのため、ガラス瓶には保存できず、ポリエチレン容器などを使用します。この性質はガラスの曇りガラス加工（エッチング）に利用されます。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "ガラスを溶かす物質を選び、その保存容器を答えさせる問題",
+         "key_concept_ids": ["1_4_rxn_002", "1_4_sub_003"]
+       }
+     ],
+     "cross_refs": ["1_4_sub_003", "TBD:二酸化ケイ素"],
+     "source_page": 336
+   },
+   {
+     "id": "1_5_rxn_001",
+     "type": "rxn",
+     "title": "接触式硫酸製造法（接触法）",
+     "prerequisite_ids": ["1_5_sub_001"],
+     "definition": "二酸化硫黄を酸化バナジウム(V)触媒で酸化して三酸化硫黄にし、それを濃硫酸に吸収させて硫酸を製造する工業的製法。",
+     "explanation": "硫酸を大量生産するプロセスです。硫黄を燃やしてSO2を作り、触媒（V2O5）を使ってSO3にします。SO3を直接水に入れると激しく発熱して危険なため、一度濃硫酸に吸収させて発煙硫酸とし、それを希釈して目的の濃度の硫酸にします。",
+     "conditions": ["触媒として酸化バナジウム(V) V2O5を使用"],
+     "examples": [],
+     "counter_examples": [
+       "SO3を直接水に溶かす手順はとらない（激しい発熱と硫酸の霧の発生を防ぐため）。"
+     ],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "硫黄または黄鉄鉱を燃焼させ、二酸化硫黄(SO2)を生成する。",
+         "reason": "原料ガスを作るため。"
+       },
+       {
+         "step": 2,
+         "action": "二酸化硫黄を酸素と混合し、酸化バナジウム(V)を触媒として加熱し、三酸化硫黄(SO3)を生成する。",
+         "reason": "SO2の酸化を効率よく進行させるため。"
+       },
+       {
+         "step": 3,
+         "action": "生成したSO3を98〜99%の濃硫酸に吸収させる。",
+         "reason": "直接水と反応させると激しく発熱し危険なため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "接触法における各段階の化学反応式と触媒の名称を問う問題",
+         "key_concept_ids": ["1_5_rxn_001"]
+       }
+     ],
+     "cross_refs": ["1_5_sub_001", "TBD:二酸化硫黄"],
+     "source_page": 341
+   },
+   {
+     "id": "1_6_rxn_001",
+     "type": "rxn",
+     "title": "ハーバー・ボッシュ法",
+     "prerequisite_ids": ["1_6_sub_001"],
+     "definition": "窒素と水素から四酸化三鉄を主成分とする触媒を用いてアンモニアを直接合成する工業的製法。",
+     "explanation": "空気中の窒素を利用して肥料や火薬の原料となるアンモニアを大量に作る方法です。非常に安定な窒素分子の結合を切るため、高温・高圧の条件と専用の触媒（四酸化三鉄）が不可欠です。",
+     "conditions": [
+       "温度：400〜600℃",
+       "圧力：100〜300気圧",
+       "触媒：四酸化三鉄(Fe3O4)ベース"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "アンモニアの工業的製法の名称と使用する触媒を問う問題",
+         "key_concept_ids": ["1_6_rxn_001", "1_6_tip_001"]
+       }
+     ],
+     "cross_refs": ["1_6_sub_001", "1_6_tip_001"],
+     "source_page": 344
+   },
+   {
+     "id": "1_6_rxn_002",
+     "type": "rxn",
+     "title": "オストワルト法",
+     "prerequisite_ids": ["1_6_sub_001", "1_6_sub_002"],
+     "definition": "アンモニアを白金触媒で酸化して一酸化窒素にし、さらに酸化して二酸化窒素とした後、水に吸収させて硝酸を製造する工業的製法。",
+     "explanation": "アンモニアから硝酸を作るための3段階のプロセスです。最初のアンモニアの酸化プロセスで白金(Pt)触媒を使用するのが特徴です。",
+     "conditions": ["触媒として白金網(Pt)を使用（第1段階のみ）"],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "アンモニアと空気の混合気体を白金触媒に触れさせ、一酸化窒素(NO)を生成する。",
+         "reason": "NH3を酸化するため。"
+       },
+       {
+         "step": 2,
+         "action": "一酸化窒素を空気中の酸素と反応させ、二酸化窒素(NO2)を生成する。",
+         "reason": "水に溶けやすい形にするため。"
+       },
+       {
+         "step": 3,
+         "action": "二酸化窒素を温水に吸収させ、硝酸(HNO3)を生成する。副生するNOは回収して再利用する。",
+         "reason": "最終目的物の硝酸を得るため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "オストワルト法の3段階の反応式を記述させ、全体の反応式を求めさせる問題",
+         "key_concept_ids": ["1_6_rxn_002", "1_6_tip_001"]
+       }
+     ],
+     "cross_refs": ["1_6_sub_001", "1_6_sub_002", "1_6_tip_001"],
+     "source_page": 347
+   },
+   {
+     "id": "1_6_tip_001",
+     "type": "tip",
+     "title": "工業的製法の触媒の覚え方",
+     "prerequisite_ids": ["1_6_rxn_001", "1_6_rxn_002"],
+     "definition": "「ハーバーの鉄、オストワルトの白金で勝算あり」",
+     "explanation": "アンモニア合成と硝酸合成の触媒が混同しやすいため、この語呂合わせで覚えます。勝算は「硝酸」にかかっています。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [
+       "ハーバー（法）の鉄（Fe3O4）、オストワルト（法）の白金（Pt）で勝算（硝酸）あり"
+     ],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "各種工業的製法と使用される触媒の組み合わせを選ぶ問題",
+         "key_concept_ids": ["1_6_rxn_001", "1_6_rxn_002", "1_5_rxn_001"]
+       }
+     ],
+     "cross_refs": ["1_6_rxn_001", "1_6_rxn_002"],
+     "source_page": 347
+   },
+   {
+     "id": "1_8_proc_001",
+     "type": "proc",
+     "title": "気体の捕集法の選択基準",
+     "prerequisite_ids": [],
+     "definition": "気体の水への溶解性と、空気との密度の大小関係に基づいて、水上・下方・上方置換のいずれかを選択する手順。",
+     "explanation": "発生した気体をどう集めるかは、「水に溶けやすいか？」と「空気より重いか軽いか？」で決まります。水に溶けにくい気体はすべて水上置換で集めます。水に溶けやすく、空気より軽いものは上方置換、重いものは下方置換を用います。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "水上置換",
+         "substance_ids": ["TBD:NO", "TBD:N2", "TBD:H2", "TBD:O2", "TBD:CO"],
+         "description": "水に溶けにくい気体に適用。",
+         "values": []
+       },
+       {
+         "label": "下方置換",
+         "substance_ids": ["TBD:SO2", "TBD:HCl", "TBD:NO2", "1_4_sub_002", "TBD:CO2"],
+         "description": "水に溶けやすく、空気より重い気体に適用。",
+         "values": []
+       },
+       {
+         "label": "上方置換",
+         "substance_ids": ["1_6_sub_001"],
+         "description": "水に溶けやすく、空気より軽い気体に適用。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "水に溶ける気体を水上置換で集めようとすると、水に吸収されてしまい集まらない。"
+     ],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "気体が水によく溶けるかを判定する。",
+         "reason": "水に溶けにくい場合は、純度高く集められる水上置換を優先するため。"
+       },
+       {
+         "step": 2,
+         "action": "水によく溶ける場合、その気体の分子量が空気の平均分子量（約28.8）より大きいか小さいか判定する。",
+         "reason": "空気より軽ければ上部に溜まるので上方置換、重ければ下部に溜まるので下方置換とするため。"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "与えられた気体の性質から適切な捕集装置を選ばせる問題",
+         "key_concept_ids": ["1_8_proc_001"]
+       }
+     ],
+     "cross_refs": ["1_4_sub_002", "1_6_sub_001"],
+     "source_page": 355
+   },
+   {
+     "id": "1_8_proc_002",
+     "type": "proc",
+     "title": "気体の乾燥剤の選択",
+     "prerequisite_ids": [],
+     "definition": "気体の液性（酸性・中性・塩基性）と反応しない乾燥剤を選択する法則。",
+     "explanation": "水分を取り除くための乾燥剤は、集めたい気体と反応してしまっては意味がありません。原則として「酸性の気体には酸性の乾燥剤」「塩基性の気体には塩基性の乾燥剤」を使います。中性の乾燥剤（塩化カルシウムなど）は基本どちらにも使えますが、例外もあります。",
+     "conditions": [],
+     "examples": [
+       {
+         "label": "濃硫酸（酸性乾燥剤）",
+         "substance_ids": ["1_5_sub_001"],
+         "description": "中性・酸性の気体に使用可能。塩基性のアンモニアには使用不可。",
+         "values": []
+       },
+       {
+         "label": "ソーダ石灰（塩基性乾燥剤）",
+         "substance_ids": [],
+         "description": "中性・塩基性の気体に使用可能。酸性の気体には使用不可。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "アンモニアの乾燥に濃硫酸を使ってはいけない（中和反応して硫酸アンモニウムになるため）。",
+       "アンモニアの乾燥に中性の塩化カルシウムを使ってはいけない（錯イオンを形成し吸収してしまうため）。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "特定の気体を乾燥させるために適さない乾燥剤を選ばせる問題",
+         "key_concept_ids": ["1_8_proc_002"]
+       }
+     ],
+     "cross_refs": ["1_5_sub_001", "1_6_sub_001"],
+     "source_page": 355
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "1_4_rxn_001",
+     "to_id": "1_4_sub_002",
+     "relation_type": "produces",
+     "note": "塩素の実験室的製法は塩素を生成する"
+   },
+   {
+     "from_id": "1_5_rxn_001",
+     "to_id": "1_5_sub_001",
+     "relation_type": "produces",
+     "note": "接触法は濃硫酸を生成する"
+   },
+   {
+     "from_id": "1_6_rxn_001",
+     "to_id": "1_6_sub_001",
+     "relation_type": "produces",
+     "note": "ハーバー・ボッシュ法はアンモニアを生成する"
+   },
+   {
+     "from_id": "1_6_rxn_002",
+     "to_id": "1_6_sub_002",
+     "relation_type": "produces",
+     "note": "オストワルト法は最終的に硝酸を生成する"
+   },
+   {
+     "from_id": "1_6_tip_001",
+     "to_id": "1_6_rxn_001",
+     "relation_type": "is_applied_in",
+     "note": "工業的製法の触媒の覚え方はハーバー・ボッシュ法の暗記に利用される"
+   },
+   {
+     "from_id": "1_6_tip_001",
+     "to_id": "1_6_rxn_002",
+     "relation_type": "is_applied_in",
+     "note": "工業的製法の触媒の覚え方はオストワルト法の暗記に利用される"
+   },
+   {
+     "from_id": "1_8_proc_002",
+     "to_id": "1_6_sub_001",
+     "relation_type": "contradicts",
+     "note": "アンモニア(塩基性)に対して濃硫酸や塩化カルシウムを乾燥剤として用いてはならない"
+   }
+ ]
+}

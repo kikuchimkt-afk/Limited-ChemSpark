@@ -1,0 +1,272 @@
+﻿JSON
+
+
+
+
+{
+ "metadata": {
+   "textbook": "高校化学",
+   "chapter": 4,
+   "chapter_title": "芳香族化合物 [cite: 1, 2]",
+   "section": 0,
+   "section_title": "芳香族炭化水素〜有機化合物の分離",
+   "page_range": [456, 475],
+   "version": "1.0"
+ },
+ "substances": [
+   {
+     "id": "4_1_sub_001",
+     "name": "ベンゼン",
+     "formula": "C6H6",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": 5.5, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": 80, "unit": "℃", "condition": "" },
+       "color": "無色 [cite: 12]",
+       "odor": "特有のにおい [cite: 12, 68]",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に不溶 [cite: 12, 68]",
+       "electrical_conductivity": "",
+       "other": [
+         "可燃性 [cite: 12]",
+         "有機化合物をよく溶かすため有機溶媒として用いられる [cite: 68]",
+         "燃焼時はすすを多量に出す [cite: 69]"
+       ]
+     },
+     "cross_refs": ["4_1_def_001", "4_1_def_002", "4_1_rxn_001"],
+     "notes": "石炭の乾留で生成するコールタールを分留した軽油中に存在する [cite: 35]。"
+   },
+   {
+     "id": "4_2_sub_001",
+     "name": "フェノール",
+     "formula": "C6H5OH",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": 41, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色 [cite: 284]",
+       "odor": "特有のにおい [cite: 284]",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水にわずかに溶ける [cite: 285]",
+       "electrical_conductivity": "",
+       "other": [
+         "弱酸性（炭酸より弱い） [cite: 285, 286]",
+         "皮膚や粘膜を強く侵す [cite: 338]",
+         "有毒 [cite: 338]"
+       ]
+     },
+     "cross_refs": ["4_2_proc_001", "4_2_rxn_001"],
+     "notes": "かつては消毒剤に用いられた [cite: 339]。"
+   },
+   {
+     "id": "4_3_sub_002",
+     "name": "サリチル酸",
+     "formula": "C6H4(OH)COOH",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": 159, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色 [cite: 460]",
+       "odor": "",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水にわずかに溶ける [cite: 460]",
+       "electrical_conductivity": "",
+       "other": [
+         "針状結晶 [cite: 460]"
+       ]
+     },
+     "cross_refs": ["4_3_rxn_001", "4_3_rxn_002"],
+     "notes": "1分子中に-OHと-COOHをもつヒドロキシ酸 [cite: 445]。"
+   },
+   {
+     "id": "4_4_sub_001",
+     "name": "アニリン",
+     "formula": "C6H5NH2",
+     "aliases": [],
+     "type": "化合物",
+     "properties": {
+       "melting_point": { "value": null, "unit": "℃", "condition": "" },
+       "boiling_point": { "value": null, "unit": "℃", "condition": "" },
+       "color": "無色（酸化されると赤〜赤褐色） [cite: 560]",
+       "odor": "特有の不快臭 [cite: 528]",
+       "density": { "value": null, "unit": "g/cm³", "condition": "" },
+       "solubility": "水に溶けにくいが有機溶媒にはよく溶ける [cite: 528]",
+       "electrical_conductivity": "",
+       "other": [
+         "弱塩基性 [cite: 528]",
+         "有毒な油状液体 [cite: 528]"
+       ]
+     },
+     "cross_refs": ["4_4_proc_001", "4_4_rxn_001", "4_4_rxn_002"],
+     "notes": "空気中の酸素で長時間かかって酸化され変色する [cite: 560]。"
+   }
+ ],
+ "concepts": [
+   {
+     "id": "4_1_def_002",
+     "type": "def",
+     "title": "ベンゼンの構造",
+     "prerequisite_ids": ["4_1_def_001"],
+     "definition": "ベンゼンはすべての原子が同一平面上にある正六角形の平面構造をしており、炭素原子間の距離は単結合と二重結合の中間（0.140nm）である [cite: 18]。",
+     "explanation": "かつてケクレは「二重結合が1つおきにある」と考えましたが、実際のベンゼンの炭素間結合はすべて等しく、単結合（0.154nm）と二重結合（0.134nm）の中間の長さです [cite: 15, 17, 18]。π電子が環全体に均等に分布しているため、この構造は非常に安定しています [cite: 18, 111]。",
+     "conditions": [],
+     "examples": [],
+     "counter_examples": [
+       "ベンゼンは二重結合を持つが、鎖式炭化水素のアルケンのように付加反応を簡単には起こさない（安定なため） [cite: 71, 111]。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "ベンゼンの結合距離と分子の平面構造に関する正誤判定問題",
+         "key_concept_ids": ["4_1_def_002"]
+       }
+     ],
+     "cross_refs": ["4_1_sub_001", "TBD:結合の性質"],
+     "source_page": 456
+   },
+   {
+     "id": "4_2_proc_001",
+     "type": "proc",
+     "title": "クメン法",
+     "prerequisite_ids": ["4_1_sub_001", "TBD:プロペン"],
+     "definition": "プロペンとベンゼンからクメンを経由して、工業的にフェノールとアセトンを合成する製法 [cite: 225]。",
+     "explanation": "現代のフェノールの主要な工業的製法です。ベンゼンとプロペンを反応させてクメンを作り、これを空気酸化してクメンヒドロペルオキシドにします [cite: 225]。最後に希硫酸で分解すると、目的のフェノールとともに、副産物として有用なアセトンが得られます [cite: 225]。",
+     "conditions": [
+       "触媒の使用 [cite: 225, 231]",
+       "希硫酸による分解 [cite: 225, 233]"
+     ],
+     "examples": [],
+     "counter_examples": [],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "プロペンにベンゼンを付加させクメンを生成する [cite: 225]",
+         "reason": "側鎖を導入するため"
+       },
+       {
+         "step": 2,
+         "action": "クメンを空気酸化しクメンヒドロペルオキシドとする [cite: 225]",
+         "reason": "酸素を分子内に取り込むため"
+       },
+       {
+         "step": 3,
+         "action": "希硫酸を触媒として分解しフェノールとアセトンを得る [cite: 225]",
+         "reason": "過酸化物を酸分解して目的物を得るため"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "クメン法の反応経路における中間生成物（クメンヒドロペルオキシド）や副生成物（アセトン）の構造式・名称を問う問題 [cite: 902]",
+         "key_concept_ids": ["4_2_proc_001"]
+       }
+     ],
+     "cross_refs": ["4_2_sub_001", "TBD:アセトン"],
+     "source_page": 461
+   },
+   {
+     "id": "4_4_rxn_002",
+     "type": "rxn",
+     "title": "ジアゾ化",
+     "prerequisite_ids": ["4_4_sub_001"],
+     "definition": "アニリン塩酸塩を冷やしながら亜硝酸ナトリウムを作用させ、塩化ベンゼンジアゾニウムを生成する反応 [cite: 594, 595]。",
+     "explanation": "芳香族第一級アミン（アニリンなど）からジアゾニウム塩を作る重要な反応です。ジアゾニウム塩は非常に不安定なため、必ず氷水などで5℃以下に冷却しながら反応させる必要があります [cite: 594, 595]。温度が上がると加水分解してフェノールと窒素になってしまいます [cite: 639]。",
+     "conditions": [
+       "5℃以下に冷却 [cite: 594, 602]"
+     ],
+     "examples": [
+       {
+         "label": "アニリンからのジアゾ化",
+         "substance_ids": ["4_4_sub_001"],
+         "description": "アニリン塩酸塩 + 亜硝酸ナトリウム + 塩酸 → 塩化ベンゼンジアゾニウム + 塩化ナトリウム + 水 [cite: 596, 604]",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "常温や加熱条件下で行うと、塩化ベンゼンジアゾニウムが分解してフェノールになる [cite: 639]。"
+     ],
+     "mnemonics": [],
+     "steps": [],
+     "related_problems": [
+       {
+         "pattern": "アゾ染料合成の経路問題において、ジアゾ化の反応温度（5℃以下）とその理由（分解防止）を問う記述問題 [cite: 904, 907]",
+         "key_concept_ids": ["4_4_rxn_002"]
+       }
+     ],
+     "cross_refs": ["4_4_rxn_003"],
+     "source_page": 468
+   },
+   {
+     "id": "4_5_proc_001",
+     "type": "proc",
+     "title": "有機化合物の分離の原理",
+     "prerequisite_ids": ["TBD:酸と塩基の強弱", "TBD:抽出"],
+     "definition": "有機化合物の酸性・塩基性の違いを利用し、塩にして水層に移行させることで混合物から目的物質を分離する操作 [cite: 651, 654, 656]。",
+     "explanation": "有機溶媒（エーテルなど）に溶けた混合物を分離するテクニックです。「水に不溶の有機化合物でも、酸や塩基と中和して塩になると水に溶ける」という性質を使います [cite: 656]。また、酸の強さ（塩酸・硫酸 ＞ スルホン酸 ＞ カルボン酸 ＞ 炭酸 ＞ フェノール類）を利用し、弱酸の塩に強酸を加えると弱酸が遊離して再び有機溶媒に溶ける性質（弱酸の遊離）も活用します [cite: 659, 660, 712, 715]。",
+     "conditions": [
+       "分離操作で加えられる試薬はすべて常温のまま使用する [cite: 768]"
+     ],
+     "examples": [
+       {
+         "label": "カルボン酸とフェノールの分離",
+         "substance_ids": ["4_3_sub_001", "4_2_sub_001"],
+         "description": "NaHCO3水溶液を加えると、炭酸より強い酸であるカルボン酸のみが塩（水溶性）となり水層へ移動する。フェノール類は溶解せずエーテル層に残る [cite: 673, 746]。",
+         "values": []
+       }
+     ],
+     "counter_examples": [
+       "分離実験中に「NaOHを加えて加熱」とあれば、それは中和ではなくエステルやアミドの加水分解を意味することが多い [cite: 768]。"
+     ],
+     "mnemonics": [],
+     "steps": [
+       {
+         "step": 1,
+         "action": "混合溶液をジエチルエーテルに溶かす [cite: 772]",
+         "reason": "すべての有機化合物を一旦有機溶媒層に集めるため"
+       },
+       {
+         "step": 2,
+         "action": "塩酸またはNaOH、NaHCO3水溶液を加え分液漏斗で振る [cite: 767]",
+         "reason": "特定の性質（酸性/塩基性）を持つ物質だけを塩にして水層に抽出するため [cite: 656]"
+       },
+       {
+         "step": 3,
+         "action": "水層を取り出し、強酸または強塩基を加える [cite: 659]",
+         "reason": "塩になった目的物質を遊離させ、再びエーテルで抽出できるようにするため [cite: 659, 662]"
+       }
+     ],
+     "related_problems": [
+       {
+         "pattern": "複数種の芳香族化合物（アニリン、安息香酸、フェノール、中性物質）の混合液に、試薬を順番に加えていくフローチャート穴埋め問題 [cite: 828, 882, 909]",
+         "key_concept_ids": ["4_5_proc_001"]
+       }
+     ],
+     "cross_refs": ["4_2_sub_001", "4_3_sub_001", "4_4_sub_001"],
+     "source_page": 470
+   }
+ ],
+ "relations": [
+   {
+     "from_id": "4_1_sub_001",
+     "to_id": "4_2_proc_001",
+     "relation_type": "is_prerequisite_of",
+     "note": "ベンゼンはクメン法の出発物質である [cite: 225]"
+   },
+   {
+     "from_id": "4_4_sub_001",
+     "to_id": "4_4_rxn_002",
+     "relation_type": "is_prerequisite_of",
+     "note": "アニリンはジアゾ化により塩化ベンゼンジアゾニウムとなる [cite: 594]"
+   },
+   {
+     "from_id": "4_5_proc_001",
+     "to_id": "4_4_sub_001",
+     "relation_type": "is_applied_in",
+     "note": "アニリン（塩基性物質）の分離には塩酸による抽出が用いられる [cite: 681, 744]"
+   }
+ ]
+}
