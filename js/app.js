@@ -1,12 +1,10 @@
 // ============================================================
-// 化学共通テスト演習 — main controller
+// ChemSpark 極 — main controller (redesigned)
 // ============================================================
 
 const DATA_PATH = 'questions';
 const AUDIO_PATH = 'audio';
 
-// The MP3 files were synthesized with Edge TTS `-10%` rate. Natural speed is
-// restored by playing them back at ~1.11x (preservesPitch keeps it natural).
 const SPEED_MAP = {
   slow: { rate: 1.0, label: 'ゆっくり' },
   natural: { rate: 1.11, label: 'ナチュラル' },
@@ -23,7 +21,6 @@ const CATEGORY_LABELS = {
   comprehensive: '総合',
 };
 
-// Available chapters (enabled flag lets us hide chapters without data yet).
 const CHAPTERS = [
   { id: 'ch1-1', title: '第1章-1 物質の構成', enabled: true },
   { id: 'ch1-2', title: '第1章-2 物質の構成粒子', enabled: true },
@@ -42,7 +39,13 @@ const CHAPTERS = [
   { id: 'ch4-3', title: '第4章-3 遷移元素', enabled: true },
   { id: 'ch4-4', title: '第4章-4 無機物質と人間生活', enabled: true },
   { id: 'ch5-1', title: '第5章-1 有機化合物の分類と分析', enabled: true },
-  // (further chapters added as data is prepared)
+  { id: 'ch5-2', title: '第5章-2 脂肪族炭化水素', enabled: true },
+  { id: 'ch5-3', title: '第5章-3 アルコールと関連化合物', enabled: true },
+  { id: 'ch5-4', title: '第5章-4 芳香族化合物', enabled: true },
+  { id: 'ch5-5', title: '第5章-5 高分子化合物の基礎', enabled: true },
+  { id: 'ch6-1', title: '第6章-1 天然高分子化合物', enabled: true },
+  { id: 'ch6-2', title: '第6章-2 合成高分子化合物', enabled: true },
+  { id: 'ch6-3', title: '第6章-3 高分子化合物と人間生活', enabled: true },
 ];
 
 // ------------------------------------------------------------
@@ -51,79 +54,112 @@ const CHAPTERS = [
 const state = {
   chapter: 'ch1-1',
   chapterData: null,
-  questionList: [], // array of question objects (in play order)
+  questionList: [],
   currentIndex: 0,
-  answers: [], // { qid, selectedChoiceId, correctChoiceId, correct }
+  answers: [],
   answered: false,
-  shuffledChoices: [], // current question's choices in displayed order
+  shuffledChoices: [],
   options: loadOptions(),
   audio: {
-    current: null, // HTMLAudioElement
-    token: 0,      // incremented to cancel in-flight sequences
+    current: null,
+    token: 0,
   },
 };
 
 // ------------------------------------------------------------
-// storage
+// storage helpers
 // ------------------------------------------------------------
 function loadOptions() {
   try {
-    const stored = JSON.parse(localStorage.getItem('opts') || '{}');
+    const stored = JSON.parse(localStorage.getItem('cs_opts') || '{}');
     return {
       shuffleQuestions: stored.shuffleQuestions ?? false,
       autoPlay: stored.autoPlay ?? true,
       autoNext: stored.autoNext ?? false,
       speed: stored.speed ?? 'slow',
+      theme: stored.theme ?? 'dark',
     };
   } catch {
-    return {
-      shuffleQuestions: false,
-      autoPlay: true,
-      autoNext: false,
-      speed: 'slow',
-    };
+    return { shuffleQuestions: false, autoPlay: true, autoNext: false, speed: 'slow', theme: 'dark' };
   }
 }
 
 function saveOptions() {
-  localStorage.setItem('opts', JSON.stringify(state.options));
+  localStorage.setItem('cs_opts', JSON.stringify(state.options));
 }
 
 function loadHistory() {
-  try {
-    return JSON.parse(localStorage.getItem('history') || '{}');
-  } catch {
-    return {};
-  }
+  try { return JSON.parse(localStorage.getItem('cs_history') || '{}'); }
+  catch { return {}; }
 }
 
 function saveHistory(history) {
-  localStorage.setItem('history', JSON.stringify(history));
+  localStorage.setItem('cs_history', JSON.stringify(history));
 }
 
 function recordSessionResult(chapter, stats) {
   const history = loadHistory();
   const arr = history[chapter] || [];
   arr.push({ ts: Date.now(), ...stats });
-  history[chapter] = arr.slice(-20); // keep last 20 sessions
+  history[chapter] = arr.slice(-20);
   saveHistory(history);
+}
+
+// --- Mistake tracking ---
+function loadMistakes() {
+  try { return JSON.parse(localStorage.getItem('cs_mistakes') || '{}'); }
+  catch { return {}; }
+}
+
+function saveMistakes(mistakes) {
+  localStorage.setItem('cs_mistakes', JSON.stringify(mistakes));
+}
+
+function recordMistake(chapter, questionId) {
+  const mistakes = loadMistakes();
+  if (!mistakes[chapter]) mistakes[chapter] = {};
+  mistakes[chapter][questionId] = (mistakes[chapter][questionId] || 0) + 1;
+  saveMistakes(mistakes);
+}
+
+function getMistakeCount(chapter) {
+  const mistakes = loadMistakes();
+  return mistakes[chapter] ? Object.keys(mistakes[chapter]).length : 0;
+}
+
+function getMistakeIds(chapter) {
+  const mistakes = loadMistakes();
+  return mistakes[chapter] ? Object.keys(mistakes[chapter]) : [];
+}
+
+// --- Session progress (途中保存) ---
+function saveSessionProgress() {
+  const progress = {
+    chapter: state.chapter,
+    currentIndex: state.currentIndex,
+    answers: state.answers,
+    questionIds: state.questionList.map(q => q.id),
+    timestamp: Date.now(),
+  };
+  localStorage.setItem('cs_session', JSON.stringify(progress));
+}
+
+function loadSessionProgress() {
+  try { return JSON.parse(localStorage.getItem('cs_session') || 'null'); }
+  catch { return null; }
+}
+
+function clearSessionProgress() {
+  localStorage.removeItem('cs_session');
 }
 
 // ------------------------------------------------------------
 // utils
 // ------------------------------------------------------------
-function $(sel) {
-  return document.querySelector(sel);
-}
+function $(sel) { return document.querySelector(sel); }
 
-// Rewrites "選択肢N" references inside a text so they point to the CURRENT
-// shuffled display position. Works for both Arabic (1-9) and kanji (一-九).
-// Relies on the convention that the N-th entry in q.choices (1-indexed) is
-// what the original explanation text referred to as "選択肢N".
 const KANJI_DIGITS = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
-const KANJI_TO_NUM = {
-  一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9,
-};
+const KANJI_TO_NUM = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9 };
 
 function buildChoiceRemap(q, shuffled) {
   const origToNew = new Map();
@@ -162,7 +198,6 @@ function shuffle(arr) {
 function sleep(ms, token) {
   return new Promise((resolve) => {
     const t = setTimeout(() => resolve(true), ms);
-    // if token changes mid-sleep, resolve early so callers can abort.
     const check = () => {
       if (state.audio.token !== token) {
         clearTimeout(t);
@@ -183,6 +218,15 @@ function switchScreen(id) {
 }
 
 // ------------------------------------------------------------
+// theme
+// ------------------------------------------------------------
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  state.options.theme = theme;
+  saveOptions();
+}
+
+// ------------------------------------------------------------
 // audio
 // ------------------------------------------------------------
 function cancelAudio() {
@@ -191,14 +235,10 @@ function cancelAudio() {
     try {
       state.audio.current.pause();
       state.audio.current.currentTime = 0;
-    } catch (e) {
-      // ignore
-    }
+    } catch (e) { /* ignore */ }
     state.audio.current = null;
   }
-  document.querySelectorAll('.playing').forEach((el) => {
-    el.classList.remove('playing');
-  });
+  document.querySelectorAll('.playing').forEach((el) => el.classList.remove('playing'));
 }
 
 function playClip(src, token) {
@@ -214,14 +254,8 @@ function playClip(src, token) {
       if (state.audio.current === audio) state.audio.current = null;
       resolve(true);
     });
-    audio.addEventListener('error', () => {
-      console.warn('audio error:', src);
-      resolve(false);
-    });
-    audio.play().catch((err) => {
-      console.warn('audio play failed:', src, err);
-      resolve(false);
-    });
+    audio.addEventListener('error', () => { console.warn('audio error:', src); resolve(false); });
+    audio.play().catch((err) => { console.warn('audio play failed:', src, err); resolve(false); });
   });
 }
 
@@ -245,23 +279,16 @@ async function playAllAudio() {
   const token = state.audio.token;
   const q = state.questionList[state.currentIndex];
   const voice = q.audio_voice;
-
   await playClip(questionAudioPath(q, 'question.mp3'), token);
   if (state.audio.token !== token) return;
   if (!(await sleep(1500, token))) return;
-
   for (let i = 0; i < state.shuffledChoices.length; i++) {
     if (state.audio.token !== token) return;
     const c = state.shuffledChoices[i];
-    const choiceEl = document.querySelector(
-      `.choice-item[data-choice-id="${c.choice_id}"]`,
-    );
+    const choiceEl = document.querySelector(`.choice-item[data-choice-id="${c.choice_id}"]`);
     choiceEl?.classList.add('playing');
     await playClip(prefixAudioPath(voice, i + 1), token);
-    if (state.audio.token !== token) {
-      choiceEl?.classList.remove('playing');
-      return;
-    }
+    if (state.audio.token !== token) { choiceEl?.classList.remove('playing'); return; }
     await playClip(questionAudioPath(q, `${c.choice_id}.mp3`), token);
     choiceEl?.classList.remove('playing');
     if (state.audio.token !== token) return;
@@ -276,9 +303,7 @@ async function playChoiceAudio(choice) {
   const token = state.audio.token;
   const q = state.questionList[state.currentIndex];
   const voice = q.audio_voice;
-  const pos = state.shuffledChoices.findIndex(
-    (c) => c.choice_id === choice.choice_id,
-  );
+  const pos = state.shuffledChoices.findIndex((c) => c.choice_id === choice.choice_id);
   if (pos >= 0) {
     await playClip(prefixAudioPath(voice, pos + 1), token);
     if (state.audio.token !== token) return;
@@ -294,53 +319,74 @@ async function playExplanationAudio() {
 }
 
 // ------------------------------------------------------------
-// start screen
+// start screen rendering
 // ------------------------------------------------------------
 function renderChapterList() {
   const list = $('#chapter-list');
   list.innerHTML = '';
+  const mistakes = loadMistakes();
   for (const ch of CHAPTERS) {
     const btn = document.createElement('button');
     btn.className = 'chapter-btn';
     btn.dataset.chapterId = ch.id;
     btn.disabled = !ch.enabled;
+
+    const mistakeCount = mistakes[ch.id] ? Object.keys(mistakes[ch.id]).length : 0;
+    const mistakeBadge = mistakeCount > 0
+      ? `<span class="mistake-badge">🔥${mistakeCount}</span>`
+      : '';
+
     btn.innerHTML = `
       <span class="chapter-title">${ch.title}</span>
-      <span class="chapter-meta">${ch.enabled ? '50問' : '準備中'}</span>
+      <span class="chapter-meta">
+        <span>${ch.enabled ? '50問' : '準備中'}</span>
+        ${mistakeBadge}
+      </span>
     `;
     if (ch.id === state.chapter) btn.classList.add('active');
     btn.addEventListener('click', () => {
       if (!ch.enabled) return;
-      document.querySelectorAll('.chapter-btn').forEach((b) => {
-        b.classList.remove('active');
-      });
+      document.querySelectorAll('.chapter-btn').forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');
       state.chapter = ch.id;
+      openSettingsModal();
     });
     list.appendChild(btn);
   }
 }
 
-function renderOptions() {
-  $('#opt-shuffle-questions').checked = state.options.shuffleQuestions;
-  $('#opt-auto-play').checked = state.options.autoPlay;
-  $('#opt-auto-next').checked = state.options.autoNext;
-
-  document.querySelectorAll('#opt-speed, #opt-speed-quiz').forEach((el) => {
-    el.value = state.options.speed;
-  });
-}
-
-function applySpeed(newSpeed) {
-  if (!SPEED_MAP[newSpeed]) return;
-  state.options.speed = newSpeed;
-  saveOptions();
-  document.querySelectorAll('#opt-speed, #opt-speed-quiz').forEach((el) => {
-    if (el.value !== newSpeed) el.value = newSpeed;
-  });
-  if (state.audio.current) {
-    state.audio.current.playbackRate = SPEED_MAP[newSpeed].rate;
+function renderMistakesSummary() {
+  const el = $('#mistakes-summary');
+  const mistakes = loadMistakes();
+  const chapters = Object.keys(mistakes).filter(k => Object.keys(mistakes[k]).length > 0);
+  if (chapters.length === 0) {
+    el.innerHTML = '<em style="color:var(--text-muted)">ミスデータなし。演習を進めると記録されます。</em>';
+    return;
   }
+  const rows = chapters.map((cid) => {
+    const count = Object.keys(mistakes[cid]).length;
+    const chInfo = CHAPTERS.find(c => c.id === cid);
+    const title = chInfo ? chInfo.title : cid;
+    return `
+      <div class="mistake-row">
+        <span class="mistake-row-name">${title}</span>
+        <span style="display:flex;align-items:center;gap:0.4rem;">
+          <span class="mistake-row-count">${count}問</span>
+          <button class="btn-retry-mistakes" data-chapter="${cid}">復習</button>
+        </span>
+      </div>
+    `;
+  });
+  el.innerHTML = rows.join('');
+  // bind retry buttons
+  el.querySelectorAll('.btn-retry-mistakes').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const cid = btn.dataset.chapter;
+      state.chapter = cid;
+      startQuizMistakesOnly(cid);
+    });
+  });
 }
 
 function renderHistory() {
@@ -348,21 +394,19 @@ function renderHistory() {
   const el = $('#history-summary');
   const chapters = Object.keys(history);
   if (chapters.length === 0) {
-    el.innerHTML = '<em>まだ履歴はありません。</em>';
+    el.innerHTML = '<em style="color:var(--text-muted)">まだ履歴はありません。</em>';
     return;
   }
   const rows = chapters.map((cid) => {
     const sessions = history[cid];
     const last = sessions[sessions.length - 1];
-    const best = Math.max(
-      ...sessions.map((s) => Math.round((s.correct / s.total) * 100)),
-    );
+    const best = Math.max(...sessions.map((s) => Math.round((s.correct / s.total) * 100)));
+    const chInfo = CHAPTERS.find(c => c.id === cid);
+    const title = chInfo ? chInfo.title : cid;
     return `
       <div class="history-row">
-        <span>${cid}  (${sessions.length}回)</span>
-        <span>最終: ${last.correct}/${last.total} (${Math.round(
-      (last.correct / last.total) * 100,
-    )}%) · 最高: ${best}%</span>
+        <span>${title} (${sessions.length}回)</span>
+        <span>最終: ${last.correct}/${last.total} (${Math.round((last.correct / last.total) * 100)}%) · 最高: ${best}%</span>
       </div>
     `;
   });
@@ -370,11 +414,46 @@ function renderHistory() {
 }
 
 // ------------------------------------------------------------
+// settings modal
+// ------------------------------------------------------------
+function openSettingsModal() {
+  const modal = $('#settings-modal');
+  const chInfo = CHAPTERS.find(c => c.id === state.chapter);
+  $('#modal-chapter-name').textContent = chInfo ? chInfo.title : state.chapter;
+
+  const mistakeCount = getMistakeCount(state.chapter);
+  $('#mistake-count-label').textContent = `${mistakeCount}問`;
+  const mistakeRadio = document.querySelector('input[name="quiz-mode"][value="mistakes"]');
+  if (mistakeCount === 0) {
+    mistakeRadio.disabled = true;
+    mistakeRadio.closest('.radio-card').style.opacity = '0.4';
+  } else {
+    mistakeRadio.disabled = false;
+    mistakeRadio.closest('.radio-card').style.opacity = '1';
+  }
+  // reset to all
+  document.querySelector('input[name="quiz-mode"][value="all"]').checked = true;
+
+  // apply current options
+  document.querySelectorAll('.speed-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.speed === state.options.speed);
+  });
+  $('#modal-shuffle').checked = state.options.shuffleQuestions;
+  $('#modal-autoplay').checked = state.options.autoPlay;
+  $('#modal-autonext').checked = state.options.autoNext;
+
+  modal.classList.remove('hidden');
+}
+
+function closeSettingsModal() {
+  $('#settings-modal').classList.add('hidden');
+}
+
+// ------------------------------------------------------------
 // quiz
 // ------------------------------------------------------------
 async function startQuiz(questionsOverride = null) {
   const chapter = state.chapter;
-
   try {
     if (!state.chapterData || state.chapterData.metadata.chapter !== chapter) {
       const resp = await fetch(`${DATA_PATH}/${chapter}.json`);
@@ -384,15 +463,14 @@ async function startQuiz(questionsOverride = null) {
   } catch (err) {
     alert(
       '問題データの読み込みに失敗しました。\n\n' +
-        'ブラウザで file:// として直接開いた場合はフェッチが制限されます。\n' +
-        '同梱の "serve.py" を実行してから http://localhost:8000 でアクセスしてください。\n\n' +
-        `エラー: ${err.message}`,
+      'ブラウザで file:// として直接開いた場合はフェッチが制限されます。\n' +
+      '同梱の "serve.py" を実行してから http://localhost:8000 でアクセスしてください。\n\n' +
+      `エラー: ${err.message}`,
     );
     return;
   }
 
-  let questions =
-    questionsOverride ?? state.chapterData.questions.slice();
+  let questions = questionsOverride ?? state.chapterData.questions.slice();
   if (state.options.shuffleQuestions && !questionsOverride) {
     questions = shuffle(questions);
   }
@@ -400,9 +478,33 @@ async function startQuiz(questionsOverride = null) {
   state.questionList = questions;
   state.currentIndex = 0;
   state.answers = [];
+  clearSessionProgress();
 
   switchScreen('quiz-screen');
   renderCurrentQuestion();
+}
+
+async function startQuizMistakesOnly(chapter) {
+  state.chapter = chapter;
+  try {
+    if (!state.chapterData || state.chapterData.metadata.chapter !== chapter) {
+      const resp = await fetch(`${DATA_PATH}/${chapter}.json`);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      state.chapterData = await resp.json();
+    }
+  } catch (err) {
+    alert(`データ読み込みエラー: ${err.message}`);
+    return;
+  }
+
+  const mistakeIds = getMistakeIds(chapter);
+  if (mistakeIds.length === 0) {
+    alert('この章にはミス記録がありません。');
+    return;
+  }
+
+  const mistakeQs = state.chapterData.questions.filter(q => mistakeIds.includes(q.id));
+  startQuiz(mistakeQs);
 }
 
 function renderCurrentQuestion() {
@@ -449,13 +551,17 @@ function renderCurrentQuestion() {
     list.appendChild(item);
   });
 
-  // schedule auto-play after render
+  // sync speed selector
+  $('#opt-speed-quiz').value = state.options.speed;
+
   if (state.options.autoPlay) {
-    // small delay to allow user to read the question first
     setTimeout(() => {
       if (!state.answered) playAllAudio();
     }, 300);
   }
+
+  // save progress
+  saveSessionProgress();
 }
 
 function handleChoice(choice) {
@@ -474,6 +580,11 @@ function handleChoice(choice) {
     correct,
   });
 
+  // record mistake
+  if (!correct) {
+    recordMistake(state.chapter, q.id);
+  }
+
   // update choice styles
   document.querySelectorAll('.choice-item').forEach((el) => {
     el.disabled = true;
@@ -483,17 +594,14 @@ function handleChoice(choice) {
     else el.classList.add('dim');
   });
 
-  // update score
   const correctCount = state.answers.filter((a) => a.correct).length;
   $('#score-correct').textContent = correctCount;
   $('#score-answered').textContent = state.answers.length;
 
-  // progress bar
-  const pct =
-    ((state.currentIndex + 1) / state.questionList.length) * 100;
+  const pct = ((state.currentIndex + 1) / state.questionList.length) * 100;
   $('#progress-bar-fill').style.width = `${pct}%`;
 
-  // render feedback
+  // feedback
   const fb = $('#feedback');
   fb.classList.remove('hidden', 'correct', 'wrong');
   fb.classList.add(correct ? 'correct' : 'wrong');
@@ -501,16 +609,10 @@ function handleChoice(choice) {
   $('#feedback-text').textContent = correct
     ? '正解'
     : `不正解 (正解は選択肢${
-        state.shuffledChoices.findIndex(
-          (c) => c.choice_id === correctChoice.choice_id,
-        ) + 1
+        state.shuffledChoices.findIndex((c) => c.choice_id === correctChoice.choice_id) + 1
       })`;
 
-  $('#feedback-explanation').textContent = remapChoiceRefs(
-    q.explanation,
-    q,
-    state.shuffledChoices,
-  );
+  $('#feedback-explanation').textContent = remapChoiceRefs(q.explanation, q, state.shuffledChoices);
 
   const evList = $('#feedback-evidence-list');
   evList.innerHTML = '';
@@ -519,9 +621,7 @@ function handleChoice(choice) {
     li.innerHTML = `<code>${ev.source_id}</code>「${ev.quote}」`;
     evList.appendChild(li);
   });
-  $('#feedback-evidence').style.display = (q.evidence || []).length
-    ? ''
-    : 'none';
+  $('#feedback-evidence').style.display = (q.evidence || []).length ? '' : 'none';
 
   if (q.mnemonic) {
     $('#feedback-mnemonic').classList.remove('hidden');
@@ -532,17 +632,16 @@ function handleChoice(choice) {
 
   fb.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-  // auto-play explanation if enabled
   if (state.options.autoPlay) {
     setTimeout(() => playExplanationAudio(), 500);
   }
 
-  // auto-next after correct + audio plays
   if (state.options.autoNext && correct) {
-    setTimeout(() => {
-      if (state.answered) nextQuestion();
-    }, 4500);
+    setTimeout(() => { if (state.answered) nextQuestion(); }, 4500);
   }
+
+  // save progress
+  saveSessionProgress();
 }
 
 function nextQuestion() {
@@ -559,16 +658,14 @@ function nextQuestion() {
 // ------------------------------------------------------------
 function showResult() {
   cancelAudio();
+  clearSessionProgress();
 
   const total = state.answers.length;
   const correct = state.answers.filter((a) => a.correct).length;
   $('#result-correct').textContent = correct;
   $('#result-total').textContent = total;
-  $('#result-percent').textContent = `${Math.round(
-    (correct / total) * 100,
-  )}%`;
+  $('#result-percent').textContent = `${Math.round((correct / total) * 100)}%`;
 
-  // category breakdown
   const byCat = {};
   for (const ans of state.answers) {
     const q = state.questionList.find((x) => x.id === ans.qid);
@@ -591,7 +688,6 @@ function showResult() {
     breakdownEl.appendChild(row);
   }
 
-  // wrong list
   const wrongEl = $('#result-wrong-list');
   wrongEl.innerHTML = '';
   for (const ans of state.answers.filter((a) => !a.correct)) {
@@ -607,7 +703,6 @@ function showResult() {
   }
 
   recordSessionResult(state.chapter, { correct, total });
-
   switchScreen('result-screen');
 }
 
@@ -615,37 +710,90 @@ function showResult() {
 // event wiring
 // ------------------------------------------------------------
 function bindEvents() {
-  $('#btn-start').addEventListener('click', () => startQuiz());
-
-  $('#opt-shuffle-questions').addEventListener('change', (e) => {
-    state.options.shuffleQuestions = e.target.checked;
-    saveOptions();
-  });
-  $('#opt-auto-play').addEventListener('change', (e) => {
-    state.options.autoPlay = e.target.checked;
-    saveOptions();
-  });
-  $('#opt-auto-next').addEventListener('change', (e) => {
-    state.options.autoNext = e.target.checked;
-    saveOptions();
+  // Theme toggle
+  $('#btn-theme-toggle').addEventListener('click', () => {
+    const next = state.options.theme === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
   });
 
-  document.addEventListener('change', (e) => {
-    if (e.target && (e.target.id === 'opt-speed' || e.target.id === 'opt-speed-quiz')) {
-      applySpeed(e.target.value);
+  // Nav brand -> go home
+  $('#nav-brand').addEventListener('click', () => {
+    cancelAudio();
+    switchScreen('start-screen');
+    renderChapterList();
+    renderMistakesSummary();
+    renderHistory();
+  });
+
+  // Modal: speed buttons
+  document.querySelectorAll('.speed-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.speed-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.options.speed = btn.dataset.speed;
+      saveOptions();
+    });
+  });
+
+  // Modal: close
+  $('#btn-modal-close').addEventListener('click', closeSettingsModal);
+  $('#settings-modal').addEventListener('click', (e) => {
+    if (e.target === $('#settings-modal')) closeSettingsModal();
+  });
+
+  // Modal: start quiz
+  $('#btn-start-quiz').addEventListener('click', () => {
+    // read modal state
+    state.options.shuffleQuestions = $('#modal-shuffle').checked;
+    state.options.autoPlay = $('#modal-autoplay').checked;
+    state.options.autoNext = $('#modal-autonext').checked;
+    saveOptions();
+
+    const mode = document.querySelector('input[name="quiz-mode"]:checked').value;
+    closeSettingsModal();
+
+    if (mode === 'mistakes') {
+      startQuizMistakesOnly(state.chapter);
+    } else {
+      startQuiz();
     }
   });
 
+  // Speed change in quiz
+  document.addEventListener('change', (e) => {
+    if (e.target && e.target.id === 'opt-speed-quiz') {
+      state.options.speed = e.target.value;
+      saveOptions();
+      if (state.audio.current) {
+        state.audio.current.playbackRate = SPEED_MAP[state.options.speed].rate;
+      }
+    }
+  });
+
+  // History reset
   $('#btn-reset-history').addEventListener('click', () => {
     if (confirm('学習履歴を全て削除しますか？')) {
-      localStorage.removeItem('history');
+      localStorage.removeItem('cs_history');
       renderHistory();
     }
   });
 
+  // Mistakes reset
+  $('#btn-reset-mistakes').addEventListener('click', () => {
+    if (confirm('ミス記録を全て削除しますか？')) {
+      localStorage.removeItem('cs_mistakes');
+      renderMistakesSummary();
+      renderChapterList();
+    }
+  });
+
+  // Quiz controls
   $('#btn-back').addEventListener('click', () => {
     cancelAudio();
+    saveSessionProgress();
     switchScreen('start-screen');
+    renderChapterList();
+    renderMistakesSummary();
     renderHistory();
   });
 
@@ -653,14 +801,12 @@ function bindEvents() {
   $('#btn-play-all').addEventListener('click', playAllAudio);
   $('#btn-stop-audio').addEventListener('click', cancelAudio);
   $('#btn-play-explanation').addEventListener('click', playExplanationAudio);
-
   $('#btn-next').addEventListener('click', nextQuestion);
 
+  // Result buttons
   $('#btn-retry').addEventListener('click', () => startQuiz());
   $('#btn-retry-wrong').addEventListener('click', () => {
-    const wrongIds = new Set(
-      state.answers.filter((a) => !a.correct).map((a) => a.qid),
-    );
+    const wrongIds = new Set(state.answers.filter((a) => !a.correct).map((a) => a.qid));
     if (wrongIds.size === 0) {
       alert('間違えた問題はありません。');
       return;
@@ -671,10 +817,12 @@ function bindEvents() {
   $('#btn-to-start').addEventListener('click', () => {
     cancelAudio();
     switchScreen('start-screen');
+    renderChapterList();
+    renderMistakesSummary();
     renderHistory();
   });
 
-  // keyboard shortcuts on quiz screen
+  // keyboard shortcuts
   document.addEventListener('keydown', (e) => {
     const quizActive = $('#quiz-screen').classList.contains('active');
     if (!quizActive) return;
@@ -685,10 +833,7 @@ function bindEvents() {
       const choice = state.shuffledChoices[idx];
       if (choice && !state.answered) handleChoice(choice);
     } else if (e.key === ' ' || e.key === 'Enter') {
-      if (state.answered) {
-        e.preventDefault();
-        nextQuestion();
-      }
+      if (state.answered) { e.preventDefault(); nextQuestion(); }
     } else if (e.key === 'p' || e.key === 'P') {
       playAllAudio();
     } else if (e.key === 's' || e.key === 'S') {
@@ -701,13 +846,13 @@ function bindEvents() {
 // init
 // ------------------------------------------------------------
 function init() {
+  applyTheme(state.options.theme);
   renderChapterList();
-  renderOptions();
+  renderMistakesSummary();
   renderHistory();
   bindEvents();
 }
 
-// Modules are deferred, so DOMContentLoaded may have already fired.
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', init);
 } else {

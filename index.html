@@ -1,61 +1,151 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>化学共通テスト演習</title>
+  <title>ChemSpark 極 — 化学暗記演習</title>
+  <meta name="description" content="化学共通テスト対策。音声付き四択問題で効率的なインプット学習を。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <!-- Background layer -->
+  <div id="bg-layer" class="bg-layer"></div>
+  <div id="bg-overlay" class="bg-overlay"></div>
+
   <div id="app">
+    <!-- ==================== Top Bar ==================== -->
+    <nav id="top-bar" class="top-bar">
+      <div class="top-bar-brand" id="nav-brand">
+        <span class="brand-icon">⚗️</span>
+        <span class="brand-text">ChemSpark</span>
+        <span class="brand-sub">極</span>
+      </div>
+      <div class="top-bar-actions">
+        <button id="btn-theme-toggle" class="icon-btn" title="テーマ切替">
+          <span class="theme-icon-dark">🌙</span>
+          <span class="theme-icon-light">☀️</span>
+        </button>
+      </div>
+    </nav>
+
     <!-- ==================== Start screen ==================== -->
     <section id="start-screen" class="screen active">
       <header class="hero">
-        <h1>化学共通テスト演習</h1>
-        <p class="subtitle">音声読み上げ付き 四択問題</p>
+        <div class="hero-emblem">⚗️</div>
+        <h1 class="hero-title">
+          <span class="hero-title-main">ChemSpark</span>
+          <span class="hero-title-kanji">極</span>
+        </h1>
+        <p class="hero-tagline">— 静的学習の錬金術 —</p>
+        <p class="hero-desc">退屈な暗記を、音声と共に効率的なインプットへ。<br>基礎固めの先に、動的学習が待つ。</p>
       </header>
 
-      <div class="card">
-        <h2>章を選ぶ</h2>
-        <div id="chapter-list" class="chapter-list"></div>
-
-        <div class="options">
-          <label class="switch">
-            <input type="checkbox" id="opt-shuffle-questions" />
-            <span>問題をシャッフルして出題</span>
-          </label>
-          <label class="switch">
-            <input type="checkbox" id="opt-auto-play" checked />
-            <span>音声を自動再生</span>
-          </label>
-          <label class="switch">
-            <input type="checkbox" id="opt-auto-next" />
-            <span>正解後に自動で次へ進む</span>
-          </label>
-          <label class="switch switch-select">
-            <span class="switch-label">読み上げ速度</span>
-            <select id="opt-speed">
-              <option value="slow">ゆっくり（学習向け）</option>
-              <option value="natural">ナチュラル</option>
-              <option value="fast">早め</option>
-            </select>
-          </label>
+      <!-- Chapter Selection -->
+      <div class="section-card" id="chapter-section">
+        <div class="section-header">
+          <h2><span class="section-icon">📖</span> 学習エリア選択</h2>
         </div>
-
-        <button id="btn-start" class="btn btn-primary btn-lg">演習を開始</button>
+        <div id="chapter-list" class="chapter-grid"></div>
       </div>
 
-      <div class="card">
-        <h2>学習履歴</h2>
+      <!-- Mistake Tracker -->
+      <div class="section-card" id="mistakes-section">
+        <div class="section-header">
+          <h2><span class="section-icon">🔥</span> ミス記録 — 章別</h2>
+          <button id="btn-reset-mistakes" class="btn-icon-sm" title="ミス記録リセット">🗑️</button>
+        </div>
+        <div id="mistakes-summary" class="mistakes-summary">ミスデータなし</div>
+      </div>
+
+      <!-- History -->
+      <div class="section-card" id="history-section">
+        <div class="section-header">
+          <h2><span class="section-icon">📊</span> 学習履歴</h2>
+          <button id="btn-reset-history" class="btn-icon-sm" title="履歴リセット">🗑️</button>
+        </div>
         <div id="history-summary" class="history-summary">読み込み中…</div>
-        <button id="btn-reset-history" class="btn btn-text">履歴をリセット</button>
       </div>
     </section>
+
+    <!-- ==================== Settings Modal ==================== -->
+    <div id="settings-modal" class="modal-overlay hidden">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2>⚙️ 演習設定</h2>
+          <button id="btn-modal-close" class="modal-close">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-chapter-info">
+            <span id="modal-chapter-name">第1章-1</span>
+            <span class="modal-chapter-badge">50問</span>
+          </div>
+
+          <div class="setting-group">
+            <label class="setting-label">📝 出題モード</label>
+            <div class="setting-options">
+              <label class="radio-card">
+                <input type="radio" name="quiz-mode" value="all" checked />
+                <span class="radio-card-body">
+                  <span class="radio-card-title">全問出題</span>
+                  <span class="radio-card-desc">章内の全50問</span>
+                </span>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="quiz-mode" value="mistakes" />
+                <span class="radio-card-body">
+                  <span class="radio-card-title">ミスのみ復習</span>
+                  <span class="radio-card-desc" id="mistake-count-label">0問</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="setting-group">
+            <label class="setting-label">🔊 読み上げ速度</label>
+            <div class="speed-selector">
+              <button class="speed-btn" data-speed="slow">🐢 ゆっくり</button>
+              <button class="speed-btn active" data-speed="natural">⚡ ナチュラル</button>
+              <button class="speed-btn" data-speed="fast">🚀 早め</button>
+            </div>
+          </div>
+
+          <div class="setting-group">
+            <label class="setting-label">🎯 オプション</label>
+            <div class="toggle-list">
+              <label class="toggle-item">
+                <input type="checkbox" id="modal-shuffle" />
+                <span class="toggle-slider"></span>
+                <span>問題シャッフル</span>
+              </label>
+              <label class="toggle-item">
+                <input type="checkbox" id="modal-autoplay" checked />
+                <span class="toggle-slider"></span>
+                <span>音声自動再生</span>
+              </label>
+              <label class="toggle-item">
+                <input type="checkbox" id="modal-autonext" />
+                <span class="toggle-slider"></span>
+                <span>正解後に自動で次へ</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="btn-start-quiz" class="btn-start">
+            <span class="btn-start-icon">⚗️</span>
+            <span>演習開始</span>
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- ==================== Quiz screen ==================== -->
     <section id="quiz-screen" class="screen">
       <header class="quiz-header">
-        <button id="btn-back" class="btn btn-ghost" title="章選択に戻る">← 戻る</button>
+        <button id="btn-back" class="btn-pill btn-ghost-pill" title="章選択に戻る">← 戻る</button>
         <div class="progress">
           <div class="progress-text">
             <span id="progress-current">1</span> / <span id="progress-total">50</span>
@@ -81,23 +171,23 @@
         <h2 id="q-text" class="question-text"></h2>
 
         <div class="audio-controls">
-          <button id="btn-play-question" class="btn btn-ghost" title="問題文を再生">
+          <button id="btn-play-question" class="btn-pill btn-audio" title="問題文を再生">
             🔊 問題文
           </button>
-          <button id="btn-play-all" class="btn btn-ghost" title="問題と選択肢をすべて再生">
-            🔊 問題＋選択肢
+          <button id="btn-play-all" class="btn-pill btn-audio" title="問題と選択肢をすべて再生">
+            🔊 全て再生
           </button>
-          <button id="btn-stop-audio" class="btn btn-ghost" title="音声停止">
+          <button id="btn-stop-audio" class="btn-pill btn-audio" title="音声停止">
             ⏹ 停止
           </button>
-          <label class="inline-speed" title="読み上げ速度">
+          <div class="inline-speed">
             <span>速度</span>
             <select id="opt-speed-quiz">
               <option value="slow">ゆっくり</option>
               <option value="natural">ナチュラル</option>
               <option value="fast">早め</option>
             </select>
-          </label>
+          </div>
         </div>
 
         <ul id="choice-list" class="choice-list"></ul>
@@ -112,7 +202,7 @@
           <h3>解説</h3>
           <p id="feedback-explanation"></p>
           <div class="audio-controls">
-            <button id="btn-play-explanation" class="btn btn-ghost">🔊 解説を再生</button>
+            <button id="btn-play-explanation" class="btn-pill btn-audio">🔊 解説を再生</button>
           </div>
           <details id="feedback-evidence" class="evidence">
             <summary>根拠となる原典</summary>
@@ -124,14 +214,15 @@
           </div>
         </div>
         <div class="feedback-actions">
-          <button id="btn-next" class="btn btn-primary btn-lg">次の問題 →</button>
+          <button id="btn-next" class="btn-start">次の問題 →</button>
         </div>
       </section>
     </section>
 
     <!-- ==================== Result screen ==================== -->
     <section id="result-screen" class="screen">
-      <div class="card">
+      <div class="section-card result-card">
+        <div class="result-header-badge">演習完了</div>
         <h1>お疲れさまでした！</h1>
         <div class="result-score">
           <span id="result-correct">0</span>
@@ -147,9 +238,9 @@
         <div id="result-wrong-list" class="wrong-list"></div>
 
         <div class="result-actions">
-          <button id="btn-retry" class="btn btn-primary">もう一度同じ章を解く</button>
-          <button id="btn-retry-wrong" class="btn btn-secondary">間違えた問題だけ復習</button>
-          <button id="btn-to-start" class="btn btn-ghost">章選択に戻る</button>
+          <button id="btn-retry" class="btn-start">もう一度同じ章を解く</button>
+          <button id="btn-retry-wrong" class="btn-pill btn-secondary-pill">間違えた問題だけ復習</button>
+          <button id="btn-to-start" class="btn-pill btn-ghost-pill">章選択に戻る</button>
         </div>
       </div>
     </section>

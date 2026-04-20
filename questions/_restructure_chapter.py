@@ -89,8 +89,9 @@ def _parse_int(s: str) -> int:
 
 
 def _parse_kanji_number(s: str) -> str:
-    if "点" in s:
-        int_part, dec_part = s.split("点", 1)
+    if "点" in s or "・" in s:
+        sep = "点" if "点" in s else "・"
+        int_part, dec_part = s.split(sep, 1)
         int_val = _parse_int(int_part) if int_part else 0
         dec_str = "".join(str(KANJI_DIGIT[c]) for c in dec_part)
         return f"{int_val}.{dec_str}"
@@ -122,7 +123,7 @@ UNIT_MAP = dict(UNITS)
 
 NUM_RE = re.compile(
     r"(マイナス)?"
-    rf"({DIGIT_CLASS}+(?:点[零一二三四五六七八九]+)?)"
+    rf"({DIGIT_CLASS}+(?:[点・][零一二三四五六七八九]+)?)"
     r"(" + "|".join(re.escape(u) for u, _ in UNITS) + r")"
 )
 
@@ -134,6 +135,24 @@ def _convert_numbers(text: str) -> str:
         unit = UNIT_MAP[m.group(3)]
         return f"{sign}{num}{unit}"
     return NUM_RE.sub(repl, text)
+
+
+# Convert standalone multi-digit kanji numerals (e.g. "二百七十三") to
+# arabic display form. Single-character numerals are intentionally left as-is
+# to avoid over-converting common words ("一部", "一般", etc.).
+STANDALONE_NUM_RE = re.compile(
+    rf"(?<![A-Za-z0-9₀-₉])({DIGIT_CLASS}+(?:[点・][零一二三四五六七八九]+)?)(?![A-Za-z0-9₀-₉])"
+)
+
+
+def _convert_standalone_numbers(text: str) -> str:
+    def repl(m: re.Match) -> str:
+        token = m.group(1)
+        raw = token.replace("点", "").replace("・", "")
+        if len(raw) <= 1:
+            return token
+        return _parse_kanji_number(token)
+    return STANDALONE_NUM_RE.sub(repl, text)
 
 
 # ---------------------------------------------------------------------------
@@ -197,6 +216,7 @@ def to_display(text: str) -> str:
     if not isinstance(text, str):
         return text
     text = _convert_numbers(text)
+    text = _convert_standalone_numbers(text)
     text = _convert_formulas(text)
     text = _choice_refs_to_arabic(text)
     return text
