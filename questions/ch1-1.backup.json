@@ -1,0 +1,1178 @@
+{
+  "metadata": {
+    "chapter": "1-1",
+    "chapter_title": "物質の構成",
+    "source_file": "json_data/1-1物質の構成.txt",
+    "textbook": "化学基礎",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "すべての文字列は日本語読み上げ可能な形式で記述。化学式・数式は日本語名に置換済み。単位は『度』『モル』『パーセント』等の語に統一。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true,
+      "temperature_unit": "度",
+      "percent_unit": "パーセント"
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワード1語をすり替え",
+      "concept_confusion": "類似概念の混同",
+      "property_swap": "物質の性質を別物質と入れ替え",
+      "condition_change": "成立条件の変更",
+      "step_order": "手順の順序入れ替え",
+      "reason_swap": "正しい操作に誤った理由を付与",
+      "partial_truth": "前半は正しく後半だけ誤り",
+      "multiple_swap": "複数箇所を同時にすり替え",
+      "allotrope_mix": "同素体の性質を入れ替え",
+      "negation": "肯定否定を入れ替え"
+    },
+    "category_distribution": {
+      "definition": 12,
+      "property": 10,
+      "classification": 8,
+      "procedure": 6,
+      "confusion": 8,
+      "mnemonic": 3,
+      "comprehensive": 3
+    }
+  },
+  "questions": [
+    {
+      "id": "ch1_1_q001",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "definition",
+      "sub_category": "混合物の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "混合物について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "二種類以上の物質が混じり合ってできているものである。", "is_correct": true },
+        { "label": "2", "text": "二種類以上の元素からできている純物質である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "化合物の定義にすり替え。" },
+        { "label": "3", "text": "一種類の元素だけからできている純物質である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "単体の定義にすり替え。" },
+        { "label": "4", "text": "物理的な方法ではそれ以上分けることができない、単一の物質で構成されているものである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "純物質の定義にすり替え。" }
+      ],
+      "explanation": "混合物とは、二種類以上の物質が混じり合ってできているものです。代表例は空気で、窒素と酸素とアルゴンなど複数の物質が混じり合っています。海水もまた、水に塩化ナトリウムや塩化マグネシウムが溶けてできた混合物です。混合物は構成する物質の割合によって融点や沸点が変わるという特徴があります。選択肢二は化合物、選択肢三は単体、選択肢四は純物質の定義であり、いずれも混合物とは別の概念です。",
+      "evidence": [
+        { "source_id": "1_1_def_001", "quote": "2種類以上の物質が混じり合ったもの。" }
+      ],
+      "related_concept_ids": ["1_1_def_001", "1_1_def_002", "1_2_def_001", "1_2_def_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q002",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "definition",
+      "sub_category": "純物質の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "純物質について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "物理的な方法ではそれ以上分けることができない、単一の物質で構成されているものである。", "is_correct": true },
+        { "label": "2", "text": "化学的な方法ではそれ以上分けることができない、単一の物質で構成されているものである。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "『物理的な方法』を『化学的な方法』にすり替え。化合物は化学的には分解可能だが純物質である。" },
+        { "label": "3", "text": "二種類以上の物質が混じり合ってできているものである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "混合物の定義にすり替え。" },
+        { "label": "4", "text": "融点や沸点などの値が一定でなく、混合する割合によって変化する物質である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "混合物の特徴を純物質の特徴と入れ替え。純物質は融点や沸点が常に一定。" }
+      ],
+      "explanation": "純物質とは、物理的な方法では単一成分に分離できない物質のことです。水や酸素、塩化ナトリウムなどが該当し、融点や沸点、密度などが常に一定の値を示すのが特徴です。選択肢二は『物理的』を『化学的』にすり替えたもので、化合物は化学的方法で分解できるが純物質なので誤り。選択肢三は混合物の定義、選択肢四は混合物の特徴です。例えば食塩水は一見均一ですが、蒸留という物理的方法で水と塩化ナトリウムに分離できるため純物質ではなく混合物です。",
+      "evidence": [
+        { "source_id": "1_1_def_002", "quote": "物理的な方法ではそれ以上分けることができない、単一の物質で構成されているもの。" }
+      ],
+      "related_concept_ids": ["1_1_def_002", "1_1_def_001"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q003",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "definition",
+      "sub_category": "化合物の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "化合物について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "二種類以上の元素からできている純物質である。", "is_correct": true },
+        { "label": "2", "text": "一種類の元素だけからできている純物質である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "『二種類以上』を『一種類』にすり替え。これは単体の定義。" },
+        { "label": "3", "text": "二種類以上の物質が単に混じり合ってできている混合物である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "混合物の定義にすり替え。化合物は純物質。" },
+        { "label": "4", "text": "構成元素の割合が場所や試料によって変化する物質である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "混合物の特徴を化合物の特徴と入れ替え。化合物は常に一定の割合。" }
+      ],
+      "explanation": "化合物とは、二種類以上の元素が結びついてできた純物質です。水は水素と酸素の二種類の元素からなる化合物、塩化ナトリウムはナトリウムと塩素の二種類の元素からなる化合物です。化合物は化学的な方法によって単体に分解することができ、構成元素の質量比は常に一定です。選択肢二は単体の定義、選択肢三は混合物の定義、選択肢四は混合物の性質です。",
+      "evidence": [
+        { "source_id": "1_2_def_001", "quote": "2種類以上の元素からできている純物質。" }
+      ],
+      "related_concept_ids": ["1_2_def_001", "1_2_def_002", "1_1_def_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q004",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "definition",
+      "sub_category": "単体の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "単体について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "一種類の元素だけからできている純物質である。", "is_correct": true },
+        { "label": "2", "text": "二種類以上の元素からできている純物質である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "『一種類』を『二種類以上』にすり替え。これは化合物の定義。" },
+        { "label": "3", "text": "同じ元素からできていても原子の数や配列が異なるため性質が異なる物質群である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "同素体の定義にすり替え。" },
+        { "label": "4", "text": "同じ元素の原子でも中性子の数が異なるため質量が異なる原子のことである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "同位体の定義にすり替え。" }
+      ],
+      "explanation": "単体とは、一種類の元素だけから構成される純物質のことです。水素、酸素、窒素、鉄、銅、硫黄などがこれに当たります。もうこれ以上、別の物質に分解することはできません。選択肢二は『一種類』と『二種類以上』を入れ替えたもので化合物の定義です。選択肢三は同素体、選択肢四は同位体の定義であり、単体とは別の概念です。なお、元素と単体は混同しやすく、元素は物質を構成する成分の種類、単体はその元素だけで構成された実際の物質を指します。",
+      "evidence": [
+        { "source_id": "1_2_def_002", "quote": "1種類の元素だけからできている純物質。" }
+      ],
+      "related_concept_ids": ["1_2_def_002", "1_2_def_001", "1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q005",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "definition",
+      "sub_category": "同素体の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "同素体について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "同じ元素の単体であるが、結合している原子の数や配列が異なるため、性質が異なる物質群である。", "is_correct": true },
+        { "label": "2", "text": "同じ元素の化合物であるが、結合している原子の数や配列が異なるため、性質が異なる物質群である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "『単体』を『化合物』にすり替え。音声では気づきにくい。" },
+        { "label": "3", "text": "同じ元素からできているが、中性子の数が異なるため性質が異なる原子の種類である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "同位体の定義にすり替え。同位体は原子の種類、同素体は物質の種類。" },
+        { "label": "4", "text": "異なる元素からできている単体であるが、原子の数や配列が似ているため性質が似ている物質群である。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "『同じ元素』を『異なる元素』に、『性質が異なる』を『性質が似ている』に二箇所すり替え。" }
+      ],
+      "explanation": "同素体とは、同じ元素からなる単体で、結合している原子の数や配列が異なるために性質が異なる物質群です。例えば炭素の同素体にはダイヤモンドと黒鉛があり、どちらも炭素だけでできていますが、ダイヤモンドは無色透明で極めて硬く電気を通さず、黒鉛は黒色不透明で軟らかく電気を通すという、全く異なる性質を示します。選択肢二は『単体』を『化合物』にすり替えた典型的なひっかけです。選択肢三は同位体の定義で、これは原子核中の中性子数の違いによるもの。同素体は物質の種類、同位体は原子の種類である点を区別してください。",
+      "evidence": [
+        { "source_id": "1_2_def_003", "quote": "同じ元素の単体であるが、結合している原子の数や配列が異なるため、性質が異なる物質群。" },
+        { "source_id": "1_2_def_003", "quote": "同位体は『原子』の種類（中性子数の違い）であり、同素体は『単体（物質）』の種類である。" }
+      ],
+      "related_concept_ids": ["1_2_def_003", "1_2_tip_001", "1_2_def_002"],
+      "mnemonic": "同素体はスコップで掘れ（硫黄・炭素・酸素・リン）"
+    },
+    {
+      "id": "ch1_1_q006",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "definition",
+      "sub_category": "ろ過の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ろ過について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "液体と、それに溶けない固体が混じった混合物を、ろ紙などを用いて液体と固体に分ける操作である。", "is_correct": true },
+        { "label": "2", "text": "沸点の異なる液体の混合物を加熱して分離する操作である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "蒸留の定義にすり替え。" },
+        { "label": "3", "text": "液体に溶けている固体を、ろ紙を用いて分離する操作である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "『溶けない』を『溶けている』にすり替え。溶けているものはろ過できない。" },
+        { "label": "4", "text": "融点の差を利用して固体同士の混合物を分離する操作である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "ろ過の対象は液体と固体の混合物。" }
+      ],
+      "explanation": "ろ過は、液体とそれに溶けない固体の混合物を、ろ紙の穴の大きさの違いを利用して分ける操作です。例えば砂と塩化ナトリウムの混合物に水を加えると、塩化ナトリウムは溶けるが砂は溶けません。これをろ過すると砂はろ紙上に残り、塩化ナトリウム水溶液がろ紙を通過します。このろ紙を通過した液体を『ろ液』と呼びます。選択肢二は蒸留の説明、選択肢三は『溶けない』の有無を入れ替えた誤りで、溶けている物質はろ過では分離できません。",
+      "evidence": [
+        { "source_id": "1_1_proc_001", "quote": "液体と、それに不溶な固体が混じった混合物を、ろ紙などを用いて液体と固体に分ける操作。" }
+      ],
+      "related_concept_ids": ["1_1_proc_001", "1_1_proc_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q007",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "definition",
+      "sub_category": "蒸留の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "蒸留について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "溶液を加熱して目的の液体を蒸発させ、その気体を冷却して再び液体として分離する操作である。", "is_correct": true },
+        { "label": "2", "text": "溶液を加熱して目的の液体を蒸発させ、その気体を冷却して再び固体として分離する操作である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "『液体として』を『固体として』にすり替え。" },
+        { "label": "3", "text": "ろ紙を用いて液体と固体を分ける操作である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "ろ過の定義にすり替え。" },
+        { "label": "4", "text": "融点の差を利用して固体同士を分離する操作である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "『沸点の差』を『融点の差』にすり替え。また対象は液体を含む混合物。" }
+      ],
+      "explanation": "蒸留は沸点の差を利用して液体を分離・精製する操作です。代表例は食塩水から純粋な水を取り出す場合で、加熱すると水だけが蒸発して気体になり、冷却器で冷やして再び液体に戻すことで純粋な水が得られます。選択肢二は最後の部分が『液体』から『固体』にすり替えられています。蒸留で得られるのは液体です。選択肢三はろ過、選択肢四は『沸点』を『融点』にすり替え、対象も固体同士に変えている誤りです。",
+      "evidence": [
+        { "source_id": "1_1_proc_002", "quote": "溶液を加熱して目的の液体を蒸発させ、その気体を冷却して再び液体として分離・精製する操作。" },
+        { "source_id": "1_1_proc_002", "quote": "沸点の異なる物質の混合物であること" }
+      ],
+      "related_concept_ids": ["1_1_proc_002", "1_1_proc_001"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q008",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "definition",
+      "sub_category": "炎色反応の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "炎色反応について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "特定の元素を含む化合物や水溶液を無色の高温の炎に入れると、その元素特有の色がつく現象である。", "is_correct": true },
+        { "label": "2", "text": "すべての元素を炎に入れると、どの元素でも同じ色の炎が観察される現象である。", "is_correct": false, "trap_type": "negation", "trap_detail": "『元素特有の色』を『同じ色』にすり替え。元素ごとに色は異なる。" },
+        { "label": "3", "text": "酸と塩基が反応して熱と光を発する現象である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "中和反応の記述に近い別概念。" },
+        { "label": "4", "text": "金属を加熱すると内部から自発的に色のついた液体がしみ出す現象である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "炎色反応とは無関係な架空の現象。" }
+      ],
+      "explanation": "炎色反応とは、アルカリ金属やアルカリ土類金属などを含む化合物や水溶液を無色の高温の炎に入れたときに、その元素特有の色が炎に現れる現象です。この現象を利用して物質に含まれる金属元素の種類を調べることができます。花火の色もこの原理を応用しています。例えば塩化ナトリウム水溶液を白金線につけて炎に入れると黄色になり、ナトリウムの存在を確認できます。選択肢二は『特有の色』と『同じ色』のすり替えで、元素ごとに色は異なります。",
+      "evidence": [
+        { "source_id": "1_2_proc_001", "quote": "特定の元素（アルカリ金属やアルカリ土類金属など）を含む化合物や水溶液を無色の高温の炎に入れると、元素特有の色がつく現象。" }
+      ],
+      "related_concept_ids": ["1_2_proc_001", "1_2_tip_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q009",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "definition",
+      "sub_category": "質量保存の法則",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "質量保存の法則について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "物質が化学変化するとき、反応前の物質の質量の和と、反応後の物質の質量の和は等しい。", "is_correct": true },
+        { "label": "2", "text": "物質が化学変化するとき、反応後の物質の質量の和は反応前よりも必ず増加する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "『等しい』を『増加する』にすり替え。" },
+        { "label": "3", "text": "物質が化学変化するとき、反応後の物質の質量の和は反応前よりも必ず減少する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "『等しい』を『減少する』にすり替え。" },
+        { "label": "4", "text": "化合物中の各成分元素の質量比は、その化合物の作り方にかかわらず常に一定である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "定比例の法則の記述にすり替え。" }
+      ],
+      "explanation": "質量保存の法則とは、化学変化の前後で物質全体の質量の和が変わらないという法則です。これはフランスの化学者ラボアジエが発見しました。例えば炭素三グラムを燃焼させると酸素八グラムと反応して二酸化炭素十一グラムが生成しますが、三足す八は十一で等しくなります。気体の出入りも含めて密閉容器内で測定する必要があります。選択肢二と三は『等しい』を『増加』や『減少』にすり替えたもの、選択肢四は化合物中の元素比が一定という別の法則、すなわち定比例の法則です。",
+      "evidence": [
+        { "source_id": "1_3_law_001", "quote": "物質が化学変化するとき、反応前の物質の質量の和と、反応後の物質の質量の和は等しい。" },
+        { "source_id": "1_3_law_001", "quote": "炭素 3.0g を燃焼させると、酸素 8.0g と反応して、二酸化炭素 11g が生成する。" }
+      ],
+      "related_concept_ids": ["1_3_law_001"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q010",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "definition",
+      "sub_category": "アボガドロの法則",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アボガドロの法則について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "同温・同圧・同体積の気体中には、気体の種類によらず同数の分子が含まれる。", "is_correct": true },
+        { "label": "2", "text": "同温・同圧・同体積の気体中には、気体の種類ごとに異なる数の分子が含まれる。", "is_correct": false, "trap_type": "negation", "trap_detail": "『よらず同数』を『種類ごとに異なる数』に反転。" },
+        { "label": "3", "text": "気体は単原子の粒子からできており、それ以上分割できない。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "ドルトンの原子説の一部にすり替え。アボガドロは分子の存在を提唱した。" },
+        { "label": "4", "text": "気体の圧力は体積に反比例し、温度に比例する。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "ボイル・シャルルの法則にすり替え。" }
+      ],
+      "explanation": "アボガドロの法則は、同じ温度・同じ圧力・同じ体積の気体の中には、気体の種類が何であっても同じ数の分子が含まれるという法則です。この考えはアボガドロの分子説に基づき、ドルトンの原子説とゲーリュサックの気体反応の法則の間にあった矛盾を解決しました。気体の体積は含まれる分子の数に比例するという点が重要です。選択肢二は結論を反転させた誤り、選択肢三は分子の存在を否定するドルトンの原子説、選択肢四はボイル・シャルルの法則の内容です。",
+      "evidence": [
+        { "source_id": "1_3_def_002", "quote": "気体はいくつかの原子が結合した『分子』からできており、同温・同圧・同体積の気体中には、気体の種類によらず同数の分子が含まれる。" }
+      ],
+      "related_concept_ids": ["1_3_def_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q011",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "definition",
+      "sub_category": "ろ液の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ろ過の操作に関する用語『ろ液』について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "ろ紙を通過して下のビーカーに集まった液体のことである。", "is_correct": true },
+        { "label": "2", "text": "ろ紙の上に残った固体のことである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "ろ液ではなく『ろ物』や残渣の記述。" },
+        { "label": "3", "text": "ろ過の前にビーカーに入れておく溶液のことである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "ろ過前の混合溶液をろ液とは呼ばない。" },
+        { "label": "4", "text": "ろ紙自体を湿らせるために使う水のことである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "ろ紙の密着用の水とは別の概念。" }
+      ],
+      "explanation": "ろ液とは、ろ過操作においてろ紙を通過して下のビーカーに集まった液体のことです。たとえば砂と塩化ナトリウム水溶液の混合物をろ過すると、砂はろ紙上に残り、塩化ナトリウム水溶液はろ紙を通過して下のビーカーに集まります。この通過した液体がろ液です。選択肢二はろ紙上に残った固体でありろ液ではありません。",
+      "evidence": [
+        { "source_id": "1_1_proc_001", "quote": "ろ紙を通過した液体をろ液と呼びます。" }
+      ],
+      "related_concept_ids": ["1_1_proc_001"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q012",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "definition",
+      "sub_category": "同素体の成立条件",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "同素体の成立条件について、誤りを含む記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "同じ元素からなる単体であることが必要である。", "is_correct": false },
+        { "label": "2", "text": "原子の配列や結合数が異なることが必要である。", "is_correct": false },
+        { "label": "3", "text": "構成する元素が複数種類であることが必要である。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "『同じ元素』を『複数種類の元素』にすり替え。これでは同素体ではなく化合物になる。" },
+        { "label": "4", "text": "同素体どうしは性質が異なる物質群である。", "is_correct": false }
+      ],
+      "explanation": "同素体の成立条件は、第一に同じ一種類の元素だけからなる単体であること、第二に原子の配列や結合数が異なること、の二つです。その結果として同素体どうしは性質が異なります。したがって選択肢一、二、四は正しい記述です。誤りは選択肢三で、構成元素が複数種類になってしまうとそれは化合物であり、そもそも同素体の要件を満たしません。同素体は必ず同じ一種類の元素から構成される単体どうしの関係です。",
+      "evidence": [
+        { "source_id": "1_2_def_003", "quote": "同じ元素からなる単体であること" },
+        { "source_id": "1_2_def_003", "quote": "原子の配列や結合数が異なること" }
+      ],
+      "related_concept_ids": ["1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q013",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "property",
+      "sub_category": "水の性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "水（純水）の性質について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "大気圧のもとでの融点は零度、沸点は百度である。", "is_correct": true },
+        { "label": "2", "text": "大気圧のもとでの融点は零度、沸点は七十八度である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "沸点をエタノールの値（約七十八度）にすり替え。" },
+        { "label": "3", "text": "大気圧のもとでの融点はマイナス百十五度、沸点は百度である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "融点をエタノールの値（マイナス百十五度）にすり替え。" },
+        { "label": "4", "text": "大気圧のもとでの融点は八百度、沸点は千四百度である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "塩化ナトリウムの値にすり替え。" }
+      ],
+      "explanation": "純水は大気圧のもとで融点が零度、沸点が百度という一定の値を示します。これは純物質の大きな特徴で、値が常に一定であることから純物質と混合物を見分ける手がかりになります。選択肢二の七十八度はエタノールの沸点、選択肢三のマイナス百十五度はエタノールの融点、選択肢四の八百度付近は塩化ナトリウムの融点・沸点に対応しており、いずれも他の物質の値とのすり替えです。",
+      "evidence": [
+        { "source_id": "1_1_sub_001", "quote": "melting_point 0 ℃ 大気圧" },
+        { "source_id": "1_1_sub_001", "quote": "boiling_point 100 ℃ 大気圧" },
+        { "source_id": "1_1_sub_003", "quote": "エタノール boiling_point 78" },
+        { "source_id": "1_1_sub_002", "quote": "塩化ナトリウム melting_point 801" }
+      ],
+      "related_concept_ids": ["1_1_def_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q014",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "property",
+      "sub_category": "塩化ナトリウムの性質",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "塩化ナトリウム（食塩）の性質について、誤りを含む記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "無色で、においはない。", "is_correct": false },
+        { "label": "2", "text": "水に溶けやすい。", "is_correct": false },
+        { "label": "3", "text": "融点は百度程度と低く、身近な熱でも容易に融解する。", "is_correct": true, "trap_type": "property_swap", "trap_detail": "塩化ナトリウムの融点は約八百一度。水の沸点の値にすり替え。" },
+        { "label": "4", "text": "ナトリウムと塩素の二種類の元素からなる化合物である。", "is_correct": false }
+      ],
+      "explanation": "塩化ナトリウムは無色で無臭、水に溶けやすく、ナトリウムと塩素からなる化合物です。融点は約八百一度、沸点は約千四百十三度と非常に高く、通常の調理温度ではまったく融けません。選択肢三は『融点が百度程度』と低く見せかけており、実際は八百一度であるため大きな誤りです。百度は水の沸点と混同させるひっかけです。",
+      "evidence": [
+        { "source_id": "1_1_sub_002", "quote": "melting_point 801 ℃" },
+        { "source_id": "1_1_sub_002", "quote": "boiling_point 1413 ℃" },
+        { "source_id": "1_1_sub_002", "quote": "color 無" },
+        { "source_id": "1_1_sub_002", "quote": "solubility 水に溶けやすい" }
+      ],
+      "related_concept_ids": ["1_2_def_001"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q015",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "property",
+      "sub_category": "エタノールの性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "エタノール（アルコール）の性質について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "無色で特有のにおいを持ち、沸点は約七十八度である。", "is_correct": true },
+        { "label": "2", "text": "無色無臭で、沸点は約百度である。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "エタノールは特有のにおいあり。沸点も水の値にすり替え。" },
+        { "label": "3", "text": "淡青色で独特のにおいがあり、反応しやすく有毒である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "オゾンの性質にすり替え。" },
+        { "label": "4", "text": "黄色で、加熱するとゴム状の弾性を示す。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "硫黄の同素体の性質にすり替え。" }
+      ],
+      "explanation": "エタノールは無色ですが独特のにおいを持ち、沸点は約七十八度、融点はマイナス百十五度の液体です。密度は二十五度で一立方センチメートルあたり約零点七九グラム、水より軽い液体です。水とエタノールの混合物を蒸留すると、沸点の低いエタノールが先に蒸発する性質を利用してエタノールを濃縮できます。選択肢二は『無臭』『百度』が誤り、選択肢三はオゾン、選択肢四はゴム状硫黄の性質です。",
+      "evidence": [
+        { "source_id": "1_1_sub_003", "quote": "エタノール boiling_point 78 ℃" },
+        { "source_id": "1_1_sub_003", "quote": "color 無 odor 特有のにおい" }
+      ],
+      "related_concept_ids": ["1_1_proc_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q016",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "property",
+      "sub_category": "オゾンの性質",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "オゾンの性質について、誤りを含む記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "淡青色の気体である。", "is_correct": false },
+        { "label": "2", "text": "独特のにおいがある。", "is_correct": false },
+        { "label": "3", "text": "反応しやすく、有毒である。", "is_correct": false },
+        { "label": "4", "text": "常温で最も安定な酸素の単体である。", "is_correct": true, "trap_type": "allotrope_mix", "trap_detail": "常温で最も安定なのは酸素（O2）であり、オゾンはむしろ反応しやすく不安定。同素体どうしの性質の入れ替え。" }
+      ],
+      "explanation": "オゾンは酸素の同素体で、淡青色、独特のにおいをもち、反応しやすく有毒な気体です。選択肢四の『常温で最も安定』というのは同じく酸素の同素体である通常の酸素（二酸子の分子）の特徴であり、オゾンは逆に反応性が高く分解しやすいのが特徴です。このように同素体どうしで性質の入れ替えは典型的なひっかけです。",
+      "evidence": [
+        { "source_id": "1_2_sub_005", "quote": "オゾン color 淡青 odor 独特のにおい 反応しやすく有毒" },
+        { "source_id": "1_2_sub_004", "quote": "酸素 空気中に約20%存在" }
+      ],
+      "related_concept_ids": ["1_2_sub_004", "1_2_sub_005", "1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q017",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "property",
+      "sub_category": "斜方硫黄の性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "斜方硫黄の性質について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "黄色で、常温で最も安定な硫黄の同素体である。", "is_correct": true },
+        { "label": "2", "text": "黒褐色で、ゴムに似た弾性をもつ硫黄の同素体である。", "is_correct": false, "trap_type": "allotrope_mix", "trap_detail": "ゴム状硫黄の性質にすり替え。" },
+        { "label": "3", "text": "黄色で、常温で放置すると単斜硫黄に変化する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "向きが逆。常温で放置すると『単斜硫黄が斜方硫黄に戻る』が正しい。" },
+        { "label": "4", "text": "無色透明で、全物質中で最も硬い。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "ダイヤモンドの性質にすり替え。" }
+      ],
+      "explanation": "斜方硫黄は硫黄の同素体のうち、常温で最も安定な黄色の物質です。斜方硫黄を約百二十度に加熱し冷却すると単斜硫黄が生成しますが、単斜硫黄は常温で放置すると再び斜方硫黄に戻ります。選択肢三はこの変化の方向を逆にした誤りで、『常温で安定』なのは斜方硫黄の側です。選択肢二はゴム状硫黄、選択肢四はダイヤモンドの性質です。",
+      "evidence": [
+        { "source_id": "1_2_sub_001", "quote": "斜方硫黄 color 黄 常温で最も安定" },
+        { "source_id": "1_2_sub_002", "quote": "単斜硫黄 常温放置で斜方硫黄に戻る" }
+      ],
+      "related_concept_ids": ["1_2_sub_001", "1_2_sub_002", "1_2_sub_003", "1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q018",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "property",
+      "sub_category": "単斜硫黄の生成条件",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "単斜硫黄の生成条件について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "斜方硫黄を約百二十度に加熱して冷却すると生成する。", "is_correct": true },
+        { "label": "2", "text": "斜方硫黄を約二百五十度に加熱後、水中に注ぐと生成する。", "is_correct": false, "trap_type": "allotrope_mix", "trap_detail": "これはゴム状硫黄の生成条件。" },
+        { "label": "3", "text": "ゴム状硫黄を常温で長時間放置すると生成する。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "常温放置で変化するのは『単斜硫黄が斜方硫黄に戻る』関係。" },
+        { "label": "4", "text": "酸素を低温かつ高圧で圧縮すると生成する。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "硫黄と酸素の同素体を混同。" }
+      ],
+      "explanation": "単斜硫黄は、斜方硫黄を約百二十度まで加熱してから冷却することで得られます。得られた単斜硫黄を常温に放置すると、より安定な斜方硫黄に戻っていきます。選択肢二は約二百五十度まで加熱後に水中に注ぐ条件で、これはゴム状硫黄の生成条件です。条件の数値と操作が同素体ごとに異なるため、生成温度と冷却方法の組合せを正確に押さえることが重要です。",
+      "evidence": [
+        { "source_id": "1_2_sub_002", "quote": "斜方硫黄を約120℃に加熱し冷却すると生成" },
+        { "source_id": "1_2_sub_003", "quote": "斜方硫黄を約250℃に加熱後、水中に注ぐと生成" }
+      ],
+      "related_concept_ids": ["1_2_sub_001", "1_2_sub_002", "1_2_sub_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q019",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "property",
+      "sub_category": "ゴム状硫黄の性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ゴム状硫黄の性質について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "黒褐色で、ゴムに似た弾性をもつ硫黄の同素体である。", "is_correct": true },
+        { "label": "2", "text": "無色透明で、全物質中で最も硬い硫黄の同素体である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "ダイヤモンドの性質にすり替え。" },
+        { "label": "3", "text": "黄色の粉末で、常温で最も安定な硫黄の同素体である。", "is_correct": false, "trap_type": "allotrope_mix", "trap_detail": "斜方硫黄の性質にすり替え。" },
+        { "label": "4", "text": "淡青色の気体で、反応しやすく有毒である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "オゾンの性質にすり替え。" }
+      ],
+      "explanation": "ゴム状硫黄は、斜方硫黄を約二百五十度まで加熱してから水中に注ぐことで得られる硫黄の同素体で、黒褐色の弾性をもつ固体です。純度が高ければ黄色になります。斜方硫黄、単斜硫黄、ゴム状硫黄は同じ硫黄の同素体ですが、それぞれ色や物理的性質が異なります。選択肢二はダイヤモンド、選択肢三は斜方硫黄、選択肢四はオゾンの性質であり、同素体どうしや別系統の物質との混同を狙ったひっかけです。",
+      "evidence": [
+        { "source_id": "1_2_sub_003", "quote": "ゴム状硫黄 color 黒褐色（純度が高ければ黄）ゴムに似た弾性をもつ" }
+      ],
+      "related_concept_ids": ["1_2_sub_003", "1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q020",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "property",
+      "sub_category": "ダイヤモンドの性質",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ダイヤモンドの性質について、誤りを含む記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "無色透明である。", "is_correct": false },
+        { "label": "2", "text": "全物質中で最も硬い。", "is_correct": false },
+        { "label": "3", "text": "原子が立体的な網目状の構造でつながっている。", "is_correct": false },
+        { "label": "4", "text": "電気をよく通す。", "is_correct": true, "trap_type": "allotrope_mix", "trap_detail": "電気をよく通すのは同素体の黒鉛。ダイヤモンドは電気を通さない。" }
+      ],
+      "explanation": "ダイヤモンドは炭素の同素体の一つで、無色透明で全物質中で最も硬く、原子が立体的な網目状に結合した構造を持ちます。一方、電気については通さないのが特徴です。選択肢四は『電気をよく通す』としており、これは同じ炭素の同素体である黒鉛の性質です。同素体どうしの性質入れ替えは頻出のひっかけで、ダイヤモンドと黒鉛の『硬さ』『色』『電気伝導性』『構造』を対で押さえることが重要です。",
+      "evidence": [
+        { "source_id": "1_2_sub_006", "quote": "ダイヤモンド color 無色透明 electrical_conductivity 通さない 全物質中で最も硬い 立体的な網目状構造" },
+        { "source_id": "1_2_sub_007", "quote": "黒鉛 electrical_conductivity 通す" }
+      ],
+      "related_concept_ids": ["1_2_sub_006", "1_2_sub_007", "1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q021",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "property",
+      "sub_category": "黒鉛の性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "黒鉛（グラファイト）の性質について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "黒色不透明で、軟らかく薄くはがれやすい層状構造をもち、電気を通す。", "is_correct": true },
+        { "label": "2", "text": "無色透明で、立体的な網目状構造をもち、電気を通さない。", "is_correct": false, "trap_type": "allotrope_mix", "trap_detail": "ダイヤモンドの性質にすり替え。" },
+        { "label": "3", "text": "淡青色で、独特のにおいを持ち、反応しやすい。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "オゾンの性質にすり替え。" },
+        { "label": "4", "text": "黄色で、ゴムに似た弾性をもつ。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "ゴム状硫黄の性質にすり替え。" }
+      ],
+      "explanation": "黒鉛は炭素の同素体で、鉛筆の芯に使われる黒色不透明の物質です。原子が六角形に結びついて平面の層を作り、その層が積み重なった構造をしているため、薄くはがれやすく軟らかいという性質を示します。また層の中を電子が自由に動けるため、電気を通します。選択肢二は同じ炭素の同素体であるダイヤモンドの性質で、性質がほぼ正反対になるため、対にして覚えるとよいでしょう。",
+      "evidence": [
+        { "source_id": "1_2_sub_007", "quote": "黒鉛 color 黒色不透明 electrical_conductivity 通す 軟らかく薄くはがれやすい 層状構造" }
+      ],
+      "related_concept_ids": ["1_2_sub_006", "1_2_sub_007", "1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q022",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "property",
+      "sub_category": "酸素の性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "酸素（通常の酸素の単体）の性質について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "無色無臭の気体で、空気中に体積でおよそ二十パーセント存在する。", "is_correct": true },
+        { "label": "2", "text": "淡青色で独特のにおいがあり、空気中にはほとんど存在しない。", "is_correct": false, "trap_type": "allotrope_mix", "trap_detail": "オゾンの性質にすり替え。" },
+        { "label": "3", "text": "無色無臭の気体で、空気中に体積でおよそ八十パーセント存在する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "二十と八十を入れ替え。八十パーセントは窒素の比率。" },
+        { "label": "4", "text": "黒色不透明の固体で、電気を通す。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "黒鉛の性質にすり替え。" }
+      ],
+      "explanation": "通常の酸素の単体は無色無臭の気体で、空気中に体積でおよそ二十パーセント含まれています。残る約八十パーセントの大半を占めるのは窒素です。選択肢二は同素体であるオゾンの性質、選択肢三は酸素と窒素の存在比を逆にしたひっかけ、選択肢四は黒鉛の性質です。『空気中約二十パーセントは酸素』という基本値を押さえておけば迷わず選べます。",
+      "evidence": [
+        { "source_id": "1_2_sub_004", "quote": "酸素 color 無 odor 無 空気中に約20%存在" }
+      ],
+      "related_concept_ids": ["1_2_sub_004", "1_1_sub_004"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q023",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "classification",
+      "sub_category": "空気の分類",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "空気の分類について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "窒素、酸素、アルゴンなど複数の物質が混じり合った混合物である。", "is_correct": true },
+        { "label": "2", "text": "一種類の元素だけからできている単体である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "単体の定義にすり替え。空気は複数物質。" },
+        { "label": "3", "text": "二種類以上の元素からできている化合物である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "化合物と混合物の混同。" },
+        { "label": "4", "text": "分子の並び方が異なる同素体の集まりである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "同素体の定義にすり替え。" }
+      ],
+      "explanation": "空気は窒素、酸素、アルゴンその他の気体が混ざり合った代表的な混合物で、特に均一混合物の典型例です。複数の純物質が物理的に混じっているだけで化学的に結合しているわけではないため、化合物ではありません。選択肢二、三、四はいずれも純物質の下位分類や同素体の話で、空気には当てはまりません。",
+      "evidence": [
+        { "source_id": "1_1_sub_004", "quote": "空気 type 混合物 窒素、酸素その他の物質が混じり合ってできている 均一混合物の代表例" }
+      ],
+      "related_concept_ids": ["1_1_sub_004", "1_1_def_001"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q024",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "classification",
+      "sub_category": "海水の分類",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "海水の分類について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "水に塩化ナトリウムや塩化マグネシウムなどが溶け込んだ混合物である。", "is_correct": true },
+        { "label": "2", "text": "水分子一種類だけからなる純物質である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "純物質（純水）の説明にすり替え。" },
+        { "label": "3", "text": "水素と酸素の二元素からなる化合物であり、それ以外の成分を含まない。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "水の説明にすり替え。海水には他の溶質が含まれる。" },
+        { "label": "4", "text": "物理的な方法では分けられない単一の物質である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "純物質の定義にすり替え。海水は蒸留で水と塩類に分離可能。" }
+      ],
+      "explanation": "海水は水を溶媒とし、塩化ナトリウムや塩化マグネシウムなどの塩類が溶けている混合物です。一見すると均一に見えても、蒸留という物理的な操作で水と溶質に分離できるため純物質ではありません。選択肢二と三は純水そのものの説明であり、海水には当てはまりません。",
+      "evidence": [
+        { "source_id": "1_1_def_001", "quote": "海水 水に塩化ナトリウムや塩化マグネシウムが溶けている。" }
+      ],
+      "related_concept_ids": ["1_1_def_001", "1_1_proc_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q025",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "classification",
+      "sub_category": "食塩水の分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "食塩水（塩化ナトリウム水溶液）の分類について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "見た目は均一だが、蒸留で水と塩化ナトリウムに分離できるため混合物である。", "is_correct": true },
+        { "label": "2", "text": "均一に見えるため純物質である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "見た目の均一性と純物質判定を混同。蒸留で分離可能。" },
+        { "label": "3", "text": "ナトリウムと塩素が新たに化学結合して生成した化合物である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "塩化ナトリウムが水に溶解しただけで新たな化合物ではない。" },
+        { "label": "4", "text": "一種類の元素からできている単体である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "単体の定義にすり替え。" }
+      ],
+      "explanation": "食塩水は見た目が均一で透明であっても、水に塩化ナトリウムが溶けているだけの混合物です。その証拠に、加熱して蒸発させるという物理的方法（蒸留）で水と塩化ナトリウムに分離することができます。純物質の判定基準は『見た目が均一かどうか』ではなく『物理的方法で分離できないか』という点にあり、この違いが共通テストでよく問われるポイントです。",
+      "evidence": [
+        { "source_id": "1_1_def_002", "quote": "食塩水（混合物）一見均一に見えるが、水と塩化ナトリウムに物理的な方法（蒸留など）で分離できるため純物質ではない。" }
+      ],
+      "related_concept_ids": ["1_1_def_001", "1_1_def_002", "1_1_proc_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q026",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "classification",
+      "sub_category": "単体の判別",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "次の四つのうち、単体であるものとして正しい組合せを選びなさい。",
+      "choices": [
+        { "label": "1", "text": "酸素、ダイヤモンド、斜方硫黄、黒鉛", "is_correct": true },
+        { "label": "2", "text": "酸素、水、塩化ナトリウム、エタノール", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "水・塩化ナトリウム・エタノールは化合物。" },
+        { "label": "3", "text": "空気、海水、食塩水、ダイヤモンド", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "空気・海水・食塩水は混合物。" },
+        { "label": "4", "text": "水、二酸化炭素、塩化ナトリウム、アンモニア", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "すべて化合物の集まり。" }
+      ],
+      "explanation": "単体とは一種類の元素だけからなる純物質です。酸素、ダイヤモンド、斜方硫黄、黒鉛はそれぞれ酸素原子のみ、炭素原子のみ、硫黄原子のみからなる単体です。選択肢二に含まれる水、塩化ナトリウム、エタノールは複数の元素からなる化合物。選択肢三の空気、海水、食塩水は混合物。選択肢四はいずれも化合物のため単体ではありません。同素体どうし、例えばダイヤモンドと黒鉛は別の物質であるものの、どちらも炭素の単体である点に注意しましょう。",
+      "evidence": [
+        { "source_id": "1_2_sub_004", "quote": "酸素 type 単体" },
+        { "source_id": "1_2_sub_006", "quote": "ダイヤモンド type 単体" },
+        { "source_id": "1_2_sub_001", "quote": "斜方硫黄 type 単体" },
+        { "source_id": "1_2_sub_007", "quote": "黒鉛 type 単体" }
+      ],
+      "related_concept_ids": ["1_2_def_002", "1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q027",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "classification",
+      "sub_category": "化合物の判別",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "次の四つのうち、化合物であるものとして正しい組合せを選びなさい。",
+      "choices": [
+        { "label": "1", "text": "水、塩化ナトリウム、エタノール", "is_correct": true },
+        { "label": "2", "text": "酸素、オゾン、ダイヤモンド", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "すべて単体。" },
+        { "label": "3", "text": "空気、海水、食塩水", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "すべて混合物。" },
+        { "label": "4", "text": "黒鉛、斜方硫黄、単斜硫黄", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "すべて単体（同素体）。" }
+      ],
+      "explanation": "化合物は二種類以上の元素が結びついてできた純物質です。水は水素と酸素、塩化ナトリウムはナトリウムと塩素、エタノールは炭素と水素と酸素という具合に、いずれも複数の元素からなる純物質であるため化合物です。選択肢二と四は一種類の元素からなる単体、選択肢三は複数物質が混ざった混合物です。",
+      "evidence": [
+        { "source_id": "1_1_sub_001", "quote": "水 type 化合物" },
+        { "source_id": "1_1_sub_002", "quote": "塩化ナトリウム type 化合物" },
+        { "source_id": "1_1_sub_003", "quote": "エタノール type 化合物" }
+      ],
+      "related_concept_ids": ["1_2_def_001"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q028",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "classification",
+      "sub_category": "混合物の判別",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "次の四つの組合せのうち、すべてが混合物であるものを選びなさい。",
+      "choices": [
+        { "label": "1", "text": "空気、海水、食塩水", "is_correct": true },
+        { "label": "2", "text": "水、塩化ナトリウム、エタノール", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "すべて化合物の純物質。" },
+        { "label": "3", "text": "ダイヤモンド、黒鉛、斜方硫黄", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "すべて単体。" },
+        { "label": "4", "text": "酸素、オゾン、単斜硫黄", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "すべて単体。" }
+      ],
+      "explanation": "混合物は複数の純物質が混じり合ってできている物質です。空気は窒素と酸素とアルゴンなどが、海水は水と塩類が、食塩水は水と塩化ナトリウムが混じり合った混合物です。選択肢二の水や塩化ナトリウムは化合物、選択肢三と四は単体であり純物質ですので混合物には当たりません。",
+      "evidence": [
+        { "source_id": "1_1_sub_004", "quote": "空気 type 混合物" },
+        { "source_id": "1_1_def_001", "quote": "海水 水に塩化ナトリウムや塩化マグネシウムが溶けている" }
+      ],
+      "related_concept_ids": ["1_1_def_001"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q029",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "classification",
+      "sub_category": "同素体の組合せ",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "同素体どうしの組合せとして、正しいものを選びなさい。",
+      "choices": [
+        { "label": "1", "text": "ダイヤモンドと黒鉛", "is_correct": true },
+        { "label": "2", "text": "水と水蒸気", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "状態変化の関係（液体と気体）であり、どちらも化合物で同じ物質。" },
+        { "label": "3", "text": "塩化ナトリウムと食塩水", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "純物質と溶液の関係。" },
+        { "label": "4", "text": "酸素と二酸化炭素", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "元素の種類が異なる別物質。" }
+      ],
+      "explanation": "同素体とは、同じ元素からなる単体で原子の配列や結合数が異なるために性質が異なる物質群です。ダイヤモンドと黒鉛はどちらも炭素のみからなる単体で、構造が異なるため性質が大きく異なる同素体どうしです。選択肢二は水と水蒸気であり同じ物質の状態変化にすぎません。選択肢三は純物質とその水溶液の関係で別の概念。選択肢四は元素組成そのものが異なるため同素体ではありません。",
+      "evidence": [
+        { "source_id": "1_2_def_003", "quote": "炭素の同素体 ダイヤモンド、黒鉛、フラーレン、カーボンナノチューブ" }
+      ],
+      "related_concept_ids": ["1_2_def_003", "1_2_sub_006", "1_2_sub_007"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q030",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "classification",
+      "sub_category": "硫黄の同素体群",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "硫黄の同素体として正しい組合せを選びなさい。",
+      "choices": [
+        { "label": "1", "text": "斜方硫黄、単斜硫黄、ゴム状硫黄", "is_correct": true },
+        { "label": "2", "text": "斜方硫黄、単斜硫黄、オゾン", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "オゾンは酸素の同素体で硫黄ではない。" },
+        { "label": "3", "text": "ダイヤモンド、黒鉛、フラーレン", "is_correct": false, "trap_type": "allotrope_mix", "trap_detail": "これは炭素の同素体。" },
+        { "label": "4", "text": "酸素、オゾン、ゴム状硫黄", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "酸素の同素体と硫黄の同素体の混同。" }
+      ],
+      "explanation": "硫黄の同素体には斜方硫黄、単斜硫黄、ゴム状硫黄があります。これらはすべて硫黄の単体ですが、原子の配列や結合状態が異なるため色や性質が異なります。選択肢二のオゾン、選択肢四の酸素とオゾンは酸素の同素体です。選択肢三のダイヤモンド、黒鉛、フラーレンは炭素の同素体です。元素ごとの同素体群を区別できるようにしましょう。",
+      "evidence": [
+        { "source_id": "1_2_def_003", "quote": "硫黄の同素体 斜方硫黄、単斜硫黄、ゴム状硫黄" },
+        { "source_id": "1_2_def_003", "quote": "酸素の同素体 酸素、オゾン" }
+      ],
+      "related_concept_ids": ["1_2_def_003", "1_2_sub_001", "1_2_sub_002", "1_2_sub_003"],
+      "mnemonic": "同素体はスコップで掘れ（硫黄・炭素・酸素・リン）"
+    },
+    {
+      "id": "ch1_1_q031",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "procedure",
+      "sub_category": "ろ過の操作",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ろ過の操作について、誤りを含む記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "ろ紙を四つ折りにしてから円錐状に開き、漏斗の中に入れる。", "is_correct": false },
+        { "label": "2", "text": "ろ紙を水で湿らせて漏斗に密着させる。", "is_correct": false },
+        { "label": "3", "text": "漏斗の先端は空中に浮かせてビーカーから離しておく。", "is_correct": true, "trap_type": "reason_swap", "trap_detail": "正しくは漏斗の先端をビーカーの内側に密着させる。ろ液の飛散防止のため。" },
+        { "label": "4", "text": "ガラス棒の先をろ紙につけて液体を伝わらせて入れる。", "is_correct": false }
+      ],
+      "explanation": "ろ過の正しい手順は、ろ紙を四つ折りにして円錐状に開き漏斗にセット、水で湿らせて密着させ、漏斗の先端をビーカーの内側に密着させてから、ガラス棒を伝わらせて液体を注ぐ、というものです。選択肢三の『漏斗の先端を浮かせる』は誤りで、ろ液が飛び散るのを防ぎ、速やかに流し落とすために先端はビーカーの内壁に接触させる必要があります。",
+      "evidence": [
+        { "source_id": "1_1_proc_001", "quote": "漏斗の先端はビーカーの内側に密着させる 理由 ろ液が飛び散るのを防ぎ、速やかに流し落とすため" },
+        { "source_id": "1_1_proc_001", "quote": "ろ紙を4分の1に折り、円錐状に開いて漏斗の中に入れる" },
+        { "source_id": "1_1_proc_001", "quote": "ろ紙を水で湿らせ、漏斗に密着させる" }
+      ],
+      "related_concept_ids": ["1_1_proc_001"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q032",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "procedure",
+      "sub_category": "ろ過の操作の理由",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ろ過の操作で、ガラス棒の先をろ紙に当てて液体を伝わらせて注ぐ理由として、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "液体が飛び散るのを防ぐためである。", "is_correct": true },
+        { "label": "2", "text": "ろ紙が破れるのを促すためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "むしろ破れないようガラス棒で支える。破ることが目的ではない。" },
+        { "label": "3", "text": "液体の温度を一定に保つためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "温度管理は目的ではない。" },
+        { "label": "4", "text": "固体だけを先に下のビーカーに落とすためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "ろ過の原理に反する。固体はろ紙上に残る。" }
+      ],
+      "explanation": "ろ過でガラス棒を使って液体を伝わらせる目的は、液体の飛散を防ぐことです。勢いよく注ぐとろ紙が破れたり液体が飛び散ってしまうため、ガラス棒の先をろ紙の厚手部分に当てて静かに注ぎます。選択肢二は逆でろ紙は破らないように扱います。選択肢四もろ過の原理に反しており、固体はろ紙で捕らえられ下に落ちるのはろ液のみです。",
+      "evidence": [
+        { "source_id": "1_1_proc_001", "quote": "ガラス棒の先をろ紙につけ、伝わらせて液体を入れる 理由 液体が飛び散るのを防ぐため" }
+      ],
+      "related_concept_ids": ["1_1_proc_001"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q033",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "procedure",
+      "sub_category": "蒸留のフラスコ液量",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "蒸留の操作でフラスコ内の液量を半分以下にする理由として、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "突発的な沸騰によって溶液が冷却器に流れ込むのを防ぐためである。", "is_correct": true },
+        { "label": "2", "text": "加熱時間を短くするためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "時間短縮は目的ではない。" },
+        { "label": "3", "text": "温度計の球部を液体に浸すためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "温度計は気体温度を測るので液に浸さない。" },
+        { "label": "4", "text": "冷却器の中に空気が残らないようにするためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "冷却水の向きの理由と混同。" }
+      ],
+      "explanation": "蒸留でフラスコ内の液量を半分以下にしておく目的は、急激な沸騰、すなわち突沸によって溶液が冷却器へ逆流するのを防ぐためです。液が多いと沸騰時に液面が大きく揺れて上昇し、冷却管に入ってしまう恐れがあります。選択肢四の『冷却器内に空気が残らない』は、冷却水を下から上に流す目的の方と混同させるひっかけです。",
+      "evidence": [
+        { "source_id": "1_1_proc_002", "quote": "フラスコ内の液量を半分以下にする 理由 突発的な沸騰（突沸）により溶液が冷却器に流れ込むのを防ぐため" }
+      ],
+      "related_concept_ids": ["1_1_proc_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q034",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "procedure",
+      "sub_category": "蒸留の温度計位置",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "蒸留装置で温度計の球部を枝付きフラスコの枝の付け根付近に置く理由として、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "冷却器へ進む気体（留出蒸気）の温度を正確に測るためである。", "is_correct": true },
+        { "label": "2", "text": "液体の温度を正確に測るためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "温度計で測るのは気体の温度（留出温度）。液体温度ではない。" },
+        { "label": "3", "text": "フラスコが破損するのを防ぐためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "破損防止とは関係ない。" },
+        { "label": "4", "text": "沸騰石が飛び散るのを見張るためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "沸騰石の観察は目的ではない。" }
+      ],
+      "explanation": "蒸留では、枝付きフラスコの枝の付け根付近（つまり枝に入る直前の位置）に温度計の球部を置きます。ここを通るのは冷却器に向かう『蒸気（気体）』であり、ここで測定される温度がその瞬間に留出している物質の沸点に相当するため、目的物質が留出しているかを判定できます。選択肢二の『液体の温度』は典型的なひっかけで、球部を液体に浸してしまう誤操作と同じ考えです。正しい目的は気体の温度計測です。",
+      "evidence": [
+        { "source_id": "1_1_proc_002", "quote": "温度計の球部を枝付きフラスコの枝の管の付け根付近にする 理由 冷却器へ進む気体（留出温度）を測るため" }
+      ],
+      "related_concept_ids": ["1_1_proc_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q035",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "procedure",
+      "sub_category": "蒸留の冷却水の向き",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "蒸留装置のリービッヒ冷却器で、冷却水を下から上に向かって流す理由として、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "冷却器の中に空気が残らず水が満たされ、冷却効率を良くするためである。", "is_correct": true },
+        { "label": "2", "text": "水の流れる速度を遅くして水の使用量を節約するためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "省水目的ではない。" },
+        { "label": "3", "text": "突沸を防ぐためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "突沸防止は沸騰石やフラスコ液量の話。" },
+        { "label": "4", "text": "冷却器の中を空気で満たして気体を逃がすためである。", "is_correct": false, "trap_type": "negation", "trap_detail": "逆。水で満たすことが目的。" }
+      ],
+      "explanation": "リービッヒ冷却器の冷却水は下の入口から入れて上の出口に流します。こうすることで管内を下から水で満たすことになり、空気が残らないため冷却効率が高まります。また気体の流れと水の流れが逆向き、いわゆる向流になり、温度差が効率よく保たれます。選択肢四は『空気で満たす』という逆の説明で明確に誤り。選択肢三の突沸防止は別の操作（沸騰石やフラスコ液量半分以下）の理由です。",
+      "evidence": [
+        { "source_id": "1_1_proc_002", "quote": "冷却水をリービッヒ冷却器の下から上に向かって流す 理由 冷却器の中に空気が残らず水が満たされ、冷却効率を良くするため" }
+      ],
+      "related_concept_ids": ["1_1_proc_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q036",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "procedure",
+      "sub_category": "炎色反応の白金線前処理",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "炎色反応の実験で、試料をつける前に白金線の先を濃塩酸に浸し、バーナーの外炎に入れて無色になることを確認する理由として、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "白金線についている不純物を塩化物にして揮発させ、取り除くためである。", "is_correct": true },
+        { "label": "2", "text": "白金線を酸化させて反応しやすくするためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "白金は酸化されにくい。この操作の目的は不純物除去。" },
+        { "label": "3", "text": "白金線に試料がくっつきやすいようにコーティングするためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "コーティング目的ではない。" },
+        { "label": "4", "text": "塩酸の蒸気で炎を大きくするためである。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "炎の大きさ調整が目的ではない。" }
+      ],
+      "explanation": "炎色反応の実験では、白金線に付着している金属不純物を取り除くため、試料を付ける前に濃塩酸に浸して外炎に入れます。こうすると不純物が塩化物として揮発し、白金線は外炎で無色を示すようになります。この『無色確認』ができて初めて試料由来の色を純粋に観察できます。また観察の際は温度の高い外炎を用いることも重要です。",
+      "evidence": [
+        { "source_id": "1_2_proc_001", "quote": "白金線の先を濃塩酸に浸し、バーナーの外炎に入れて無色になることを確認する 理由 白金線についた不純物を塩化物にして揮発させ、取り除くため" },
+        { "source_id": "1_2_proc_001", "quote": "試料の水溶液を白金線の先に付け、外炎に入れる 理由 外炎の方が温度が高く、色が観察しやすいため" }
+      ],
+      "related_concept_ids": ["1_2_proc_001"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q037",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "confusion",
+      "sub_category": "同素体と同位体",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "同素体と同位体の違いについて、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "同素体は同じ元素からなる単体どうしの物質の種類であり、同位体は同じ元素の原子で中性子の数が異なる原子の種類である。", "is_correct": true },
+        { "label": "2", "text": "同素体と同位体はどちらも原子の中性子の数が異なるために区別される。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "同素体は原子の配列・結合数の違い。中性子数は同位体の話。" },
+        { "label": "3", "text": "同素体は原子の種類の違い、同位体は物質の性質の違いである。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "説明が逆。" },
+        { "label": "4", "text": "どちらも異なる元素どうしの関係を指す。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "どちらも同じ元素内の話であり、異なる元素間の関係ではない。" }
+      ],
+      "explanation": "同素体は同じ元素からなる単体どうしが、原子の数や配列が異なるために性質が異なる『物質』の種類を指します。一方、同位体は同じ元素の『原子』の中で、中性子の数が異なるために質量が異なる原子の種類です。つまり同素体は物質レベル、同位体は原子レベルの概念という違いがあります。この区別は共通テスト頻出で、語呂合わせや例をセットで覚えるのがおすすめです。",
+      "evidence": [
+        { "source_id": "1_2_def_003", "quote": "同位体は『原子』の種類（中性子数の違い）であり、同素体は『単体（物質）』の種類である。" }
+      ],
+      "related_concept_ids": ["1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q038",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "confusion",
+      "sub_category": "元素と単体の区別",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "『水は水素と酸素からできている』という文中の『酸素』の意味として、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "物質を構成する成分としての元素を指している。", "is_correct": true },
+        { "label": "2", "text": "実在する気体としての単体を指している。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "水を構成しているのは元素としての酸素であり、気体分子ではない。" },
+        { "label": "3", "text": "酸素の同素体のうち最も安定なものを指している。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "文脈は元素の成分の話で同素体の比較ではない。" },
+        { "label": "4", "text": "酸素の同位体のうち中性子数が最大のものを指している。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "同位体の話ではない。" }
+      ],
+      "explanation": "『元素』と『単体』は日常的に同じ言葉で呼ばれがちですが、化学ではきちんと区別します。『水は水素と酸素からできている』というときの酸素は、水という化合物を構成する『成分（元素）』のことで、実在する酸素分子そのものを指すわけではありません。一方『空気中に酸素が含まれる』というときの酸素は実際の気体である単体を指します。文脈で成分を意味するのか実在物質を意味するのかを見極めることが重要です。",
+      "evidence": [
+        { "source_id": "1_2_def_002", "quote": "文章中の用語が『元素』を表しているか『単体』を表しているか（実在する物質か、成分としての種類か）を判別する問題" }
+      ],
+      "related_concept_ids": ["1_2_def_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q039",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "confusion",
+      "sub_category": "化合物と混合物",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "化合物と混合物の違いに関する記述として、正しいものを選びなさい。",
+      "choices": [
+        { "label": "1", "text": "化合物は純物質で構成元素の質量比が一定、混合物は複数物質の寄せ集めで組成比が変化しうる。", "is_correct": true },
+        { "label": "2", "text": "化合物も混合物も純物質であり、融点や沸点は常に一定である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "混合物は純物質ではなく、融点・沸点も一定ではない。" },
+        { "label": "3", "text": "化合物は物理的な方法で容易に構成元素に分解できる。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "化合物は物理的には分解不可、分解には化学的方法が必要。" },
+        { "label": "4", "text": "混合物は化学的な結合で結びついた純物質である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "混合物は化学的結合ではなく単に混じっているだけ。" }
+      ],
+      "explanation": "化合物は二種類以上の元素が化学的に結びついた純物質で、構成元素の質量比は常に一定です。一方、混合物は複数の純物質が物理的に混ざり合っているだけで、組成比は作り方や場所によって変わります。化合物は化学的な方法を使えば単体に分解でき、混合物は物理的な方法、たとえばろ過や蒸留で構成成分に分離できます。『物理的に分けられるか』『組成比が一定か』を指標にすると判別しやすくなります。",
+      "evidence": [
+        { "source_id": "1_2_def_001", "quote": "化合物は純物質であり、構成元素の割合は常に一定。混合物（食塩水など）とは異なる。" }
+      ],
+      "related_concept_ids": ["1_1_def_001", "1_2_def_001"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q040",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "confusion",
+      "sub_category": "ろ過と蒸留の使い分け",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ろ過と蒸留の適用対象について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "ろ過は液体に溶けない固体の分離、蒸留は沸点の異なる物質の混合液の分離に適している。", "is_correct": true },
+        { "label": "2", "text": "ろ過は沸点の異なる液体どうし、蒸留は液体と溶けない固体の分離に適している。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "ろ過と蒸留の用途を完全に逆転。" },
+        { "label": "3", "text": "ろ過も蒸留も同じ溶液にしか適用できない。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "適用対象は異なる。" },
+        { "label": "4", "text": "ろ過は必ず加熱が必要であり、蒸留は加熱を必要としない。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "加熱の必要性が逆転している。" }
+      ],
+      "explanation": "ろ過は液体と、それに溶けない固体が混じった混合物を、ろ紙を用いて分ける操作で加熱は不要です。一方の蒸留は、沸点の異なる物質の混合液を加熱し、目的の液体を気体にして冷却し再び液体として取り出す操作で、加熱が必要です。対象と操作の組合せを押さえれば、選択肢二のような用途の入れ替えや、選択肢四のような加熱要件の入れ替えには引っかかりません。",
+      "evidence": [
+        { "source_id": "1_1_proc_001", "quote": "ろ過 液体と、それに不溶な固体が混じった混合物を、ろ紙などを用いて液体と固体に分ける操作" },
+        { "source_id": "1_1_proc_002", "quote": "蒸留 溶液を加熱して目的の液体を蒸発させ、その気体を冷却して再び液体として分離・精製する操作" }
+      ],
+      "related_concept_ids": ["1_1_proc_001", "1_1_proc_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q041",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "confusion",
+      "sub_category": "ダイヤモンドと黒鉛",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ダイヤモンドと黒鉛の性質の比較について、誤りを含む記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "ダイヤモンドは無色透明、黒鉛は黒色不透明である。", "is_correct": false },
+        { "label": "2", "text": "ダイヤモンドは電気を通さず、黒鉛は電気を通す。", "is_correct": false },
+        { "label": "3", "text": "ダイヤモンドは立体的な網目状構造、黒鉛は層状構造をもつ。", "is_correct": false },
+        { "label": "4", "text": "ダイヤモンドは軟らかく薄くはがれやすく、黒鉛は全物質中で最も硬い。", "is_correct": true, "trap_type": "allotrope_mix", "trap_detail": "硬さの記述が逆。ダイヤモンドが最も硬く、黒鉛がやわらかい。" }
+      ],
+      "explanation": "ダイヤモンドと黒鉛は炭素の同素体ですが、構造が異なるためほぼ正反対の性質を示します。ダイヤモンドは立体的な網目状構造により全物質中で最も硬く、無色透明で電気を通しません。黒鉛は層状構造により軟らかく薄くはがれやすく、黒色不透明で電気を通します。選択肢四は硬さを逆にしたひっかけで、典型的な同素体の性質入れ替えのパターンです。",
+      "evidence": [
+        { "source_id": "1_2_sub_006", "quote": "ダイヤモンド 全物質中で最も硬い 立体的な網目状構造" },
+        { "source_id": "1_2_sub_007", "quote": "黒鉛 軟らかく薄くはがれやすい 層状構造" }
+      ],
+      "related_concept_ids": ["1_2_sub_006", "1_2_sub_007", "1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q042",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "confusion",
+      "sub_category": "酸素とオゾン",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "酸素（通常の酸素の単体）とオゾンの比較について、誤りを含む記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "どちらも酸素原子のみからなる単体であり、互いに同素体の関係にある。", "is_correct": false },
+        { "label": "2", "text": "通常の酸素は無色無臭、オゾンは淡青色で独特のにおいがある。", "is_correct": false },
+        { "label": "3", "text": "通常の酸素は常温で最も安定、オゾンは反応しやすく有毒である。", "is_correct": false },
+        { "label": "4", "text": "通常の酸素は反応しやすく有毒、オゾンは常温で最も安定である。", "is_correct": true, "trap_type": "allotrope_mix", "trap_detail": "通常酸素とオゾンの性質を完全に入れ替え。" }
+      ],
+      "explanation": "通常の酸素とオゾンは酸素原子からなる単体で同素体の関係にあります。通常の酸素は無色無臭で常温で最も安定、オゾンは淡青色で独特のにおいを持ち反応性が高く有毒です。選択肢四はこの対応関係を完全に逆にしたものです。同素体どうしは色・におい・反応性などで対比的に覚えるのが効果的です。",
+      "evidence": [
+        { "source_id": "1_2_sub_004", "quote": "酸素 color 無 odor 無 空気中に約20%存在" },
+        { "source_id": "1_2_sub_005", "quote": "オゾン color 淡青 odor 独特のにおい 反応しやすく有毒" }
+      ],
+      "related_concept_ids": ["1_2_sub_004", "1_2_sub_005", "1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q043",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "confusion",
+      "sub_category": "ドルトンとアボガドロ",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ドルトンの原子説とアボガドロの分子説の違いについて、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "ドルトンは原子を基本粒子と考え、アボガドロは原子が結合した分子を気体の基本粒子と考えた。", "is_correct": true },
+        { "label": "2", "text": "ドルトンは分子を基本粒子とし、アボガドロは単原子のみで気体を説明した。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "両者の主張を完全に入れ替え。" },
+        { "label": "3", "text": "どちらも分子の存在を否定し、気体を単原子の集まりと考えた。", "is_correct": false, "trap_type": "negation", "trap_detail": "アボガドロは分子を提唱した。" },
+        { "label": "4", "text": "どちらも質量保存の法則を説明する仮説であり、気体の体積には言及していない。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "両者とも気体体積の関係を議論している。" }
+      ],
+      "explanation": "ドルトンは原子を物質を構成する最小の粒子と考える『原子説』を提唱しましたが、これだけでは気体反応におけるゲーリュサックの法則（気体どうしが簡単な体積比で反応する）を説明する際に、原子を分割する矛盾が生じていました。これに対しアボガドロは、気体はいくつかの原子が結びついた『分子』からできていると考え、この矛盾を解消しました。選択肢一はこの対比を正しく示しています。",
+      "evidence": [
+        { "source_id": "1_3_def_002", "quote": "ドルトンの原子説とゲーリュサックの気体反応の法則の矛盾を解決するために提案されました。" }
+      ],
+      "related_concept_ids": ["1_3_def_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q044",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "confusion",
+      "sub_category": "単斜硫黄と斜方硫黄",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "単斜硫黄と斜方硫黄の関係について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "単斜硫黄は常温で放置すると、より安定な斜方硫黄に変化する。", "is_correct": true },
+        { "label": "2", "text": "斜方硫黄を常温で放置すると、より安定な単斜硫黄に変化する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "変化の方向を逆転。常温で安定なのは斜方硫黄側。" },
+        { "label": "3", "text": "単斜硫黄は斜方硫黄を二百五十度に加熱後水中に注いで得られる。", "is_correct": false, "trap_type": "allotrope_mix", "trap_detail": "これはゴム状硫黄の生成条件。" },
+        { "label": "4", "text": "単斜硫黄と斜方硫黄は化学式が異なるため、別の元素からなる化合物である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "どちらも硫黄だけからなる単体で、同素体。" }
+      ],
+      "explanation": "単斜硫黄と斜方硫黄はともに硫黄の同素体です。斜方硫黄を約百二十度に加熱して冷却すると単斜硫黄が得られますが、これを常温に放置するとより安定な斜方硫黄に戻っていきます。選択肢二は変化の向きが逆で誤り、選択肢三はゴム状硫黄の生成条件との混同、選択肢四は同素体を別の元素の化合物と誤解したものです。",
+      "evidence": [
+        { "source_id": "1_2_sub_002", "quote": "単斜硫黄 常温放置で斜方硫黄に戻る" },
+        { "source_id": "1_2_sub_001", "quote": "斜方硫黄 常温で最も安定" }
+      ],
+      "related_concept_ids": ["1_2_sub_001", "1_2_sub_002", "1_2_sub_003", "1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q045",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "mnemonic",
+      "sub_category": "同素体のスコップ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "同素体をもつ代表的な四つの元素を表す語呂合わせ『スコップ』の組合せとして、正しいものを選びなさい。",
+      "choices": [
+        { "label": "1", "text": "硫黄、炭素、酸素、リン", "is_correct": true },
+        { "label": "2", "text": "ナトリウム、カリウム、カルシウム、銅", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "炎色反応の主要元素にすり替え。" },
+        { "label": "3", "text": "水素、窒素、酸素、塩素", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "同素体を持たない元素も混在。" },
+        { "label": "4", "text": "鉄、銅、銀、金", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "金属元素の例で同素体の語呂と無関係。" }
+      ],
+      "explanation": "同素体をもつ代表的な元素は『硫黄・炭素・酸素・リン』で、それぞれの元素記号の頭文字を取ると『エス・シー・オー・ピー』となり、『スコップ』という語呂で覚えます。それぞれ硫黄には斜方硫黄・単斜硫黄・ゴム状硫黄、炭素にはダイヤモンドや黒鉛、酸素には通常の酸素とオゾン、リンには黄リンと赤リンの同素体があります。選択肢二は炎色反応に出てくる主要元素を混ぜたひっかけです。",
+      "evidence": [
+        { "source_id": "1_2_tip_001", "quote": "代表的な同素体をもつ元素は『硫黄(S)』『炭素(C)』『酸素(O)』『リン(P)』です。" },
+        { "source_id": "1_2_tip_001", "quote": "同素体はSCOP(スコップ)で掘れ" }
+      ],
+      "related_concept_ids": ["1_2_tip_001", "1_2_def_003"],
+      "mnemonic": "同素体はスコップで掘れ"
+    },
+    {
+      "id": "ch1_1_q046",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "mnemonic",
+      "sub_category": "炎色反応の色",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "炎色反応の色の組合せについて、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "ナトリウムは黄、カリウムは赤紫、銅は青緑、バリウムは黄緑。", "is_correct": true },
+        { "label": "2", "text": "ナトリウムは赤紫、カリウムは黄、銅は黄緑、バリウムは青緑。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "複数の元素の色を入れ替え。" },
+        { "label": "3", "text": "ナトリウムは青緑、カリウムは赤、銅は黄、バリウムは紅。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "完全に入れ替え。" },
+        { "label": "4", "text": "ナトリウムは紅、カリウムは黄緑、銅は黄、バリウムは赤紫。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "すべてシャッフル。" }
+      ],
+      "explanation": "主な炎色反応の色は、リチウムが赤、ナトリウムが黄、カリウムが赤紫、銅が青緑、カルシウムが橙赤、ストロンチウムが紅、バリウムが黄緑です。語呂合わせ『リアカーなきケー村、どうせ借るとうするもくれない馬力』で覚えます。ナトリウムとカリウムの色は似ているため、黄と赤紫を取り違えないよう注意しましょう。",
+      "evidence": [
+        { "source_id": "1_2_tip_002", "quote": "Li(赤), Na(黄), K(赤紫), Cu(青緑), Ca(橙赤), Sr(紅), Ba(黄緑)" },
+        { "source_id": "1_2_tip_002", "quote": "リアカーなきK村、どうせ借るとうするもくれない、馬力" }
+      ],
+      "related_concept_ids": ["1_2_tip_002", "1_2_proc_001"],
+      "mnemonic": "リアカーなきケー村、どうせ借るとうするもくれない、馬力"
+    },
+    {
+      "id": "ch1_1_q047",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "mnemonic",
+      "sub_category": "炎色反応の語呂対応",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "炎色反応の語呂合わせ『リアカーなきケー村』の部分が意味する元素と色の組合せとして、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "リはリチウムで赤、アはナトリウムの黄（なき）、ケはカリウムの赤紫（K村）を示している。", "is_correct": true },
+        { "label": "2", "text": "リはリチウムで紅、アはアルゴンで黄、ケはカルシウムで赤紫を示している。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "元素と色を両方すり替え。アルゴンは炎色反応の対象ではない。" },
+        { "label": "3", "text": "リはリンで赤、アはアルミニウムで橙、ケはケイ素で黄緑を示している。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "無関係な元素に置き換え。" },
+        { "label": "4", "text": "リはリチウムで青、アはナトリウムで紫、ケはカリウムで緑を示している。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "色の入れ替え。" }
+      ],
+      "explanation": "語呂合わせ『リアカーなきK村、どうせ借るとうするもくれない、馬力』は、リ（リチウム・赤）、アカ（ー…赤）、な（ナトリウム）、き（黄）、K村（カリウム・赤紫）、どうせ（銅・青緑）、借る（カルシウム）、とう（橙赤）、するも（ストロンチウム）、くれない（紅）、馬（バリウム）、力（黄緑）をそれぞれ対応させたものです。元素記号と色の対応を語呂で一気に覚えるのが最も効率的です。",
+      "evidence": [
+        { "source_id": "1_2_tip_002", "quote": "リアカー(Li:赤) なき(Na:黄) K村(K:赤紫)、どうせ(Cu:青緑) 借るとう(Ca:橙赤) するもくれない(Sr:紅)、馬力(Ba:黄緑)" }
+      ],
+      "related_concept_ids": ["1_2_tip_002", "1_2_proc_001"],
+      "mnemonic": "リアカーなきK村、どうせ借るとうするもくれない、馬力"
+    },
+    {
+      "id": "ch1_1_q048",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "comprehensive",
+      "sub_category": "物質分類と性質",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "物質の分類と性質について、誤りを含む記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "空気は均一混合物であり、構成比は一定でない。", "is_correct": false },
+        { "label": "2", "text": "塩化ナトリウムはナトリウムと塩素からなる化合物で、融点は高い。", "is_correct": false },
+        { "label": "3", "text": "ダイヤモンドと黒鉛は炭素の同素体であり、どちらも単体である。", "is_correct": false },
+        { "label": "4", "text": "食塩水は純物質であり、融点と沸点は常に一定である。", "is_correct": true, "trap_type": "concept_confusion", "trap_detail": "食塩水は混合物で融点・沸点は濃度に依存。純物質判定のひっかけ。" }
+      ],
+      "explanation": "空気は窒素と酸素など複数の気体が混じり合った均一混合物で構成比は場所や条件によって変動します。塩化ナトリウムはナトリウムと塩素からなる化合物で融点は約八百度と非常に高い純物質です。ダイヤモンドと黒鉛はどちらも炭素だけからなる単体で同素体の関係にあります。選択肢四の食塩水は混合物であり、濃度によって凝固点降下や沸点上昇が起こるため融点・沸点は一定ではありません。純物質と混合物の判別基準が正しく押さえられているかを問う総合問題です。",
+      "evidence": [
+        { "source_id": "1_1_def_002", "quote": "融点や沸点、密度などが常に一定の決まった値を示します。" },
+        { "source_id": "1_1_def_002", "quote": "食塩水（混合物）一見均一に見えるが、水と塩化ナトリウムに物理的な方法（蒸留など）で分離できるため純物質ではない。" }
+      ],
+      "related_concept_ids": ["1_1_def_001", "1_1_def_002", "1_2_def_001", "1_2_def_002", "1_2_def_003"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q049",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "comprehensive",
+      "sub_category": "実験と理由の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "蒸留の操作で『フラスコ内の液量を半分以下にし、沸騰石を入れ、温度計の球部を枝の付け根付近にし、冷却水を下から上に流す』という手順について、正しい記述を選びなさい。",
+      "choices": [
+        { "label": "1", "text": "液量を半分以下と沸騰石はどちらも突沸防止、温度計の位置は気体温度の測定、冷却水の向きは管内を水で満たして冷却効率を高めるためである。", "is_correct": true },
+        { "label": "2", "text": "液量を半分以下は冷却効率、沸騰石は気体温度測定、温度計の位置は突沸防止、冷却水の向きは液体温度測定のためである。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "各操作の理由を全て入れ替え。" },
+        { "label": "3", "text": "すべての操作は単に加熱を促進するために行われる。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "各手順には個別の安全・精度上の理由がある。" },
+        { "label": "4", "text": "すべての操作はフラスコの破損を防ぐためのもので、分離精度には関係がない。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "分離精度と安全の両面にかかわる。" }
+      ],
+      "explanation": "蒸留では各操作に個別の意味があります。フラスコ内の液量を半分以下にし沸騰石を入れるのは、突発的な沸騰（突沸）を防ぎ溶液が冷却器に流れ込まないようにするためです。温度計の球部を枝の付け根付近に置くのは、冷却器へ進む気体の温度を測り、何が留出しているかを判定するためです。冷却水を下から上に流すのは、管内を常に水で満たして冷却効率を最大化するためです。これらは分離精度と安全性を両立するための重要ポイントです。",
+      "evidence": [
+        { "source_id": "1_1_proc_002", "quote": "フラスコ内の液量を半分以下にする 突沸により溶液が冷却器に流れ込むのを防ぐため" },
+        { "source_id": "1_1_proc_002", "quote": "沸騰石を入れる 突沸を防ぐため" },
+        { "source_id": "1_1_proc_002", "quote": "温度計の球部を枝付きフラスコの枝の管の付け根付近にする 冷却器へ進む気体の温度を測るため" },
+        { "source_id": "1_1_proc_002", "quote": "冷却水を下から上に向かって流す 冷却器の中に空気が残らず水が満たされ、冷却効率を良くするため" }
+      ],
+      "related_concept_ids": ["1_1_proc_002"],
+      "mnemonic": null
+    },
+    {
+      "id": "ch1_1_q050",
+      "chapter": "1-1",
+      "chapter_title": "物質の構成",
+      "category": "comprehensive",
+      "sub_category": "同素体と同位体と法則",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "次の総合的な記述のうち、正しい組合せを選びなさい。",
+      "choices": [
+        { "label": "1", "text": "同素体は原子の配列の違いによる物質の種類、同位体は中性子数の違いによる原子の種類、アボガドロの法則は同温同圧同体積の気体に同数の分子が含まれること、質量保存の法則はラボアジエが発見した反応前後の質量の総和が等しい法則。", "is_correct": true },
+        { "label": "2", "text": "同素体は中性子数の違いによる原子の種類、同位体は原子配列の違いによる物質の種類、アボガドロは質量保存の法則を提唱、ラボアジエは分子説を提唱した。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "四つの概念を同時に入れ替え。" },
+        { "label": "3", "text": "同素体と同位体はどちらも混合物の一種であり、アボガドロの法則は液体の体積に関する法則、質量保存の法則は気体にのみ成立する。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "概念カテゴリ自体を誤認。" },
+        { "label": "4", "text": "同素体と同位体は同じ意味で、アボガドロはゲーリュサックの法則を否定し、質量保存の法則は化学変化では成立しない。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "概念・法則ともに誤り。" }
+      ],
+      "explanation": "総合問題として第一章の主要概念を整理します。まず同素体は同じ元素の単体で原子の配列や結合数の違いによって性質が異なる『物質』の種類で、具体例は硫黄の同素体、酸素の同素体、炭素の同素体などです。同位体は同じ元素の『原子』で中性子の数が異なるもの。アボガドロの法則は『同温・同圧・同体積の気体には、種類によらず同数の分子が含まれる』という分子説に基づく法則で、ドルトンの原子説とゲーリュサックの気体反応の法則の矛盾を解消しました。質量保存の法則はラボアジエが発見した『化学変化の前後で質量の総和は等しい』というもの。これら四つの関係を正しく把握することが共通テスト対策の基本です。",
+      "evidence": [
+        { "source_id": "1_2_def_003", "quote": "同素体 同じ元素の単体であるが、結合している原子の数や配列が異なるため、性質が異なる物質群。" },
+        { "source_id": "1_2_def_003", "quote": "同位体は『原子』の種類（中性子数の違い）であり、同素体は『単体（物質）』の種類である。" },
+        { "source_id": "1_3_def_002", "quote": "同温・同圧・同体積の気体中には、気体の種類によらず同数の分子が含まれる。" },
+        { "source_id": "1_3_law_001", "quote": "物質が化学変化するとき、反応前の物質の質量の和と、反応後の物質の質量の和は等しい。" }
+      ],
+      "related_concept_ids": ["1_2_def_003", "1_3_def_002", "1_3_law_001"],
+      "mnemonic": "同素体はスコップで掘れ（硫黄・炭素・酸素・リン）"
+    }
+  ]
+}
