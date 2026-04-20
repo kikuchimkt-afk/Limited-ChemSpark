@@ -6,59 +6,3047 @@
     "textbook": "化学",
     "total_questions": 50,
     "version": "1.0",
-    "tts_policy": { "note": "TTS用。化学式・数式なし。", "no_chemical_formulas": true, "no_math_equations": true },
-    "trap_type_legend": { "keyword_swap": "キーワードすり替え", "concept_confusion": "類似概念混同", "property_swap": "性質入れ替え", "condition_change": "条件変更", "step_order": "手順入れ替え", "reason_swap": "理由すり替え", "partial_truth": "前半正後半誤", "multiple_swap": "複数すり替え", "negation": "肯定否定入れ替え" }
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    },
+    "display_policy": {
+      "note": "question / choices[].text / explanation は表示用（アラビア数字・単位記号・主要化学式）。tts_question / choices[].tts_text / tts_explanation は音声読み上げ用（漢数字・単位語・日本語化学名）。",
+      "display_fields": [
+        "question",
+        "choices[].text",
+        "explanation"
+      ],
+      "tts_fields": [
+        "tts_question",
+        "choices[].tts_text",
+        "tts_explanation"
+      ],
+      "number_unit_mapping": {
+        "立方センチメートルあたり": "cm³あたり",
+        "立方センチメートル": "cm³",
+        "キロジュール毎グラム": "kJ/g",
+        "キロジュール毎モル": "kJ/mol",
+        "キロジュール": "kJ",
+        "グラム毎モル": "g/mol",
+        "クーロン毎モル": "C/mol",
+        "グラム": "g",
+        "ミリリットル": "mL",
+        "モル": "mol",
+        "パーセント": "%",
+        "リットル": "L",
+        "アンペア": "A",
+        "クーロン": "C",
+        "度": "℃",
+        "気圧": "atm",
+        "パスカル": "Pa",
+        "ケルビン": "K"
+      },
+      "formula_mapping": {
+        "炭酸水素ナトリウム": "NaHCO₃",
+        "炭酸カルシウム": "CaCO₃",
+        "塩化マグネシウム": "MgCl₂",
+        "塩化カルシウム": "CaCl₂",
+        "塩化ナトリウム": "NaCl",
+        "水酸化ナトリウム": "NaOH",
+        "水酸化カルシウム": "Ca(OH)₂",
+        "硫酸ナトリウム": "Na₂SO₄",
+        "硝酸ナトリウム": "NaNO₃",
+        "硫酸銅": "CuSO₄",
+        "二酸化ケイ素": "SiO₂",
+        "二酸化硫黄": "SO₂",
+        "二酸化炭素": "CO₂",
+        "一酸化炭素": "CO",
+        "メタン": "CH₄",
+        "アンモニア": "NH₃"
+      }
+    },
+    "choice_shuffle_policy": {
+      "note": "choices[].choice_id は問題内で固有の安定識別子。アプリはユーザ提示時に choices を配列としてシャッフルし、choice_id と is_correct を参照して採点する。",
+      "runtime_shuffle": true,
+      "correct_positions_balanced_in_file": true
+    }
   },
   "questions": [
-    { "id": "ch3_2_q001", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "definition", "sub_category": "反応速度の定義", "difficulty": 2, "question_type": "correct", "question": "反応速度について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "化学反応の進行度を表し、単位時間に変化する物質の濃度や物質量などで表される。", "is_correct": true }, { "label": "2", "text": "反応速度は反応が終わるまでの総時間で表す。", "is_correct": false, "trap_type": "negation", "trap_detail": "総時間ではなく単位時間あたりの変化量。" }, { "label": "3", "text": "反応速度は常に一定で時間によって変わらない。", "is_correct": false, "trap_type": "negation", "trap_detail": "時間とともに変化する。" }, { "label": "4", "text": "反応速度は温度に依存しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度に大きく依存する。" } ], "explanation": "反応速度は化学反応がどれくらい速く進むかを示す指標です。通常は一秒間や一分間あたりに反応物の濃度がどれくらい減ったか、あるいは生成物の濃度がどれくらい増えたかで表します。時間とともに反応物が消費されて濃度が減るため、反応速度も一般に変化します。", "evidence": [ { "source_id": "2_1_def_001", "quote": "単位時間に変化する物質の質量、物質量、濃度、体積などで表される" } ], "related_concept_ids": ["2_1_def_001"], "mnemonic": null },
-    { "id": "ch3_2_q002", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "definition", "sub_category": "平均の反応速度", "difficulty": 3, "question_type": "correct", "question": "平均の反応速度の求め方として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "ある時間区間での着目物質の濃度変化の絶対値をその時間で割る。反応物は濃度が減少するため絶対値をとって正の値にする。", "is_correct": true }, { "label": "2", "text": "反応開始時の濃度を反応終了時の時間で割る。", "is_correct": false, "trap_type": "negation", "trap_detail": "変化量を時間間隔で割る。" }, { "label": "3", "text": "生成物の濃度をそのまま反応速度とする。", "is_correct": false, "trap_type": "negation", "trap_detail": "濃度そのものではなく変化量を時間で割る。" }, { "label": "4", "text": "反応物の場合は濃度の変化がマイナスになるため速度もマイナスとする。", "is_correct": false, "trap_type": "negation", "trap_detail": "絶対値をとって正にする。" } ], "explanation": "平均の反応速度は区間の濃度変化を時間で割って求めます。反応物は消費されて濃度が減るため変化量がマイナスになりますが、速度は正の値で表すため絶対値をとります。生成物なら濃度が増加するのでそのまま正の値です。", "evidence": [ { "source_id": "2_1_eq_001", "quote": "濃度変化の絶対値をかかった時間で割る" } ], "related_concept_ids": ["2_1_eq_001"], "mnemonic": null },
-    { "id": "ch3_2_q003", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "definition", "sub_category": "反応速度式の定義", "difficulty": 3, "question_type": "correct", "question": "反応速度式について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "反応速度は速度定数かける反応物のモル濃度の各べき乗の積で表される。べき乗の指数は化学反応式の係数とは限らず実験で決まる。", "is_correct": true }, { "label": "2", "text": "べき乗の指数は必ず化学反応式の係数と一致する。", "is_correct": false, "trap_type": "negation", "trap_detail": "一致するとは限らない。実験で決定する。" }, { "label": "3", "text": "速度定数は反応物の濃度によって変わる。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度一定なら速度定数は一定。" }, { "label": "4", "text": "反応速度は反応物の濃度に依存しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "濃度に依存する。" } ], "explanation": "反応速度式はブイイコールケーかける各反応物の濃度のべき乗の積という形をとります。重要なのは指数が化学反応式の係数と必ずしも一致しない点です。五酸化二窒素の分解では反応式の係数は二ですが速度式の指数は一（一次反応）です。指数は実験でしか決められません。", "evidence": [ { "source_id": "2_1_eq_002", "quote": "指数の a や b は反応式の係数と必ずしも一致せず、実験によってのみ決まります" } ], "related_concept_ids": ["2_1_eq_002"], "mnemonic": null },
-    { "id": "ch3_2_q004", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "definition", "sub_category": "速度定数の定義", "difficulty": 3, "question_type": "correct", "question": "速度定数について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "反応の種類と温度が決まれば一定になる比例定数であり、値が大きいほどその反応は速く進む。", "is_correct": true }, { "label": "2", "text": "速度定数は反応物の濃度に依存する。", "is_correct": false, "trap_type": "negation", "trap_detail": "濃度に依存しない定数。" }, { "label": "3", "text": "速度定数は温度が変わっても一定である。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "温度が変わると速度定数も変わる。" }, { "label": "4", "text": "速度定数が小さいほど反応は速い。", "is_correct": false, "trap_type": "negation", "trap_detail": "大きいほど速い。" } ], "explanation": "速度定数ケーは反応速度式の比例定数であり、反応物の濃度がすべて一モル毎リットルのときの反応速度に等しいです。温度が上がると速度定数は大きくなるため反応速度が増加します。同じ温度なら濃度に関係なく一定の値です。", "evidence": [ { "source_id": "2_1_def_002", "quote": "反応の種類と温度が決まれば一定になる値です" } ], "related_concept_ids": ["2_1_def_002"], "mnemonic": null },
-    { "id": "ch3_2_q005", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "definition", "sub_category": "多段階反応の定義", "difficulty": 3, "question_type": "correct", "question": "多段階反応について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "一つの化学反応式で表される反応が、実際には複数の素反応が段階的に連続して起こっている反応である。", "is_correct": true }, { "label": "2", "text": "すべての化学反応は一段階で完了する。", "is_correct": false, "trap_type": "negation", "trap_detail": "多くの反応は多段階である。" }, { "label": "3", "text": "多段階反応では各段階の速さは等しい。", "is_correct": false, "trap_type": "negation", "trap_detail": "段階によって速さが異なる。" }, { "label": "4", "text": "多段階反応は理論上の概念であり実例はない。", "is_correct": false, "trap_type": "negation", "trap_detail": "五酸化二窒素の分解など多くの実例がある。" } ], "explanation": "多段階反応とは、全体の反応式で一つに見える反応が実際には複数の素反応の連続で進行しているものです。五酸化二窒素の分解は全体としては一つの式ですが、実際には四つの素反応から構成されています。反応速度式の指数が係数と一致しない原因もここにあります。", "evidence": [ { "source_id": "2_1_def_003", "quote": "実際には複数の反応が段階的に連続して起こっている反応" } ], "related_concept_ids": ["2_1_def_003"], "mnemonic": null },
-    { "id": "ch3_2_q006", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "definition", "sub_category": "律速段階の定義", "difficulty": 3, "question_type": "correct", "question": "律速段階について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "多段階反応において最も反応速度が遅い段階であり、反応全体の速さを決定する。渋滞の先頭に例えられる。", "is_correct": true }, { "label": "2", "text": "最も速い段階が律速段階である。", "is_correct": false, "trap_type": "negation", "trap_detail": "最も遅い段階。" }, { "label": "3", "text": "律速段階は反応全体の速さに影響しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "全体の速さを決定する。" }, { "label": "4", "text": "すべての段階が律速段階になる。", "is_correct": false, "trap_type": "negation", "trap_detail": "最も遅い一つの段階のみ。" } ], "explanation": "律速段階は多段階反応のボトルネックです。渋滞の先頭が全体の流れを決めるように、最も遅い段階の速さが反応全体の速さを支配します。反応速度を上げるには律速段階を速くする方が効果的です。", "evidence": [ { "source_id": "2_1_def_004", "quote": "多段階反応において、最も反応速度が遅い反応段階" } ], "related_concept_ids": ["2_1_def_004"], "mnemonic": null },
-    { "id": "ch3_2_q007", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "definition", "sub_category": "遷移状態の定義", "difficulty": 3, "question_type": "correct", "question": "遷移状態について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "反応が進行する途中で経由する反応物よりエネルギーが高い中間状態であり、活性化状態ともいう。この状態の分子集団を活性錯体と呼ぶ。", "is_correct": true }, { "label": "2", "text": "遷移状態は反応物の中で最もエネルギーが低い状態である。", "is_correct": false, "trap_type": "negation", "trap_detail": "最もエネルギーが高い状態。" }, { "label": "3", "text": "遷移状態は安定で長時間存在する。", "is_correct": false, "trap_type": "negation", "trap_detail": "不安定で瞬間的にしか存在しない。" }, { "label": "4", "text": "すべての反応は遷移状態を経由しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "すべての反応が遷移状態を経由する。" } ], "explanation": "遷移状態は化学反応における「エネルギーの山の頂上」に相当します。反応物が生成物に変わるためにはこの不安定な状態を一瞬通過する必要があります。この頂上に達した分子の集まりを活性錯体と呼びます。ヨウ化水素の分解反応ではヨウ素と水素が弱く結合した不安定な状態が遷移状態です。", "evidence": [ { "source_id": "2_2_def_001", "quote": "反応物よりエネルギーが高い中間状態。活性化状態ともいう" } ], "related_concept_ids": ["2_2_def_001"], "mnemonic": null },
-    { "id": "ch3_2_q008", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "definition", "sub_category": "活性化エネルギーの定義", "difficulty": 3, "question_type": "correct", "question": "活性化エネルギーについて、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "反応物を遷移状態にするのに必要なエネルギーであり、この値が小さいほど反応は速く進む。エネルギーの壁の高さに例えられる。", "is_correct": true }, { "label": "2", "text": "活性化エネルギーが大きいほど反応は速い。", "is_correct": false, "trap_type": "negation", "trap_detail": "小さいほど速い。" }, { "label": "3", "text": "活性化エネルギーは反応エンタルピーと同じものである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "異なる概念。活性化エネルギーは壁の高さ、反応エンタルピーは出発点と到着点の高さの差。" }, { "label": "4", "text": "すべての反応で活性化エネルギーはゼロである。", "is_correct": false, "trap_type": "negation", "trap_detail": "正の値をもつ。" } ], "explanation": "活性化エネルギーは反応を起こすために越えなければならないエネルギーの壁です。壁が低い（活性化エネルギーが小さい）ほど多くの分子が壁を越えられるため反応は速く進みます。反応エンタルピー（始点と終点の差）とは別の概念なので混同しないようにしましょう。", "evidence": [ { "source_id": "2_2_def_003", "quote": "反応物を遷移状態にするのに要するエネルギー" } ], "related_concept_ids": ["2_2_def_003"], "mnemonic": null },
-    { "id": "ch3_2_q009", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "definition", "sub_category": "触媒の定義", "difficulty": 2, "question_type": "correct", "question": "触媒について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "反応速度を著しく増大させるが、自身は反応の前後で変化しない物質である。活性化エネルギーのより小さい別の反応経路を提供する。", "is_correct": true }, { "label": "2", "text": "触媒は反応後に消費されてなくなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "前後で変化しない。" }, { "label": "3", "text": "触媒は反応エンタルピーを変化させる。", "is_correct": false, "trap_type": "negation", "trap_detail": "反応エンタルピーは変わらない。" }, { "label": "4", "text": "触媒を加えると生成物の総量が増える。", "is_correct": false, "trap_type": "negation", "trap_detail": "速度は変わるが生成物の総量は変わらない。" } ], "explanation": "触媒は活性化エネルギーの低い別経路を提供することで反応速度を上げます。山の代わりにトンネルを掘るイメージです。重要なのは正反応だけでなく逆反応の活性化エネルギーも同時に下げるため、反応エンタルピー（出発点と到着点の差）は変わりません。また生成物の総量も変わりません。", "evidence": [ { "source_id": "2_2_def_004", "quote": "反応速度を著しく増大させるが、反応の前後においてそれ自身は変化しない物質" } ], "related_concept_ids": ["2_2_def_004"], "mnemonic": null },
-    { "id": "ch3_2_q010", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "濃度と反応速度", "difficulty": 2, "question_type": "correct", "question": "反応物の濃度と反応速度の関係として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "反応物の濃度を大きくすると粒子同士の衝突回数が増加し反応速度は大きくなる。スチールウールは空気中より純酸素中の方が激しく燃える。", "is_correct": true }, { "label": "2", "text": "濃度を大きくすると反応速度は小さくなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "濃度増加で速度増大。" }, { "label": "3", "text": "濃度と反応速度は無関係である。", "is_correct": false, "trap_type": "negation", "trap_detail": "密接に関係する。" }, { "label": "4", "text": "衝突回数は濃度に依存しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "濃度に比例して増加する。" } ], "explanation": "反応が起こるにはまず反応物の粒子が衝突する必要があります。濃度が高くなると狭い空間に多くの粒子が存在するため衝突回数が増え、結果として反応速度が大きくなります。スチールウールが純酸素中で激しく燃えるのは酸素濃度が空気中の約五倍だからです。", "evidence": [ { "source_id": "2_2_law_001", "quote": "反応物の濃度を大きくすると、単位時間あたりの粒子どうしの衝突回数が増加" } ], "related_concept_ids": ["2_2_law_001"], "mnemonic": null },
-    { "id": "ch3_2_q011", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "温度と反応速度", "difficulty": 3, "question_type": "correct", "question": "温度と反応速度の関係として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "温度を上げると分子の運動が激しくなり、活性化エネルギーを越えられる分子の割合が増えるため反応速度が大きくなる。一般に十度上がると速度は二〜三倍になる。", "is_correct": true }, { "label": "2", "text": "温度を上げると反応速度は小さくなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "速度は大きくなる。" }, { "label": "3", "text": "温度を上げても衝突エネルギーは変わらない。", "is_correct": false, "trap_type": "negation", "trap_detail": "平均の運動エネルギーが大きくなる。" }, { "label": "4", "text": "温度上昇は衝突回数にも衝突エネルギーにも影響しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "両方に影響する。" } ], "explanation": "温度上昇は二つの効果で反応速度を上げます。まず分子の運動が激しくなり衝突回数が増えます。さらに各分子の運動エネルギーが大きくなるため活性化エネルギーを越えられる分子の割合が増えます。後者の効果の方が大きく、一般に十度の上昇で反応速度は二〜三倍になります。", "evidence": [ { "source_id": "2_2_def_003", "quote": "活性化エネルギーの壁が低いほど、反応は速く進む" } ], "related_concept_ids": ["2_2_def_003"], "mnemonic": null },
-    { "id": "ch3_2_q012", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "触媒と活性化エネルギー", "difficulty": 3, "question_type": "correct", "question": "触媒が反応速度を上げるしくみとして、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "活性化エネルギーのより小さな別の反応経路を通るようにすることで、多くの分子が壁を越えられるようにする。反応エンタルピーは変わらない。", "is_correct": true }, { "label": "2", "text": "触媒は反応物の温度を上げることで速度を上げる。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "温度を上げるのではなく別経路を提供する。" }, { "label": "3", "text": "触媒は反応エンタルピーを変化させて速度を上げる。", "is_correct": false, "trap_type": "negation", "trap_detail": "反応エンタルピーは変わらない。" }, { "label": "4", "text": "触媒は活性化エネルギーを大きくして速度を上げる。", "is_correct": false, "trap_type": "negation", "trap_detail": "小さくする。" } ], "explanation": "触媒は高い山の代わりに低い峠を越える新経路を作り出します。活性化エネルギーが下がることで分子の運動エネルギーで壁を越えられる分子が増え、反応速度が大きくなります。ただし出発点（反応物）と到着点（生成物）のエネルギー差（反応エンタルピー）は変わりません。", "evidence": [ { "source_id": "2_2_law_004", "quote": "触媒を用いると、活性化エネルギーのより小さな別の反応経路を通るため、反応速度が大きくなる" } ], "related_concept_ids": ["2_2_law_004"], "mnemonic": null },
-    { "id": "ch3_2_q013", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "酸化マンガンの触媒作用", "difficulty": 2, "question_type": "correct", "question": "過酸化水素の分解に対する酸化マンガン（四価）の役割として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "不均一系触媒として働き、過酸化水素の分解を促進して激しく酸素を発生させる。反応後も酸化マンガンは変化しない。", "is_correct": true }, { "label": "2", "text": "酸化マンガンは反応で消費されて減少する。", "is_correct": false, "trap_type": "negation", "trap_detail": "触媒なので反応後も変化しない。" }, { "label": "3", "text": "酸化マンガンは過酸化水素の分解を遅くする。", "is_correct": false, "trap_type": "negation", "trap_detail": "分解を促進する。" }, { "label": "4", "text": "酸化マンガンは均一系触媒である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "不均一系（固体の触媒が液体中で働く）。" } ], "explanation": "酸化マンガン（四価）は黒色の固体であり、過酸化水素水の分解において不均一系触媒として機能します。反応後にろ過すれば酸化マンガンを回収でき、繰り返し使用できます。触媒の途中では中間体を形成しますが、反応全体の前後では変化しません。", "evidence": [ { "source_id": "2_1_sub_003", "quote": "過酸化水素の分解において不均一系触媒としてはたらく" } ], "related_concept_ids": ["2_2_def_004", "2_1_sub_003"], "mnemonic": null },
-    { "id": "ch3_2_q014", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "confusion", "sub_category": "活性化エネルギーと反応エンタルピーの混同", "difficulty": 3, "question_type": "incorrect", "question": "活性化エネルギーと反応エンタルピーに関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "活性化エネルギーは反応物から遷移状態に達するのに必要なエネルギーである。", "is_correct": false }, { "label": "2", "text": "反応エンタルピーは反応物と生成物のエネルギー差である。", "is_correct": false }, { "label": "3", "text": "触媒は活性化エネルギーを下げるが反応エンタルピーは変えない。", "is_correct": false }, { "label": "4", "text": "活性化エネルギーと反応エンタルピーは同じ概念であり区別する必要はない。", "is_correct": true, "trap_type": "concept_confusion", "trap_detail": "全く異なる概念。活性化エネルギーは壁の高さ、反応エンタルピーは始点と終点の差。" } ], "explanation": "活性化エネルギーと反応エンタルピーは全く異なる物理量です。エネルギー図で考えると、活性化エネルギーは反応物から山の頂上（遷移状態）までの高さ、反応エンタルピーは反応物と生成物（出発点と到着点）のエネルギー差です。触媒は山の高さ（活性化エネルギー）を下げますが始終点の差（反応エンタルピー）は変えません。", "evidence": [ { "source_id": "2_2_def_003", "quote": "遷移状態のエネルギーと反応物のエネルギーとの差" }, { "source_id": "2_2_law_004", "quote": "反応エンタルピーは変化しない" } ], "related_concept_ids": ["2_2_def_003", "2_2_law_004"], "mnemonic": null },
-    { "id": "ch3_2_q015", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "confusion", "sub_category": "速度式の指数と係数の混同", "difficulty": 4, "question_type": "incorrect", "question": "反応速度式に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "速度式の指数は実験で決める必要がある。", "is_correct": false }, { "label": "2", "text": "五酸化二窒素の分解は反応式の係数が二だが一次反応である。", "is_correct": false }, { "label": "3", "text": "多段階反応では指数は律速段階の素反応で決まる。", "is_correct": false }, { "label": "4", "text": "速度式の指数は常に化学反応式の係数と一致するため、実験で調べる必要はない。", "is_correct": true, "trap_type": "negation", "trap_detail": "一致するとは限らず、実験で決定する必要がある。" } ], "explanation": "反応速度式の指数が化学反応式の係数と一致するのは素反応の場合のみです。多くの反応は多段階で進行するため、全体の反応式の係数と指数は異なります。五酸化二窒素の分解は典型例で、反応式の係数が二なのに速度式は一次（指数が一）です。このため指数は実験データから決める必要があります。", "evidence": [ { "source_id": "2_1_eq_002", "quote": "化学反応式の係数がそのまま指数 a, b になるとは限らない" } ], "related_concept_ids": ["2_1_eq_002"], "mnemonic": null },
-    { "id": "ch3_2_q016", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "confusion", "sub_category": "触媒と生成物量の混同", "difficulty": 3, "question_type": "incorrect", "question": "触媒に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "触媒は反応速度を上げる。", "is_correct": false }, { "label": "2", "text": "触媒は自身が反応の前後で変化しない。", "is_correct": false }, { "label": "3", "text": "触媒は活性化エネルギーの小さな別経路を提供する。", "is_correct": false }, { "label": "4", "text": "触媒を加えると得られる生成物の総量が増加し、反応エンタルピーも変化する。", "is_correct": true, "trap_type": "negation", "trap_detail": "生成物の総量も反応エンタルピーも変わらない。" } ], "explanation": "触媒は反応が速く進むようにするだけで、最終的に得られる生成物の量（平衡の位置）は変えません。また反応エンタルピー（出発点と到着点のエネルギー差）も変化しません。変えるのは活性化エネルギーだけです。", "evidence": [ { "source_id": "2_2_law_004", "quote": "得られる生成物の総量や反応エンタルピーは変わらない" } ], "related_concept_ids": ["2_2_law_004"], "mnemonic": null },
-    { "id": "ch3_2_q017", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "confusion", "sub_category": "律速段階の勘違い", "difficulty": 3, "question_type": "incorrect", "question": "律速段階に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "多段階反応の中で最も遅い段階が律速段階である。", "is_correct": false }, { "label": "2", "text": "律速段階の速さが反応全体の速さを決める。", "is_correct": false }, { "label": "3", "text": "律速段階を速くすれば反応全体が速くなる。", "is_correct": false }, { "label": "4", "text": "最も速い段階が律速段階であり、その段階の速さが全体の速さに影響する。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "最も遅い段階が律速段階。" } ], "explanation": "律速段階は「律する（支配する）速度の段階」という意味で、多段階反応の中で最も遅い段階のことです。これが渋滞のボトルネックとなり全体の速さを決定します。最も速い段階と混同しやすいですが「遅い方」が支配するのがポイントです。", "evidence": [ { "source_id": "2_1_def_004", "quote": "最も反応速度が遅い反応段階" } ], "related_concept_ids": ["2_1_def_004"], "mnemonic": null },
-    { "id": "ch3_2_q018", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "classification", "sub_category": "反応速度に影響する因子の分類", "difficulty": 3, "question_type": "correct", "question": "反応速度に影響する因子の分類として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "反応物の濃度、温度、触媒の有無、固体の表面積が主な因子である。いずれも衝突回数や衝突エネルギーに影響を及ぼす。", "is_correct": true }, { "label": "2", "text": "反応速度に影響するのは温度のみであり他の因子はない。", "is_correct": false, "trap_type": "negation", "trap_detail": "濃度や触媒なども影響する。" }, { "label": "3", "text": "固体の表面積は反応速度に影響しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "粉末にすると表面積が増え速度が上がる。" }, { "label": "4", "text": "触媒は反応速度に全く影響しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "大きな影響を及ぼす。" } ], "explanation": "反応速度に影響する主な因子は四つです。反応物の濃度（衝突回数に影響）、温度（衝突エネルギーに影響）、触媒（活性化エネルギーを下げる）、固体反応物の表面積（接触面積で衝突回数に影響）です。いずれも粒子の衝突頻度や有効衝突の割合を変えることで速度に影響します。", "evidence": [ { "source_id": "2_2_law_001", "quote": "反応物の濃度を大きくすると、衝突回数が増加し、反応速度は大きくなる" } ], "related_concept_ids": ["2_2_law_001", "2_2_def_003", "2_2_def_004"], "mnemonic": null },
-    { "id": "ch3_2_q019", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "classification", "sub_category": "均一系触媒と不均一系触媒", "difficulty": 3, "question_type": "correct", "question": "均一系触媒と不均一系触媒の違いとして、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "均一系触媒は反応物と同じ相（たとえば溶液中）に存在し、不均一系触媒は反応物と異なる相（たとえば固体触媒が液体中で働く）に存在する。", "is_correct": true }, { "label": "2", "text": "均一系触媒は固体であり不均一系触媒は液体である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "逆。均一系は同じ相、不均一系は異なる相。" }, { "label": "3", "text": "均一系と不均一系に性能の差はない。", "is_correct": false, "trap_type": "negation", "trap_detail": "触媒の種類によって特性が異なる。" }, { "label": "4", "text": "酸化マンガンは均一系触媒の例である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "不均一系触媒の例。" } ], "explanation": "触媒は反応系との相の関係で二種類に分けられます。均一系触媒は反応物と同じ相（例：溶液中の酸やイオン）で均一に混ざります。不均一系触媒は反応物と異なる相（例：固体の酸化マンガンが過酸化水素水中で使われる）で働きます。", "evidence": [ { "source_id": "2_1_sub_003", "quote": "不均一系触媒としてはたらく" } ], "related_concept_ids": ["2_2_def_004", "2_1_sub_003"], "mnemonic": null },
-    { "id": "ch3_2_q020", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "procedure", "sub_category": "平均速度の計算手順", "difficulty": 3, "question_type": "correct", "question": "平均の反応速度を求める手順として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "時刻一での濃度と時刻二での濃度を測定し、濃度変化の絶対値を時間間隔で割る。", "is_correct": true }, { "label": "2", "text": "時刻一の濃度を時刻二の濃度で割る。", "is_correct": false, "trap_type": "negation", "trap_detail": "割るのは時間間隔。" }, { "label": "3", "text": "濃度の絶対値ではなくそのままマイナスの値で表す。", "is_correct": false, "trap_type": "negation", "trap_detail": "絶対値をとって正の値にする。" }, { "label": "4", "text": "反応開始からの総時間のみで計算する。", "is_correct": false, "trap_type": "negation", "trap_detail": "任意の区間で計算できる。" } ], "explanation": "平均の反応速度の計算手順は三段階です。第一に時刻一での着目物質の濃度を測定します。第二に時刻二での濃度を測定します。第三に濃度の変化量の絶対値を時間間隔で割ります。反応物の場合は濃度が減るためマイナスになりますが絶対値で正にします。", "evidence": [ { "source_id": "2_1_eq_001", "quote": "濃度の変化量の絶対値を、かかった時間で割る" } ], "related_concept_ids": ["2_1_eq_001"], "mnemonic": null },
-    { "id": "ch3_2_q021", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "procedure", "sub_category": "速度式の決定手順", "difficulty": 4, "question_type": "correct", "question": "反応速度式を決定する手順として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "一方の反応物の初濃度を変えて他方を一定に保ち、速度の変化から指数を決定する。複数の実験を組み合わせてすべての指数と速度定数を求める。", "is_correct": true }, { "label": "2", "text": "化学反応式の係数をそのまま指数として速度式を書く。", "is_correct": false, "trap_type": "negation", "trap_detail": "実験で決めなければならない。" }, { "label": "3", "text": "一回の実験だけですべてのパラメータが決まる。", "is_correct": false, "trap_type": "negation", "trap_detail": "複数回の実験が必要。" }, { "label": "4", "text": "理論計算のみで指数を決定でき実験は不要である。", "is_correct": false, "trap_type": "negation", "trap_detail": "実験が不可欠。" } ], "explanation": "速度式の決定には系統的な実験が必要です。一つの反応物の初濃度を変え、他の反応物を一定に保って速度を測定します。濃度を二倍にしたとき速度が二倍なら一次、四倍なら二次と決定できます。同様にすべての反応物について調べ、最後に実験値から速度定数を計算します。", "evidence": [ { "source_id": "2_1_eq_002", "quote": "実験データから反応速度式の指数および速度定数を決定する" } ], "related_concept_ids": ["2_1_eq_002"], "mnemonic": null },
-    { "id": "ch3_2_q022", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "confusion", "sub_category": "触媒の途中変化の見落とし", "difficulty": 3, "question_type": "incorrect", "question": "触媒に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "触媒は反応の前後で変化しない。", "is_correct": false }, { "label": "2", "text": "触媒は反応の途中で中間体を形成することがある。", "is_correct": false }, { "label": "3", "text": "触媒は活性化エネルギーを下げる。", "is_correct": false }, { "label": "4", "text": "触媒は反応の途中でも一切化学的に関与しない。単に存在するだけで反応が速くなる。", "is_correct": true, "trap_type": "negation", "trap_detail": "途中で中間体を形成するなど化学的に関与する。" } ], "explanation": "触媒は反応の「前後」では変化しませんが、反応の「途中」では化学的に関与します。中間体（中間化合物）を形成したり表面に反応物を吸着させたりすることで、活性化エネルギーの低い別経路を提供します。単に存在するだけでは触媒作用は発揮されません。", "evidence": [ { "source_id": "2_2_def_004", "quote": "反応の途中で中間体を作るなど化学的には関与している" } ], "related_concept_ids": ["2_2_def_004"], "mnemonic": null },
-    { "id": "ch3_2_q023", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "表面積と反応速度", "difficulty": 2, "question_type": "correct", "question": "固体の表面積と反応速度の関係として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "固体の反応物を粉末にすると表面積が大きくなり、反応物との接触面が増えるため反応速度が大きくなる。", "is_correct": true }, { "label": "2", "text": "表面積が大きくなると反応速度は小さくなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "大きくなる。" }, { "label": "3", "text": "固体の形状は反応速度に影響しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "表面積を通じて大きく影響する。" }, { "label": "4", "text": "大きな塊の方が粉末より反応速度が速い。", "is_correct": false, "trap_type": "negation", "trap_detail": "粉末の方が表面積が大きく速い。" } ], "explanation": "固体が関わる反応では、固体の表面で反応物が接触して反応が進みます。塊を粉末にすると表面積が大幅に増えるため接触面が増え反応速度が大きくなります。小麦粉工場での粉塵爆発は粉末の表面積が極めて大きいため爆発的に反応が進む例です。", "evidence": [], "related_concept_ids": ["2_2_law_001"], "mnemonic": null },
-    { "id": "ch3_2_q024", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "mnemonic", "sub_category": "触媒の覚え方", "difficulty": 2, "question_type": "correct", "question": "触媒の覚え方として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "「触媒は汗水たらす要もなし」で覚える。活性化エネルギーの小さな別ルートを提供するので、反応に高いエネルギーが不要になるという意味である。", "is_correct": true }, { "label": "2", "text": "この語呂合わせは反応エンタルピーに関するものである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "触媒の活性化エネルギーに関する覚え方。" }, { "label": "3", "text": "触媒は反応に高いエネルギーが必要になるという意味の語呂合わせである。", "is_correct": false, "trap_type": "negation", "trap_detail": "不要になるという意味。" }, { "label": "4", "text": "この語呂合わせは間違いであり触媒は効果がない。", "is_correct": false, "trap_type": "negation", "trap_detail": "触媒には大きな効果がある。" } ], "explanation": "「触媒は汗水たらす要もなし」は触媒の本質を覚えるための語呂合わせです。触媒があると活性化エネルギーが下がるため、反応物が「汗水たらす（大きなエネルギーを出す）必要がない」ルートで反応が進行できるという意味です。", "evidence": [ { "source_id": "2_2_def_004", "quote": "触媒は汗水たらす要もなし" } ], "related_concept_ids": ["2_2_def_004"], "mnemonic": "触媒は汗水たらす要もなし" },
-    { "id": "ch3_2_q025", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "comprehensive", "sub_category": "反応速度の総合", "difficulty": 5, "question_type": "correct", "question": "反応速度に関する総合的な記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "反応速度は濃度・温度・触媒・表面積で変わる。速度式の指数は実験で決める。多段階反応では律速段階が全体を支配する。触媒は活性化エネルギーを下げるが反応エンタルピーは不変である。", "is_correct": true }, { "label": "2", "text": "反応速度は温度のみで決まり触媒は無関係。速度式の指数は係数と一致する。律速段階は最速の段階。触媒は反応エンタルピーを変える。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "四か所すべて誤り。" }, { "label": "3", "text": "活性化エネルギーが大きいほど反応速度は大きい。", "is_correct": false, "trap_type": "negation", "trap_detail": "小さいほど大きい。" }, { "label": "4", "text": "触媒を加えると生成物の総量が増加する。", "is_correct": false, "trap_type": "negation", "trap_detail": "総量は変わらない。" } ], "explanation": "反応速度のすべてのポイントをまとめた問題です。速度は濃度・温度・触媒・表面積の四因子で変わります。速度式の指数は実験で決定します。多段階反応では最も遅い律速段階が全体を支配します。触媒は活性化エネルギーのみを下げ、反応エンタルピーと生成物の総量は変えません。", "evidence": [ { "source_id": "2_2_law_001", "quote": "反応物の濃度を大きくすると反応速度は大きくなる" }, { "source_id": "2_2_law_004", "quote": "活性化エネルギーのより小さな別の反応経路を通る" } ], "related_concept_ids": ["2_1_def_001", "2_2_law_001", "2_2_def_003", "2_2_def_004", "2_2_law_004"], "mnemonic": null },
-    { "id": "ch3_2_q026", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "衝突理論", "difficulty": 3, "question_type": "correct", "question": "分子の衝突と反応の関係として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "分子が衝突しても全てが反応するわけではない。活性化エネルギー以上の運動エネルギーをもった有効な衝突のみが反応を起こす。", "is_correct": true }, { "label": "2", "text": "分子が衝突すれば必ず反応が起こる。", "is_correct": false, "trap_type": "negation", "trap_detail": "エネルギーが不足する衝突では反応しない。" }, { "label": "3", "text": "衝突の向きは反応に全く影響しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "適切な向きの衝突が必要な場合もある。" }, { "label": "4", "text": "衝突の回数が減ると反応速度が増す。", "is_correct": false, "trap_type": "negation", "trap_detail": "回数が増えると速度が増す。" } ], "explanation": "反応が起こるためには分子が衝突することが必要ですが、十分ではありません。活性化エネルギー以上の運動エネルギーをもつ衝突（有効衝突）でないと反応は起こりません。さらに適切な方向からの衝突が必要な場合もあります。有効衝突の割合を増やすことが反応速度を上げる鍵です。", "evidence": [ { "source_id": "2_2_def_003", "quote": "活性化エネルギーの壁を越えなければならない" } ], "related_concept_ids": ["2_2_def_003"], "mnemonic": null },
-    { "id": "ch3_2_q027", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "confusion", "sub_category": "速度定数と反応速度の混同", "difficulty": 3, "question_type": "incorrect", "question": "速度定数に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "温度一定なら速度定数は一定である。", "is_correct": false }, { "label": "2", "text": "速度定数が大きいほど反応が速い。", "is_correct": false }, { "label": "3", "text": "速度定数は反応の種類によって異なる。", "is_correct": false }, { "label": "4", "text": "速度定数は反応物の濃度に比例して大きくなる。濃度が二倍になると速度定数も二倍になる。", "is_correct": true, "trap_type": "concept_confusion", "trap_detail": "速度定数は濃度に依存しない定数。変わるのは反応速度。" } ], "explanation": "速度定数は「定数」の名の通り、温度と反応の種類が同じなら一定値です。反応物の濃度が変わると反応速度は変わりますが、速度定数自体は変わりません。速度定数と反応速度は異なる概念であり混同に注意が必要です。", "evidence": [ { "source_id": "2_1_def_002", "quote": "反応の種類と温度が決まれば一定になる値です" } ], "related_concept_ids": ["2_1_def_002"], "mnemonic": null },
-    { "id": "ch3_2_q028", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "ヨウ化水素の分解", "difficulty": 3, "question_type": "correct", "question": "ヨウ化水素の熱分解について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "約四百度に加熱するとヨウ化水素は分解して水素とヨウ素を生じる。分解の途中で遷移状態（活性錯体）を経由する。", "is_correct": true }, { "label": "2", "text": "ヨウ化水素は室温で自然に分解する。", "is_correct": false, "trap_type": "negation", "trap_detail": "約四百度の加熱が必要。" }, { "label": "3", "text": "ヨウ化水素の分解では遷移状態を経由しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "すべての反応が遷移状態を経由する。" }, { "label": "4", "text": "分解生成物は水とヨウ素である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "水ではなく水素。" } ], "explanation": "ヨウ化水素は約四百度で分解して水素とヨウ素を生じます。二つのヨウ化水素分子が衝突すると、水素原子とヨウ素原子が弱く結合した不安定な遷移状態（活性錯体）を経由し、最終的に水素分子とヨウ素分子が生成します。", "evidence": [ { "source_id": "2_1_sub_005", "quote": "約400℃に熱すると水素とヨウ素に分解する" } ], "related_concept_ids": ["2_1_sub_005", "2_2_def_001"], "mnemonic": null },
-    { "id": "ch3_2_q029", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "classification", "sub_category": "一次反応と二次反応", "difficulty": 3, "question_type": "correct", "question": "反応の次数の分類として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "速度式の指数の合計を反応の次数という。指数が一の反応を一次反応、二の反応を二次反応と呼ぶ。五酸化二窒素の分解は一次反応の例である。", "is_correct": true }, { "label": "2", "text": "反応の次数は化学反応式の係数で決まる。", "is_correct": false, "trap_type": "negation", "trap_detail": "速度式の指数で決まる。" }, { "label": "3", "text": "すべての反応は二次反応である。", "is_correct": false, "trap_type": "negation", "trap_detail": "次数はさまざま。" }, { "label": "4", "text": "五酸化二窒素の分解は二次反応である。", "is_correct": false, "trap_type": "negation", "trap_detail": "一次反応。" } ], "explanation": "反応の次数は速度式の指数の合計で定義されます。五酸化二窒素の分解は速度がその濃度の一乗に比例するため一次反応です。反応式の係数は二ですが次数は一であり、このずれは反応が多段階で進行するために生じます。", "evidence": [ { "source_id": "2_1_eq_002", "quote": "v = k[N2O5] となり、N2O5の濃度の1乗に比例する一次反応" } ], "related_concept_ids": ["2_1_eq_002"], "mnemonic": null },
-    { "id": "ch3_2_q030", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "confusion", "sub_category": "触媒と平衡の混同", "difficulty": 4, "question_type": "incorrect", "question": "触媒と化学平衡に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "触媒は正反応も逆反応も同時に速くする。", "is_correct": false }, { "label": "2", "text": "触媒は平衡に達するまでの時間を短縮する。", "is_correct": false }, { "label": "3", "text": "触媒は平衡の位置（平衡定数）を変えない。", "is_correct": false }, { "label": "4", "text": "触媒は正反応だけを速くし逆反応は遅くするため平衡が生成物側にずれる。", "is_correct": true, "trap_type": "negation", "trap_detail": "正反応も逆反応も同時に速くなり平衡は変わらない。" } ], "explanation": "触媒は活性化エネルギーを下げることで正反応と逆反応の両方を同時に速くします。その結果、平衡に達するまでの時間は短縮されますが、平衡の位置（平衡定数）は変わりません。正反応だけ速くなるという記述は誤りです。", "evidence": [ { "source_id": "2_2_law_004", "quote": "得られる生成物の総量や反応エンタルピーは変わらない" } ], "related_concept_ids": ["2_2_law_004"], "mnemonic": null },
-    { "id": "ch3_2_q031", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "マックスウェル・ボルツマン分布", "difficulty": 4, "question_type": "correct", "question": "分子の運動エネルギーの分布と温度の関係として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "温度が上がるとエネルギーの高い分子の割合が増え、活性化エネルギーを越える分子が増えるため反応速度が大きくなる。", "is_correct": true }, { "label": "2", "text": "温度が上がってもエネルギー分布は変わらない。", "is_correct": false, "trap_type": "negation", "trap_detail": "高エネルギー側に広がる。" }, { "label": "3", "text": "全ての分子が同じエネルギーをもつ。", "is_correct": false, "trap_type": "negation", "trap_detail": "エネルギーには分布がある。" }, { "label": "4", "text": "温度が上がると活性化エネルギーも上がるため反応速度は変わらない。", "is_correct": false, "trap_type": "negation", "trap_detail": "活性化エネルギーは温度で変わらない。" } ], "explanation": "分子の運動エネルギーにはマックスウェル・ボルツマン分布という幅があります。温度が上がるとこの分布が高エネルギー側に広がり、活性化エネルギー以上のエネルギーをもつ分子の割合が大きく増えます。活性化エネルギー自体は温度で変化しません。", "evidence": [ { "source_id": "2_2_def_003", "quote": "エネルギーの壁が低いほど反応は速く進む" } ], "related_concept_ids": ["2_2_def_003"], "mnemonic": null },
-    { "id": "ch3_2_q032", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "mnemonic", "sub_category": "律速段階の覚え方", "difficulty": 2, "question_type": "correct", "question": "律速段階の覚え方として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "律速段階は「渋滞の先頭」であり、最も遅い段階が全体のペースを決めると覚える。", "is_correct": true }, { "label": "2", "text": "最も速い段階が全体のペースを決めると覚える。", "is_correct": false, "trap_type": "negation", "trap_detail": "最も遅い段階。" }, { "label": "3", "text": "律速段階は触媒に関する覚え方である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "多段階反応に関する概念。" }, { "label": "4", "text": "すべての段階が同じ速さなので渋滞は起きない。", "is_correct": false, "trap_type": "negation", "trap_detail": "各段階の速さは異なる。" } ], "explanation": "律速段階を「渋滞の先頭」に例えると理解しやすくなります。高速道路で一か所が詰まると全体の流れがそこで決まるのと同じで、多段階反応では最も遅い段階が全体の反応速度を支配します。この段階を速くすることが反応全体を速くする最も効果的な方法です。", "evidence": [ { "source_id": "2_1_def_004", "quote": "渋滞の先頭のようなもの" } ], "related_concept_ids": ["2_1_def_004"], "mnemonic": "律速段階は渋滞の先頭" },
-    { "id": "ch3_2_q033", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "confusion", "sub_category": "触媒のエネルギー図", "difficulty": 4, "question_type": "incorrect", "question": "触媒使用時のエネルギー図に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "触媒により活性化エネルギーの山が低くなる。", "is_correct": false }, { "label": "2", "text": "反応物と生成物のエネルギーは触媒の有無で変わらない。", "is_correct": false }, { "label": "3", "text": "正反応と逆反応の両方の活性化エネルギーが下がる。", "is_correct": false }, { "label": "4", "text": "触媒を使うと反応物の位置が下がりエネルギー差が大きくなる。したがって反応エンタルピーが変化する。", "is_correct": true, "trap_type": "negation", "trap_detail": "反応物と生成物の位置は変わらない。反応エンタルピーは不変。" } ], "explanation": "触媒使用時のエネルギー図では、反応物と生成物のエネルギーレベルは変わらず、その間にある活性化エネルギーの山だけが低くなります。これは別の反応経路を通ることを意味します。反応エンタルピー（出発点と到着点の差）は変わりません。", "evidence": [ { "source_id": "2_2_law_004", "quote": "反応エンタルピーは変化しない" } ], "related_concept_ids": ["2_2_law_004", "2_2_def_003"], "mnemonic": null },
-    { "id": "ch3_2_q034", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "五酸化二窒素の分解", "difficulty": 3, "question_type": "correct", "question": "五酸化二窒素の分解反応について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "全体の反応式で表される分解反応は実際には四つの素反応からなる多段階反応であり、速度式は一次反応の形をとる。", "is_correct": true }, { "label": "2", "text": "この反応は一段階の素反応として進行する。", "is_correct": false, "trap_type": "negation", "trap_detail": "四つの素反応からなる多段階反応。" }, { "label": "3", "text": "反応速度は五酸化二窒素の濃度の二乗に比例する。", "is_correct": false, "trap_type": "negation", "trap_detail": "一乗に比例する（一次反応）。" }, { "label": "4", "text": "この反応は多段階反応ではないため律速段階は存在しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "多段階反応であり律速段階がある。" } ], "explanation": "五酸化二窒素の分解は教科書で最もよく出る多段階反応の例です。全体としては二モルの五酸化二窒素から二モルの四酸化二窒素と一モルの酸素が生じますが、実際には四段階の素反応で進行します。律速段階が一次の素反応であるため、全体の速度式も一次反応になります。", "evidence": [ { "source_id": "2_1_sub_004", "quote": "分解反応は多段階反応である" } ], "related_concept_ids": ["2_1_sub_004", "2_1_def_003"], "mnemonic": null },
-    { "id": "ch3_2_q035", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "procedure", "sub_category": "エネルギー図の読み取り手順", "difficulty": 3, "question_type": "correct", "question": "エネルギー図から活性化エネルギーを読み取る方法として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "反応物のエネルギーレベルから遷移状態（山の頂上）のエネルギーレベルまでの差が活性化エネルギーである。反応エンタルピーは反応物と生成物のレベル差である。", "is_correct": true }, { "label": "2", "text": "活性化エネルギーは生成物のレベルから遷移状態までの高さである。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "反応物のレベルから遷移状態まで。生成物からの差は逆反応の活性化エネルギー。" }, { "label": "3", "text": "反応エンタルピーと活性化エネルギーは同じ値である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "異なる値。" }, { "label": "4", "text": "エネルギー図から数値を読み取ることはできない。", "is_correct": false, "trap_type": "negation", "trap_detail": "各レベルの差として読み取れる。" } ], "explanation": "エネルギー図では三つの重要なレベルがあります。反応物の位置、遷移状態の位置（頂上）、生成物の位置です。反応物から頂上までの差が正反応の活性化エネルギー、生成物から頂上までの差が逆反応の活性化エネルギー、反応物と生成物の差が反応エンタルピーです。", "evidence": [ { "source_id": "2_2_def_003", "quote": "遷移状態のエネルギーと反応物のエネルギーとの差" } ], "related_concept_ids": ["2_2_def_003"], "mnemonic": null },
-    { "id": "ch3_2_q036", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "confusion", "sub_category": "反応速度と平衡定数の混同", "difficulty": 4, "question_type": "incorrect", "question": "反応速度と平衡に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "反応速度が大きいことと平衡が生成物側にあることは別である。", "is_correct": false }, { "label": "2", "text": "触媒は反応速度を変えるが平衡定数を変えない。", "is_correct": false }, { "label": "3", "text": "速度定数が大きい反応が必ずしも平衡定数が大きいとは限らない。", "is_correct": false }, { "label": "4", "text": "反応速度が大きければ必ず生成物がたくさんできるため、反応速度が大きいイコール平衡が右にずれている。", "is_correct": true, "trap_type": "concept_confusion", "trap_detail": "反応速度と平衡の位置は別の概念。速い反応でも平衡で生成物が少ないこともある。" } ], "explanation": "反応速度と平衡の位置は全く別の概念です。反応速度は反応が進むスピードを、平衡定数は最終的な生成物と反応物の濃度の比を示します。速い反応でも平衡が反応物側にあれば生成物は少なくなります。この二つを混同しないことが重要です。", "evidence": [ { "source_id": "2_2_law_004", "quote": "得られる生成物の総量は変わらない" } ], "related_concept_ids": ["2_1_def_002", "2_2_law_004"], "mnemonic": null },
-    { "id": "ch3_2_q037", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "comprehensive", "sub_category": "触媒の総合", "difficulty": 5, "question_type": "incorrect", "question": "触媒に関する総合的な記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "触媒は活性化エネルギーの低い別経路を提供し反応速度を上げる。", "is_correct": false }, { "label": "2", "text": "触媒は反応の前後で変化しないが途中で中間体を形成することがある。", "is_correct": false }, { "label": "3", "text": "触媒は正反応も逆反応も同時に速くし平衡到達時間を短縮するが平衡定数は変えない。", "is_correct": false }, { "label": "4", "text": "触媒は反応後に消費され、正反応だけを速くして平衡定数を大きくし、反応エンタルピーも変化させる。", "is_correct": true, "trap_type": "multiple_swap", "trap_detail": "四か所すべて誤り。消費されない、正逆両方速くなる、平衡不変、エンタルピー不変。" } ], "explanation": "触媒についてのすべてのポイントをまとめた問題です。触媒は消費されず、正逆両反応を同時に速くし、平衡定数を変えず、反応エンタルピーも変化させません。変えるのは活性化エネルギーのみです。選択肢四はこれらすべてを誤って記述しています。", "evidence": [ { "source_id": "2_2_def_004", "quote": "反応の前後においてそれ自身は変化しない物質" }, { "source_id": "2_2_law_004", "quote": "反応エンタルピーは変化しない" } ], "related_concept_ids": ["2_2_def_004", "2_2_law_004"], "mnemonic": null },
-    { "id": "ch3_2_q038", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "触媒のトンネル例え", "difficulty": 2, "question_type": "correct", "question": "触媒の役割を例えた記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "高い山を越える代わりに低い峠やトンネルを通る新しいルートを作るのが触媒である。出発地と到着地の高さの差は変わらない。", "is_correct": true }, { "label": "2", "text": "山を削って出発地と到着地の高さの差を小さくするのが触媒である。", "is_correct": false, "trap_type": "negation", "trap_detail": "出発地と到着地の差（反応エンタルピー）は変わらない。" }, { "label": "3", "text": "触媒は出発地を高くして到着地を低くする。", "is_correct": false, "trap_type": "negation", "trap_detail": "出発地も到着地も変わらない。" }, { "label": "4", "text": "触媒はルートを変えず同じ山を速く登らせる。", "is_correct": false, "trap_type": "negation", "trap_detail": "別のルート（低い峠）を通らせる。" } ], "explanation": "触媒は「低い峠やトンネル」を提供するイメージです。高い山（大きな活性化エネルギー）を越えなくても低い峠（小さな活性化エネルギー）を通れば到着地に着けます。ただし出発地と到着地の標高差（反応エンタルピー）は変わりません。", "evidence": [ { "source_id": "2_2_law_004", "quote": "高い山を越える代わりに、低い峠を越える新しいルートができます" } ], "related_concept_ids": ["2_2_law_004"], "mnemonic": null },
-    { "id": "ch3_2_q039", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "生体内の触媒（酵素）", "difficulty": 2, "question_type": "correct", "question": "生体内の触媒について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "生体内では酵素がタンパク質からなる触媒として働き、体温付近の穏やかな条件で化学反応を効率よく進行させる。", "is_correct": true }, { "label": "2", "text": "生体内には触媒は存在しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "酵素という触媒が多数存在する。" }, { "label": "3", "text": "酵素は無機物の一種である。", "is_correct": false, "trap_type": "negation", "trap_detail": "タンパク質であり有機物。" }, { "label": "4", "text": "酵素は温度に関係なく同じ速度で働く。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度に大きく依存し高温で失活する。" } ], "explanation": "酵素は生体内で働くタンパク質からなる触媒です。活性化エネルギーを大幅に下げることで、体温（約三十七度）という穏やかな条件で効率よく化学反応を進行させます。温度が高すぎると変性（失活）して機能を失います。", "evidence": [], "related_concept_ids": ["2_2_def_004"], "mnemonic": null },
-    { "id": "ch3_2_q040", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "confusion", "sub_category": "反応物と生成物の速度の符号", "difficulty": 3, "question_type": "incorrect", "question": "反応速度の表し方に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "反応物は消費されるため濃度変化はマイナスだが速度は絶対値で正に表す。", "is_correct": false }, { "label": "2", "text": "生成物は増加するため濃度変化はプラスでそのまま正の速度になる。", "is_correct": false }, { "label": "3", "text": "反応が進むと一般に反応物の濃度が減り速度は低下する。", "is_correct": false }, { "label": "4", "text": "反応速度はマイナスの値で表すのが正式である。速度がマイナス〇・〇五モル毎リットル毎秒のように負の値で記す。", "is_correct": true, "trap_type": "negation", "trap_detail": "絶対値をとって正の値で表すのが正式。" } ], "explanation": "反応速度は常に正の値で表します。反応物の濃度は時間とともに減少するため変化量はマイナスになりますが、速度を求める際には絶対値をとって正にします。マイナスの速度という表現は使いません。", "evidence": [ { "source_id": "2_1_eq_001", "quote": "絶対値をつけて正の値にして扱います" } ], "related_concept_ids": ["2_1_eq_001"], "mnemonic": null },
-    { "id": "ch3_2_q041", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "活性錯体", "difficulty": 3, "question_type": "correct", "question": "活性錯体について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "遷移状態にある分子の集まりを活性錯体と呼ぶ。反応物でも生成物でもない瞬間的な中間構造であり非常に不安定である。", "is_correct": true }, { "label": "2", "text": "活性錯体は安定な中間生成物であり長時間存在する。", "is_correct": false, "trap_type": "negation", "trap_detail": "不安定で瞬間的にしか存在しない。" }, { "label": "3", "text": "活性錯体はすべての反応で単離・捕集できる。", "is_correct": false, "trap_type": "negation", "trap_detail": "瞬間的な存在なので通常単離できない。" }, { "label": "4", "text": "活性錯体は触媒と同じものである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "異なる概念。" } ], "explanation": "活性錯体は遷移状態にある分子の集合体であり、反応物から生成物へ変わる途中の瞬間的な構造です。非常に不安定で一瞬しか存在しないため通常は捕集できません。触媒が作る中間体とは別の概念です。", "evidence": [ { "source_id": "2_2_def_001", "quote": "山の頂上に例えられます。この状態に達した分子の集まりを「活性錯体」と呼びます" } ], "related_concept_ids": ["2_2_def_001"], "mnemonic": null },
-    { "id": "ch3_2_q042", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "procedure", "sub_category": "速度に影響する因子の実験的調べ方", "difficulty": 3, "question_type": "correct", "question": "反応速度に影響する因子を調べる実験方法として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "調べたい因子のみを変え他の条件は一定に保つ制御実験を行い、速度の変化を比較する。", "is_correct": true }, { "label": "2", "text": "すべての条件を同時に変えて結果を比較する。", "is_correct": false, "trap_type": "negation", "trap_detail": "一度に一つだけ変える制御実験が必要。" }, { "label": "3", "text": "理論的に予測するだけで実験は不要である。", "is_correct": false, "trap_type": "negation", "trap_detail": "実験が不可欠。" }, { "label": "4", "text": "どの因子が影響するかは予めわかっているため調べる必要はない。", "is_correct": false, "trap_type": "negation", "trap_detail": "定量的な影響は実験で調べる必要がある。" } ], "explanation": "反応速度に対する各因子の影響を調べるには制御実験が基本です。調べたい一つの因子（たとえば温度）だけを変え、他の条件（濃度、触媒など）は一定に保ちます。こうすることで速度の変化がその因子によるものであることを確認できます。", "evidence": [ { "source_id": "2_1_eq_002", "quote": "実験データから反応速度式を決定する" } ], "related_concept_ids": ["2_1_eq_002"], "mnemonic": null },
-    { "id": "ch3_2_q043", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "mnemonic", "sub_category": "活性化エネルギーの壁の例え", "difficulty": 2, "question_type": "correct", "question": "活性化エネルギーの覚え方として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "「壁が低いほど越えやすい」つまり活性化エネルギーが小さいほど反応が速いと覚える。触媒は壁を低くする役割である。", "is_correct": true }, { "label": "2", "text": "壁が高いほど反応が速いと覚える。", "is_correct": false, "trap_type": "negation", "trap_detail": "壁が低いほど速い。" }, { "label": "3", "text": "壁の高さは反応エンタルピーのことである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "活性化エネルギーのこと。" }, { "label": "4", "text": "触媒は壁を高くする。", "is_correct": false, "trap_type": "negation", "trap_detail": "壁を低くする。" } ], "explanation": "活性化エネルギーは「反応の壁」のイメージで覚えましょう。壁が低ければ多くの分子が越えられるため反応は速く進みます。触媒はこの壁を低くする（別の低い壁のルートを提供する）働きをします。温度を上げるのは分子のジャンプ力を上げて壁を越えさせるイメージです。", "evidence": [ { "source_id": "2_2_def_003", "quote": "エネルギーの壁の高さです。この壁が低いほど、反応は簡単に速く進みます" } ], "related_concept_ids": ["2_2_def_003"], "mnemonic": "壁（活性化エネルギー）が低いほど反応は速い" },
-    { "id": "ch3_2_q044", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "confusion", "sub_category": "逆反応の活性化エネルギー", "difficulty": 4, "question_type": "incorrect", "question": "逆反応の活性化エネルギーに関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "逆反応の活性化エネルギーは生成物のエネルギーレベルから遷移状態までの高さである。", "is_correct": false }, { "label": "2", "text": "正反応の活性化エネルギーと逆反応の活性化エネルギーの差は反応エンタルピーの絶対値に等しい。", "is_correct": false }, { "label": "3", "text": "発熱反応では逆反応の活性化エネルギーの方が正反応より大きい。", "is_correct": false }, { "label": "4", "text": "正反応と逆反応の活性化エネルギーは常に等しい。", "is_correct": true, "trap_type": "negation", "trap_detail": "等しいのは反応エンタルピーがゼロの場合のみ。通常は異なる。" } ], "explanation": "正反応の活性化エネルギーは反応物から遷移状態まで、逆反応は生成物から遷移状態までの差です。発熱反応では生成物のエネルギーが低いため逆反応の活性化エネルギーの方が大きくなります。二つの差が反応エンタルピーに相当します。", "evidence": [ { "source_id": "2_2_def_003", "quote": "エネルギー図から活性化エネルギーや反応エンタルピーを読み取る" } ], "related_concept_ids": ["2_2_def_003"], "mnemonic": null },
-    { "id": "ch3_2_q045", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "comprehensive", "sub_category": "反応のしくみの総合", "difficulty": 5, "question_type": "correct", "question": "化学反応のしくみに関する総合的な記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "反応は粒子の衝突で起こり、活性化エネルギー以上の有効衝突のみが生成物を生む。遷移状態の活性錯体を経由する。多段階反応では律速段階が全体を支配する。温度上昇は有効衝突の割合を増やす。触媒は活性化エネルギーを下げる。", "is_correct": true }, { "label": "2", "text": "すべての衝突が生成物を生む。遷移状態は存在しない。多段階反応でもすべての段階が等しく重要。温度は無関係。触媒は活性化エネルギーを上げる。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "五か所すべて誤り。" }, { "label": "3", "text": "活性化エネルギーが大きいほど反応が速い。", "is_correct": false, "trap_type": "negation", "trap_detail": "小さいほど速い。" }, { "label": "4", "text": "律速段階は最も速い段階であり触媒は生成物量を増やす。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "二か所誤り。" } ], "explanation": "この章全体のまとめです。反応は有効衝突で起こり遷移状態を経由します。多段階反応では最も遅い律速段階が支配的です。温度上昇は衝突の激しさと有効衝突の割合を増やします。触媒は活性化エネルギーを下げて反応速度を上げますが反応エンタルピーや生成物量は変えません。", "evidence": [ { "source_id": "2_2_def_003", "quote": "活性化エネルギーの壁を越えなければならない" }, { "source_id": "2_2_law_004", "quote": "活性化エネルギーのより小さな別の反応経路を通る" } ], "related_concept_ids": ["2_1_def_001", "2_1_def_004", "2_2_def_001", "2_2_def_003", "2_2_def_004", "2_2_law_004"], "mnemonic": null },
-    { "id": "ch3_2_q046", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "十度則", "difficulty": 3, "question_type": "correct", "question": "温度と反応速度の経験則として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "温度を十度上げるとおよそ二〜三倍に反応速度が増大するという経験則がある。正確な倍率は反応の種類と活性化エネルギーによって異なる。", "is_correct": true }, { "label": "2", "text": "温度を十度上げると速度は必ず十倍になる。", "is_correct": false, "trap_type": "negation", "trap_detail": "二〜三倍程度。十倍にはならない。" }, { "label": "3", "text": "温度と反応速度は無関係であり法則はない。", "is_correct": false, "trap_type": "negation", "trap_detail": "密接に関係する。" }, { "label": "4", "text": "温度を上げると反応速度は減少する。", "is_correct": false, "trap_type": "negation", "trap_detail": "増大する。" } ], "explanation": "十度則（ファントホッフの法則）は温度を十度上げると反応速度が約二〜三倍になるという経験則です。正確な倍率は反応ごとに異なり、活性化エネルギーが大きい反応ほど温度の影響を大きく受けます。", "evidence": [], "related_concept_ids": ["2_2_def_003"], "mnemonic": null },
-    { "id": "ch3_2_q047", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "confusion", "sub_category": "瞬間速度と平均速度の混同", "difficulty": 3, "question_type": "incorrect", "question": "反応速度の測定に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "平均の反応速度はある時間区間での平均的な速さである。", "is_correct": false }, { "label": "2", "text": "瞬間の反応速度は特定の時刻における速さであり、濃度‐時間グラフの接線の傾きで求められる。", "is_correct": false }, { "label": "3", "text": "時間区間が短いほど平均速度は瞬間速度に近づく。", "is_correct": false }, { "label": "4", "text": "平均速度と瞬間速度は常に同じ値であり区別する必要はない。", "is_correct": true, "trap_type": "negation", "trap_detail": "反応速度は時間とともに変化するため一般に異なる。" } ], "explanation": "平均速度はある区間全体での平均であり、瞬間速度はある一瞬での速さです。反応が進むと反応物の濃度が減り速度も変化するため、通常は平均速度と瞬間速度は異なります。時間区間を非常に短くすればその区間の平均速度は瞬間速度に近づきます。", "evidence": [ { "source_id": "2_1_eq_001", "quote": "反応の速さは時間とともに変わることが多い" } ], "related_concept_ids": ["2_1_eq_001"], "mnemonic": null },
-    { "id": "ch3_2_q048", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "property", "sub_category": "負触媒（抑制剤）", "difficulty": 3, "question_type": "correct", "question": "負触媒（反応抑制剤）について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "反応速度を遅くする物質であり、活性化エネルギーのより大きな経路を通らせる。食品の酸化防止剤はこの一例である。", "is_correct": true }, { "label": "2", "text": "負触媒は反応速度を速くする。", "is_correct": false, "trap_type": "negation", "trap_detail": "遅くする。" }, { "label": "3", "text": "負触媒という概念は存在しない。すべての触媒は反応を速くする。", "is_correct": false, "trap_type": "negation", "trap_detail": "遅くする触媒も存在する。" }, { "label": "4", "text": "負触媒は自身が反応中に消費される。", "is_correct": false, "trap_type": "negation", "trap_detail": "触媒なので消費されない。" } ], "explanation": "触媒の中には反応速度を遅くする「負触媒」（反応抑制剤）があります。通常の触媒（正触媒）が活性化エネルギーを下げるのに対し、負触媒はより大きな活性化エネルギーの経路を通らせます。食品の酸化防止剤や過酸化水素の安定剤が身近な例です。", "evidence": [], "related_concept_ids": ["2_2_def_004"], "mnemonic": null },
-    { "id": "ch3_2_q049", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "classification", "sub_category": "速度に影響する四因子のまとめ", "difficulty": 3, "question_type": "correct", "question": "反応速度に影響する四つの因子の効果をまとめた記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "濃度を上げると衝突回数が増え速度アップ。温度を上げると有効衝突割合が増え速度アップ。触媒は活性化エネルギーを下げて速度アップ。固体を粉末にすると接触面積が増え速度アップ。", "is_correct": true }, { "label": "2", "text": "四つの因子はいずれも反応速度を低下させる。", "is_correct": false, "trap_type": "negation", "trap_detail": "いずれも速度を上げる方向に働かせることができる。" }, { "label": "3", "text": "温度のみが速度に影響し他の三因子は無関係である。", "is_correct": false, "trap_type": "negation", "trap_detail": "四因子すべてが影響する。" }, { "label": "4", "text": "触媒を加えることと温度を上げることは全く同じ効果を示す。", "is_correct": false, "trap_type": "negation", "trap_detail": "メカニズムが異なる。触媒は別経路、温度は運動エネルギー増加。" } ], "explanation": "反応速度に影響する四因子のメカニズムを整理すると、濃度は衝突回数に、温度は有効衝突の割合に、触媒は活性化エネルギーに、表面積は接触面積にそれぞれ影響します。メカニズムは異なりますが、いずれも有効な衝突を増やして反応速度を上げるという点で共通しています。", "evidence": [ { "source_id": "2_2_law_001", "quote": "衝突回数が増加し、反応速度は大きくなる" } ], "related_concept_ids": ["2_2_law_001", "2_2_def_003", "2_2_def_004"], "mnemonic": null },
-    { "id": "ch3_2_q050", "chapter": "3-2", "chapter_title": "化学反応の速さとしくみ", "category": "comprehensive", "sub_category": "第三章第二節の全体総合", "difficulty": 5, "question_type": "incorrect", "question": "化学反応の速さとしくみに関する総合的な記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "反応速度は濃度・温度・触媒・表面積に影響される。反応速度式の指数は実験で決定する。", "is_correct": false }, { "label": "2", "text": "活性化エネルギーが小さいほど反応は速く進み、触媒は活性化エネルギーの低い別経路を提供する。", "is_correct": false }, { "label": "3", "text": "多段階反応では律速段階（最も遅い段階）が全体の速さを支配する。", "is_correct": false }, { "label": "4", "text": "速度式の指数は化学反応式の係数と常に一致する。触媒は反応後に消費される。律速段階は最も速い段階である。活性化エネルギーが大きいほど反応は速い。", "is_correct": true, "trap_type": "multiple_swap", "trap_detail": "四か所すべて誤り。" } ], "explanation": "この章のすべての要点を総合した最終問題です。速度式の指数は係数と一致しない場合が多い。触媒は消費されない。律速段階は最も遅い段階。活性化エネルギーが小さいほど反応は速い。選択肢四はこれらのすべてを逆に記述した誤りの典型です。", "evidence": [ { "source_id": "2_1_eq_002", "quote": "反応式の係数と必ずしも一致せず" }, { "source_id": "2_2_def_004", "quote": "反応の前後においてそれ自身は変化しない" } ], "related_concept_ids": ["2_1_def_004", "2_1_eq_002", "2_2_def_003", "2_2_def_004"], "mnemonic": null }
+    {
+      "id": "ch3_2_q001",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "definition",
+      "sub_category": "反応速度の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "反応速度について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応速度は常に一定で時間によって変わらない。反応が進むと反応物の濃度が減少するため一般に反応速度は時間とともに低下する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "時間とともに変化する。",
+          "choice_id": "ch3_2_q001_c1",
+          "tts_text": "反応速度は常に一定で時間によって変わらない。反応が進むと反応物の濃度が減少するため一般に反応速度は時間とともに低下する。"
+        },
+        {
+          "label": "2",
+          "text": "反応速度は温度に依存しない。温度を上げると分子の運動エネルギーが増大し有効な衝突が増えるため反応速度は大きくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度に大きく依存する。",
+          "choice_id": "ch3_2_q001_c2",
+          "tts_text": "反応速度は温度に依存しない。温度を上げると分子の運動エネルギーが増大し有効な衝突が増えるため反応速度は大きくなる。"
+        },
+        {
+          "label": "3",
+          "text": "化学反応の進行度を表し、単位時間に変化する物質の濃度や物質量などで表される。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q001_c3",
+          "tts_text": "化学反応の進行度を表し、単位時間に変化する物質の濃度や物質量などで表される。"
+        },
+        {
+          "label": "4",
+          "text": "反応速度は反応が終わるまでの総時間で表す。反応速度は単位時間あたりの濃度変化で表すものであり総時間ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "総時間ではなく単位時間あたりの変化量。",
+          "choice_id": "ch3_2_q001_c4",
+          "tts_text": "反応速度は反応が終わるまでの総時間で表す。反応速度は単位時間あたりの濃度変化で表すものであり総時間ではない。"
+        }
+      ],
+      "explanation": "反応速度は化学反応がどれくらい速く進むかを示す指標です。通常は一秒間や一分間あたりに反応物の濃度がどれくらい減ったか、あるいは生成物の濃度がどれくらい増えたかで表します。時間とともに反応物が消費されて濃度が減るため、反応速度も一般に変化します。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_001",
+          "quote": "単位時間に変化する物質の質量、物質量、濃度、体積などで表される"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応速度について、正しい記述を選びなさい。",
+      "tts_explanation": "反応速度は化学反応がどれくらい速く進むかを示す指標です。通常は一秒間や一分間あたりに反応物の濃度がどれくらい減ったか、あるいは生成物の濃度がどれくらい増えたかで表します。時間とともに反応物が消費されて濃度が減るため、反応速度も一般に変化します。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q002",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "definition",
+      "sub_category": "平均の反応速度",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "平均の反応速度の求め方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応物の場合は濃度の変化がマイナスになるため速度もマイナスとする。反応速度は常に正の値で表すため濃度変化の絶対値をとる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "絶対値をとって正にする。",
+          "choice_id": "ch3_2_q002_c1",
+          "tts_text": "反応物の場合は濃度の変化がマイナスになるため速度もマイナスとする。反応速度は常に正の値で表すため濃度変化の絶対値をとる。"
+        },
+        {
+          "label": "2",
+          "text": "反応開始時の濃度を反応終了時の時間で割る。正しくはある時間区間での濃度変化の絶対値をその時間間隔で割って求める。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "変化量を時間間隔で割る。",
+          "choice_id": "ch3_2_q002_c2",
+          "tts_text": "反応開始時の濃度を反応終了時の時間で割る。正しくはある時間区間での濃度変化の絶対値をその時間間隔で割って求める。"
+        },
+        {
+          "label": "3",
+          "text": "ある時間区間での着目物質の濃度変化の絶対値をその時間で割る。反応物は濃度が減少するため絶対値をとって正の値にする。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q002_c3",
+          "tts_text": "ある時間区間での着目物質の濃度変化の絶対値をその時間で割る。反応物は濃度が減少するため絶対値をとって正の値にする。"
+        },
+        {
+          "label": "4",
+          "text": "生成物の濃度をそのまま反応速度とする。濃度そのものではなく単位時間あたりの濃度変化が反応速度であり瞬間の濃度値ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "濃度そのものではなく変化量を時間で割る。",
+          "choice_id": "ch3_2_q002_c4",
+          "tts_text": "生成物の濃度をそのまま反応速度とする。濃度そのものではなく単位時間あたりの濃度変化が反応速度であり瞬間の濃度値ではない。"
+        }
+      ],
+      "explanation": "平均の反応速度は区間の濃度変化を時間で割って求めます。反応物は消費されて濃度が減るため変化量がマイナスになりますが、速度は正の値で表すため絶対値をとります。生成物なら濃度が増加するのでそのまま正の値です。",
+      "evidence": [
+        {
+          "source_id": "2_1_eq_001",
+          "quote": "濃度変化の絶対値をかかった時間で割る"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_eq_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "平均の反応速度の求め方として、正しいものを選びなさい。",
+      "tts_explanation": "平均の反応速度は区間の濃度変化を時間で割って求めます。反応物は消費されて濃度が減るため変化量がマイナスになりますが、速度は正の値で表すため絶対値をとります。生成物なら濃度が増加するのでそのまま正の値です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q003",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "definition",
+      "sub_category": "反応速度式の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "反応速度式について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応速度は反応物の濃度に依存しない。反応速度式により反応速度は反応物のモル濃度のべき乗に比例するため濃度に強く依存する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "濃度に依存する。",
+          "choice_id": "ch3_2_q003_c1",
+          "tts_text": "反応速度は反応物の濃度に依存しない。反応速度式により反応速度は反応物のモル濃度のべき乗に比例するため濃度に強く依存する。"
+        },
+        {
+          "label": "2",
+          "text": "速度定数は反応物の濃度によって変わる。速度定数は温度と反応の種類で決まる定数であり反応物の濃度によっては変化しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度一定なら速度定数は一定。",
+          "choice_id": "ch3_2_q003_c2",
+          "tts_text": "速度定数は反応物の濃度によって変わる。速度定数は温度と反応の種類で決まる定数であり反応物の濃度によっては変化しない。"
+        },
+        {
+          "label": "3",
+          "text": "反応速度は速度定数かける反応物のモル濃度の各べき乗の積で表される。べき乗の指数は化学反応式の係数とは限らず実験で決まる。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q003_c3",
+          "tts_text": "反応速度は速度定数かける反応物のモル濃度の各べき乗の積で表される。べき乗の指数は化学反応式の係数とは限らず実験で決まる。"
+        },
+        {
+          "label": "4",
+          "text": "べき乗の指数は必ず化学反応式の係数と一致する。指数は実験から決定されるものであり化学反応式の係数とは一致しないことがある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一致するとは限らない。実験で決定する。",
+          "choice_id": "ch3_2_q003_c4",
+          "tts_text": "べき乗の指数は必ず化学反応式の係数と一致する。指数は実験から決定されるものであり化学反応式の係数とは一致しないことがある。"
+        }
+      ],
+      "explanation": "反応速度式はブイイコールケーかける各反応物の濃度のべき乗の積という形をとります。重要なのは指数が化学反応式の係数と必ずしも一致しない点です。五酸化二窒素の分解では反応式の係数は二ですが速度式の指数は一（一次反応）です。指数は実験でしか決められません。",
+      "evidence": [
+        {
+          "source_id": "2_1_eq_002",
+          "quote": "指数の a や b は反応式の係数と必ずしも一致せず、実験によってのみ決まります"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_eq_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応速度式について、正しい記述を選びなさい。",
+      "tts_explanation": "反応速度式はブイイコールケーかける各反応物の濃度のべき乗の積という形をとります。重要なのは指数が化学反応式の係数と必ずしも一致しない点です。五酸化二窒素の分解では反応式の係数は二ですが速度式の指数は一（一次反応）です。指数は実験でしか決められません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q004",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "definition",
+      "sub_category": "速度定数の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "速度定数について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "速度定数が小さいほど反応は速い。逆で速度定数が大きいほど単位濃度あたりの速度が大きくなるため反応は速く進む。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "大きいほど速い。",
+          "choice_id": "ch3_2_q004_c1",
+          "tts_text": "速度定数が小さいほど反応は速い。逆で速度定数が大きいほど単位濃度あたりの速度が大きくなるため反応は速く進む。"
+        },
+        {
+          "label": "2",
+          "text": "反応の種類と温度が決まれば一定になる比例定数であり、値が大きいほどその反応は速く進む。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q004_c2",
+          "tts_text": "反応の種類と温度が決まれば一定になる比例定数であり、値が大きいほどその反応は速く進む。"
+        },
+        {
+          "label": "3",
+          "text": "速度定数は温度が変わっても一定である。速度定数は温度に依存し一般に温度が上がると大きくなるため一定ではない。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "温度が変わると速度定数も変わる。",
+          "choice_id": "ch3_2_q004_c3",
+          "tts_text": "速度定数は温度が変わっても一定である。速度定数は温度に依存し一般に温度が上がると大きくなるため一定ではない。"
+        },
+        {
+          "label": "4",
+          "text": "速度定数は反応物の濃度に依存する。速度定数は反応の種類と温度のみで決まる値であり反応物の濃度には依存しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "濃度に依存しない定数。",
+          "choice_id": "ch3_2_q004_c4",
+          "tts_text": "速度定数は反応物の濃度に依存する。速度定数は反応の種類と温度のみで決まる値であり反応物の濃度には依存しない。"
+        }
+      ],
+      "explanation": "速度定数ケーは反応速度式の比例定数であり、反応物の濃度がすべて1mol毎リットルのときの反応速度に等しいです。温度が上がると速度定数は大きくなるため反応速度が増加します。同じ温度なら濃度に関係なく一定の値です。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_002",
+          "quote": "反応の種類と温度が決まれば一定になる値です"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "速度定数について、正しい記述を選びなさい。",
+      "tts_explanation": "速度定数ケーは反応速度式の比例定数であり、反応物の濃度がすべて一モル毎リットルのときの反応速度に等しいです。温度が上がると速度定数は大きくなるため反応速度が増加します。同じ温度なら濃度に関係なく一定の値です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q005",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "definition",
+      "sub_category": "多段階反応の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "多段階反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "すべての化学反応は一段階で完了する。多くの反応は複数の素反応が段階的に連続して起こる多段階反応として進行する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多くの反応は多段階である。",
+          "choice_id": "ch3_2_q005_c1",
+          "tts_text": "すべての化学反応は一段階で完了する。多くの反応は複数の素反応が段階的に連続して起こる多段階反応として進行する。"
+        },
+        {
+          "label": "2",
+          "text": "多段階反応は理論上の概念であり実例はない。五酸化二窒素の分解など多くの実際の反応が四つの素反応からなる多段階反応として知られている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "五酸化二窒素の分解など多くの実例がある。",
+          "choice_id": "ch3_2_q005_c2",
+          "tts_text": "多段階反応は理論上の概念であり実例はない。五酸化二窒素の分解など多くの実際の反応が四つの素反応からなる多段階反応として知られている。"
+        },
+        {
+          "label": "3",
+          "text": "多段階反応では各段階の速さは等しい。各段階の速さは異なり最も遅い律速段階が反応全体の速さを決定する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "段階によって速さが異なる。",
+          "choice_id": "ch3_2_q005_c3",
+          "tts_text": "多段階反応では各段階の速さは等しい。各段階の速さは異なり最も遅い律速段階が反応全体の速さを決定する。"
+        },
+        {
+          "label": "4",
+          "text": "一つの化学反応式で表される反応が、実際には複数の素反応が段階的に連続して起こっている反応である。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q005_c4",
+          "tts_text": "一つの化学反応式で表される反応が、実際には複数の素反応が段階的に連続して起こっている反応である。"
+        }
+      ],
+      "explanation": "多段階反応とは、全体の反応式で一つに見える反応が実際には複数の素反応の連続で進行しているものです。五酸化二窒素の分解は全体としては一つの式ですが、実際には四つの素反応から構成されています。反応速度式の指数が係数と一致しない原因もここにあります。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_003",
+          "quote": "実際には複数の反応が段階的に連続して起こっている反応"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "多段階反応について、正しい記述を選びなさい。",
+      "tts_explanation": "多段階反応とは、全体の反応式で一つに見える反応が実際には複数の素反応の連続で進行しているものです。五酸化二窒素の分解は全体としては一つの式ですが、実際には四つの素反応から構成されています。反応速度式の指数が係数と一致しない原因もここにあります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q006",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "definition",
+      "sub_category": "律速段階の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "律速段階について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "律速段階は反応全体の速さに影響しない。律速段階は反応全体の速さを支配する最も重要な段階であり全体の速さを決定する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "全体の速さを決定する。",
+          "choice_id": "ch3_2_q006_c1",
+          "tts_text": "律速段階は反応全体の速さに影響しない。律速段階は反応全体の速さを支配する最も重要な段階であり全体の速さを決定する。"
+        },
+        {
+          "label": "2",
+          "text": "最も速い段階が律速段階である。逆で最も遅い段階が律速段階であり渋滞の先頭のように全体のペースを制限する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "最も遅い段階。",
+          "choice_id": "ch3_2_q006_c2",
+          "tts_text": "最も速い段階が律速段階である。逆で最も遅い段階が律速段階であり渋滞の先頭のように全体のペースを制限する。"
+        },
+        {
+          "label": "3",
+          "text": "すべての段階が律速段階になる。律速段階は最も遅い一つの段階だけであり他の速い段階は律速段階にはならない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "最も遅い一つの段階のみ。",
+          "choice_id": "ch3_2_q006_c3",
+          "tts_text": "すべての段階が律速段階になる。律速段階は最も遅い一つの段階だけであり他の速い段階は律速段階にはならない。"
+        },
+        {
+          "label": "4",
+          "text": "多段階反応において最も反応速度が遅い段階であり、反応全体の速さを決定する。渋滞の先頭に例えられる。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q006_c4",
+          "tts_text": "多段階反応において最も反応速度が遅い段階であり、反応全体の速さを決定する。渋滞の先頭に例えられる。"
+        }
+      ],
+      "explanation": "律速段階は多段階反応のボトルネックです。渋滞の先頭が全体の流れを決めるように、最も遅い段階の速さが反応全体の速さを支配します。反応速度を上げるには律速段階を速くする方が効果的です。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_004",
+          "quote": "多段階反応において、最も反応速度が遅い反応段階"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "律速段階について、正しい記述を選びなさい。",
+      "tts_explanation": "律速段階は多段階反応のボトルネックです。渋滞の先頭が全体の流れを決めるように、最も遅い段階の速さが反応全体の速さを支配します。反応速度を上げるには律速段階を速くする方が効果的です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q007",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "definition",
+      "sub_category": "遷移状態の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "遷移状態について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "すべての反応は遷移状態を経由しない。化学反応は反応物から生成物へ移行する際に必ず遷移状態（活性化状態）を経由する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "すべての反応が遷移状態を経由する。",
+          "choice_id": "ch3_2_q007_c1",
+          "tts_text": "すべての反応は遷移状態を経由しない。化学反応は反応物から生成物へ移行する際に必ず遷移状態（活性化状態）を経由する。"
+        },
+        {
+          "label": "2",
+          "text": "反応が進行する途中で経由する反応物よりエネルギーが高い中間状態であり、活性化状態ともいう。この状態の分子集団を活性錯体と呼ぶ。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q007_c2",
+          "tts_text": "反応が進行する途中で経由する反応物よりエネルギーが高い中間状態であり、活性化状態ともいう。この状態の分子集団を活性錯体と呼ぶ。"
+        },
+        {
+          "label": "3",
+          "text": "遷移状態は安定で長時間存在する。逆で遷移状態は非常に不安定な瞬間的状態であり直ちに生成物や反応物に変化する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不安定で瞬間的にしか存在しない。",
+          "choice_id": "ch3_2_q007_c3",
+          "tts_text": "遷移状態は安定で長時間存在する。逆で遷移状態は非常に不安定な瞬間的状態であり直ちに生成物や反応物に変化する。"
+        },
+        {
+          "label": "4",
+          "text": "遷移状態は反応物の中で最もエネルギーが低い状態である。逆で遷移状態は反応物よりエネルギーが高い状態でありエネルギー図の山の頂上に相当する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "最もエネルギーが高い状態。",
+          "choice_id": "ch3_2_q007_c4",
+          "tts_text": "遷移状態は反応物の中で最もエネルギーが低い状態である。逆で遷移状態は反応物よりエネルギーが高い状態でありエネルギー図の山の頂上に相当する。"
+        }
+      ],
+      "explanation": "遷移状態は化学反応における「エネルギーの山の頂上」に相当します。反応物が生成物に変わるためにはこの不安定な状態を一瞬通過する必要があります。この頂上に達した分子の集まりを活性錯体と呼びます。ヨウ化水素の分解反応ではヨウ素と水素が弱く結合した不安定な状態が遷移状態です。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_001",
+          "quote": "反応物よりエネルギーが高い中間状態。活性化状態ともいう"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "遷移状態について、正しい記述を選びなさい。",
+      "tts_explanation": "遷移状態は化学反応における「エネルギーの山の頂上」に相当します。反応物が生成物に変わるためにはこの不安定な状態を一瞬通過する必要があります。この頂上に達した分子の集まりを活性錯体と呼びます。ヨウ化水素の分解反応ではヨウ素と水素が弱く結合した不安定な状態が遷移状態です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q008",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "definition",
+      "sub_category": "活性化エネルギーの定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "活性化エネルギーについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "すべての反応で活性化エネルギーはゼロである。すべての化学反応には正の活性化エネルギーが存在し反応を起こすためのエネルギー障壁となる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "正の値をもつ。",
+          "choice_id": "ch3_2_q008_c1",
+          "tts_text": "すべての反応で活性化エネルギーはゼロである。すべての化学反応には正の活性化エネルギーが存在し反応を起こすためのエネルギー障壁となる。"
+        },
+        {
+          "label": "2",
+          "text": "活性化エネルギーが大きいほど反応は速い。逆で活性化エネルギーが大きいほど壁が高くなり越えられる分子が少なくなるため反応は遅い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "小さいほど速い。",
+          "choice_id": "ch3_2_q008_c2",
+          "tts_text": "活性化エネルギーが大きいほど反応は速い。逆で活性化エネルギーが大きいほど壁が高くなり越えられる分子が少なくなるため反応は遅い。"
+        },
+        {
+          "label": "3",
+          "text": "活性化エネルギーは反応エンタルピーと同じものである。活性化エネルギーは遷移状態までの壁の高さであり反応物と生成物のエネルギー差である反応エンタルピーとは別の量である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "異なる概念。活性化エネルギーは壁の高さ、反応エンタルピーは出発点と到着点の高さの差。",
+          "choice_id": "ch3_2_q008_c3",
+          "tts_text": "活性化エネルギーは反応エンタルピーと同じものである。活性化エネルギーは遷移状態までの壁の高さであり反応物と生成物のエネルギー差である反応エンタルピーとは別の量である。"
+        },
+        {
+          "label": "4",
+          "text": "反応物を遷移状態にするのに必要なエネルギーであり、この値が小さいほど反応は速く進む。エネルギーの壁の高さに例えられる。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q008_c4",
+          "tts_text": "反応物を遷移状態にするのに必要なエネルギーであり、この値が小さいほど反応は速く進む。エネルギーの壁の高さに例えられる。"
+        }
+      ],
+      "explanation": "活性化エネルギーは反応を起こすために越えなければならないエネルギーの壁です。壁が低い（活性化エネルギーが小さい）ほど多くの分子が壁を越えられるため反応は速く進みます。反応エンタルピー（始点と終点の差）とは別の概念なので混同しないようにしましょう。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_003",
+          "quote": "反応物を遷移状態にするのに要するエネルギー"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "活性化エネルギーについて、正しい記述を選びなさい。",
+      "tts_explanation": "活性化エネルギーは反応を起こすために越えなければならないエネルギーの壁です。壁が低い（活性化エネルギーが小さい）ほど多くの分子が壁を越えられるため反応は速く進みます。反応エンタルピー（始点と終点の差）とは別の概念なので混同しないようにしましょう。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q009",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "definition",
+      "sub_category": "触媒の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "触媒について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応速度を著しく増大させるが、自身は反応の前後で変化しない物質である。活性化エネルギーのより小さい別の反応経路を提供する。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q009_c1",
+          "tts_text": "反応速度を著しく増大させるが、自身は反応の前後で変化しない物質である。活性化エネルギーのより小さい別の反応経路を提供する。"
+        },
+        {
+          "label": "2",
+          "text": "触媒は反応エンタルピーを変化させる。触媒は活性化エネルギーを下げるだけであり反応物と生成物のエネルギー差である反応エンタルピーは変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応エンタルピーは変わらない。",
+          "choice_id": "ch3_2_q009_c2",
+          "tts_text": "触媒は反応エンタルピーを変化させる。触媒は活性化エネルギーを下げるだけであり反応物と生成物のエネルギー差である反応エンタルピーは変わらない。"
+        },
+        {
+          "label": "3",
+          "text": "触媒を加えると生成物の総量が増える。触媒は反応速度を上げるだけであり平衡の位置は変わらないため最終的な生成物の総量は変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "速度は変わるが生成物の総量は変わらない。",
+          "choice_id": "ch3_2_q009_c3",
+          "tts_text": "触媒を加えると生成物の総量が増える。触媒は反応速度を上げるだけであり平衡の位置は変わらないため最終的な生成物の総量は変わらない。"
+        },
+        {
+          "label": "4",
+          "text": "触媒は反応後に消費されてなくなる。触媒は反応の前後で変化せず消費されないため何度でも繰り返し使用できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "前後で変化しない。",
+          "choice_id": "ch3_2_q009_c4",
+          "tts_text": "触媒は反応後に消費されてなくなる。触媒は反応の前後で変化せず消費されないため何度でも繰り返し使用できる。"
+        }
+      ],
+      "explanation": "触媒は活性化エネルギーの低い別経路を提供することで反応速度を上げます。山の代わりにトンネルを掘るイメージです。重要なのは正反応だけでなく逆反応の活性化エネルギーも同時に下げるため、反応エンタルピー（出発点と到着点の差）は変わりません。また生成物の総量も変わりません。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_004",
+          "quote": "反応速度を著しく増大させるが、反応の前後においてそれ自身は変化しない物質"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "触媒について、正しい記述を選びなさい。",
+      "tts_explanation": "触媒は活性化エネルギーの低い別経路を提供することで反応速度を上げます。山の代わりにトンネルを掘るイメージです。重要なのは正反応だけでなく逆反応の活性化エネルギーも同時に下げるため、反応エンタルピー（出発点と到着点の差）は変わりません。また生成物の総量も変わりません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q010",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "濃度と反応速度",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "反応物の濃度と反応速度の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "濃度と反応速度は無関係である。反応物の濃度が大きいほど粒子同士の衝突回数が増加し反応速度は大きくなるため密接に関係する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密接に関係する。",
+          "choice_id": "ch3_2_q010_c1",
+          "tts_text": "濃度と反応速度は無関係である。反応物の濃度が大きいほど粒子同士の衝突回数が増加し反応速度は大きくなるため密接に関係する。"
+        },
+        {
+          "label": "2",
+          "text": "反応物の濃度を大きくすると粒子同士の衝突回数が増加し反応速度は大きくなる。スチールウールは空気中より純酸素中の方が激しく燃える。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q010_c2",
+          "tts_text": "反応物の濃度を大きくすると粒子同士の衝突回数が増加し反応速度は大きくなる。スチールウールは空気中より純酸素中の方が激しく燃える。"
+        },
+        {
+          "label": "3",
+          "text": "衝突回数は濃度に依存しない。濃度が大きいほど単位体積あたりの粒子数が多くなり衝突回数は増加するため濃度に強く依存する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "濃度に比例して増加する。",
+          "choice_id": "ch3_2_q010_c3",
+          "tts_text": "衝突回数は濃度に依存しない。濃度が大きいほど単位体積あたりの粒子数が多くなり衝突回数は増加するため濃度に強く依存する。"
+        },
+        {
+          "label": "4",
+          "text": "濃度を大きくすると反応速度は小さくなる。逆で濃度を大きくすると衝突回数が増え有効な衝突も増えるため反応速度は大きくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "濃度増加で速度増大。",
+          "choice_id": "ch3_2_q010_c4",
+          "tts_text": "濃度を大きくすると反応速度は小さくなる。逆で濃度を大きくすると衝突回数が増え有効な衝突も増えるため反応速度は大きくなる。"
+        }
+      ],
+      "explanation": "反応が起こるにはまず反応物の粒子が衝突する必要があります。濃度が高くなると狭い空間に多くの粒子が存在するため衝突回数が増え、結果として反応速度が大きくなります。スチールウールが純酸素中で激しく燃えるのは酸素濃度が空気中の約五倍だからです。",
+      "evidence": [
+        {
+          "source_id": "2_2_law_001",
+          "quote": "反応物の濃度を大きくすると、単位時間あたりの粒子どうしの衝突回数が増加"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応物の濃度と反応速度の関係として、正しい記述を選びなさい。",
+      "tts_explanation": "反応が起こるにはまず反応物の粒子が衝突する必要があります。濃度が高くなると狭い空間に多くの粒子が存在するため衝突回数が増え、結果として反応速度が大きくなります。スチールウールが純酸素中で激しく燃えるのは酸素濃度が空気中の約五倍だからです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q011",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "温度と反応速度",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "温度と反応速度の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度が上昇しても分子の挙動は基本的に変わらないため衝突回数にも衝突エネルギーにも影響しないと思い込みがちだが、温度が上がると分子の運動が激しくなり衝突回数と衝突エネルギーの両方が増加する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両方に影響する。",
+          "choice_id": "ch3_2_q011_c1",
+          "tts_text": "温度が上昇しても分子の挙動は基本的に変わらないため衝突回数にも衝突エネルギーにも影響しないと思い込みがちだが、温度が上がると分子の運動が激しくなり衝突回数と衝突エネルギーの両方が増加する。"
+        },
+        {
+          "label": "2",
+          "text": "温度を上げても衝突エネルギーは変わらない。温度が上がると分子の平均運動エネルギーが増加するため衝突エネルギーも大きくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "平均の運動エネルギーが大きくなる。",
+          "choice_id": "ch3_2_q011_c2",
+          "tts_text": "温度を上げても衝突エネルギーは変わらない。温度が上がると分子の平均運動エネルギーが増加するため衝突エネルギーも大きくなる。"
+        },
+        {
+          "label": "3",
+          "text": "温度を上げると分子の運動が激しくなり、活性化エネルギーを越えられる分子の割合が増えるため反応速度が大きくなる。一般に10℃上がると速度は二〜三倍になる。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q011_c3",
+          "tts_text": "温度を上げると分子の運動が激しくなり、活性化エネルギーを越えられる分子の割合が増えるため反応速度が大きくなる。一般に十度上がると速度は二〜三倍になる。"
+        },
+        {
+          "label": "4",
+          "text": "温度を上げると反応速度は小さくなる。逆で温度を上げると活性化エネルギーを越える分子の割合が増えるため反応速度は大きくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "速度は大きくなる。",
+          "choice_id": "ch3_2_q011_c4",
+          "tts_text": "温度を上げると反応速度は小さくなる。逆で温度を上げると活性化エネルギーを越える分子の割合が増えるため反応速度は大きくなる。"
+        }
+      ],
+      "explanation": "温度上昇は二つの効果で反応速度を上げます。まず分子の運動が激しくなり衝突回数が増えます。さらに各分子の運動エネルギーが大きくなるため活性化エネルギーを越えられる分子の割合が増えます。後者の効果の方が大きく、一般に10℃の上昇で反応速度は二〜三倍になります。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_003",
+          "quote": "活性化エネルギーの壁が低いほど、反応は速く進む"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "温度と反応速度の関係として、正しい記述を選びなさい。",
+      "tts_explanation": "温度上昇は二つの効果で反応速度を上げます。まず分子の運動が激しくなり衝突回数が増えます。さらに各分子の運動エネルギーが大きくなるため活性化エネルギーを越えられる分子の割合が増えます。後者の効果の方が大きく、一般に十度の上昇で反応速度は二〜三倍になります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q012",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "触媒と活性化エネルギー",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "触媒が反応速度を上げるしくみとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "活性化エネルギーのより小さな別の反応経路を通るようにすることで、多くの分子が壁を越えられるようにする。反応エンタルピーは変わらない。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q012_c1",
+          "tts_text": "活性化エネルギーのより小さな別の反応経路を通るようにすることで、多くの分子が壁を越えられるようにする。反応エンタルピーは変わらない。"
+        },
+        {
+          "label": "2",
+          "text": "触媒は反応エンタルピーを変化させて速度を上げる。触媒は活性化エネルギーの低い別の反応経路を提供するのであり反応エンタルピーは変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応エンタルピーは変わらない。",
+          "choice_id": "ch3_2_q012_c2",
+          "tts_text": "触媒は反応エンタルピーを変化させて速度を上げる。触媒は活性化エネルギーの低い別の反応経路を提供するのであり反応エンタルピーは変わらない。"
+        },
+        {
+          "label": "3",
+          "text": "触媒は反応物の温度を上げることで速度を上げる。触媒は温度を上げるのではなく活性化エネルギーの低い別経路を提供して速度を上げる。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "温度を上げるのではなく別経路を提供する。",
+          "choice_id": "ch3_2_q012_c3",
+          "tts_text": "触媒は反応物の温度を上げることで速度を上げる。触媒は温度を上げるのではなく活性化エネルギーの低い別経路を提供して速度を上げる。"
+        },
+        {
+          "label": "4",
+          "text": "触媒は活性化エネルギーを大きくして速度を上げる。逆で触媒は活性化エネルギーを小さくすることで多くの分子が壁を越えられるようにする。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "小さくする。",
+          "choice_id": "ch3_2_q012_c4",
+          "tts_text": "触媒は活性化エネルギーを大きくして速度を上げる。逆で触媒は活性化エネルギーを小さくすることで多くの分子が壁を越えられるようにする。"
+        }
+      ],
+      "explanation": "触媒は高い山の代わりに低い峠を越える新経路を作り出します。活性化エネルギーが下がることで分子の運動エネルギーで壁を越えられる分子が増え、反応速度が大きくなります。ただし出発点（反応物）と到着点（生成物）のエネルギー差（反応エンタルピー）は変わりません。",
+      "evidence": [
+        {
+          "source_id": "2_2_law_004",
+          "quote": "触媒を用いると、活性化エネルギーのより小さな別の反応経路を通るため、反応速度が大きくなる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "触媒が反応速度を上げるしくみとして、正しいものを選びなさい。",
+      "tts_explanation": "触媒は高い山の代わりに低い峠を越える新経路を作り出します。活性化エネルギーが下がることで分子の運動エネルギーで壁を越えられる分子が増え、反応速度が大きくなります。ただし出発点（反応物）と到着点（生成物）のエネルギー差（反応エンタルピー）は変わりません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q013",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "酸化マンガンの触媒作用",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "過酸化水素の分解に対する酸化マンガン（四価）の役割として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "不均一系触媒として働き、過酸化水素の分解を促進して激しく酸素を発生させる。反応後も酸化マンガンは変化しない。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q013_c1",
+          "tts_text": "不均一系触媒として働き、過酸化水素の分解を促進して激しく酸素を発生させる。反応後も酸化マンガンは変化しない。"
+        },
+        {
+          "label": "2",
+          "text": "酸化マンガンは反応で消費されて減少する。酸化マンガンは触媒であるため反応の前後で変化せず消費されず何度でも使用できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "触媒なので反応後も変化しない。",
+          "choice_id": "ch3_2_q013_c2",
+          "tts_text": "酸化マンガンは反応で消費されて減少する。酸化マンガンは触媒であるため反応の前後で変化せず消費されず何度でも使用できる。"
+        },
+        {
+          "label": "3",
+          "text": "酸化マンガンは過酸化水素の分解を遅くする。逆で酸化マンガンは触媒として分解を促進し激しく酸素が発生するようになる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分解を促進する。",
+          "choice_id": "ch3_2_q013_c3",
+          "tts_text": "酸化マンガンは過酸化水素の分解を遅くする。逆で酸化マンガンは触媒として分解を促進し激しく酸素が発生するようになる。"
+        },
+        {
+          "label": "4",
+          "text": "酸化マンガンは均一系触媒である。酸化マンガンは固体であり液体の過酸化水素水と異なる相にあるため不均一系触媒に分類される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "不均一系（固体の触媒が液体中で働く）。",
+          "choice_id": "ch3_2_q013_c4",
+          "tts_text": "酸化マンガンは均一系触媒である。酸化マンガンは固体であり液体の過酸化水素水と異なる相にあるため不均一系触媒に分類される。"
+        }
+      ],
+      "explanation": "酸化マンガン（四価）は黒色の固体であり、過酸化水素水の分解において不均一系触媒として機能します。反応後にろ過すれば酸化マンガンを回収でき、繰り返し使用できます。触媒の途中では中間体を形成しますが、反応全体の前後では変化しません。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_003",
+          "quote": "過酸化水素の分解において不均一系触媒としてはたらく"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_004",
+        "2_1_sub_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "過酸化水素の分解に対する酸化マンガン（四価）の役割として、正しいものを選びなさい。",
+      "tts_explanation": "酸化マンガン（四価）は黒色の固体であり、過酸化水素水の分解において不均一系触媒として機能します。反応後にろ過すれば酸化マンガンを回収でき、繰り返し使用できます。触媒の途中では中間体を形成しますが、反応全体の前後では変化しません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q014",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "confusion",
+      "sub_category": "活性化エネルギーと反応エンタルピーの混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "活性化エネルギーと反応エンタルピーに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "活性化エネルギーは反応物から遷移状態に達するのに必要なエネルギーである。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q014_c1",
+          "tts_text": "活性化エネルギーは反応物から遷移状態に達するのに必要なエネルギーである。"
+        },
+        {
+          "label": "2",
+          "text": "反応エンタルピーは反応物と生成物のエネルギー差である。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q014_c2",
+          "tts_text": "反応エンタルピーは反応物と生成物のエネルギー差である。"
+        },
+        {
+          "label": "3",
+          "text": "触媒は活性化エネルギーを下げるが反応エンタルピーは変えない。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q014_c3",
+          "tts_text": "触媒は活性化エネルギーを下げるが反応エンタルピーは変えない。"
+        },
+        {
+          "label": "4",
+          "text": "活性化エネルギーと反応エンタルピーは同じ概念であり区別する必要はない。",
+          "is_correct": true,
+          "trap_type": "concept_confusion",
+          "trap_detail": "全く異なる概念。活性化エネルギーは壁の高さ、反応エンタルピーは始点と終点の差。",
+          "choice_id": "ch3_2_q014_c4",
+          "tts_text": "活性化エネルギーと反応エンタルピーは同じ概念であり区別する必要はない。"
+        }
+      ],
+      "explanation": "活性化エネルギーと反応エンタルピーは全く異なる物理量です。エネルギー図で考えると、活性化エネルギーは反応物から山の頂上（遷移状態）までの高さ、反応エンタルピーは反応物と生成物（出発点と到着点）のエネルギー差です。触媒は山の高さ（活性化エネルギー）を下げますが始終点の差（反応エンタルピー）は変えません。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_003",
+          "quote": "遷移状態のエネルギーと反応物のエネルギーとの差"
+        },
+        {
+          "source_id": "2_2_law_004",
+          "quote": "反応エンタルピーは変化しない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_003",
+        "2_2_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "活性化エネルギーと反応エンタルピーに関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "活性化エネルギーと反応エンタルピーは全く異なる物理量です。エネルギー図で考えると、活性化エネルギーは反応物から山の頂上（遷移状態）までの高さ、反応エンタルピーは反応物と生成物（出発点と到着点）のエネルギー差です。触媒は山の高さ（活性化エネルギー）を下げますが始終点の差（反応エンタルピー）は変えません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q015",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "confusion",
+      "sub_category": "速度式の指数と係数の混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "反応速度式に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "五酸化二窒素の分解は反応式の係数が二だが一次反応である。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q015_c1",
+          "tts_text": "五酸化二窒素の分解は反応式の係数が二だが一次反応である。"
+        },
+        {
+          "label": "2",
+          "text": "速度式の指数は常に化学反応式の係数と一致するため、実験で調べる必要はない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "一致するとは限らず、実験で決定する必要がある。",
+          "choice_id": "ch3_2_q015_c2",
+          "tts_text": "速度式の指数は常に化学反応式の係数と一致するため、実験で調べる必要はない。"
+        },
+        {
+          "label": "3",
+          "text": "多段階反応では指数は律速段階の素反応で決まる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q015_c3",
+          "tts_text": "多段階反応では指数は律速段階の素反応で決まる。"
+        },
+        {
+          "label": "4",
+          "text": "速度式の指数は実験で決める必要がある。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q015_c4",
+          "tts_text": "速度式の指数は実験で決める必要がある。"
+        }
+      ],
+      "explanation": "反応速度式の指数が化学反応式の係数と一致するのは素反応の場合のみです。多くの反応は多段階で進行するため、全体の反応式の係数と指数は異なります。五酸化二窒素の分解は典型例で、反応式の係数が二なのに速度式は一次（指数が一）です。このため指数は実験データから決める必要があります。",
+      "evidence": [
+        {
+          "source_id": "2_1_eq_002",
+          "quote": "化学反応式の係数がそのまま指数 a, b になるとは限らない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_eq_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応速度式に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "反応速度式の指数が化学反応式の係数と一致するのは素反応の場合のみです。多くの反応は多段階で進行するため、全体の反応式の係数と指数は異なります。五酸化二窒素の分解は典型例で、反応式の係数が二なのに速度式は一次（指数が一）です。このため指数は実験データから決める必要があります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q016",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "confusion",
+      "sub_category": "触媒と生成物量の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "触媒に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "触媒は自身が反応の前後で変化しない。これは正しい記述であり触媒の基本的な定義として反応前後で化学的に変化しないことが挙げられる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q016_c1",
+          "tts_text": "触媒は自身が反応の前後で変化しない。これは正しい記述であり触媒の基本的な定義として反応前後で化学的に変化しないことが挙げられる。"
+        },
+        {
+          "label": "2",
+          "text": "触媒は反応速度を上げる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q016_c2",
+          "tts_text": "触媒は反応速度を上げる。"
+        },
+        {
+          "label": "3",
+          "text": "触媒は活性化エネルギーの小さな別経路を提供する。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q016_c3",
+          "tts_text": "触媒は活性化エネルギーの小さな別経路を提供する。"
+        },
+        {
+          "label": "4",
+          "text": "触媒を加えると得られる生成物の総量が増加し、反応エンタルピーも変化する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "生成物の総量も反応エンタルピーも変わらない。",
+          "choice_id": "ch3_2_q016_c4",
+          "tts_text": "触媒を加えると得られる生成物の総量が増加し、反応エンタルピーも変化する。"
+        }
+      ],
+      "explanation": "触媒は反応が速く進むようにするだけで、最終的に得られる生成物の量（平衡の位置）は変えません。また反応エンタルピー（出発点と到着点のエネルギー差）も変化しません。変えるのは活性化エネルギーだけです。",
+      "evidence": [
+        {
+          "source_id": "2_2_law_004",
+          "quote": "得られる生成物の総量や反応エンタルピーは変わらない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "触媒に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "触媒は反応が速く進むようにするだけで、最終的に得られる生成物の量（平衡の位置）は変えません。また反応エンタルピー（出発点と到着点のエネルギー差）も変化しません。変えるのは活性化エネルギーだけです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q017",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "confusion",
+      "sub_category": "律速段階の勘違い",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "律速段階に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "律速段階を速くすれば反応全体が速くなる。これは正しく律速段階が全体のボトルネックであるためその段階を速くすれば全体が速くなる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q017_c1",
+          "tts_text": "律速段階を速くすれば反応全体が速くなる。これは正しく律速段階が全体のボトルネックであるためその段階を速くすれば全体が速くなる。"
+        },
+        {
+          "label": "2",
+          "text": "最も速い段階が律速段階であり、その段階の速さが全体の速さに影響する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "最も遅い段階が律速段階。",
+          "choice_id": "ch3_2_q017_c2",
+          "tts_text": "最も速い段階が律速段階であり、その段階の速さが全体の速さに影響する。"
+        },
+        {
+          "label": "3",
+          "text": "律速段階の速さが反応全体の速さを決める。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q017_c3",
+          "tts_text": "律速段階の速さが反応全体の速さを決める。"
+        },
+        {
+          "label": "4",
+          "text": "多段階反応の中で最も遅い段階が律速段階である。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q017_c4",
+          "tts_text": "多段階反応の中で最も遅い段階が律速段階である。"
+        }
+      ],
+      "explanation": "律速段階は「律する（支配する）速度の段階」という意味で、多段階反応の中で最も遅い段階のことです。これが渋滞のボトルネックとなり全体の速さを決定します。最も速い段階と混同しやすいですが「遅い方」が支配するのがポイントです。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_004",
+          "quote": "最も反応速度が遅い反応段階"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "律速段階に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "律速段階は「律する（支配する）速度の段階」という意味で、多段階反応の中で最も遅い段階のことです。これが渋滞のボトルネックとなり全体の速さを決定します。最も速い段階と混同しやすいですが「遅い方」が支配するのがポイントです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q018",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "classification",
+      "sub_category": "反応速度に影響する因子の分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "反応速度に影響する因子の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応物の濃度、温度、触媒の有無、固体の表面積が主な因子である。いずれも衝突回数や衝突エネルギーに影響を及ぼす。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q018_c1",
+          "tts_text": "反応物の濃度、温度、触媒の有無、固体の表面積が主な因子である。いずれも衝突回数や衝突エネルギーに影響を及ぼす。"
+        },
+        {
+          "label": "2",
+          "text": "反応速度に影響するのは温度のみであり他の因子はない。濃度・触媒・固体の表面積も重要な因子であり温度だけでは反応速度は説明できない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "濃度や触媒なども影響する。",
+          "choice_id": "ch3_2_q018_c2",
+          "tts_text": "反応速度に影響するのは温度のみであり他の因子はない。濃度・触媒・固体の表面積も重要な因子であり温度だけでは反応速度は説明できない。"
+        },
+        {
+          "label": "3",
+          "text": "固体の表面積は反応速度に影響しない。固体を粉末にして表面積を大きくすると接触面が増え反応速度が大きくなるため影響する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "粉末にすると表面積が増え速度が上がる。",
+          "choice_id": "ch3_2_q018_c3",
+          "tts_text": "固体の表面積は反応速度に影響しない。固体を粉末にして表面積を大きくすると接触面が増え反応速度が大きくなるため影響する。"
+        },
+        {
+          "label": "4",
+          "text": "触媒は反応速度に全く影響しない。触媒は活性化エネルギーの低い別経路を提供して反応速度を著しく増大させる重要な因子である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "大きな影響を及ぼす。",
+          "choice_id": "ch3_2_q018_c4",
+          "tts_text": "触媒は反応速度に全く影響しない。触媒は活性化エネルギーの低い別経路を提供して反応速度を著しく増大させる重要な因子である。"
+        }
+      ],
+      "explanation": "反応速度に影響する主な因子は四つです。反応物の濃度（衝突回数に影響）、温度（衝突エネルギーに影響）、触媒（活性化エネルギーを下げる）、固体反応物の表面積（接触面積で衝突回数に影響）です。いずれも粒子の衝突頻度や有効衝突の割合を変えることで速度に影響します。",
+      "evidence": [
+        {
+          "source_id": "2_2_law_001",
+          "quote": "反応物の濃度を大きくすると、衝突回数が増加し、反応速度は大きくなる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_law_001",
+        "2_2_def_003",
+        "2_2_def_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応速度に影響する因子の分類として、正しいものを選びなさい。",
+      "tts_explanation": "反応速度に影響する主な因子は四つです。反応物の濃度（衝突回数に影響）、温度（衝突エネルギーに影響）、触媒（活性化エネルギーを下げる）、固体反応物の表面積（接触面積で衝突回数に影響）です。いずれも粒子の衝突頻度や有効衝突の割合を変えることで速度に影響します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q019",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "classification",
+      "sub_category": "均一系触媒と不均一系触媒",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "均一系触媒と不均一系触媒の違いとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "均一系触媒は固体であり不均一系触媒は液体である。逆で均一系触媒は反応物と同じ相に存在し不均一系触媒は反応物と異なる相に存在する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。均一系は同じ相、不均一系は異なる相。",
+          "choice_id": "ch3_2_q019_c1",
+          "tts_text": "均一系触媒は固体であり不均一系触媒は液体である。逆で均一系触媒は反応物と同じ相に存在し不均一系触媒は反応物と異なる相に存在する。"
+        },
+        {
+          "label": "2",
+          "text": "均一系と不均一系に性能の差はない。均一系と不均一系では触媒と反応物の接触の仕方が異なるため性能や適用場面に違いがある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "触媒の種類によって特性が異なる。",
+          "choice_id": "ch3_2_q019_c2",
+          "tts_text": "均一系と不均一系に性能の差はない。均一系と不均一系では触媒と反応物の接触の仕方が異なるため性能や適用場面に違いがある。"
+        },
+        {
+          "label": "3",
+          "text": "均一系触媒は反応物と同じ相（たとえば溶液中）に存在し、不均一系触媒は反応物と異なる相（たとえば固体触媒が液体中で働く）に存在する。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q019_c3",
+          "tts_text": "均一系触媒は反応物と同じ相（たとえば溶液中）に存在し、不均一系触媒は反応物と異なる相（たとえば固体触媒が液体中で働く）に存在する。"
+        },
+        {
+          "label": "4",
+          "text": "酸化マンガンは均一系触媒の例である。酸化マンガンは固体であり液体中で働くため反応物と異なる相にある不均一系触媒の例である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "不均一系触媒の例。",
+          "choice_id": "ch3_2_q019_c4",
+          "tts_text": "酸化マンガンは均一系触媒の例である。酸化マンガンは固体であり液体中で働くため反応物と異なる相にある不均一系触媒の例である。"
+        }
+      ],
+      "explanation": "触媒は反応系との相の関係で二種類に分けられます。均一系触媒は反応物と同じ相（例：溶液中の酸やイオン）で均一に混ざります。不均一系触媒は反応物と異なる相（例：固体の酸化マンガンが過酸化水素水中で使われる）で働きます。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_003",
+          "quote": "不均一系触媒としてはたらく"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_004",
+        "2_1_sub_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "均一系触媒と不均一系触媒の違いとして、正しいものを選びなさい。",
+      "tts_explanation": "触媒は反応系との相の関係で二種類に分けられます。均一系触媒は反応物と同じ相（例：溶液中の酸やイオン）で均一に混ざります。不均一系触媒は反応物と異なる相（例：固体の酸化マンガンが過酸化水素水中で使われる）で働きます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q020",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "procedure",
+      "sub_category": "平均速度の計算手順",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "平均の反応速度を求める手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "濃度の絶対値ではなくそのままマイナスの値で表す。反応速度は常に正の値で表すため反応物の濃度変化はマイナスでも絶対値をとる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "絶対値をとって正の値にする。",
+          "choice_id": "ch3_2_q020_c1",
+          "tts_text": "濃度の絶対値ではなくそのままマイナスの値で表す。反応速度は常に正の値で表すため反応物の濃度変化はマイナスでも絶対値をとる。"
+        },
+        {
+          "label": "2",
+          "text": "反応開始からの総時間のみで計算する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "任意の区間で計算できる。",
+          "choice_id": "ch3_2_q020_c2",
+          "tts_text": "反応開始からの総時間のみで計算する。"
+        },
+        {
+          "label": "3",
+          "text": "時刻一での濃度と時刻二での濃度を測定し、濃度変化の絶対値を時間間隔で割る。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q020_c3",
+          "tts_text": "時刻一での濃度と時刻二での濃度を測定し、濃度変化の絶対値を時間間隔で割る。"
+        },
+        {
+          "label": "4",
+          "text": "時刻一の濃度を時刻二の濃度で割る。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "割るのは時間間隔。",
+          "choice_id": "ch3_2_q020_c4",
+          "tts_text": "時刻一の濃度を時刻二の濃度で割る。"
+        }
+      ],
+      "explanation": "平均の反応速度の計算手順は三段階です。第一に時刻一での着目物質の濃度を測定します。第二に時刻二での濃度を測定します。第三に濃度の変化量の絶対値を時間間隔で割ります。反応物の場合は濃度が減るためマイナスになりますが絶対値で正にします。",
+      "evidence": [
+        {
+          "source_id": "2_1_eq_001",
+          "quote": "濃度の変化量の絶対値を、かかった時間で割る"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_eq_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "平均の反応速度を求める手順として、正しいものを選びなさい。",
+      "tts_explanation": "平均の反応速度の計算手順は三段階です。第一に時刻一での着目物質の濃度を測定します。第二に時刻二での濃度を測定します。第三に濃度の変化量の絶対値を時間間隔で割ります。反応物の場合は濃度が減るためマイナスになりますが絶対値で正にします。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q021",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "procedure",
+      "sub_category": "速度式の決定手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "反応速度式を決定する手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "一回の実験だけですべてのパラメータが決まる。一方の濃度を変え他方を固定する実験を複数回行い各指数を個別に決定する必要がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "複数回の実験が必要。",
+          "choice_id": "ch3_2_q021_c1",
+          "tts_text": "一回の実験だけですべてのパラメータが決まる。一方の濃度を変え他方を固定する実験を複数回行い各指数を個別に決定する必要がある。"
+        },
+        {
+          "label": "2",
+          "text": "化学反応式の係数をそのまま指数として速度式を書く。速度式の指数は実験で決定するものであり化学反応式の係数とは一致しないことが多い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "実験で決めなければならない。",
+          "choice_id": "ch3_2_q021_c2",
+          "tts_text": "化学反応式の係数をそのまま指数として速度式を書く。速度式の指数は実験で決定するものであり化学反応式の係数とは一致しないことが多い。"
+        },
+        {
+          "label": "3",
+          "text": "理論計算のみで指数を決定でき実験は不要である。反応速度式の指数は理論だけでは決定できず実験データに基づいて求める必要がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "実験が不可欠。",
+          "choice_id": "ch3_2_q021_c3",
+          "tts_text": "理論計算のみで指数を決定でき実験は不要である。反応速度式の指数は理論だけでは決定できず実験データに基づいて求める必要がある。"
+        },
+        {
+          "label": "4",
+          "text": "一方の反応物の初濃度を変えて他方を一定に保ち、速度の変化から指数を決定する。複数の実験を組み合わせてすべての指数と速度定数を求める。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q021_c4",
+          "tts_text": "一方の反応物の初濃度を変えて他方を一定に保ち、速度の変化から指数を決定する。複数の実験を組み合わせてすべての指数と速度定数を求める。"
+        }
+      ],
+      "explanation": "速度式の決定には系統的な実験が必要です。一つの反応物の初濃度を変え、他の反応物を一定に保って速度を測定します。濃度を二倍にしたとき速度が二倍なら一次、四倍なら二次と決定できます。同様にすべての反応物について調べ、最後に実験値から速度定数を計算します。",
+      "evidence": [
+        {
+          "source_id": "2_1_eq_002",
+          "quote": "実験データから反応速度式の指数および速度定数を決定する"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_eq_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応速度式を決定する手順として、正しいものを選びなさい。",
+      "tts_explanation": "速度式の決定には系統的な実験が必要です。一つの反応物の初濃度を変え、他の反応物を一定に保って速度を測定します。濃度を二倍にしたとき速度が二倍なら一次、四倍なら二次と決定できます。同様にすべての反応物について調べ、最後に実験値から速度定数を計算します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q022",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "confusion",
+      "sub_category": "触媒の途中変化の見落とし",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "触媒に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "触媒は反応の前後で変化しない。これは正しい記述であり触媒の基本的な特徴として反応前後で化学的に消費されないことが挙げられる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q022_c1",
+          "tts_text": "触媒は反応の前後で変化しない。これは正しい記述であり触媒の基本的な特徴として反応前後で化学的に消費されないことが挙げられる。"
+        },
+        {
+          "label": "2",
+          "text": "触媒は反応の途中でも一切化学的に関与しない。単に存在するだけで反応が速くなる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "途中で中間体を形成するなど化学的に関与する。",
+          "choice_id": "ch3_2_q022_c2",
+          "tts_text": "触媒は反応の途中でも一切化学的に関与しない。単に存在するだけで反応が速くなる。"
+        },
+        {
+          "label": "3",
+          "text": "触媒は活性化エネルギーを下げる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q022_c3",
+          "tts_text": "触媒は活性化エネルギーを下げる。"
+        },
+        {
+          "label": "4",
+          "text": "触媒は反応の途中で中間体を形成することがある。これは正しく触媒は反応途中で中間体を作り最終的には元に戻るため前後では変化しない。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q022_c4",
+          "tts_text": "触媒は反応の途中で中間体を形成することがある。これは正しく触媒は反応途中で中間体を作り最終的には元に戻るため前後では変化しない。"
+        }
+      ],
+      "explanation": "触媒は反応の「前後」では変化しませんが、反応の「途中」では化学的に関与します。中間体（中間化合物）を形成したり表面に反応物を吸着させたりすることで、活性化エネルギーの低い別経路を提供します。単に存在するだけでは触媒作用は発揮されません。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_004",
+          "quote": "反応の途中で中間体を作るなど化学的には関与している"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "触媒に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "触媒は反応の「前後」では変化しませんが、反応の「途中」では化学的に関与します。中間体（中間化合物）を形成したり表面に反応物を吸着させたりすることで、活性化エネルギーの低い別経路を提供します。単に存在するだけでは触媒作用は発揮されません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q023",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "表面積と反応速度",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "固体の表面積と反応速度の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "固体の反応物を粉末にすると表面積が大きくなり、反応物との接触面が増えるため反応速度が大きくなる。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q023_c1",
+          "tts_text": "固体の反応物を粉末にすると表面積が大きくなり、反応物との接触面が増えるため反応速度が大きくなる。"
+        },
+        {
+          "label": "2",
+          "text": "固体の形状は反応速度に影響しない。固体の形状により表面積が変わり粉末にすると接触面が増えて反応速度が大きくなるため影響する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "表面積を通じて大きく影響する。",
+          "choice_id": "ch3_2_q023_c2",
+          "tts_text": "固体の形状は反応速度に影響しない。固体の形状により表面積が変わり粉末にすると接触面が増えて反応速度が大きくなるため影響する。"
+        },
+        {
+          "label": "3",
+          "text": "表面積が大きくなると反応速度は小さくなる。逆で表面積が大きくなると反応物との接触が増え反応速度は大きくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "大きくなる。",
+          "choice_id": "ch3_2_q023_c3",
+          "tts_text": "表面積が大きくなると反応速度は小さくなる。逆で表面積が大きくなると反応物との接触が増え反応速度は大きくなる。"
+        },
+        {
+          "label": "4",
+          "text": "大きな塊の方が粉末より反応速度が速い。逆で粉末にする方が表面積が大きくなるため反応物との接触面が増え反応速度は速くなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "粉末の方が表面積が大きく速い。",
+          "choice_id": "ch3_2_q023_c4",
+          "tts_text": "大きな塊の方が粉末より反応速度が速い。逆で粉末にする方が表面積が大きくなるため反応物との接触面が増え反応速度は速くなる。"
+        }
+      ],
+      "explanation": "固体が関わる反応では、固体の表面で反応物が接触して反応が進みます。塊を粉末にすると表面積が大幅に増えるため接触面が増え反応速度が大きくなります。小麦粉工場での粉塵爆発は粉末の表面積が極めて大きいため爆発的に反応が進む例です。",
+      "evidence": [],
+      "related_concept_ids": [
+        "2_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "固体の表面積と反応速度の関係として、正しい記述を選びなさい。",
+      "tts_explanation": "固体が関わる反応では、固体の表面で反応物が接触して反応が進みます。塊を粉末にすると表面積が大幅に増えるため接触面が増え反応速度が大きくなります。小麦粉工場での粉塵爆発は粉末の表面積が極めて大きいため爆発的に反応が進む例です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q024",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "mnemonic",
+      "sub_category": "触媒の覚え方",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "触媒の覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "「触媒は汗水たらす要もなし」で覚える。活性化エネルギーの小さな別ルートを提供するので、反応に高いエネルギーが不要になるという意味である。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q024_c1",
+          "tts_text": "「触媒は汗水たらす要もなし」で覚える。活性化エネルギーの小さな別ルートを提供するので、反応に高いエネルギーが不要になるという意味である。"
+        },
+        {
+          "label": "2",
+          "text": "この語呂合わせは反応エンタルピーに関するものである。この語呂合わせは触媒の役割に関するものであり活性化エネルギーの壁を下げることを表す。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "触媒の活性化エネルギーに関する覚え方。",
+          "choice_id": "ch3_2_q024_c2",
+          "tts_text": "この語呂合わせは反応エンタルピーに関するものである。この語呂合わせは触媒の役割に関するものであり活性化エネルギーの壁を下げることを表す。"
+        },
+        {
+          "label": "3",
+          "text": "触媒は反応に高いエネルギーが必要になるという意味の語呂合わせである。逆で触媒は活性化エネルギーの低い別ルートを提供するため高いエネルギーが不要になるという意味である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不要になるという意味。",
+          "choice_id": "ch3_2_q024_c3",
+          "tts_text": "触媒は反応に高いエネルギーが必要になるという意味の語呂合わせである。逆で触媒は活性化エネルギーの低い別ルートを提供するため高いエネルギーが不要になるという意味である。"
+        },
+        {
+          "label": "4",
+          "text": "この語呂合わせは間違いであり触媒は効果がない。触媒は反応速度を著しく増大させる効果があり語呂合わせもその仕組みを正しく表している。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "触媒には大きな効果がある。",
+          "choice_id": "ch3_2_q024_c4",
+          "tts_text": "この語呂合わせは間違いであり触媒は効果がない。触媒は反応速度を著しく増大させる効果があり語呂合わせもその仕組みを正しく表している。"
+        }
+      ],
+      "explanation": "「触媒は汗水たらす要もなし」は触媒の本質を覚えるための語呂合わせです。触媒があると活性化エネルギーが下がるため、反応物が「汗水たらす（大きなエネルギーを出す）必要がない」ルートで反応が進行できるという意味です。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_004",
+          "quote": "触媒は汗水たらす要もなし"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_004"
+      ],
+      "mnemonic": "触媒は汗水たらす要もなし",
+      "tts_question": "触媒の覚え方として、正しいものを選びなさい。",
+      "tts_explanation": "「触媒は汗水たらす要もなし」は触媒の本質を覚えるための語呂合わせです。触媒があると活性化エネルギーが下がるため、反応物が「汗水たらす（大きなエネルギーを出す）必要がない」ルートで反応が進行できるという意味です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q025",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "comprehensive",
+      "sub_category": "反応速度の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "反応速度に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "触媒を反応系に加えると反応速度が上がるのと同時に生成物の総量まで増加すると勘違いされがちだが、触媒は反応速度を上げるだけであり平衡の位置は変わらないため、生成物の最終的な総量は変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "総量は変わらない。",
+          "choice_id": "ch3_2_q025_c1",
+          "tts_text": "触媒を反応系に加えると反応速度が上がるのと同時に生成物の総量まで増加すると勘違いされがちだが、触媒は反応速度を上げるだけであり平衡の位置は変わらないため、生成物の最終的な総量は変わらない。"
+        },
+        {
+          "label": "2",
+          "text": "反応速度は温度のみで決まり触媒は無関係。速度式の指数は係数と一致する。律速段階は最速の段階。触媒は反応エンタルピーを変える。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。",
+          "choice_id": "ch3_2_q025_c2",
+          "tts_text": "反応速度は温度のみで決まり触媒は無関係。速度式の指数は係数と一致する。律速段階は最速の段階。触媒は反応エンタルピーを変える。"
+        },
+        {
+          "label": "3",
+          "text": "反応速度は濃度・温度・触媒・表面積で変わる。速度式の指数は実験で決める。多段階反応では律速段階が全体を支配する。触媒は活性化エネルギーを下げるが反応エンタルピーは不変である。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q025_c3",
+          "tts_text": "反応速度は濃度・温度・触媒・表面積で変わる。速度式の指数は実験で決める。多段階反応では律速段階が全体を支配する。触媒は活性化エネルギーを下げるが反応エンタルピーは不変である。"
+        },
+        {
+          "label": "4",
+          "text": "活性化エネルギーが大きいほど反応速度は大きい。逆で活性化エネルギーが大きいほど壁が高く越えにくいため反応速度は小さくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "小さいほど大きい。",
+          "choice_id": "ch3_2_q025_c4",
+          "tts_text": "活性化エネルギーが大きいほど反応速度は大きい。逆で活性化エネルギーが大きいほど壁が高く越えにくいため反応速度は小さくなる。"
+        }
+      ],
+      "explanation": "反応速度のすべてのポイントをまとめた問題です。速度は濃度・温度・触媒・表面積の四因子で変わります。速度式の指数は実験で決定します。多段階反応では最も遅い律速段階が全体を支配します。触媒は活性化エネルギーのみを下げ、反応エンタルピーと生成物の総量は変えません。",
+      "evidence": [
+        {
+          "source_id": "2_2_law_001",
+          "quote": "反応物の濃度を大きくすると反応速度は大きくなる"
+        },
+        {
+          "source_id": "2_2_law_004",
+          "quote": "活性化エネルギーのより小さな別の反応経路を通る"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_001",
+        "2_2_law_001",
+        "2_2_def_003",
+        "2_2_def_004",
+        "2_2_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応速度に関する総合的な記述として、正しいものを選びなさい。",
+      "tts_explanation": "反応速度のすべてのポイントをまとめた問題です。速度は濃度・温度・触媒・表面積の四因子で変わります。速度式の指数は実験で決定します。多段階反応では最も遅い律速段階が全体を支配します。触媒は活性化エネルギーのみを下げ、反応エンタルピーと生成物の総量は変えません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q026",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "衝突理論",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "分子の衝突と反応の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "分子が衝突しても全てが反応するわけではない。活性化エネルギー以上の運動エネルギーをもった有効な衝突のみが反応を起こす。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q026_c1",
+          "tts_text": "分子が衝突しても全てが反応するわけではない。活性化エネルギー以上の運動エネルギーをもった有効な衝突のみが反応を起こす。"
+        },
+        {
+          "label": "2",
+          "text": "分子が衝突すれば必ず反応が起こる。衝突しても活性化エネルギー未満の弱い衝突では反応は起こらず有効な衝突のみが反応を起こす。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "エネルギーが不足する衝突では反応しない。",
+          "choice_id": "ch3_2_q026_c2",
+          "tts_text": "分子が衝突すれば必ず反応が起こる。衝突しても活性化エネルギー未満の弱い衝突では反応は起こらず有効な衝突のみが反応を起こす。"
+        },
+        {
+          "label": "3",
+          "text": "衝突の向きは反応に全く影響しない。反応が起こるには適切な向きで衝突する必要がありすべての向きで反応が起こるわけではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "適切な向きの衝突が必要な場合もある。",
+          "choice_id": "ch3_2_q026_c3",
+          "tts_text": "衝突の向きは反応に全く影響しない。反応が起こるには適切な向きで衝突する必要がありすべての向きで反応が起こるわけではない。"
+        },
+        {
+          "label": "4",
+          "text": "衝突の回数が減ると反応速度が増す。逆で衝突回数が減ると有効衝突も減るため反応速度は低下する。衝突が増えれば速度も増す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "回数が増えると速度が増す。",
+          "choice_id": "ch3_2_q026_c4",
+          "tts_text": "衝突の回数が減ると反応速度が増す。逆で衝突回数が減ると有効衝突も減るため反応速度は低下する。衝突が増えれば速度も増す。"
+        }
+      ],
+      "explanation": "反応が起こるためには分子が衝突することが必要ですが、十分ではありません。活性化エネルギー以上の運動エネルギーをもつ衝突（有効衝突）でないと反応は起こりません。さらに適切な方向からの衝突が必要な場合もあります。有効衝突の割合を増やすことが反応速度を上げる鍵です。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_003",
+          "quote": "活性化エネルギーの壁を越えなければならない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "分子の衝突と反応の関係として、正しい記述を選びなさい。",
+      "tts_explanation": "反応が起こるためには分子が衝突することが必要ですが、十分ではありません。活性化エネルギー以上の運動エネルギーをもつ衝突（有効衝突）でないと反応は起こりません。さらに適切な方向からの衝突が必要な場合もあります。有効衝突の割合を増やすことが反応速度を上げる鍵です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q027",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "confusion",
+      "sub_category": "速度定数と反応速度の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "速度定数に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "速度定数が大きいほど反応が速い。これは正しい記述であり速度定数は反応の速さを表す比例定数で大きいほど反応が速く進む。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q027_c1",
+          "tts_text": "速度定数が大きいほど反応が速い。これは正しい記述であり速度定数は反応の速さを表す比例定数で大きいほど反応が速く進む。"
+        },
+        {
+          "label": "2",
+          "text": "速度定数は反応の種類によって異なる。これは正しい記述であり反応ごとに固有の速度定数をもちその値は反応の種類と温度で決まる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q027_c2",
+          "tts_text": "速度定数は反応の種類によって異なる。これは正しい記述であり反応ごとに固有の速度定数をもちその値は反応の種類と温度で決まる。"
+        },
+        {
+          "label": "3",
+          "text": "速度定数は反応物の濃度に比例して大きくなる。濃度が二倍になると速度定数も二倍になる。",
+          "is_correct": true,
+          "trap_type": "concept_confusion",
+          "trap_detail": "速度定数は濃度に依存しない定数。変わるのは反応速度。",
+          "choice_id": "ch3_2_q027_c3",
+          "tts_text": "速度定数は反応物の濃度に比例して大きくなる。濃度が二倍になると速度定数も二倍になる。"
+        },
+        {
+          "label": "4",
+          "text": "温度一定なら速度定数は一定である。これは正しい記述であり速度定数は温度と反応の種類で決まるため温度が一定なら変化しない。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q027_c4",
+          "tts_text": "温度一定なら速度定数は一定である。これは正しい記述であり速度定数は温度と反応の種類で決まるため温度が一定なら変化しない。"
+        }
+      ],
+      "explanation": "速度定数は「定数」の名の通り、温度と反応の種類が同じなら一定値です。反応物の濃度が変わると反応速度は変わりますが、速度定数自体は変わりません。速度定数と反応速度は異なる概念であり混同に注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_002",
+          "quote": "反応の種類と温度が決まれば一定になる値です"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "速度定数に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "速度定数は「定数」の名の通り、温度と反応の種類が同じなら一定値です。反応物の濃度が変わると反応速度は変わりますが、速度定数自体は変わりません。速度定数と反応速度は異なる概念であり混同に注意が必要です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q028",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "ヨウ化水素の分解",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ヨウ化水素の熱分解について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヨウ化水素の分解では遷移状態を経由しない。すべての化学反応は遷移状態を経由してから生成物に変化するためヨウ化水素の分解も例外ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "すべての反応が遷移状態を経由する。",
+          "choice_id": "ch3_2_q028_c1",
+          "tts_text": "ヨウ化水素の分解では遷移状態を経由しない。すべての化学反応は遷移状態を経由してから生成物に変化するためヨウ化水素の分解も例外ではない。"
+        },
+        {
+          "label": "2",
+          "text": "ヨウ化水素は室温で自然に分解する。ヨウ化水素の分解には約400℃の加熱が必要であり室温では安定して自然に分解しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "約四百度の加熱が必要。",
+          "choice_id": "ch3_2_q028_c2",
+          "tts_text": "ヨウ化水素は室温で自然に分解する。ヨウ化水素の分解には約四百度の加熱が必要であり室温では安定して自然に分解しない。"
+        },
+        {
+          "label": "3",
+          "text": "分解生成物は水とヨウ素である。ヨウ化水素の分解で生じるのは水素とヨウ素であり水は生成しない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水ではなく水素。",
+          "choice_id": "ch3_2_q028_c3",
+          "tts_text": "分解生成物は水とヨウ素である。ヨウ化水素の分解で生じるのは水素とヨウ素であり水は生成しない。"
+        },
+        {
+          "label": "4",
+          "text": "約400℃に加熱するとヨウ化水素は分解して水素とヨウ素を生じる。分解の途中で遷移状態（活性錯体）を経由する。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q028_c4",
+          "tts_text": "約四百度に加熱するとヨウ化水素は分解して水素とヨウ素を生じる。分解の途中で遷移状態（活性錯体）を経由する。"
+        }
+      ],
+      "explanation": "ヨウ化水素は約400℃で分解して水素とヨウ素を生じます。二つのヨウ化水素分子が衝突すると、水素原子とヨウ素原子が弱く結合した不安定な遷移状態（活性錯体）を経由し、最終的に水素分子とヨウ素分子が生成します。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_005",
+          "quote": "約400℃に熱すると水素とヨウ素に分解する"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_005",
+        "2_2_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ヨウ化水素の熱分解について、正しい記述を選びなさい。",
+      "tts_explanation": "ヨウ化水素は約四百度で分解して水素とヨウ素を生じます。二つのヨウ化水素分子が衝突すると、水素原子とヨウ素原子が弱く結合した不安定な遷移状態（活性錯体）を経由し、最終的に水素分子とヨウ素分子が生成します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q029",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "classification",
+      "sub_category": "一次反応と二次反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "反応の次数の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応の次数は化学反応式の係数で決まる。反応の次数は速度式の指数の合計で決まり化学反応式の係数とは必ずしも一致しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "速度式の指数で決まる。",
+          "choice_id": "ch3_2_q029_c1",
+          "tts_text": "反応の次数は化学反応式の係数で決まる。反応の次数は速度式の指数の合計で決まり化学反応式の係数とは必ずしも一致しない。"
+        },
+        {
+          "label": "2",
+          "text": "速度式の指数の合計を反応の次数という。指数が一の反応を一次反応、二の反応を二次反応と呼ぶ。五酸化二窒素の分解は一次反応の例である。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q029_c2",
+          "tts_text": "速度式の指数の合計を反応の次数という。指数が一の反応を一次反応、二の反応を二次反応と呼ぶ。五酸化二窒素の分解は一次反応の例である。"
+        },
+        {
+          "label": "3",
+          "text": "五酸化二窒素の分解は二次反応である。五酸化二窒素の分解は実験により一次反応であることが確認されており二次反応ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一次反応。",
+          "choice_id": "ch3_2_q029_c3",
+          "tts_text": "五酸化二窒素の分解は二次反応である。五酸化二窒素の分解は実験により一次反応であることが確認されており二次反応ではない。"
+        },
+        {
+          "label": "4",
+          "text": "すべての反応は二次反応である。反応の次数は速度式の指数の合計で決まり反応によって零次・一次・二次など様々な次数をとりうる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "次数はさまざま。",
+          "choice_id": "ch3_2_q029_c4",
+          "tts_text": "すべての反応は二次反応である。反応の次数は速度式の指数の合計で決まり反応によって零次・一次・二次など様々な次数をとりうる。"
+        }
+      ],
+      "explanation": "反応の次数は速度式の指数の合計で定義されます。五酸化二窒素の分解は速度がその濃度の一乗に比例するため一次反応です。反応式の係数は二ですが次数は一であり、このずれは反応が多段階で進行するために生じます。",
+      "evidence": [
+        {
+          "source_id": "2_1_eq_002",
+          "quote": "v = k[N2O5] となり、N2O5の濃度の1乗に比例する一次反応"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_eq_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応の次数の分類として、正しいものを選びなさい。",
+      "tts_explanation": "反応の次数は速度式の指数の合計で定義されます。五酸化二窒素の分解は速度がその濃度の一乗に比例するため一次反応です。反応式の係数は二ですが次数は一であり、このずれは反応が多段階で進行するために生じます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q030",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "confusion",
+      "sub_category": "触媒と平衡の混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "触媒と化学平衡に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "触媒は正反応も逆反応も同時に速くする。これは正しい記述であり触媒は正反応と逆反応の両方の活性化エネルギーを等しく下げる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q030_c1",
+          "tts_text": "触媒は正反応も逆反応も同時に速くする。これは正しい記述であり触媒は正反応と逆反応の両方の活性化エネルギーを等しく下げる。"
+        },
+        {
+          "label": "2",
+          "text": "触媒は平衡に達するまでの時間を短縮する。これは正しい記述であり触媒により両方向の反応が速くなるため平衡に早く到達する。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q030_c2",
+          "tts_text": "触媒は平衡に達するまでの時間を短縮する。これは正しい記述であり触媒により両方向の反応が速くなるため平衡に早く到達する。"
+        },
+        {
+          "label": "3",
+          "text": "触媒は平衡の位置（平衡定数）を変えない。これは正しい記述であり触媒は速度を上げるだけで平衡の位置には影響を与えない。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q030_c3",
+          "tts_text": "触媒は平衡の位置（平衡定数）を変えない。これは正しい記述であり触媒は速度を上げるだけで平衡の位置には影響を与えない。"
+        },
+        {
+          "label": "4",
+          "text": "触媒は正反応だけを速くし逆反応は遅くするため平衡が生成物側にずれる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "正反応も逆反応も同時に速くなり平衡は変わらない。",
+          "choice_id": "ch3_2_q030_c4",
+          "tts_text": "触媒は正反応だけを速くし逆反応は遅くするため平衡が生成物側にずれる。"
+        }
+      ],
+      "explanation": "触媒は活性化エネルギーを下げることで正反応と逆反応の両方を同時に速くします。その結果、平衡に達するまでの時間は短縮されますが、平衡の位置（平衡定数）は変わりません。正反応だけ速くなるという記述は誤りです。",
+      "evidence": [
+        {
+          "source_id": "2_2_law_004",
+          "quote": "得られる生成物の総量や反応エンタルピーは変わらない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "触媒と化学平衡に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "触媒は活性化エネルギーを下げることで正反応と逆反応の両方を同時に速くします。その結果、平衡に達するまでの時間は短縮されますが、平衡の位置（平衡定数）は変わりません。正反応だけ速くなるという記述は誤りです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q031",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "マックスウェル・ボルツマン分布",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "分子の運動エネルギーの分布と温度の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度が上がってもエネルギー分布は変わらない。温度が上がると分子のエネルギー分布が高エネルギー側にシフトし活性化エネルギーを越える分子が増える。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高エネルギー側に広がる。",
+          "choice_id": "ch3_2_q031_c1",
+          "tts_text": "温度が上がってもエネルギー分布は変わらない。温度が上がると分子のエネルギー分布が高エネルギー側にシフトし活性化エネルギーを越える分子が増える。"
+        },
+        {
+          "label": "2",
+          "text": "温度が上がるとエネルギーの高い分子の割合が増え、活性化エネルギーを越える分子が増えるため反応速度が大きくなる。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q031_c2",
+          "tts_text": "温度が上がるとエネルギーの高い分子の割合が増え、活性化エネルギーを越える分子が増えるため反応速度が大きくなる。"
+        },
+        {
+          "label": "3",
+          "text": "温度が上がると活性化エネルギーも上がるため反応速度は変わらない。活性化エネルギーは温度によって変わらない固有の値でありエネルギー分布の変化で速度が増大する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "活性化エネルギーは温度で変わらない。",
+          "choice_id": "ch3_2_q031_c3",
+          "tts_text": "温度が上がると活性化エネルギーも上がるため反応速度は変わらない。活性化エネルギーは温度によって変わらない固有の値でありエネルギー分布の変化で速度が増大する。"
+        },
+        {
+          "label": "4",
+          "text": "全ての分子が同じエネルギーをもつ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "エネルギーには分布がある。",
+          "choice_id": "ch3_2_q031_c4",
+          "tts_text": "全ての分子が同じエネルギーをもつ。"
+        }
+      ],
+      "explanation": "分子の運動エネルギーにはマックスウェル・ボルツマン分布という幅があります。温度が上がるとこの分布が高エネルギー側に広がり、活性化エネルギー以上のエネルギーをもつ分子の割合が大きく増えます。活性化エネルギー自体は温度で変化しません。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_003",
+          "quote": "エネルギーの壁が低いほど反応は速く進む"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "分子の運動エネルギーの分布と温度の関係として、正しい記述を選びなさい。",
+      "tts_explanation": "分子の運動エネルギーにはマックスウェル・ボルツマン分布という幅があります。温度が上がるとこの分布が高エネルギー側に広がり、活性化エネルギー以上のエネルギーをもつ分子の割合が大きく増えます。活性化エネルギー自体は温度で変化しません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q032",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "mnemonic",
+      "sub_category": "律速段階の覚え方",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "律速段階の覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "最も速い段階が全体のペースを決めると覚える。逆で最も遅い段階が渋滞の先頭のように全体のペースを決めるのが律速段階である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "最も遅い段階。",
+          "choice_id": "ch3_2_q032_c1",
+          "tts_text": "最も速い段階が全体のペースを決めると覚える。逆で最も遅い段階が渋滞の先頭のように全体のペースを決めるのが律速段階である。"
+        },
+        {
+          "label": "2",
+          "text": "律速段階は触媒に関する覚え方である。律速段階は多段階反応における最も遅い段階のことであり触媒に関する概念ではない。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "多段階反応に関する概念。",
+          "choice_id": "ch3_2_q032_c2",
+          "tts_text": "律速段階は触媒に関する覚え方である。律速段階は多段階反応における最も遅い段階のことであり触媒に関する概念ではない。"
+        },
+        {
+          "label": "3",
+          "text": "律速段階は「渋滞の先頭」であり、最も遅い段階が全体のペースを決めると覚える。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q032_c3",
+          "tts_text": "律速段階は「渋滞の先頭」であり、最も遅い段階が全体のペースを決めると覚える。"
+        },
+        {
+          "label": "4",
+          "text": "すべての段階が同じ速さなので渋滞は起きない。多段階反応では各段階の速さは異なるため遅い段階がボトルネックとなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "各段階の速さは異なる。",
+          "choice_id": "ch3_2_q032_c4",
+          "tts_text": "すべての段階が同じ速さなので渋滞は起きない。多段階反応では各段階の速さは異なるため遅い段階がボトルネックとなる。"
+        }
+      ],
+      "explanation": "律速段階を「渋滞の先頭」に例えると理解しやすくなります。高速道路で一か所が詰まると全体の流れがそこで決まるのと同じで、多段階反応では最も遅い段階が全体の反応速度を支配します。この段階を速くすることが反応全体を速くする最も効果的な方法です。",
+      "evidence": [
+        {
+          "source_id": "2_1_def_004",
+          "quote": "渋滞の先頭のようなもの"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_004"
+      ],
+      "mnemonic": "律速段階は渋滞の先頭",
+      "tts_question": "律速段階の覚え方として、正しいものを選びなさい。",
+      "tts_explanation": "律速段階を「渋滞の先頭」に例えると理解しやすくなります。高速道路で一か所が詰まると全体の流れがそこで決まるのと同じで、多段階反応では最も遅い段階が全体の反応速度を支配します。この段階を速くすることが反応全体を速くする最も効果的な方法です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q033",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "confusion",
+      "sub_category": "触媒のエネルギー図",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "触媒使用時のエネルギー図に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応物と生成物のエネルギーは触媒の有無で変わらない。これは正しく触媒はエネルギー図の山（活性化エネルギー）のみを下げ出発点と到着点は変えない。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q033_c1",
+          "tts_text": "反応物と生成物のエネルギーは触媒の有無で変わらない。これは正しく触媒はエネルギー図の山（活性化エネルギー）のみを下げ出発点と到着点は変えない。"
+        },
+        {
+          "label": "2",
+          "text": "触媒により活性化エネルギーの山が低くなる。これは正しい記述であり触媒は活性化エネルギーの小さな別経路を提供して山を低くする。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q033_c2",
+          "tts_text": "触媒により活性化エネルギーの山が低くなる。これは正しい記述であり触媒は活性化エネルギーの小さな別経路を提供して山を低くする。"
+        },
+        {
+          "label": "3",
+          "text": "正反応と逆反応の両方の活性化エネルギーが下がる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q033_c3",
+          "tts_text": "正反応と逆反応の両方の活性化エネルギーが下がる。"
+        },
+        {
+          "label": "4",
+          "text": "触媒を使うと反応物の位置が下がりエネルギー差が大きくなる。したがって反応エンタルピーが変化する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "反応物と生成物の位置は変わらない。反応エンタルピーは不変。",
+          "choice_id": "ch3_2_q033_c4",
+          "tts_text": "触媒を使うと反応物の位置が下がりエネルギー差が大きくなる。したがって反応エンタルピーが変化する。"
+        }
+      ],
+      "explanation": "触媒使用時のエネルギー図では、反応物と生成物のエネルギーレベルは変わらず、その間にある活性化エネルギーの山だけが低くなります。これは別の反応経路を通ることを意味します。反応エンタルピー（出発点と到着点の差）は変わりません。",
+      "evidence": [
+        {
+          "source_id": "2_2_law_004",
+          "quote": "反応エンタルピーは変化しない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_law_004",
+        "2_2_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "触媒使用時のエネルギー図に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "触媒使用時のエネルギー図では、反応物と生成物のエネルギーレベルは変わらず、その間にある活性化エネルギーの山だけが低くなります。これは別の反応経路を通ることを意味します。反応エンタルピー（出発点と到着点の差）は変わりません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q034",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "五酸化二窒素の分解",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "五酸化二窒素の分解反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "全体の反応式で表される分解反応は実際には四つの素反応からなる多段階反応であり、速度式は一次反応の形をとる。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q034_c1",
+          "tts_text": "全体の反応式で表される分解反応は実際には四つの素反応からなる多段階反応であり、速度式は一次反応の形をとる。"
+        },
+        {
+          "label": "2",
+          "text": "この反応は一段階の素反応として進行する。実際には四つの素反応からなる多段階反応であり一段階では完了しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "四つの素反応からなる多段階反応。",
+          "choice_id": "ch3_2_q034_c2",
+          "tts_text": "この反応は一段階の素反応として進行する。実際には四つの素反応からなる多段階反応であり一段階では完了しない。"
+        },
+        {
+          "label": "3",
+          "text": "この反応は多段階反応ではないため律速段階は存在しない。四つの素反応からなる多段階反応であるため律速段階（最も遅い段階）が存在する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多段階反応であり律速段階がある。",
+          "choice_id": "ch3_2_q034_c3",
+          "tts_text": "この反応は多段階反応ではないため律速段階は存在しない。四つの素反応からなる多段階反応であるため律速段階（最も遅い段階）が存在する。"
+        },
+        {
+          "label": "4",
+          "text": "反応速度は五酸化二窒素の濃度の二乗に比例する。実験により一次反応であることが確認されており濃度の一乗に比例する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一乗に比例する（一次反応）。",
+          "choice_id": "ch3_2_q034_c4",
+          "tts_text": "反応速度は五酸化二窒素の濃度の二乗に比例する。実験により一次反応であることが確認されており濃度の一乗に比例する。"
+        }
+      ],
+      "explanation": "五酸化二窒素の分解は教科書で最もよく出る多段階反応の例です。全体としては2molの五酸化二窒素から2molの四酸化二窒素と1molの酸素が生じますが、実際には四段階の素反応で進行します。律速段階が一次の素反応であるため、全体の速度式も一次反応になります。",
+      "evidence": [
+        {
+          "source_id": "2_1_sub_004",
+          "quote": "分解反応は多段階反応である"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_sub_004",
+        "2_1_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "五酸化二窒素の分解反応について、正しい記述を選びなさい。",
+      "tts_explanation": "五酸化二窒素の分解は教科書で最もよく出る多段階反応の例です。全体としては二モルの五酸化二窒素から二モルの四酸化二窒素と一モルの酸素が生じますが、実際には四段階の素反応で進行します。律速段階が一次の素反応であるため、全体の速度式も一次反応になります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q035",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "procedure",
+      "sub_category": "エネルギー図の読み取り手順",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "エネルギー図から活性化エネルギーを読み取る方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応物のエネルギーレベルから遷移状態（山の頂上）のエネルギーレベルまでの差が活性化エネルギーである。反応エンタルピーは反応物と生成物のレベル差である。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q035_c1",
+          "tts_text": "反応物のエネルギーレベルから遷移状態（山の頂上）のエネルギーレベルまでの差が活性化エネルギーである。反応エンタルピーは反応物と生成物のレベル差である。"
+        },
+        {
+          "label": "2",
+          "text": "反応エンタルピーと活性化エネルギーは同じ値である。反応エンタルピーは反応物と生成物の差であり活性化エネルギーは反応物から遷移状態までの差であり全く別の量である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "異なる値。",
+          "choice_id": "ch3_2_q035_c2",
+          "tts_text": "反応エンタルピーと活性化エネルギーは同じ値である。反応エンタルピーは反応物と生成物の差であり活性化エネルギーは反応物から遷移状態までの差であり全く別の量である。"
+        },
+        {
+          "label": "3",
+          "text": "活性化エネルギーは生成物のレベルから遷移状態までの高さである。活性化エネルギーは反応物のレベルから遷移状態までの高さでありこれは逆反応の活性化エネルギーの定義との混同である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "反応物のレベルから遷移状態まで。生成物からの差は逆反応の活性化エネルギー。",
+          "choice_id": "ch3_2_q035_c3",
+          "tts_text": "活性化エネルギーは生成物のレベルから遷移状態までの高さである。活性化エネルギーは反応物のレベルから遷移状態までの高さでありこれは逆反応の活性化エネルギーの定義との混同である。"
+        },
+        {
+          "label": "4",
+          "text": "エネルギー図から数値を読み取ることはできない。エネルギー図から活性化エネルギーや反応エンタルピーの数値を直接読み取ることができる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "各レベルの差として読み取れる。",
+          "choice_id": "ch3_2_q035_c4",
+          "tts_text": "エネルギー図から数値を読み取ることはできない。エネルギー図から活性化エネルギーや反応エンタルピーの数値を直接読み取ることができる。"
+        }
+      ],
+      "explanation": "エネルギー図では三つの重要なレベルがあります。反応物の位置、遷移状態の位置（頂上）、生成物の位置です。反応物から頂上までの差が正反応の活性化エネルギー、生成物から頂上までの差が逆反応の活性化エネルギー、反応物と生成物の差が反応エンタルピーです。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_003",
+          "quote": "遷移状態のエネルギーと反応物のエネルギーとの差"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "エネルギー図から活性化エネルギーを読み取る方法として、正しいものを選びなさい。",
+      "tts_explanation": "エネルギー図では三つの重要なレベルがあります。反応物の位置、遷移状態の位置（頂上）、生成物の位置です。反応物から頂上までの差が正反応の活性化エネルギー、生成物から頂上までの差が逆反応の活性化エネルギー、反応物と生成物の差が反応エンタルピーです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q036",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "confusion",
+      "sub_category": "反応速度と平衡定数の混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "反応速度と平衡に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応速度が大きいことと平衡が生成物側にあることは別である。これは正しく速度が速いことと平衡位置が右寄りであることは異なる概念であり混同してはならない。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q036_c1",
+          "tts_text": "反応速度が大きいことと平衡が生成物側にあることは別である。これは正しく速度が速いことと平衡位置が右寄りであることは異なる概念であり混同してはならない。"
+        },
+        {
+          "label": "2",
+          "text": "速度定数が大きい反応が必ずしも平衡定数が大きいとは限らない。これは正しく速度定数と平衡定数は別の概念であり一方が大きくても他方が大きいとは限らない。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q036_c2",
+          "tts_text": "速度定数が大きい反応が必ずしも平衡定数が大きいとは限らない。これは正しく速度定数と平衡定数は別の概念であり一方が大きくても他方が大きいとは限らない。"
+        },
+        {
+          "label": "3",
+          "text": "触媒は反応速度を変えるが平衡定数を変えない。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q036_c3",
+          "tts_text": "触媒は反応速度を変えるが平衡定数を変えない。"
+        },
+        {
+          "label": "4",
+          "text": "反応速度が大きければ必ず生成物がたくさんできるため、反応速度が大きいイコール平衡が右にずれている。",
+          "is_correct": true,
+          "trap_type": "concept_confusion",
+          "trap_detail": "反応速度と平衡の位置は別の概念。速い反応でも平衡で生成物が少ないこともある。",
+          "choice_id": "ch3_2_q036_c4",
+          "tts_text": "反応速度が大きければ必ず生成物がたくさんできるため、反応速度が大きいイコール平衡が右にずれている。"
+        }
+      ],
+      "explanation": "反応速度と平衡の位置は全く別の概念です。反応速度は反応が進むスピードを、平衡定数は最終的な生成物と反応物の濃度の比を示します。速い反応でも平衡が反応物側にあれば生成物は少なくなります。この二つを混同しないことが重要です。",
+      "evidence": [
+        {
+          "source_id": "2_2_law_004",
+          "quote": "得られる生成物の総量は変わらない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_002",
+        "2_2_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応速度と平衡に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "反応速度と平衡の位置は全く別の概念です。反応速度は反応が進むスピードを、平衡定数は最終的な生成物と反応物の濃度の比を示します。速い反応でも平衡が反応物側にあれば生成物は少なくなります。この二つを混同しないことが重要です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q037",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "comprehensive",
+      "sub_category": "触媒の総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "触媒に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "触媒は活性化エネルギーの低い別経路を提供し反応速度を上げる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q037_c1",
+          "tts_text": "触媒は活性化エネルギーの低い別経路を提供し反応速度を上げる。"
+        },
+        {
+          "label": "2",
+          "text": "触媒は反応後に消費され、正反応だけを速くして平衡定数を大きくし、反応エンタルピーも変化させる。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。消費されない、正逆両方速くなる、平衡不変、エンタルピー不変。",
+          "choice_id": "ch3_2_q037_c2",
+          "tts_text": "触媒は反応後に消費され、正反応だけを速くして平衡定数を大きくし、反応エンタルピーも変化させる。"
+        },
+        {
+          "label": "3",
+          "text": "触媒は反応の前後で変化しないが途中で中間体を形成することがある。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q037_c3",
+          "tts_text": "触媒は反応の前後で変化しないが途中で中間体を形成することがある。"
+        },
+        {
+          "label": "4",
+          "text": "触媒は正反応も逆反応も同時に速くし平衡到達時間を短縮するが平衡定数は変えない。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q037_c4",
+          "tts_text": "触媒は正反応も逆反応も同時に速くし平衡到達時間を短縮するが平衡定数は変えない。"
+        }
+      ],
+      "explanation": "触媒についてのすべてのポイントをまとめた問題です。触媒は消費されず、正逆両反応を同時に速くし、平衡定数を変えず、反応エンタルピーも変化させません。変えるのは活性化エネルギーのみです。選択肢2はこれらすべてを誤って記述しています。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_004",
+          "quote": "反応の前後においてそれ自身は変化しない物質"
+        },
+        {
+          "source_id": "2_2_law_004",
+          "quote": "反応エンタルピーは変化しない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_004",
+        "2_2_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "触媒に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "触媒についてのすべてのポイントをまとめた問題です。触媒は消費されず、正逆両反応を同時に速くし、平衡定数を変えず、反応エンタルピーも変化させません。変えるのは活性化エネルギーのみです。「反応後に消費され、正反応だけを速くし、平衡定数を大きくし、反応エンタルピーも変化させる」という記述はすべて誤りです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q038",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "触媒のトンネル例え",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "触媒の役割を例えた記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "触媒は出発地を高くして到着地を低くする。触媒は出発地と到着地の高さを変えず峠やトンネルなど低い経路を提供する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "出発地も到着地も変わらない。",
+          "choice_id": "ch3_2_q038_c1",
+          "tts_text": "触媒は出発地を高くして到着地を低くする。触媒は出発地と到着地の高さを変えず峠やトンネルなど低い経路を提供する。"
+        },
+        {
+          "label": "2",
+          "text": "触媒はルートを変えず同じ山を速く登らせる。触媒は同じ険しい山を登るのではなく低い峠を通る新しいルートを提供するのが正しい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "別のルート（低い峠）を通らせる。",
+          "choice_id": "ch3_2_q038_c2",
+          "tts_text": "触媒はルートを変えず同じ山を速く登らせる。触媒は同じ険しい山を登るのではなく低い峠を通る新しいルートを提供するのが正しい。"
+        },
+        {
+          "label": "3",
+          "text": "高い山を越える代わりに低い峠やトンネルを通る新しいルートを作るのが触媒である。出発地と到着地の高さの差は変わらない。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q038_c3",
+          "tts_text": "高い山を越える代わりに低い峠やトンネルを通る新しいルートを作るのが触媒である。出発地と到着地の高さの差は変わらない。"
+        },
+        {
+          "label": "4",
+          "text": "山を削って出発地と到着地の高さの差を小さくするのが触媒である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "出発地と到着地の差（反応エンタルピー）は変わらない。",
+          "choice_id": "ch3_2_q038_c4",
+          "tts_text": "山を削って出発地と到着地の高さの差を小さくするのが触媒である。"
+        }
+      ],
+      "explanation": "触媒は「低い峠やトンネル」を提供するイメージです。高い山（大きな活性化エネルギー）を越えなくても低い峠（小さな活性化エネルギー）を通れば到着地に着けます。ただし出発地と到着地の標高差（反応エンタルピー）は変わりません。",
+      "evidence": [
+        {
+          "source_id": "2_2_law_004",
+          "quote": "高い山を越える代わりに、低い峠を越える新しいルートができます"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "触媒の役割を例えた記述として、正しいものを選びなさい。",
+      "tts_explanation": "触媒は「低い峠やトンネル」を提供するイメージです。高い山（大きな活性化エネルギー）を越えなくても低い峠（小さな活性化エネルギー）を通れば到着地に着けます。ただし出発地と到着地の標高差（反応エンタルピー）は変わりません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q039",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "生体内の触媒（酵素）",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "生体内の触媒について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酵素は温度に関係なく同じ速度で働く。酵素はタンパク質であるため高温で失活し低温では活性が低下するなど温度に大きく依存する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度に大きく依存し高温で失活する。",
+          "choice_id": "ch3_2_q039_c1",
+          "tts_text": "酵素は温度に関係なく同じ速度で働く。酵素はタンパク質であるため高温で失活し低温では活性が低下するなど温度に大きく依存する。"
+        },
+        {
+          "label": "2",
+          "text": "酵素は無機物の一種である。酵素はタンパク質からなる有機物の生体触媒であり無機物ではなく生体内で合成される高分子化合物である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "タンパク質であり有機物。",
+          "choice_id": "ch3_2_q039_c2",
+          "tts_text": "酵素は無機物の一種である。酵素はタンパク質からなる有機物の生体触媒であり無機物ではなく生体内で合成される高分子化合物である。"
+        },
+        {
+          "label": "3",
+          "text": "生体内では酵素がタンパク質からなる触媒として働き、体温付近の穏やかな条件で化学反応を効率よく進行させる。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q039_c3",
+          "tts_text": "生体内では酵素がタンパク質からなる触媒として働き、体温付近の穏やかな条件で化学反応を効率よく進行させる。"
+        },
+        {
+          "label": "4",
+          "text": "生体内には触媒は存在しない。生体内では酵素という高効率なタンパク質からなる触媒が数千種類以上働いている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酵素という触媒が多数存在する。",
+          "choice_id": "ch3_2_q039_c4",
+          "tts_text": "生体内には触媒は存在しない。生体内では酵素という高効率なタンパク質からなる触媒が数千種類以上働いている。"
+        }
+      ],
+      "explanation": "酵素は生体内で働くタンパク質からなる触媒です。活性化エネルギーを大幅に下げることで、体温（約37℃）という穏やかな条件で効率よく化学反応を進行させます。温度が高すぎると変性（失活）して機能を失います。",
+      "evidence": [],
+      "related_concept_ids": [
+        "2_2_def_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "生体内の触媒について、正しい記述を選びなさい。",
+      "tts_explanation": "酵素は生体内で働くタンパク質からなる触媒です。活性化エネルギーを大幅に下げることで、体温（約三十七度）という穏やかな条件で効率よく化学反応を進行させます。温度が高すぎると変性（失活）して機能を失います。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q040",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "confusion",
+      "sub_category": "反応物と生成物の速度の符号",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "反応速度の表し方に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "生成物は増加するため濃度変化はプラスでそのまま正の速度になる。これは正しい記述であり生成物は時間とともに増えるため濃度変化は正で速度も正になる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q040_c1",
+          "tts_text": "生成物は増加するため濃度変化はプラスでそのまま正の速度になる。これは正しい記述であり生成物は時間とともに増えるため濃度変化は正で速度も正になる。"
+        },
+        {
+          "label": "2",
+          "text": "反応物は消費されるため濃度変化はマイナスだが速度は絶対値で正に表す。これは正しい記述であり反応速度は常に正の値で表すため反応物の濃度減少は絶対値をとる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q040_c2",
+          "tts_text": "反応物は消費されるため濃度変化はマイナスだが速度は絶対値で正に表す。これは正しい記述であり反応速度は常に正の値で表すため反応物の濃度減少は絶対値をとる。"
+        },
+        {
+          "label": "3",
+          "text": "反応が進むと一般に反応物の濃度が減り速度は低下する。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q040_c3",
+          "tts_text": "反応が進むと一般に反応物の濃度が減り速度は低下する。"
+        },
+        {
+          "label": "4",
+          "text": "反応速度はマイナスの値で表すのが正式である。速度がマイナス〇・〇5mol毎リットル毎秒のように負の値で記す。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "絶対値をとって正の値で表すのが正式。",
+          "choice_id": "ch3_2_q040_c4",
+          "tts_text": "反応速度はマイナスの値で表すのが正式である。速度がマイナス〇・〇五モル毎リットル毎秒のように負の値で記す。"
+        }
+      ],
+      "explanation": "反応速度は常に正の値で表します。反応物の濃度は時間とともに減少するため変化量はマイナスになりますが、速度を求める際には絶対値をとって正にします。マイナスの速度という表現は使いません。",
+      "evidence": [
+        {
+          "source_id": "2_1_eq_001",
+          "quote": "絶対値をつけて正の値にして扱います"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_eq_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応速度の表し方に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "反応速度は常に正の値で表します。反応物の濃度は時間とともに減少するため変化量はマイナスになりますが、速度を求める際には絶対値をとって正にします。マイナスの速度という表現は使いません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q041",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "活性錯体",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "活性錯体について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "遷移状態にある分子の集まりを活性錯体と呼ぶ。反応物でも生成物でもない瞬間的な中間構造であり非常に不安定である。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q041_c1",
+          "tts_text": "遷移状態にある分子の集まりを活性錯体と呼ぶ。反応物でも生成物でもない瞬間的な中間構造であり非常に不安定である。"
+        },
+        {
+          "label": "2",
+          "text": "活性錯体は触媒と同じものである。活性錯体は遷移状態にある不安定な中間構造であり触媒は反応速度を上げる物質であるため全く別のものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "異なる概念。",
+          "choice_id": "ch3_2_q041_c2",
+          "tts_text": "活性錯体は触媒と同じものである。活性錯体は遷移状態にある不安定な中間構造であり触媒は反応速度を上げる物質であるため全く別のものである。"
+        },
+        {
+          "label": "3",
+          "text": "活性錯体は安定な中間生成物であり長時間存在する。逆で活性錯体は非常に不安定であり瞬間的にしか存在しない遷移状態の構造である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不安定で瞬間的にしか存在しない。",
+          "choice_id": "ch3_2_q041_c3",
+          "tts_text": "活性錯体は安定な中間生成物であり長時間存在する。逆で活性錯体は非常に不安定であり瞬間的にしか存在しない遷移状態の構造である。"
+        },
+        {
+          "label": "4",
+          "text": "活性錯体はすべての反応で単離・捕集できる。活性錯体は瞬間的にしか存在しない不安定な構造であるため通常の方法では単離や捕集はできない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "瞬間的な存在なので通常単離できない。",
+          "choice_id": "ch3_2_q041_c4",
+          "tts_text": "活性錯体はすべての反応で単離・捕集できる。活性錯体は瞬間的にしか存在しない不安定な構造であるため通常の方法では単離や捕集はできない。"
+        }
+      ],
+      "explanation": "活性錯体は遷移状態にある分子の集合体であり、反応物から生成物へ変わる途中の瞬間的な構造です。非常に不安定で一瞬しか存在しないため通常は捕集できません。触媒が作る中間体とは別の概念です。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_001",
+          "quote": "山の頂上に例えられます。この状態に達した分子の集まりを「活性錯体」と呼びます"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "活性錯体について、正しい記述を選びなさい。",
+      "tts_explanation": "活性錯体は遷移状態にある分子の集合体であり、反応物から生成物へ変わる途中の瞬間的な構造です。非常に不安定で一瞬しか存在しないため通常は捕集できません。触媒が作る中間体とは別の概念です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q042",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "procedure",
+      "sub_category": "速度に影響する因子の実験的調べ方",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "反応速度に影響する因子を調べる実験方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "調べたい因子のみを変え他の条件は一定に保つ制御実験を行い、速度の変化を比較する。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q042_c1",
+          "tts_text": "調べたい因子のみを変え他の条件は一定に保つ制御実験を行い、速度の変化を比較する。"
+        },
+        {
+          "label": "2",
+          "text": "どの因子が影響するかは予めわかっているため調べる必要はない。因子の影響は反応ごとに異なるため制御実験で実際に確かめる必要がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "定量的な影響は実験で調べる必要がある。",
+          "choice_id": "ch3_2_q042_c2",
+          "tts_text": "どの因子が影響するかは予めわかっているため調べる必要はない。因子の影響は反応ごとに異なるため制御実験で実際に確かめる必要がある。"
+        },
+        {
+          "label": "3",
+          "text": "すべての条件を同時に変えて結果を比較する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一度に一つだけ変える制御実験が必要。",
+          "choice_id": "ch3_2_q042_c3",
+          "tts_text": "すべての条件を同時に変えて結果を比較する。"
+        },
+        {
+          "label": "4",
+          "text": "理論的に予測するだけで実験は不要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "実験が不可欠。",
+          "choice_id": "ch3_2_q042_c4",
+          "tts_text": "理論的に予測するだけで実験は不要である。"
+        }
+      ],
+      "explanation": "反応速度に対する各因子の影響を調べるには制御実験が基本です。調べたい一つの因子（たとえば温度）だけを変え、他の条件（濃度、触媒など）は一定に保ちます。こうすることで速度の変化がその因子によるものであることを確認できます。",
+      "evidence": [
+        {
+          "source_id": "2_1_eq_002",
+          "quote": "実験データから反応速度式を決定する"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_eq_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応速度に影響する因子を調べる実験方法として、正しいものを選びなさい。",
+      "tts_explanation": "反応速度に対する各因子の影響を調べるには制御実験が基本です。調べたい一つの因子（たとえば温度）だけを変え、他の条件（濃度、触媒など）は一定に保ちます。こうすることで速度の変化がその因子によるものであることを確認できます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q043",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "mnemonic",
+      "sub_category": "活性化エネルギーの壁の例え",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "活性化エネルギーの覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "壁が高いほど反応が速いと覚える。逆で壁が低いほど分子が越えやすくなり反応が速い。活性化エネルギーは低い方が反応に有利である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "壁が低いほど速い。",
+          "choice_id": "ch3_2_q043_c1",
+          "tts_text": "壁が高いほど反応が速いと覚える。逆で壁が低いほど分子が越えやすくなり反応が速い。活性化エネルギーは低い方が反応に有利である。"
+        },
+        {
+          "label": "2",
+          "text": "「壁が低いほど越えやすい」つまり活性化エネルギーが小さいほど反応が速いと覚える。触媒は壁を低くする役割である。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q043_c2",
+          "tts_text": "「壁が低いほど越えやすい」つまり活性化エネルギーが小さいほど反応が速いと覚える。触媒は壁を低くする役割である。"
+        },
+        {
+          "label": "3",
+          "text": "触媒は壁を高くする。逆で触媒は壁を低くする役割であり活性化エネルギーの小さな別の反応経路を提供して反応を速くする。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "壁を低くする。",
+          "choice_id": "ch3_2_q043_c3",
+          "tts_text": "触媒は壁を高くする。逆で触媒は壁を低くする役割であり活性化エネルギーの小さな別の反応経路を提供して反応を速くする。"
+        },
+        {
+          "label": "4",
+          "text": "壁の高さは反応エンタルピーのことである。壁の高さは活性化エネルギーのことであり反応物と生成物のエネルギー差である反応エンタルピーとは別の概念である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "活性化エネルギーのこと。",
+          "choice_id": "ch3_2_q043_c4",
+          "tts_text": "壁の高さは反応エンタルピーのことである。壁の高さは活性化エネルギーのことであり反応物と生成物のエネルギー差である反応エンタルピーとは別の概念である。"
+        }
+      ],
+      "explanation": "活性化エネルギーは「反応の壁」のイメージで覚えましょう。壁が低ければ多くの分子が越えられるため反応は速く進みます。触媒はこの壁を低くする（別の低い壁のルートを提供する）働きをします。温度を上げるのは分子のジャンプ力を上げて壁を越えさせるイメージです。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_003",
+          "quote": "エネルギーの壁の高さです。この壁が低いほど、反応は簡単に速く進みます"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_003"
+      ],
+      "mnemonic": "壁（活性化エネルギー）が低いほど反応は速い",
+      "tts_question": "活性化エネルギーの覚え方として、正しいものを選びなさい。",
+      "tts_explanation": "活性化エネルギーは「反応の壁」のイメージで覚えましょう。壁が低ければ多くの分子が越えられるため反応は速く進みます。触媒はこの壁を低くする（別の低い壁のルートを提供する）働きをします。温度を上げるのは分子のジャンプ力を上げて壁を越えさせるイメージです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q044",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "confusion",
+      "sub_category": "逆反応の活性化エネルギー",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "逆反応の活性化エネルギーに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "正反応の活性化エネルギーと逆反応の活性化エネルギーの差は反応エンタルピーの絶対値に等しい。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q044_c1",
+          "tts_text": "正反応の活性化エネルギーと逆反応の活性化エネルギーの差は反応エンタルピーの絶対値に等しい。"
+        },
+        {
+          "label": "2",
+          "text": "正反応と逆反応の活性化エネルギーは常に等しい。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "等しいのは反応エンタルピーがゼロの場合のみ。通常は異なる。",
+          "choice_id": "ch3_2_q044_c2",
+          "tts_text": "正反応と逆反応の活性化エネルギーは常に等しい。"
+        },
+        {
+          "label": "3",
+          "text": "逆反応の活性化エネルギーは生成物のエネルギーレベルから遷移状態までの高さである。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q044_c3",
+          "tts_text": "逆反応の活性化エネルギーは生成物のエネルギーレベルから遷移状態までの高さである。"
+        },
+        {
+          "label": "4",
+          "text": "発熱反応では逆反応の活性化エネルギーの方が正反応より大きい。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q044_c4",
+          "tts_text": "発熱反応では逆反応の活性化エネルギーの方が正反応より大きい。"
+        }
+      ],
+      "explanation": "正反応の活性化エネルギーは反応物から遷移状態まで、逆反応は生成物から遷移状態までの差です。発熱反応では生成物のエネルギーが低いため逆反応の活性化エネルギーの方が大きくなります。二つの差が反応エンタルピーに相当します。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_003",
+          "quote": "エネルギー図から活性化エネルギーや反応エンタルピーを読み取る"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "逆反応の活性化エネルギーに関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "正反応の活性化エネルギーは反応物から遷移状態まで、逆反応は生成物から遷移状態までの差です。発熱反応では生成物のエネルギーが低いため逆反応の活性化エネルギーの方が大きくなります。二つの差が反応エンタルピーに相当します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q045",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "comprehensive",
+      "sub_category": "反応のしくみの総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "化学反応のしくみに関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "反応は粒子の衝突で起こり、活性化エネルギー以上の有効衝突のみが生成物を生む。遷移状態の活性錯体を経由する。多段階反応では律速段階が全体を支配する。温度上昇は有効衝突の割合を増やす。触媒は活性化エネルギーを下げる。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q045_c1",
+          "tts_text": "反応は粒子の衝突で起こり、活性化エネルギー以上の有効衝突のみが生成物を生む。遷移状態の活性錯体を経由する。多段階反応では律速段階が全体を支配する。温度上昇は有効衝突の割合を増やす。触媒は活性化エネルギーを下げる。"
+        },
+        {
+          "label": "2",
+          "text": "粒子のすべての衝突がそのまま生成物を生み、遷移状態という中間体は存在せず、多段階反応でもすべての段階が等しく速度に寄与し、温度は反応速度とまったく無関係であり、触媒は活性化エネルギーを上げる働きをすると勘違いされやすいが、五箇所すべて誤りである。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "五か所すべて誤り。",
+          "choice_id": "ch3_2_q045_c2",
+          "tts_text": "粒子のすべての衝突がそのまま生成物を生み、遷移状態という中間体は存在せず、多段階反応でもすべての段階が等しく速度に寄与し、温度は反応速度とまったく無関係であり、触媒は活性化エネルギーを上げる働きをすると勘違いされやすいが、五箇所すべて誤りである。"
+        },
+        {
+          "label": "3",
+          "text": "律速段階は最も速い段階であり触媒は生成物量を増やす。律速段階は最も遅い段階であり触媒は速度を上げるだけで生成物の最終量は変わらない。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "二か所誤り。",
+          "choice_id": "ch3_2_q045_c3",
+          "tts_text": "律速段階は最も速い段階であり触媒は生成物量を増やす。律速段階は最も遅い段階であり触媒は速度を上げるだけで生成物の最終量は変わらない。"
+        },
+        {
+          "label": "4",
+          "text": "活性化エネルギーが大きいほど反応のエネルギーが大きく反応の勢いが増すため反応速度が速くなるという直感的な説明が正しそうに思えるが、実際は活性化エネルギーが大きいほど反応は遅くなるのが正しい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "小さいほど速い。",
+          "choice_id": "ch3_2_q045_c4",
+          "tts_text": "活性化エネルギーが大きいほど反応のエネルギーが大きく反応の勢いが増すため反応速度が速くなるという直感的な説明が正しそうに思えるが、実際は活性化エネルギーが大きいほど反応は遅くなるのが正しい。"
+        }
+      ],
+      "explanation": "この章全体のまとめです。反応は有効衝突で起こり遷移状態を経由します。多段階反応では最も遅い律速段階が支配的です。温度上昇は衝突の激しさと有効衝突の割合を増やします。触媒は活性化エネルギーを下げて反応速度を上げますが反応エンタルピーや生成物量は変えません。",
+      "evidence": [
+        {
+          "source_id": "2_2_def_003",
+          "quote": "活性化エネルギーの壁を越えなければならない"
+        },
+        {
+          "source_id": "2_2_law_004",
+          "quote": "活性化エネルギーのより小さな別の反応経路を通る"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_001",
+        "2_1_def_004",
+        "2_2_def_001",
+        "2_2_def_003",
+        "2_2_def_004",
+        "2_2_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "化学反応のしくみに関する総合的な記述として、正しいものを選びなさい。",
+      "tts_explanation": "この章全体のまとめです。反応は有効衝突で起こり遷移状態を経由します。多段階反応では最も遅い律速段階が支配的です。温度上昇は衝突の激しさと有効衝突の割合を増やします。触媒は活性化エネルギーを下げて反応速度を上げますが反応エンタルピーや生成物量は変えません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q046",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "十度則",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "温度と反応速度の経験則として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度を10℃上げるとおよそ二〜三倍に反応速度が増大するという経験則がある。正確な倍率は反応の種類と活性化エネルギーによって異なる。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q046_c1",
+          "tts_text": "温度を十度上げるとおよそ二〜三倍に反応速度が増大するという経験則がある。正確な倍率は反応の種類と活性化エネルギーによって異なる。"
+        },
+        {
+          "label": "2",
+          "text": "温度を10℃上げると速度は必ず十倍になる。一般に10℃上昇で二〜三倍程度であり十倍になるわけではない。正確な倍率は反応により異なる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二〜三倍程度。十倍にはならない。",
+          "choice_id": "ch3_2_q046_c2",
+          "tts_text": "温度を十度上げると速度は必ず十倍になる。一般に十度上昇で二〜三倍程度であり十倍になるわけではない。正確な倍率は反応により異なる。"
+        },
+        {
+          "label": "3",
+          "text": "温度を上げると反応速度は減少する。逆で温度を上げると有効衝突の割合が増えるため反応速度は増大する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "増大する。",
+          "choice_id": "ch3_2_q046_c3",
+          "tts_text": "温度を上げると反応速度は減少する。逆で温度を上げると有効衝突の割合が増えるため反応速度は増大する。"
+        },
+        {
+          "label": "4",
+          "text": "温度と反応速度は無関係であり法則はない。温度は反応速度に大きく影響し10℃で二〜三倍という経験則が広く知られている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密接に関係する。",
+          "choice_id": "ch3_2_q046_c4",
+          "tts_text": "温度と反応速度は無関係であり法則はない。温度は反応速度に大きく影響し十度で二〜三倍という経験則が広く知られている。"
+        }
+      ],
+      "explanation": "10℃則（ファントホッフの法則）は温度を10℃上げると反応速度が約二〜三倍になるという経験則です。正確な倍率は反応ごとに異なり、活性化エネルギーが大きい反応ほど温度の影響を大きく受けます。",
+      "evidence": [],
+      "related_concept_ids": [
+        "2_2_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "温度と反応速度の経験則として、正しいものを選びなさい。",
+      "tts_explanation": "十度則（ファントホッフの法則）は温度を十度上げると反応速度が約二〜三倍になるという経験則です。正確な倍率は反応ごとに異なり、活性化エネルギーが大きい反応ほど温度の影響を大きく受けます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q047",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "confusion",
+      "sub_category": "瞬間速度と平均速度の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "反応速度の測定に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "時間区間が短いほど平均速度は瞬間速度に近づく。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q047_c1",
+          "tts_text": "時間区間が短いほど平均速度は瞬間速度に近づく。"
+        },
+        {
+          "label": "2",
+          "text": "平均の反応速度はある時間区間での平均的な速さである。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q047_c2",
+          "tts_text": "平均の反応速度はある時間区間での平均的な速さである。"
+        },
+        {
+          "label": "3",
+          "text": "平均速度と瞬間速度は常に同じ値であり区別する必要はない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "反応速度は時間とともに変化するため一般に異なる。",
+          "choice_id": "ch3_2_q047_c3",
+          "tts_text": "平均速度と瞬間速度は常に同じ値であり区別する必要はない。"
+        },
+        {
+          "label": "4",
+          "text": "瞬間の反応速度は特定の時刻における速さであり、濃度‐時間グラフの接線の傾きで求められる。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q047_c4",
+          "tts_text": "瞬間の反応速度は特定の時刻における速さであり、濃度‐時間グラフの接線の傾きで求められる。"
+        }
+      ],
+      "explanation": "平均速度はある区間全体での平均であり、瞬間速度はある一瞬での速さです。反応が進むと反応物の濃度が減り速度も変化するため、通常は平均速度と瞬間速度は異なります。時間区間を非常に短くすればその区間の平均速度は瞬間速度に近づきます。",
+      "evidence": [
+        {
+          "source_id": "2_1_eq_001",
+          "quote": "反応の速さは時間とともに変わることが多い"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_eq_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応速度の測定に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "平均速度はある区間全体での平均であり、瞬間速度はある一瞬での速さです。反応が進むと反応物の濃度が減り速度も変化するため、通常は平均速度と瞬間速度は異なります。時間区間を非常に短くすればその区間の平均速度は瞬間速度に近づきます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_2_q048",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "property",
+      "sub_category": "負触媒（抑制剤）",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "負触媒（反応抑制剤）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "負触媒という概念は存在しない。すべての触媒は反応を速くする。負触媒は存在し食品の酸化防止剤のように反応を遅くする物質として実用されている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "遅くする触媒も存在する。",
+          "choice_id": "ch3_2_q048_c1",
+          "tts_text": "負触媒という概念は存在しない。すべての触媒は反応を速くする。負触媒は存在し食品の酸化防止剤のように反応を遅くする物質として実用されている。"
+        },
+        {
+          "label": "2",
+          "text": "反応速度を遅くする物質であり、活性化エネルギーのより大きな経路を通らせる。食品の酸化防止剤はこの一例である。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q048_c2",
+          "tts_text": "反応速度を遅くする物質であり、活性化エネルギーのより大きな経路を通らせる。食品の酸化防止剤はこの一例である。"
+        },
+        {
+          "label": "3",
+          "text": "負触媒は自身が反応中に消費される。負触媒も通常の触媒と同様に反応の前後で変化せず消費されない物質である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "触媒なので消費されない。",
+          "choice_id": "ch3_2_q048_c3",
+          "tts_text": "負触媒は自身が反応中に消費される。負触媒も通常の触媒と同様に反応の前後で変化せず消費されない物質である。"
+        },
+        {
+          "label": "4",
+          "text": "負触媒は反応速度を速くする。逆で負触媒は反応速度を遅くする物質であり活性化エネルギーのより大きな経路を通らせる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "遅くする。",
+          "choice_id": "ch3_2_q048_c4",
+          "tts_text": "負触媒は反応速度を速くする。逆で負触媒は反応速度を遅くする物質であり活性化エネルギーのより大きな経路を通らせる。"
+        }
+      ],
+      "explanation": "触媒の中には反応速度を遅くする「負触媒」（反応抑制剤）があります。通常の触媒（正触媒）が活性化エネルギーを下げるのに対し、負触媒はより大きな活性化エネルギーの経路を通らせます。食品の酸化防止剤や過酸化水素の安定剤が身近な例です。",
+      "evidence": [],
+      "related_concept_ids": [
+        "2_2_def_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "負触媒（反応抑制剤）について、正しい記述を選びなさい。",
+      "tts_explanation": "触媒の中には反応速度を遅くする「負触媒」（反応抑制剤）があります。通常の触媒（正触媒）が活性化エネルギーを下げるのに対し、負触媒はより大きな活性化エネルギーの経路を通らせます。食品の酸化防止剤や過酸化水素の安定剤が身近な例です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q049",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "classification",
+      "sub_category": "速度に影響する四因子のまとめ",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "反応速度に影響する四つの因子の効果をまとめた記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "濃度・温度・触媒・表面積の四つの因子はいずれも反応速度を低下させる方向に寄与すると誤って覚えやすいが、この四つの因子はいずれも反応速度を増大させる方向に働くものであり低下ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "いずれも速度を上げる方向に働かせることができる。",
+          "choice_id": "ch3_2_q049_c1",
+          "tts_text": "濃度・温度・触媒・表面積の四つの因子はいずれも反応速度を低下させる方向に寄与すると誤って覚えやすいが、この四つの因子はいずれも反応速度を増大させる方向に働くものであり低下ではない。"
+        },
+        {
+          "label": "2",
+          "text": "触媒を加えることと温度を上げることは全く同じ効果を示す。触媒は活性化エネルギーを下げ温度は有効衝突割合を増やすという異なるメカニズムで効果を発揮する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "メカニズムが異なる。触媒は別経路、温度は運動エネルギー増加。",
+          "choice_id": "ch3_2_q049_c2",
+          "tts_text": "触媒を加えることと温度を上げることは全く同じ効果を示す。触媒は活性化エネルギーを下げ温度は有効衝突割合を増やすという異なるメカニズムで効果を発揮する。"
+        },
+        {
+          "label": "3",
+          "text": "温度のみが速度に影響し他の三因子は無関係である。濃度・触媒・表面積も反応速度に大きく影響する因子であり温度だけではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "四因子すべてが影響する。",
+          "choice_id": "ch3_2_q049_c3",
+          "tts_text": "温度のみが速度に影響し他の三因子は無関係である。濃度・触媒・表面積も反応速度に大きく影響する因子であり温度だけではない。"
+        },
+        {
+          "label": "4",
+          "text": "濃度を上げると衝突回数が増え速度アップ。温度を上げると有効衝突割合が増え速度アップ。触媒は活性化エネルギーを下げて速度アップ。固体を粉末にすると接触面積が増え速度アップ。",
+          "is_correct": true,
+          "choice_id": "ch3_2_q049_c4",
+          "tts_text": "濃度を上げると衝突回数が増え速度アップ。温度を上げると有効衝突割合が増え速度アップ。触媒は活性化エネルギーを下げて速度アップ。固体を粉末にすると接触面積が増え速度アップ。"
+        }
+      ],
+      "explanation": "反応速度に影響する四因子のメカニズムを整理すると、濃度は衝突回数に、温度は有効衝突の割合に、触媒は活性化エネルギーに、表面積は接触面積にそれぞれ影響します。メカニズムは異なりますが、いずれも有効な衝突を増やして反応速度を上げるという点で共通しています。",
+      "evidence": [
+        {
+          "source_id": "2_2_law_001",
+          "quote": "衝突回数が増加し、反応速度は大きくなる"
+        }
+      ],
+      "related_concept_ids": [
+        "2_2_law_001",
+        "2_2_def_003",
+        "2_2_def_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "反応速度に影響する四つの因子の効果をまとめた記述として、正しいものを選びなさい。",
+      "tts_explanation": "反応速度に影響する四因子のメカニズムを整理すると、濃度は衝突回数に、温度は有効衝突の割合に、触媒は活性化エネルギーに、表面積は接触面積にそれぞれ影響します。メカニズムは異なりますが、いずれも有効な衝突を増やして反応速度を上げるという点で共通しています。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_2_q050",
+      "chapter": "3-2",
+      "chapter_title": "化学反応の速さとしくみ",
+      "category": "comprehensive",
+      "sub_category": "第三章第二節の全体総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "化学反応の速さとしくみに関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "活性化エネルギーが小さいほど反応は速く進み、触媒は活性化エネルギーの低い別経路を提供する。これは正しい記述であり反応速度と触媒に関する基本的な事実を正確に述べている。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q050_c1",
+          "tts_text": "活性化エネルギーが小さいほど反応は速く進み、触媒は活性化エネルギーの低い別経路を提供する。これは正しい記述であり反応速度と触媒に関する基本的な事実を正確に述べている。"
+        },
+        {
+          "label": "2",
+          "text": "速度式の指数は化学反応式の係数と常に一致する。触媒は反応後に消費される。律速段階は最も速い段階である。活性化エネルギーが大きいほど反応は速い。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。",
+          "choice_id": "ch3_2_q050_c2",
+          "tts_text": "速度式の指数は化学反応式の係数と常に一致する。触媒は反応後に消費される。律速段階は最も速い段階である。活性化エネルギーが大きいほど反応は速い。"
+        },
+        {
+          "label": "3",
+          "text": "反応速度は濃度・温度・触媒・表面積に影響される。反応速度式の指数は実験で決定する。これは正しい記述であり四つの因子と速度式の決定法について正確に要約している。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q050_c3",
+          "tts_text": "反応速度は濃度・温度・触媒・表面積に影響される。反応速度式の指数は実験で決定する。これは正しい記述であり四つの因子と速度式の決定法について正確に要約している。"
+        },
+        {
+          "label": "4",
+          "text": "多段階反応では律速段階（最も遅い段階）が全体の速さを支配する。これは正しい記述であり律速段階の概念を正確に表現している。",
+          "is_correct": false,
+          "choice_id": "ch3_2_q050_c4",
+          "tts_text": "多段階反応では律速段階（最も遅い段階）が全体の速さを支配する。これは正しい記述であり律速段階の概念を正確に表現している。"
+        }
+      ],
+      "explanation": "この章のすべての要点を総合した最終問題です。速度式の指数は係数と一致しない場合が多い。触媒は消費されない。律速段階は最も遅い段階。活性化エネルギーが小さいほど反応は速い。選択肢2はこれらのすべてを逆に記述した誤りの典型です。",
+      "evidence": [
+        {
+          "source_id": "2_1_eq_002",
+          "quote": "反応式の係数と必ずしも一致せず"
+        },
+        {
+          "source_id": "2_2_def_004",
+          "quote": "反応の前後においてそれ自身は変化しない"
+        }
+      ],
+      "related_concept_ids": [
+        "2_1_def_004",
+        "2_1_eq_002",
+        "2_2_def_003",
+        "2_2_def_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "化学反応の速さとしくみに関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "この章のすべての要点を総合した最終問題です。速度式の指数は係数と一致しない場合が多い。触媒は消費されない。律速段階は最も遅い段階。活性化エネルギーが小さいほど反応は速い。「係数と常に一致する」「消費される」「最も速い段階」「大きいほど速い」はこれらすべてを逆に記述した誤りの典型です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    }
   ]
 }

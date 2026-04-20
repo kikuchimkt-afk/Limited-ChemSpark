@@ -6,59 +6,3043 @@
     "textbook": "化学",
     "total_questions": 50,
     "version": "1.0",
-    "tts_policy": { "note": "TTS用。化学式・数式なし。", "no_chemical_formulas": true, "no_math_equations": true },
-    "trap_type_legend": { "keyword_swap": "キーワードすり替え", "concept_confusion": "類似概念混同", "property_swap": "性質入れ替え", "condition_change": "条件変更", "step_order": "手順入れ替え", "reason_swap": "理由すり替え", "partial_truth": "前半正後半誤", "multiple_swap": "複数すり替え", "negation": "肯定否定入れ替え" }
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    },
+    "display_policy": {
+      "note": "question / choices[].text / explanation は表示用（アラビア数字・単位記号・主要化学式）。tts_question / choices[].tts_text / tts_explanation は音声読み上げ用（漢数字・単位語・日本語化学名）。",
+      "display_fields": [
+        "question",
+        "choices[].text",
+        "explanation"
+      ],
+      "tts_fields": [
+        "tts_question",
+        "choices[].tts_text",
+        "tts_explanation"
+      ],
+      "number_unit_mapping": {
+        "立方センチメートルあたり": "cm³あたり",
+        "立方センチメートル": "cm³",
+        "キロジュール毎グラム": "kJ/g",
+        "キロジュール毎モル": "kJ/mol",
+        "キロジュール": "kJ",
+        "グラム毎モル": "g/mol",
+        "クーロン毎モル": "C/mol",
+        "グラム": "g",
+        "ミリリットル": "mL",
+        "モル": "mol",
+        "パーセント": "%",
+        "リットル": "L",
+        "アンペア": "A",
+        "クーロン": "C",
+        "度": "℃",
+        "気圧": "atm",
+        "パスカル": "Pa",
+        "ケルビン": "K"
+      },
+      "formula_mapping": {
+        "炭酸水素ナトリウム": "NaHCO₃",
+        "炭酸カルシウム": "CaCO₃",
+        "塩化マグネシウム": "MgCl₂",
+        "塩化カルシウム": "CaCl₂",
+        "塩化ナトリウム": "NaCl",
+        "水酸化ナトリウム": "NaOH",
+        "水酸化カルシウム": "Ca(OH)₂",
+        "硫酸ナトリウム": "Na₂SO₄",
+        "硝酸ナトリウム": "NaNO₃",
+        "硫酸銅": "CuSO₄",
+        "二酸化ケイ素": "SiO₂",
+        "二酸化硫黄": "SO₂",
+        "二酸化炭素": "CO₂",
+        "一酸化炭素": "CO",
+        "メタン": "CH₄",
+        "アンモニア": "NH₃"
+      }
+    },
+    "choice_shuffle_policy": {
+      "note": "choices[].choice_id は問題内で固有の安定識別子。アプリはユーザ提示時に choices を配列としてシャッフルし、choice_id と is_correct を参照して採点する。",
+      "runtime_shuffle": true,
+      "correct_positions_balanced_in_file": true
+    }
   },
   "questions": [
-    { "id": "ch3_3_q001", "chapter": "3-3", "chapter_title": "化学平衡", "category": "definition", "sub_category": "可逆反応の定義", "difficulty": 2, "question_type": "correct", "question": "可逆反応について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "正反応と逆反応のどちらの方向にも進行できる反応であり、両矢印で表される。密閉容器など物質が系外に逃げない条件が必要な場合が多い。", "is_correct": true }, { "label": "2", "text": "一方の方向にしか進行しない反応を可逆反応という。", "is_correct": false, "trap_type": "negation", "trap_detail": "それは不可逆反応。" }, { "label": "3", "text": "すべての化学反応は不可逆反応である。", "is_correct": false, "trap_type": "negation", "trap_detail": "多くの反応は可逆性をもつ。" }, { "label": "4", "text": "可逆反応では生成物は全く生じない。", "is_correct": false, "trap_type": "negation", "trap_detail": "生成物も反応物も共存する。" } ], "explanation": "可逆反応とは反応物から生成物ができるだけでなく、生成物から反応物に戻ることもできる反応です。アンモニアの合成と分解、ヨウ化水素の生成と分解が典型例です。燃焼反応のように一方向にしか進まないものは不可逆反応と呼ばれます。", "evidence": [ { "source_id": "3_3_def_001", "quote": "正反応と逆反応が、どちらの方向にも進行できる反応" } ], "related_concept_ids": ["3_3_def_001"], "mnemonic": null },
-    { "id": "ch3_3_q002", "chapter": "3-3", "chapter_title": "化学平衡", "category": "definition", "sub_category": "化学平衡の定義", "difficulty": 3, "question_type": "correct", "question": "化学平衡（平衡状態）について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "正反応と逆反応の速度が等しくなり、見かけ上反応が停止したように見える状態。実際には反応は進行しているが濃度が一定に保たれる動的平衡である。", "is_correct": true }, { "label": "2", "text": "平衡状態では分子の運動が完全に止まっている。", "is_correct": false, "trap_type": "negation", "trap_detail": "動的平衡であり反応は継続している。" }, { "label": "3", "text": "正反応の速度がゼロになった状態が平衡である。", "is_correct": false, "trap_type": "negation", "trap_detail": "ゼロではなく正逆が等しい。" }, { "label": "4", "text": "平衡状態では反応物は完全に消費されている。", "is_correct": false, "trap_type": "negation", "trap_detail": "反応物も生成物も共存する。" } ], "explanation": "化学平衡は動的平衡であり、正反応と逆反応が同じ速度で進行し続けています。見かけ上は何も変化していないように見えますが、ミクロレベルでは常に反応物が生成物になり、生成物が反応物に戻っています。この動的な性質を理解することが最重要ポイントです。", "evidence": [ { "source_id": "3_3_def_002", "quote": "正反応の反応速度と逆反応の反応速度が等しくなり、見かけ上反応が停止しているように見える状態" } ], "related_concept_ids": ["3_3_def_002"], "mnemonic": null },
-    { "id": "ch3_3_q003", "chapter": "3-3", "chapter_title": "化学平衡", "category": "definition", "sub_category": "化学平衡の法則", "difficulty": 3, "question_type": "correct", "question": "化学平衡の法則（質量作用の法則）について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "一定温度で平衡状態にあるとき、生成物の濃度の積と反応物の濃度の積の比は一定値になる。この値を濃度平衡定数という。", "is_correct": true }, { "label": "2", "text": "平衡定数は温度によって変化しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度が変われば平衡定数は変わる。" }, { "label": "3", "text": "平衡定数の式の分子に反応物、分母に生成物を配置する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "分子に生成物、分母に反応物。" }, { "label": "4", "text": "濃度が変わると平衡定数の値も変わる。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度一定なら平衡定数は一定。" } ], "explanation": "化学平衡の法則によれば、平衡定数の式は分子に生成物（右辺）、分母に反応物（左辺）のモル濃度を配置し、各々の係数をべき乗します。温度が一定であれば濃度や圧力を変えても平衡定数の値は変わりません。温度が変わると平衡定数は変化します。", "evidence": [ { "source_id": "3_3_law_001", "quote": "反応物の濃度の積と生成物の濃度の積の比は常に一定になる" } ], "related_concept_ids": ["3_3_law_001"], "mnemonic": null },
-    { "id": "ch3_3_q004", "chapter": "3-3", "chapter_title": "化学平衡", "category": "definition", "sub_category": "濃度平衡定数の式", "difficulty": 3, "question_type": "correct", "question": "濃度平衡定数の式について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "生成物のモル濃度の各べき乗の積を分子に、反応物のモル濃度の各べき乗の積を分母に配置する。固体が関与する場合は固体の濃度を式に含めない。", "is_correct": true }, { "label": "2", "text": "固体も液体も気体もすべて同様に式に含める。", "is_correct": false, "trap_type": "negation", "trap_detail": "固体は一定とみなし式に含めない。" }, { "label": "3", "text": "係数はべき乗にせずそのまま掛け算に使う。", "is_correct": false, "trap_type": "negation", "trap_detail": "係数をべき乗にする。" }, { "label": "4", "text": "逆反応の平衡定数は正反応と同じ値である。", "is_correct": false, "trap_type": "negation", "trap_detail": "逆反応の平衡定数は正反応の逆数。" } ], "explanation": "濃度平衡定数は「生成物の濃度の積」を「反応物の濃度の積」で割り、係数をべき乗にして求めます。固体の濃度は一定なので式に含めません。逆反応の平衡定数は正反応のそれの逆数になります。これは反応速度式の指数と違い、反応式の係数がそのまま使える点が重要です。", "evidence": [ { "source_id": "3_3_eq_001", "quote": "分子に右辺（生成物）、分母に左辺（反応物）のモル濃度を置き、反応式の係数をそれぞれ累乗" } ], "related_concept_ids": ["3_3_eq_001"], "mnemonic": null },
-    { "id": "ch3_3_q005", "chapter": "3-3", "chapter_title": "化学平衡", "category": "definition", "sub_category": "圧平衡定数の定義", "difficulty": 4, "question_type": "correct", "question": "圧平衡定数について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "すべてが気体からなる平衡で、モル濃度の代わりに各成分気体の分圧を用いて表した平衡定数である。温度一定なら一定値をとる。", "is_correct": true }, { "label": "2", "text": "液体や固体を含む反応にも圧平衡定数を使う。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "すべて気体の反応に用いる。" }, { "label": "3", "text": "圧平衡定数は常に濃度平衡定数と等しい。", "is_correct": false, "trap_type": "partial_truth", "trap_detail": "両辺の係数の和が等しい場合のみ等しい。" }, { "label": "4", "text": "圧力を変えると圧平衡定数の値が変わる。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度一定なら変わらない。" } ], "explanation": "圧平衡定数ケーピーは気体反応で分圧を使って表す平衡定数です。濃度平衡定数ケーシーとの関係はケーピーイコールケーシーかけるアールティーのデルタエヌ乗です。デルタエヌは生成物側の気体係数の和から反応物側の和を引いた値です。デルタエヌがゼロなら両者は等しくなります。", "evidence": [ { "source_id": "3_3_def_004", "quote": "モル濃度の代わりに各成分気体の分圧を用いて表した平衡定数" } ], "related_concept_ids": ["3_3_def_004"], "mnemonic": null },
-    { "id": "ch3_3_q006", "chapter": "3-3", "chapter_title": "化学平衡", "category": "definition", "sub_category": "平衡の移動の定義", "difficulty": 2, "question_type": "correct", "question": "平衡の移動について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "平衡状態で濃度・温度・圧力を変化させると新しい平衡状態になる現象であり、右辺の物質が増加する場合「右方向へ移動した」と表現する。", "is_correct": true }, { "label": "2", "text": "一度平衡に達すると二度と変化しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "条件を変えると新たな平衡に移動する。" }, { "label": "3", "text": "平衡の移動では正反応だけが起こり逆反応は止まる。", "is_correct": false, "trap_type": "negation", "trap_detail": "両方起こるがバランスが崩れて一方が優勢になる。" }, { "label": "4", "text": "平衡の移動は温度変化でのみ起こる。", "is_correct": false, "trap_type": "negation", "trap_detail": "濃度や圧力の変化でも起こる。" } ], "explanation": "平衡の移動とは、外部条件（濃度・温度・圧力）を変えたときに一時的に正逆反応のバランスが崩れ、新たな平衡状態に移行することです。条件変化を緩和する方向に移動するのがルシャトリエの原理です。", "evidence": [ { "source_id": "3_3_def_005", "quote": "濃度・温度・圧力などの条件を変化させると、初めとは違った量的関係の新しい平衡状態になる" } ], "related_concept_ids": ["3_3_def_005"], "mnemonic": null },
-    { "id": "ch3_3_q007", "chapter": "3-3", "chapter_title": "化学平衡", "category": "definition", "sub_category": "ルシャトリエの原理", "difficulty": 3, "question_type": "correct", "question": "ルシャトリエの原理について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "平衡の条件を変化させると、その変化の影響を緩和（相殺）する方向に平衡が移動する。温度を上げると吸熱方向へ、圧力を上げると分子数が減る方向へ移動する。", "is_correct": true }, { "label": "2", "text": "条件変化を促進する方向に平衡が移動する。", "is_correct": false, "trap_type": "negation", "trap_detail": "緩和する方向に移動する。" }, { "label": "3", "text": "ルシャトリエの原理は温度にのみ適用される。", "is_correct": false, "trap_type": "negation", "trap_detail": "濃度・温度・圧力すべてに適用される。" }, { "label": "4", "text": "圧力を上げると分子数が増える方向に移動する。", "is_correct": false, "trap_type": "negation", "trap_detail": "減る方向に移動する。" } ], "explanation": "ルシャトリエの原理は「外乱を鎮める鎮静剤」のイメージです。温度を上げれば温度を下げる吸熱方向へ、圧力を高めれば圧力を下げる分子数減少方向へ、ある物質の濃度を増やせばそれを消費する方向へ平衡が移動します。条件変化を完全に打ち消すのではなく「緩和」する点に注意です。", "evidence": [ { "source_id": "3_3_law_002", "quote": "その変化による影響を緩和する方向に平衡が移動する" } ], "related_concept_ids": ["3_3_law_002"], "mnemonic": "ルシャトリエの原理は鎮静剤。外からの影響をやわらげる。" },
-    { "id": "ch3_3_q008", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "濃度変化と平衡移動", "difficulty": 3, "question_type": "correct", "question": "濃度変化と平衡移動の関係として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "特定の物質の濃度を増加させるとそれを消費する方向へ平衡が移動し、減少させるとそれを補う方向へ移動する。温度一定なら平衡定数の値は変わらない。", "is_correct": true }, { "label": "2", "text": "物質の濃度を増加させるとさらに増加する方向に移動する。", "is_correct": false, "trap_type": "negation", "trap_detail": "消費する（減少させる）方向に移動。" }, { "label": "3", "text": "濃度を変化させると平衡定数も変化する。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度一定なら平衡定数は不変。" }, { "label": "4", "text": "生成物を取り除いても平衡は移動しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "生成物側を補おうと右方向に移動する。" } ], "explanation": "窒素を追加するとそれを消費しようとしてアンモニア生成方向に反応が進みます。逆に生成したアンモニアを取り除くとそれを補おうとして右方向に移動します。いずれの場合も温度が変わらない限り平衡定数ケーの値自体は変化しません。", "evidence": [ { "source_id": "3_3_law_003", "quote": "特定の物質の濃度を増加させるとそれを減少させる方向へ平衡が移動する" } ], "related_concept_ids": ["3_3_law_003"], "mnemonic": null },
-    { "id": "ch3_3_q009", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "温度変化と平衡移動", "difficulty": 3, "question_type": "correct", "question": "温度変化と平衡移動の関係として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "温度を上げると吸熱方向へ、温度を下げると発熱方向へ平衡が移動する。温度変化では平衡定数の値も変化する。", "is_correct": true }, { "label": "2", "text": "温度を上げると発熱方向に移動する。", "is_correct": false, "trap_type": "negation", "trap_detail": "吸熱方向に移動。" }, { "label": "3", "text": "温度を変えても平衡定数は変化しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度変化で平衡定数は変化する。" }, { "label": "4", "text": "温度変化は平衡の移動を一切起こさない。", "is_correct": false, "trap_type": "negation", "trap_detail": "最も大きな影響を与える因子の一つ。" } ], "explanation": "温度を上げると系は温度を下げようとして吸熱方向に平衡が移動します。アンモニア合成（発熱反応）では温度を上げると左方向（分解方向）に移動しアンモニアが減ります。重要なのは温度変化が平衡定数の値自体を変化させる唯一の因子であることです。", "evidence": [ { "source_id": "3_3_law_004", "quote": "温度を高くすると吸熱反応の方向へ、温度を低くすると発熱反応の方向へ平衡が移動する" } ], "related_concept_ids": ["3_3_law_004"], "mnemonic": null },
-    { "id": "ch3_3_q010", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "圧力変化と平衡移動", "difficulty": 3, "question_type": "correct", "question": "圧力変化と平衡移動の関係として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "圧力を高くすると気体分子の総数が減少する方向へ移動する。両辺の気体の係数の和が等しい場合は圧力変化で平衡は移動しない。", "is_correct": true }, { "label": "2", "text": "圧力を高くすると分子数が増加する方向へ移動する。", "is_correct": false, "trap_type": "negation", "trap_detail": "減少する方向。" }, { "label": "3", "text": "圧力変化で平衡定数が変化する。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度一定なら平衡定数は不変。" }, { "label": "4", "text": "すべての反応で圧力変化が平衡移動を起こす。", "is_correct": false, "trap_type": "negation", "trap_detail": "両辺の係数の和が等しい場合は移動しない。" } ], "explanation": "圧力を高めると系は圧力を下げるために気体分子の数を減らそうとします。アンモニア合成では左辺四分子、右辺二分子なので圧力を上げると分子数が減る右方向に移動しアンモニアが増えます。水素とヨウ素からヨウ化水素が生成する反応は両辺とも二分子なので圧力変化では平衡は移動しません。", "evidence": [ { "source_id": "3_3_law_005", "quote": "全体の圧力を大きくすると気体分子の総数が減少する方向へ平衡が移動する" } ], "related_concept_ids": ["3_3_law_005"], "mnemonic": null },
-    { "id": "ch3_3_q011", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "不活性気体の添加", "difficulty": 4, "question_type": "correct", "question": "不活性気体（アルゴンなど）の添加と平衡移動について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "体積一定で加えた場合は各成分気体の分圧が変わらないため平衡は移動しない。圧力一定で加えた場合は体積が増加し分圧が下がるため分子数が増える方向に移動する。", "is_correct": true }, { "label": "2", "text": "どちらの条件でも平衡は移動しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "圧力一定で加えた場合は移動する。" }, { "label": "3", "text": "どちらの条件でも平衡は移動する。", "is_correct": false, "trap_type": "negation", "trap_detail": "体積一定では移動しない。" }, { "label": "4", "text": "体積一定で加えると分子数が減る方向に移動する。", "is_correct": false, "trap_type": "negation", "trap_detail": "体積一定では移動しない。" } ], "explanation": "不活性気体の添加は「定積か定圧か」で結論が逆になるため頻出のひっかけ問題です。定積なら各成分の分圧が変わらないため移動しません。定圧なら容器が膨らんで各成分の分圧が下がるため、それを補おうと分子数が増える方向に移動します。", "evidence": [ { "source_id": "3_3_law_006", "quote": "定積で加えた場合は平衡移動しないが、定圧で加えた場合は分子数が増加する方向へ移動する" } ], "related_concept_ids": ["3_3_law_006"], "mnemonic": null },
-    { "id": "ch3_3_q012", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "触媒と平衡", "difficulty": 3, "question_type": "correct", "question": "触媒と平衡の関係として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "触媒は平衡に達するまでの時間を短縮するが、平衡状態での物質の割合や平衡定数は変えない。正反応も逆反応も同じ割合で速くなる。", "is_correct": true }, { "label": "2", "text": "触媒を加えると平衡が右方向に移動する。", "is_correct": false, "trap_type": "negation", "trap_detail": "平衡の位置は変わらない。" }, { "label": "3", "text": "触媒で生成物の収量が増加する。", "is_correct": false, "trap_type": "negation", "trap_detail": "収量は変わらない。" }, { "label": "4", "text": "触媒は正反応のみを速くし逆反応には影響しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "正逆両方を同じ割合で速くする。" } ], "explanation": "触媒は活性化エネルギーの低い別経路を提供して反応を速めますが、正反応と逆反応の両方に同じ影響を与えます。そのため平衡到達時間は短くなりますが平衡の位置（平衡定数）は変わりません。ハーバー・ボッシュ法で触媒を使うのは速度を上げるためであって収量を増やすためではありません。", "evidence": [ { "source_id": "3_3_tip_002", "quote": "平衡状態に達するまでの時間を短縮するが、平衡時の物質の割合は変えない" } ], "related_concept_ids": ["3_3_tip_002"], "mnemonic": "平衡は触媒で速く行っても同じこと" },
-    { "id": "ch3_3_q013", "chapter": "3-3", "chapter_title": "化学平衡", "category": "procedure", "sub_category": "ハーバー・ボッシュ法", "difficulty": 4, "question_type": "correct", "question": "ハーバー・ボッシュ法について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "窒素と水素から触媒存在下で高温・高圧条件でアンモニアを合成する工業的製法。発熱反応なので低温が平衡的に有利だが反応速度との妥協で約四百〜六百度を使う。", "is_correct": true }, { "label": "2", "text": "低圧条件が有利であり圧力は低く設定する。", "is_correct": false, "trap_type": "negation", "trap_detail": "高圧が有利。分子数が減る方向へ移動するため。" }, { "label": "3", "text": "触媒はアンモニアの収量を増やすために用いる。", "is_correct": false, "trap_type": "negation", "trap_detail": "反応速度を上げるために用いる。" }, { "label": "4", "text": "高温ほどアンモニアの平衡収量が増える。", "is_correct": false, "trap_type": "negation", "trap_detail": "発熱反応なので高温では収量が減る。" } ], "explanation": "アンモニア合成は発熱反応で分子数が減る反応です。ルシャトリエの原理から低温・高圧がアンモニアの収量に有利です。しかし低温すぎると反応が遅くなるため、妥協点として四百〜六百度・十〜三十メガパスカルの条件と鉄系触媒を用います。生成したアンモニアを冷却・液化して除去すると平衡がさらに右に移動します。", "evidence": [ { "source_id": "3_3_proc_001", "quote": "速度と収率の妥協点として約400～600℃、10～30MPaの条件を用います" } ], "related_concept_ids": ["3_3_proc_001"], "mnemonic": null },
-    { "id": "ch3_3_q014", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "平衡は停止しているという誤解", "difficulty": 3, "question_type": "incorrect", "question": "化学平衡に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "平衡状態では正反応と逆反応の速度が等しい。", "is_correct": false }, { "label": "2", "text": "見かけ上は反応が停止して見えるが実際は反応が進行している。", "is_correct": false }, { "label": "3", "text": "平衡状態での各物質の濃度は一定に保たれる。", "is_correct": false }, { "label": "4", "text": "平衡状態とは反応が完全に停止し分子の動きが止まった状態である。", "is_correct": true, "trap_type": "negation", "trap_detail": "動的平衡であり反応は止まっていない。" } ], "explanation": "化学平衡に関する最も多い誤解は「反応が止まっている」という考えです。実際には正反応と逆反応が同じ速度で進行し続ける動的平衡です。見かけ上は変化がないため静的に見えますが、放射性同位体を使ったトレーサー実験で反応が進行していることが確認できます。", "evidence": [ { "source_id": "3_3_def_002", "quote": "反応が完全に停止して分子の動きが止まっているわけではない（動的平衡）" } ], "related_concept_ids": ["3_3_def_002", "3_3_tip_001"], "mnemonic": null },
-    { "id": "ch3_3_q015", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "平衡定数の式の分子分母の入れ替え", "difficulty": 3, "question_type": "incorrect", "question": "平衡定数の式に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "平衡定数の式は分子に生成物、分母に反応物を配置する。", "is_correct": false }, { "label": "2", "text": "平衡定数の式では係数をべき乗にする。", "is_correct": false }, { "label": "3", "text": "温度一定なら平衡定数は一定である。", "is_correct": false }, { "label": "4", "text": "平衡定数の式は分子に反応物、分母に生成物を配置するのが正しい。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "逆。分子に生成物、分母に反応物。" } ], "explanation": "平衡定数の式で最も多い間違いは分子と分母の配置を逆にすることです。正しくは分子（上）に生成物、分母（下）に反応物を配置します。この逆を書いてしまうと逆反応の平衡定数（正反応の逆数）を計算してしまうことになります。", "evidence": [ { "source_id": "3_3_eq_001", "quote": "分子に右辺（生成物）、分母に左辺（反応物）" } ], "related_concept_ids": ["3_3_eq_001"], "mnemonic": null },
-    { "id": "ch3_3_q016", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "触媒で平衡が移動するという誤解", "difficulty": 3, "question_type": "incorrect", "question": "触媒と平衡に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "触媒は正反応も逆反応も速くする。", "is_correct": false }, { "label": "2", "text": "触媒は平衡到達時間を短縮する。", "is_correct": false }, { "label": "3", "text": "触媒は平衡定数を変えない。", "is_correct": false }, { "label": "4", "text": "触媒を加えると平衡が右方向に移動し生成物の収量が増加する。", "is_correct": true, "trap_type": "negation", "trap_detail": "平衡の位置は変わらない。収量は増加しない。" } ], "explanation": "触媒は正反応と逆反応の両方を同じ割合で速くするため、平衡に達する時間は早くなりますが、最終的な物質の割合（平衡の位置）は変わりません。ハーバー・ボッシュ法で触媒（鉄系）を使うのは反応を速くするためであって収量自体を増やすためではありません。", "evidence": [ { "source_id": "3_3_tip_002", "quote": "触媒を加えると生成物の収量が増加する（誤り）" } ], "related_concept_ids": ["3_3_tip_002"], "mnemonic": null },
-    { "id": "ch3_3_q017", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "温度変化での平衡定数不変の誤解", "difficulty": 4, "question_type": "incorrect", "question": "平衡定数の変化に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "濃度を変えても平衡定数は変わらない。", "is_correct": false }, { "label": "2", "text": "圧力を変えても温度一定なら平衡定数は変わらない。", "is_correct": false }, { "label": "3", "text": "温度を変えると平衡定数は変化する。", "is_correct": false }, { "label": "4", "text": "平衡定数はいかなる条件変化でも一定不変であり温度でも変わらない。", "is_correct": true, "trap_type": "negation", "trap_detail": "温度変化で平衡定数は変わる。" } ], "explanation": "平衡定数を変えるのは温度変化のみです。濃度変化や圧力変化では平衡は移動しますが平衡定数の値は変わりません。温度を変えると平衡定数が変化するため、たとえば発熱反応を加熱するとケーは小さくなります。", "evidence": [ { "source_id": "3_3_law_004", "quote": "平衡定数自体の値も変化します（発熱反応を加熱するとKは小さくなる）" } ], "related_concept_ids": ["3_3_law_004"], "mnemonic": null },
-    { "id": "ch3_3_q018", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "不活性気体添加の条件混同", "difficulty": 4, "question_type": "incorrect", "question": "不活性気体添加に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "体積一定で不活性気体を加えると各成分の分圧は変わらないため平衡は移動しない。", "is_correct": false }, { "label": "2", "text": "圧力一定で不活性気体を加えると体積が増え各成分の分圧が下がる。", "is_correct": false }, { "label": "3", "text": "圧力一定の場合は分子数が増える方向に移動する。", "is_correct": false }, { "label": "4", "text": "体積一定でも圧力一定でも不活性気体を加えれば必ず平衡は移動する。", "is_correct": true, "trap_type": "negation", "trap_detail": "体積一定では移動しない。" } ], "explanation": "不活性気体の添加で平衡が移動するかどうかは容器の条件に依存します。定積では全圧は上がりますが各成分の分圧は変わらないため移動しません。定圧では容器が膨張して各成分の分圧が下がるため分子数が増える方向に移動します。この区別は試験で最も間違いやすいポイントです。", "evidence": [ { "source_id": "3_3_law_006", "quote": "定積で加えた場合は平衡移動しないが、定圧で加えた場合は移動する" } ], "related_concept_ids": ["3_3_law_006"], "mnemonic": null },
-    { "id": "ch3_3_q019", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "ハーバー・ボッシュ法の温度設定理由", "difficulty": 4, "question_type": "incorrect", "question": "ハーバー・ボッシュ法の温度設定に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "アンモニア合成は発熱反応なので低温ほど平衡的に有利である。", "is_correct": false }, { "label": "2", "text": "低温すぎると反応速度が遅くなり実用的でない。", "is_correct": false }, { "label": "3", "text": "妥協点として四百〜六百度を採用している。", "is_correct": false }, { "label": "4", "text": "高温ほどアンモニアの平衡収量が増えるため、できるだけ高温にすべきである。", "is_correct": true, "trap_type": "negation", "trap_detail": "発熱反応なので高温では収量が減る。" } ], "explanation": "アンモニア合成は発熱反応なので高温にすると吸熱方向（分解方向）に移動しアンモニアの平衡収量は減ります。しかし低温すぎると触媒を使っても反応速度が遅すぎて実用になりません。そこで平衡収量と反応速度の両方を考慮した妥協温度として四百〜六百度が選ばれています。", "evidence": [ { "source_id": "3_3_proc_001", "quote": "低温すぎると反応速度が遅くなります。そのため、速度と収率の妥協点として設定" } ], "related_concept_ids": ["3_3_proc_001"], "mnemonic": null },
-    { "id": "ch3_3_q020", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "クロム酸イオンの平衡", "difficulty": 3, "question_type": "correct", "question": "クロム酸イオンとニクロム酸イオンの平衡について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "クロム酸イオン（黄色）の水溶液に酸を加えると水素イオンを消費する方向へ移動しニクロム酸イオン（赤橙色）が生成して色が変化する。", "is_correct": true }, { "label": "2", "text": "酸を加えるとクロム酸イオンが増加する。", "is_correct": false, "trap_type": "negation", "trap_detail": "ニクロム酸イオンが増加する。" }, { "label": "3", "text": "クロム酸イオンは赤橙色でニクロム酸イオンは黄色である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "逆。クロム酸が黄、ニクロム酸が赤橙。" }, { "label": "4", "text": "塩基を加えるとニクロム酸イオンが増加する。", "is_correct": false, "trap_type": "negation", "trap_detail": "塩基ではクロム酸イオンが増加する。" } ], "explanation": "クロム酸イオンとニクロム酸イオンの平衡は色の変化で目に見えるため教科書でよく取り上げられます。酸を加えると水素イオンを消費する右方向（ニクロム酸生成方向）に移動し黄色から赤橙色に変化します。逆に塩基を加えると左方向に移動し黄色に戻ります。", "evidence": [ { "source_id": "3_3_law_003", "quote": "酸（H+）を加えると、H+を消費する方向（右）へ移動し、ニクロム酸イオンが生成" } ], "related_concept_ids": ["3_3_law_003", "3_3_sub_005", "3_3_sub_006"], "mnemonic": null },
-    { "id": "ch3_3_q021", "chapter": "3-3", "chapter_title": "化学平衡", "category": "procedure", "sub_category": "ハーバー・ボッシュ法の手順", "difficulty": 4, "question_type": "correct", "question": "ハーバー・ボッシュ法の操作手順として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "鉄系触媒を用い、約四百〜六百度・十〜三十メガパスカルの条件で反応させ、生成したアンモニアを冷却・液化して取り除く。アンモニアを除くことで平衡をさらに右に移動させる。", "is_correct": true }, { "label": "2", "text": "触媒は使わず高温のみで反応させる。", "is_correct": false, "trap_type": "negation", "trap_detail": "鉄系触媒を使用する。" }, { "label": "3", "text": "生成したアンモニアはそのまま容器内に留めておく。", "is_correct": false, "trap_type": "negation", "trap_detail": "取り除くことで平衡をさらに右に移動させる。" }, { "label": "4", "text": "低圧条件を用いるのが最適である。", "is_correct": false, "trap_type": "negation", "trap_detail": "高圧条件が有利。" } ], "explanation": "ハーバー・ボッシュ法は四段階の最適化が行われています。第一に鉄系触媒で速度を確保。第二に妥協温度で平衡収量と速度のバランス。第三に高圧で分子数減少方向（右）に平衡を移動。第四にアンモニアを液化除去して濃度低下による右方向移動を促進します。", "evidence": [ { "source_id": "3_3_proc_001", "quote": "生成したアンモニアを冷却・液化して取り除く" } ], "related_concept_ids": ["3_3_proc_001"], "mnemonic": null },
-    { "id": "ch3_3_q022", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "係数の和が等しい場合の圧力効果", "difficulty": 4, "question_type": "incorrect", "question": "圧力変化と平衡移動に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "アンモニア合成は左辺四分子・右辺二分子なので高圧で右に移動する。", "is_correct": false }, { "label": "2", "text": "水素とヨウ素からヨウ化水素が生成する反応では両辺の分子数が等しいため圧力変化で平衡は移動しない。", "is_correct": false }, { "label": "3", "text": "圧力を変えても温度一定なら平衡定数は不変である。", "is_correct": false }, { "label": "4", "text": "水素とヨウ素からヨウ化水素生成の反応でも高圧にすれば右に移動する。", "is_correct": true, "trap_type": "negation", "trap_detail": "両辺二分子で等しいため移動しない。" } ], "explanation": "水素とヨウ素からヨウ化水素が生成する反応は両辺とも二分子です。圧力変化の影響は分子数の差がゼロのため生じません。すべての気体反応で圧力効果があるわけではなく、両辺の気体分子数の和を必ず確認する必要があります。", "evidence": [ { "source_id": "3_3_law_005", "quote": "両辺の気体の係数の和が等しい場合、圧力を変化させても平衡は移動しない" } ], "related_concept_ids": ["3_3_law_005"], "mnemonic": null },
-    { "id": "ch3_3_q023", "chapter": "3-3", "chapter_title": "化学平衡", "category": "mnemonic", "sub_category": "ルシャトリエの原理の覚え方", "difficulty": 2, "question_type": "correct", "question": "ルシャトリエの原理の覚え方として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "「鎮静剤」のイメージで覚える。外からの刺激（変化）を和らげる（緩和する）方向に平衡が移動する。", "is_correct": true }, { "label": "2", "text": "「増幅器」のイメージで覚える。外からの変化を増幅する方向に移動する。", "is_correct": false, "trap_type": "negation", "trap_detail": "増幅ではなく緩和。" }, { "label": "3", "text": "この覚え方は平衡定数の計算に関するものである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "平衡移動の方向に関する覚え方。" }, { "label": "4", "text": "ルシャトリエの原理は実際には成り立たないため覚える必要がない。", "is_correct": false, "trap_type": "negation", "trap_detail": "非常に重要な法則。" } ], "explanation": "ルシャトリエの原理を「鎮静剤」として覚えると便利です。「外から加えた刺激（温度上昇・圧力増加・物質追加）をやわらげるように」反応が進みます。温度を上げたら冷やすように（吸熱方向）、圧力を上げたら圧力を下げるように（分子数減少方向）移動すると覚えましょう。", "evidence": [ { "source_id": "3_3_law_002", "quote": "ルシャトリエの原理は鎮静剤。外からの影響をやわらげる" } ], "related_concept_ids": ["3_3_law_002"], "mnemonic": "ルシャトリエは鎮静剤" },
-    { "id": "ch3_3_q024", "chapter": "3-3", "chapter_title": "化学平衡", "category": "mnemonic", "sub_category": "平衡の動的性質の覚え方", "difficulty": 2, "question_type": "correct", "question": "化学平衡の動的性質の覚え方として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "「行きと帰りの速度が同じ」で覚える。止まっているのではなく行きと帰りが釣り合っているだけである。", "is_correct": true }, { "label": "2", "text": "「行きも帰りもゼロ」で覚える。両方とも反応が止まっている。", "is_correct": false, "trap_type": "negation", "trap_detail": "ゼロではなく等しい。" }, { "label": "3", "text": "この覚え方は不可逆反応に関するものである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "可逆反応の平衡に関する覚え方。" }, { "label": "4", "text": "行きの速度は帰りの速度より必ず大きい。", "is_correct": false, "trap_type": "negation", "trap_detail": "等しい。" } ], "explanation": "「行きと帰りの速度が同じ」というフレーズは平衡の本質を端的に表しています。エスカレーターの上りと下りに同じ速さで人が乗っている状態のように、全体の人数は変わらないけれど一人ひとりは動き続けています。これが動的平衡のイメージです。", "evidence": [ { "source_id": "3_3_tip_001", "quote": "平衡は行きと帰りの速度が同じ" } ], "related_concept_ids": ["3_3_tip_001"], "mnemonic": "平衡は行きと帰りの速度が同じ" },
-    { "id": "ch3_3_q025", "chapter": "3-3", "chapter_title": "化学平衡", "category": "classification", "sub_category": "平衡定数を変える因子", "difficulty": 3, "question_type": "correct", "question": "平衡定数を変える因子の分類として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "平衡定数を変えるのは温度変化のみである。濃度変化や圧力変化は平衡を移動させるが平衡定数の値は変えない。", "is_correct": true }, { "label": "2", "text": "濃度変化で平衡定数が変わる。", "is_correct": false, "trap_type": "negation", "trap_detail": "変わらない。" }, { "label": "3", "text": "圧力変化で平衡定数が変わる。", "is_correct": false, "trap_type": "negation", "trap_detail": "変わらない。" }, { "label": "4", "text": "触媒を加えると平衡定数が変わる。", "is_correct": false, "trap_type": "negation", "trap_detail": "変わらない。" } ], "explanation": "平衡定数に影響する因子を整理すると、温度のみが平衡定数を変化させます。濃度変化は平衡を移動させるが定数不変、圧力変化も同様、触媒は移動すらさせず定数も不変です。試験では「何が定数を変えるか」を問う問題が頻出です。", "evidence": [ { "source_id": "3_3_law_003", "quote": "温度が変わらない限り、平衡定数 K の値は一定に保たれる" } ], "related_concept_ids": ["3_3_law_003", "3_3_law_004"], "mnemonic": null },
-    { "id": "ch3_3_q026", "chapter": "3-3", "chapter_title": "化学平衡", "category": "classification", "sub_category": "ルシャトリエの原理の適用分類", "difficulty": 3, "question_type": "correct", "question": "ルシャトリエの原理の各条件変化への適用として、正しい組み合わせを選びなさい。", "choices": [ { "label": "1", "text": "温度上昇は吸熱方向、圧力増加は分子数減少方向、物質追加はそれを消費する方向へ移動。触媒は平衡を移動させない。", "is_correct": true }, { "label": "2", "text": "温度上昇は発熱方向、圧力増加は分子数増加方向に移動。", "is_correct": false, "trap_type": "negation", "trap_detail": "すべて逆。" }, { "label": "3", "text": "触媒は平衡を右方向に移動させる。", "is_correct": false, "trap_type": "negation", "trap_detail": "移動させない。" }, { "label": "4", "text": "物質を追加してもそのまま蓄積するだけで平衡は移動しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "消費する方向に移動する。" } ], "explanation": "ルシャトリエの原理を各因子に具体的に適用すると次のようになります。温度上昇→吸熱方向、温度低下→発熱方向。圧力増加→分子数減少方向、圧力減少→分子数増加方向。濃度追加→消費方向。触媒→移動なし。これを整理して覚えましょう。", "evidence": [ { "source_id": "3_3_law_002", "quote": "変化の影響を緩和する方向に平衡が移動する" } ], "related_concept_ids": ["3_3_law_002", "3_3_law_003", "3_3_law_004", "3_3_law_005", "3_3_tip_002"], "mnemonic": null },
-    { "id": "ch3_3_q027", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "固体を式に含める誤り", "difficulty": 3, "question_type": "incorrect", "question": "平衡定数の式に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "固体の濃度は一定とみなし平衡定数の式に含めない。", "is_correct": false }, { "label": "2", "text": "純液体も同様に式に含めないことがある。", "is_correct": false }, { "label": "3", "text": "気体と溶質は式に含める。", "is_correct": false }, { "label": "4", "text": "固体も気体と同様にモル濃度を使って平衡定数の式に含める。", "is_correct": true, "trap_type": "negation", "trap_detail": "固体は一定値なので式に含めない。" } ], "explanation": "固体は密度が一定のためモル濃度も一定です。したがって平衡定数に含めても定数が掛かるだけなので省略して平衡定数に含めません。同様に純液体も省略します。このルールを知らないと炭酸カルシウムの分解など固体が関わる平衡の計算を間違えます。", "evidence": [ { "source_id": "3_3_law_001", "quote": "固体が関与する場合は、固体の濃度は定数とみなして式に含めない" } ], "related_concept_ids": ["3_3_law_001"], "mnemonic": null },
-    { "id": "ch3_3_q028", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "アンモニアの性質", "difficulty": 2, "question_type": "correct", "question": "アンモニアの性質について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "無色で刺激臭のある気体であり水に極めて溶けやすい。窒素と水素からの合成は発熱反応である。", "is_correct": true }, { "label": "2", "text": "アンモニアは水に溶けにくい。", "is_correct": false, "trap_type": "negation", "trap_detail": "極めて溶けやすい。" }, { "label": "3", "text": "アンモニアは無臭である。", "is_correct": false, "trap_type": "negation", "trap_detail": "刺激臭がある。" }, { "label": "4", "text": "アンモニアの合成は吸熱反応である。", "is_correct": false, "trap_type": "negation", "trap_detail": "発熱反応。" } ], "explanation": "アンモニアは無色で強い刺激臭のある気体です。水への溶解度が非常に高く、水溶液は弱塩基性を示します。窒素と水素からの工業的合成（ハーバー・ボッシュ法）は発熱反応であるため、高温では平衡が逆方向（分解方向）に移動してアンモニアの収量が減ります。", "evidence": [ { "source_id": "3_3_sub_003", "quote": "窒素と水素から工業的合成される（ハーバー・ボッシュ法）" } ], "related_concept_ids": ["3_3_sub_003"], "mnemonic": null },
-    { "id": "ch3_3_q029", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "平衡移動と反応完了の混同", "difficulty": 3, "question_type": "incorrect", "question": "平衡移動に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "平衡が右に移動すると生成物の量が増加する。", "is_correct": false }, { "label": "2", "text": "平衡が移動しても反応物がゼロになるわけではない。", "is_correct": false }, { "label": "3", "text": "新しい平衡状態では前とは異なる濃度比になる。", "is_correct": false }, { "label": "4", "text": "平衡が右に移動すると反応物はすべて完全に消費され残らない。", "is_correct": true, "trap_type": "negation", "trap_detail": "完全には消費されない。新たな平衡で反応物も残る。" } ], "explanation": "平衡が移動しても反応物が完全に消費されることはありません。可逆反応であるため反応物と生成物が常に共存します。移動によって生成物が増え反応物が減りますが、新たな平衡状態では反応物も一定量残っています。", "evidence": [ { "source_id": "3_3_law_003", "quote": "新しい平衡状態でのN2の量は追加直後よりは減りますが、最初よりは多くなります" } ], "related_concept_ids": ["3_3_def_005"], "mnemonic": null },
-    { "id": "ch3_3_q030", "chapter": "3-3", "chapter_title": "化学平衡", "category": "procedure", "sub_category": "平衡定数の計算手順", "difficulty": 4, "question_type": "correct", "question": "平衡定数の計算手順として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "まず初期量と変化量から平衡時の各物質の量を求め、次に容器の体積で割ってモル濃度にし、最後に平衡定数の式に代入する。ICE表を用いると整理しやすい。", "is_correct": true }, { "label": "2", "text": "初期量をそのまま平衡定数の式に代入する。", "is_correct": false, "trap_type": "negation", "trap_detail": "平衡時の濃度を使う。" }, { "label": "3", "text": "変化量の計算は不要である。", "is_correct": false, "trap_type": "negation", "trap_detail": "変化量は必須。" }, { "label": "4", "text": "モル濃度ではなく物質量をそのまま代入する。", "is_correct": false, "trap_type": "negation", "trap_detail": "モル濃度にする必要がある。" } ], "explanation": "平衡定数の計算ではICE表（Initial-Change-Equilibrium）を使うと整理しやすくなります。Iに初期の物質量、Cに化学量論比に基づく変化量、Eに平衡時の物質量を記入し、体積で割ってモル濃度にしてから式に代入します。", "evidence": [ { "source_id": "3_3_law_001", "quote": "初期量と平衡時の量から平衡定数を算出する" } ], "related_concept_ids": ["3_3_law_001", "3_3_eq_001"], "mnemonic": null },
-    { "id": "ch3_3_q031", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "速度式と平衡定数式の違い", "difficulty": 4, "question_type": "correct", "question": "速度式と平衡定数式の違いとして、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "速度式の指数は実験で決め係数と一致するとは限らないが、平衡定数の式の指数は反応式の係数がそのまま使える。", "is_correct": true }, { "label": "2", "text": "平衡定数の式も速度式と同じく指数は実験で決める。", "is_correct": false, "trap_type": "negation", "trap_detail": "平衡定数の指数は係数から直接決まる。" }, { "label": "3", "text": "速度式の指数は常に係数と一致する。", "is_correct": false, "trap_type": "negation", "trap_detail": "一致するとは限らない。" }, { "label": "4", "text": "二つの式は全く同じ構造である。", "is_correct": false, "trap_type": "negation", "trap_detail": "構造が異なる。" } ], "explanation": "速度式の指数は多段階反応のため係数と一致しないことがありますが、平衡定数の式は熱力学的な法則から導かれるため反応式の係数がそのまま指数として使えます。この違いは非常に重要で混同しやすいポイントです。", "evidence": [ { "source_id": "3_3_law_001", "quote": "反応速度式を決定することはできないが、平衡定数の式は反応式の係数から直接決定できる" } ], "related_concept_ids": ["3_3_law_001"], "mnemonic": null },
-    { "id": "ch3_3_q032", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "逆反応の平衡定数の値", "difficulty": 3, "question_type": "incorrect", "question": "逆反応の平衡定数に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "逆反応の平衡定数は正反応の平衡定数の逆数である。", "is_correct": false }, { "label": "2", "text": "反応式の向きを逆にすると平衡定数の値が変わる。", "is_correct": false }, { "label": "3", "text": "反応式の係数を全て二倍にすると平衡定数は元の二乗になる。", "is_correct": false }, { "label": "4", "text": "逆反応の平衡定数は正反応と全く同じ値である。", "is_correct": true, "trap_type": "negation", "trap_detail": "逆数になる。同じ値ではない。" } ], "explanation": "正反応の平衡定数がケーなら逆反応の平衡定数は一分のケーです。また係数を全てエヌ倍すると平衡定数はケーのエヌ乗になります。反応式の書き方と平衡定数の値の対応を理解することが計算問題のポイントです。", "evidence": [ { "source_id": "3_3_eq_001", "quote": "逆反応の平衡定数は、正反応の平衡定数の逆数になる" } ], "related_concept_ids": ["3_3_eq_001"], "mnemonic": null },
-    { "id": "ch3_3_q033", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "ケーの大きさと平衡の位置", "difficulty": 3, "question_type": "correct", "question": "平衡定数の大きさと平衡の位置の関係として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "平衡定数が大きいほど生成物の割合が多い（平衡が右寄り）。小さいほど反応物の割合が多い（平衡が左寄り）。", "is_correct": true }, { "label": "2", "text": "平衡定数が大きいほど反応物の割合が多い。", "is_correct": false, "trap_type": "negation", "trap_detail": "逆。生成物が多い。" }, { "label": "3", "text": "平衡定数の大小は平衡の位置と無関係である。", "is_correct": false, "trap_type": "negation", "trap_detail": "密接に関係する。" }, { "label": "4", "text": "平衡定数は常に一の値をとる。", "is_correct": false, "trap_type": "negation", "trap_detail": "反応と温度によって様々な値をとる。" } ], "explanation": "平衡定数ケーは分子に生成物濃度、分母に反応物濃度を配置するため、ケーが大きいほど生成物が多く平衡は右寄りです。ケーが非常に大きい反応はほぼ完全に右に進む反応であり、ケーが非常に小さい反応はほとんど進まない反応です。", "evidence": [ { "source_id": "3_3_eq_001", "quote": "分子に生成物、分母に反応物" } ], "related_concept_ids": ["3_3_eq_001"], "mnemonic": null },
-    { "id": "ch3_3_q034", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "発熱反応の加熱でのケーの変化", "difficulty": 4, "question_type": "incorrect", "question": "発熱反応と温度に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "発熱反応を加熱すると吸熱方向（左）に移動し生成物が減る。", "is_correct": false }, { "label": "2", "text": "発熱反応を加熱すると平衡定数は小さくなる。", "is_correct": false }, { "label": "3", "text": "吸熱反応を加熱すると平衡定数は大きくなる。", "is_correct": false }, { "label": "4", "text": "発熱反応を加熱しても平衡定数は変わらず生成物も減少しない。", "is_correct": true, "trap_type": "negation", "trap_detail": "温度変化で平衡定数は変わり、発熱反応の加熱ではケーが小さくなり生成物は減る。" } ], "explanation": "温度変化は平衡定数を変える唯一の因子です。発熱反応を加熱するとルシャトリエの原理により吸熱方向に移動し、生成物が減り平衡定数が小さくなります。逆に吸熱反応を加熱すると発熱方向に移動し平衡定数が大きくなります。", "evidence": [ { "source_id": "3_3_law_004", "quote": "発熱反応を加熱するとKは小さくなる" } ], "related_concept_ids": ["3_3_law_004"], "mnemonic": null },
-    { "id": "ch3_3_q035", "chapter": "3-3", "chapter_title": "化学平衡", "category": "procedure", "sub_category": "平衡移動の判定手順", "difficulty": 3, "question_type": "correct", "question": "平衡の移動方向を判定する手順として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "まず加えた変化（温度・圧力・濃度のどれか）を特定し、次にルシャトリエの原理に基づきその変化を緩和する方向を考え、最後に反応式の両辺の特性（発熱か吸熱か、分子数の差）を確認して方向を決定する。", "is_correct": true }, { "label": "2", "text": "反応式を見るだけで答えがわかり条件の特定は不要である。", "is_correct": false, "trap_type": "negation", "trap_detail": "どの条件が変わったかの特定が不可欠。" }, { "label": "3", "text": "すべての変化で右方向に移動する。", "is_correct": false, "trap_type": "negation", "trap_detail": "条件によって左にも右にも移動する。" }, { "label": "4", "text": "ルシャトリエの原理を使わなくても変化を促進する方向を考えればよい。", "is_correct": false, "trap_type": "negation", "trap_detail": "緩和する方向を考える。" } ], "explanation": "平衡移動の判定は三段階で行います。第一に変化の種類を特定。第二にルシャトリエの原理「緩和する方向」を適用。第三に反応の具体的情報（エンタルピーの符号や係数の和）を使って左右を判定します。", "evidence": [ { "source_id": "3_3_law_002", "quote": "その変化による影響を緩和する方向に平衡が移動する" } ], "related_concept_ids": ["3_3_law_002"], "mnemonic": null },
-    { "id": "ch3_3_q036", "chapter": "3-3", "chapter_title": "化学平衡", "category": "comprehensive", "sub_category": "ハーバー・ボッシュ法の総合", "difficulty": 5, "question_type": "correct", "question": "ハーバー・ボッシュ法に関する総合的な記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "発熱反応で分子数減少。低温・高圧が平衡的に有利だが速度との妥協で四百〜六百度・十〜三十メガパスカル。鉄系触媒で速度確保。生成物を液化除去してさらに右移動促進。", "is_correct": true }, { "label": "2", "text": "吸熱反応で分子数増加。高温・低圧が平衡的に有利。触媒で収量増加。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "すべて逆。" }, { "label": "3", "text": "触媒は平衡を右に移動させるための手段である。", "is_correct": false, "trap_type": "negation", "trap_detail": "速度を上げる手段であり平衡は動かさない。" }, { "label": "4", "text": "生成物の除去は不要であり容器内に留めておく。", "is_correct": false, "trap_type": "negation", "trap_detail": "除去してさらなる右移動を促す。" } ], "explanation": "ハーバー・ボッシュ法はルシャトリエの原理の応用の集大成です。発熱反応なので低温が有利、分子数減少なので高圧が有利、しかし速度確保のため中程度の温度と触媒を併用し、さらに生成物を除去して平衡を駆動します。すべての要素が論理的につながっています。", "evidence": [ { "source_id": "3_3_proc_001", "quote": "ルシャトリエの原理と反応速度の両方を考慮した妥協的な条件設定" } ], "related_concept_ids": ["3_3_proc_001"], "mnemonic": null },
-    { "id": "ch3_3_q037", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "圧平衡定数と濃度平衡定数の関係", "difficulty": 4, "question_type": "correct", "question": "圧平衡定数と濃度平衡定数の関係として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "ケーピーイコールケーシーかけるアールティーのデルタエヌ乗である。デルタエヌは生成物の気体係数の和から反応物の気体係数の和を引いた値。デルタエヌがゼロなら二つは等しい。", "is_correct": true }, { "label": "2", "text": "常にケーピーとケーシーは等しい。", "is_correct": false, "trap_type": "negation", "trap_detail": "デルタエヌがゼロの場合のみ等しい。" }, { "label": "3", "text": "ケーピーはケーシーと無関係である。", "is_correct": false, "trap_type": "negation", "trap_detail": "数式的に関係がある。" }, { "label": "4", "text": "デルタエヌはいつもゼロである。", "is_correct": false, "trap_type": "negation", "trap_detail": "反応によって異なる。" } ], "explanation": "圧平衡定数と濃度平衡定数の関係式はケーピーイコールケーシーかけるアールティーのデルタエヌ乗です。デルタエヌが正（生成物側の分子数が多い）ならケーピーはケーシーより大きく、負なら小さくなります。水素とヨウ素の反応のようにデルタエヌがゼロなら二つは等しくなります。", "evidence": [ { "source_id": "3_3_def_004", "quote": "Kp = Kc × (RT)^Δn" } ], "related_concept_ids": ["3_3_def_004", "3_3_eq_002"], "mnemonic": null },
-    { "id": "ch3_3_q038", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "濃度追加後のN2の量", "difficulty": 4, "question_type": "incorrect", "question": "窒素を追加したときの平衡変化に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "窒素を追加するとアンモニア生成方向に反応が進む。", "is_correct": false }, { "label": "2", "text": "新しい平衡での窒素の量は追加直後よりは減少する。", "is_correct": false }, { "label": "3", "text": "新しい平衡での窒素の量は最初の平衡時よりは多い。", "is_correct": false }, { "label": "4", "text": "窒素を追加したら完全に消費されて元の量以下になる。", "is_correct": true, "trap_type": "negation", "trap_detail": "完全には消費されない。追加前より多い量で新平衡に達する。" } ], "explanation": "ルシャトリエの原理で濃度変化を理解するとき重要なのは、追加した物質が完全に消費されるわけではないことです。窒素を追加すると一部がアンモニア生成に消費されますが、全部は消費されず元の平衡時より多い量で新たな平衡に達します。", "evidence": [ { "source_id": "3_3_law_003", "quote": "新しい平衡状態でのN2の量は、追加直後よりは減りますが、最初よりは多くなります" } ], "related_concept_ids": ["3_3_law_003"], "mnemonic": null },
-    { "id": "ch3_3_q039", "chapter": "3-3", "chapter_title": "化学平衡", "category": "classification", "sub_category": "可逆反応と不可逆反応による分類", "difficulty": 2, "question_type": "correct", "question": "可逆反応と不可逆反応の分類として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "アンモニアの合成・分解やヨウ化水素の生成・分解は可逆反応。燃焼反応は不可逆反応である。", "is_correct": true }, { "label": "2", "text": "すべての反応は不可逆反応である。", "is_correct": false, "trap_type": "negation", "trap_detail": "可逆反応も多数存在する。" }, { "label": "3", "text": "燃焼反応は可逆反応である。", "is_correct": false, "trap_type": "negation", "trap_detail": "不可逆反応。" }, { "label": "4", "text": "可逆反応では平衡は成立しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "可逆反応で平衡が成立する。" } ], "explanation": "化学反応は可逆反応と不可逆反応に分類できます。密閉系でアンモニアの合成や分解が起こる反応は可逆反応の代表例です。一方、紙が燃える燃焼反応や爆発反応は一方向にしか進まない不可逆反応です。平衡が議論できるのは可逆反応のみです。", "evidence": [ { "source_id": "3_3_def_001", "quote": "燃焼反応など、一方の方向にしか進まない反応は「不可逆反応」" } ], "related_concept_ids": ["3_3_def_001"], "mnemonic": null },
-    { "id": "ch3_3_q040", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "ハーバー・ボッシュ法の高圧理由の混同", "difficulty": 3, "question_type": "incorrect", "question": "ハーバー・ボッシュ法の圧力設定に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "高圧にすると分子数が減る方向（アンモニア生成方向）へ平衡が移動する。", "is_correct": false }, { "label": "2", "text": "高圧は反応速度も高める効果がある。", "is_correct": false }, { "label": "3", "text": "アンモニア合成は左辺四分子、右辺二分子の反応である。", "is_correct": false }, { "label": "4", "text": "低圧にしても分子数の減少方向に移動するため低圧で十分である。", "is_correct": true, "trap_type": "negation", "trap_detail": "低圧では分子数増加（左）方向に移動する。高圧が必要。" } ], "explanation": "アンモニア合成反応は左辺に窒素一分子と水素三分子で計四分子、右辺にアンモニア二分子です。圧力を上げると分子数が少ない右方向に移動しアンモニアが増えます。低圧では逆に左方向に移動してアンモニアが減るため高圧が必要です。", "evidence": [ { "source_id": "3_3_law_005", "quote": "圧力を増すと、分子数が減る右方向へ移動する" } ], "related_concept_ids": ["3_3_law_005", "3_3_proc_001"], "mnemonic": null },
-    { "id": "ch3_3_q041", "chapter": "3-3", "chapter_title": "化学平衡", "category": "comprehensive", "sub_category": "ルシャトリエの原理の総合", "difficulty": 5, "question_type": "incorrect", "question": "ルシャトリエの原理に関する総合的な記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "温度上昇→吸熱方向、温度低下→発熱方向に移動。温度変化のみが平衡定数を変える。", "is_correct": false }, { "label": "2", "text": "圧力増加→分子数減少方向に移動。ただし両辺の分子数が等しい場合は移動しない。", "is_correct": false }, { "label": "3", "text": "物質追加→それを消費する方向に移動。触媒は平衡の位置を変えない。", "is_correct": false }, { "label": "4", "text": "温度を上げると発熱方向に移動し平衡定数は不変。圧力は常に平衡を移動させる。触媒で生成物が増える。", "is_correct": true, "trap_type": "multiple_swap", "trap_detail": "三か所すべて誤り。温度上昇は吸熱方向、分子数等しい場合は圧力で移動しない、触媒で増えない。" } ], "explanation": "この問題はルシャトリエの原理の理解を総合的に確認します。温度上昇は吸熱方向に移動し平衡定数は変化します。圧力は分子数が異なる場合のみ影響します。触媒は平衡の位置も生成物量も変えません。選択肢四は三つの誤りを含んでいます。", "evidence": [ { "source_id": "3_3_law_002", "quote": "変化による影響を緩和する方向に平衡が移動する" } ], "related_concept_ids": ["3_3_law_002", "3_3_law_003", "3_3_law_004", "3_3_law_005", "3_3_tip_002"], "mnemonic": null },
-    { "id": "ch3_3_q042", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "ヨウ化水素の平衡", "difficulty": 3, "question_type": "correct", "question": "ヨウ化水素の生成反応の平衡について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "水素とヨウ素からヨウ化水素が生成する反応は可逆反応であり、平衡に達すると各物質の濃度が一定になる。この反応は両辺の分子数が等しいため圧力変化で平衡は移動しない。", "is_correct": true }, { "label": "2", "text": "この反応は不可逆反応である。", "is_correct": false, "trap_type": "negation", "trap_detail": "可逆反応の代表例。" }, { "label": "3", "text": "平衡に達すると反応物は完全になくなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "反応物も残る。" }, { "label": "4", "text": "圧力を上げると右に移動してヨウ化水素が増える。", "is_correct": false, "trap_type": "negation", "trap_detail": "両辺の分子数が等しいため移動しない。" } ], "explanation": "水素とヨウ素からヨウ化水素が生成する反応は教科書で最もよく使われる可逆反応の例です。左辺二分子、右辺二分子で分子数の変化がないため圧力変化では平衡が移動しません。圧平衡定数と濃度平衡定数が等しくなるのもこの反応の特徴です。", "evidence": [ { "source_id": "3_3_sub_004", "quote": "水素とヨウ素から生成する可逆反応の例として頻出" } ], "related_concept_ids": ["3_3_sub_004", "3_3_law_005"], "mnemonic": null },
-    { "id": "ch3_3_q043", "chapter": "3-3", "chapter_title": "化学平衡", "category": "procedure", "sub_category": "生成物除去の操作", "difficulty": 3, "question_type": "correct", "question": "平衡系から生成物を除去する操作の効果として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "生成物の濃度が下がるためルシャトリエの原理により生成物を補おうと右方向に平衡が移動する。ハーバー・ボッシュ法ではアンモニアの冷却・液化除去でこれを実現する。", "is_correct": true }, { "label": "2", "text": "生成物を除去すると左方向に移動する。", "is_correct": false, "trap_type": "negation", "trap_detail": "右方向に移動する。" }, { "label": "3", "text": "生成物を除去しても平衡は動かない。", "is_correct": false, "trap_type": "negation", "trap_detail": "右方向に移動する。" }, { "label": "4", "text": "生成物の除去は平衡定数を変える。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度一定なら平衡定数は不変。" } ], "explanation": "生成物を系から取り除くと生成物の濃度が下がり、ルシャトリエの原理により生成物を補おうとする右方向に平衡が移動します。これは工業的に収率を上げる重要な手法であり、ハーバー・ボッシュ法ではアンモニアを液化して除去することで活用されています。", "evidence": [ { "source_id": "3_3_proc_001", "quote": "生成物を系から除くことで、ルシャトリエの原理によりさらに右方向へ平衡を移動させる" } ], "related_concept_ids": ["3_3_proc_001", "3_3_law_003"], "mnemonic": null },
-    { "id": "ch3_3_q044", "chapter": "3-3", "chapter_title": "化学平衡", "category": "mnemonic", "sub_category": "触媒と平衡の覚え方", "difficulty": 2, "question_type": "correct", "question": "触媒と平衡の覚え方として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "「平衡は触媒で速く行っても同じこと」で覚える。到着する場所（平衡の位置）は同じだが到着時間が短くなる。", "is_correct": true }, { "label": "2", "text": "触媒で到着場所も変わると覚える。", "is_correct": false, "trap_type": "negation", "trap_detail": "到着場所（平衡の位置）は変わらない。" }, { "label": "3", "text": "この覚え方は反応エンタルピーに関するものである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "触媒と平衡の関係に関する覚え方。" }, { "label": "4", "text": "触媒は到着時間も場所も変えないため意味がない。", "is_correct": false, "trap_type": "negation", "trap_detail": "到着時間は短縮される。" } ], "explanation": "「速く行っても同じこと」は触媒を使っても平衡の位置（到着地点）は変わらないことを端的に表しています。新幹線で行っても在来線で行っても東京から大阪までの距離は変わらないのと同じです。変わるのは所要時間（平衡到達時間）だけです。", "evidence": [ { "source_id": "3_3_tip_002", "quote": "平衡は触媒で速く行っても同じこと" } ], "related_concept_ids": ["3_3_tip_002"], "mnemonic": "平衡は触媒で速く行っても同じこと" },
-    { "id": "ch3_3_q045", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "体積変化と圧力変化の混同", "difficulty": 4, "question_type": "incorrect", "question": "気体の平衡系の体積変化に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "体積を小さくすると圧力が上がり分子数が減る方向に移動する。", "is_correct": false }, { "label": "2", "text": "体積を大きくすると圧力が下がり分子数が増える方向に移動する。", "is_correct": false }, { "label": "3", "text": "体積変化は圧力変化を通じて平衡に影響する。", "is_correct": false }, { "label": "4", "text": "体積を半分にしても圧力は変わらず平衡は移動しない。", "is_correct": true, "trap_type": "negation", "trap_detail": "体積を半分にすると圧力が約二倍になり平衡は移動する。" } ], "explanation": "密閉容器の体積を半分にすると全体の圧力が約二倍に上がります。これにより分子数が減る方向に平衡が移動します。体積変化は直接的には圧力変化をもたらし、それを通じて平衡に影響を与えます。", "evidence": [ { "source_id": "3_3_law_005", "quote": "圧縮して圧力を高めると、粒の数を減らそうとします" } ], "related_concept_ids": ["3_3_law_005"], "mnemonic": null },
-    { "id": "ch3_3_q046", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "鉄系触媒の役割", "difficulty": 3, "question_type": "correct", "question": "ハーバー・ボッシュ法で使用する鉄系触媒の役割として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "活性化エネルギーを下げて反応速度を大きくする。平衡の位置や生成物の総量は変えない。", "is_correct": true }, { "label": "2", "text": "鉄系触媒はアンモニアの平衡収量を増やす。", "is_correct": false, "trap_type": "negation", "trap_detail": "収量は変えない。" }, { "label": "3", "text": "鉄系触媒は反応後に消費されてなくなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "触媒なので消費されない。" }, { "label": "4", "text": "鉄系触媒は反応エンタルピーを変化させる。", "is_correct": false, "trap_type": "negation", "trap_detail": "反応エンタルピーは不変。" } ], "explanation": "ハーバー・ボッシュ法の鉄系触媒（四三酸化三鉄など）は活性化エネルギーを下げて反応速度を上げるために使用されます。触媒は正反応と逆反応の両方を同じ割合で速くするため、平衡の位置（アンモニアの最終的な割合）は変わりません。", "evidence": [ { "source_id": "3_3_proc_001", "quote": "触媒を用いる…反応速度を大きくするため" } ], "related_concept_ids": ["3_3_proc_001", "3_3_tip_002"], "mnemonic": null },
-    { "id": "ch3_3_q047", "chapter": "3-3", "chapter_title": "化学平衡", "category": "comprehensive", "sub_category": "平衡定数の総合", "difficulty": 5, "question_type": "incorrect", "question": "平衡定数に関する総合的な記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "平衡定数の式は分子に生成物、分母に反応物を配置し係数をべき乗にする。固体は含めない。", "is_correct": false }, { "label": "2", "text": "逆反応の平衡定数は正反応の逆数。係数を全てエヌ倍すると平衡定数はエヌ乗になる。", "is_correct": false }, { "label": "3", "text": "温度一定なら濃度や圧力を変えても平衡定数は不変。温度変化のみが平衡定数を変える。", "is_correct": false }, { "label": "4", "text": "平衡定数の式で分子に反応物、分母に生成物を入れる。固体も含める。逆反応と正反応の平衡定数は同じ値。温度でも変わらない。", "is_correct": true, "trap_type": "multiple_swap", "trap_detail": "四か所すべて誤り。" } ], "explanation": "平衡定数に関するすべてのルールをまとめた問題です。分子は生成物、分母は反応物。固体は含めない。逆反応は逆数。温度変化で値が変わる。選択肢四はこれら四つのルールすべてを逆に記述しています。", "evidence": [ { "source_id": "3_3_eq_001", "quote": "分子に右辺（生成物）、分母に左辺（反応物）" } ], "related_concept_ids": ["3_3_eq_001", "3_3_law_001"], "mnemonic": null },
-    { "id": "ch3_3_q048", "chapter": "3-3", "chapter_title": "化学平衡", "category": "property", "sub_category": "クロム酸イオンの色", "difficulty": 2, "question_type": "correct", "question": "クロム酸イオンとニクロム酸イオンの色について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "クロム酸イオンは黄色であり塩基性で安定。ニクロム酸イオンは赤橙色であり酸性で安定。", "is_correct": true }, { "label": "2", "text": "クロム酸イオンは赤橙色でニクロム酸イオンは黄色である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "逆。" }, { "label": "3", "text": "どちらも無色で色の変化はない。", "is_correct": false, "trap_type": "negation", "trap_detail": "色が異なるため平衡移動を色で確認できる。" }, { "label": "4", "text": "クロム酸イオンは酸性で、ニクロム酸イオンは塩基性で安定。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "逆。" } ], "explanation": "クロム酸イオンは黄色で塩基性条件で安定、ニクロム酸イオン（重クロム酸イオンとも呼ぶ）は赤橙色で酸性条件で安定です。この色の対応と安定条件を逆にするひっかけは非常に多く出題されます。", "evidence": [ { "source_id": "3_3_sub_005", "quote": "クロム酸イオンは黄色、塩基性条件で安定" }, { "source_id": "3_3_sub_006", "quote": "ニクロム酸イオンは赤橙色、酸性条件で安定" } ], "related_concept_ids": ["3_3_sub_005", "3_3_sub_006"], "mnemonic": null },
-    { "id": "ch3_3_q049", "chapter": "3-3", "chapter_title": "化学平衡", "category": "confusion", "sub_category": "ルシャトリエの原理の「完全相殺」誤解", "difficulty": 3, "question_type": "incorrect", "question": "ルシャトリエの原理に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "ルシャトリエの原理は加えた変化を「緩和」する方向に移動させる。", "is_correct": false }, { "label": "2", "text": "変化を完全に打ち消すのではなく部分的に緩和する。", "is_correct": false }, { "label": "3", "text": "温度を上げた場合、平衡移動後も温度は上がった状態のまま残る。", "is_correct": false }, { "label": "4", "text": "平衡移動によって加えた変化は完全に打ち消され元通りになる。", "is_correct": true, "trap_type": "negation", "trap_detail": "完全には打ち消されない。部分的に緩和されるだけ。" } ], "explanation": "ルシャトリエの原理でよくある誤解は「変化が完全に打ち消される」という考えです。実際には部分的に緩和されるだけであり、温度を上げた場合は吸熱方向に移動しますが温度が元に戻るわけではありません。加えた窒素も完全には消費されません。", "evidence": [ { "source_id": "3_3_law_002", "quote": "変化による影響を緩和（相殺）する方向" } ], "related_concept_ids": ["3_3_law_002"], "mnemonic": null },
-    { "id": "ch3_3_q050", "chapter": "3-3", "chapter_title": "化学平衡", "category": "comprehensive", "sub_category": "第三章第三節の全体総合", "difficulty": 5, "question_type": "correct", "question": "化学平衡に関する全体の総合記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "平衡は正逆の速度が等しい動的状態。平衡定数は温度のみで変化する。ルシャトリエの原理は変化を緩和する方向に移動させる。触媒は到達時間を短縮するが位置を変えない。ハーバー・ボッシュ法は発熱・分子数減少の反応に高圧と妥協温度を適用した工業的応用例である。", "is_correct": true }, { "label": "2", "text": "平衡は反応停止状態。平衡定数は変わらない。ルシャトリエは変化を促進する。触媒で生成物増加。ハーバー・ボッシュ法は低圧を使う。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "五か所すべて誤り。" }, { "label": "3", "text": "平衡定数は濃度変化でも変わる。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度変化のみ。" }, { "label": "4", "text": "不活性気体の添加は常に平衡を移動させる。", "is_correct": false, "trap_type": "negation", "trap_detail": "定積では移動しない。" } ], "explanation": "化学平衡の章全体のまとめです。動的平衡・平衡定数の温度依存性・ルシャトリエの原理による緩和方向への移動・触媒の役割・ハーバー・ボッシュ法の工業的応用が主要トピックです。これらを体系的に理解することが試験対策の鍵です。", "evidence": [ { "source_id": "3_3_def_002", "quote": "正反応と逆反応の速度が等しく動的平衡" }, { "source_id": "3_3_law_002", "quote": "変化を緩和する方向に移動" } ], "related_concept_ids": ["3_3_def_002", "3_3_law_001", "3_3_law_002", "3_3_tip_002", "3_3_proc_001"], "mnemonic": null }
+    {
+      "id": "ch3_3_q001",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "definition",
+      "sub_category": "可逆反応の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "可逆反応について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "すべての化学反応は不可逆反応である。NH₃の合成やヨウ化水素の生成のように正反応と逆反応の両方が起こる可逆反応も多数存在する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多くの反応は可逆性をもつ。",
+          "choice_id": "ch3_3_q001_c1",
+          "tts_text": "すべての化学反応は不可逆反応である。アンモニアの合成やヨウ化水素の生成のように正反応と逆反応の両方が起こる可逆反応も多数存在する。"
+        },
+        {
+          "label": "2",
+          "text": "可逆反応では生成物は全く生じない。可逆反応でも生成物は生じるが平衡状態では反応物と生成物が共存している。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "生成物も反応物も共存する。",
+          "choice_id": "ch3_3_q001_c2",
+          "tts_text": "可逆反応では生成物は全く生じない。可逆反応でも生成物は生じるが平衡状態では反応物と生成物が共存している。"
+        },
+        {
+          "label": "3",
+          "text": "正反応と逆反応のどちらの方向にも進行できる反応であり、両矢印で表される。密閉容器など物質が系外に逃げない条件が必要な場合が多い。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q001_c3",
+          "tts_text": "正反応と逆反応のどちらの方向にも進行できる反応であり、両矢印で表される。密閉容器など物質が系外に逃げない条件が必要な場合が多い。"
+        },
+        {
+          "label": "4",
+          "text": "一方の方向にしか進行しない反応を可逆反応という。一方向のみの反応は不可逆反応であり可逆反応は正逆両方向に進行する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "それは不可逆反応。",
+          "choice_id": "ch3_3_q001_c4",
+          "tts_text": "一方の方向にしか進行しない反応を可逆反応という。一方向のみの反応は不可逆反応であり可逆反応は正逆両方向に進行する。"
+        }
+      ],
+      "explanation": "可逆反応とは反応物から生成物ができるだけでなく、生成物から反応物に戻ることもできる反応です。NH₃の合成と分解、ヨウ化水素の生成と分解が典型例です。燃焼反応のように一方向にしか進まないものは不可逆反応と呼ばれます。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_001",
+          "quote": "正反応と逆反応が、どちらの方向にも進行できる反応"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "可逆反応について、正しい記述を選びなさい。",
+      "tts_explanation": "可逆反応とは反応物から生成物ができるだけでなく、生成物から反応物に戻ることもできる反応です。アンモニアの合成と分解、ヨウ化水素の生成と分解が典型例です。燃焼反応のように一方向にしか進まないものは不可逆反応と呼ばれます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q002",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "definition",
+      "sub_category": "化学平衡の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "化学平衡（平衡状態）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "平衡状態では反応物は完全に消費されていると勘違いされやすいが、平衡状態では反応物と生成物が共存しておりどちらも完全には消費されない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応物も生成物も共存する。",
+          "choice_id": "ch3_3_q002_c1",
+          "tts_text": "平衡状態では反応物は完全に消費されていると勘違いされやすいが、平衡状態では反応物と生成物が共存しておりどちらも完全には消費されない。"
+        },
+        {
+          "label": "2",
+          "text": "平衡状態では分子の運動が完全に止まっている。平衡状態は動的平衡であり正反応と逆反応が同じ速度で進行し続けている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "動的平衡であり反応は継続している。",
+          "choice_id": "ch3_3_q002_c2",
+          "tts_text": "平衡状態では分子の運動が完全に止まっている。平衡状態は動的平衡であり正反応と逆反応が同じ速度で進行し続けている。"
+        },
+        {
+          "label": "3",
+          "text": "正反応と逆反応の速度が等しくなり、見かけ上反応が停止したように見える状態。実際には反応は進行しているが濃度が一定に保たれる動的平衡である。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q002_c3",
+          "tts_text": "正反応と逆反応の速度が等しくなり、見かけ上反応が停止したように見える状態。実際には反応は進行しているが濃度が一定に保たれる動的平衡である。"
+        },
+        {
+          "label": "4",
+          "text": "正反応の速度がゼロになった状態が平衡である。平衡状態では正反応も逆反応もゼロではなく等しい速度で進行し続けている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ゼロではなく正逆が等しい。",
+          "choice_id": "ch3_3_q002_c4",
+          "tts_text": "正反応の速度がゼロになった状態が平衡である。平衡状態では正反応も逆反応もゼロではなく等しい速度で進行し続けている。"
+        }
+      ],
+      "explanation": "化学平衡は動的平衡であり、正反応と逆反応が同じ速度で進行し続けています。見かけ上は何も変化していないように見えますが、ミクロレベルでは常に反応物が生成物になり、生成物が反応物に戻っています。この動的な性質を理解することが最重要ポイントです。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "正反応の反応速度と逆反応の反応速度が等しくなり、見かけ上反応が停止しているように見える状態"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "化学平衡（平衡状態）について、正しい記述を選びなさい。",
+      "tts_explanation": "化学平衡は動的平衡であり、正反応と逆反応が同じ速度で進行し続けています。見かけ上は何も変化していないように見えますが、ミクロレベルでは常に反応物が生成物になり、生成物が反応物に戻っています。この動的な性質を理解することが最重要ポイントです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q003",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "definition",
+      "sub_category": "化学平衡の法則",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "化学平衡の法則（質量作用の法則）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "濃度が変わると平衡定数の値も変わる。平衡定数は温度のみで決まる値であり濃度を変えても平衡定数自体は変化しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度一定なら平衡定数は一定。",
+          "choice_id": "ch3_3_q003_c1",
+          "tts_text": "濃度が変わると平衡定数の値も変わる。平衡定数は温度のみで決まる値であり濃度を変えても平衡定数自体は変化しない。"
+        },
+        {
+          "label": "2",
+          "text": "平衡定数の式の分子に反応物、分母に生成物を配置する。逆で分子に生成物、分母に反応物を配置するのが正しい。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "分子に生成物、分母に反応物。",
+          "choice_id": "ch3_3_q003_c2",
+          "tts_text": "平衡定数の式の分子に反応物、分母に生成物を配置する。逆で分子に生成物、分母に反応物を配置するのが正しい。"
+        },
+        {
+          "label": "3",
+          "text": "一定温度で平衡状態にあるとき、生成物の濃度の積と反応物の濃度の積の比は一定値になる。この値を濃度平衡定数という。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q003_c3",
+          "tts_text": "一定温度で平衡状態にあるとき、生成物の濃度の積と反応物の濃度の積の比は一定値になる。この値を濃度平衡定数という。"
+        },
+        {
+          "label": "4",
+          "text": "平衡定数は温度によって変化しない。平衡定数は温度に依存する値であり温度が変わると平衡定数の値も変化する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度が変われば平衡定数は変わる。",
+          "choice_id": "ch3_3_q003_c4",
+          "tts_text": "平衡定数は温度によって変化しない。平衡定数は温度に依存する値であり温度が変わると平衡定数の値も変化する。"
+        }
+      ],
+      "explanation": "化学平衡の法則によれば、平衡定数の式は分子に生成物（右辺）、分母に反応物（左辺）のモル濃度を配置し、各々の係数をべき乗します。温度が一定であれば濃度や圧力を変えても平衡定数の値は変わりません。温度が変わると平衡定数は変化します。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_001",
+          "quote": "反応物の濃度の積と生成物の濃度の積の比は常に一定になる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "化学平衡の法則（質量作用の法則）について、正しい記述を選びなさい。",
+      "tts_explanation": "化学平衡の法則によれば、平衡定数の式は分子に生成物（右辺）、分母に反応物（左辺）のモル濃度を配置し、各々の係数をべき乗します。温度が一定であれば濃度や圧力を変えても平衡定数の値は変わりません。温度が変わると平衡定数は変化します。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q004",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "definition",
+      "sub_category": "濃度平衡定数の式",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "濃度平衡定数の式について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "逆反応の平衡定数は正反応と同じ値である。逆反応の平衡定数は正反応の平衡定数の逆数であり同じ値ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "逆反応の平衡定数は正反応の逆数。",
+          "choice_id": "ch3_3_q004_c1",
+          "tts_text": "逆反応の平衡定数は正反応と同じ値である。逆反応の平衡定数は正反応の平衡定数の逆数であり同じ値ではない。"
+        },
+        {
+          "label": "2",
+          "text": "生成物のモル濃度の各べき乗の積を分子に、反応物のモル濃度の各べき乗の積を分母に配置する。固体が関与する場合は固体の濃度を式に含めない。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q004_c2",
+          "tts_text": "生成物のモル濃度の各べき乗の積を分子に、反応物のモル濃度の各べき乗の積を分母に配置する。固体が関与する場合は固体の濃度を式に含めない。"
+        },
+        {
+          "label": "3",
+          "text": "係数はべき乗にせずそのまま掛け算に使う。化学反応式の係数は平衡定数の式でべき乗の指数として用いるのが正しい表記法である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "係数をべき乗にする。",
+          "choice_id": "ch3_3_q004_c3",
+          "tts_text": "係数はべき乗にせずそのまま掛け算に使う。化学反応式の係数は平衡定数の式でべき乗の指数として用いるのが正しい表記法である。"
+        },
+        {
+          "label": "4",
+          "text": "固体も液体も気体もすべて同様に式に含める。固体や純液体は濃度が一定であるため平衡定数の式には含めない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "固体は一定とみなし式に含めない。",
+          "choice_id": "ch3_3_q004_c4",
+          "tts_text": "固体も液体も気体もすべて同様に式に含める。固体や純液体は濃度が一定であるため平衡定数の式には含めない。"
+        }
+      ],
+      "explanation": "濃度平衡定数は「生成物の濃度の積」を「反応物の濃度の積」で割り、係数をべき乗にして求めます。固体の濃度は一定なので式に含めません。逆反応の平衡定数は正反応のそれの逆数になります。これは反応速度式の指数と違い、反応式の係数がそのまま使える点が重要です。",
+      "evidence": [
+        {
+          "source_id": "3_3_eq_001",
+          "quote": "分子に右辺（生成物）、分母に左辺（反応物）のモル濃度を置き、反応式の係数をそれぞれ累乗"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_eq_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "濃度平衡定数の式について、正しい記述を選びなさい。",
+      "tts_explanation": "濃度平衡定数は「生成物の濃度の積」を「反応物の濃度の積」で割り、係数をべき乗にして求めます。固体の濃度は一定なので式に含めません。逆反応の平衡定数は正反応のそれの逆数になります。これは反応速度式の指数と違い、反応式の係数がそのまま使える点が重要です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q005",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "definition",
+      "sub_category": "圧平衡定数の定義",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "圧平衡定数について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "液体や固体を含む反応にも圧平衡定数を使う。圧平衡定数はすべてが気体からなる平衡に用いるものであり液体や固体を含む反応には適さない。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "すべて気体の反応に用いる。",
+          "choice_id": "ch3_3_q005_c1",
+          "tts_text": "液体や固体を含む反応にも圧平衡定数を使う。圧平衡定数はすべてが気体からなる平衡に用いるものであり液体や固体を含む反応には適さない。"
+        },
+        {
+          "label": "2",
+          "text": "圧力を変えると圧平衡定数の値が変わる。圧平衡定数は温度一定なら一定の値をとり圧力を変えても値自体は変化しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度一定なら変わらない。",
+          "choice_id": "ch3_3_q005_c2",
+          "tts_text": "圧力を変えると圧平衡定数の値が変わる。圧平衡定数は温度一定なら一定の値をとり圧力を変えても値自体は変化しない。"
+        },
+        {
+          "label": "3",
+          "text": "圧平衡定数は常に濃度平衡定数と等しい。両者はデルタエヌがゼロの場合のみ等しくデルタエヌがゼロでなければ異なる値になる。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "両辺の係数の和が等しい場合のみ等しい。",
+          "choice_id": "ch3_3_q005_c3",
+          "tts_text": "圧平衡定数は常に濃度平衡定数と等しい。両者はデルタエヌがゼロの場合のみ等しくデルタエヌがゼロでなければ異なる値になる。"
+        },
+        {
+          "label": "4",
+          "text": "すべてが気体からなる平衡で、モル濃度の代わりに各成分気体の分圧を用いて表した平衡定数である。温度一定なら一定値をとる。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q005_c4",
+          "tts_text": "すべてが気体からなる平衡で、モル濃度の代わりに各成分気体の分圧を用いて表した平衡定数である。温度一定なら一定値をとる。"
+        }
+      ],
+      "explanation": "圧平衡定数ケーピーは気体反応で分圧を使って表す平衡定数です。濃度平衡定数ケーシーとの関係はケーピーイコールケーシーかけるアールティーのデルタエヌ乗です。デルタエヌは生成物側の気体係数の和から反応物側の和を引いた値です。デルタエヌがゼロなら両者は等しくなります。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_004",
+          "quote": "モル濃度の代わりに各成分気体の分圧を用いて表した平衡定数"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "圧平衡定数について、正しい記述を選びなさい。",
+      "tts_explanation": "圧平衡定数ケーピーは気体反応で分圧を使って表す平衡定数です。濃度平衡定数ケーシーとの関係はケーピーイコールケーシーかけるアールティーのデルタエヌ乗です。デルタエヌは生成物側の気体係数の和から反応物側の和を引いた値です。デルタエヌがゼロなら両者は等しくなります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q006",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "definition",
+      "sub_category": "平衡の移動の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "平衡の移動について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "平衡の移動では正反応だけが起こり逆反応は止まる。平衡の移動中も正反応と逆反応の両方が進行しているが速度差により一方が優勢になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両方起こるがバランスが崩れて一方が優勢になる。",
+          "choice_id": "ch3_3_q006_c1",
+          "tts_text": "平衡の移動では正反応だけが起こり逆反応は止まる。平衡の移動中も正反応と逆反応の両方が進行しているが速度差により一方が優勢になる。"
+        },
+        {
+          "label": "2",
+          "text": "1℃平衡に達すると2℃と変化しない。温度・圧力・濃度を変化させると平衡は新しい状態へ移動するため条件次第で変化する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "条件を変えると新たな平衡に移動する。",
+          "choice_id": "ch3_3_q006_c2",
+          "tts_text": "一度平衡に達すると二度と変化しない。温度・圧力・濃度を変化させると平衡は新しい状態へ移動するため条件次第で変化する。"
+        },
+        {
+          "label": "3",
+          "text": "平衡の移動は温度変化でのみ起こる。温度だけでなく圧力や濃度の変化によっても平衡の移動は起こる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "濃度や圧力の変化でも起こる。",
+          "choice_id": "ch3_3_q006_c3",
+          "tts_text": "平衡の移動は温度変化でのみ起こる。温度だけでなく圧力や濃度の変化によっても平衡の移動は起こる。"
+        },
+        {
+          "label": "4",
+          "text": "平衡状態で濃度・温度・圧力を変化させると新しい平衡状態になる現象であり、右辺の物質が増加する場合「右方向へ移動した」と表現する。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q006_c4",
+          "tts_text": "平衡状態で濃度・温度・圧力を変化させると新しい平衡状態になる現象であり、右辺の物質が増加する場合「右方向へ移動した」と表現する。"
+        }
+      ],
+      "explanation": "平衡の移動とは、外部条件（濃度・温度・圧力）を変えたときに一時的に正逆反応のバランスが崩れ、新たな平衡状態に移行することです。条件変化を緩和する方向に移動するのがルシャトリエの原理です。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_005",
+          "quote": "濃度・温度・圧力などの条件を変化させると、初めとは違った量的関係の新しい平衡状態になる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_005"
+      ],
+      "mnemonic": null,
+      "tts_question": "平衡の移動について、正しい記述を選びなさい。",
+      "tts_explanation": "平衡の移動とは、外部条件（濃度・温度・圧力）を変えたときに一時的に正逆反応のバランスが崩れ、新たな平衡状態に移行することです。条件変化を緩和する方向に移動するのがルシャトリエの原理です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q007",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "definition",
+      "sub_category": "ルシャトリエの原理",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ルシャトリエの原理について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "圧力を上げると分子数が増える方向に移動する。逆で圧力を上げると分子数が減る方向に移動して圧力の増加を緩和しようとする。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "減る方向に移動する。",
+          "choice_id": "ch3_3_q007_c1",
+          "tts_text": "圧力を上げると分子数が増える方向に移動する。逆で圧力を上げると分子数が減る方向に移動して圧力の増加を緩和しようとする。"
+        },
+        {
+          "label": "2",
+          "text": "平衡の条件を変化させると、その変化の影響を緩和（相殺）する方向に平衡が移動する。温度を上げると吸熱方向へ、圧力を上げると分子数が減る方向へ移動する。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q007_c2",
+          "tts_text": "平衡の条件を変化させると、その変化の影響を緩和（相殺）する方向に平衡が移動する。温度を上げると吸熱方向へ、圧力を上げると分子数が減る方向へ移動する。"
+        },
+        {
+          "label": "3",
+          "text": "ルシャトリエの原理は温度にのみ適用されると誤解されやすいが、温度だけでなく圧力や濃度の変化にも適用される一般的な原理であると誤って覚えやすい典型例だが、",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "濃度・温度・圧力すべてに適用される。",
+          "choice_id": "ch3_3_q007_c3",
+          "tts_text": "ルシャトリエの原理は温度にのみ適用されると誤解されやすいが、温度だけでなく圧力や濃度の変化にも適用される一般的な原理であると誤って覚えやすい典型例だが、"
+        },
+        {
+          "label": "4",
+          "text": "条件変化を促進する方向に平衡が移動する。逆で条件変化を緩和（相殺）する方向に平衡が移動するのがルシャトリエの原理である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "緩和する方向に移動する。",
+          "choice_id": "ch3_3_q007_c4",
+          "tts_text": "条件変化を促進する方向に平衡が移動する。逆で条件変化を緩和（相殺）する方向に平衡が移動するのがルシャトリエの原理である。"
+        }
+      ],
+      "explanation": "ルシャトリエの原理は「外乱を鎮める鎮静剤」のイメージです。温度を上げれば温度を下げる吸熱方向へ、圧力を高めれば圧力を下げる分子数減少方向へ、ある物質の濃度を増やせばそれを消費する方向へ平衡が移動します。条件変化を完全に打ち消すのではなく「緩和」する点に注意です。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_002",
+          "quote": "その変化による影響を緩和する方向に平衡が移動する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_002"
+      ],
+      "mnemonic": "ルシャトリエの原理は鎮静剤。外からの影響をやわらげる。",
+      "tts_question": "ルシャトリエの原理について、正しい記述を選びなさい。",
+      "tts_explanation": "ルシャトリエの原理は「外乱を鎮める鎮静剤」のイメージです。温度を上げれば温度を下げる吸熱方向へ、圧力を高めれば圧力を下げる分子数減少方向へ、ある物質の濃度を増やせばそれを消費する方向へ平衡が移動します。条件変化を完全に打ち消すのではなく「緩和」する点に注意です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q008",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "濃度変化と平衡移動",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "濃度変化と平衡移動の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "生成物を取り除いても平衡は移動しない。生成物を取り除くと濃度が下がり生成物を補う方向すなわち右方向へ平衡が移動する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "生成物側を補おうと右方向に移動する。",
+          "choice_id": "ch3_3_q008_c1",
+          "tts_text": "生成物を取り除いても平衡は移動しない。生成物を取り除くと濃度が下がり生成物を補う方向すなわち右方向へ平衡が移動する。"
+        },
+        {
+          "label": "2",
+          "text": "物質の濃度を増加させるとさらに増加する方向に移動する。逆で増加させた物質を消費する方向に移動して変化を緩和しようとする。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "消費する（減少させる）方向に移動。",
+          "choice_id": "ch3_3_q008_c2",
+          "tts_text": "物質の濃度を増加させるとさらに増加する方向に移動する。逆で増加させた物質を消費する方向に移動して変化を緩和しようとする。"
+        },
+        {
+          "label": "3",
+          "text": "濃度を変化させると平衡定数も変化する。温度一定なら平衡定数の値は変わらない。濃度変化は平衡を移動させるが定数は不変である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度一定なら平衡定数は不変。",
+          "choice_id": "ch3_3_q008_c3",
+          "tts_text": "濃度を変化させると平衡定数も変化する。温度一定なら平衡定数の値は変わらない。濃度変化は平衡を移動させるが定数は不変である。"
+        },
+        {
+          "label": "4",
+          "text": "特定の物質の濃度を増加させるとそれを消費する方向へ平衡が移動し、減少させるとそれを補う方向へ移動する。温度一定なら平衡定数の値は変わらない。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q008_c4",
+          "tts_text": "特定の物質の濃度を増加させるとそれを消費する方向へ平衡が移動し、減少させるとそれを補う方向へ移動する。温度一定なら平衡定数の値は変わらない。"
+        }
+      ],
+      "explanation": "窒素を追加するとそれを消費しようとしてNH₃生成方向に反応が進みます。逆に生成したNH₃を取り除くとそれを補おうとして右方向に移動します。いずれの場合も温度が変わらない限り平衡定数ケーの値自体は変化しません。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_003",
+          "quote": "特定の物質の濃度を増加させるとそれを減少させる方向へ平衡が移動する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "濃度変化と平衡移動の関係として、正しい記述を選びなさい。",
+      "tts_explanation": "窒素を追加するとそれを消費しようとしてアンモニア生成方向に反応が進みます。逆に生成したアンモニアを取り除くとそれを補おうとして右方向に移動します。いずれの場合も温度が変わらない限り平衡定数ケーの値自体は変化しません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q009",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "温度変化と平衡移動",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "温度変化と平衡移動の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度を上げると吸熱方向へ、温度を下げると発熱方向へ平衡が移動する。温度変化では平衡定数の値も変化する。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q009_c1",
+          "tts_text": "温度を上げると吸熱方向へ、温度を下げると発熱方向へ平衡が移動する。温度変化では平衡定数の値も変化する。"
+        },
+        {
+          "label": "2",
+          "text": "温度を変えても平衡定数は変化しない。温度変化は平衡定数そのものを変化させる唯一の因子であり他の因子では変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度変化で平衡定数は変化する。",
+          "choice_id": "ch3_3_q009_c2",
+          "tts_text": "温度を変えても平衡定数は変化しない。温度変化は平衡定数そのものを変化させる唯一の因子であり他の因子では変わらない。"
+        },
+        {
+          "label": "3",
+          "text": "温度変化は平衡の移動を一切起こさない。温度変化は平衡を移動させる最も重要な因子の一つであり吸熱・発熱方向へ移動を起こす。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "最も大きな影響を与える因子の一つ。",
+          "choice_id": "ch3_3_q009_c3",
+          "tts_text": "温度変化は平衡の移動を一切起こさない。温度変化は平衡を移動させる最も重要な因子の一つであり吸熱・発熱方向へ移動を起こす。"
+        },
+        {
+          "label": "4",
+          "text": "温度を上げると発熱方向に移動する。逆で温度を上げると吸熱方向に移動して温度上昇を緩和しようとする。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "吸熱方向に移動。",
+          "choice_id": "ch3_3_q009_c4",
+          "tts_text": "温度を上げると発熱方向に移動する。逆で温度を上げると吸熱方向に移動して温度上昇を緩和しようとする。"
+        }
+      ],
+      "explanation": "温度を上げると系は温度を下げようとして吸熱方向に平衡が移動します。NH₃合成（発熱反応）では温度を上げると左方向（分解方向）に移動しNH₃が減ります。重要なのは温度変化が平衡定数の値自体を変化させる唯一の因子であることです。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_004",
+          "quote": "温度を高くすると吸熱反応の方向へ、温度を低くすると発熱反応の方向へ平衡が移動する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "温度変化と平衡移動の関係として、正しい記述を選びなさい。",
+      "tts_explanation": "温度を上げると系は温度を下げようとして吸熱方向に平衡が移動します。アンモニア合成（発熱反応）では温度を上げると左方向（分解方向）に移動しアンモニアが減ります。重要なのは温度変化が平衡定数の値自体を変化させる唯一の因子であることです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q010",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "圧力変化と平衡移動",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "圧力変化と平衡移動の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "圧力変化で平衡定数が変化する。平衡定数を変えるのは温度変化のみであり圧力変化では平衡定数自体は変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度一定なら平衡定数は不変。",
+          "choice_id": "ch3_3_q010_c1",
+          "tts_text": "圧力変化で平衡定数が変化する。平衡定数を変えるのは温度変化のみであり圧力変化では平衡定数自体は変わらない。"
+        },
+        {
+          "label": "2",
+          "text": "圧力を高くすると気体分子の総数が減少する方向へ移動する。両辺の気体の係数の和が等しい場合は圧力変化で平衡は移動しない。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q010_c2",
+          "tts_text": "圧力を高くすると気体分子の総数が減少する方向へ移動する。両辺の気体の係数の和が等しい場合は圧力変化で平衡は移動しない。"
+        },
+        {
+          "label": "3",
+          "text": "すべての反応で圧力変化が平衡移動を起こす。両辺の気体の係数の和が等しい場合は圧力を変えても平衡は移動しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両辺の係数の和が等しい場合は移動しない。",
+          "choice_id": "ch3_3_q010_c3",
+          "tts_text": "すべての反応で圧力変化が平衡移動を起こす。両辺の気体の係数の和が等しい場合は圧力を変えても平衡は移動しない。"
+        },
+        {
+          "label": "4",
+          "text": "圧力を高くすると分子数が増加する方向へ移動する。逆で圧力を高くすると分子数が減少する方向へ移動して圧力増加を緩和する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "減少する方向。",
+          "choice_id": "ch3_3_q010_c4",
+          "tts_text": "圧力を高くすると分子数が増加する方向へ移動する。逆で圧力を高くすると分子数が減少する方向へ移動して圧力増加を緩和する。"
+        }
+      ],
+      "explanation": "圧力を高めると系は圧力を下げるために気体分子の数を減らそうとします。NH₃合成では左辺四分子、右辺二分子なので圧力を上げると分子数が減る右方向に移動しNH₃が増えます。水素とヨウ素からヨウ化水素が生成する反応は両辺とも二分子なので圧力変化では平衡は移動しません。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_005",
+          "quote": "全体の圧力を大きくすると気体分子の総数が減少する方向へ平衡が移動する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_005"
+      ],
+      "mnemonic": null,
+      "tts_question": "圧力変化と平衡移動の関係として、正しい記述を選びなさい。",
+      "tts_explanation": "圧力を高めると系は圧力を下げるために気体分子の数を減らそうとします。アンモニア合成では左辺四分子、右辺二分子なので圧力を上げると分子数が減る右方向に移動しアンモニアが増えます。水素とヨウ素からヨウ化水素が生成する反応は両辺とも二分子なので圧力変化では平衡は移動しません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q011",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "不活性気体の添加",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "不活性気体（アルゴンなど）の添加と平衡移動について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "体積一定で加えると分子数が減る方向に移動する。体積一定で不活性気体を加えても各成分気体の分圧は変わらないため平衡は移動しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "体積一定では移動しない。",
+          "choice_id": "ch3_3_q011_c1",
+          "tts_text": "体積一定で加えると分子数が減る方向に移動する。体積一定で不活性気体を加えても各成分気体の分圧は変わらないため平衡は移動しない。"
+        },
+        {
+          "label": "2",
+          "text": "どちらの条件でも平衡は移動すると誤って覚えがちだが、体積一定では分圧が変わらず移動しない。移動するのは圧力一定で体積が増加する場合のみである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "体積一定では移動しない。",
+          "choice_id": "ch3_3_q011_c2",
+          "tts_text": "どちらの条件でも平衡は移動すると誤って覚えがちだが、体積一定では分圧が変わらず移動しない。移動するのは圧力一定で体積が増加する場合のみである。"
+        },
+        {
+          "label": "3",
+          "text": "体積一定で加えた場合は各成分気体の分圧が変わらないため平衡は移動しない。圧力一定で加えた場合は体積が増加し分圧が下がるため分子数が増える方向に移動する。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q011_c3",
+          "tts_text": "体積一定で加えた場合は各成分気体の分圧が変わらないため平衡は移動しない。圧力一定で加えた場合は体積が増加し分圧が下がるため分子数が増える方向に移動する。"
+        },
+        {
+          "label": "4",
+          "text": "どちらの条件でも平衡は移動しない。圧力一定で不活性気体を加えると体積が増大し分圧が下がるため分子数が増える方向に移動する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "圧力一定で加えた場合は移動する。",
+          "choice_id": "ch3_3_q011_c4",
+          "tts_text": "どちらの条件でも平衡は移動しない。圧力一定で不活性気体を加えると体積が増大し分圧が下がるため分子数が増える方向に移動する。"
+        }
+      ],
+      "explanation": "不活性気体の添加は「定積か定圧か」で結論が逆になるため頻出のひっかけ問題です。定積なら各成分の分圧が変わらないため移動しません。定圧なら容器が膨らんで各成分の分圧が下がるため、それを補おうと分子数が増える方向に移動します。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_006",
+          "quote": "定積で加えた場合は平衡移動しないが、定圧で加えた場合は分子数が増加する方向へ移動する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_006"
+      ],
+      "mnemonic": null,
+      "tts_question": "不活性気体（アルゴンなど）の添加と平衡移動について、正しい記述を選びなさい。",
+      "tts_explanation": "不活性気体の添加は「定積か定圧か」で結論が逆になるため頻出のひっかけ問題です。定積なら各成分の分圧が変わらないため移動しません。定圧なら容器が膨らんで各成分の分圧が下がるため、それを補おうと分子数が増える方向に移動します。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q012",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "触媒と平衡",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "触媒と平衡の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "触媒は平衡に達するまでの時間を短縮するが、平衡状態での物質の割合や平衡定数は変えない。正反応も逆反応も同じ割合で速くなる。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q012_c1",
+          "tts_text": "触媒は平衡に達するまでの時間を短縮するが、平衡状態での物質の割合や平衡定数は変えない。正反応も逆反応も同じ割合で速くなる。"
+        },
+        {
+          "label": "2",
+          "text": "触媒で生成物の収量が増加する。触媒は平衡到達時間を短縮するだけで平衡の位置や生成物の最終的な収量は変えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "収量は変わらない。",
+          "choice_id": "ch3_3_q012_c2",
+          "tts_text": "触媒で生成物の収量が増加する。触媒は平衡到達時間を短縮するだけで平衡の位置や生成物の最終的な収量は変えない。"
+        },
+        {
+          "label": "3",
+          "text": "触媒を加えると平衡が右方向に移動する。触媒は正反応も逆反応も同じ割合で速くするため平衡の位置は変わらず移動しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "平衡の位置は変わらない。",
+          "choice_id": "ch3_3_q012_c3",
+          "tts_text": "触媒を加えると平衡が右方向に移動する。触媒は正反応も逆反応も同じ割合で速くするため平衡の位置は変わらず移動しない。"
+        },
+        {
+          "label": "4",
+          "text": "触媒は正反応のみを速くし逆反応には影響しない。触媒は正反応と逆反応の両方を同じ割合で速くするため一方だけには影響しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "正逆両方を同じ割合で速くする。",
+          "choice_id": "ch3_3_q012_c4",
+          "tts_text": "触媒は正反応のみを速くし逆反応には影響しない。触媒は正反応と逆反応の両方を同じ割合で速くするため一方だけには影響しない。"
+        }
+      ],
+      "explanation": "触媒は活性化エネルギーの低い別経路を提供して反応を速めますが、正反応と逆反応の両方に同じ影響を与えます。そのため平衡到達時間は短くなりますが平衡の位置（平衡定数）は変わりません。ハーバー・ボッシュ法で触媒を使うのは速度を上げるためであって収量を増やすためではありません。",
+      "evidence": [
+        {
+          "source_id": "3_3_tip_002",
+          "quote": "平衡状態に達するまでの時間を短縮するが、平衡時の物質の割合は変えない"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_tip_002"
+      ],
+      "mnemonic": "平衡は触媒で速く行っても同じこと",
+      "tts_question": "触媒と平衡の関係として、正しい記述を選びなさい。",
+      "tts_explanation": "触媒は活性化エネルギーの低い別経路を提供して反応を速めますが、正反応と逆反応の両方に同じ影響を与えます。そのため平衡到達時間は短くなりますが平衡の位置（平衡定数）は変わりません。ハーバー・ボッシュ法で触媒を使うのは速度を上げるためであって収量を増やすためではありません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q013",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "procedure",
+      "sub_category": "ハーバー・ボッシュ法",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ハーバー・ボッシュ法について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "窒素と水素から触媒存在下で高温・高圧条件でNH₃を合成する工業的製法。発熱反応なので低温が平衡的に有利だが反応速度との妥協で約四百〜600℃を使う。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q013_c1",
+          "tts_text": "窒素と水素から触媒存在下で高温・高圧条件でアンモニアを合成する工業的製法。発熱反応なので低温が平衡的に有利だが反応速度との妥協で約四百〜六百度を使う。"
+        },
+        {
+          "label": "2",
+          "text": "低圧条件が有利であり圧力は低く設定すると思い込みがちだが、NH₃合成は分子数が減少する反応であるため高圧が平衡的に有利である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高圧が有利。分子数が減る方向へ移動するため。",
+          "choice_id": "ch3_3_q013_c2",
+          "tts_text": "低圧条件が有利であり圧力は低く設定すると思い込みがちだが、アンモニア合成は分子数が減少する反応であるため高圧が平衡的に有利である。"
+        },
+        {
+          "label": "3",
+          "text": "触媒はNH₃の収量を増やすために用いると誤って覚えやすい典型例だが、触媒は反応速度を上げるために用いるものであり平衡の位置や収量自体は変えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応速度を上げるために用いる。",
+          "choice_id": "ch3_3_q013_c3",
+          "tts_text": "触媒はアンモニアの収量を増やすために用いると誤って覚えやすい典型例だが、触媒は反応速度を上げるために用いるものであり平衡の位置や収量自体は変えない。"
+        },
+        {
+          "label": "4",
+          "text": "高温ほどNH₃の平衡収量が増える。NH₃合成は発熱反応であるため高温では逆反応が有利になり平衡収量は減少する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "発熱反応なので高温では収量が減る。",
+          "choice_id": "ch3_3_q013_c4",
+          "tts_text": "高温ほどアンモニアの平衡収量が増える。アンモニア合成は発熱反応であるため高温では逆反応が有利になり平衡収量は減少する。"
+        }
+      ],
+      "explanation": "NH₃合成は発熱反応で分子数が減る反応です。ルシャトリエの原理から低温・高圧がNH₃の収量に有利です。しかし低温すぎると反応が遅くなるため、妥協点として四百〜600℃・十〜三十メガパスカルの条件と鉄系触媒を用います。生成したNH₃を冷却・液化して除去すると平衡がさらに右に移動します。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_001",
+          "quote": "速度と収率の妥協点として約400～600℃、10～30MPaの条件を用います"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ハーバー・ボッシュ法について、正しい記述を選びなさい。",
+      "tts_explanation": "アンモニア合成は発熱反応で分子数が減る反応です。ルシャトリエの原理から低温・高圧がアンモニアの収量に有利です。しかし低温すぎると反応が遅くなるため、妥協点として四百〜六百度・十〜三十メガパスカルの条件と鉄系触媒を用います。生成したアンモニアを冷却・液化して除去すると平衡がさらに右に移動します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q014",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "平衡は停止しているという誤解",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "化学平衡に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "平衡状態では正反応と逆反応の速度が等しい。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q014_c1",
+          "tts_text": "平衡状態では正反応と逆反応の速度が等しい。"
+        },
+        {
+          "label": "2",
+          "text": "見かけ上は反応が停止して見えるが実際は反応が進行している。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q014_c2",
+          "tts_text": "見かけ上は反応が停止して見えるが実際は反応が進行している。"
+        },
+        {
+          "label": "3",
+          "text": "平衡状態での各物質の濃度は一定に保たれる。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q014_c3",
+          "tts_text": "平衡状態での各物質の濃度は一定に保たれる。"
+        },
+        {
+          "label": "4",
+          "text": "平衡状態とは反応が完全に停止し分子の動きが止まった状態である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "動的平衡であり反応は止まっていない。",
+          "choice_id": "ch3_3_q014_c4",
+          "tts_text": "平衡状態とは反応が完全に停止し分子の動きが止まった状態である。"
+        }
+      ],
+      "explanation": "化学平衡に関する最も多い誤解は「反応が止まっている」という考えです。実際には正反応と逆反応が同じ速度で進行し続ける動的平衡です。見かけ上は変化がないため静的に見えますが、放射性同位体を使ったトレーサー実験で反応が進行していることが確認できます。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "反応が完全に停止して分子の動きが止まっているわけではない（動的平衡）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002",
+        "3_3_tip_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "化学平衡に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "化学平衡に関する最も多い誤解は「反応が止まっている」という考えです。実際には正反応と逆反応が同じ速度で進行し続ける動的平衡です。見かけ上は変化がないため静的に見えますが、放射性同位体を使ったトレーサー実験で反応が進行していることが確認できます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q015",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "平衡定数の式の分子分母の入れ替え",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "平衡定数の式に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "平衡定数の式では係数をべき乗にする。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q015_c1",
+          "tts_text": "平衡定数の式では係数をべき乗にする。"
+        },
+        {
+          "label": "2",
+          "text": "平衡定数の式は分子に反応物、分母に生成物を配置するのが正しい。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。分子に生成物、分母に反応物。",
+          "choice_id": "ch3_3_q015_c2",
+          "tts_text": "平衡定数の式は分子に反応物、分母に生成物を配置するのが正しい。"
+        },
+        {
+          "label": "3",
+          "text": "温度一定なら平衡定数は一定である。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q015_c3",
+          "tts_text": "温度一定なら平衡定数は一定である。"
+        },
+        {
+          "label": "4",
+          "text": "平衡定数の式は分子に生成物、分母に反応物を配置する。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q015_c4",
+          "tts_text": "平衡定数の式は分子に生成物、分母に反応物を配置する。"
+        }
+      ],
+      "explanation": "平衡定数の式で最も多い間違いは分子と分母の配置を逆にすることです。正しくは分子（上）に生成物、分母（下）に反応物を配置します。この逆を書いてしまうと逆反応の平衡定数（正反応の逆数）を計算してしまうことになります。",
+      "evidence": [
+        {
+          "source_id": "3_3_eq_001",
+          "quote": "分子に右辺（生成物）、分母に左辺（反応物）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_eq_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "平衡定数の式に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "平衡定数の式で最も多い間違いは分子と分母の配置を逆にすることです。正しくは分子（上）に生成物、分母（下）に反応物を配置します。この逆を書いてしまうと逆反応の平衡定数（正反応の逆数）を計算してしまうことになります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q016",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "触媒で平衡が移動するという誤解",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "触媒と平衡に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "触媒は平衡到達時間を短縮する。これは正しい記述であり触媒は正逆両反応を速くして平衡に早く達することができる。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q016_c1",
+          "tts_text": "触媒は平衡到達時間を短縮する。これは正しい記述であり触媒は正逆両反応を速くして平衡に早く達することができる。"
+        },
+        {
+          "label": "2",
+          "text": "触媒は正反応も逆反応も速くする。これは正しい記述であり触媒は両方向の反応を同じ割合で促進する。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q016_c2",
+          "tts_text": "触媒は正反応も逆反応も速くする。これは正しい記述であり触媒は両方向の反応を同じ割合で促進する。"
+        },
+        {
+          "label": "3",
+          "text": "触媒は平衡定数を変えない。これは正しい記述であり触媒は速度のみに影響し平衡定数や平衡の位置には一切影響しない。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q016_c3",
+          "tts_text": "触媒は平衡定数を変えない。これは正しい記述であり触媒は速度のみに影響し平衡定数や平衡の位置には一切影響しない。"
+        },
+        {
+          "label": "4",
+          "text": "触媒を加えると平衡が右方向に移動し生成物の収量が増加する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "平衡の位置は変わらない。収量は増加しない。",
+          "choice_id": "ch3_3_q016_c4",
+          "tts_text": "触媒を加えると平衡が右方向に移動し生成物の収量が増加する。"
+        }
+      ],
+      "explanation": "触媒は正反応と逆反応の両方を同じ割合で速くするため、平衡に達する時間は早くなりますが、最終的な物質の割合（平衡の位置）は変わりません。ハーバー・ボッシュ法で触媒（鉄系）を使うのは反応を速くするためであって収量自体を増やすためではありません。",
+      "evidence": [
+        {
+          "source_id": "3_3_tip_002",
+          "quote": "触媒を加えると生成物の収量が増加する（誤り）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_tip_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "触媒と平衡に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "触媒は正反応と逆反応の両方を同じ割合で速くするため、平衡に達する時間は早くなりますが、最終的な物質の割合（平衡の位置）は変わりません。ハーバー・ボッシュ法で触媒（鉄系）を使うのは反応を速くするためであって収量自体を増やすためではありません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q017",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "温度変化での平衡定数不変の誤解",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "平衡定数の変化に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度を変えると平衡定数は変化する。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q017_c1",
+          "tts_text": "温度を変えると平衡定数は変化する。"
+        },
+        {
+          "label": "2",
+          "text": "平衡定数はいかなる条件変化でも一定不変であり温度でも変わらない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "温度変化で平衡定数は変わる。",
+          "choice_id": "ch3_3_q017_c2",
+          "tts_text": "平衡定数はいかなる条件変化でも一定不変であり温度でも変わらない。"
+        },
+        {
+          "label": "3",
+          "text": "圧力を変えても温度一定なら平衡定数は変わらない。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q017_c3",
+          "tts_text": "圧力を変えても温度一定なら平衡定数は変わらない。"
+        },
+        {
+          "label": "4",
+          "text": "濃度を変えても平衡定数は変わらない。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q017_c4",
+          "tts_text": "濃度を変えても平衡定数は変わらない。"
+        }
+      ],
+      "explanation": "平衡定数を変えるのは温度変化のみです。濃度変化や圧力変化では平衡は移動しますが平衡定数の値は変わりません。温度を変えると平衡定数が変化するため、たとえば発熱反応を加熱するとケーは小さくなります。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_004",
+          "quote": "平衡定数自体の値も変化します（発熱反応を加熱するとKは小さくなる）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "平衡定数の変化に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "平衡定数を変えるのは温度変化のみです。濃度変化や圧力変化では平衡は移動しますが平衡定数の値は変わりません。温度を変えると平衡定数が変化するため、たとえば発熱反応を加熱するとケーは小さくなります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q018",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "不活性気体添加の条件混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "不活性気体添加に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "体積一定でも圧力一定でも不活性気体を加えれば必ず平衡は移動する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "体積一定では移動しない。",
+          "choice_id": "ch3_3_q018_c1",
+          "tts_text": "体積一定でも圧力一定でも不活性気体を加えれば必ず平衡は移動する。"
+        },
+        {
+          "label": "2",
+          "text": "体積一定で不活性気体を加えると各成分の分圧は変わらないため平衡は移動しない。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q018_c2",
+          "tts_text": "体積一定で不活性気体を加えると各成分の分圧は変わらないため平衡は移動しない。"
+        },
+        {
+          "label": "3",
+          "text": "圧力一定で不活性気体を加えると体積が増え各成分の分圧が下がる。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q018_c3",
+          "tts_text": "圧力一定で不活性気体を加えると体積が増え各成分の分圧が下がる。"
+        },
+        {
+          "label": "4",
+          "text": "圧力一定の場合は分子数が増える方向に移動する。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q018_c4",
+          "tts_text": "圧力一定の場合は分子数が増える方向に移動する。"
+        }
+      ],
+      "explanation": "不活性気体の添加で平衡が移動するかどうかは容器の条件に依存します。定積では全圧は上がりますが各成分の分圧は変わらないため移動しません。定圧では容器が膨張して各成分の分圧が下がるため分子数が増える方向に移動します。この区別は試験で最も間違いやすいポイントです。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_006",
+          "quote": "定積で加えた場合は平衡移動しないが、定圧で加えた場合は移動する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_006"
+      ],
+      "mnemonic": null,
+      "tts_question": "不活性気体添加に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "不活性気体の添加で平衡が移動するかどうかは容器の条件に依存します。定積では全圧は上がりますが各成分の分圧は変わらないため移動しません。定圧では容器が膨張して各成分の分圧が下がるため分子数が増える方向に移動します。この区別は試験で最も間違いやすいポイントです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q019",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "ハーバー・ボッシュ法の温度設定理由",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "ハーバー・ボッシュ法の温度設定に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "NH₃合成は発熱反応なので低温ほど平衡的に有利である。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q019_c1",
+          "tts_text": "アンモニア合成は発熱反応なので低温ほど平衡的に有利である。"
+        },
+        {
+          "label": "2",
+          "text": "低温すぎると反応速度が遅くなり実用的でない。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q019_c2",
+          "tts_text": "低温すぎると反応速度が遅くなり実用的でない。"
+        },
+        {
+          "label": "3",
+          "text": "高温ほどNH₃の平衡収量が増えるため、できるだけ高温にすべきである。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "発熱反応なので高温では収量が減る。",
+          "choice_id": "ch3_3_q019_c3",
+          "tts_text": "高温ほどアンモニアの平衡収量が増えるため、できるだけ高温にすべきである。"
+        },
+        {
+          "label": "4",
+          "text": "妥協点として四百〜600℃を採用している。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q019_c4",
+          "tts_text": "妥協点として四百〜六百度を採用している。"
+        }
+      ],
+      "explanation": "NH₃合成は発熱反応なので高温にすると吸熱方向（分解方向）に移動しNH₃の平衡収量は減ります。しかし低温すぎると触媒を使っても反応速度が遅すぎて実用になりません。そこで平衡収量と反応速度の両方を考慮した妥協温度として四百〜600℃が選ばれています。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_001",
+          "quote": "低温すぎると反応速度が遅くなります。そのため、速度と収率の妥協点として設定"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ハーバー・ボッシュ法の温度設定に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "アンモニア合成は発熱反応なので高温にすると吸熱方向（分解方向）に移動しアンモニアの平衡収量は減ります。しかし低温すぎると触媒を使っても反応速度が遅すぎて実用になりません。そこで平衡収量と反応速度の両方を考慮した妥協温度として四百〜六百度が選ばれています。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q020",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "クロム酸イオンの平衡",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "クロム酸イオンとニクロム酸イオンの平衡について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "クロム酸イオンは赤橙色でニクロム酸イオンは黄色である。逆でクロム酸イオンが黄色でニクロム酸イオンが赤橙色である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "逆。クロム酸が黄、ニクロム酸が赤橙。",
+          "choice_id": "ch3_3_q020_c1",
+          "tts_text": "クロム酸イオンは赤橙色でニクロム酸イオンは黄色である。逆でクロム酸イオンが黄色でニクロム酸イオンが赤橙色である。"
+        },
+        {
+          "label": "2",
+          "text": "塩基を加えるとニクロム酸イオンが増加する。逆で塩基を加えると平衡がクロム酸イオン側に移動しクロム酸イオンが増加する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "塩基ではクロム酸イオンが増加する。",
+          "choice_id": "ch3_3_q020_c2",
+          "tts_text": "塩基を加えるとニクロム酸イオンが増加する。逆で塩基を加えると平衡がクロム酸イオン側に移動しクロム酸イオンが増加する。"
+        },
+        {
+          "label": "3",
+          "text": "クロム酸イオン（黄色）の水溶液に酸を加えると水素イオンを消費する方向へ移動しニクロム酸イオン（赤橙色）が生成して色が変化する。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q020_c3",
+          "tts_text": "クロム酸イオン（黄色）の水溶液に酸を加えると水素イオンを消費する方向へ移動しニクロム酸イオン（赤橙色）が生成して色が変化する。"
+        },
+        {
+          "label": "4",
+          "text": "酸を加えるとクロム酸イオンが増加する。逆で酸を加えると水素イオンを消費する方向に移動しニクロム酸イオンが増加する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ニクロム酸イオンが増加する。",
+          "choice_id": "ch3_3_q020_c4",
+          "tts_text": "酸を加えるとクロム酸イオンが増加する。逆で酸を加えると水素イオンを消費する方向に移動しニクロム酸イオンが増加する。"
+        }
+      ],
+      "explanation": "クロム酸イオンとニクロム酸イオンの平衡は色の変化で目に見えるため教科書でよく取り上げられます。酸を加えると水素イオンを消費する右方向（ニクロム酸生成方向）に移動し黄色から赤橙色に変化します。逆に塩基を加えると左方向に移動し黄色に戻ります。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_003",
+          "quote": "酸（H+）を加えると、H+を消費する方向（右）へ移動し、ニクロム酸イオンが生成"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_003",
+        "3_3_sub_005",
+        "3_3_sub_006"
+      ],
+      "mnemonic": null,
+      "tts_question": "クロム酸イオンとニクロム酸イオンの平衡について、正しい記述を選びなさい。",
+      "tts_explanation": "クロム酸イオンとニクロム酸イオンの平衡は色の変化で目に見えるため教科書でよく取り上げられます。酸を加えると水素イオンを消費する右方向（ニクロム酸生成方向）に移動し黄色から赤橙色に変化します。逆に塩基を加えると左方向に移動し黄色に戻ります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q021",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "procedure",
+      "sub_category": "ハーバー・ボッシュ法の手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ハーバー・ボッシュ法の操作手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "生成したNH₃はそのまま容器内に留めておく。生成したNH₃を冷却・液化して取り除くことで平衡をさらに右に移動させる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "取り除くことで平衡をさらに右に移動させる。",
+          "choice_id": "ch3_3_q021_c1",
+          "tts_text": "生成したアンモニアはそのまま容器内に留めておく。生成したアンモニアを冷却・液化して取り除くことで平衡をさらに右に移動させる。"
+        },
+        {
+          "label": "2",
+          "text": "触媒は使わず高温のみで反応させると勘違いされやすいが、鉄系触媒を使用して活性化エネルギーを下げ反応速度を大きくすることが不可欠であると誤って覚えやすい典型例だが、",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "鉄系触媒を使用する。",
+          "choice_id": "ch3_3_q021_c2",
+          "tts_text": "触媒は使わず高温のみで反応させると勘違いされやすいが、鉄系触媒を使用して活性化エネルギーを下げ反応速度を大きくすることが不可欠であると誤って覚えやすい典型例だが、"
+        },
+        {
+          "label": "3",
+          "text": "低圧条件を用いるのが最適である。分子数が減少する反応であるため高圧が平衡的に有利であり十〜三十メガパスカルを使用する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高圧条件が有利。",
+          "choice_id": "ch3_3_q021_c3",
+          "tts_text": "低圧条件を用いるのが最適である。分子数が減少する反応であるため高圧が平衡的に有利であり十〜三十メガパスカルを使用する。"
+        },
+        {
+          "label": "4",
+          "text": "鉄系触媒を用い、約四百〜600℃・十〜三十メガパスカルの条件で反応させ、生成したNH₃を冷却・液化して取り除く。NH₃を除くことで平衡をさらに右に移動させる。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q021_c4",
+          "tts_text": "鉄系触媒を用い、約四百〜六百度・十〜三十メガパスカルの条件で反応させ、生成したアンモニアを冷却・液化して取り除く。アンモニアを除くことで平衡をさらに右に移動させる。"
+        }
+      ],
+      "explanation": "ハーバー・ボッシュ法は四段階の最適化が行われています。第一に鉄系触媒で速度を確保。第二に妥協温度で平衡収量と速度のバランス。第三に高圧で分子数減少方向（右）に平衡を移動。第四にNH₃を液化除去して濃度低下による右方向移動を促進します。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_001",
+          "quote": "生成したアンモニアを冷却・液化して取り除く"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ハーバー・ボッシュ法の操作手順として、正しいものを選びなさい。",
+      "tts_explanation": "ハーバー・ボッシュ法は四段階の最適化が行われています。第一に鉄系触媒で速度を確保。第二に妥協温度で平衡収量と速度のバランス。第三に高圧で分子数減少方向（右）に平衡を移動。第四にアンモニアを液化除去して濃度低下による右方向移動を促進します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q022",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "係数の和が等しい場合の圧力効果",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "圧力変化と平衡移動に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "NH₃合成は左辺四分子・右辺二分子なので高圧で右に移動する。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q022_c1",
+          "tts_text": "アンモニア合成は左辺四分子・右辺二分子なので高圧で右に移動する。"
+        },
+        {
+          "label": "2",
+          "text": "水素とヨウ素からヨウ化水素生成の反応でも高圧にすれば右に移動する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "両辺二分子で等しいため移動しない。",
+          "choice_id": "ch3_3_q022_c2",
+          "tts_text": "水素とヨウ素からヨウ化水素生成の反応でも高圧にすれば右に移動する。"
+        },
+        {
+          "label": "3",
+          "text": "圧力を変えても温度一定なら平衡定数は不変である。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q022_c3",
+          "tts_text": "圧力を変えても温度一定なら平衡定数は不変である。"
+        },
+        {
+          "label": "4",
+          "text": "水素とヨウ素からヨウ化水素が生成する反応では両辺の分子数が等しいため圧力変化で平衡は移動しない。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q022_c4",
+          "tts_text": "水素とヨウ素からヨウ化水素が生成する反応では両辺の分子数が等しいため圧力変化で平衡は移動しない。"
+        }
+      ],
+      "explanation": "水素とヨウ素からヨウ化水素が生成する反応は両辺とも二分子です。圧力変化の影響は分子数の差がゼロのため生じません。すべての気体反応で圧力効果があるわけではなく、両辺の気体分子数の和を必ず確認する必要があります。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_005",
+          "quote": "両辺の気体の係数の和が等しい場合、圧力を変化させても平衡は移動しない"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_005"
+      ],
+      "mnemonic": null,
+      "tts_question": "圧力変化と平衡移動に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "水素とヨウ素からヨウ化水素が生成する反応は両辺とも二分子です。圧力変化の影響は分子数の差がゼロのため生じません。すべての気体反応で圧力効果があるわけではなく、両辺の気体分子数の和を必ず確認する必要があります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q023",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "mnemonic",
+      "sub_category": "ルシャトリエの原理の覚え方",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ルシャトリエの原理の覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "「鎮静剤」のイメージで覚える。外からの刺激（変化）を和らげる（緩和する）方向に平衡が移動する。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q023_c1",
+          "tts_text": "「鎮静剤」のイメージで覚える。外からの刺激（変化）を和らげる（緩和する）方向に平衡が移動する。"
+        },
+        {
+          "label": "2",
+          "text": "この覚え方は平衡定数の計算に関するものである。鎮静剤のイメージはルシャトリエの原理がどう働くかを覚えるためのもので平衡定数の計算とは別である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "平衡移動の方向に関する覚え方。",
+          "choice_id": "ch3_3_q023_c2",
+          "tts_text": "この覚え方は平衡定数の計算に関するものである。鎮静剤のイメージはルシャトリエの原理がどう働くかを覚えるためのもので平衡定数の計算とは別である。"
+        },
+        {
+          "label": "3",
+          "text": "「増幅器」のイメージで覚える。外からの変化を増幅する方向に移動する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "増幅ではなく緩和。",
+          "choice_id": "ch3_3_q023_c3",
+          "tts_text": "「増幅器」のイメージで覚える。外からの変化を増幅する方向に移動する。"
+        },
+        {
+          "label": "4",
+          "text": "ルシャトリエの原理は実際には成り立たないため覚える必要がない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非常に重要な法則。",
+          "choice_id": "ch3_3_q023_c4",
+          "tts_text": "ルシャトリエの原理は実際には成り立たないため覚える必要がない。"
+        }
+      ],
+      "explanation": "ルシャトリエの原理を「鎮静剤」として覚えると便利です。「外から加えた刺激（温度上昇・圧力増加・物質追加）をやわらげるように」反応が進みます。温度を上げたら冷やすように（吸熱方向）、圧力を上げたら圧力を下げるように（分子数減少方向）移動すると覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_002",
+          "quote": "ルシャトリエの原理は鎮静剤。外からの影響をやわらげる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_002"
+      ],
+      "mnemonic": "ルシャトリエは鎮静剤",
+      "tts_question": "ルシャトリエの原理の覚え方として、正しいものを選びなさい。",
+      "tts_explanation": "ルシャトリエの原理を「鎮静剤」として覚えると便利です。「外から加えた刺激（温度上昇・圧力増加・物質追加）をやわらげるように」反応が進みます。温度を上げたら冷やすように（吸熱方向）、圧力を上げたら圧力を下げるように（分子数減少方向）移動すると覚えましょう。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q024",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "mnemonic",
+      "sub_category": "平衡の動的性質の覚え方",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "化学平衡の動的性質の覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "「行きと帰りの速度が同じ」で覚える。止まっているのではなく行きと帰りが釣り合っているだけである。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q024_c1",
+          "tts_text": "「行きと帰りの速度が同じ」で覚える。止まっているのではなく行きと帰りが釣り合っているだけである。"
+        },
+        {
+          "label": "2",
+          "text": "「行きも帰りもゼロ」で覚える。両方とも反応が止まっている。平衡は静止状態ではなく行きと帰りが等しい速度で進行する動的状態である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ゼロではなく等しい。",
+          "choice_id": "ch3_3_q024_c2",
+          "tts_text": "「行きも帰りもゼロ」で覚える。両方とも反応が止まっている。平衡は静止状態ではなく行きと帰りが等しい速度で進行する動的状態である。"
+        },
+        {
+          "label": "3",
+          "text": "この覚え方は不可逆反応に関するものである。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "可逆反応の平衡に関する覚え方。",
+          "choice_id": "ch3_3_q024_c3",
+          "tts_text": "この覚え方は不可逆反応に関するものである。"
+        },
+        {
+          "label": "4",
+          "text": "行きの速度は帰りの速度より必ず大きい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "等しい。",
+          "choice_id": "ch3_3_q024_c4",
+          "tts_text": "行きの速度は帰りの速度より必ず大きい。"
+        }
+      ],
+      "explanation": "「行きと帰りの速度が同じ」というフレーズは平衡の本質を端的に表しています。エスカレーターの上りと下りに同じ速さで人が乗っている状態のように、全体の人数は変わらないけれど一人ひとりは動き続けています。これが動的平衡のイメージです。",
+      "evidence": [
+        {
+          "source_id": "3_3_tip_001",
+          "quote": "平衡は行きと帰りの速度が同じ"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_tip_001"
+      ],
+      "mnemonic": "平衡は行きと帰りの速度が同じ",
+      "tts_question": "化学平衡の動的性質の覚え方として、正しいものを選びなさい。",
+      "tts_explanation": "「行きと帰りの速度が同じ」というフレーズは平衡の本質を端的に表しています。エスカレーターの上りと下りに同じ速さで人が乗っている状態のように、全体の人数は変わらないけれど一人ひとりは動き続けています。これが動的平衡のイメージです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q025",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "classification",
+      "sub_category": "平衡定数を変える因子",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "平衡定数を変える因子の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "触媒を加えると平衡定数が変わる。触媒は反応速度を上げるだけで平衡定数の値に一切影響を与えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "変わらない。",
+          "choice_id": "ch3_3_q025_c1",
+          "tts_text": "触媒を加えると平衡定数が変わる。触媒は反応速度を上げるだけで平衡定数の値に一切影響を与えない。"
+        },
+        {
+          "label": "2",
+          "text": "濃度変化で平衡定数が変わる。濃度変化は平衡を移動させるが温度一定なら平衡定数の値は変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "変わらない。",
+          "choice_id": "ch3_3_q025_c2",
+          "tts_text": "濃度変化で平衡定数が変わる。濃度変化は平衡を移動させるが温度一定なら平衡定数の値は変わらない。"
+        },
+        {
+          "label": "3",
+          "text": "平衡定数を変えるのは温度変化のみである。濃度変化や圧力変化は平衡を移動させるが平衡定数の値は変えない。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q025_c3",
+          "tts_text": "平衡定数を変えるのは温度変化のみである。濃度変化や圧力変化は平衡を移動させるが平衡定数の値は変えない。"
+        },
+        {
+          "label": "4",
+          "text": "圧力変化で平衡定数が変わる。圧力変化は平衡を移動させるが温度一定なら平衡定数の値は変わらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "変わらない。",
+          "choice_id": "ch3_3_q025_c4",
+          "tts_text": "圧力変化で平衡定数が変わる。圧力変化は平衡を移動させるが温度一定なら平衡定数の値は変わらない。"
+        }
+      ],
+      "explanation": "平衡定数に影響する因子を整理すると、温度のみが平衡定数を変化させます。濃度変化は平衡を移動させるが定数不変、圧力変化も同様、触媒は移動すらさせず定数も不変です。試験では「何が定数を変えるか」を問う問題が頻出です。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_003",
+          "quote": "温度が変わらない限り、平衡定数 K の値は一定に保たれる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_003",
+        "3_3_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "平衡定数を変える因子の分類として、正しいものを選びなさい。",
+      "tts_explanation": "平衡定数に影響する因子を整理すると、温度のみが平衡定数を変化させます。濃度変化は平衡を移動させるが定数不変、圧力変化も同様、触媒は移動すらさせず定数も不変です。試験では「何が定数を変えるか」を問う問題が頻出です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q026",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "classification",
+      "sub_category": "ルシャトリエの原理の適用分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ルシャトリエの原理の各条件変化への適用として、正しい組み合わせを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度上昇は吸熱方向、圧力増加は分子数減少方向、物質追加はそれを消費する方向へ移動。触媒は平衡を移動させない。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q026_c1",
+          "tts_text": "温度上昇は吸熱方向、圧力増加は分子数減少方向、物質追加はそれを消費する方向へ移動。触媒は平衡を移動させない。"
+        },
+        {
+          "label": "2",
+          "text": "温度上昇は発熱方向、圧力増加は分子数増加方向に移動。両方とも逆で温度上昇は吸熱方向、圧力増加は分子数減少方向に移動する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "すべて逆。",
+          "choice_id": "ch3_3_q026_c2",
+          "tts_text": "温度上昇は発熱方向、圧力増加は分子数増加方向に移動。両方とも逆で温度上昇は吸熱方向、圧力増加は分子数減少方向に移動する。"
+        },
+        {
+          "label": "3",
+          "text": "触媒は平衡を右方向に移動させる。触媒は正逆両反応を同じ割合で速くするため平衡の位置は動かさず移動は起こさない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "移動させない。",
+          "choice_id": "ch3_3_q026_c3",
+          "tts_text": "触媒は平衡を右方向に移動させる。触媒は正逆両反応を同じ割合で速くするため平衡の位置は動かさず移動は起こさない。"
+        },
+        {
+          "label": "4",
+          "text": "物質を追加してもそのまま蓄積するだけで平衡は移動しない。追加した物質を消費する方向に平衡が移動して変化を緩和しようとする。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "消費する方向に移動する。",
+          "choice_id": "ch3_3_q026_c4",
+          "tts_text": "物質を追加してもそのまま蓄積するだけで平衡は移動しない。追加した物質を消費する方向に平衡が移動して変化を緩和しようとする。"
+        }
+      ],
+      "explanation": "ルシャトリエの原理を各因子に具体的に適用すると次のようになります。温度上昇→吸熱方向、温度低下→発熱方向。圧力増加→分子数減少方向、圧力減少→分子数増加方向。濃度追加→消費方向。触媒→移動なし。これを整理して覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_002",
+          "quote": "変化の影響を緩和する方向に平衡が移動する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_002",
+        "3_3_law_003",
+        "3_3_law_004",
+        "3_3_law_005",
+        "3_3_tip_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "ルシャトリエの原理の各条件変化への適用として、正しい組み合わせを選びなさい。",
+      "tts_explanation": "ルシャトリエの原理を各因子に具体的に適用すると次のようになります。温度上昇→吸熱方向、温度低下→発熱方向。圧力増加→分子数減少方向、圧力減少→分子数増加方向。濃度追加→消費方向。触媒→移動なし。これを整理して覚えましょう。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q027",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "固体を式に含める誤り",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "平衡定数の式に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "純液体も同様に式に含めないことがある。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q027_c1",
+          "tts_text": "純液体も同様に式に含めないことがある。"
+        },
+        {
+          "label": "2",
+          "text": "気体と溶質は式に含める。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q027_c2",
+          "tts_text": "気体と溶質は式に含める。"
+        },
+        {
+          "label": "3",
+          "text": "固体も気体と同様にモル濃度を使って平衡定数の式に含める。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "固体は一定値なので式に含めない。",
+          "choice_id": "ch3_3_q027_c3",
+          "tts_text": "固体も気体と同様にモル濃度を使って平衡定数の式に含める。"
+        },
+        {
+          "label": "4",
+          "text": "固体の濃度は一定とみなし平衡定数の式に含めない。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q027_c4",
+          "tts_text": "固体の濃度は一定とみなし平衡定数の式に含めない。"
+        }
+      ],
+      "explanation": "固体は密度が一定のためモル濃度も一定です。したがって平衡定数に含めても定数が掛かるだけなので省略して平衡定数に含めません。同様に純液体も省略します。このルールを知らないとCaCO₃の分解など固体が関わる平衡の計算を間違えます。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_001",
+          "quote": "固体が関与する場合は、固体の濃度は定数とみなして式に含めない"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "平衡定数の式に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "固体は密度が一定のためモル濃度も一定です。したがって平衡定数に含めても定数が掛かるだけなので省略して平衡定数に含めません。同様に純液体も省略します。このルールを知らないと炭酸カルシウムの分解など固体が関わる平衡の計算を間違えます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q028",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "アンモニアの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "NH₃の性質について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "NH₃は無臭である。NH₃は強い刺激臭をもつ気体であり無臭ではない。少量でも臭いによって検知できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "刺激臭がある。",
+          "choice_id": "ch3_3_q028_c1",
+          "tts_text": "アンモニアは無臭である。アンモニアは強い刺激臭をもつ気体であり無臭ではない。少量でも臭いによって検知できる。"
+        },
+        {
+          "label": "2",
+          "text": "NH₃は水に溶けにくい。NH₃は水に極めて溶けやすい気体であり常温常圧で水1Lに約800L溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "極めて溶けやすい。",
+          "choice_id": "ch3_3_q028_c2",
+          "tts_text": "アンモニアは水に溶けにくい。アンモニアは水に極めて溶けやすい気体であり常温常圧で水一リットルに約八百リットル溶ける。"
+        },
+        {
+          "label": "3",
+          "text": "NH₃の合成は吸熱反応である。窒素と水素からのNH₃合成は発熱反応であり熱を放出する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "発熱反応。",
+          "choice_id": "ch3_3_q028_c3",
+          "tts_text": "アンモニアの合成は吸熱反応である。窒素と水素からのアンモニア合成は発熱反応であり熱を放出する。"
+        },
+        {
+          "label": "4",
+          "text": "無色で刺激臭のある気体であり水に極めて溶けやすい。窒素と水素からの合成は発熱反応である。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q028_c4",
+          "tts_text": "無色で刺激臭のある気体であり水に極めて溶けやすい。窒素と水素からの合成は発熱反応である。"
+        }
+      ],
+      "explanation": "NH₃は無色で強い刺激臭のある気体です。水への溶解度が非常に高く、水溶液は弱塩基性を示します。窒素と水素からの工業的合成（ハーバー・ボッシュ法）は発熱反応であるため、高温では平衡が逆方向（分解方向）に移動してNH₃の収量が減ります。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_003",
+          "quote": "窒素と水素から工業的合成される（ハーバー・ボッシュ法）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "アンモニアの性質について、正しい記述を選びなさい。",
+      "tts_explanation": "アンモニアは無色で強い刺激臭のある気体です。水への溶解度が非常に高く、水溶液は弱塩基性を示します。窒素と水素からの工業的合成（ハーバー・ボッシュ法）は発熱反応であるため、高温では平衡が逆方向（分解方向）に移動してアンモニアの収量が減ります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q029",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "平衡移動と反応完了の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "平衡移動に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "平衡が右に移動すると生成物の量が増加する。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q029_c1",
+          "tts_text": "平衡が右に移動すると生成物の量が増加する。"
+        },
+        {
+          "label": "2",
+          "text": "平衡が右に移動すると反応物はすべて完全に消費され残らない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "完全には消費されない。新たな平衡で反応物も残る。",
+          "choice_id": "ch3_3_q029_c2",
+          "tts_text": "平衡が右に移動すると反応物はすべて完全に消費され残らない。"
+        },
+        {
+          "label": "3",
+          "text": "新しい平衡状態では前とは異なる濃度比になる。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q029_c3",
+          "tts_text": "新しい平衡状態では前とは異なる濃度比になる。"
+        },
+        {
+          "label": "4",
+          "text": "平衡が移動しても反応物がゼロになるわけではない。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q029_c4",
+          "tts_text": "平衡が移動しても反応物がゼロになるわけではない。"
+        }
+      ],
+      "explanation": "平衡が移動しても反応物が完全に消費されることはありません。可逆反応であるため反応物と生成物が常に共存します。移動によって生成物が増え反応物が減りますが、新たな平衡状態では反応物も一定量残っています。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_003",
+          "quote": "新しい平衡状態でのN2の量は追加直後よりは減りますが、最初よりは多くなります"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_005"
+      ],
+      "mnemonic": null,
+      "tts_question": "平衡移動に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "平衡が移動しても反応物が完全に消費されることはありません。可逆反応であるため反応物と生成物が常に共存します。移動によって生成物が増え反応物が減りますが、新たな平衡状態では反応物も一定量残っています。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q030",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "procedure",
+      "sub_category": "平衡定数の計算手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "平衡定数の計算手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "初期量をそのまま平衡定数の式に代入すると誤解されやすいが、初期量ではなく平衡時の濃度を求めてから代入する必要がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "平衡時の濃度を使う。",
+          "choice_id": "ch3_3_q030_c1",
+          "tts_text": "初期量をそのまま平衡定数の式に代入すると誤解されやすいが、初期量ではなく平衡時の濃度を求めてから代入する必要がある。"
+        },
+        {
+          "label": "2",
+          "text": "変化量の計算は不要である。初期量から変化量を求めて平衡時の各物質の量を算出する過程が不可欠である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "変化量は必須。",
+          "choice_id": "ch3_3_q030_c2",
+          "tts_text": "変化量の計算は不要である。初期量から変化量を求めて平衡時の各物質の量を算出する過程が不可欠である。"
+        },
+        {
+          "label": "3",
+          "text": "モル濃度ではなく物質量をそのまま代入すると誤って覚えやすい典型例だが、平衡定数の式にはモル濃度を代入する必要があるため容器の体積で割る必要がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "モル濃度にする必要がある。",
+          "choice_id": "ch3_3_q030_c3",
+          "tts_text": "モル濃度ではなく物質量をそのまま代入すると誤って覚えやすい典型例だが、平衡定数の式にはモル濃度を代入する必要があるため容器の体積で割る必要がある。"
+        },
+        {
+          "label": "4",
+          "text": "まず初期量と変化量から平衡時の各物質の量を求め、次に容器の体積で割ってモル濃度にし、最後に平衡定数の式に代入する。ICE表を用いると整理しやすい。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q030_c4",
+          "tts_text": "まず初期量と変化量から平衡時の各物質の量を求め、次に容器の体積で割ってモル濃度にし、最後に平衡定数の式に代入する。ICE表を用いると整理しやすい。"
+        }
+      ],
+      "explanation": "平衡定数の計算ではICE表（Initial-Change-Equilibrium）を使うと整理しやすくなります。Iに初期の物質量、Cに化学量論比に基づく変化量、Eに平衡時の物質量を記入し、体積で割ってモル濃度にしてから式に代入します。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_001",
+          "quote": "初期量と平衡時の量から平衡定数を算出する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_001",
+        "3_3_eq_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "平衡定数の計算手順として、正しいものを選びなさい。",
+      "tts_explanation": "平衡定数の計算ではICE表（Initial-Change-Equilibrium）を使うと整理しやすくなります。Iに初期の物質量、Cに化学量論比に基づく変化量、Eに平衡時の物質量を記入し、体積で割ってモル濃度にしてから式に代入します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q031",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "速度式と平衡定数式の違い",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "速度式と平衡定数式の違いとして、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "平衡定数の式も速度式と同じく指数は実験で決める。平衡定数の式の指数は反応式の係数がそのまま使え実験で決める必要はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "平衡定数の指数は係数から直接決まる。",
+          "choice_id": "ch3_3_q031_c1",
+          "tts_text": "平衡定数の式も速度式と同じく指数は実験で決める。平衡定数の式の指数は反応式の係数がそのまま使え実験で決める必要はない。"
+        },
+        {
+          "label": "2",
+          "text": "速度式の指数は実験で決め係数と一致するとは限らないが、平衡定数の式の指数は反応式の係数がそのまま使える。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q031_c2",
+          "tts_text": "速度式の指数は実験で決め係数と一致するとは限らないが、平衡定数の式の指数は反応式の係数がそのまま使える。"
+        },
+        {
+          "label": "3",
+          "text": "二つの式は全く同じ構造である。速度式は指数が実験で決まり係数と一致しないことがあるが平衡定数式は係数をそのまま使う点で異なる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "構造が異なる。",
+          "choice_id": "ch3_3_q031_c3",
+          "tts_text": "二つの式は全く同じ構造である。速度式は指数が実験で決まり係数と一致しないことがあるが平衡定数式は係数をそのまま使う点で異なる。"
+        },
+        {
+          "label": "4",
+          "text": "速度式の指数は常に係数と一致する。速度式の指数は実験で決定されるものであり化学反応式の係数とは一致しないことがある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一致するとは限らない。",
+          "choice_id": "ch3_3_q031_c4",
+          "tts_text": "速度式の指数は常に係数と一致する。速度式の指数は実験で決定されるものであり化学反応式の係数とは一致しないことがある。"
+        }
+      ],
+      "explanation": "速度式の指数は多段階反応のため係数と一致しないことがありますが、平衡定数の式は熱力学的な法則から導かれるため反応式の係数がそのまま指数として使えます。この違いは非常に重要で混同しやすいポイントです。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_001",
+          "quote": "反応速度式を決定することはできないが、平衡定数の式は反応式の係数から直接決定できる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "速度式と平衡定数式の違いとして、正しい記述を選びなさい。",
+      "tts_explanation": "速度式の指数は多段階反応のため係数と一致しないことがありますが、平衡定数の式は熱力学的な法則から導かれるため反応式の係数がそのまま指数として使えます。この違いは非常に重要で混同しやすいポイントです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q032",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "逆反応の平衡定数の値",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "逆反応の平衡定数に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "逆反応の平衡定数は正反応の平衡定数の逆数である。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q032_c1",
+          "tts_text": "逆反応の平衡定数は正反応の平衡定数の逆数である。"
+        },
+        {
+          "label": "2",
+          "text": "反応式の向きを逆にすると平衡定数の値が変わる。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q032_c2",
+          "tts_text": "反応式の向きを逆にすると平衡定数の値が変わる。"
+        },
+        {
+          "label": "3",
+          "text": "逆反応の平衡定数は正反応と全く同じ値である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "逆数になる。同じ値ではない。",
+          "choice_id": "ch3_3_q032_c3",
+          "tts_text": "逆反応の平衡定数は正反応と全く同じ値である。"
+        },
+        {
+          "label": "4",
+          "text": "反応式の係数を全て二倍にすると平衡定数は元の二乗になる。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q032_c4",
+          "tts_text": "反応式の係数を全て二倍にすると平衡定数は元の二乗になる。"
+        }
+      ],
+      "explanation": "正反応の平衡定数がケーなら逆反応の平衡定数は一分のケーです。また係数を全てエヌ倍すると平衡定数はケーのエヌ乗になります。反応式の書き方と平衡定数の値の対応を理解することが計算問題のポイントです。",
+      "evidence": [
+        {
+          "source_id": "3_3_eq_001",
+          "quote": "逆反応の平衡定数は、正反応の平衡定数の逆数になる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_eq_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "逆反応の平衡定数に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "正反応の平衡定数がケーなら逆反応の平衡定数は一分のケーです。また係数を全てエヌ倍すると平衡定数はケーのエヌ乗になります。反応式の書き方と平衡定数の値の対応を理解することが計算問題のポイントです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q033",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "ケーの大きさと平衡の位置",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "平衡定数の大きさと平衡の位置の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "平衡定数の大小は平衡の位置と無関係である。平衡定数が大きいほど生成物の割合が多い右寄りの平衡であり両者は密接に関係する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密接に関係する。",
+          "choice_id": "ch3_3_q033_c1",
+          "tts_text": "平衡定数の大小は平衡の位置と無関係である。平衡定数が大きいほど生成物の割合が多い右寄りの平衡であり両者は密接に関係する。"
+        },
+        {
+          "label": "2",
+          "text": "平衡定数が大きいほど反応物の割合が多い。逆で平衡定数が大きいほど生成物の割合が多く反応物の割合は少ない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "逆。生成物が多い。",
+          "choice_id": "ch3_3_q033_c2",
+          "tts_text": "平衡定数が大きいほど反応物の割合が多い。逆で平衡定数が大きいほど生成物の割合が多く反応物の割合は少ない。"
+        },
+        {
+          "label": "3",
+          "text": "平衡定数は常に一の値をとる。平衡定数は反応と温度によって様々な値をとり一に限定されることはない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応と温度によって様々な値をとる。",
+          "choice_id": "ch3_3_q033_c3",
+          "tts_text": "平衡定数は常に一の値をとる。平衡定数は反応と温度によって様々な値をとり一に限定されることはない。"
+        },
+        {
+          "label": "4",
+          "text": "平衡定数が大きいほど生成物の割合が多い（平衡が右寄り）。小さいほど反応物の割合が多い（平衡が左寄り）。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q033_c4",
+          "tts_text": "平衡定数が大きいほど生成物の割合が多い（平衡が右寄り）。小さいほど反応物の割合が多い（平衡が左寄り）。"
+        }
+      ],
+      "explanation": "平衡定数ケーは分子に生成物濃度、分母に反応物濃度を配置するため、ケーが大きいほど生成物が多く平衡は右寄りです。ケーが非常に大きい反応はほぼ完全に右に進む反応であり、ケーが非常に小さい反応はほとんど進まない反応です。",
+      "evidence": [
+        {
+          "source_id": "3_3_eq_001",
+          "quote": "分子に生成物、分母に反応物"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_eq_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "平衡定数の大きさと平衡の位置の関係として、正しい記述を選びなさい。",
+      "tts_explanation": "平衡定数ケーは分子に生成物濃度、分母に反応物濃度を配置するため、ケーが大きいほど生成物が多く平衡は右寄りです。ケーが非常に大きい反応はほぼ完全に右に進む反応であり、ケーが非常に小さい反応はほとんど進まない反応です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q034",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "発熱反応の加熱でのケーの変化",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "発熱反応と温度に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "発熱反応を加熱しても平衡定数は変わらず生成物も減少しない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "温度変化で平衡定数は変わり、発熱反応の加熱ではケーが小さくなり生成物は減る。",
+          "choice_id": "ch3_3_q034_c1",
+          "tts_text": "発熱反応を加熱しても平衡定数は変わらず生成物も減少しない。"
+        },
+        {
+          "label": "2",
+          "text": "発熱反応を加熱すると吸熱方向（左）に移動し生成物が減る。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q034_c2",
+          "tts_text": "発熱反応を加熱すると吸熱方向（左）に移動し生成物が減る。"
+        },
+        {
+          "label": "3",
+          "text": "吸熱反応を加熱すると平衡定数は大きくなる。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q034_c3",
+          "tts_text": "吸熱反応を加熱すると平衡定数は大きくなる。"
+        },
+        {
+          "label": "4",
+          "text": "発熱反応を加熱すると平衡定数は小さくなる。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q034_c4",
+          "tts_text": "発熱反応を加熱すると平衡定数は小さくなる。"
+        }
+      ],
+      "explanation": "温度変化は平衡定数を変える唯一の因子です。発熱反応を加熱するとルシャトリエの原理により吸熱方向に移動し、生成物が減り平衡定数が小さくなります。逆に吸熱反応を加熱すると発熱方向に移動し平衡定数が大きくなります。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_004",
+          "quote": "発熱反応を加熱するとKは小さくなる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_004"
+      ],
+      "mnemonic": null,
+      "tts_question": "発熱反応と温度に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "温度変化は平衡定数を変える唯一の因子です。発熱反応を加熱するとルシャトリエの原理により吸熱方向に移動し、生成物が減り平衡定数が小さくなります。逆に吸熱反応を加熱すると発熱方向に移動し平衡定数が大きくなります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q035",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "procedure",
+      "sub_category": "平衡移動の判定手順",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "平衡の移動方向を判定する手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "まず加えた変化（温度・圧力・濃度のどれか）を特定し、次にルシャトリエの原理に基づきその変化を緩和する方向を考え、最後に反応式の両辺の特性（発熱か吸熱か、分子数の差）を確認して方向を決定する。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q035_c1",
+          "tts_text": "まず加えた変化（温度・圧力・濃度のどれか）を特定し、次にルシャトリエの原理に基づきその変化を緩和する方向を考え、最後に反応式の両辺の特性（発熱か吸熱か、分子数の差）を確認して方向を決定する。"
+        },
+        {
+          "label": "2",
+          "text": "すべての変化で右方向に移動する。変化の種類と反応の特性によって右にも左にも移動する可能性があり一律に右方向とは限らない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "条件によって左にも右にも移動する。",
+          "choice_id": "ch3_3_q035_c2",
+          "tts_text": "すべての変化で右方向に移動する。変化の種類と反応の特性によって右にも左にも移動する可能性があり一律に右方向とは限らない。"
+        },
+        {
+          "label": "3",
+          "text": "反応式を見るだけで答えがわかり条件の特定は不要であると一見もっともらしく聞こえる説明だが、どの条件が変化したかを特定しルシャトリエの原理を適用して方向を判断する必要がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "どの条件が変わったかの特定が不可欠。",
+          "choice_id": "ch3_3_q035_c3",
+          "tts_text": "反応式を見るだけで答えがわかり条件の特定は不要であると一見もっともらしく聞こえる説明だが、どの条件が変化したかを特定しルシャトリエの原理を適用して方向を判断する必要がある。"
+        },
+        {
+          "label": "4",
+          "text": "ルシャトリエの原理を使わなくても変化を促進する方向を考えればよいと誤って覚えがちだが、",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "緩和する方向を考える。",
+          "choice_id": "ch3_3_q035_c4",
+          "tts_text": "ルシャトリエの原理を使わなくても変化を促進する方向を考えればよいと誤って覚えがちだが、"
+        }
+      ],
+      "explanation": "平衡移動の判定は三段階で行います。第一に変化の種類を特定。第二にルシャトリエの原理「緩和する方向」を適用。第三に反応の具体的情報（エンタルピーの符号や係数の和）を使って左右を判定します。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_002",
+          "quote": "その変化による影響を緩和する方向に平衡が移動する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "平衡の移動方向を判定する手順として、正しいものを選びなさい。",
+      "tts_explanation": "平衡移動の判定は三段階で行います。第一に変化の種類を特定。第二にルシャトリエの原理「緩和する方向」を適用。第三に反応の具体的情報（エンタルピーの符号や係数の和）を使って左右を判定します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q036",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "comprehensive",
+      "sub_category": "ハーバー・ボッシュ法の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "ハーバー・ボッシュ法に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "吸熱反応で分子数増加。高温・低圧が平衡的に有利。触媒で収量増加。三箇所とも誤りでNH₃合成は発熱反応で分子数減少であり低温高圧が有利で触媒は収量を変えない。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて逆。",
+          "choice_id": "ch3_3_q036_c1",
+          "tts_text": "吸熱反応で分子数増加。高温・低圧が平衡的に有利。触媒で収量増加。三箇所とも誤りでアンモニア合成は発熱反応で分子数減少であり低温高圧が有利で触媒は収量を変えない。"
+        },
+        {
+          "label": "2",
+          "text": "生成物の除去は不要であり容器内に留めておく。生成したNH₃を冷却・液化して除去することで平衡をさらに右に移動させる重要な操作である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "除去してさらなる右移動を促す。",
+          "choice_id": "ch3_3_q036_c2",
+          "tts_text": "生成物の除去は不要であり容器内に留めておく。生成したアンモニアを冷却・液化して除去することで平衡をさらに右に移動させる重要な操作である。"
+        },
+        {
+          "label": "3",
+          "text": "触媒は平衡を右に移動させるための手段である。触媒は反応速度を上げるための手段であり平衡の位置は変えないため移動させる手段ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "速度を上げる手段であり平衡は動かさない。",
+          "choice_id": "ch3_3_q036_c3",
+          "tts_text": "触媒は平衡を右に移動させるための手段である。触媒は反応速度を上げるための手段であり平衡の位置は変えないため移動させる手段ではない。"
+        },
+        {
+          "label": "4",
+          "text": "発熱反応で分子数減少。低温・高圧が平衡的に有利だが速度との妥協で四百〜600℃・十〜三十メガパスカル。鉄系触媒で速度確保。生成物を液化除去してさらに右移動促進。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q036_c4",
+          "tts_text": "発熱反応で分子数減少。低温・高圧が平衡的に有利だが速度との妥協で四百〜六百度・十〜三十メガパスカル。鉄系触媒で速度確保。生成物を液化除去してさらに右移動促進。"
+        }
+      ],
+      "explanation": "ハーバー・ボッシュ法はルシャトリエの原理の応用の集大成です。発熱反応なので低温が有利、分子数減少なので高圧が有利、しかし速度確保のため中程度の温度と触媒を併用し、さらに生成物を除去して平衡を駆動します。すべての要素が論理的につながっています。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_001",
+          "quote": "ルシャトリエの原理と反応速度の両方を考慮した妥協的な条件設定"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ハーバー・ボッシュ法に関する総合的な記述として、正しいものを選びなさい。",
+      "tts_explanation": "ハーバー・ボッシュ法はルシャトリエの原理の応用の集大成です。発熱反応なので低温が有利、分子数減少なので高圧が有利、しかし速度確保のため中程度の温度と触媒を併用し、さらに生成物を除去して平衡を駆動します。すべての要素が論理的につながっています。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q037",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "圧平衡定数と濃度平衡定数の関係",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "圧平衡定数と濃度平衡定数の関係として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "常にケーピーとケーシーは等しいと誤って覚えやすい典型例だが、デルタエヌがゼロの場合のみ等しくデルタエヌがゼロでなければアールティーのデルタエヌ乗の分だけ異なる値になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "デルタエヌがゼロの場合のみ等しい。",
+          "choice_id": "ch3_3_q037_c1",
+          "tts_text": "常にケーピーとケーシーは等しいと誤って覚えやすい典型例だが、デルタエヌがゼロの場合のみ等しくデルタエヌがゼロでなければアールティーのデルタエヌ乗の分だけ異なる値になる。"
+        },
+        {
+          "label": "2",
+          "text": "ケーピーイコールケーシーかけるアールティーのデルタエヌ乗である。デルタエヌは生成物の気体係数の和から反応物の気体係数の和を引いた値。デルタエヌがゼロなら二つは等しい。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q037_c2",
+          "tts_text": "ケーピーイコールケーシーかけるアールティーのデルタエヌ乗である。デルタエヌは生成物の気体係数の和から反応物の気体係数の和を引いた値。デルタエヌがゼロなら二つは等しい。"
+        },
+        {
+          "label": "3",
+          "text": "ケーピーはケーシーと無関係である。ケーピーイコールケーシーかけるアールティーのデルタエヌ乗という明確な関係式で結ばれている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "数式的に関係がある。",
+          "choice_id": "ch3_3_q037_c3",
+          "tts_text": "ケーピーはケーシーと無関係である。ケーピーイコールケーシーかけるアールティーのデルタエヌ乗という明確な関係式で結ばれている。"
+        },
+        {
+          "label": "4",
+          "text": "デルタエヌはいつもゼロであると思い込みがちだが、デルタエヌは反応ごとに異なり両辺の気体係数の差によってゼロでも正でも負でもありうる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応によって異なる。",
+          "choice_id": "ch3_3_q037_c4",
+          "tts_text": "デルタエヌはいつもゼロであると思い込みがちだが、デルタエヌは反応ごとに異なり両辺の気体係数の差によってゼロでも正でも負でもありうる。"
+        }
+      ],
+      "explanation": "圧平衡定数と濃度平衡定数の関係式はケーピーイコールケーシーかけるアールティーのデルタエヌ乗です。デルタエヌが正（生成物側の分子数が多い）ならケーピーはケーシーより大きく、負なら小さくなります。水素とヨウ素の反応のようにデルタエヌがゼロなら二つは等しくなります。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_004",
+          "quote": "Kp = Kc × (RT)^Δn"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_004",
+        "3_3_eq_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "圧平衡定数と濃度平衡定数の関係として、正しい記述を選びなさい。",
+      "tts_explanation": "圧平衡定数と濃度平衡定数の関係式はケーピーイコールケーシーかけるアールティーのデルタエヌ乗です。デルタエヌが正（生成物側の分子数が多い）ならケーピーはケーシーより大きく、負なら小さくなります。水素とヨウ素の反応のようにデルタエヌがゼロなら二つは等しくなります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q038",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "濃度追加後のN2の量",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "窒素を追加したときの平衡変化に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "新しい平衡での窒素の量は追加直後よりは減少する。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q038_c1",
+          "tts_text": "新しい平衡での窒素の量は追加直後よりは減少する。"
+        },
+        {
+          "label": "2",
+          "text": "新しい平衡での窒素の量は最初の平衡時よりは多い。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q038_c2",
+          "tts_text": "新しい平衡での窒素の量は最初の平衡時よりは多い。"
+        },
+        {
+          "label": "3",
+          "text": "窒素を追加したら完全に消費されて元の量以下になる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "完全には消費されない。追加前より多い量で新平衡に達する。",
+          "choice_id": "ch3_3_q038_c3",
+          "tts_text": "窒素を追加したら完全に消費されて元の量以下になる。"
+        },
+        {
+          "label": "4",
+          "text": "窒素を追加するとNH₃生成方向に反応が進む。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q038_c4",
+          "tts_text": "窒素を追加するとアンモニア生成方向に反応が進む。"
+        }
+      ],
+      "explanation": "ルシャトリエの原理で濃度変化を理解するとき重要なのは、追加した物質が完全に消費されるわけではないことです。窒素を追加すると一部がNH₃生成に消費されますが、全部は消費されず元の平衡時より多い量で新たな平衡に達します。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_003",
+          "quote": "新しい平衡状態でのN2の量は、追加直後よりは減りますが、最初よりは多くなります"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "窒素を追加したときの平衡変化に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "ルシャトリエの原理で濃度変化を理解するとき重要なのは、追加した物質が完全に消費されるわけではないことです。窒素を追加すると一部がアンモニア生成に消費されますが、全部は消費されず元の平衡時より多い量で新たな平衡に達します。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q039",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "classification",
+      "sub_category": "可逆反応と不可逆反応による分類",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "可逆反応と不可逆反応の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "可逆反応では平衡は成立しない。逆で可逆反応こそ平衡が成立する反応であり正反応と逆反応の速度が等しくなる状態に達する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "可逆反応で平衡が成立する。",
+          "choice_id": "ch3_3_q039_c1",
+          "tts_text": "可逆反応では平衡は成立しない。逆で可逆反応こそ平衡が成立する反応であり正反応と逆反応の速度が等しくなる状態に達する。"
+        },
+        {
+          "label": "2",
+          "text": "燃焼反応は可逆反応である。燃焼反応は大量の熱を放出し生成物が気体として拡散するため実質的に不可逆反応に分類される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不可逆反応。",
+          "choice_id": "ch3_3_q039_c2",
+          "tts_text": "燃焼反応は可逆反応である。燃焼反応は大量の熱を放出し生成物が気体として拡散するため実質的に不可逆反応に分類される。"
+        },
+        {
+          "label": "3",
+          "text": "NH₃の合成・分解やヨウ化水素の生成・分解は可逆反応。燃焼反応は不可逆反応である。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q039_c3",
+          "tts_text": "アンモニアの合成・分解やヨウ化水素の生成・分解は可逆反応。燃焼反応は不可逆反応である。"
+        },
+        {
+          "label": "4",
+          "text": "すべての反応は不可逆反応である。NH₃の合成やヨウ化水素の生成など正逆両方向に進行できる可逆反応が多数存在する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "可逆反応も多数存在する。",
+          "choice_id": "ch3_3_q039_c4",
+          "tts_text": "すべての反応は不可逆反応である。アンモニアの合成やヨウ化水素の生成など正逆両方向に進行できる可逆反応が多数存在する。"
+        }
+      ],
+      "explanation": "化学反応は可逆反応と不可逆反応に分類できます。密閉系でNH₃の合成や分解が起こる反応は可逆反応の代表例です。一方、紙が燃える燃焼反応や爆発反応は一方向にしか進まない不可逆反応です。平衡が議論できるのは可逆反応のみです。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_001",
+          "quote": "燃焼反応など、一方の方向にしか進まない反応は「不可逆反応」"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "可逆反応と不可逆反応の分類として、正しいものを選びなさい。",
+      "tts_explanation": "化学反応は可逆反応と不可逆反応に分類できます。密閉系でアンモニアの合成や分解が起こる反応は可逆反応の代表例です。一方、紙が燃える燃焼反応や爆発反応は一方向にしか進まない不可逆反応です。平衡が議論できるのは可逆反応のみです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q040",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "ハーバー・ボッシュ法の高圧理由の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ハーバー・ボッシュ法の圧力設定に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "高圧は反応速度も高める効果がある。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q040_c1",
+          "tts_text": "高圧は反応速度も高める効果がある。"
+        },
+        {
+          "label": "2",
+          "text": "高圧にすると分子数が減る方向（NH₃生成方向）へ平衡が移動する。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q040_c2",
+          "tts_text": "高圧にすると分子数が減る方向（アンモニア生成方向）へ平衡が移動する。"
+        },
+        {
+          "label": "3",
+          "text": "NH₃合成は左辺四分子、右辺二分子の反応である。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q040_c3",
+          "tts_text": "アンモニア合成は左辺四分子、右辺二分子の反応である。"
+        },
+        {
+          "label": "4",
+          "text": "低圧にしても分子数の減少方向に移動するため低圧で十分である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "低圧では分子数増加（左）方向に移動する。高圧が必要。",
+          "choice_id": "ch3_3_q040_c4",
+          "tts_text": "低圧にしても分子数の減少方向に移動するため低圧で十分である。"
+        }
+      ],
+      "explanation": "NH₃合成反応は左辺に窒素一分子と水素三分子で計四分子、右辺にNH₃二分子です。圧力を上げると分子数が少ない右方向に移動しNH₃が増えます。低圧では逆に左方向に移動してNH₃が減るため高圧が必要です。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_005",
+          "quote": "圧力を増すと、分子数が減る右方向へ移動する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_005",
+        "3_3_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ハーバー・ボッシュ法の圧力設定に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "アンモニア合成反応は左辺に窒素一分子と水素三分子で計四分子、右辺にアンモニア二分子です。圧力を上げると分子数が少ない右方向に移動しアンモニアが増えます。低圧では逆に左方向に移動してアンモニアが減るため高圧が必要です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q041",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "comprehensive",
+      "sub_category": "ルシャトリエの原理の総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "ルシャトリエの原理に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度を上げると発熱方向に移動し平衡定数は不変。圧力は常に平衡を移動させる。触媒で生成物が増える。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて誤り。温度上昇は吸熱方向、分子数等しい場合は圧力で移動しない、触媒で増えない。",
+          "choice_id": "ch3_3_q041_c1",
+          "tts_text": "温度を上げると発熱方向に移動し平衡定数は不変。圧力は常に平衡を移動させる。触媒で生成物が増える。"
+        },
+        {
+          "label": "2",
+          "text": "物質追加→それを消費する方向に移動。触媒は平衡の位置を変えない。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q041_c2",
+          "tts_text": "物質追加→それを消費する方向に移動。触媒は平衡の位置を変えない。"
+        },
+        {
+          "label": "3",
+          "text": "温度上昇→吸熱方向、温度低下→発熱方向に移動。温度変化のみが平衡定数を変える。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q041_c3",
+          "tts_text": "温度上昇→吸熱方向、温度低下→発熱方向に移動。温度変化のみが平衡定数を変える。"
+        },
+        {
+          "label": "4",
+          "text": "圧力増加→分子数減少方向に移動。ただし両辺の分子数が等しい場合は移動しない。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q041_c4",
+          "tts_text": "圧力増加→分子数減少方向に移動。ただし両辺の分子数が等しい場合は移動しない。"
+        }
+      ],
+      "explanation": "この問題はルシャトリエの原理の理解を総合的に確認します。温度上昇は吸熱方向に移動し平衡定数は変化します。圧力は分子数が異なる場合のみ影響します。触媒は平衡の位置も生成物量も変えません。選択肢1は三つの誤りを含んでいます。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_002",
+          "quote": "変化による影響を緩和する方向に平衡が移動する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_002",
+        "3_3_law_003",
+        "3_3_law_004",
+        "3_3_law_005",
+        "3_3_tip_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "ルシャトリエの原理に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "この問題はルシャトリエの原理の理解を総合的に確認します。温度上昇は吸熱方向に移動し平衡定数は変化します。圧力は分子数が異なる場合のみ影響します。触媒は平衡の位置も生成物量も変えません。「発熱方向に移動」「平衡定数は不変」「触媒で増える」という三つの誤りを含んだ記述が正解です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q042",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "ヨウ化水素の平衡",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ヨウ化水素の生成反応の平衡について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水素とヨウ素からヨウ化水素が生成する反応は可逆反応であり、平衡に達すると各物質の濃度が一定になる。この反応は両辺の分子数が等しいため圧力変化で平衡は移動しない。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q042_c1",
+          "tts_text": "水素とヨウ素からヨウ化水素が生成する反応は可逆反応であり、平衡に達すると各物質の濃度が一定になる。この反応は両辺の分子数が等しいため圧力変化で平衡は移動しない。"
+        },
+        {
+          "label": "2",
+          "text": "圧力を上げると右に移動してヨウ化水素が増える。この反応は両辺の分子数が等しいため圧力を変えても平衡は移動しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両辺の分子数が等しいため移動しない。",
+          "choice_id": "ch3_3_q042_c2",
+          "tts_text": "圧力を上げると右に移動してヨウ化水素が増える。この反応は両辺の分子数が等しいため圧力を変えても平衡は移動しない。"
+        },
+        {
+          "label": "3",
+          "text": "この反応は不可逆反応であると勘違いされやすいが、水素とヨウ素からヨウ化水素が生成する反応は可逆反応であり両方向に進行できると誤って覚えやすい典型例だが、",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "可逆反応の代表例。",
+          "choice_id": "ch3_3_q042_c3",
+          "tts_text": "この反応は不可逆反応であると勘違いされやすいが、水素とヨウ素からヨウ化水素が生成する反応は可逆反応であり両方向に進行できると誤って覚えやすい典型例だが、"
+        },
+        {
+          "label": "4",
+          "text": "平衡に達すると反応物は完全になくなる。平衡状態では反応物と生成物が共存しておりどちらも完全には消費されない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応物も残る。",
+          "choice_id": "ch3_3_q042_c4",
+          "tts_text": "平衡に達すると反応物は完全になくなる。平衡状態では反応物と生成物が共存しておりどちらも完全には消費されない。"
+        }
+      ],
+      "explanation": "水素とヨウ素からヨウ化水素が生成する反応は教科書で最もよく使われる可逆反応の例です。左辺二分子、右辺二分子で分子数の変化がないため圧力変化では平衡が移動しません。圧平衡定数と濃度平衡定数が等しくなるのもこの反応の特徴です。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_004",
+          "quote": "水素とヨウ素から生成する可逆反応の例として頻出"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_004",
+        "3_3_law_005"
+      ],
+      "mnemonic": null,
+      "tts_question": "ヨウ化水素の生成反応の平衡について、正しい記述を選びなさい。",
+      "tts_explanation": "水素とヨウ素からヨウ化水素が生成する反応は教科書で最もよく使われる可逆反応の例です。左辺二分子、右辺二分子で分子数の変化がないため圧力変化では平衡が移動しません。圧平衡定数と濃度平衡定数が等しくなるのもこの反応の特徴です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q043",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "procedure",
+      "sub_category": "生成物除去の操作",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "平衡系から生成物を除去する操作の効果として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "生成物を除去すると左方向に移動する。逆で生成物の濃度が下がるためルシャトリエの原理により生成物を補おうと右方向に移動する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "右方向に移動する。",
+          "choice_id": "ch3_3_q043_c1",
+          "tts_text": "生成物を除去すると左方向に移動する。逆で生成物の濃度が下がるためルシャトリエの原理により生成物を補おうと右方向に移動する。"
+        },
+        {
+          "label": "2",
+          "text": "生成物の濃度が下がるためルシャトリエの原理により生成物を補おうと右方向に平衡が移動する。ハーバー・ボッシュ法ではNH₃の冷却・液化除去でこれを実現する。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q043_c2",
+          "tts_text": "生成物の濃度が下がるためルシャトリエの原理により生成物を補おうと右方向に平衡が移動する。ハーバー・ボッシュ法ではアンモニアの冷却・液化除去でこれを実現する。"
+        },
+        {
+          "label": "3",
+          "text": "生成物の除去は平衡定数を変える。温度一定なら平衡定数は変わらない。生成物の除去は平衡を移動させるが定数自体は不変である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度一定なら平衡定数は不変。",
+          "choice_id": "ch3_3_q043_c3",
+          "tts_text": "生成物の除去は平衡定数を変える。温度一定なら平衡定数は変わらない。生成物の除去は平衡を移動させるが定数自体は不変である。"
+        },
+        {
+          "label": "4",
+          "text": "生成物を除去しても平衡は動かないと誤解されやすいが、生成物の濃度が下がると平衡定数を維持するため生成物を補う方向に平衡が移動すると誤って覚えやすい典型例だが、",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "右方向に移動する。",
+          "choice_id": "ch3_3_q043_c4",
+          "tts_text": "生成物を除去しても平衡は動かないと誤解されやすいが、生成物の濃度が下がると平衡定数を維持するため生成物を補う方向に平衡が移動すると誤って覚えやすい典型例だが、"
+        }
+      ],
+      "explanation": "生成物を系から取り除くと生成物の濃度が下がり、ルシャトリエの原理により生成物を補おうとする右方向に平衡が移動します。これは工業的に収率を上げる重要な手法であり、ハーバー・ボッシュ法ではNH₃を液化して除去することで活用されています。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_001",
+          "quote": "生成物を系から除くことで、ルシャトリエの原理によりさらに右方向へ平衡を移動させる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_001",
+        "3_3_law_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "平衡系から生成物を除去する操作の効果として、正しいものを選びなさい。",
+      "tts_explanation": "生成物を系から取り除くと生成物の濃度が下がり、ルシャトリエの原理により生成物を補おうとする右方向に平衡が移動します。これは工業的に収率を上げる重要な手法であり、ハーバー・ボッシュ法ではアンモニアを液化して除去することで活用されています。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q044",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "mnemonic",
+      "sub_category": "触媒と平衡の覚え方",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "触媒と平衡の覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "この覚え方は反応エンタルピーに関するものである。この覚え方は触媒と平衡の関係に関するものであり反応エンタルピーとは無関係である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "触媒と平衡の関係に関する覚え方。",
+          "choice_id": "ch3_3_q044_c1",
+          "tts_text": "この覚え方は反応エンタルピーに関するものである。この覚え方は触媒と平衡の関係に関するものであり反応エンタルピーとは無関係である。"
+        },
+        {
+          "label": "2",
+          "text": "「平衡は触媒で速く行っても同じこと」で覚える。到着する場所（平衡の位置）は同じだが到着時間が短くなる。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q044_c2",
+          "tts_text": "「平衡は触媒で速く行っても同じこと」で覚える。到着する場所（平衡の位置）は同じだが到着時間が短くなる。"
+        },
+        {
+          "label": "3",
+          "text": "触媒で到着場所も変わると覚える。触媒は到着時間が短くなるだけで到着場所（平衡の位置）は変わらないのが正しい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "到着場所（平衡の位置）は変わらない。",
+          "choice_id": "ch3_3_q044_c3",
+          "tts_text": "触媒で到着場所も変わると覚える。触媒は到着時間が短くなるだけで到着場所（平衡の位置）は変わらないのが正しい。"
+        },
+        {
+          "label": "4",
+          "text": "触媒は到着時間も場所も変えないため意味がない。触媒は到着時間を大幅に短縮するため工業的に極めて重要な意味がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "到着時間は短縮される。",
+          "choice_id": "ch3_3_q044_c4",
+          "tts_text": "触媒は到着時間も場所も変えないため意味がない。触媒は到着時間を大幅に短縮するため工業的に極めて重要な意味がある。"
+        }
+      ],
+      "explanation": "「速く行っても同じこと」は触媒を使っても平衡の位置（到着地点）は変わらないことを端的に表しています。新幹線で行っても在来線で行っても東京から大阪までの距離は変わらないのと同じです。変わるのは所要時間（平衡到達時間）だけです。",
+      "evidence": [
+        {
+          "source_id": "3_3_tip_002",
+          "quote": "平衡は触媒で速く行っても同じこと"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_tip_002"
+      ],
+      "mnemonic": "平衡は触媒で速く行っても同じこと",
+      "tts_question": "触媒と平衡の覚え方として、正しいものを選びなさい。",
+      "tts_explanation": "「速く行っても同じこと」は触媒を使っても平衡の位置（到着地点）は変わらないことを端的に表しています。新幹線で行っても在来線で行っても東京から大阪までの距離は変わらないのと同じです。変わるのは所要時間（平衡到達時間）だけです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q045",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "体積変化と圧力変化の混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "気体の平衡系の体積変化に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "体積を半分にしても圧力は変わらず平衡は移動しない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "体積を半分にすると圧力が約二倍になり平衡は移動する。",
+          "choice_id": "ch3_3_q045_c1",
+          "tts_text": "体積を半分にしても圧力は変わらず平衡は移動しない。"
+        },
+        {
+          "label": "2",
+          "text": "体積を小さくすると圧力が上がり分子数が減る方向に移動する。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q045_c2",
+          "tts_text": "体積を小さくすると圧力が上がり分子数が減る方向に移動する。"
+        },
+        {
+          "label": "3",
+          "text": "体積変化は圧力変化を通じて平衡に影響する。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q045_c3",
+          "tts_text": "体積変化は圧力変化を通じて平衡に影響する。"
+        },
+        {
+          "label": "4",
+          "text": "体積を大きくすると圧力が下がり分子数が増える方向に移動する。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q045_c4",
+          "tts_text": "体積を大きくすると圧力が下がり分子数が増える方向に移動する。"
+        }
+      ],
+      "explanation": "密閉容器の体積を半分にすると全体の圧力が約二倍に上がります。これにより分子数が減る方向に平衡が移動します。体積変化は直接的には圧力変化をもたらし、それを通じて平衡に影響を与えます。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_005",
+          "quote": "圧縮して圧力を高めると、粒の数を減らそうとします"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_005"
+      ],
+      "mnemonic": null,
+      "tts_question": "気体の平衡系の体積変化に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "密閉容器の体積を半分にすると全体の圧力が約二倍に上がります。これにより分子数が減る方向に平衡が移動します。体積変化は直接的には圧力変化をもたらし、それを通じて平衡に影響を与えます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q046",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "鉄系触媒の役割",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ハーバー・ボッシュ法で使用する鉄系触媒の役割として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "活性化エネルギーを下げて反応速度を大きくする。平衡の位置や生成物の総量は変えない。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q046_c1",
+          "tts_text": "活性化エネルギーを下げて反応速度を大きくする。平衡の位置や生成物の総量は変えない。"
+        },
+        {
+          "label": "2",
+          "text": "鉄系触媒はNH₃の平衡収量を増やす。触媒は反応速度を上げるだけであり平衡の位置や収量自体は変えない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "収量は変えない。",
+          "choice_id": "ch3_3_q046_c2",
+          "tts_text": "鉄系触媒はアンモニアの平衡収量を増やす。触媒は反応速度を上げるだけであり平衡の位置や収量自体は変えない。"
+        },
+        {
+          "label": "3",
+          "text": "鉄系触媒は反応エンタルピーを変化させる。触媒は活性化エネルギーのみを下げるものであり反応エンタルピーには影響しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応エンタルピーは不変。",
+          "choice_id": "ch3_3_q046_c3",
+          "tts_text": "鉄系触媒は反応エンタルピーを変化させる。触媒は活性化エネルギーのみを下げるものであり反応エンタルピーには影響しない。"
+        },
+        {
+          "label": "4",
+          "text": "鉄系触媒は反応後に消費されてなくなる。触媒は反応の前後で変化せず消費されないため繰り返し使用することができる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "触媒なので消費されない。",
+          "choice_id": "ch3_3_q046_c4",
+          "tts_text": "鉄系触媒は反応後に消費されてなくなる。触媒は反応の前後で変化せず消費されないため繰り返し使用することができる。"
+        }
+      ],
+      "explanation": "ハーバー・ボッシュ法の鉄系触媒（四三酸化三鉄など）は活性化エネルギーを下げて反応速度を上げるために使用されます。触媒は正反応と逆反応の両方を同じ割合で速くするため、平衡の位置（NH₃の最終的な割合）は変わりません。",
+      "evidence": [
+        {
+          "source_id": "3_3_proc_001",
+          "quote": "触媒を用いる…反応速度を大きくするため"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_proc_001",
+        "3_3_tip_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "ハーバー・ボッシュ法で使用する鉄系触媒の役割として、正しいものを選びなさい。",
+      "tts_explanation": "ハーバー・ボッシュ法の鉄系触媒（四三酸化三鉄など）は活性化エネルギーを下げて反応速度を上げるために使用されます。触媒は正反応と逆反応の両方を同じ割合で速くするため、平衡の位置（アンモニアの最終的な割合）は変わりません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q047",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "comprehensive",
+      "sub_category": "平衡定数の総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "平衡定数に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度一定なら濃度や圧力を変えても平衡定数は不変。温度変化のみが平衡定数を変える。これは正しい記述であり平衡定数の温度依存性を正確に述べている。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q047_c1",
+          "tts_text": "温度一定なら濃度や圧力を変えても平衡定数は不変。温度変化のみが平衡定数を変える。これは正しい記述であり平衡定数の温度依存性を正確に述べている。"
+        },
+        {
+          "label": "2",
+          "text": "平衡定数の式は分子に生成物、分母に反応物を配置し係数をべき乗にする。固体は含めない。これは正しい記述であり平衡定数式の正しい書き方を述べている。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q047_c2",
+          "tts_text": "平衡定数の式は分子に生成物、分母に反応物を配置し係数をべき乗にする。固体は含めない。これは正しい記述であり平衡定数式の正しい書き方を述べている。"
+        },
+        {
+          "label": "3",
+          "text": "平衡定数の式で分子に反応物、分母に生成物を入れる。固体も含める。逆反応と正反応の平衡定数は同じ値。温度でも変わらない。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。",
+          "choice_id": "ch3_3_q047_c3",
+          "tts_text": "平衡定数の式で分子に反応物、分母に生成物を入れる。固体も含める。逆反応と正反応の平衡定数は同じ値。温度でも変わらない。"
+        },
+        {
+          "label": "4",
+          "text": "逆反応の平衡定数は正反応の逆数。係数を全てエヌ倍すると平衡定数はエヌ乗になる。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q047_c4",
+          "tts_text": "逆反応の平衡定数は正反応の逆数。係数を全てエヌ倍すると平衡定数はエヌ乗になる。"
+        }
+      ],
+      "explanation": "平衡定数に関するすべてのルールをまとめた問題です。分子は生成物、分母は反応物。固体は含めない。逆反応は逆数。温度変化で値が変わる。選択肢3はこれら四つのルールすべてを逆に記述しています。",
+      "evidence": [
+        {
+          "source_id": "3_3_eq_001",
+          "quote": "分子に右辺（生成物）、分母に左辺（反応物）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_eq_001",
+        "3_3_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "平衡定数に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "平衡定数に関するすべてのルールをまとめた問題です。分子は生成物、分母は反応物。固体は含めない。逆反応は逆数。温度変化で値が変わる。「分子に反応物」「固体も含める」「逆反応と同じ値」「温度でも変わらない」という四つのルールすべてを逆に記述した選択肢が正解です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q048",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "property",
+      "sub_category": "クロム酸イオンの色",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "クロム酸イオンとニクロム酸イオンの色について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "どちらも無色で色の変化はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "色が異なるため平衡移動を色で確認できる。",
+          "choice_id": "ch3_3_q048_c1",
+          "tts_text": "どちらも無色で色の変化はない。"
+        },
+        {
+          "label": "2",
+          "text": "クロム酸イオンは黄色であり塩基性で安定。ニクロム酸イオンは赤橙色であり酸性で安定。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q048_c2",
+          "tts_text": "クロム酸イオンは黄色であり塩基性で安定。ニクロム酸イオンは赤橙色であり酸性で安定。"
+        },
+        {
+          "label": "3",
+          "text": "クロム酸イオンは酸性で、ニクロム酸イオンは塩基性で安定。逆でクロム酸イオンは塩基性で安定しニクロム酸イオンは酸性で安定する。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "逆。",
+          "choice_id": "ch3_3_q048_c3",
+          "tts_text": "クロム酸イオンは酸性で、ニクロム酸イオンは塩基性で安定。逆でクロム酸イオンは塩基性で安定しニクロム酸イオンは酸性で安定する。"
+        },
+        {
+          "label": "4",
+          "text": "クロム酸イオンは赤橙色でニクロム酸イオンは黄色である。逆でクロム酸イオンが黄色でニクロム酸イオンが赤橙色である。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "逆。",
+          "choice_id": "ch3_3_q048_c4",
+          "tts_text": "クロム酸イオンは赤橙色でニクロム酸イオンは黄色である。逆でクロム酸イオンが黄色でニクロム酸イオンが赤橙色である。"
+        }
+      ],
+      "explanation": "クロム酸イオンは黄色で塩基性条件で安定、ニクロム酸イオン（重クロム酸イオンとも呼ぶ）は赤橙色で酸性条件で安定です。この色の対応と安定条件を逆にするひっかけは非常に多く出題されます。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_005",
+          "quote": "クロム酸イオンは黄色、塩基性条件で安定"
+        },
+        {
+          "source_id": "3_3_sub_006",
+          "quote": "ニクロム酸イオンは赤橙色、酸性条件で安定"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_005",
+        "3_3_sub_006"
+      ],
+      "mnemonic": null,
+      "tts_question": "クロム酸イオンとニクロム酸イオンの色について、正しい記述を選びなさい。",
+      "tts_explanation": "クロム酸イオンは黄色で塩基性条件で安定、ニクロム酸イオン（重クロム酸イオンとも呼ぶ）は赤橙色で酸性条件で安定です。この色の対応と安定条件を逆にするひっかけは非常に多く出題されます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_3_q049",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "confusion",
+      "sub_category": "ルシャトリエの原理の「完全相殺」誤解",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ルシャトリエの原理に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ルシャトリエの原理は加えた変化を「緩和」する方向に移動させる。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q049_c1",
+          "tts_text": "ルシャトリエの原理は加えた変化を「緩和」する方向に移動させる。"
+        },
+        {
+          "label": "2",
+          "text": "温度を上げた場合、平衡移動後も温度は上がった状態のまま残る。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q049_c2",
+          "tts_text": "温度を上げた場合、平衡移動後も温度は上がった状態のまま残る。"
+        },
+        {
+          "label": "3",
+          "text": "変化を完全に打ち消すのではなく部分的に緩和する。",
+          "is_correct": false,
+          "choice_id": "ch3_3_q049_c3",
+          "tts_text": "変化を完全に打ち消すのではなく部分的に緩和する。"
+        },
+        {
+          "label": "4",
+          "text": "平衡移動によって加えた変化は完全に打ち消され元通りになる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "完全には打ち消されない。部分的に緩和されるだけ。",
+          "choice_id": "ch3_3_q049_c4",
+          "tts_text": "平衡移動によって加えた変化は完全に打ち消され元通りになる。"
+        }
+      ],
+      "explanation": "ルシャトリエの原理でよくある誤解は「変化が完全に打ち消される」という考えです。実際には部分的に緩和されるだけであり、温度を上げた場合は吸熱方向に移動しますが温度が元に戻るわけではありません。加えた窒素も完全には消費されません。",
+      "evidence": [
+        {
+          "source_id": "3_3_law_002",
+          "quote": "変化による影響を緩和（相殺）する方向"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_law_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "ルシャトリエの原理に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "ルシャトリエの原理でよくある誤解は「変化が完全に打ち消される」という考えです。実際には部分的に緩和されるだけであり、温度を上げた場合は吸熱方向に移動しますが温度が元に戻るわけではありません。加えた窒素も完全には消費されません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_3_q050",
+      "chapter": "3-3",
+      "chapter_title": "化学平衡",
+      "category": "comprehensive",
+      "sub_category": "第三章第三節の全体総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "化学平衡に関する全体の総合記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "平衡定数は濃度変化でも変わると誤って覚えがちだが、平衡定数を変えるのは温度変化のみであり濃度変化は平衡を移動させるだけで定数自体は変わらないと初学者が陥りやすい代表的な誤解の一つとしてよく挙げられる主張だが、",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度変化のみ。",
+          "choice_id": "ch3_3_q050_c1",
+          "tts_text": "平衡定数は濃度変化でも変わると誤って覚えがちだが、平衡定数を変えるのは温度変化のみであり濃度変化は平衡を移動させるだけで定数自体は変わらないと初学者が陥りやすい代表的な誤解の一つとしてよく挙げられる主張だが、"
+        },
+        {
+          "label": "2",
+          "text": "平衡は正逆の速度が等しい動的状態。平衡定数は温度のみで変化する。ルシャトリエの原理は変化を緩和する方向に移動させる。触媒は到達時間を短縮するが位置を変えない。ハーバー・ボッシュ法は発熱・分子数減少の反応に高圧と妥協温度を適用した工業的応用例である。",
+          "is_correct": true,
+          "choice_id": "ch3_3_q050_c2",
+          "tts_text": "平衡は正逆の速度が等しい動的状態。平衡定数は温度のみで変化する。ルシャトリエの原理は変化を緩和する方向に移動させる。触媒は到達時間を短縮するが位置を変えない。ハーバー・ボッシュ法は発熱・分子数減少の反応に高圧と妥協温度を適用した工業的応用例である。"
+        },
+        {
+          "label": "3",
+          "text": "平衡は反応停止状態と思い込みがちだが、平衡定数は変わらないと初学者が陥りやすい代表的な誤解の一つとしてよく挙げられる主張だが、ルシャトリエは変化を促進すると誤って覚えやすい典型例だが、触媒で生成物増加。ハーバー・ボッシュ法は低圧を使う。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "五か所すべて誤り。",
+          "choice_id": "ch3_3_q050_c3",
+          "tts_text": "平衡は反応停止状態と思い込みがちだが、平衡定数は変わらないと初学者が陥りやすい代表的な誤解の一つとしてよく挙げられる主張だが、ルシャトリエは変化を促進すると誤って覚えやすい典型例だが、触媒で生成物増加。ハーバー・ボッシュ法は低圧を使う。"
+        },
+        {
+          "label": "4",
+          "text": "不活性気体の添加は常に平衡を移動させると初学者が陥りやすい代表的な誤解の一つとしてよく挙げられる主張だが、体積一定では分圧が変わらず移動しない。移動するのは圧力一定で体積が増加する場合のみである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "定積では移動しない。",
+          "choice_id": "ch3_3_q050_c4",
+          "tts_text": "不活性気体の添加は常に平衡を移動させると初学者が陥りやすい代表的な誤解の一つとしてよく挙げられる主張だが、体積一定では分圧が変わらず移動しない。移動するのは圧力一定で体積が増加する場合のみである。"
+        }
+      ],
+      "explanation": "化学平衡の章全体のまとめです。動的平衡・平衡定数の温度依存性・ルシャトリエの原理による緩和方向への移動・触媒の役割・ハーバー・ボッシュ法の工業的応用が主要トピックです。これらを体系的に理解することが試験対策の鍵です。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "正反応と逆反応の速度が等しく動的平衡"
+        },
+        {
+          "source_id": "3_3_law_002",
+          "quote": "変化を緩和する方向に移動"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002",
+        "3_3_law_001",
+        "3_3_law_002",
+        "3_3_tip_002",
+        "3_3_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "化学平衡に関する全体の総合記述として、正しいものを選びなさい。",
+      "tts_explanation": "化学平衡の章全体のまとめです。動的平衡・平衡定数の温度依存性・ルシャトリエの原理による緩和方向への移動・触媒の役割・ハーバー・ボッシュ法の工業的応用が主要トピックです。これらを体系的に理解することが試験対策の鍵です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    }
   ]
 }

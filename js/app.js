@@ -29,6 +29,19 @@ const CHAPTERS = [
   { id: 'ch1-2', title: '第1章-2 物質の構成粒子', enabled: true },
   { id: 'ch1-3', title: '第1章-3 化学結合', enabled: true },
   { id: 'ch1-4', title: '第1章-4 物質量と化学反応式', enabled: true },
+  { id: 'ch2-1', title: '第2章-1 物質の三態と状態変化', enabled: true },
+  { id: 'ch2-2', title: '第2章-2 気体の法則', enabled: true },
+  { id: 'ch2-3', title: '第2章-3 溶液の性質', enabled: true },
+  { id: 'ch3-1', title: '第3章-1 化学反応とエネルギー', enabled: true },
+  { id: 'ch3-2', title: '第3章-2 化学反応の速さとしくみ', enabled: true },
+  { id: 'ch3-3', title: '第3章-3 化学平衡', enabled: true },
+  { id: 'ch3-4', title: '第3章-4 酸と塩基の反応', enabled: true },
+  { id: 'ch3-5', title: '第3章-5 酸化還元反応', enabled: true },
+  { id: 'ch4-1', title: '第4章-1 非金属元素', enabled: true },
+  { id: 'ch4-2', title: '第4章-2 典型金属元素', enabled: true },
+  { id: 'ch4-3', title: '第4章-3 遷移元素', enabled: true },
+  { id: 'ch4-4', title: '第4章-4 無機物質と人間生活', enabled: true },
+  { id: 'ch5-1', title: '第5章-1 有機化合物の分類と分析', enabled: true },
   // (further chapters added as data is prepared)
 ];
 

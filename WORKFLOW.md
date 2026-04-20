@@ -302,6 +302,20 @@ python questions\_check_all.py ch1-2
 
 If the report still flags questions, iterate on `_pads/ch1-2.json`.
 
+`_pad_wrongs_chapter.py` **automatically deletes the stale
+`audio/<chapter>/<qid>/<choice_id>.mp3` files of the modified choices** so
+that the next `python audio/_generate.py <chapter> all` run regenerates
+them. If you want to keep the existing mp3 files for any reason (e.g. you
+intend to batch-delete them manually), pass `--keep-audio`:
+
+```powershell
+python questions\_pad_wrongs_chapter.py ch1-2 --keep-audio
+```
+
+Do NOT skip the mp3 deletion step. `audio/_generate.py` uses file
+existence as its only skip check and will silently keep the old audio
+otherwise.
+
 ### Step 3.6. Rewrite `tts_explanation` to remove `選択肢N`
 
 Only `tts_explanation` (audio) needs this; the displayed `explanation`
@@ -363,6 +377,15 @@ The script:
 - Generates `audio/ch1-2/<qid>/question.mp3`,
   `<choice_id>.mp3` × 4, `explanation.mp3`.
 - Skips files that already exist (safe to re-run / interrupt).
+
+**Important:** `_generate.py` detects *missing* files, not *stale*
+ones. Whenever you re-run `_pad_wrongs_chapter.py` or
+`_rewrite_explanations.py` / `_regen_explanations.py`, the stale mp3
+files must be deleted **before** `_generate.py` (the padding script
+does this automatically; the rewrite-explanations flow is handled by
+`audio/_regen_explanations.py`). If you edit a `tts_*` field manually,
+delete the corresponding mp3 yourself (see the "Quick fix" example at
+the bottom of this document).
 
 Partial runs:
 

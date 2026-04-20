@@ -21,7 +21,17 @@ beforehand or edit ``text`` manually.
 
 Usage::
 
-    python questions/_pad_wrongs_chapter.py ch1-2
+    python questions/_pad_wrongs_chapter.py ch1-2             # default: also deletes stale mp3s
+    python questions/_pad_wrongs_chapter.py ch1-2 --keep-audio  # JSON only, do NOT delete mp3s
+
+Stale audio handling:
+    By default, when a choice's ``tts_text`` is updated, the corresponding
+    ``audio/<chapter>/<qid>/<choice_id>.mp3`` file is deleted so that a
+    subsequent ``python audio/_generate.py <chapter> all`` will re-synthesize
+    it. Without this, ``_generate.py``'s existence check would preserve the
+    stale clip whose audio no longer matches the new text. Use
+    ``--keep-audio`` to opt out (e.g. when you plan to delete/regenerate
+    manually).
 
 Why this step exists:
     Authors tend to make the correct choice long and incorrect choices
@@ -44,6 +54,8 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 PADS_DIR = HERE / "_pads"
+ROOT = HERE.parent
+AUDIO_DIR = ROOT / "audio"
 
 KANJI = "零一二三四五六七八九十百千"
 # Replacement text is considered "plain" (display == tts) if it has none of
@@ -59,7 +71,7 @@ NEEDS_DISPLAY_CONVERSION = re.compile(
 )
 
 
-def apply(chapter: str) -> int:
+def apply(chapter: str, *, delete_audio: bool = True) -> int:
     pads_file = PADS_DIR / f"{chapter}.json"
     if not pads_file.exists():
         raise SystemExit(f"No pads file at {pads_file}.")
@@ -70,6 +82,9 @@ def apply(chapter: str) -> int:
 
     applied = 0
     unmatched: list[tuple[str, str]] = []
+    # Track (qid, choice_id) pairs whose text changed so we can invalidate
+    # the matching audio files.
+    modified_choices: list[tuple[str, str]] = []
     for qid, mapping in pads.items():
         q = next((x for x in data["questions"] if x["id"] == qid), None)
         if q is None:
@@ -93,6 +108,9 @@ def apply(chapter: str) -> int:
             else:
                 target["text"] = new
             applied += 1
+            cid = target.get("choice_id")
+            if cid:
+                modified_choices.append((qid, cid))
 
     if unmatched:
         print("UNMATCHED (review required):")
@@ -105,14 +123,49 @@ def apply(chapter: str) -> int:
     )
 
     print(f"applied {applied} replacements / total {sum(len(v) for v in pads.values())}")
+
+    if delete_audio and modified_choices:
+        ch_audio = AUDIO_DIR / chapter
+        deleted = 0
+        missing = 0
+        for qid, cid in modified_choices:
+            mp3 = ch_audio / qid / f"{cid}.mp3"
+            if mp3.exists():
+                mp3.unlink()
+                deleted += 1
+            else:
+                missing += 1
+        print(
+            f"stale-audio: deleted {deleted} mp3 file(s)"
+            + (f" ({missing} already absent)" if missing else "")
+            + f" under audio/{chapter}/"
+        )
+        print(
+            f"next step: run 'python audio/_generate.py {chapter} all' "
+            f"to regenerate the deleted clips."
+        )
+    elif not delete_audio and modified_choices:
+        print(
+            f"--keep-audio: {len(modified_choices)} stale mp3 file(s) left "
+            f"untouched under audio/{chapter}/. You must delete them "
+            f"manually before running audio/_generate.py, otherwise the old "
+            f"audio will remain."
+        )
+
     return 0 if not unmatched else 1
 
 
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("chapter", help='Chapter id, e.g. "ch1-2"')
+    p.add_argument(
+        "--keep-audio",
+        action="store_true",
+        help="Do NOT delete the stale mp3 files of modified choices. "
+        "Default is to delete them so audio/_generate.py regenerates them.",
+    )
     args = p.parse_args()
-    return apply(args.chapter)
+    return apply(args.chapter, delete_audio=not args.keep_audio)
 
 
 if __name__ == "__main__":

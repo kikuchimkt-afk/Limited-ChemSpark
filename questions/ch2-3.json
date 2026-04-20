@@ -6,59 +6,3012 @@
     "textbook": "化学",
     "total_questions": 50,
     "version": "1.0",
-    "tts_policy": { "note": "TTS用。化学式・数式なし。", "no_chemical_formulas": true, "no_math_equations": true },
-    "trap_type_legend": { "keyword_swap": "キーワードすり替え", "concept_confusion": "類似概念混同", "property_swap": "性質入れ替え", "condition_change": "条件変更", "step_order": "手順入れ替え", "reason_swap": "理由すり替え", "partial_truth": "前半正後半誤", "multiple_swap": "複数すり替え", "negation": "肯定否定入れ替え" }
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    },
+    "display_policy": {
+      "note": "question / choices[].text / explanation は表示用（アラビア数字・単位記号・主要化学式）。tts_question / choices[].tts_text / tts_explanation は音声読み上げ用（漢数字・単位語・日本語化学名）。",
+      "display_fields": [
+        "question",
+        "choices[].text",
+        "explanation"
+      ],
+      "tts_fields": [
+        "tts_question",
+        "choices[].tts_text",
+        "tts_explanation"
+      ],
+      "number_unit_mapping": {
+        "立方センチメートルあたり": "cm³あたり",
+        "立方センチメートル": "cm³",
+        "キロジュール毎グラム": "kJ/g",
+        "キロジュール毎モル": "kJ/mol",
+        "キロジュール": "kJ",
+        "グラム毎モル": "g/mol",
+        "クーロン毎モル": "C/mol",
+        "グラム": "g",
+        "ミリリットル": "mL",
+        "モル": "mol",
+        "パーセント": "%",
+        "リットル": "L",
+        "アンペア": "A",
+        "クーロン": "C",
+        "度": "℃",
+        "気圧": "atm",
+        "パスカル": "Pa",
+        "ケルビン": "K"
+      },
+      "formula_mapping": {
+        "炭酸水素ナトリウム": "NaHCO₃",
+        "炭酸カルシウム": "CaCO₃",
+        "塩化マグネシウム": "MgCl₂",
+        "塩化カルシウム": "CaCl₂",
+        "塩化ナトリウム": "NaCl",
+        "水酸化ナトリウム": "NaOH",
+        "水酸化カルシウム": "Ca(OH)₂",
+        "硫酸ナトリウム": "Na₂SO₄",
+        "硝酸ナトリウム": "NaNO₃",
+        "硫酸銅": "CuSO₄",
+        "二酸化ケイ素": "SiO₂",
+        "二酸化硫黄": "SO₂",
+        "二酸化炭素": "CO₂",
+        "一酸化炭素": "CO",
+        "メタン": "CH₄",
+        "アンモニア": "NH₃"
+      }
+    },
+    "choice_shuffle_policy": {
+      "note": "choices[].choice_id は問題内で固有の安定識別子。アプリはユーザ提示時に choices を配列としてシャッフルし、choice_id と is_correct を参照して採点する。",
+      "runtime_shuffle": true,
+      "correct_positions_balanced_in_file": true
+    }
   },
   "questions": [
-    { "id": "ch2_3_q001", "chapter": "2-3", "chapter_title": "溶液", "category": "definition", "sub_category": "水和の定義", "difficulty": 2, "question_type": "correct", "question": "水和について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "水分子が溶質粒子（イオンや分子など）に強く引きつけられる現象であり、溶解の本質的な過程である。", "is_correct": true }, { "label": "2", "text": "溶質粒子が水分子を押しのけて溶液中に沈む現象である。", "is_correct": false, "trap_type": "negation", "trap_detail": "水和は引きつけられる現象であり押しのける現象ではない。" }, { "label": "3", "text": "有機溶媒でのみ起こる現象であり、水では起こらない。", "is_correct": false, "trap_type": "negation", "trap_detail": "水和は水溶媒で起こる。" }, { "label": "4", "text": "水和は非極性分子でのみ起こる。", "is_correct": false, "trap_type": "negation", "trap_detail": "イオンや極性分子で起こる。" } ], "explanation": "水和とは極性をもつ水分子が溶質のイオンや極性分子に静電気的な力や水素結合で強く引きつけられる現象です。塩化ナトリウムが水に溶ける場合、水分子の酸素原子がナトリウムイオンに、水素原子が塩化物イオンに引きつけられて水和イオンとなります。これにより溶質粒子が水中に分散していきます。", "evidence": [ { "source_id": "3_1_def_001", "quote": "水分子が溶質粒子に強く引きつけられる現象" } ], "related_concept_ids": ["3_1_def_001"], "mnemonic": null },
-    { "id": "ch2_3_q002", "chapter": "2-3", "chapter_title": "溶液", "category": "definition", "sub_category": "親水基と疎水基", "difficulty": 2, "question_type": "correct", "question": "親水基と疎水基について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "水和しやすい原子団が親水基、水となじまず水和しにくい原子団が疎水基である。分子内に親水基が多いほど水に溶けやすい。", "is_correct": true }, { "label": "2", "text": "疎水基が多いほど水に溶けやすくなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "疎水基が多いと水に溶けにくくなる。" }, { "label": "3", "text": "炭化水素基（炭素鎖）は親水基である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "炭化水素基は疎水基。" }, { "label": "4", "text": "ヒドロキシ基は疎水基に分類される。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "ヒドロキシ基は親水基。" } ], "explanation": "親水基とはヒドロキシ基のように水と水素結合を形成しやすい極性の高い原子団です。一方、疎水基は炭化水素基のように極性がなく水となじまない原子団です。エタノールは親水基の影響が強く水によく溶けますが、炭素鎖の長いヘキサノールは疎水基が大きく水にほとんど溶けません。", "evidence": [ { "source_id": "3_1_def_003", "quote": "水和しやすい原子団を親水基、水分子となじまず水和しにくい原子団を疎水基" } ], "related_concept_ids": ["3_1_def_003"], "mnemonic": null },
-    { "id": "ch2_3_q003", "chapter": "2-3", "chapter_title": "溶液", "category": "definition", "sub_category": "再結晶の定義", "difficulty": 3, "question_type": "correct", "question": "再結晶について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "温度による溶解度の差を利用して不純物混じりの固体から純粋な結晶を取り出す精製法であり、溶解度が温度で大きく変化する物質に適している。", "is_correct": true }, { "label": "2", "text": "溶解度が温度によってほとんど変化しない物質に最も適した方法である。", "is_correct": false, "trap_type": "negation", "trap_detail": "溶解度変化が大きい物質に適する。" }, { "label": "3", "text": "冷却ではなく加熱し続けることで結晶を得る方法である。", "is_correct": false, "trap_type": "negation", "trap_detail": "高温で溶かし冷却して析出させる。" }, { "label": "4", "text": "不純物が全て除去される完全な精製法である。", "is_correct": false, "trap_type": "partial_truth", "trap_detail": "完全ではなく、不純物は母液に残る程度。" } ], "explanation": "再結晶は温度上昇で溶解度が大きく増加する物質に有効な精製法です。高温で飽和溶液を作り、ゆっくり冷却すると溶けきれなくなった目的物質が結晶として析出します。不純物は少量しかないため冷却しても飽和に達せず溶液中に残ります。塩化ナトリウムは温度による溶解度変化が小さいため再結晶には不向きです。", "evidence": [ { "source_id": "3_1_proc_001", "quote": "温度による溶解度の差を利用して、不純物が混じった固体から純粋な結晶を取り出す精製操作" } ], "related_concept_ids": ["3_1_proc_001"], "mnemonic": null },
-    { "id": "ch2_3_q004", "chapter": "2-3", "chapter_title": "溶液", "category": "definition", "sub_category": "ヘンリーの法則", "difficulty": 3, "question_type": "correct", "question": "ヘンリーの法則について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "温度一定のとき、気体の水への溶解量はその気体の圧力（分圧）に比例する。ただし水と反応する気体や溶解度が極めて大きい気体には適用できない。", "is_correct": true }, { "label": "2", "text": "気体の圧力が高いほど溶解量は減少する。", "is_correct": false, "trap_type": "negation", "trap_detail": "圧力に比例して増加する。" }, { "label": "3", "text": "アンモニアや塩化水素にもそのまま適用できる。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "水に非常によく溶けたり反応する気体には適用不可。" }, { "label": "4", "text": "温度が変わっても溶解量は一定である。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "温度一定が条件。温度が変わると溶解度は変化する。" } ], "explanation": "ヘンリーの法則は温度一定で、水への溶解量が小さい気体（酸素、窒素、水素など）に適用できます。圧力が高いほど分子が水面にぶつかる回数が増え、溶け込む量が増えます。炭酸飲料は高圧で二酸化炭素を溶かしており、栓を開けると圧力が下がり気泡が出ます。アンモニアのように水と反応する気体には適用できません。", "evidence": [ { "source_id": "3_1_law_001", "quote": "気体の水への溶解量は、温度が変わらなければ、水に接している気体の圧力（分圧）に比例する" } ], "related_concept_ids": ["3_1_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q005", "chapter": "2-3", "chapter_title": "溶液", "category": "definition", "sub_category": "沸点上昇の定義", "difficulty": 3, "question_type": "correct", "question": "沸点上昇について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "不揮発性の溶質を含む希薄溶液の沸点が純溶媒より高くなる現象であり、上昇度は溶質の種類に関係なく質量モル濃度に比例する。", "is_correct": true }, { "label": "2", "text": "沸点上昇度は溶質の種類ごとに異なる値をとる。", "is_correct": false, "trap_type": "negation", "trap_detail": "非電解質なら種類に無関係。粒子数だけで決まる。" }, { "label": "3", "text": "揮発性の溶質でも沸点上昇は同じように起こる。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "不揮発性の溶質が条件。" }, { "label": "4", "text": "沸点上昇度は体積モル濃度に比例する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "体積モル濃度ではなく質量モル濃度に比例。" } ], "explanation": "沸点上昇は溶質が不揮発性であるとき、溶媒の蒸気圧が下がるため沸騰するのにより高い温度が必要になる現象です。上昇度はモル沸点上昇定数かける質量モル濃度で求められます。重要なのは溶質の種類ではなく溶液中の粒子数（モル濃度）だけで決まるという点です。電解質の場合は電離して粒子数が増えるため注意が必要です。", "evidence": [ { "source_id": "3_2_law_001", "quote": "溶質の種類に無関係に、水溶液の質量モル濃度mに比例する" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q006", "chapter": "2-3", "chapter_title": "溶液", "category": "definition", "sub_category": "凝析と塩析の定義", "difficulty": 3, "question_type": "correct", "question": "凝析と塩析について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "疎水コロイドが少量の電解質で沈殿するのが凝析、親水コロイドが多量の電解質で沈殿するのが塩析である。", "is_correct": true }, { "label": "2", "text": "凝析と塩析は同じ現象の別名である。", "is_correct": false, "trap_type": "negation", "trap_detail": "異なる現象。コロイドの種類と電解質量が異なる。" }, { "label": "3", "text": "親水コロイドが少量の電解質で沈殿するのが凝析である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "少量で沈殿するのは疎水コロイド。" }, { "label": "4", "text": "疎水コロイドが多量の電解質で沈殿するのが塩析である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "多量で沈殿するのは親水コロイド。疎水は少量で凝析。" } ], "explanation": "凝析は疎水コロイドに少量の電解質を加えると粒子の電荷が中和されて沈殿する現象です。塩析は親水コロイドに多量の電解質を加えると周りの水分子が奪われて沈殿する現象です。豆腐の製造（豆乳ににがりを加える）は塩析の例です。", "evidence": [ { "source_id": "3_3_def_002", "quote": "疎水コロイドが少量の電解質で沈殿する現象を凝析、親水コロイドが多量の電解質で沈殿する現象を塩析" } ], "related_concept_ids": ["3_3_def_002"], "mnemonic": null },
-    { "id": "ch2_3_q007", "chapter": "2-3", "chapter_title": "溶液", "category": "definition", "sub_category": "蒸気圧降下の定義", "difficulty": 3, "question_type": "correct", "question": "蒸気圧降下について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "不揮発性の溶質が溶けていると溶媒の蒸気圧が純溶媒より低くなる現象であり、沸点上昇や凝固点降下の原因となる。", "is_correct": true }, { "label": "2", "text": "溶質が溶けると蒸気圧は高くなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "蒸気圧は低くなる。" }, { "label": "3", "text": "蒸気圧降下は沸点上昇とは無関係である。", "is_correct": false, "trap_type": "negation", "trap_detail": "蒸気圧降下が沸点上昇の根本原因。" }, { "label": "4", "text": "揮発性の溶質でも同じように蒸気圧降下が起こる。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "不揮発性溶質が条件。揮発性だと溶質も蒸発する。" } ], "explanation": "不揮発性の溶質が溶液中に存在すると、液面を占める溶媒分子の割合が減り、蒸発できる溶媒分子が少なくなるため蒸気圧が下がります。これが蒸気圧降下です。蒸気圧が下がると沸騰温度が上がり（沸点上昇）、凝固する温度は下がります（凝固点降下）。これらの束一的性質はすべて蒸気圧降下に起因します。", "evidence": [ { "source_id": "3_2_law_001", "quote": "不揮発性のものが溶けていると水分子が蒸発しにくくなる" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q008", "chapter": "2-3", "chapter_title": "溶液", "category": "definition", "sub_category": "質量モル濃度の定義", "difficulty": 2, "question_type": "correct", "question": "質量モル濃度について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "溶媒一キログラムあたりに溶けている溶質の物質量で表す濃度であり、温度変化の影響を受けにくい。", "is_correct": true }, { "label": "2", "text": "溶液一リットルあたりの溶質の物質量で表す濃度である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "これはモル濃度（体積モル濃度）の定義。" }, { "label": "3", "text": "溶媒ではなく溶液の質量を基準にした濃度である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "溶液ではなく溶媒のキログラムが基準。" }, { "label": "4", "text": "温度によって値が大きく変わる濃度の表し方である。", "is_correct": false, "trap_type": "negation", "trap_detail": "質量を基準にするため温度変化の影響を受けにくい。" } ], "explanation": "質量モル濃度は溶媒の質量（キログラム）を基準にした濃度です。溶液の体積は温度で膨張・収縮しますが質量は変わらないため、温度変化の影響を受けにくいという利点があります。沸点上昇や凝固点降下の計算では質量モル濃度を使います。", "evidence": [ { "source_id": "3_2_law_001", "quote": "質量モル濃度mに比例する" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q009", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "塩化ナトリウムの溶解", "difficulty": 2, "question_type": "correct", "question": "塩化ナトリウムが水に溶けるしくみとして、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "水分子の酸素がナトリウムイオンに、水素が塩化物イオンに引きつけられ、イオンが水和されて水中に分散する。", "is_correct": true }, { "label": "2", "text": "塩化ナトリウムの結晶が分子のまま水中に溶ける。", "is_correct": false, "trap_type": "negation", "trap_detail": "イオンに電離して溶ける。" }, { "label": "3", "text": "水分子の水素がナトリウムイオンに引きつけられる。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "酸素がナトリウムイオン（正イオン）に引きつけられる。" }, { "label": "4", "text": "水和は起こらず、単に結晶が砕けるだけである。", "is_correct": false, "trap_type": "negation", "trap_detail": "水和が溶解の本質。" } ], "explanation": "塩化ナトリウムは水中でナトリウムイオンと塩化物イオンに電離します。水分子は極性をもち、部分的に負に帯電した酸素原子が正のナトリウムイオンに、部分的に正に帯電した水素原子が負の塩化物イオンに引きつけられます。こうして水和されたイオンが水中に分散していきます。", "evidence": [ { "source_id": "3_1_sub_001", "quote": "水中でNa+とCl-に電離し、それぞれが水和される" } ], "related_concept_ids": ["3_1_def_001", "3_1_sub_001"], "mnemonic": null },
-    { "id": "ch2_3_q010", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "エタノールの水溶性", "difficulty": 2, "question_type": "correct", "question": "エタノールが水に溶ける理由として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "エタノールのヒドロキシ基が親水基として働き、水分子と水素結合を形成するため。", "is_correct": true }, { "label": "2", "text": "エタノールは無極性分子であり、水とファンデルワールス力で結合するため。", "is_correct": false, "trap_type": "negation", "trap_detail": "極性分子であり水素結合によって溶ける。" }, { "label": "3", "text": "エタノールは水中でイオンに電離するため。", "is_correct": false, "trap_type": "negation", "trap_detail": "非電解質であり電離しない。" }, { "label": "4", "text": "エタノールの炭化水素基が水と水素結合を形成するため。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "炭化水素基は疎水基。ヒドロキシ基が親水基。" } ], "explanation": "エタノールは分子内にヒドロキシ基という親水基をもちます。この部分が水分子と水素結合を形成するため、エタノールは水と自由に混ざり合います。ただしエタノールは非電解質であり、水中でイオンに電離することはなく水溶液は電気を導きません。", "evidence": [ { "source_id": "3_1_sub_002", "quote": "ヒドロキシ基が親水基として働き、水分子と水素結合を形成する" } ], "related_concept_ids": ["3_1_sub_002", "3_1_def_003"], "mnemonic": null },
-    { "id": "ch2_3_q011", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "炭素鎖と溶解度の関係", "difficulty": 3, "question_type": "correct", "question": "アルコールの炭素鎖と水への溶解度の関係について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "炭素鎖が長くなると疎水基が大きくなり、水にはほとんど溶けなくなる。エタノールは溶けるがヘキサノールはほぼ不溶である。", "is_correct": true }, { "label": "2", "text": "炭素鎖が長くなるほど水に溶けやすくなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "炭素鎖が長いと疎水基が支配的になり水に溶けにくくなる。" }, { "label": "3", "text": "ヒドロキシ基があればいくら炭素鎖が長くても水に自由に溶ける。", "is_correct": false, "trap_type": "negation", "trap_detail": "疎水基が大きくなると溶けにくくなる。" }, { "label": "4", "text": "炭素鎖の長さと溶解度は無関係である。", "is_correct": false, "trap_type": "negation", "trap_detail": "密接に関係する。" } ], "explanation": "有機化合物の水への溶解性は親水基と疎水基のバランスで決まります。エタノールは二つの炭素に対してヒドロキシ基一つで親水基の影響が強く水によく溶けます。しかしヘキサノールのように炭素鎖が六つと長くなると疎水部分が支配的になり、水にはほとんど溶けなくなります。", "evidence": [ { "source_id": "3_1_def_003", "quote": "炭素鎖が長い1-ヘキサノールは疎水基が大きく水にほとんど溶けない" } ], "related_concept_ids": ["3_1_def_003"], "mnemonic": null },
-    { "id": "ch2_3_q012", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "塩化ナトリウムの溶解度変化", "difficulty": 3, "question_type": "correct", "question": "塩化ナトリウムの溶解度の温度変化について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "塩化ナトリウムは温度による溶解度の変化が小さいため、再結晶による精製には向いていない。", "is_correct": true }, { "label": "2", "text": "塩化ナトリウムは温度が上がると溶解度が激しく増加するため再結晶に最適である。", "is_correct": false, "trap_type": "negation", "trap_detail": "溶解度変化が小さいため不向き。" }, { "label": "3", "text": "温度による溶解度の変化の大小と再結晶の効率は無関係である。", "is_correct": false, "trap_type": "negation", "trap_detail": "密接に関係する。" }, { "label": "4", "text": "塩化ナトリウムは温度が上がると水に溶けなくなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "溶解度は微増する。" } ], "explanation": "再結晶は温度差による溶解度の差を利用する精製法のため、温度で溶解度が大きく変わる物質ほど効率的に精製できます。塩化ナトリウムは二十度で約三十五・八グラム毎百グラム水であり、温度を上げても溶解度はほとんど変わらないため再結晶には不向きです。", "evidence": [ { "source_id": "3_1_proc_001", "quote": "塩化ナトリウムのように温度による溶解度の変化が小さい物質は、再結晶による精製には向いていない" } ], "related_concept_ids": ["3_1_proc_001"], "mnemonic": null },
-    { "id": "ch2_3_q013", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "炭酸飲料とヘンリーの法則", "difficulty": 2, "question_type": "correct", "question": "炭酸飲料の泡が出る現象について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "高い圧力で二酸化炭素を溶かしており、栓を開けて圧力が下がると溶解度が減り、溶けきれなくなった気体が泡となって出てくる。", "is_correct": true }, { "label": "2", "text": "栓を開けると温度が上がるため泡が出る。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "温度ではなく圧力の変化が原因。" }, { "label": "3", "text": "栓を開けると圧力が上がるため泡が出る。", "is_correct": false, "trap_type": "negation", "trap_detail": "圧力は下がる。" }, { "label": "4", "text": "二酸化炭素は圧力に関係なく一定量しか溶けない。", "is_correct": false, "trap_type": "negation", "trap_detail": "ヘンリーの法則により圧力に比例して溶ける。" } ], "explanation": "炭酸飲料はヘンリーの法則の身近な例です。工場では高い圧力をかけて多くの二酸化炭素を水に溶かし込んでいます。栓を開けると内部の圧力が大気圧まで下がり、溶解度が減少するため、溶けきれなくなった二酸化炭素が気泡となって放出されます。", "evidence": [ { "source_id": "3_1_law_001", "quote": "高い圧力で二酸化炭素を溶かし込んでおり、栓を開けて圧力が下がると溶解度が減り、気泡となって逃げていく" } ], "related_concept_ids": ["3_1_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q014", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "電解質の沸点上昇", "difficulty": 4, "question_type": "correct", "question": "電解質溶液の沸点上昇について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "電解質は電離して粒子数が増えるため、同じ質量モル濃度の非電解質溶液より沸点上昇度が大きい。", "is_correct": true }, { "label": "2", "text": "電解質と非電解質の沸点上昇度は同じ質量モル濃度なら同じである。", "is_correct": false, "trap_type": "negation", "trap_detail": "電解質は電離で粒子数が増えるため上昇度が大きい。" }, { "label": "3", "text": "電解質は電離してイオンになっても粒子数は変わらない。", "is_correct": false, "trap_type": "negation", "trap_detail": "電離により粒子数は増加する。" }, { "label": "4", "text": "沸点上昇度は溶質の分子量で決まり粒子数は関係ない。", "is_correct": false, "trap_type": "negation", "trap_detail": "分子量ではなく粒子数（モル濃度）で決まる。" } ], "explanation": "沸点上昇度は溶液中の全粒子の質量モル濃度に比例します。電解質は水中で電離してイオンになるため、溶かした物質のモル数より実際の粒子数が多くなります。たとえば塩化ナトリウムは一モル溶かすとナトリウムイオンと塩化物イオンの計二モルの粒子が生じるため、非電解質一モルの二倍の沸点上昇が起こります。", "evidence": [ { "source_id": "3_2_law_001", "quote": "電解質の場合は、電離して粒子数が増えるため、電離後の全粒子の質量モル濃度を用いる" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q015", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "水酸化鉄コロイド", "difficulty": 3, "question_type": "correct", "question": "水酸化鉄（三価）のコロイドについて、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "赤褐色の正コロイドで疎水コロイドに分類される。沸騰水に塩化鉄（三価）水溶液を加えると生成する。", "is_correct": true }, { "label": "2", "text": "無色透明のコロイドであり負コロイドである。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "赤褐色であり正コロイド。" }, { "label": "3", "text": "親水コロイドに分類され、多量の電解質が必要で沈殿しにくい。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "疎水コロイドであり少量の電解質で凝析する。" }, { "label": "4", "text": "冷水に塩化鉄を加えて作られる。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "沸騰水に加えて作る。" } ], "explanation": "水酸化鉄（三価）コロイドは典型的な疎水コロイドであり正コロイドです。沸騰した水に塩化鉄（三価）水溶液を少量ずつ加えると赤褐色のコロイド溶液が生成します。疎水コロイドなので少量の電解質で凝析します。凝析させるには正コロイドなので価数の大きい陰イオンが最も効果的です。", "evidence": [ { "source_id": "3_3_sub_001", "quote": "赤褐色、正コロイド、疎水コロイド" } ], "related_concept_ids": ["3_3_sub_001", "3_3_def_002"], "mnemonic": null },
-    { "id": "ch2_3_q016", "chapter": "2-3", "chapter_title": "溶液", "category": "procedure", "sub_category": "再結晶の手順", "difficulty": 3, "question_type": "correct", "question": "再結晶の正しい手順を選びなさい。", "choices": [ { "label": "1", "text": "不純物を含む結晶を熱水に溶かし、保温漏斗で熱いうちにろ過し、ろ液をゆっくり冷却して結晶を析出させ、ろ過して取り出す。", "is_correct": true }, { "label": "2", "text": "冷水に溶かしてから加熱して結晶を析出させる。", "is_correct": false, "trap_type": "step_order", "trap_detail": "逆。高温で溶かし冷却して析出させる。" }, { "label": "3", "text": "急冷して結晶を得るのが最適である。", "is_correct": false, "trap_type": "negation", "trap_detail": "急冷すると不純物を巻き込むためゆっくり冷却する。" }, { "label": "4", "text": "ろ過は冷えてから行い、保温漏斗は使わない。", "is_correct": false, "trap_type": "negation", "trap_detail": "最初のろ過は熱いうちに保温漏斗で行う。" } ], "explanation": "再結晶は四つのステップで行います。まず不純物入りの結晶を少量の熱水に溶解します。次に保温漏斗で熱いうちにろ過して不溶性の不純物を除きます。ろ液をゆっくり冷却すると目的物質の結晶が析出します。最後に常温でろ過して結晶を回収します。急冷すると細かい結晶になり不純物を巻き込みやすくなります。", "evidence": [ { "source_id": "3_1_proc_001", "quote": "急冷すると細かい結晶となり、結晶の隙間に不純物を巻き込みやすくなるため" } ], "related_concept_ids": ["3_1_proc_001"], "mnemonic": null },
-    { "id": "ch2_3_q017", "chapter": "2-3", "chapter_title": "溶液", "category": "procedure", "sub_category": "凝析の手順", "difficulty": 3, "question_type": "correct", "question": "正コロイドである水酸化鉄（三価）コロイドを最も効果的に凝析させる方法として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "価数の大きい陰イオン（たとえば硫酸イオン）を含む電解質を少量加える。正コロイドの電荷を中和するのに反対電荷で価数が大きいイオンが効果的である。", "is_correct": true }, { "label": "2", "text": "価数の大きい陽イオンを加える。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "正コロイドには反対電荷の陰イオンが効果的。" }, { "label": "3", "text": "純水を大量に加えて希釈する。", "is_correct": false, "trap_type": "negation", "trap_detail": "希釈しても凝析しない。電解質の添加が必要。" }, { "label": "4", "text": "多量の電解質が必要である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "多量が必要なのは親水コロイドの塩析。疎水コロイドの凝析は少量で起こる。" } ], "explanation": "疎水コロイドの凝析では、コロイド粒子の電荷と反対符号のイオンを加えて電荷を中和します。正コロイドの水酸化鉄には陰イオンが有効で、価数が大きいほど少量で効果的に凝析します。一価の塩化物イオンより二価の硫酸イオンの方が効果的です。", "evidence": [ { "source_id": "3_3_def_002", "quote": "特定の疎水コロイドを凝析させるのに最も効果的な（価数の大きい）イオンを選ぶ" } ], "related_concept_ids": ["3_3_def_002"], "mnemonic": null },
-    { "id": "ch2_3_q018", "chapter": "2-3", "chapter_title": "溶液", "category": "confusion", "sub_category": "凝析と塩析の混同", "difficulty": 3, "question_type": "incorrect", "question": "凝析と塩析に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "疎水コロイドは少量の電解質で凝析する。", "is_correct": false }, { "label": "2", "text": "親水コロイドは多量の電解質で塩析する。", "is_correct": false }, { "label": "3", "text": "豆腐の製造はにがりによる塩析を利用している。", "is_correct": false }, { "label": "4", "text": "凝析と塩析はまったく同じ現象であり区別する必要はない。", "is_correct": true, "trap_type": "negation", "trap_detail": "異なる現象であり区別が必要。" } ], "explanation": "凝析は疎水コロイドが少量の電解質で沈殿する現象、塩析は親水コロイドが多量の電解質で沈殿する現象です。メカニズムも異なり、凝析は電荷の中和、塩析は水分子の脱水和が原因です。試験ではこの二つの混同が頻出です。", "evidence": [ { "source_id": "3_3_def_002", "quote": "疎水コロイドが少量の電解質で沈殿する現象を凝析、親水コロイドが多量の電解質で沈殿する現象を塩析" } ], "related_concept_ids": ["3_3_def_002"], "mnemonic": null },
-    { "id": "ch2_3_q019", "chapter": "2-3", "chapter_title": "溶液", "category": "confusion", "sub_category": "ヘンリーの法則の適用条件の混同", "difficulty": 3, "question_type": "incorrect", "question": "ヘンリーの法則に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "温度一定のとき溶解量は気体の分圧に比例する。", "is_correct": false }, { "label": "2", "text": "溶解度のあまり大きくない気体に適用できる。", "is_correct": false }, { "label": "3", "text": "水と反応しない気体に適用できる。", "is_correct": false }, { "label": "4", "text": "アンモニアのように水に極めてよく溶ける気体にも適用できる。", "is_correct": true, "trap_type": "condition_change", "trap_detail": "水によく溶ける気体や反応する気体には適用不可。" } ], "explanation": "ヘンリーの法則は溶解度があまり大きくなく、水と反応しない気体にのみ適用できます。アンモニアは水に極めてよく溶け、水中で電離してアンモニウムイオンと水酸化物イオンを生じるため、ヘンリーの法則の前提条件を満たしません。適用可能な気体は酸素、窒素、水素などです。", "evidence": [ { "source_id": "3_1_law_001", "quote": "アンモニアや塩化水素のように、水に非常によく溶けたり、水中で電離・反応したりする気体には適用できない" } ], "related_concept_ids": ["3_1_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q020", "chapter": "2-3", "chapter_title": "溶液", "category": "confusion", "sub_category": "沸点上昇の粒子数依存の混同", "difficulty": 3, "question_type": "incorrect", "question": "沸点上昇に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "沸点上昇度は質量モル濃度に比例する。", "is_correct": false }, { "label": "2", "text": "非電解質の場合、溶質の種類に関係なく沸点上昇度が決まる。", "is_correct": false }, { "label": "3", "text": "電解質は電離後の全粒子のモル濃度で計算する。", "is_correct": false }, { "label": "4", "text": "沸点上昇度は溶質の分子量に比例する。溶質の種類が重要である。", "is_correct": true, "trap_type": "negation", "trap_detail": "分子量ではなく粒子数で決まる。種類は関係ない。" } ], "explanation": "沸点上昇は束一的性質と呼ばれ、溶質の種類（分子量や化学的性質）ではなく溶液中の粒子の数だけで決まります。したがって分子量に比例するという記述は誤りです。同じ質量モル濃度の砂糖水と尿素水は沸点上昇度が同じです。", "evidence": [ { "source_id": "3_2_law_001", "quote": "溶質の種類に無関係に、水溶液の質量モル濃度mに比例する" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q021", "chapter": "2-3", "chapter_title": "溶液", "category": "confusion", "sub_category": "体積モル濃度と質量モル濃度の混同", "difficulty": 3, "question_type": "incorrect", "question": "沸点上昇の計算に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "質量モル濃度は溶媒一キログラムあたりの溶質のモル数である。", "is_correct": false }, { "label": "2", "text": "質量モル濃度は温度変化の影響を受けにくい。", "is_correct": false }, { "label": "3", "text": "沸点上昇度はモル沸点上昇定数かける質量モル濃度で求める。", "is_correct": false }, { "label": "4", "text": "沸点上昇度の計算には溶液一リットルあたりのモル数である体積モル濃度を使用する。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "体積モル濃度ではなく質量モル濃度を使う。" } ], "explanation": "沸点上昇や凝固点降下の計算では質量モル濃度を使います。質量モル濃度は溶媒（溶液ではない）一キログラムあたりの溶質の物質量です。体積モル濃度（溶液一リットルあたり）と混同するミスが非常に多いため注意が必要です。", "evidence": [ { "source_id": "3_2_law_001", "quote": "質量モル濃度mに比例する" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q022", "chapter": "2-3", "chapter_title": "溶液", "category": "confusion", "sub_category": "再結晶と急冷の混同", "difficulty": 3, "question_type": "incorrect", "question": "再結晶に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "高温で溶液を作り冷却して結晶を析出させる。", "is_correct": false }, { "label": "2", "text": "不純物は少量のため冷却しても溶液中に残る。", "is_correct": false }, { "label": "3", "text": "最初のろ過は保温漏斗で熱いうちに行う。", "is_correct": false }, { "label": "4", "text": "急冷して大きな結晶を得るのが最も効率的である。", "is_correct": true, "trap_type": "negation", "trap_detail": "急冷すると細かい結晶になり不純物を巻き込む。ゆっくり冷却が正しい。" } ], "explanation": "再結晶ではゆっくりと冷却することが大切です。急冷すると多数の結晶核が一度に生じて細かい結晶になり、結晶の隙間に不純物を取り込みやすくなります。ゆっくり冷却すると少数の結晶核から大きな結晶が成長し、純度の高い結晶が得られます。", "evidence": [ { "source_id": "3_1_proc_001", "quote": "急冷すると細かい結晶となり、結晶の隙間に不純物を巻き込みやすくなるため" } ], "related_concept_ids": ["3_1_proc_001"], "mnemonic": null },
-    { "id": "ch2_3_q023", "chapter": "2-3", "chapter_title": "溶液", "category": "confusion", "sub_category": "蒸気圧降下と上昇の混同", "difficulty": 3, "question_type": "incorrect", "question": "蒸気圧降下に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "不揮発性溶質が溶けると溶媒の蒸気圧は純溶媒より低くなる。", "is_correct": false }, { "label": "2", "text": "蒸気圧降下は沸点上昇の原因となる。", "is_correct": false }, { "label": "3", "text": "蒸気圧降下は凝固点降下の原因にもなる。", "is_correct": false }, { "label": "4", "text": "溶質が溶けると蒸気圧は上昇し、沸点は下がる。", "is_correct": true, "trap_type": "negation", "trap_detail": "蒸気圧は降下し、沸点は上がる。" } ], "explanation": "不揮発性溶質が溶液に存在すると蒸気圧は純溶媒より下がります（蒸気圧降下）。蒸気圧が下がるため沸騰するにはより高い温度が必要になり（沸点上昇）、また凝固する温度も下がります（凝固点降下）。蒸気圧が上昇するという選択肢四は完全に逆の記述です。", "evidence": [ { "source_id": "3_2_law_001", "quote": "不揮発性のものが溶けていると水分子が蒸発しにくくなる" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q024", "chapter": "2-3", "chapter_title": "溶液", "category": "classification", "sub_category": "電解質と非電解質の分類", "difficulty": 2, "question_type": "correct", "question": "電解質と非電解質の分類として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "塩化ナトリウムは電解質（水溶液が電気を通す）であり、エタノールは非電解質（水溶液が電気を通さない）である。", "is_correct": true }, { "label": "2", "text": "エタノールは電解質であり水溶液は電気を通す。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "エタノールは非電解質。" }, { "label": "3", "text": "塩化ナトリウムは非電解質であり水溶液は電気を通さない。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "塩化ナトリウムは電解質。" }, { "label": "4", "text": "電解質と非電解質の区別は溶媒に依存しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "水に溶けたときの電気伝導性で判断するため溶媒に依存する。" } ], "explanation": "電解質は水に溶けるとイオンに電離して水溶液が電気を導く物質です。塩化ナトリウムが典型例です。非電解質は水に溶けてもイオンに電離しないため水溶液は電気を導きません。エタノールや砂糖が非電解質の例です。", "evidence": [ { "source_id": "3_1_sub_001", "quote": "水溶液は電気を導く（電解質）" }, { "source_id": "3_1_sub_002", "quote": "水溶液は電気を導かない（非電解質）" } ], "related_concept_ids": ["3_1_sub_001", "3_1_sub_002"], "mnemonic": null },
-    { "id": "ch2_3_q025", "chapter": "2-3", "chapter_title": "溶液", "category": "classification", "sub_category": "疎水コロイドと親水コロイドの分類", "difficulty": 3, "question_type": "correct", "question": "疎水コロイドと親水コロイドの違いとして、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "疎水コロイドは電荷の反発で分散しており少量の電解質で凝析するが、親水コロイドは水分子に覆われて安定しており多量の電解質でないと塩析しない。", "is_correct": true }, { "label": "2", "text": "親水コロイドは少量の電解質で凝析し、疎水コロイドは多量の電解質で塩析する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "逆。疎水→少量で凝析、親水→多量で塩析。" }, { "label": "3", "text": "疎水コロイドと親水コロイドに安定性の差はない。", "is_correct": false, "trap_type": "negation", "trap_detail": "安定性が大きく異なる。" }, { "label": "4", "text": "すべてのコロイドは同じ方法で沈殿させることができる。", "is_correct": false, "trap_type": "negation", "trap_detail": "種類によって方法が異なる。" } ], "explanation": "コロイドの安定性は水との相互作用で二種類に大別されます。疎水コロイドは粒子表面の電荷による反発で分散しているため、反対電荷のイオンを少量加えるだけで電荷が中和されて凝析します。親水コロイドは粒子の周囲に水分子の層があって安定しているため、多量の電解質で水分子を奪わないと沈殿しません（塩析）。", "evidence": [ { "source_id": "3_3_def_002", "quote": "疎水コロイドは粒子同士の電気的な反発力で分散していますが、反対の電荷を持つイオンを加えると反発力が消えてくっつき沈殿します" } ], "related_concept_ids": ["3_3_def_002"], "mnemonic": null },
-    { "id": "ch2_3_q026", "chapter": "2-3", "chapter_title": "溶液", "category": "classification", "sub_category": "ヘンリーの法則適用可否", "difficulty": 3, "question_type": "correct", "question": "ヘンリーの法則が適用できる気体の組として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "酸素、窒素、水素。いずれも水への溶解度が小さく水と反応しない気体である。", "is_correct": true }, { "label": "2", "text": "アンモニア、塩化水素。水によく溶ける気体である。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "水によく溶ける気体にはヘンリーの法則は適用できない。" }, { "label": "3", "text": "すべての気体に適用できる。", "is_correct": false, "trap_type": "negation", "trap_detail": "条件を満たす気体のみ。" }, { "label": "4", "text": "水と反応する気体でも適用可能である。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "水と反応しないことが条件。" } ], "explanation": "ヘンリーの法則は水への溶解度が小さく、水と反応しない気体にのみ適用されます。酸素、窒素、水素はこの条件を満たします。アンモニアは水に極めてよく溶けて電離し、塩化水素も水に極めてよく溶けるため適用できません。", "evidence": [ { "source_id": "3_1_law_001", "quote": "溶解度があまり大きくない気体、水と反応したり電離したりしない気体" } ], "related_concept_ids": ["3_1_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q027", "chapter": "2-3", "chapter_title": "溶液", "category": "classification", "sub_category": "束一的性質の分類", "difficulty": 3, "question_type": "correct", "question": "束一的性質に分類されるものの組として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "蒸気圧降下、沸点上昇、凝固点降下、浸透圧。いずれも溶質の種類ではなく粒子数で決まる。", "is_correct": true }, { "label": "2", "text": "沸点上昇のみが束一的性質であり他は含まれない。", "is_correct": false, "trap_type": "negation", "trap_detail": "四つすべてが束一的性質。" }, { "label": "3", "text": "束一的性質は溶質の化学種によって大きく異なる。", "is_correct": false, "trap_type": "negation", "trap_detail": "化学種に依存せず粒子数だけで決まる。" }, { "label": "4", "text": "溶解度は束一的性質である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "溶解度は物質固有の値であり束一的性質ではない。" } ], "explanation": "束一的性質とは溶質の種類（分子量や化学的性質）に関係なく、溶液中に存在する溶質粒子の数だけで決まる性質です。蒸気圧降下、沸点上昇、凝固点降下、浸透圧の四つが含まれます。これらはすべて蒸気圧降下に起因する関連した現象です。", "evidence": [ { "source_id": "3_2_law_001", "quote": "溶質の種類に無関係に、水溶液の質量モル濃度mに比例する" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q028", "chapter": "2-3", "chapter_title": "溶液", "category": "procedure", "sub_category": "ヘンリー溶解量の体積計算", "difficulty": 4, "question_type": "correct", "question": "ヘンリーの法則において、溶けた気体の体積をその時の圧力で測ると見かけ上体積が変わらない理由として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "圧力を二倍にすると溶解する物質量は二倍になるが、その気体を同じ圧力で体積に直すと体積は半分に圧縮されるため、結果として見かけの体積は変わらない。", "is_correct": true }, { "label": "2", "text": "溶解量が圧力に関わらず一定であるため。", "is_correct": false, "trap_type": "negation", "trap_detail": "物質量は圧力に比例して増える。見かけの体積が一定になるだけ。" }, { "label": "3", "text": "溶けた気体は液体になって体積がなくなるため。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "液体になるのではなく気体の体積をその圧力で計算した場合の話。" }, { "label": "4", "text": "温度が上がるため圧縮が相殺されるため。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "温度は一定が条件。" } ], "explanation": "ヘンリーの法則では圧力を二倍にすると溶ける気体の量（モル数・質量）は二倍になります。しかしこの気体を二倍の圧力下での体積に換算するとボイルの法則で体積は半分になります。結果として「二倍のモル数を半分の体積に圧縮」で見かけの体積は一定になります。", "evidence": [ { "source_id": "3_1_law_001", "quote": "溶けた気体の体積を「その時の圧力」で測ると、圧縮されるため見かけ上の体積は変わりません" } ], "related_concept_ids": ["3_1_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q029", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "保護コロイド", "difficulty": 3, "question_type": "correct", "question": "保護コロイドについて、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "疎水コロイドに親水コロイドを加えると、親水コロイドが疎水コロイドを覆って安定化させ、少量の電解質では凝析しにくくなる。", "is_correct": true }, { "label": "2", "text": "親水コロイドに疎水コロイドを加えると安定化する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "疎水コロイドが保護される側。" }, { "label": "3", "text": "保護コロイドを加えると凝析しやすくなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "凝析しにくくなる。" }, { "label": "4", "text": "保護コロイドという概念は存在しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "重要な概念として存在する。" } ], "explanation": "保護コロイドとは疎水コロイドの表面を親水コロイドで覆い、安定性を高める手法です。親水コロイドの水分子層が疎水コロイドを包み込むため、少量の電解質を加えても凝析が起こりにくくなります。墨汁にゼラチン（親水コロイド）を加えるのは保護コロイドの応用例です。", "evidence": [], "related_concept_ids": ["3_3_def_002"], "mnemonic": null },
-    { "id": "ch2_3_q030", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "透析", "difficulty": 3, "question_type": "correct", "question": "透析について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "コロイド溶液を半透膜に入れて水中に浸すと、小さなイオンや分子は膜を通って外に出るがコロイド粒子は膜を通れないため精製できる。", "is_correct": true }, { "label": "2", "text": "コロイド粒子が半透膜を通り抜けてイオンだけが残る。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "逆。イオンが通りコロイドは残る。" }, { "label": "3", "text": "透析では半透膜は不要であり通常のろ紙でよい。", "is_correct": false, "trap_type": "negation", "trap_detail": "ろ紙ではコロイドも通過してしまう。半透膜が必要。" }, { "label": "4", "text": "透析ではすべての粒子が膜を通過する。", "is_correct": false, "trap_type": "negation", "trap_detail": "コロイド粒子は通過しない。" } ], "explanation": "透析はコロイド溶液から不要なイオンや小さな分子を除く精製法です。半透膜（セロハンなど）は水分子やイオンは通しますがコロイド粒子は通しません。コロイド溶液を半透膜の袋に入れて水中に浸すと、イオンや小分子が外に拡散していき、精製されたコロイド溶液が得られます。", "evidence": [], "related_concept_ids": ["3_3_def_002"], "mnemonic": null },
-    { "id": "ch2_3_q031", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "チンダル現象", "difficulty": 2, "question_type": "correct", "question": "チンダル現象について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "コロイド溶液に光を当てると光の通路が輝いて見える現象であり、コロイド粒子が光を散乱するために起こる。", "is_correct": true }, { "label": "2", "text": "真の溶液でも同じように起こる現象である。", "is_correct": false, "trap_type": "negation", "trap_detail": "真の溶液では起こらない。コロイド粒子の大きさが必要。" }, { "label": "3", "text": "光を吸収するために起こる現象である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "吸収ではなく散乱。" }, { "label": "4", "text": "暗所でのみ観察でき、明るい場所では見えない。", "is_correct": false, "trap_type": "negation", "trap_detail": "光を当てて観察する。暗所限定ではない。" } ], "explanation": "チンダル現象はコロイド溶液の特徴的な性質の一つです。コロイド粒子は光の波長と同程度の大きさをもつため光を強く散乱します。そのためレーザー光などを当てると光の通路が明るく輝いて見えます。真の溶液では粒子が非常に小さいためこの現象は起こりません。", "evidence": [], "related_concept_ids": [], "mnemonic": null },
-    { "id": "ch2_3_q032", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "ブラウン運動", "difficulty": 2, "question_type": "correct", "question": "ブラウン運動について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "コロイド粒子が周囲の溶媒分子の衝突を受けて不規則に動く現象であり、コロイドが沈降せずに分散し続ける一因である。", "is_correct": true }, { "label": "2", "text": "コロイド粒子が自ら動く現象である。", "is_correct": false, "trap_type": "negation", "trap_detail": "自ら動くのではなく溶媒分子の衝突で動く。" }, { "label": "3", "text": "ブラウン運動は真の溶液でのみ起こる。", "is_correct": false, "trap_type": "negation", "trap_detail": "コロイド溶液で観察される。" }, { "label": "4", "text": "コロイド粒子が規則正しく直線的に移動する現象である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "不規則な（ランダムな）運動。" } ], "explanation": "ブラウン運動はコロイド粒子が溶媒分子の不規則な衝突を受けてジグザグに動く現象です。この運動により粒子は沈降せず溶液中に広がり続けます。一八二七年にロバート・ブラウンが花粉から出た微粒子で発見したことから名付けられました。", "evidence": [], "related_concept_ids": [], "mnemonic": null },
-    { "id": "ch2_3_q033", "chapter": "2-3", "chapter_title": "溶液", "category": "confusion", "sub_category": "沸点上昇と凝固点降下の符号", "difficulty": 3, "question_type": "incorrect", "question": "溶液の沸点と凝固点の変化に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "不揮発性溶質を溶かすと沸点は上昇する。", "is_correct": false }, { "label": "2", "text": "不揮発性溶質を溶かすと凝固点は降下する。", "is_correct": false }, { "label": "3", "text": "これらの変化はいずれも蒸気圧降下に起因する。", "is_correct": false }, { "label": "4", "text": "不揮発性溶質を溶かすと沸点は下がり凝固点は上がる。", "is_correct": true, "trap_type": "negation", "trap_detail": "逆。沸点は上がり凝固点は下がる。" } ], "explanation": "不揮発性溶質が溶けると蒸気圧降下が起こり、その結果として沸点は上昇し凝固点は降下します。選択肢四はこの関係が完全に逆であり誤りです。冬に道路に凍結防止剤（塩化カルシウム）を撒くのは凝固点降下を利用した身近な例です。", "evidence": [ { "source_id": "3_2_law_001", "quote": "不揮発性のものが溶けていると水分子が蒸発しにくくなる" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q034", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "浸透圧", "difficulty": 4, "question_type": "correct", "question": "浸透圧について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "半透膜を隔てて純溶媒と溶液を置いたとき、溶液側に溶媒が移動する浸透現象を止めるために必要な圧力が浸透圧であり、溶質の種類に関わらず粒子のモル濃度に比例する。", "is_correct": true }, { "label": "2", "text": "浸透圧は溶液側から純溶媒側に溶媒が移動する現象によって生じる。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "純溶媒側から溶液側に移動する。" }, { "label": "3", "text": "浸透圧は溶質の分子量に比例する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "分子量ではなく粒子のモル濃度に比例。" }, { "label": "4", "text": "浸透圧は半透膜がなくても生じる。", "is_correct": false, "trap_type": "negation", "trap_detail": "半透膜が不可欠。" } ], "explanation": "浸透圧は束一的性質の一つであり、半透膜を通した溶媒の移動（浸透）と関連しています。純溶媒側から溶液側に溶媒が移動しようとする力を止めるのに必要な圧力が浸透圧です。他の束一的性質と同様に溶質の種類ではなく粒子のモル濃度で決まります。", "evidence": [], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q035", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "電気泳動", "difficulty": 3, "question_type": "correct", "question": "コロイドの電気泳動について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "コロイド粒子は正または負に帯電しており、電場をかけると帯電と反対の電極に向かって移動する。水酸化鉄コロイドは正コロイドなので陰極側に移動する。", "is_correct": true }, { "label": "2", "text": "コロイド粒子は電荷をもたないため電場では動かない。", "is_correct": false, "trap_type": "negation", "trap_detail": "多くのコロイド粒子は電荷をもつ。" }, { "label": "3", "text": "正コロイドは陽極に向かって移動する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "正コロイドは陰極（負極）に移動する。" }, { "label": "4", "text": "電気泳動は真の溶液でのみ起こる現象である。", "is_correct": false, "trap_type": "negation", "trap_detail": "コロイド溶液で起こる。" } ], "explanation": "コロイド粒子の多くは表面が正または負に帯電しています。電場をかけると帯電と反対符号の電極に向かって移動します。水酸化鉄（三価）コロイドは正に帯電した正コロイドであり陰極（負極）に移動します。この性質を電気泳動といい、コロイドの帯電の符号を調べるのに使われます。", "evidence": [ { "source_id": "3_3_sub_001", "quote": "正コロイド" } ], "related_concept_ids": ["3_3_sub_001"], "mnemonic": null },
-    { "id": "ch2_3_q036", "chapter": "2-3", "chapter_title": "溶液", "category": "confusion", "sub_category": "正コロイドと負コロイドの混同", "difficulty": 3, "question_type": "incorrect", "question": "コロイドの電気泳動に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "水酸化鉄（三価）コロイドは正コロイドである。", "is_correct": false }, { "label": "2", "text": "正コロイドは陰極側に移動する。", "is_correct": false }, { "label": "3", "text": "電気泳動でコロイドの帯電の符号がわかる。", "is_correct": false }, { "label": "4", "text": "水酸化鉄（三価）コロイドは負コロイドであり陽極に移動する。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "正コロイドであり陰極に移動する。" } ], "explanation": "水酸化鉄（三価）コロイドは正コロイドです。電気泳動では陰極（負極）側に移動します。これを負コロイドとする記述は誤りです。正コロイドの凝析には陰イオン（特に価数の大きいもの）が効果的であり、負コロイドの凝析には陽イオンが効果的です。", "evidence": [ { "source_id": "3_3_sub_001", "quote": "正コロイド" } ], "related_concept_ids": ["3_3_sub_001", "3_3_def_002"], "mnemonic": null },
-    { "id": "ch2_3_q037", "chapter": "2-3", "chapter_title": "溶液", "category": "procedure", "sub_category": "溶解度曲線の利用", "difficulty": 3, "question_type": "correct", "question": "溶解度曲線を用いた再結晶の計算について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "溶解度曲線から各温度での飽和溶液の組成がわかるため、高温から低温に冷却したときに析出する結晶の質量を計算できる。", "is_correct": true }, { "label": "2", "text": "溶解度曲線は温度と圧力の関係を示す。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "温度と溶解度の関係を示す。温度と圧力は状態図。" }, { "label": "3", "text": "すべての物質で溶解度曲線は右肩上がりである。", "is_correct": false, "trap_type": "negation", "trap_detail": "物質によって異なる。塩化ナトリウムはほぼ水平。" }, { "label": "4", "text": "溶解度曲線から析出量を計算することはできない。", "is_correct": false, "trap_type": "negation", "trap_detail": "計算の基礎となるグラフ。" } ], "explanation": "溶解度曲線は水百グラムに対して溶ける溶質の最大量を温度ごとにプロットしたグラフです。高温での飽和量と低温での飽和量の差が、冷却したときに析出する結晶の量になります。硝酸カリウムのように急な右肩上がりの曲線をもつ物質は再結晶に適しています。", "evidence": [ { "source_id": "3_1_proc_001", "quote": "溶解度曲線を与えられ、特定温度への冷却時に析出する結晶の質量を計算する問題" } ], "related_concept_ids": ["3_1_proc_001"], "mnemonic": null },
-    { "id": "ch2_3_q038", "chapter": "2-3", "chapter_title": "溶液", "category": "confusion", "sub_category": "ヘンリーの法則の体積の扱い", "difficulty": 4, "question_type": "incorrect", "question": "ヘンリーの法則に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "圧力を二倍にすると溶ける気体の物質量は二倍になる。", "is_correct": false }, { "label": "2", "text": "圧力を二倍にすると溶ける気体の質量は二倍になる。", "is_correct": false }, { "label": "3", "text": "溶けた気体の体積をその圧力で測ると見かけ上変わらない。", "is_correct": false }, { "label": "4", "text": "圧力を二倍にすると溶けた気体の体積もその圧力での体積で二倍になる。", "is_correct": true, "trap_type": "negation", "trap_detail": "モル数は二倍だが圧力も二倍なのでボイルの法則から体積は一定。" } ], "explanation": "ヘンリーの法則で圧力を二倍にすると溶ける物質量と質量は確かに二倍になります。しかしこの気体を二倍の圧力下での体積に換算するとボイルの法則により体積は半分になるため、二倍の物質量が半分の体積に圧縮され、見かけの体積は一定です。体積が二倍になるという記述は誤りです。", "evidence": [ { "source_id": "3_1_law_001", "quote": "溶けた気体の体積を「その時の圧力」で測ると、圧縮されるため見かけ上の体積は変わりません" } ], "related_concept_ids": ["3_1_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q039", "chapter": "2-3", "chapter_title": "溶液", "category": "mnemonic", "sub_category": "似たものは似たものを溶かす", "difficulty": 2, "question_type": "correct", "question": "溶解の一般原則として正しいものを選びなさい。", "choices": [ { "label": "1", "text": "極性溶媒には極性物質やイオン性物質が溶けやすく、無極性溶媒には無極性物質が溶けやすい。「似たものは似たものを溶かす」と覚える。", "is_correct": true }, { "label": "2", "text": "極性溶媒には無極性物質がよく溶ける。", "is_correct": false, "trap_type": "negation", "trap_detail": "極性には極性が溶ける。" }, { "label": "3", "text": "すべての物質はすべての溶媒に同じように溶ける。", "is_correct": false, "trap_type": "negation", "trap_detail": "溶媒と溶質の極性の一致が重要。" }, { "label": "4", "text": "無極性溶媒にはイオン性物質がよく溶ける。", "is_correct": false, "trap_type": "negation", "trap_detail": "イオン性物質は無極性溶媒には溶けにくい。" } ], "explanation": "溶解の一般原則として「似たものは似たものを溶かす」があります。水（極性溶媒）には塩化ナトリウム（イオン性）やエタノール（極性分子）がよく溶けますが、油（無極性）は溶けません。逆にベンゼン（無極性溶媒）にはヨウ素（無極性）がよく溶けますが食塩は溶けません。", "evidence": [], "related_concept_ids": ["3_1_def_001", "3_1_def_003"], "mnemonic": "似たものは似たものを溶かす" },
-    { "id": "ch2_3_q040", "chapter": "2-3", "chapter_title": "溶液", "category": "mnemonic", "sub_category": "凝析と塩析の覚え方", "difficulty": 2, "question_type": "correct", "question": "凝析と塩析の区別の覚え方として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "疎水コロイドの凝析は「少量」で「凝り固まる」、親水コロイドの塩析は「多量の塩」で「塩漬けにする」と覚える。", "is_correct": true }, { "label": "2", "text": "凝析は多量の電解質が必要で、塩析は少量で起こると覚える。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "逆。凝析が少量、塩析が多量。" }, { "label": "3", "text": "凝析も塩析も区別する必要がないため覚え方は不要である。", "is_correct": false, "trap_type": "negation", "trap_detail": "明確に区別が必要。" }, { "label": "4", "text": "凝析は親水コロイドに、塩析は疎水コロイドに起こると覚える。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "逆。凝析は疎水、塩析は親水。" } ], "explanation": "凝析は疎水コロイドが少量の電解質で「凝り固まって」沈殿する現象です。塩析は親水コロイドが多量の電解質（塩）で「塩漬け」にされるように水分子を奪われて沈殿する現象です。電解質の量（少量か多量か）とコロイドの種類のセットで覚えましょう。", "evidence": [ { "source_id": "3_3_def_002", "quote": "疎水コロイドが少量の電解質で沈殿する現象を凝析、親水コロイドが多量の電解質で沈殿する現象を塩析" } ], "related_concept_ids": ["3_3_def_002"], "mnemonic": "凝析は少量で凝り固まる、塩析は多量の塩漬け" },
-    { "id": "ch2_3_q041", "chapter": "2-3", "chapter_title": "溶液", "category": "mnemonic", "sub_category": "モル沸点上昇定数の覚え方", "difficulty": 3, "question_type": "correct", "question": "水のモル沸点上昇定数の値として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "〇・五一五ケルビルキログラム毎モルである。質量モル濃度一モル毎キログラムの溶液は沸点が約〇・五度上昇する。", "is_correct": true }, { "label": "2", "text": "一・八六ケルビルキログラム毎モルである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "これはモル凝固点降下定数の値。" }, { "label": "3", "text": "八・三一かける十の三乗である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "これは気体定数の値。" }, { "label": "4", "text": "二十二・四である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "これは標準状態でのモル体積。" } ], "explanation": "水のモル沸点上昇定数は〇・五一五です。質量モル濃度が一モル毎キログラムの非電解質水溶液では沸点が約〇・五度上昇します。一方、水のモル凝固点降下定数は一・八六であり沸点上昇定数と混同しないように注意が必要です。凝固点降下の方が数値が大きいため、同じ濃度でも凝固点降下度の方が沸点上昇度より大きくなります。", "evidence": [ { "source_id": "3_2_law_001", "quote": "水のモル沸点上昇Kbは0.515 K・kg/mol" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q042", "chapter": "2-3", "chapter_title": "溶液", "category": "comprehensive", "sub_category": "溶解の総合", "difficulty": 5, "question_type": "correct", "question": "溶解のしくみに関する総合的な記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "イオン結晶は水分子との水和によりイオンが分散して溶ける。極性分子は親水基の水素結合で溶ける。無極性分子は水に溶けにくく無極性溶媒に溶ける。「似たものは似たものを溶かす」原則が基本である。", "is_correct": true }, { "label": "2", "text": "すべての物質は水に溶ける。無極性分子も水和で溶ける。似たものは似たものを溶かさない。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "三か所誤り。" }, { "label": "3", "text": "水和はイオン結晶にのみ起こり極性分子には起こらない。", "is_correct": false, "trap_type": "negation", "trap_detail": "極性分子にも水和は起こる。" }, { "label": "4", "text": "エタノールは無極性分子であり水に溶けない。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "極性分子であり水に自由に溶ける。" } ], "explanation": "溶解のしくみは溶質と溶媒の相互作用で決まります。イオン結晶は水分子の水和によるイオンの分離で溶け、エタノールなどの極性分子はヒドロキシ基の水素結合で溶けます。無極性分子（油脂など）は水とは相互作用が弱いため溶けにくいですが、無極性溶媒（ヘキサンなど）には溶けます。", "evidence": [ { "source_id": "3_1_def_001", "quote": "水分子が溶質粒子に強く引きつけられる現象" }, { "source_id": "3_1_def_003", "quote": "親水基が多いほど水に溶けやすくなります" } ], "related_concept_ids": ["3_1_def_001", "3_1_def_003"], "mnemonic": null },
-    { "id": "ch2_3_q043", "chapter": "2-3", "chapter_title": "溶液", "category": "comprehensive", "sub_category": "束一的性質の総合", "difficulty": 5, "question_type": "incorrect", "question": "束一的性質に関する総合的な記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "蒸気圧降下・沸点上昇・凝固点降下・浸透圧はいずれも束一的性質であり溶質粒子の数で決まる。", "is_correct": false }, { "label": "2", "text": "電解質溶液では電離後の全粒子のモル濃度を考慮する必要がある。", "is_correct": false }, { "label": "3", "text": "沸点上昇と凝固点降下の計算には質量モル濃度を用いる。", "is_correct": false }, { "label": "4", "text": "束一的性質は溶質の分子量に比例し、粒子数は無関係である。非電解質と電解質で同じモル濃度なら沸点上昇度は同じである。", "is_correct": true, "trap_type": "multiple_swap", "trap_detail": "分子量ではなく粒子数で決まる。電解質は電離で粒子増加。" } ], "explanation": "束一的性質は「束（ひとくくり）」一つの性質という意味で、溶質の化学的性質に依存せず粒子数だけで決まります。分子量に比例するという選択肢四は誤りです。また電解質は電離によって粒子数が増えるため、同じモル濃度の非電解質より大きな束一的性質を示します。", "evidence": [ { "source_id": "3_2_law_001", "quote": "溶質の種類に無関係に、水溶液の質量モル濃度mに比例する" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q044", "chapter": "2-3", "chapter_title": "溶液", "category": "comprehensive", "sub_category": "コロイドの総合", "difficulty": 5, "question_type": "correct", "question": "コロイドの性質に関する総合的な記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "コロイド粒子は一から百ナノメートル程度の大きさであり、チンダル現象、ブラウン運動、電気泳動を示す。疎水コロイドは少量の電解質で凝析し、親水コロイドは多量の電解質で塩析する。透析で精製できる。", "is_correct": true }, { "label": "2", "text": "コロイド粒子はイオンと同じ大きさであり通常のろ紙でろ過できる。凝析と塩析は全く同じ現象である。チンダル現象は真の溶液でも起こる。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "三か所すべて誤り。" }, { "label": "3", "text": "コロイドにはブラウン運動やチンダル現象は見られない。", "is_correct": false, "trap_type": "negation", "trap_detail": "コロイド特有の現象。" }, { "label": "4", "text": "疎水コロイドは多量の電解質が必要で、親水コロイドは少量で沈殿する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "逆。" } ], "explanation": "コロイドは真の溶液と懸濁液の中間的な存在で、粒子の大きさは一から百ナノメートル程度です。特徴的な性質としてチンダル現象（光の散乱）、ブラウン運動（不規則運動）、電気泳動（帯電による移動）があります。疎水コロイドは少量の電解質で凝析し、親水コロイドは多量で塩析します。透析で不純なイオンを除去して精製できます。", "evidence": [ { "source_id": "3_3_def_002", "quote": "疎水コロイドが少量の電解質で沈殿する現象を凝析、親水コロイドが多量の電解質で沈殿する現象を塩析" } ], "related_concept_ids": ["3_3_def_002", "3_3_sub_001"], "mnemonic": null },
-    { "id": "ch2_3_q045", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "固体の溶解度と温度", "difficulty": 3, "question_type": "correct", "question": "固体の溶解度と温度の関係について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "多くの固体は温度が上がると溶解度が増加するが、物質によって増加の程度は大きく異なる。硝酸カリウムは急激に増加し、塩化ナトリウムはほとんど変化しない。", "is_correct": true }, { "label": "2", "text": "すべての固体で温度が上がると溶解度は減少する。", "is_correct": false, "trap_type": "negation", "trap_detail": "多くは増加する。" }, { "label": "3", "text": "すべての固体で溶解度の温度変化は同程度である。", "is_correct": false, "trap_type": "negation", "trap_detail": "物質ごとに大きく異なる。" }, { "label": "4", "text": "温度と溶解度は完全に無関係である。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度に依存する。" } ], "explanation": "固体の溶解度は一般に温度上昇とともに増加しますが、その程度は物質によって大きく違います。硝酸カリウムは温度が上がると溶解度が急激に増加するため再結晶に最適です。一方、塩化ナトリウムは温度を上げてもほぼ一定のため再結晶には不向きです。", "evidence": [ { "source_id": "3_1_proc_001", "quote": "塩化ナトリウムのように温度による溶解度の変化が小さい物質は、再結晶には向いていない" } ], "related_concept_ids": ["3_1_proc_001"], "mnemonic": null },
-    { "id": "ch2_3_q046", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "気体の溶解度と温度", "difficulty": 3, "question_type": "correct", "question": "気体の水への溶解度と温度の関係について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "一般に温度が上がると気体の水への溶解度は減少する。温かい水からは溶けていた気体が泡となって出てくることがある。", "is_correct": true }, { "label": "2", "text": "温度が上がると気体の溶解度は増加する。", "is_correct": false, "trap_type": "negation", "trap_detail": "一般に減少する。固体とは逆。" }, { "label": "3", "text": "気体の溶解度は温度に全く影響されない。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度に大きく影響される。" }, { "label": "4", "text": "固体も気体も温度が上がると溶解度が増加する。", "is_correct": false, "trap_type": "negation", "trap_detail": "気体は減少する傾向がある。" } ], "explanation": "気体の水への溶解度は固体とは逆に、温度が上がると一般に減少します。これは温度が上がると気体分子の運動エネルギーが大きくなり水面から飛び出しやすくなるためです。やかんで水を温めるとまだ沸騰前でも小さな泡が出るのは溶けていた空気が出てくるためです。", "evidence": [], "related_concept_ids": ["3_1_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q047", "chapter": "2-3", "chapter_title": "溶液", "category": "procedure", "sub_category": "コロイド溶液の作り方", "difficulty": 3, "question_type": "correct", "question": "水酸化鉄（三価）コロイドの作り方として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "沸騰した水に塩化鉄（三価）水溶液を少量ずつ加えると赤褐色のコロイド溶液が得られる。", "is_correct": true }, { "label": "2", "text": "冷水に塩化鉄（三価）を大量に加えて作る。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "沸騰水に少量ずつ。" }, { "label": "3", "text": "水酸化ナトリウムを塩化鉄に加えて作る。", "is_correct": false, "trap_type": "step_order", "trap_detail": "水酸化ナトリウムを加えると沈殿するがコロイドにはならない。" }, { "label": "4", "text": "無色透明な溶液が得られる。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "赤褐色の溶液。" } ], "explanation": "水酸化鉄（三価）コロイドは沸騰水に塩化鉄（三価）水溶液を少量ずつ加えて作ります。加水分解によって水酸化鉄（三価）の微粒子が生成しコロイド状態で分散します。赤褐色のコロイド溶液が得られます。冷水で行ったり一度に大量に加えると沈殿してしまいコロイドになりません。", "evidence": [ { "source_id": "3_3_sub_001", "quote": "沸騰水に塩化鉄(III)水溶液を加えるとコロイド溶液となる" } ], "related_concept_ids": ["3_3_sub_001"], "mnemonic": null },
-    { "id": "ch2_3_q048", "chapter": "2-3", "chapter_title": "溶液", "category": "property", "sub_category": "凝固点降下の利用", "difficulty": 3, "question_type": "correct", "question": "凝固点降下の身近な利用例として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "冬に道路に塩化カルシウムを撒くと水の凝固点が下がり、路面の凍結を防ぐことができる。", "is_correct": true }, { "label": "2", "text": "道路に塩を撒くと凝固点が上がるため路面が凍りやすくなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "凝固点は下がる。" }, { "label": "3", "text": "凝固点降下は実用的には使われない理論上の現象である。", "is_correct": false, "trap_type": "negation", "trap_detail": "凍結防止剤や不凍液など多くの実用例がある。" }, { "label": "4", "text": "塩化カルシウムは非電解質なので凝固点降下の効果は小さい。", "is_correct": false, "trap_type": "negation", "trap_detail": "電解質であり三つのイオンに電離するため効果が大きい。" } ], "explanation": "凝固点降下は日常生活で広く利用されています。冬の道路に塩化カルシウム（凍結防止剤）を撒くと水の凝固点が零度以下に下がるため凍結を防げます。塩化カルシウムは水中でカルシウムイオン一つと塩化物イオン二つの計三つのイオンに電離するため、非電解質の三倍近い凝固点降下効果があります。", "evidence": [ { "source_id": "3_2_law_001", "quote": "電解質の場合は、電離して粒子数が増えるため" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q049", "chapter": "2-3", "chapter_title": "溶液", "category": "confusion", "sub_category": "モル沸点上昇とモル凝固点降下の混同", "difficulty": 3, "question_type": "incorrect", "question": "水のモル沸点上昇定数とモル凝固点降下定数に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "モル沸点上昇定数は〇・五一五である。", "is_correct": false }, { "label": "2", "text": "モル凝固点降下定数は一・八六である。", "is_correct": false }, { "label": "3", "text": "モル凝固点降下定数の方がモル沸点上昇定数より大きい。", "is_correct": false }, { "label": "4", "text": "モル沸点上昇定数は一・八六であり、モル凝固点降下定数は〇・五一五である。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "値が逆。沸点上昇が〇・五一五、凝固点降下が一・八六。" } ], "explanation": "水のモル沸点上昇定数は〇・五一五、モル凝固点降下定数は一・八六です。この二つの値を逆に覚えてしまうのは非常に多いミスです。凝固点降下定数の方が大きいため、同じ濃度の溶液では沸点の上昇幅より凝固点の降下幅の方が大きくなります。", "evidence": [ { "source_id": "3_2_law_001", "quote": "水のモル沸点上昇Kbは0.515 K・kg/mol" } ], "related_concept_ids": ["3_2_law_001"], "mnemonic": null },
-    { "id": "ch2_3_q050", "chapter": "2-3", "chapter_title": "溶液", "category": "procedure", "sub_category": "再結晶の保温漏斗の理由", "difficulty": 3, "question_type": "correct", "question": "再結晶の際に保温漏斗を使う理由として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "ろ過中に液温が下がると目的物質の結晶がろ紙上に析出してしまい収量が低下するのを防ぐため。", "is_correct": true }, { "label": "2", "text": "不純物がろ紙を通過するのを防ぐため。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "不純物の除去は通常のろ過の目的。保温漏斗は温度維持が目的。" }, { "label": "3", "text": "ろ過速度を上げるため。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "速度向上は副次的効果に過ぎない。" }, { "label": "4", "text": "保温漏斗を使う必要はなく通常の漏斗でよい。", "is_correct": false, "trap_type": "negation", "trap_detail": "温度低下で目的物質が析出する問題が生じる。" } ], "explanation": "再結晶で最初に行う熱いろ過では保温漏斗を使います。理由はろ過中に温度が下がると飽和溶液から目的物質が結晶化してろ紙の上に残ってしまい、最終的に得られる結晶の収量が減ってしまうからです。保温漏斗で温度を維持しながらろ過することで収量を最大化できます。", "evidence": [ { "source_id": "3_1_proc_001", "quote": "ろ過の途中で液温が下がり、目的物質の結晶が析出してろ紙上に残ってしまい、収量が低下するのを防ぐため" } ], "related_concept_ids": ["3_1_proc_001"], "mnemonic": null }
+    {
+      "id": "ch2_3_q001",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "definition",
+      "sub_category": "水和の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "水和について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "有機溶媒でのみ起こる現象であり、水では起こらない。水和は水分子が溶質粒子を取り囲む現象であり水溶液中でこそ起こる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水和は水溶媒で起こる。",
+          "choice_id": "ch2_3_q001_c1",
+          "tts_text": "有機溶媒でのみ起こる現象であり、水では起こらない。水和は水分子が溶質粒子を取り囲む現象であり水溶液中でこそ起こる。"
+        },
+        {
+          "label": "2",
+          "text": "水和は非極性分子でのみ起こる。水和はイオンや極性分子に対して起こりやすく非極性分子には起こりにくい現象である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "イオンや極性分子で起こる。",
+          "choice_id": "ch2_3_q001_c2",
+          "tts_text": "水和は非極性分子でのみ起こる。水和はイオンや極性分子に対して起こりやすく非極性分子には起こりにくい現象である。"
+        },
+        {
+          "label": "3",
+          "text": "水分子が溶質粒子（イオンや分子など）に強く引きつけられる現象であり、溶解の本質的な過程である。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q001_c3",
+          "tts_text": "水分子が溶質粒子（イオンや分子など）に強く引きつけられる現象であり、溶解の本質的な過程である。"
+        },
+        {
+          "label": "4",
+          "text": "溶質粒子が水分子を押しのけて溶液中に沈む現象である。逆で水分子が溶質粒子に引きつけられて取り囲み分散させる現象である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水和は引きつけられる現象であり押しのける現象ではない。",
+          "choice_id": "ch2_3_q001_c4",
+          "tts_text": "溶質粒子が水分子を押しのけて溶液中に沈む現象である。逆で水分子が溶質粒子に引きつけられて取り囲み分散させる現象である。"
+        }
+      ],
+      "explanation": "水和とは極性をもつ水分子が溶質のイオンや極性分子に静電気的な力や水素結合で強く引きつけられる現象です。NaClが水に溶ける場合、水分子の酸素原子がナトリウムイオンに、水素原子が塩化物イオンに引きつけられて水和イオンとなります。これにより溶質粒子が水中に分散していきます。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "水分子が溶質粒子に強く引きつけられる現象"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "水和について、正しい記述を選びなさい。",
+      "tts_explanation": "水和とは極性をもつ水分子が溶質のイオンや極性分子に静電気的な力や水素結合で強く引きつけられる現象です。塩化ナトリウムが水に溶ける場合、水分子の酸素原子がナトリウムイオンに、水素原子が塩化物イオンに引きつけられて水和イオンとなります。これにより溶質粒子が水中に分散していきます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q002",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "definition",
+      "sub_category": "親水基と疎水基",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "親水基と疎水基について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヒドロキシ基は疎水基に分類される。ヒドロキシ基は水と水素結合を形成するため親水基に分類される代表的な原子団である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "ヒドロキシ基は親水基。",
+          "choice_id": "ch2_3_q002_c1",
+          "tts_text": "ヒドロキシ基は疎水基に分類される。ヒドロキシ基は水と水素結合を形成するため親水基に分類される代表的な原子団である。"
+        },
+        {
+          "label": "2",
+          "text": "疎水基が多いほど水に溶けやすくなる。逆で疎水基が多いほど水になじみにくくなり水に溶けにくくなる。親水基が多いほど溶けやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "疎水基が多いと水に溶けにくくなる。",
+          "choice_id": "ch2_3_q002_c2",
+          "tts_text": "疎水基が多いほど水に溶けやすくなる。逆で疎水基が多いほど水になじみにくくなり水に溶けにくくなる。親水基が多いほど溶けやすい。"
+        },
+        {
+          "label": "3",
+          "text": "水和しやすい原子団が親水基、水となじまず水和しにくい原子団が疎水基である。分子内に親水基が多いほど水に溶けやすい。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q002_c3",
+          "tts_text": "水和しやすい原子団が親水基、水となじまず水和しにくい原子団が疎水基である。分子内に親水基が多いほど水に溶けやすい。"
+        },
+        {
+          "label": "4",
+          "text": "炭化水素基（炭素鎖）は親水基である。炭化水素基は水と水素結合を形成しない無極性の基であるため疎水基に分類される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "炭化水素基は疎水基。",
+          "choice_id": "ch2_3_q002_c4",
+          "tts_text": "炭化水素基（炭素鎖）は親水基である。炭化水素基は水と水素結合を形成しない無極性の基であるため疎水基に分類される。"
+        }
+      ],
+      "explanation": "親水基とはヒドロキシ基のように水と水素結合を形成しやすい極性の高い原子団です。一方、疎水基は炭化水素基のように極性がなく水となじまない原子団です。エタノールは親水基の影響が強く水によく溶けますが、炭素鎖の長いヘキサノールは疎水基が大きく水にほとんど溶けません。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_003",
+          "quote": "水和しやすい原子団を親水基、水分子となじまず水和しにくい原子団を疎水基"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "親水基と疎水基について、正しい記述を選びなさい。",
+      "tts_explanation": "親水基とはヒドロキシ基のように水と水素結合を形成しやすい極性の高い原子団です。一方、疎水基は炭化水素基のように極性がなく水となじまない原子団です。エタノールは親水基の影響が強く水によく溶けますが、炭素鎖の長いヘキサノールは疎水基が大きく水にほとんど溶けません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q003",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "definition",
+      "sub_category": "再結晶の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "再結晶について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "不純物が全て除去される完全な精製法である。再結晶は溶解度差を利用した方法であり不純物が完全に除去されるわけではない。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "完全ではなく、不純物は母液に残る程度。",
+          "choice_id": "ch2_3_q003_c1",
+          "tts_text": "不純物が全て除去される完全な精製法である。再結晶は溶解度差を利用した方法であり不純物が完全に除去されるわけではない。"
+        },
+        {
+          "label": "2",
+          "text": "冷却ではなく加熱し続けることで結晶を得る方法である。熱水に溶かした後に冷却して溶解度を下げることで結晶を析出させる方法である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高温で溶かし冷却して析出させる。",
+          "choice_id": "ch2_3_q003_c2",
+          "tts_text": "冷却ではなく加熱し続けることで結晶を得る方法である。熱水に溶かした後に冷却して溶解度を下げることで結晶を析出させる方法である。"
+        },
+        {
+          "label": "3",
+          "text": "温度による溶解度の差を利用して不純物混じりの固体から純粋な結晶を取り出す精製法であり、溶解度が温度で大きく変化する物質に適している。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q003_c3",
+          "tts_text": "温度による溶解度の差を利用して不純物混じりの固体から純粋な結晶を取り出す精製法であり、溶解度が温度で大きく変化する物質に適している。"
+        },
+        {
+          "label": "4",
+          "text": "溶解度が温度によってほとんど変化しない物質に最も適した方法である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶解度変化が大きい物質に適する。",
+          "choice_id": "ch2_3_q003_c4",
+          "tts_text": "溶解度が温度によってほとんど変化しない物質に最も適した方法である。"
+        }
+      ],
+      "explanation": "再結晶は温度上昇で溶解度が大きく増加する物質に有効な精製法です。高温で飽和溶液を作り、ゆっくり冷却すると溶けきれなくなった目的物質が結晶として析出します。不純物は少量しかないため冷却しても飽和に達せず溶液中に残ります。NaClは温度による溶解度変化が小さいため再結晶には不向きです。",
+      "evidence": [
+        {
+          "source_id": "3_1_proc_001",
+          "quote": "温度による溶解度の差を利用して、不純物が混じった固体から純粋な結晶を取り出す精製操作"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "再結晶について、正しい記述を選びなさい。",
+      "tts_explanation": "再結晶は温度上昇で溶解度が大きく増加する物質に有効な精製法です。高温で飽和溶液を作り、ゆっくり冷却すると溶けきれなくなった目的物質が結晶として析出します。不純物は少量しかないため冷却しても飽和に達せず溶液中に残ります。塩化ナトリウムは温度による溶解度変化が小さいため再結晶には不向きです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q004",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "definition",
+      "sub_category": "ヘンリーの法則",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ヘンリーの法則について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度が変わっても溶解量はヘンリーの法則の下では常に一定に保たれると初学者は思い込みがちだが、温度が上がると気体の溶解度は一般に減少するため、温度によって溶解量は実際に変化する。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "温度一定が条件。温度が変わると溶解度は変化する。",
+          "choice_id": "ch2_3_q004_c1",
+          "tts_text": "温度が変わっても溶解量はヘンリーの法則の下では常に一定に保たれると初学者は思い込みがちだが、温度が上がると気体の溶解度は一般に減少するため、温度によって溶解量は実際に変化する。"
+        },
+        {
+          "label": "2",
+          "text": "温度一定のとき、気体の水への溶解量はその気体の圧力（分圧）に比例する。ただし水と反応する気体や溶解度が極めて大きい気体には適用できない。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q004_c2",
+          "tts_text": "温度一定のとき、気体の水への溶解量はその気体の圧力（分圧）に比例する。ただし水と反応する気体や溶解度が極めて大きい気体には適用できない。"
+        },
+        {
+          "label": "3",
+          "text": "NH₃や塩化水素にもそのまま適用できる。水と反応する気体や溶解度が極めて大きい気体にはヘンリーの法則は適用できない。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "水に非常によく溶けたり反応する気体には適用不可。",
+          "choice_id": "ch2_3_q004_c3",
+          "tts_text": "アンモニアや塩化水素にもそのまま適用できる。水と反応する気体や溶解度が極めて大きい気体にはヘンリーの法則は適用できない。"
+        },
+        {
+          "label": "4",
+          "text": "気体の圧力が高いほど溶解量は減少する。逆で圧力が高いほど溶解量は増加する。ヘンリーの法則では溶解量は圧力に比例する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "圧力に比例して増加する。",
+          "choice_id": "ch2_3_q004_c4",
+          "tts_text": "気体の圧力が高いほど溶解量は減少する。逆で圧力が高いほど溶解量は増加する。ヘンリーの法則では溶解量は圧力に比例する。"
+        }
+      ],
+      "explanation": "ヘンリーの法則は温度一定で、水への溶解量が小さい気体（酸素、窒素、水素など）に適用できます。圧力が高いほど分子が水面にぶつかる回数が増え、溶け込む量が増えます。炭酸飲料は高圧でCO₂を溶かしており、栓を開けると圧力が下がり気泡が出ます。NH₃のように水と反応する気体には適用できません。",
+      "evidence": [
+        {
+          "source_id": "3_1_law_001",
+          "quote": "気体の水への溶解量は、温度が変わらなければ、水に接している気体の圧力（分圧）に比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ヘンリーの法則について、正しい記述を選びなさい。",
+      "tts_explanation": "ヘンリーの法則は温度一定で、水への溶解量が小さい気体（酸素、窒素、水素など）に適用できます。圧力が高いほど分子が水面にぶつかる回数が増え、溶け込む量が増えます。炭酸飲料は高圧で二酸化炭素を溶かしており、栓を開けると圧力が下がり気泡が出ます。アンモニアのように水と反応する気体には適用できません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q005",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "definition",
+      "sub_category": "沸点上昇の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "沸点上昇について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "沸点上昇度は溶質の種類ごとに異なる値をとる。沸点上昇は束一的性質であり溶質の種類ではなく溶質粒子の数で決まる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非電解質なら種類に無関係。粒子数だけで決まる。",
+          "choice_id": "ch2_3_q005_c1",
+          "tts_text": "沸点上昇度は溶質の種類ごとに異なる値をとる。沸点上昇は束一的性質であり溶質の種類ではなく溶質粒子の数で決まる。"
+        },
+        {
+          "label": "2",
+          "text": "沸点上昇度は体積モル濃度に比例する。体積は温度で変化するため沸点上昇度は質量モル濃度に比例するのが正しい。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "体積モル濃度ではなく質量モル濃度に比例。",
+          "choice_id": "ch2_3_q005_c2",
+          "tts_text": "沸点上昇度は体積モル濃度に比例する。体積は温度で変化するため沸点上昇度は質量モル濃度に比例するのが正しい。"
+        },
+        {
+          "label": "3",
+          "text": "揮発性の溶質でも沸点上昇は同じように起こる。沸点上昇は不揮発性の溶質についてのみ成立する現象であり揮発性では考え方が異なる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "不揮発性の溶質が条件。",
+          "choice_id": "ch2_3_q005_c3",
+          "tts_text": "揮発性の溶質でも沸点上昇は同じように起こる。沸点上昇は不揮発性の溶質についてのみ成立する現象であり揮発性では考え方が異なる。"
+        },
+        {
+          "label": "4",
+          "text": "不揮発性の溶質を含む希薄溶液の沸点が純溶媒より高くなる現象であり、上昇度は溶質の種類に関係なく質量モル濃度に比例する。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q005_c4",
+          "tts_text": "不揮発性の溶質を含む希薄溶液の沸点が純溶媒より高くなる現象であり、上昇度は溶質の種類に関係なく質量モル濃度に比例する。"
+        }
+      ],
+      "explanation": "沸点上昇は溶質が不揮発性であるとき、溶媒の蒸気圧が下がるため沸騰するのにより高い温度が必要になる現象です。上昇度はモル沸点上昇定数かける質量モル濃度で求められます。重要なのは溶質の種類ではなく溶液中の粒子数（モル濃度）だけで決まるという点です。電解質の場合は電離して粒子数が増えるため注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "溶質の種類に無関係に、水溶液の質量モル濃度mに比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "沸点上昇について、正しい記述を選びなさい。",
+      "tts_explanation": "沸点上昇は溶質が不揮発性であるとき、溶媒の蒸気圧が下がるため沸騰するのにより高い温度が必要になる現象です。上昇度はモル沸点上昇定数かける質量モル濃度で求められます。重要なのは溶質の種類ではなく溶液中の粒子数（モル濃度）だけで決まるという点です。電解質の場合は電離して粒子数が増えるため注意が必要です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q006",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "definition",
+      "sub_category": "凝析と塩析の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "凝析と塩析について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "親水コロイドが少量の電解質で沈殿するのが凝析である。少量の電解質で沈殿するのは疎水コロイドの凝析であり親水コロイドではない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "少量で沈殿するのは疎水コロイド。",
+          "choice_id": "ch2_3_q006_c1",
+          "tts_text": "親水コロイドが少量の電解質で沈殿するのが凝析である。少量の電解質で沈殿するのは疎水コロイドの凝析であり親水コロイドではない。"
+        },
+        {
+          "label": "2",
+          "text": "凝析と塩析は同じ現象の別名である。凝析は疎水コロイドに少量の電解質で起こり塩析は親水コロイドに多量の電解質で起こる異なる現象である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "異なる現象。コロイドの種類と電解質量が異なる。",
+          "choice_id": "ch2_3_q006_c2",
+          "tts_text": "凝析と塩析は同じ現象の別名である。凝析は疎水コロイドに少量の電解質で起こり塩析は親水コロイドに多量の電解質で起こる異なる現象である。"
+        },
+        {
+          "label": "3",
+          "text": "疎水コロイドが多量の電解質で沈殿するのが塩析である。疎水コロイドと多量は誤りで塩析は親水コロイドに多量の電解質で起こる現象である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "多量で沈殿するのは親水コロイド。疎水は少量で凝析。",
+          "choice_id": "ch2_3_q006_c3",
+          "tts_text": "疎水コロイドが多量の電解質で沈殿するのが塩析である。疎水コロイドと多量は誤りで塩析は親水コロイドに多量の電解質で起こる現象である。"
+        },
+        {
+          "label": "4",
+          "text": "疎水コロイドが少量の電解質で沈殿するのが凝析、親水コロイドが多量の電解質で沈殿するのが塩析である。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q006_c4",
+          "tts_text": "疎水コロイドが少量の電解質で沈殿するのが凝析、親水コロイドが多量の電解質で沈殿するのが塩析である。"
+        }
+      ],
+      "explanation": "凝析は疎水コロイドに少量の電解質を加えると粒子の電荷が中和されて沈殿する現象です。塩析は親水コロイドに多量の電解質を加えると周りの水分子が奪われて沈殿する現象です。豆腐の製造（豆乳ににがりを加える）は塩析の例です。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "疎水コロイドが少量の電解質で沈殿する現象を凝析、親水コロイドが多量の電解質で沈殿する現象を塩析"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "凝析と塩析について、正しい記述を選びなさい。",
+      "tts_explanation": "凝析は疎水コロイドに少量の電解質を加えると粒子の電荷が中和されて沈殿する現象です。塩析は親水コロイドに多量の電解質を加えると周りの水分子が奪われて沈殿する現象です。豆腐の製造（豆乳ににがりを加える）は塩析の例です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q007",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "definition",
+      "sub_category": "蒸気圧降下の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "蒸気圧降下について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "揮発性の溶質でも同じように蒸気圧降下が起こる。蒸気圧降下は不揮発性の溶質のときに成立し揮発性溶質では溶質自身も蒸発するため異なる。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "不揮発性溶質が条件。揮発性だと溶質も蒸発する。",
+          "choice_id": "ch2_3_q007_c1",
+          "tts_text": "揮発性の溶質でも同じように蒸気圧降下が起こる。蒸気圧降下は不揮発性の溶質のときに成立し揮発性溶質では溶質自身も蒸発するため異なる。"
+        },
+        {
+          "label": "2",
+          "text": "不揮発性の溶質が溶けていると溶媒の蒸気圧が純溶媒より低くなる現象であり、沸点上昇や凝固点降下の原因となる。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q007_c2",
+          "tts_text": "不揮発性の溶質が溶けていると溶媒の蒸気圧が純溶媒より低くなる現象であり、沸点上昇や凝固点降下の原因となる。"
+        },
+        {
+          "label": "3",
+          "text": "蒸気圧降下は沸点上昇とは無関係である。蒸気圧が下がると沸点に達するのに高い温度が必要になるため蒸気圧降下は沸点上昇の原因である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "蒸気圧降下が沸点上昇の根本原因。",
+          "choice_id": "ch2_3_q007_c3",
+          "tts_text": "蒸気圧降下は沸点上昇とは無関係である。蒸気圧が下がると沸点に達するのに高い温度が必要になるため蒸気圧降下は沸点上昇の原因である。"
+        },
+        {
+          "label": "4",
+          "text": "溶質が溶けると蒸気圧は高くなる。逆で不揮発性溶質が溶けると溶媒の蒸気圧は純溶媒より低くなり蒸気圧降下が起こる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "蒸気圧は低くなる。",
+          "choice_id": "ch2_3_q007_c4",
+          "tts_text": "溶質が溶けると蒸気圧は高くなる。逆で不揮発性溶質が溶けると溶媒の蒸気圧は純溶媒より低くなり蒸気圧降下が起こる。"
+        }
+      ],
+      "explanation": "不揮発性の溶質が溶液中に存在すると、液面を占める溶媒分子の割合が減り、蒸発できる溶媒分子が少なくなるため蒸気圧が下がります。これが蒸気圧降下です。蒸気圧が下がると沸騰温度が上がり（沸点上昇）、凝固する温度は下がります（凝固点降下）。これらの束一的性質はすべて蒸気圧降下に起因します。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "不揮発性のものが溶けていると水分子が蒸発しにくくなる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "蒸気圧降下について、正しい記述を選びなさい。",
+      "tts_explanation": "不揮発性の溶質が溶液中に存在すると、液面を占める溶媒分子の割合が減り、蒸発できる溶媒分子が少なくなるため蒸気圧が下がります。これが蒸気圧降下です。蒸気圧が下がると沸騰温度が上がり（沸点上昇）、凝固する温度は下がります（凝固点降下）。これらの束一的性質はすべて蒸気圧降下に起因します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q008",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "definition",
+      "sub_category": "質量モル濃度の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "質量モル濃度について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度によって値が大きく変わる濃度の表し方である。質量モル濃度は溶媒の質量を基準とするため温度変化による体積変動の影響を受けにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "質量を基準にするため温度変化の影響を受けにくい。",
+          "choice_id": "ch2_3_q008_c1",
+          "tts_text": "温度によって値が大きく変わる濃度の表し方である。質量モル濃度は溶媒の質量を基準とするため温度変化による体積変動の影響を受けにくい。"
+        },
+        {
+          "label": "2",
+          "text": "溶液1Lあたりの溶質の物質量で表す濃度である。これはモル濃度の定義であり質量モル濃度は溶媒の質量を基準にした別の濃度である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これはモル濃度（体積モル濃度）の定義。",
+          "choice_id": "ch2_3_q008_c2",
+          "tts_text": "溶液一リットルあたりの溶質の物質量で表す濃度である。これはモル濃度の定義であり質量モル濃度は溶媒の質量を基準にした別の濃度である。"
+        },
+        {
+          "label": "3",
+          "text": "溶媒ではなく溶液の質量を基準にした濃度である。質量モル濃度は溶液ではなく溶媒一キログラムあたりの溶質の物質量を表す濃度である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "溶液ではなく溶媒のキログラムが基準。",
+          "choice_id": "ch2_3_q008_c3",
+          "tts_text": "溶媒ではなく溶液の質量を基準にした濃度である。質量モル濃度は溶液ではなく溶媒一キログラムあたりの溶質の物質量を表す濃度である。"
+        },
+        {
+          "label": "4",
+          "text": "溶媒一キログラムあたりに溶けている溶質の物質量で表す濃度であり、温度変化の影響を受けにくい。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q008_c4",
+          "tts_text": "溶媒一キログラムあたりに溶けている溶質の物質量で表す濃度であり、温度変化の影響を受けにくい。"
+        }
+      ],
+      "explanation": "質量モル濃度は溶媒の質量（キログラム）を基準にした濃度です。溶液の体積は温度で膨張・収縮しますが質量は変わらないため、温度変化の影響を受けにくいという利点があります。沸点上昇や凝固点降下の計算では質量モル濃度を使います。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "質量モル濃度mに比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "質量モル濃度について、正しい記述を選びなさい。",
+      "tts_explanation": "質量モル濃度は溶媒の質量（キログラム）を基準にした濃度です。溶液の体積は温度で膨張・収縮しますが質量は変わらないため、温度変化の影響を受けにくいという利点があります。沸点上昇や凝固点降下の計算では質量モル濃度を使います。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q009",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "塩化ナトリウムの溶解",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "NaClが水に溶けるしくみとして、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水分子の酸素がナトリウムイオンに、水素が塩化物イオンに引きつけられ、イオンが水和されて水中に分散する。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q009_c1",
+          "tts_text": "水分子の酸素がナトリウムイオンに、水素が塩化物イオンに引きつけられ、イオンが水和されて水中に分散する。"
+        },
+        {
+          "label": "2",
+          "text": "水分子の水素がナトリウムイオンに引きつけられる。ナトリウムイオンは正の電荷をもつため水分子の負の部分である酸素が引きつけられる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸素がナトリウムイオン（正イオン）に引きつけられる。",
+          "choice_id": "ch2_3_q009_c2",
+          "tts_text": "水分子の水素がナトリウムイオンに引きつけられる。ナトリウムイオンは正の電荷をもつため水分子の負の部分である酸素が引きつけられる。"
+        },
+        {
+          "label": "3",
+          "text": "水和は起こらず、単に結晶が砕けるだけである。NaClの溶解では水分子がイオンを取り囲む水和が本質的な過程として起こる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水和が溶解の本質。",
+          "choice_id": "ch2_3_q009_c3",
+          "tts_text": "水和は起こらず、単に結晶が砕けるだけである。塩化ナトリウムの溶解では水分子がイオンを取り囲む水和が本質的な過程として起こる。"
+        },
+        {
+          "label": "4",
+          "text": "NaClの結晶が分子のまま水中に溶ける。NaClはイオン結晶であり分子ではなくイオンに分かれて水中に分散する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "イオンに電離して溶ける。",
+          "choice_id": "ch2_3_q009_c4",
+          "tts_text": "塩化ナトリウムの結晶が分子のまま水中に溶ける。塩化ナトリウムはイオン結晶であり分子ではなくイオンに分かれて水中に分散する。"
+        }
+      ],
+      "explanation": "NaClは水中でナトリウムイオンと塩化物イオンに電離します。水分子は極性をもち、部分的に負に帯電した酸素原子が正のナトリウムイオンに、部分的に正に帯電した水素原子が負の塩化物イオンに引きつけられます。こうして水和されたイオンが水中に分散していきます。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "水中でNa+とCl-に電離し、それぞれが水和される"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "塩化ナトリウムが水に溶けるしくみとして、正しい記述を選びなさい。",
+      "tts_explanation": "塩化ナトリウムは水中でナトリウムイオンと塩化物イオンに電離します。水分子は極性をもち、部分的に負に帯電した酸素原子が正のナトリウムイオンに、部分的に正に帯電した水素原子が負の塩化物イオンに引きつけられます。こうして水和されたイオンが水中に分散していきます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q010",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "エタノールの水溶性",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "エタノールが水に溶ける理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "エタノールは水中でイオンに電離するため。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非電解質であり電離しない。",
+          "choice_id": "ch2_3_q010_c1",
+          "tts_text": "エタノールは水中でイオンに電離するため。"
+        },
+        {
+          "label": "2",
+          "text": "エタノールのヒドロキシ基が親水基として働き、水分子と水素結合を形成するため。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q010_c2",
+          "tts_text": "エタノールのヒドロキシ基が親水基として働き、水分子と水素結合を形成するため。"
+        },
+        {
+          "label": "3",
+          "text": "エタノールの炭化水素基が水と水素結合を形成するため。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "炭化水素基は疎水基。ヒドロキシ基が親水基。",
+          "choice_id": "ch2_3_q010_c3",
+          "tts_text": "エタノールの炭化水素基が水と水素結合を形成するため。"
+        },
+        {
+          "label": "4",
+          "text": "エタノールは無極性分子であり、水とファンデルワールス力で結合するため。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "極性分子であり水素結合によって溶ける。",
+          "choice_id": "ch2_3_q010_c4",
+          "tts_text": "エタノールは無極性分子であり、水とファンデルワールス力で結合するため。"
+        }
+      ],
+      "explanation": "エタノールは分子内にヒドロキシ基という親水基をもちます。この部分が水分子と水素結合を形成するため、エタノールは水と自由に混ざり合います。ただしエタノールは非電解質であり、水中でイオンに電離することはなく水溶液は電気を導きません。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "ヒドロキシ基が親水基として働き、水分子と水素結合を形成する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_002",
+        "3_1_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "エタノールが水に溶ける理由として、正しいものを選びなさい。",
+      "tts_explanation": "エタノールは分子内にヒドロキシ基という親水基をもちます。この部分が水分子と水素結合を形成するため、エタノールは水と自由に混ざり合います。ただしエタノールは非電解質であり、水中でイオンに電離することはなく水溶液は電気を導きません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q011",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "炭素鎖と溶解度の関係",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "アルコールの炭素鎖と水への溶解度の関係について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "炭素鎖の長さと溶解度は無関係である。炭素鎖が長くなるほど疎水基が大きくなり親水基の効果が相対的に弱まり水に溶けにくくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密接に関係する。",
+          "choice_id": "ch2_3_q011_c1",
+          "tts_text": "炭素鎖の長さと溶解度は無関係である。炭素鎖が長くなるほど疎水基が大きくなり親水基の効果が相対的に弱まり水に溶けにくくなる。"
+        },
+        {
+          "label": "2",
+          "text": "ヒドロキシ基があればいくら炭素鎖が長くても水に自由に溶ける。ヘキサノールのように炭素鎖が長いとヒドロキシ基があってもほぼ不溶となる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "疎水基が大きくなると溶けにくくなる。",
+          "choice_id": "ch2_3_q011_c2",
+          "tts_text": "ヒドロキシ基があればいくら炭素鎖が長くても水に自由に溶ける。ヘキサノールのように炭素鎖が長いとヒドロキシ基があってもほぼ不溶となる。"
+        },
+        {
+          "label": "3",
+          "text": "炭素鎖が長くなると疎水基が大きくなり、水にはほとんど溶けなくなる。エタノールは溶けるがヘキサノールはほぼ不溶である。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q011_c3",
+          "tts_text": "炭素鎖が長くなると疎水基が大きくなり、水にはほとんど溶けなくなる。エタノールは溶けるがヘキサノールはほぼ不溶である。"
+        },
+        {
+          "label": "4",
+          "text": "炭素鎖が長くなるほど水に溶けやすくなる。逆で炭素鎖が長くなるほど疎水性が増し水への溶解度は大きく低下する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炭素鎖が長いと疎水基が支配的になり水に溶けにくくなる。",
+          "choice_id": "ch2_3_q011_c4",
+          "tts_text": "炭素鎖が長くなるほど水に溶けやすくなる。逆で炭素鎖が長くなるほど疎水性が増し水への溶解度は大きく低下する。"
+        }
+      ],
+      "explanation": "有機化合物の水への溶解性は親水基と疎水基のバランスで決まります。エタノールは二つの炭素に対してヒドロキシ基一つで親水基の影響が強く水によく溶けます。しかしヘキサノールのように炭素鎖が六つと長くなると疎水部分が支配的になり、水にはほとんど溶けなくなります。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_003",
+          "quote": "炭素鎖が長い1-ヘキサノールは疎水基が大きく水にほとんど溶けない"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "アルコールの炭素鎖と水への溶解度の関係について、正しい記述を選びなさい。",
+      "tts_explanation": "有機化合物の水への溶解性は親水基と疎水基のバランスで決まります。エタノールは二つの炭素に対してヒドロキシ基一つで親水基の影響が強く水によく溶けます。しかしヘキサノールのように炭素鎖が六つと長くなると疎水部分が支配的になり、水にはほとんど溶けなくなります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q012",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "塩化ナトリウムの溶解度変化",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "NaClの溶解度の温度変化について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "NaClは温度による溶解度の変化が小さいため、再結晶による精製には向いていない。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q012_c1",
+          "tts_text": "塩化ナトリウムは温度による溶解度の変化が小さいため、再結晶による精製には向いていない。"
+        },
+        {
+          "label": "2",
+          "text": "温度による溶解度の変化の大小と再結晶の効率は無関係である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密接に関係する。",
+          "choice_id": "ch2_3_q012_c2",
+          "tts_text": "温度による溶解度の変化の大小と再結晶の効率は無関係である。"
+        },
+        {
+          "label": "3",
+          "text": "NaClは温度が上がると溶解度が激しく増加するため再結晶に最適である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶解度変化が小さいため不向き。",
+          "choice_id": "ch2_3_q012_c3",
+          "tts_text": "塩化ナトリウムは温度が上がると溶解度が激しく増加するため再結晶に最適である。"
+        },
+        {
+          "label": "4",
+          "text": "NaClは温度が上がると水に溶けなくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶解度は微増する。",
+          "choice_id": "ch2_3_q012_c4",
+          "tts_text": "塩化ナトリウムは温度が上がると水に溶けなくなる。"
+        }
+      ],
+      "explanation": "再結晶は温度差による溶解度の差を利用する精製法のため、温度で溶解度が大きく変わる物質ほど効率的に精製できます。NaClは20℃で約三十五・8g毎100g水であり、温度を上げても溶解度はほとんど変わらないため再結晶には不向きです。",
+      "evidence": [
+        {
+          "source_id": "3_1_proc_001",
+          "quote": "塩化ナトリウムのように温度による溶解度の変化が小さい物質は、再結晶による精製には向いていない"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "塩化ナトリウムの溶解度の温度変化について、正しい記述を選びなさい。",
+      "tts_explanation": "再結晶は温度差による溶解度の差を利用する精製法のため、温度で溶解度が大きく変わる物質ほど効率的に精製できます。塩化ナトリウムは二十度で約三十五・八グラム毎百グラム水であり、温度を上げても溶解度はほとんど変わらないため再結晶には不向きです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q013",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "炭酸飲料とヘンリーの法則",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "炭酸飲料の泡が出る現象について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "高い圧力でCO₂を溶かしており、栓を開けて圧力が下がると溶解度が減り、溶けきれなくなった気体が泡となって出てくる。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q013_c1",
+          "tts_text": "高い圧力で二酸化炭素を溶かしており、栓を開けて圧力が下がると溶解度が減り、溶けきれなくなった気体が泡となって出てくる。"
+        },
+        {
+          "label": "2",
+          "text": "栓を開けると温度が上がるため泡が出る。栓を開けても温度変化は直接の原因ではなく圧力低下によって溶解度が下がることが原因である。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "温度ではなく圧力の変化が原因。",
+          "choice_id": "ch2_3_q013_c2",
+          "tts_text": "栓を開けると温度が上がるため泡が出る。栓を開けても温度変化は直接の原因ではなく圧力低下によって溶解度が下がることが原因である。"
+        },
+        {
+          "label": "3",
+          "text": "栓を開けると圧力が上がるため泡が出る。逆で栓を開けると圧力が下がるため溶けきれなくなった気体が泡として出てくる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "圧力は下がる。",
+          "choice_id": "ch2_3_q013_c3",
+          "tts_text": "栓を開けると圧力が上がるため泡が出る。逆で栓を開けると圧力が下がるため溶けきれなくなった気体が泡として出てくる。"
+        },
+        {
+          "label": "4",
+          "text": "CO₂は圧力に関係なく一定量しか溶けない。ヘンリーの法則により溶解量は圧力に比例する。圧力が高いほど多く溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ヘンリーの法則により圧力に比例して溶ける。",
+          "choice_id": "ch2_3_q013_c4",
+          "tts_text": "二酸化炭素は圧力に関係なく一定量しか溶けない。ヘンリーの法則により溶解量は圧力に比例する。圧力が高いほど多く溶ける。"
+        }
+      ],
+      "explanation": "炭酸飲料はヘンリーの法則の身近な例です。工場では高い圧力をかけて多くのCO₂を水に溶かし込んでいます。栓を開けると内部の圧力が大気圧まで下がり、溶解度が減少するため、溶けきれなくなったCO₂が気泡となって放出されます。",
+      "evidence": [
+        {
+          "source_id": "3_1_law_001",
+          "quote": "高い圧力で二酸化炭素を溶かし込んでおり、栓を開けて圧力が下がると溶解度が減り、気泡となって逃げていく"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "炭酸飲料の泡が出る現象について、正しい記述を選びなさい。",
+      "tts_explanation": "炭酸飲料はヘンリーの法則の身近な例です。工場では高い圧力をかけて多くの二酸化炭素を水に溶かし込んでいます。栓を開けると内部の圧力が大気圧まで下がり、溶解度が減少するため、溶けきれなくなった二酸化炭素が気泡となって放出されます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q014",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "電解質の沸点上昇",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "電解質溶液の沸点上昇について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電解質と非電解質の沸点上昇度は同じ質量モル濃度なら同じである。電解質は電離して粒子数が増えるため同じ濃度でも沸点上昇度は大きくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電解質は電離で粒子数が増えるため上昇度が大きい。",
+          "choice_id": "ch2_3_q014_c1",
+          "tts_text": "電解質と非電解質の沸点上昇度は同じ質量モル濃度なら同じである。電解質は電離して粒子数が増えるため同じ濃度でも沸点上昇度は大きくなる。"
+        },
+        {
+          "label": "2",
+          "text": "電解質は電離してイオンになっても粒子数は変わらない。電解質は電離して複数のイオンになるため溶液中の粒子数は元の分子数より増加する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電離により粒子数は増加する。",
+          "choice_id": "ch2_3_q014_c2",
+          "tts_text": "電解質は電離してイオンになっても粒子数は変わらない。電解質は電離して複数のイオンになるため溶液中の粒子数は元の分子数より増加する。"
+        },
+        {
+          "label": "3",
+          "text": "沸点上昇度は溶質の分子量で決まり粒子数は関係ない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量ではなく粒子数（モル濃度）で決まる。",
+          "choice_id": "ch2_3_q014_c3",
+          "tts_text": "沸点上昇度は溶質の分子量で決まり粒子数は関係ない。"
+        },
+        {
+          "label": "4",
+          "text": "電解質は電離して粒子数が増えるため、同じ質量モル濃度の非電解質溶液より沸点上昇度が大きい。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q014_c4",
+          "tts_text": "電解質は電離して粒子数が増えるため、同じ質量モル濃度の非電解質溶液より沸点上昇度が大きい。"
+        }
+      ],
+      "explanation": "沸点上昇度は溶液中の全粒子の質量モル濃度に比例します。電解質は水中で電離してイオンになるため、溶かした物質のモル数より実際の粒子数が多くなります。たとえばNaClは1mol溶かすとナトリウムイオンと塩化物イオンの計2molの粒子が生じるため、非電解質1molの二倍の沸点上昇が起こります。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "電解質の場合は、電離して粒子数が増えるため、電離後の全粒子の質量モル濃度を用いる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "電解質溶液の沸点上昇について、正しい記述を選びなさい。",
+      "tts_explanation": "沸点上昇度は溶液中の全粒子の質量モル濃度に比例します。電解質は水中で電離してイオンになるため、溶かした物質のモル数より実際の粒子数が多くなります。たとえば塩化ナトリウムは一モル溶かすとナトリウムイオンと塩化物イオンの計二モルの粒子が生じるため、非電解質一モルの二倍の沸点上昇が起こります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q015",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "水酸化鉄コロイド",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水酸化鉄（三価）のコロイドについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "親水コロイドに分類され、多量の電解質が必要で沈殿しにくい。水酸化鉄コロイドは疎水コロイドに分類され少量の電解質で凝析する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "疎水コロイドであり少量の電解質で凝析する。",
+          "choice_id": "ch2_3_q015_c1",
+          "tts_text": "親水コロイドに分類され、多量の電解質が必要で沈殿しにくい。水酸化鉄コロイドは疎水コロイドに分類され少量の電解質で凝析する。"
+        },
+        {
+          "label": "2",
+          "text": "赤褐色の正コロイドで疎水コロイドに分類される。沸騰水に塩化鉄（三価）水溶液を加えると生成する。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q015_c2",
+          "tts_text": "赤褐色の正コロイドで疎水コロイドに分類される。沸騰水に塩化鉄（三価）水溶液を加えると生成する。"
+        },
+        {
+          "label": "3",
+          "text": "冷水に塩化鉄を加えて作られる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "沸騰水に加えて作る。",
+          "choice_id": "ch2_3_q015_c3",
+          "tts_text": "冷水に塩化鉄を加えて作られる。"
+        },
+        {
+          "label": "4",
+          "text": "無色透明のコロイドであり負コロイドである。水酸化鉄コロイドは赤褐色であり正の電荷を帯びた正コロイドに分類される。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "赤褐色であり正コロイド。",
+          "choice_id": "ch2_3_q015_c4",
+          "tts_text": "無色透明のコロイドであり負コロイドである。水酸化鉄コロイドは赤褐色であり正の電荷を帯びた正コロイドに分類される。"
+        }
+      ],
+      "explanation": "水酸化鉄（三価）コロイドは典型的な疎水コロイドであり正コロイドです。沸騰した水に塩化鉄（三価）水溶液を少量ずつ加えると赤褐色のコロイド溶液が生成します。疎水コロイドなので少量の電解質で凝析します。凝析させるには正コロイドなので価数の大きい陰イオンが最も効果的です。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_001",
+          "quote": "赤褐色、正コロイド、疎水コロイド"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_001",
+        "3_3_def_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "水酸化鉄（三価）のコロイドについて、正しい記述を選びなさい。",
+      "tts_explanation": "水酸化鉄（三価）コロイドは典型的な疎水コロイドであり正コロイドです。沸騰した水に塩化鉄（三価）水溶液を少量ずつ加えると赤褐色のコロイド溶液が生成します。疎水コロイドなので少量の電解質で凝析します。凝析させるには正コロイドなので価数の大きい陰イオンが最も効果的です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q016",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "procedure",
+      "sub_category": "再結晶の手順",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "再結晶の正しい手順を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "急冷して結晶を得るのが最適である。急冷すると不純物を含んだまま結晶化するため純度が下がる。ゆっくり冷却するのが最適である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "急冷すると不純物を巻き込むためゆっくり冷却する。",
+          "choice_id": "ch2_3_q016_c1",
+          "tts_text": "急冷して結晶を得るのが最適である。急冷すると不純物を含んだまま結晶化するため純度が下がる。ゆっくり冷却するのが最適である。"
+        },
+        {
+          "label": "2",
+          "text": "冷水に溶かしてから加熱して結晶を析出させる。正しくは熱水に溶かしてから冷却して溶解度を下げ結晶を析出させる方法である。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "逆。高温で溶かし冷却して析出させる。",
+          "choice_id": "ch2_3_q016_c2",
+          "tts_text": "冷水に溶かしてから加熱して結晶を析出させる。正しくは熱水に溶かしてから冷却して溶解度を下げ結晶を析出させる方法である。"
+        },
+        {
+          "label": "3",
+          "text": "ろ過は冷えてから行い、保温漏斗は使わない。不純物を除去するろ過は熱いうちに保温漏斗を使って行い目的物質の析出を防ぐ必要がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "最初のろ過は熱いうちに保温漏斗で行う。",
+          "choice_id": "ch2_3_q016_c3",
+          "tts_text": "ろ過は冷えてから行い、保温漏斗は使わない。不純物を除去するろ過は熱いうちに保温漏斗を使って行い目的物質の析出を防ぐ必要がある。"
+        },
+        {
+          "label": "4",
+          "text": "不純物を含む結晶を熱水に溶かし、保温漏斗で熱いうちにろ過し、ろ液をゆっくり冷却して結晶を析出させ、ろ過して取り出す。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q016_c4",
+          "tts_text": "不純物を含む結晶を熱水に溶かし、保温漏斗で熱いうちにろ過し、ろ液をゆっくり冷却して結晶を析出させ、ろ過して取り出す。"
+        }
+      ],
+      "explanation": "再結晶は四つのステップで行います。まず不純物入りの結晶を少量の熱水に溶解します。次に保温漏斗で熱いうちにろ過して不溶性の不純物を除きます。ろ液をゆっくり冷却すると目的物質の結晶が析出します。最後に常温でろ過して結晶を回収します。急冷すると細かい結晶になり不純物を巻き込みやすくなります。",
+      "evidence": [
+        {
+          "source_id": "3_1_proc_001",
+          "quote": "急冷すると細かい結晶となり、結晶の隙間に不純物を巻き込みやすくなるため"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "再結晶の正しい手順を選びなさい。",
+      "tts_explanation": "再結晶は四つのステップで行います。まず不純物入りの結晶を少量の熱水に溶解します。次に保温漏斗で熱いうちにろ過して不溶性の不純物を除きます。ろ液をゆっくり冷却すると目的物質の結晶が析出します。最後に常温でろ過して結晶を回収します。急冷すると細かい結晶になり不純物を巻き込みやすくなります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q017",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "procedure",
+      "sub_category": "凝析の手順",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "正コロイドである水酸化鉄（三価）コロイドを最も効果的に凝析させる方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "多量の電解質が必要である。疎水コロイドの凝析には少量の電解質で十分であり多量が必要なのは親水コロイドの塩析である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "多量が必要なのは親水コロイドの塩析。疎水コロイドの凝析は少量で起こる。",
+          "choice_id": "ch2_3_q017_c1",
+          "tts_text": "多量の電解質が必要である。疎水コロイドの凝析には少量の電解質で十分であり多量が必要なのは親水コロイドの塩析である。"
+        },
+        {
+          "label": "2",
+          "text": "価数の大きい陰イオン（たとえば硫酸イオン）を含む電解質を少量加える。正コロイドの電荷を中和するのに反対電荷で価数が大きいイオンが効果的である。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q017_c2",
+          "tts_text": "価数の大きい陰イオン（たとえば硫酸イオン）を含む電解質を少量加える。正コロイドの電荷を中和するのに反対電荷で価数が大きいイオンが効果的である。"
+        },
+        {
+          "label": "3",
+          "text": "純水を大量に加えて希釈する。希釈してもコロイドは沈殿しない。凝析には電荷を中和する電解質の添加が必要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "希釈しても凝析しない。電解質の添加が必要。",
+          "choice_id": "ch2_3_q017_c3",
+          "tts_text": "純水を大量に加えて希釈する。希釈してもコロイドは沈殿しない。凝析には電荷を中和する電解質の添加が必要である。"
+        },
+        {
+          "label": "4",
+          "text": "価数の大きい陽イオンを加える。正コロイドは正の電荷をもつため反対電荷の陰イオンが効果的であり同じ正電荷の陽イオンでは中和できない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "正コロイドには反対電荷の陰イオンが効果的。",
+          "choice_id": "ch2_3_q017_c4",
+          "tts_text": "価数の大きい陽イオンを加える。正コロイドは正の電荷をもつため反対電荷の陰イオンが効果的であり同じ正電荷の陽イオンでは中和できない。"
+        }
+      ],
+      "explanation": "疎水コロイドの凝析では、コロイド粒子の電荷と反対符号のイオンを加えて電荷を中和します。正コロイドの水酸化鉄には陰イオンが有効で、価数が大きいほど少量で効果的に凝析します。一価の塩化物イオンより二価の硫酸イオンの方が効果的です。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "特定の疎水コロイドを凝析させるのに最も効果的な（価数の大きい）イオンを選ぶ"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "正コロイドである水酸化鉄（三価）コロイドを最も効果的に凝析させる方法として、正しいものを選びなさい。",
+      "tts_explanation": "疎水コロイドの凝析では、コロイド粒子の電荷と反対符号のイオンを加えて電荷を中和します。正コロイドの水酸化鉄には陰イオンが有効で、価数が大きいほど少量で効果的に凝析します。一価の塩化物イオンより二価の硫酸イオンの方が効果的です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q018",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "confusion",
+      "sub_category": "凝析と塩析の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "凝析と塩析に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "凝析と塩析はまったく同じ現象であり区別する必要はない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "異なる現象であり区別が必要。",
+          "choice_id": "ch2_3_q018_c1",
+          "tts_text": "凝析と塩析はまったく同じ現象であり区別する必要はない。"
+        },
+        {
+          "label": "2",
+          "text": "疎水コロイドは少量の電解質で凝析する。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q018_c2",
+          "tts_text": "疎水コロイドは少量の電解質で凝析する。"
+        },
+        {
+          "label": "3",
+          "text": "親水コロイドは多量の電解質で塩析する。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q018_c3",
+          "tts_text": "親水コロイドは多量の電解質で塩析する。"
+        },
+        {
+          "label": "4",
+          "text": "豆腐の製造はにがりによる塩析を利用している。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q018_c4",
+          "tts_text": "豆腐の製造はにがりによる塩析を利用している。"
+        }
+      ],
+      "explanation": "凝析は疎水コロイドが少量の電解質で沈殿する現象、塩析は親水コロイドが多量の電解質で沈殿する現象です。メカニズムも異なり、凝析は電荷の中和、塩析は水分子の脱水和が原因です。試験ではこの二つの混同が頻出です。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "疎水コロイドが少量の電解質で沈殿する現象を凝析、親水コロイドが多量の電解質で沈殿する現象を塩析"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "凝析と塩析に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "凝析は疎水コロイドが少量の電解質で沈殿する現象、塩析は親水コロイドが多量の電解質で沈殿する現象です。メカニズムも異なり、凝析は電荷の中和、塩析は水分子の脱水和が原因です。試験ではこの二つの混同が頻出です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q019",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "confusion",
+      "sub_category": "ヘンリーの法則の適用条件の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ヘンリーの法則に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "温度一定のとき溶解量は気体の分圧に比例する。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q019_c1",
+          "tts_text": "温度一定のとき溶解量は気体の分圧に比例する。"
+        },
+        {
+          "label": "2",
+          "text": "溶解度のあまり大きくない気体に適用できる。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q019_c2",
+          "tts_text": "溶解度のあまり大きくない気体に適用できる。"
+        },
+        {
+          "label": "3",
+          "text": "NH₃のように水に極めてよく溶ける気体にも適用できる。",
+          "is_correct": true,
+          "trap_type": "condition_change",
+          "trap_detail": "水によく溶ける気体や反応する気体には適用不可。",
+          "choice_id": "ch2_3_q019_c3",
+          "tts_text": "アンモニアのように水に極めてよく溶ける気体にも適用できる。"
+        },
+        {
+          "label": "4",
+          "text": "水と反応しない気体に適用できる。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q019_c4",
+          "tts_text": "水と反応しない気体に適用できる。"
+        }
+      ],
+      "explanation": "ヘンリーの法則は溶解度があまり大きくなく、水と反応しない気体にのみ適用できます。NH₃は水に極めてよく溶け、水中で電離してアンモニウムイオンと水酸化物イオンを生じるため、ヘンリーの法則の前提条件を満たしません。適用可能な気体は酸素、窒素、水素などです。",
+      "evidence": [
+        {
+          "source_id": "3_1_law_001",
+          "quote": "アンモニアや塩化水素のように、水に非常によく溶けたり、水中で電離・反応したりする気体には適用できない"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ヘンリーの法則に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "ヘンリーの法則は溶解度があまり大きくなく、水と反応しない気体にのみ適用できます。アンモニアは水に極めてよく溶け、水中で電離してアンモニウムイオンと水酸化物イオンを生じるため、ヘンリーの法則の前提条件を満たしません。適用可能な気体は酸素、窒素、水素などです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q020",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "confusion",
+      "sub_category": "沸点上昇の粒子数依存の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "沸点上昇に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "非電解質の場合、溶質の種類に関係なく沸点上昇度が決まる。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q020_c1",
+          "tts_text": "非電解質の場合、溶質の種類に関係なく沸点上昇度が決まる。"
+        },
+        {
+          "label": "2",
+          "text": "電解質は電離後の全粒子のモル濃度で計算する。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q020_c2",
+          "tts_text": "電解質は電離後の全粒子のモル濃度で計算する。"
+        },
+        {
+          "label": "3",
+          "text": "沸点上昇度は溶質の分子量に比例する。溶質の種類が重要である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "分子量ではなく粒子数で決まる。種類は関係ない。",
+          "choice_id": "ch2_3_q020_c3",
+          "tts_text": "沸点上昇度は溶質の分子量に比例する。溶質の種類が重要である。"
+        },
+        {
+          "label": "4",
+          "text": "沸点上昇度は質量モル濃度に比例する。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q020_c4",
+          "tts_text": "沸点上昇度は質量モル濃度に比例する。"
+        }
+      ],
+      "explanation": "沸点上昇は束一的性質と呼ばれ、溶質の種類（分子量や化学的性質）ではなく溶液中の粒子の数だけで決まります。したがって分子量に比例するという記述は誤りです。同じ質量モル濃度の砂糖水と尿素水は沸点上昇度が同じです。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "溶質の種類に無関係に、水溶液の質量モル濃度mに比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "沸点上昇に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "沸点上昇は束一的性質と呼ばれ、溶質の種類（分子量や化学的性質）ではなく溶液中の粒子の数だけで決まります。したがって分子量に比例するという記述は誤りです。同じ質量モル濃度の砂糖水と尿素水は沸点上昇度が同じです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q021",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "confusion",
+      "sub_category": "体積モル濃度と質量モル濃度の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "沸点上昇の計算に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "質量モル濃度は温度変化の影響を受けにくい。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q021_c1",
+          "tts_text": "質量モル濃度は温度変化の影響を受けにくい。"
+        },
+        {
+          "label": "2",
+          "text": "質量モル濃度は溶媒一キログラムあたりの溶質のモル数である。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q021_c2",
+          "tts_text": "質量モル濃度は溶媒一キログラムあたりの溶質のモル数である。"
+        },
+        {
+          "label": "3",
+          "text": "沸点上昇度はモル沸点上昇定数かける質量モル濃度で求める。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q021_c3",
+          "tts_text": "沸点上昇度はモル沸点上昇定数かける質量モル濃度で求める。"
+        },
+        {
+          "label": "4",
+          "text": "沸点上昇度の計算には溶液1Lあたりのモル数である体積モル濃度を使用する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "体積モル濃度ではなく質量モル濃度を使う。",
+          "choice_id": "ch2_3_q021_c4",
+          "tts_text": "沸点上昇度の計算には溶液一リットルあたりのモル数である体積モル濃度を使用する。"
+        }
+      ],
+      "explanation": "沸点上昇や凝固点降下の計算では質量モル濃度を使います。質量モル濃度は溶媒（溶液ではない）一キログラムあたりの溶質の物質量です。体積モル濃度（溶液1Lあたり）と混同するミスが非常に多いため注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "質量モル濃度mに比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "沸点上昇の計算に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "沸点上昇や凝固点降下の計算では質量モル濃度を使います。質量モル濃度は溶媒（溶液ではない）一キログラムあたりの溶質の物質量です。体積モル濃度（溶液一リットルあたり）と混同するミスが非常に多いため注意が必要です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q022",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "confusion",
+      "sub_category": "再結晶と急冷の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "再結晶に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "高温で溶液を作り冷却して結晶を析出させる。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q022_c1",
+          "tts_text": "高温で溶液を作り冷却して結晶を析出させる。"
+        },
+        {
+          "label": "2",
+          "text": "急冷して大きな結晶を得るのが最も効率的である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "急冷すると細かい結晶になり不純物を巻き込む。ゆっくり冷却が正しい。",
+          "choice_id": "ch2_3_q022_c2",
+          "tts_text": "急冷して大きな結晶を得るのが最も効率的である。"
+        },
+        {
+          "label": "3",
+          "text": "最初のろ過は保温漏斗で熱いうちに行う。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q022_c3",
+          "tts_text": "最初のろ過は保温漏斗で熱いうちに行う。"
+        },
+        {
+          "label": "4",
+          "text": "不純物は少量のため冷却しても溶液中に残る。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q022_c4",
+          "tts_text": "不純物は少量のため冷却しても溶液中に残る。"
+        }
+      ],
+      "explanation": "再結晶ではゆっくりと冷却することが大切です。急冷すると多数の結晶核が1℃に生じて細かい結晶になり、結晶の隙間に不純物を取り込みやすくなります。ゆっくり冷却すると少数の結晶核から大きな結晶が成長し、純度の高い結晶が得られます。",
+      "evidence": [
+        {
+          "source_id": "3_1_proc_001",
+          "quote": "急冷すると細かい結晶となり、結晶の隙間に不純物を巻き込みやすくなるため"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "再結晶に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "再結晶ではゆっくりと冷却することが大切です。急冷すると多数の結晶核が一度に生じて細かい結晶になり、結晶の隙間に不純物を取り込みやすくなります。ゆっくり冷却すると少数の結晶核から大きな結晶が成長し、純度の高い結晶が得られます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q023",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "confusion",
+      "sub_category": "蒸気圧降下と上昇の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "蒸気圧降下に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶質が溶けると蒸気圧は上昇し、沸点は下がる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "蒸気圧は降下し、沸点は上がる。",
+          "choice_id": "ch2_3_q023_c1",
+          "tts_text": "溶質が溶けると蒸気圧は上昇し、沸点は下がる。"
+        },
+        {
+          "label": "2",
+          "text": "蒸気圧降下は沸点上昇の原因となる。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q023_c2",
+          "tts_text": "蒸気圧降下は沸点上昇の原因となる。"
+        },
+        {
+          "label": "3",
+          "text": "不揮発性溶質が溶けると溶媒の蒸気圧は純溶媒より低くなる。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q023_c3",
+          "tts_text": "不揮発性溶質が溶けると溶媒の蒸気圧は純溶媒より低くなる。"
+        },
+        {
+          "label": "4",
+          "text": "蒸気圧降下は凝固点降下の原因にもなる。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q023_c4",
+          "tts_text": "蒸気圧降下は凝固点降下の原因にもなる。"
+        }
+      ],
+      "explanation": "不揮発性溶質が溶液に存在すると蒸気圧は純溶媒より下がります（蒸気圧降下）。蒸気圧が下がるため沸騰するにはより高い温度が必要になり（沸点上昇）、また凝固する温度も下がります（凝固点降下）。蒸気圧が上昇するという選択肢1は完全に逆の記述です。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "不揮発性のものが溶けていると水分子が蒸発しにくくなる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "蒸気圧降下に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "不揮発性溶質が溶液に存在すると蒸気圧は純溶媒より下がります（蒸気圧降下）。蒸気圧が下がるため沸騰するにはより高い温度が必要になり（沸点上昇）、また凝固する温度も下がります（凝固点降下）。「溶質が溶けると蒸気圧は上昇する」という記述は完全に逆の誤りです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q024",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "classification",
+      "sub_category": "電解質と非電解質の分類",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "電解質と非電解質の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "NaClは電解質（水溶液が電気を通す）であり、エタノールは非電解質（水溶液が電気を通さない）である。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q024_c1",
+          "tts_text": "塩化ナトリウムは電解質（水溶液が電気を通す）であり、エタノールは非電解質（水溶液が電気を通さない）である。"
+        },
+        {
+          "label": "2",
+          "text": "エタノールは電解質であり水溶液は電気を通す。エタノールは非電解質であり水に溶けてもイオンを生じないため電気を通さない。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "エタノールは非電解質。",
+          "choice_id": "ch2_3_q024_c2",
+          "tts_text": "エタノールは電解質であり水溶液は電気を通す。エタノールは非電解質であり水に溶けてもイオンを生じないため電気を通さない。"
+        },
+        {
+          "label": "3",
+          "text": "NaClは非電解質であり水溶液は電気を通さない。NaClは電解質であり水に溶けるとイオンに電離して電気を通す。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "塩化ナトリウムは電解質。",
+          "choice_id": "ch2_3_q024_c3",
+          "tts_text": "塩化ナトリウムは非電解質であり水溶液は電気を通さない。塩化ナトリウムは電解質であり水に溶けるとイオンに電離して電気を通す。"
+        },
+        {
+          "label": "4",
+          "text": "電解質と非電解質の区別は溶媒に依存しない。電解質かどうかはその溶媒中で電離するかにより同じ物質でも溶媒によって異なりうる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水に溶けたときの電気伝導性で判断するため溶媒に依存する。",
+          "choice_id": "ch2_3_q024_c4",
+          "tts_text": "電解質と非電解質の区別は溶媒に依存しない。電解質かどうかはその溶媒中で電離するかにより同じ物質でも溶媒によって異なりうる。"
+        }
+      ],
+      "explanation": "電解質は水に溶けるとイオンに電離して水溶液が電気を導く物質です。NaClが典型例です。非電解質は水に溶けてもイオンに電離しないため水溶液は電気を導きません。エタノールや砂糖が非電解質の例です。",
+      "evidence": [
+        {
+          "source_id": "3_1_sub_001",
+          "quote": "水溶液は電気を導く（電解質）"
+        },
+        {
+          "source_id": "3_1_sub_002",
+          "quote": "水溶液は電気を導かない（非電解質）"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_sub_001",
+        "3_1_sub_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "電解質と非電解質の分類として、正しいものを選びなさい。",
+      "tts_explanation": "電解質は水に溶けるとイオンに電離して水溶液が電気を導く物質です。塩化ナトリウムが典型例です。非電解質は水に溶けてもイオンに電離しないため水溶液は電気を導きません。エタノールや砂糖が非電解質の例です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q025",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "classification",
+      "sub_category": "疎水コロイドと親水コロイドの分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "疎水コロイドと親水コロイドの違いとして、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "すべてのコロイドは同じ方法で沈殿させることができる。疎水コロイドは少量の電解質で凝析し親水コロイドは多量の電解質で塩析するため方法が異なる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "種類によって方法が異なる。",
+          "choice_id": "ch2_3_q025_c1",
+          "tts_text": "すべてのコロイドは同じ方法で沈殿させることができる。疎水コロイドは少量の電解質で凝析し親水コロイドは多量の電解質で塩析するため方法が異なる。"
+        },
+        {
+          "label": "2",
+          "text": "親水コロイドは少量の電解質で凝析し、疎水コロイドは多量の電解質で塩析する。逆で疎水コロイドが少量で凝析、親水コロイドが多量で塩析するのが正しい。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。疎水→少量で凝析、親水→多量で塩析。",
+          "choice_id": "ch2_3_q025_c2",
+          "tts_text": "親水コロイドは少量の電解質で凝析し、疎水コロイドは多量の電解質で塩析する。逆で疎水コロイドが少量で凝析、親水コロイドが多量で塩析するのが正しい。"
+        },
+        {
+          "label": "3",
+          "text": "疎水コロイドは電荷の反発で分散しており少量の電解質で凝析するが、親水コロイドは水分子に覆われて安定しており多量の電解質でないと塩析しない。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q025_c3",
+          "tts_text": "疎水コロイドは電荷の反発で分散しており少量の電解質で凝析するが、親水コロイドは水分子に覆われて安定しており多量の電解質でないと塩析しない。"
+        },
+        {
+          "label": "4",
+          "text": "疎水コロイドと親水コロイドに安定性の差はない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "安定性が大きく異なる。",
+          "choice_id": "ch2_3_q025_c4",
+          "tts_text": "疎水コロイドと親水コロイドに安定性の差はない。"
+        }
+      ],
+      "explanation": "コロイドの安定性は水との相互作用で二種類に大別されます。疎水コロイドは粒子表面の電荷による反発で分散しているため、反対電荷のイオンを少量加えるだけで電荷が中和されて凝析します。親水コロイドは粒子の周囲に水分子の層があって安定しているため、多量の電解質で水分子を奪わないと沈殿しません（塩析）。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "疎水コロイドは粒子同士の電気的な反発力で分散していますが、反対の電荷を持つイオンを加えると反発力が消えてくっつき沈殿します"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "疎水コロイドと親水コロイドの違いとして、正しい記述を選びなさい。",
+      "tts_explanation": "コロイドの安定性は水との相互作用で二種類に大別されます。疎水コロイドは粒子表面の電荷による反発で分散しているため、反対電荷のイオンを少量加えるだけで電荷が中和されて凝析します。親水コロイドは粒子の周囲に水分子の層があって安定しているため、多量の電解質で水分子を奪わないと沈殿しません（塩析）。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q026",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "classification",
+      "sub_category": "ヘンリーの法則適用可否",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ヘンリーの法則が適用できる気体の組として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸素、窒素、水素。いずれも水への溶解度が小さく水と反応しない気体である。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q026_c1",
+          "tts_text": "酸素、窒素、水素。いずれも水への溶解度が小さく水と反応しない気体である。"
+        },
+        {
+          "label": "2",
+          "text": "NH₃、塩化水素。水によく溶ける気体である。水と反応する気体や溶解度が極めて大きい気体にはヘンリーの法則は適用できない。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "水によく溶ける気体にはヘンリーの法則は適用できない。",
+          "choice_id": "ch2_3_q026_c2",
+          "tts_text": "アンモニア、塩化水素。水によく溶ける気体である。水と反応する気体や溶解度が極めて大きい気体にはヘンリーの法則は適用できない。"
+        },
+        {
+          "label": "3",
+          "text": "すべての気体に適用できる。水と反応する気体や溶解度が極めて大きい気体には適用できないため限定的な法則である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "条件を満たす気体のみ。",
+          "choice_id": "ch2_3_q026_c3",
+          "tts_text": "すべての気体に適用できる。水と反応する気体や溶解度が極めて大きい気体には適用できないため限定的な法則である。"
+        },
+        {
+          "label": "4",
+          "text": "水と反応する気体でも適用可能である。水と反応する気体は溶解量が単純な物理的溶解だけでは決まらないためヘンリーの法則は適用できない。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "水と反応しないことが条件。",
+          "choice_id": "ch2_3_q026_c4",
+          "tts_text": "水と反応する気体でも適用可能である。水と反応する気体は溶解量が単純な物理的溶解だけでは決まらないためヘンリーの法則は適用できない。"
+        }
+      ],
+      "explanation": "ヘンリーの法則は水への溶解度が小さく、水と反応しない気体にのみ適用されます。酸素、窒素、水素はこの条件を満たします。NH₃は水に極めてよく溶けて電離し、塩化水素も水に極めてよく溶けるため適用できません。",
+      "evidence": [
+        {
+          "source_id": "3_1_law_001",
+          "quote": "溶解度があまり大きくない気体、水と反応したり電離したりしない気体"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ヘンリーの法則が適用できる気体の組として、正しいものを選びなさい。",
+      "tts_explanation": "ヘンリーの法則は水への溶解度が小さく、水と反応しない気体にのみ適用されます。酸素、窒素、水素はこの条件を満たします。アンモニアは水に極めてよく溶けて電離し、塩化水素も水に極めてよく溶けるため適用できません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q027",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "classification",
+      "sub_category": "束一的性質の分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "束一的性質に分類されるものの組として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "束一的性質は溶質の化学種によって大きく異なる。束一的性質は溶質の種類ではなく溶液中の粒子数で決まるため化学種には依存しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "化学種に依存せず粒子数だけで決まる。",
+          "choice_id": "ch2_3_q027_c1",
+          "tts_text": "束一的性質は溶質の化学種によって大きく異なる。束一的性質は溶質の種類ではなく溶液中の粒子数で決まるため化学種には依存しない。"
+        },
+        {
+          "label": "2",
+          "text": "溶解度は束一的性質である。溶解度は物質の種類により大きく異なるため束一的性質ではなく物質固有の性質である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "溶解度は物質固有の値であり束一的性質ではない。",
+          "choice_id": "ch2_3_q027_c2",
+          "tts_text": "溶解度は束一的性質である。溶解度は物質の種類により大きく異なるため束一的性質ではなく物質固有の性質である。"
+        },
+        {
+          "label": "3",
+          "text": "蒸気圧降下、沸点上昇、凝固点降下、浸透圧。いずれも溶質の種類ではなく粒子数で決まる。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q027_c3",
+          "tts_text": "蒸気圧降下、沸点上昇、凝固点降下、浸透圧。いずれも溶質の種類ではなく粒子数で決まる。"
+        },
+        {
+          "label": "4",
+          "text": "沸点上昇のみが束一的性質であり他は含まれない。蒸気圧降下・凝固点降下・浸透圧も含めて四つが束一的性質に分類される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "四つすべてが束一的性質。",
+          "choice_id": "ch2_3_q027_c4",
+          "tts_text": "沸点上昇のみが束一的性質であり他は含まれない。蒸気圧降下・凝固点降下・浸透圧も含めて四つが束一的性質に分類される。"
+        }
+      ],
+      "explanation": "束一的性質とは溶質の種類（分子量や化学的性質）に関係なく、溶液中に存在する溶質粒子の数だけで決まる性質です。蒸気圧降下、沸点上昇、凝固点降下、浸透圧の四つが含まれます。これらはすべて蒸気圧降下に起因する関連した現象です。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "溶質の種類に無関係に、水溶液の質量モル濃度mに比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "束一的性質に分類されるものの組として、正しいものを選びなさい。",
+      "tts_explanation": "束一的性質とは溶質の種類（分子量や化学的性質）に関係なく、溶液中に存在する溶質粒子の数だけで決まる性質です。蒸気圧降下、沸点上昇、凝固点降下、浸透圧の四つが含まれます。これらはすべて蒸気圧降下に起因する関連した現象です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q028",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "procedure",
+      "sub_category": "ヘンリー溶解量の体積計算",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ヘンリーの法則において、溶けた気体の体積をその時の圧力で測ると見かけ上体積が変わらない理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶けた気体は液体になって体積がなくなるため。溶解した気体は分子として溶液中に分散しており液体になるわけではない。見かけの体積が一定なのは溶解量と圧縮の効果が打ち消し合うためである。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "液体になるのではなく気体の体積をその圧力で計算した場合の話。",
+          "choice_id": "ch2_3_q028_c1",
+          "tts_text": "溶けた気体は液体になって体積がなくなるため。溶解した気体は分子として溶液中に分散しており液体になるわけではない。見かけの体積が一定なのは溶解量と圧縮の効果が打ち消し合うためである。"
+        },
+        {
+          "label": "2",
+          "text": "溶解量が圧力に関わらず一定であるため。ヘンリーの法則により溶解量は圧力に比例して増加する。一定ではないことが前提である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物質量は圧力に比例して増える。見かけの体積が一定になるだけ。",
+          "choice_id": "ch2_3_q028_c2",
+          "tts_text": "溶解量が圧力に関わらず一定であるため。ヘンリーの法則により溶解量は圧力に比例して増加する。一定ではないことが前提である。"
+        },
+        {
+          "label": "3",
+          "text": "温度が上がるため圧縮が相殺されるため。温度は一定の条件下で考えており温度変化は関与しない。溶解量の増加と体積の圧縮が打ち消し合う。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "温度は一定が条件。",
+          "choice_id": "ch2_3_q028_c3",
+          "tts_text": "温度が上がるため圧縮が相殺されるため。温度は一定の条件下で考えており温度変化は関与しない。溶解量の増加と体積の圧縮が打ち消し合う。"
+        },
+        {
+          "label": "4",
+          "text": "圧力を二倍にすると溶解する物質量は二倍になるが、その気体を同じ圧力で体積に直すと体積は半分に圧縮されるため、結果として見かけの体積は変わらない。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q028_c4",
+          "tts_text": "圧力を二倍にすると溶解する物質量は二倍になるが、その気体を同じ圧力で体積に直すと体積は半分に圧縮されるため、結果として見かけの体積は変わらない。"
+        }
+      ],
+      "explanation": "ヘンリーの法則では圧力を二倍にすると溶ける気体の量（モル数・質量）は二倍になります。しかしこの気体を二倍の圧力下での体積に換算するとボイルの法則で体積は半分になります。結果として「二倍のモル数を半分の体積に圧縮」で見かけの体積は一定になります。",
+      "evidence": [
+        {
+          "source_id": "3_1_law_001",
+          "quote": "溶けた気体の体積を「その時の圧力」で測ると、圧縮されるため見かけ上の体積は変わりません"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ヘンリーの法則において、溶けた気体の体積をその時の圧力で測ると見かけ上体積が変わらない理由として、正しいものを選びなさい。",
+      "tts_explanation": "ヘンリーの法則では圧力を二倍にすると溶ける気体の量（モル数・質量）は二倍になります。しかしこの気体を二倍の圧力下での体積に換算するとボイルの法則で体積は半分になります。結果として「二倍のモル数を半分の体積に圧縮」で見かけの体積は一定になります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q029",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "保護コロイド",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "保護コロイドについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "親水コロイドに疎水コロイドを加えると安定化する。逆で疎水コロイドに親水コロイドを加えることで疎水コロイドが覆われて安定化する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "疎水コロイドが保護される側。",
+          "choice_id": "ch2_3_q029_c1",
+          "tts_text": "親水コロイドに疎水コロイドを加えると安定化する。逆で疎水コロイドに親水コロイドを加えることで疎水コロイドが覆われて安定化する。"
+        },
+        {
+          "label": "2",
+          "text": "疎水コロイドに親水コロイドを加えると、親水コロイドが疎水コロイドを覆って安定化させ、少量の電解質では凝析しにくくなる。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q029_c2",
+          "tts_text": "疎水コロイドに親水コロイドを加えると、親水コロイドが疎水コロイドを覆って安定化させ、少量の電解質では凝析しにくくなる。"
+        },
+        {
+          "label": "3",
+          "text": "保護コロイドという概念は存在しない。保護コロイドはコロイド化学の基本概念であり墨汁やマヨネーズなど身近な例にも利用されている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "重要な概念として存在する。",
+          "choice_id": "ch2_3_q029_c3",
+          "tts_text": "保護コロイドという概念は存在しない。保護コロイドはコロイド化学の基本概念であり墨汁やマヨネーズなど身近な例にも利用されている。"
+        },
+        {
+          "label": "4",
+          "text": "保護コロイドを加えると凝析しやすくなる。逆で保護コロイドにより疎水コロイドが親水化されるため少量の電解質では凝析しにくくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "凝析しにくくなる。",
+          "choice_id": "ch2_3_q029_c4",
+          "tts_text": "保護コロイドを加えると凝析しやすくなる。逆で保護コロイドにより疎水コロイドが親水化されるため少量の電解質では凝析しにくくなる。"
+        }
+      ],
+      "explanation": "保護コロイドとは疎水コロイドの表面を親水コロイドで覆い、安定性を高める手法です。親水コロイドの水分子層が疎水コロイドを包み込むため、少量の電解質を加えても凝析が起こりにくくなります。墨汁にゼラチン（親水コロイド）を加えるのは保護コロイドの応用例です。",
+      "evidence": [],
+      "related_concept_ids": [
+        "3_3_def_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "保護コロイドについて、正しい記述を選びなさい。",
+      "tts_explanation": "保護コロイドとは疎水コロイドの表面を親水コロイドで覆い、安定性を高める手法です。親水コロイドの水分子層が疎水コロイドを包み込むため、少量の電解質を加えても凝析が起こりにくくなります。墨汁にゼラチン（親水コロイド）を加えるのは保護コロイドの応用例です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q030",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "透析",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "透析について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "コロイド粒子が半透膜を通り抜けてイオンだけが残る。逆で小さなイオンや分子が膜を通り抜けコロイド粒子は膜を通れず中に残る。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。イオンが通りコロイドは残る。",
+          "choice_id": "ch2_3_q030_c1",
+          "tts_text": "コロイド粒子が半透膜を通り抜けてイオンだけが残る。逆で小さなイオンや分子が膜を通り抜けコロイド粒子は膜を通れず中に残る。"
+        },
+        {
+          "label": "2",
+          "text": "透析では半透膜は不要であり通常のろ紙でよい。ろ紙の穴はコロイド粒子も通すため半透膜が必須であり粒径による分離が透析の本質である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ろ紙ではコロイドも通過してしまう。半透膜が必要。",
+          "choice_id": "ch2_3_q030_c2",
+          "tts_text": "透析では半透膜は不要であり通常のろ紙でよい。ろ紙の穴はコロイド粒子も通すため半透膜が必須であり粒径による分離が透析の本質である。"
+        },
+        {
+          "label": "3",
+          "text": "透析ではすべての粒子が膜を通過する。コロイド粒子は半透膜を通過できないため残り小さなイオンや分子のみが膜を通過する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "コロイド粒子は通過しない。",
+          "choice_id": "ch2_3_q030_c3",
+          "tts_text": "透析ではすべての粒子が膜を通過する。コロイド粒子は半透膜を通過できないため残り小さなイオンや分子のみが膜を通過する。"
+        },
+        {
+          "label": "4",
+          "text": "コロイド溶液を半透膜に入れて水中に浸すと、小さなイオンや分子は膜を通って外に出るがコロイド粒子は膜を通れないため精製できる。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q030_c4",
+          "tts_text": "コロイド溶液を半透膜に入れて水中に浸すと、小さなイオンや分子は膜を通って外に出るがコロイド粒子は膜を通れないため精製できる。"
+        }
+      ],
+      "explanation": "透析はコロイド溶液から不要なイオンや小さな分子を除く精製法です。半透膜（セロハンなど）は水分子やイオンは通しますがコロイド粒子は通しません。コロイド溶液を半透膜の袋に入れて水中に浸すと、イオンや小分子が外に拡散していき、精製されたコロイド溶液が得られます。",
+      "evidence": [],
+      "related_concept_ids": [
+        "3_3_def_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "透析について、正しい記述を選びなさい。",
+      "tts_explanation": "透析はコロイド溶液から不要なイオンや小さな分子を除く精製法です。半透膜（セロハンなど）は水分子やイオンは通しますがコロイド粒子は通しません。コロイド溶液を半透膜の袋に入れて水中に浸すと、イオンや小分子が外に拡散していき、精製されたコロイド溶液が得られます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q031",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "チンダル現象",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "チンダル現象について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "真の溶液でも同じように起こる現象である。真の溶液では粒子が小さすぎて光を散乱できないためチンダル現象は起こらない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "真の溶液では起こらない。コロイド粒子の大きさが必要。",
+          "choice_id": "ch2_3_q031_c1",
+          "tts_text": "真の溶液でも同じように起こる現象である。真の溶液では粒子が小さすぎて光を散乱できないためチンダル現象は起こらない。"
+        },
+        {
+          "label": "2",
+          "text": "コロイド溶液に光を当てると光の通路が輝いて見える現象であり、コロイド粒子が光を散乱するために起こる。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q031_c2",
+          "tts_text": "コロイド溶液に光を当てると光の通路が輝いて見える現象であり、コロイド粒子が光を散乱するために起こる。"
+        },
+        {
+          "label": "3",
+          "text": "暗所でのみ観察でき、明るい場所では見えない。暗所に限らず光を当てれば光路が輝いて観察でき明暗の条件は関係ない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "光を当てて観察する。暗所限定ではない。",
+          "choice_id": "ch2_3_q031_c3",
+          "tts_text": "暗所でのみ観察でき、明るい場所では見えない。暗所に限らず光を当てれば光路が輝いて観察でき明暗の条件は関係ない。"
+        },
+        {
+          "label": "4",
+          "text": "光を吸収するために起こる現象である。チンダル現象は光の散乱によって起こる現象であり吸収ではなくコロイド粒子が光を散らすためである。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "吸収ではなく散乱。",
+          "choice_id": "ch2_3_q031_c4",
+          "tts_text": "光を吸収するために起こる現象である。チンダル現象は光の散乱によって起こる現象であり吸収ではなくコロイド粒子が光を散らすためである。"
+        }
+      ],
+      "explanation": "チンダル現象はコロイド溶液の特徴的な性質の一つです。コロイド粒子は光の波長と同程度の大きさをもつため光を強く散乱します。そのためレーザー光などを当てると光の通路が明るく輝いて見えます。真の溶液では粒子が非常に小さいためこの現象は起こりません。",
+      "evidence": [],
+      "related_concept_ids": [],
+      "mnemonic": null,
+      "tts_question": "チンダル現象について、正しい記述を選びなさい。",
+      "tts_explanation": "チンダル現象はコロイド溶液の特徴的な性質の一つです。コロイド粒子は光の波長と同程度の大きさをもつため光を強く散乱します。そのためレーザー光などを当てると光の通路が明るく輝いて見えます。真の溶液では粒子が非常に小さいためこの現象は起こりません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q032",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "ブラウン運動",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ブラウン運動について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "コロイド粒子が自ら動く現象である。コロイド粒子は自ら動くのではなく周囲の溶媒分子の衝突を受けて不規則に動かされている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "自ら動くのではなく溶媒分子の衝突で動く。",
+          "choice_id": "ch2_3_q032_c1",
+          "tts_text": "コロイド粒子が自ら動く現象である。コロイド粒子は自ら動くのではなく周囲の溶媒分子の衝突を受けて不規則に動かされている。"
+        },
+        {
+          "label": "2",
+          "text": "ブラウン運動は真の溶液でのみ起こる。ブラウン運動はコロイド粒子のような微小な粒子に対して起こる現象であり真の溶液の溶質では観察されない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "コロイド溶液で観察される。",
+          "choice_id": "ch2_3_q032_c2",
+          "tts_text": "ブラウン運動は真の溶液でのみ起こる。ブラウン運動はコロイド粒子のような微小な粒子に対して起こる現象であり真の溶液の溶質では観察されない。"
+        },
+        {
+          "label": "3",
+          "text": "コロイド粒子が周囲の溶媒分子の衝突を受けて不規則に動く現象であり、コロイドが沈降せずに分散し続ける一因である。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q032_c3",
+          "tts_text": "コロイド粒子が周囲の溶媒分子の衝突を受けて不規則に動く現象であり、コロイドが沈降せずに分散し続ける一因である。"
+        },
+        {
+          "label": "4",
+          "text": "コロイド粒子が規則正しく直線的に移動する現象である。ブラウン運動は溶媒分子のランダムな衝突による不規則な運動であり直線的ではない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "不規則な（ランダムな）運動。",
+          "choice_id": "ch2_3_q032_c4",
+          "tts_text": "コロイド粒子が規則正しく直線的に移動する現象である。ブラウン運動は溶媒分子のランダムな衝突による不規則な運動であり直線的ではない。"
+        }
+      ],
+      "explanation": "ブラウン運動はコロイド粒子が溶媒分子の不規則な衝突を受けてジグザグに動く現象です。この運動により粒子は沈降せず溶液中に広がり続けます。一八二七年にロバート・ブラウンが花粉から出た微粒子で発見したことから名付けられました。",
+      "evidence": [],
+      "related_concept_ids": [],
+      "mnemonic": null,
+      "tts_question": "ブラウン運動について、正しい記述を選びなさい。",
+      "tts_explanation": "ブラウン運動はコロイド粒子が溶媒分子の不規則な衝突を受けてジグザグに動く現象です。この運動により粒子は沈降せず溶液中に広がり続けます。一八二七年にロバート・ブラウンが花粉から出た微粒子で発見したことから名付けられました。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q033",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "confusion",
+      "sub_category": "沸点上昇と凝固点降下の符号",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "溶液の沸点と凝固点の変化に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "不揮発性溶質を溶かすと凝固点は降下する。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q033_c1",
+          "tts_text": "不揮発性溶質を溶かすと凝固点は降下する。"
+        },
+        {
+          "label": "2",
+          "text": "不揮発性溶質を溶かすと沸点は上昇する。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q033_c2",
+          "tts_text": "不揮発性溶質を溶かすと沸点は上昇する。"
+        },
+        {
+          "label": "3",
+          "text": "これらの変化はいずれも蒸気圧降下に起因する。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q033_c3",
+          "tts_text": "これらの変化はいずれも蒸気圧降下に起因する。"
+        },
+        {
+          "label": "4",
+          "text": "不揮発性溶質を溶かすと沸点は下がり凝固点は上がる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "逆。沸点は上がり凝固点は下がる。",
+          "choice_id": "ch2_3_q033_c4",
+          "tts_text": "不揮発性溶質を溶かすと沸点は下がり凝固点は上がる。"
+        }
+      ],
+      "explanation": "不揮発性溶質が溶けると蒸気圧降下が起こり、その結果として沸点は上昇し凝固点は降下します。選択肢4はこの関係が完全に逆であり誤りです。冬に道路に凍結防止剤（CaCl₂）を撒くのは凝固点降下を利用した身近な例です。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "不揮発性のものが溶けていると水分子が蒸発しにくくなる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "溶液の沸点と凝固点の変化に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "不揮発性溶質が溶けると蒸気圧降下が起こり、その結果として沸点は上昇し凝固点は降下します。「沸点は下がり凝固点は上がる」という記述はこの関係が完全に逆であり誤りです。冬に道路に凍結防止剤（塩化カルシウム）を撒くのは凝固点降下を利用した身近な例です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q034",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "浸透圧",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "浸透圧について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "半透膜を隔てて純溶媒と溶液を置いたとき、溶液側に溶媒が移動する浸透現象を止めるために必要な圧力が浸透圧であり、溶質の種類に関わらず粒子のモル濃度に比例する。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q034_c1",
+          "tts_text": "半透膜を隔てて純溶媒と溶液を置いたとき、溶液側に溶媒が移動する浸透現象を止めるために必要な圧力が浸透圧であり、溶質の種類に関わらず粒子のモル濃度に比例する。"
+        },
+        {
+          "label": "2",
+          "text": "浸透圧は溶液側から純溶媒側に向かって溶媒分子が自発的に移動する現象によって生じると勘違いされやすいが、実際は逆であり、純溶媒側から溶液側へ溶媒が移動する浸透現象を止めるのに必要な圧力が浸透圧である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "純溶媒側から溶液側に移動する。",
+          "choice_id": "ch2_3_q034_c2",
+          "tts_text": "浸透圧は溶液側から純溶媒側に向かって溶媒分子が自発的に移動する現象によって生じると勘違いされやすいが、実際は逆であり、純溶媒側から溶液側へ溶媒が移動する浸透現象を止めるのに必要な圧力が浸透圧である。"
+        },
+        {
+          "label": "3",
+          "text": "浸透圧は半透膜がなくても生じる。浸透現象は半透膜を介して溶媒分子のみが通過することで起こるため半透膜の存在が不可欠である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "半透膜が不可欠。",
+          "choice_id": "ch2_3_q034_c3",
+          "tts_text": "浸透圧は半透膜がなくても生じる。浸透現象は半透膜を介して溶媒分子のみが通過することで起こるため半透膜の存在が不可欠である。"
+        },
+        {
+          "label": "4",
+          "text": "浸透圧は溶質の分子量に比例する。浸透圧は束一的性質であり溶質の分子量ではなく溶液中の粒子のモル濃度に比例する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "分子量ではなく粒子のモル濃度に比例。",
+          "choice_id": "ch2_3_q034_c4",
+          "tts_text": "浸透圧は溶質の分子量に比例する。浸透圧は束一的性質であり溶質の分子量ではなく溶液中の粒子のモル濃度に比例する。"
+        }
+      ],
+      "explanation": "浸透圧は束一的性質の一つであり、半透膜を通した溶媒の移動（浸透）と関連しています。純溶媒側から溶液側に溶媒が移動しようとする力を止めるのに必要な圧力が浸透圧です。他の束一的性質と同様に溶質の種類ではなく粒子のモル濃度で決まります。",
+      "evidence": [],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "浸透圧について、正しい記述を選びなさい。",
+      "tts_explanation": "浸透圧は束一的性質の一つであり、半透膜を通した溶媒の移動（浸透）と関連しています。純溶媒側から溶液側に溶媒が移動しようとする力を止めるのに必要な圧力が浸透圧です。他の束一的性質と同様に溶質の種類ではなく粒子のモル濃度で決まります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q035",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "電気泳動",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "コロイドの電気泳動について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "コロイド粒子は正または負に帯電しており、電場をかけると帯電と反対の電極に向かって移動する。水酸化鉄コロイドは正コロイドなので陰極側に移動する。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q035_c1",
+          "tts_text": "コロイド粒子は正または負に帯電しており、電場をかけると帯電と反対の電極に向かって移動する。水酸化鉄コロイドは正コロイドなので陰極側に移動する。"
+        },
+        {
+          "label": "2",
+          "text": "正コロイドは陽極に向かって移動する。正コロイドは正に帯電しているため反対の負の電極である陰極に向かって移動する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "正コロイドは陰極（負極）に移動する。",
+          "choice_id": "ch2_3_q035_c2",
+          "tts_text": "正コロイドは陽極に向かって移動する。正コロイドは正に帯電しているため反対の負の電極である陰極に向かって移動する。"
+        },
+        {
+          "label": "3",
+          "text": "コロイド粒子は電荷をもたないため電場では動かない。コロイド粒子は正または負に帯電しており電場をかけると反対電極に向かって移動する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多くのコロイド粒子は電荷をもつ。",
+          "choice_id": "ch2_3_q035_c3",
+          "tts_text": "コロイド粒子は電荷をもたないため電場では動かない。コロイド粒子は正または負に帯電しており電場をかけると反対電極に向かって移動する。"
+        },
+        {
+          "label": "4",
+          "text": "電気泳動は真の溶液でのみ起こる現象である。電気泳動はコロイド粒子の帯電によって起こる現象であり真の溶液では観察されない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "コロイド溶液で起こる。",
+          "choice_id": "ch2_3_q035_c4",
+          "tts_text": "電気泳動は真の溶液でのみ起こる現象である。電気泳動はコロイド粒子の帯電によって起こる現象であり真の溶液では観察されない。"
+        }
+      ],
+      "explanation": "コロイド粒子の多くは表面が正または負に帯電しています。電場をかけると帯電と反対符号の電極に向かって移動します。水酸化鉄（三価）コロイドは正に帯電した正コロイドであり陰極（負極）に移動します。この性質を電気泳動といい、コロイドの帯電の符号を調べるのに使われます。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_001",
+          "quote": "正コロイド"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "コロイドの電気泳動について、正しい記述を選びなさい。",
+      "tts_explanation": "コロイド粒子の多くは表面が正または負に帯電しています。電場をかけると帯電と反対符号の電極に向かって移動します。水酸化鉄（三価）コロイドは正に帯電した正コロイドであり陰極（負極）に移動します。この性質を電気泳動といい、コロイドの帯電の符号を調べるのに使われます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q036",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "confusion",
+      "sub_category": "正コロイドと負コロイドの混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "コロイドの電気泳動に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水酸化鉄（三価）コロイドは正コロイドである。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q036_c1",
+          "tts_text": "水酸化鉄（三価）コロイドは正コロイドである。"
+        },
+        {
+          "label": "2",
+          "text": "電気泳動でコロイドの帯電の符号がわかる。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q036_c2",
+          "tts_text": "電気泳動でコロイドの帯電の符号がわかる。"
+        },
+        {
+          "label": "3",
+          "text": "正コロイドは陰極側に移動する。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q036_c3",
+          "tts_text": "正コロイドは陰極側に移動する。"
+        },
+        {
+          "label": "4",
+          "text": "水酸化鉄（三価）コロイドは負コロイドであり陽極に移動する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "正コロイドであり陰極に移動する。",
+          "choice_id": "ch2_3_q036_c4",
+          "tts_text": "水酸化鉄（三価）コロイドは負コロイドであり陽極に移動する。"
+        }
+      ],
+      "explanation": "水酸化鉄（三価）コロイドは正コロイドです。電気泳動では陰極（負極）側に移動します。これを負コロイドとする記述は誤りです。正コロイドの凝析には陰イオン（特に価数の大きいもの）が効果的であり、負コロイドの凝析には陽イオンが効果的です。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_001",
+          "quote": "正コロイド"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_001",
+        "3_3_def_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "コロイドの電気泳動に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "水酸化鉄（三価）コロイドは正コロイドです。電気泳動では陰極（負極）側に移動します。これを負コロイドとする記述は誤りです。正コロイドの凝析には陰イオン（特に価数の大きいもの）が効果的であり、負コロイドの凝析には陽イオンが効果的です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q037",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "procedure",
+      "sub_category": "溶解度曲線の利用",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "溶解度曲線を用いた再結晶の計算について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "溶解度曲線は温度と圧力の関係を示す。溶解度曲線は温度と溶解度（水100gに溶ける溶質の質量）の関係を示すグラフであり圧力ではない。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "温度と溶解度の関係を示す。温度と圧力は状態図。",
+          "choice_id": "ch2_3_q037_c1",
+          "tts_text": "溶解度曲線は温度と圧力の関係を示す。溶解度曲線は温度と溶解度（水百グラムに溶ける溶質の質量）の関係を示すグラフであり圧力ではない。"
+        },
+        {
+          "label": "2",
+          "text": "溶解度曲線から各温度での飽和溶液の組成がわかるため、高温から低温に冷却したときに析出する結晶の質量を計算できる。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q037_c2",
+          "tts_text": "溶解度曲線から各温度での飽和溶液の組成がわかるため、高温から低温に冷却したときに析出する結晶の質量を計算できる。"
+        },
+        {
+          "label": "3",
+          "text": "すべての物質で溶解度曲線は右肩上がりである。NaClのように温度による変化がほぼ平坦な物質もあり一様ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物質によって異なる。塩化ナトリウムはほぼ水平。",
+          "choice_id": "ch2_3_q037_c3",
+          "tts_text": "すべての物質で溶解度曲線は右肩上がりである。塩化ナトリウムのように温度による変化がほぼ平坦な物質もあり一様ではない。"
+        },
+        {
+          "label": "4",
+          "text": "溶解度曲線から析出量を計算することはできない。高温と低温での溶解度の差から冷却時に析出する結晶量を計算できるのが大きな利点である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "計算の基礎となるグラフ。",
+          "choice_id": "ch2_3_q037_c4",
+          "tts_text": "溶解度曲線から析出量を計算することはできない。高温と低温での溶解度の差から冷却時に析出する結晶量を計算できるのが大きな利点である。"
+        }
+      ],
+      "explanation": "溶解度曲線は水100gに対して溶ける溶質の最大量を温度ごとにプロットしたグラフです。高温での飽和量と低温での飽和量の差が、冷却したときに析出する結晶の量になります。硝酸カリウムのように急な右肩上がりの曲線をもつ物質は再結晶に適しています。",
+      "evidence": [
+        {
+          "source_id": "3_1_proc_001",
+          "quote": "溶解度曲線を与えられ、特定温度への冷却時に析出する結晶の質量を計算する問題"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "溶解度曲線を用いた再結晶の計算について、正しい記述を選びなさい。",
+      "tts_explanation": "溶解度曲線は水百グラムに対して溶ける溶質の最大量を温度ごとにプロットしたグラフです。高温での飽和量と低温での飽和量の差が、冷却したときに析出する結晶の量になります。硝酸カリウムのように急な右肩上がりの曲線をもつ物質は再結晶に適しています。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q038",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "confusion",
+      "sub_category": "ヘンリーの法則の体積の扱い",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "ヘンリーの法則に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "圧力を二倍にすると溶ける気体の質量は二倍になる。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q038_c1",
+          "tts_text": "圧力を二倍にすると溶ける気体の質量は二倍になる。"
+        },
+        {
+          "label": "2",
+          "text": "溶けた気体の体積をその圧力で測ると見かけ上変わらない。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q038_c2",
+          "tts_text": "溶けた気体の体積をその圧力で測ると見かけ上変わらない。"
+        },
+        {
+          "label": "3",
+          "text": "圧力を二倍にすると溶けた気体の体積もその圧力での体積で二倍になる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "モル数は二倍だが圧力も二倍なのでボイルの法則から体積は一定。",
+          "choice_id": "ch2_3_q038_c3",
+          "tts_text": "圧力を二倍にすると溶けた気体の体積もその圧力での体積で二倍になる。"
+        },
+        {
+          "label": "4",
+          "text": "圧力を二倍にすると溶ける気体の物質量は二倍になる。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q038_c4",
+          "tts_text": "圧力を二倍にすると溶ける気体の物質量は二倍になる。"
+        }
+      ],
+      "explanation": "ヘンリーの法則で圧力を二倍にすると溶ける物質量と質量は確かに二倍になります。しかしこの気体を二倍の圧力下での体積に換算するとボイルの法則により体積は半分になるため、二倍の物質量が半分の体積に圧縮され、見かけの体積は一定です。体積が二倍になるという記述は誤りです。",
+      "evidence": [
+        {
+          "source_id": "3_1_law_001",
+          "quote": "溶けた気体の体積を「その時の圧力」で測ると、圧縮されるため見かけ上の体積は変わりません"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ヘンリーの法則に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "ヘンリーの法則で圧力を二倍にすると溶ける物質量と質量は確かに二倍になります。しかしこの気体を二倍の圧力下での体積に換算するとボイルの法則により体積は半分になるため、二倍の物質量が半分の体積に圧縮され、見かけの体積は一定です。体積が二倍になるという記述は誤りです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q039",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "mnemonic",
+      "sub_category": "似たものは似たものを溶かす",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "溶解の一般原則として正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無極性溶媒にはイオン性物質がよく溶ける。イオン性物質は極性溶媒に溶けやすく無極性溶媒には溶けにくい。似たものが似たものに溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "イオン性物質は無極性溶媒には溶けにくい。",
+          "choice_id": "ch2_3_q039_c1",
+          "tts_text": "無極性溶媒にはイオン性物質がよく溶ける。イオン性物質は極性溶媒に溶けやすく無極性溶媒には溶けにくい。似たものが似たものに溶ける。"
+        },
+        {
+          "label": "2",
+          "text": "すべての物質はすべての溶媒に同じように溶ける。極性と極性、無極性と無極性のように性質が似た組み合わせでないと溶けにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶媒と溶質の極性の一致が重要。",
+          "choice_id": "ch2_3_q039_c2",
+          "tts_text": "すべての物質はすべての溶媒に同じように溶ける。極性と極性、無極性と無極性のように性質が似た組み合わせでないと溶けにくい。"
+        },
+        {
+          "label": "3",
+          "text": "極性溶媒には極性物質やイオン性物質が溶けやすく、無極性溶媒には無極性物質が溶けやすい。「似たものは似たものを溶かす」と覚える。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q039_c3",
+          "tts_text": "極性溶媒には極性物質やイオン性物質が溶けやすく、無極性溶媒には無極性物質が溶けやすい。「似たものは似たものを溶かす」と覚える。"
+        },
+        {
+          "label": "4",
+          "text": "極性溶媒には無極性物質がよく溶ける。逆で極性溶媒には極性物質やイオン性物質が溶けやすく無極性物質は溶けにくい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "極性には極性が溶ける。",
+          "choice_id": "ch2_3_q039_c4",
+          "tts_text": "極性溶媒には無極性物質がよく溶ける。逆で極性溶媒には極性物質やイオン性物質が溶けやすく無極性物質は溶けにくい。"
+        }
+      ],
+      "explanation": "溶解の一般原則として「似たものは似たものを溶かす」があります。水（極性溶媒）にはNaCl（イオン性）やエタノール（極性分子）がよく溶けますが、油（無極性）は溶けません。逆にベンゼン（無極性溶媒）にはヨウ素（無極性）がよく溶けますが食塩は溶けません。",
+      "evidence": [],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_003"
+      ],
+      "mnemonic": "似たものは似たものを溶かす",
+      "tts_question": "溶解の一般原則として正しいものを選びなさい。",
+      "tts_explanation": "溶解の一般原則として「似たものは似たものを溶かす」があります。水（極性溶媒）には塩化ナトリウム（イオン性）やエタノール（極性分子）がよく溶けますが、油（無極性）は溶けません。逆にベンゼン（無極性溶媒）にはヨウ素（無極性）がよく溶けますが食塩は溶けません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q040",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "mnemonic",
+      "sub_category": "凝析と塩析の覚え方",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "凝析と塩析の区別の覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "凝析も塩析も区別する必要がないため覚え方は不要である。両者は対象コロイドも必要量も異なるため区別して覚えることが試験では重要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "明確に区別が必要。",
+          "choice_id": "ch2_3_q040_c1",
+          "tts_text": "凝析も塩析も区別する必要がないため覚え方は不要である。両者は対象コロイドも必要量も異なるため区別して覚えることが試験では重要である。"
+        },
+        {
+          "label": "2",
+          "text": "凝析は多量の電解質が必要で、塩析は少量で起こると覚える。逆で凝析が少量で塩析が多量であり対象も疎水と親水で異なる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。凝析が少量、塩析が多量。",
+          "choice_id": "ch2_3_q040_c2",
+          "tts_text": "凝析は多量の電解質が必要で、塩析は少量で起こると覚える。逆で凝析が少量で塩析が多量であり対象も疎水と親水で異なる。"
+        },
+        {
+          "label": "3",
+          "text": "凝析は親水コロイドに、塩析は疎水コロイドに起こると覚える。逆で凝析は疎水コロイドに塩析は親水コロイドに起こる現象である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。凝析は疎水、塩析は親水。",
+          "choice_id": "ch2_3_q040_c3",
+          "tts_text": "凝析は親水コロイドに、塩析は疎水コロイドに起こると覚える。逆で凝析は疎水コロイドに塩析は親水コロイドに起こる現象である。"
+        },
+        {
+          "label": "4",
+          "text": "疎水コロイドの凝析は「少量」で「凝り固まる」、親水コロイドの塩析は「多量の塩」で「塩漬けにする」と覚える。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q040_c4",
+          "tts_text": "疎水コロイドの凝析は「少量」で「凝り固まる」、親水コロイドの塩析は「多量の塩」で「塩漬けにする」と覚える。"
+        }
+      ],
+      "explanation": "凝析は疎水コロイドが少量の電解質で「凝り固まって」沈殿する現象です。塩析は親水コロイドが多量の電解質（塩）で「塩漬け」にされるように水分子を奪われて沈殿する現象です。電解質の量（少量か多量か）とコロイドの種類のセットで覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "疎水コロイドが少量の電解質で沈殿する現象を凝析、親水コロイドが多量の電解質で沈殿する現象を塩析"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002"
+      ],
+      "mnemonic": "凝析は少量で凝り固まる、塩析は多量の塩漬け",
+      "tts_question": "凝析と塩析の区別の覚え方として、正しいものを選びなさい。",
+      "tts_explanation": "凝析は疎水コロイドが少量の電解質で「凝り固まって」沈殿する現象です。塩析は親水コロイドが多量の電解質（塩）で「塩漬け」にされるように水分子を奪われて沈殿する現象です。電解質の量（少量か多量か）とコロイドの種類のセットで覚えましょう。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q041",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "mnemonic",
+      "sub_category": "モル沸点上昇定数の覚え方",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水のモル沸点上昇定数の値として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "〇・五一五ケルビルキログラム毎モルである。質量モル濃度1mol毎キログラムの溶液は沸点が約〇・5℃上昇する。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q041_c1",
+          "tts_text": "〇・五一五ケルビルキログラム毎モルである。質量モル濃度一モル毎キログラムの溶液は沸点が約〇・五度上昇する。"
+        },
+        {
+          "label": "2",
+          "text": "二十二・四である。これは標準状態での気体1molの体積であり水のモル沸点上昇定数〇・五一五とは全く異なる数値である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これは標準状態でのモル体積。",
+          "choice_id": "ch2_3_q041_c2",
+          "tts_text": "二十二・四である。これは標準状態での気体一モルの体積であり水のモル沸点上昇定数〇・五一五とは全く異なる数値である。"
+        },
+        {
+          "label": "3",
+          "text": "一・八六ケルビルキログラム毎モルである。一・八六は水のモル凝固点降下定数であり沸点上昇定数は〇・五一五であるため混同しないよう注意する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これはモル凝固点降下定数の値。",
+          "choice_id": "ch2_3_q041_c3",
+          "tts_text": "一・八六ケルビルキログラム毎モルである。一・八六は水のモル凝固点降下定数であり沸点上昇定数は〇・五一五であるため混同しないよう注意する。"
+        },
+        {
+          "label": "4",
+          "text": "八・三一かける十の三乗である。これは気体定数の値であり水のモル沸点上昇定数〇・五一五とは完全に異なる物理量である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "これは気体定数の値。",
+          "choice_id": "ch2_3_q041_c4",
+          "tts_text": "八・三一かける十の三乗である。これは気体定数の値であり水のモル沸点上昇定数〇・五一五とは完全に異なる物理量である。"
+        }
+      ],
+      "explanation": "水のモル沸点上昇定数は〇・五一五です。質量モル濃度が1mol毎キログラムの非電解質水溶液では沸点が約〇・5℃上昇します。一方、水のモル凝固点降下定数は一・八六であり沸点上昇定数と混同しないように注意が必要です。凝固点降下の方が数値が大きいため、同じ濃度でも凝固点降下度の方が沸点上昇度より大きくなります。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "水のモル沸点上昇Kbは0.515 K・kg/mol"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "水のモル沸点上昇定数の値として、正しいものを選びなさい。",
+      "tts_explanation": "水のモル沸点上昇定数は〇・五一五です。質量モル濃度が一モル毎キログラムの非電解質水溶液では沸点が約〇・五度上昇します。一方、水のモル凝固点降下定数は一・八六であり沸点上昇定数と混同しないように注意が必要です。凝固点降下の方が数値が大きいため、同じ濃度でも凝固点降下度の方が沸点上昇度より大きくなります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q042",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "comprehensive",
+      "sub_category": "溶解の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "溶解のしくみに関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン結晶は水分子との水和によりイオンが分散して溶ける。極性分子は親水基の水素結合で溶ける。無極性分子は水に溶けにくく無極性溶媒に溶ける。「似たものは似たものを溶かす」原則が基本である。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q042_c1",
+          "tts_text": "イオン結晶は水分子との水和によりイオンが分散して溶ける。極性分子は親水基の水素結合で溶ける。無極性分子は水に溶けにくく無極性溶媒に溶ける。「似たものは似たものを溶かす」原則が基本である。"
+        },
+        {
+          "label": "2",
+          "text": "エタノールは炭素鎖をもつため無極性分子とみなされ水にはまったく溶けないと思い込みがちだが、エタノールはヒドロキシ基をもつ極性分子であり、水と水素結合を形成して任意の割合で混ざり合う。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "極性分子であり水に自由に溶ける。",
+          "choice_id": "ch2_3_q042_c2",
+          "tts_text": "エタノールは炭素鎖をもつため無極性分子とみなされ水にはまったく溶けないと思い込みがちだが、エタノールはヒドロキシ基をもつ極性分子であり、水と水素結合を形成して任意の割合で混ざり合う。"
+        },
+        {
+          "label": "3",
+          "text": "すべての物質は水に溶ける。無極性分子も水和で溶ける。似たものは似たものを溶かさない。三箇所とも誤りで無極性分子は水に溶けにくく「似たものは似たものを溶かす」が正しい。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所誤り。",
+          "choice_id": "ch2_3_q042_c3",
+          "tts_text": "すべての物質は水に溶ける。無極性分子も水和で溶ける。似たものは似たものを溶かさない。三箇所とも誤りで無極性分子は水に溶けにくく「似たものは似たものを溶かす」が正しい。"
+        },
+        {
+          "label": "4",
+          "text": "水和はイオン結晶にのみ起こり極性分子には起こらない。極性分子も水分子と水素結合などで水和し溶解するためイオン結晶に限定されない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "極性分子にも水和は起こる。",
+          "choice_id": "ch2_3_q042_c4",
+          "tts_text": "水和はイオン結晶にのみ起こり極性分子には起こらない。極性分子も水分子と水素結合などで水和し溶解するためイオン結晶に限定されない。"
+        }
+      ],
+      "explanation": "溶解のしくみは溶質と溶媒の相互作用で決まります。イオン結晶は水分子の水和によるイオンの分離で溶け、エタノールなどの極性分子はヒドロキシ基の水素結合で溶けます。無極性分子（油脂など）は水とは相互作用が弱いため溶けにくいですが、無極性溶媒（ヘキサンなど）には溶けます。",
+      "evidence": [
+        {
+          "source_id": "3_1_def_001",
+          "quote": "水分子が溶質粒子に強く引きつけられる現象"
+        },
+        {
+          "source_id": "3_1_def_003",
+          "quote": "親水基が多いほど水に溶けやすくなります"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_def_001",
+        "3_1_def_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "溶解のしくみに関する総合的な記述として、正しいものを選びなさい。",
+      "tts_explanation": "溶解のしくみは溶質と溶媒の相互作用で決まります。イオン結晶は水分子の水和によるイオンの分離で溶け、エタノールなどの極性分子はヒドロキシ基の水素結合で溶けます。無極性分子（油脂など）は水とは相互作用が弱いため溶けにくいですが、無極性溶媒（ヘキサンなど）には溶けます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q043",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "comprehensive",
+      "sub_category": "束一的性質の総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "束一的性質に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "蒸気圧降下・沸点上昇・凝固点降下・浸透圧はいずれも束一的性質であり溶質粒子の数で決まる。これは束一的性質の正しい説明であり四つ全てが該当する。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q043_c1",
+          "tts_text": "蒸気圧降下・沸点上昇・凝固点降下・浸透圧はいずれも束一的性質であり溶質粒子の数で決まる。これは束一的性質の正しい説明であり四つ全てが該当する。"
+        },
+        {
+          "label": "2",
+          "text": "束一的性質は溶質の分子量に比例し、粒子数は無関係である。非電解質と電解質で同じモル濃度なら沸点上昇度は同じである。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "分子量ではなく粒子数で決まる。電解質は電離で粒子増加。",
+          "choice_id": "ch2_3_q043_c2",
+          "tts_text": "束一的性質は溶質の分子量に比例し、粒子数は無関係である。非電解質と電解質で同じモル濃度なら沸点上昇度は同じである。"
+        },
+        {
+          "label": "3",
+          "text": "沸点上昇と凝固点降下の計算には質量モル濃度を用いる。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q043_c3",
+          "tts_text": "沸点上昇と凝固点降下の計算には質量モル濃度を用いる。"
+        },
+        {
+          "label": "4",
+          "text": "電解質溶液では電離後の全粒子のモル濃度を考慮する必要がある。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q043_c4",
+          "tts_text": "電解質溶液では電離後の全粒子のモル濃度を考慮する必要がある。"
+        }
+      ],
+      "explanation": "束一的性質は「束（ひとくくり）」一つの性質という意味で、溶質の化学的性質に依存せず粒子数だけで決まります。分子量に比例するという選択肢2は誤りです。また電解質は電離によって粒子数が増えるため、同じモル濃度の非電解質より大きな束一的性質を示します。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "溶質の種類に無関係に、水溶液の質量モル濃度mに比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "束一的性質に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "束一的性質は「束（ひとくくり）」一つの性質という意味で、溶質の化学的性質に依存せず粒子数だけで決まります。「分子量に比例する」という記述は誤りです。また電解質は電離によって粒子数が増えるため、同じモル濃度の非電解質より大きな束一的性質を示します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q044",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "comprehensive",
+      "sub_category": "コロイドの総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "コロイドの性質に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "コロイドにはブラウン運動やチンダル現象は観察されず、真の溶液と同じ挙動を示すと勘違いされやすいが、コロイドの代表的性質としてブラウン運動、チンダル現象、電気泳動がよく知られている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "コロイド特有の現象。",
+          "choice_id": "ch2_3_q044_c1",
+          "tts_text": "コロイドにはブラウン運動やチンダル現象は観察されず、真の溶液と同じ挙動を示すと勘違いされやすいが、コロイドの代表的性質としてブラウン運動、チンダル現象、電気泳動がよく知られている。"
+        },
+        {
+          "label": "2",
+          "text": "コロイド粒子は一から百ナノメートル程度の大きさであり、チンダル現象、ブラウン運動、電気泳動を示す。疎水コロイドは少量の電解質で凝析し、親水コロイドは多量の電解質で塩析する。透析で精製できる。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q044_c2",
+          "tts_text": "コロイド粒子は一から百ナノメートル程度の大きさであり、チンダル現象、ブラウン運動、電気泳動を示す。疎水コロイドは少量の電解質で凝析し、親水コロイドは多量の電解質で塩析する。透析で精製できる。"
+        },
+        {
+          "label": "3",
+          "text": "コロイド粒子はイオンと同じ大きさであり通常のろ紙でろ過できる。凝析と塩析は全く同じ現象である。チンダル現象は真の溶液でも起こる。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて誤り。",
+          "choice_id": "ch2_3_q044_c3",
+          "tts_text": "コロイド粒子はイオンと同じ大きさであり通常のろ紙でろ過できる。凝析と塩析は全く同じ現象である。チンダル現象は真の溶液でも起こる。"
+        },
+        {
+          "label": "4",
+          "text": "疎水コロイドは多量の電解質が必要で、親水コロイドは少量で沈殿する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。",
+          "choice_id": "ch2_3_q044_c4",
+          "tts_text": "疎水コロイドは多量の電解質が必要で、親水コロイドは少量で沈殿する。"
+        }
+      ],
+      "explanation": "コロイドは真の溶液と懸濁液の中間的な存在で、粒子の大きさは一から百ナノメートル程度です。特徴的な性質としてチンダル現象（光の散乱）、ブラウン運動（不規則運動）、電気泳動（帯電による移動）があります。疎水コロイドは少量の電解質で凝析し、親水コロイドは多量で塩析します。透析で不純なイオンを除去して精製できます。",
+      "evidence": [
+        {
+          "source_id": "3_3_def_002",
+          "quote": "疎水コロイドが少量の電解質で沈殿する現象を凝析、親水コロイドが多量の電解質で沈殿する現象を塩析"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_def_002",
+        "3_3_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "コロイドの性質に関する総合的な記述として、正しいものを選びなさい。",
+      "tts_explanation": "コロイドは真の溶液と懸濁液の中間的な存在で、粒子の大きさは一から百ナノメートル程度です。特徴的な性質としてチンダル現象（光の散乱）、ブラウン運動（不規則運動）、電気泳動（帯電による移動）があります。疎水コロイドは少量の電解質で凝析し、親水コロイドは多量で塩析します。透析で不純なイオンを除去して精製できます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q045",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "固体の溶解度と温度",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "固体の溶解度と温度の関係について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "多くの固体は温度が上がると溶解度が増加するが、物質によって増加の程度は大きく異なる。硝酸カリウムは急激に増加し、NaClはほとんど変化しない。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q045_c1",
+          "tts_text": "多くの固体は温度が上がると溶解度が増加するが、物質によって増加の程度は大きく異なる。硝酸カリウムは急激に増加し、塩化ナトリウムはほとんど変化しない。"
+        },
+        {
+          "label": "2",
+          "text": "すべての固体で温度が上がると溶解度は減少する。逆で多くの固体では温度が上がると溶解度が増加する。減少するのは気体の一般的傾向である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "多くは増加する。",
+          "choice_id": "ch2_3_q045_c2",
+          "tts_text": "すべての固体で温度が上がると溶解度は減少する。逆で多くの固体では温度が上がると溶解度が増加する。減少するのは気体の一般的傾向である。"
+        },
+        {
+          "label": "3",
+          "text": "温度と溶解度は完全に無関係である。固体の溶解度は温度に大きく依存し硝酸カリウムのように急激に変化する物質も多い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度に依存する。",
+          "choice_id": "ch2_3_q045_c3",
+          "tts_text": "温度と溶解度は完全に無関係である。固体の溶解度は温度に大きく依存し硝酸カリウムのように急激に変化する物質も多い。"
+        },
+        {
+          "label": "4",
+          "text": "すべての固体で溶解度の温度変化は同程度である。硝酸カリウムは急激に変化するがNaClはほぼ変化しないなど物質によって大きく異なる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物質ごとに大きく異なる。",
+          "choice_id": "ch2_3_q045_c4",
+          "tts_text": "すべての固体で溶解度の温度変化は同程度である。硝酸カリウムは急激に変化するが塩化ナトリウムはほぼ変化しないなど物質によって大きく異なる。"
+        }
+      ],
+      "explanation": "固体の溶解度は一般に温度上昇とともに増加しますが、その程度は物質によって大きく違います。硝酸カリウムは温度が上がると溶解度が急激に増加するため再結晶に最適です。一方、NaClは温度を上げてもほぼ一定のため再結晶には不向きです。",
+      "evidence": [
+        {
+          "source_id": "3_1_proc_001",
+          "quote": "塩化ナトリウムのように温度による溶解度の変化が小さい物質は、再結晶には向いていない"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "固体の溶解度と温度の関係について、正しい記述を選びなさい。",
+      "tts_explanation": "固体の溶解度は一般に温度上昇とともに増加しますが、その程度は物質によって大きく違います。硝酸カリウムは温度が上がると溶解度が急激に増加するため再結晶に最適です。一方、塩化ナトリウムは温度を上げてもほぼ一定のため再結晶には不向きです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q046",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "気体の溶解度と温度",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "気体の水への溶解度と温度の関係について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "一般に温度が上がると気体の水への溶解度は減少する。温かい水からは溶けていた気体が泡となって出てくることがある。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q046_c1",
+          "tts_text": "一般に温度が上がると気体の水への溶解度は減少する。温かい水からは溶けていた気体が泡となって出てくることがある。"
+        },
+        {
+          "label": "2",
+          "text": "温度が上がると気体の溶解度は増加する。逆で気体は温度が上がると分子の運動が激しくなり水中にとどまりにくくなるため溶解度は減少する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一般に減少する。固体とは逆。",
+          "choice_id": "ch2_3_q046_c2",
+          "tts_text": "温度が上がると気体の溶解度は増加する。逆で気体は温度が上がると分子の運動が激しくなり水中にとどまりにくくなるため溶解度は減少する。"
+        },
+        {
+          "label": "3",
+          "text": "固体も気体も温度が上がると溶解度が増加する。固体は多くの場合増加するが気体は一般に減少するため両者の傾向は逆である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "気体は減少する傾向がある。",
+          "choice_id": "ch2_3_q046_c3",
+          "tts_text": "固体も気体も温度が上がると溶解度が増加する。固体は多くの場合増加するが気体は一般に減少するため両者の傾向は逆である。"
+        },
+        {
+          "label": "4",
+          "text": "気体の溶解度は温度に全く影響されない。気体の溶解度は温度に大きく影響され温度が上がるほど溶解度が減少する明確な傾向がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度に大きく影響される。",
+          "choice_id": "ch2_3_q046_c4",
+          "tts_text": "気体の溶解度は温度に全く影響されない。気体の溶解度は温度に大きく影響され温度が上がるほど溶解度が減少する明確な傾向がある。"
+        }
+      ],
+      "explanation": "気体の水への溶解度は固体とは逆に、温度が上がると一般に減少します。これは温度が上がると気体分子の運動エネルギーが大きくなり水面から飛び出しやすくなるためです。やかんで水を温めるとまだ沸騰前でも小さな泡が出るのは溶けていた空気が出てくるためです。",
+      "evidence": [],
+      "related_concept_ids": [
+        "3_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "気体の水への溶解度と温度の関係について、正しい記述を選びなさい。",
+      "tts_explanation": "気体の水への溶解度は固体とは逆に、温度が上がると一般に減少します。これは温度が上がると気体分子の運動エネルギーが大きくなり水面から飛び出しやすくなるためです。やかんで水を温めるとまだ沸騰前でも小さな泡が出るのは溶けていた空気が出てくるためです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch2_3_q047",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "procedure",
+      "sub_category": "コロイド溶液の作り方",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "水酸化鉄（三価）コロイドの作り方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "無色透明な溶液が得られる。水酸化鉄コロイドは赤褐色のコロイド溶液であり無色透明にはならない。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "赤褐色の溶液。",
+          "choice_id": "ch2_3_q047_c1",
+          "tts_text": "無色透明な溶液が得られる。水酸化鉄コロイドは赤褐色のコロイド溶液であり無色透明にはならない。"
+        },
+        {
+          "label": "2",
+          "text": "冷水に塩化鉄（三価）を大量に加えて作る。正しくは沸騰した水に少量ずつ加えるのであり冷水に大量に加えると沈殿が生じてしまう。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "沸騰水に少量ずつ。",
+          "choice_id": "ch2_3_q047_c2",
+          "tts_text": "冷水に塩化鉄（三価）を大量に加えて作る。正しくは沸騰した水に少量ずつ加えるのであり冷水に大量に加えると沈殿が生じてしまう。"
+        },
+        {
+          "label": "3",
+          "text": "沸騰した水に塩化鉄（三価）水溶液を少量ずつ加えると赤褐色のコロイド溶液が得られる。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q047_c3",
+          "tts_text": "沸騰した水に塩化鉄（三価）水溶液を少量ずつ加えると赤褐色のコロイド溶液が得られる。"
+        },
+        {
+          "label": "4",
+          "text": "NaOHを塩化鉄に加えて作る。NaOHを加えると水酸化鉄の沈殿が直接生じコロイド溶液にはならない。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "水酸化ナトリウムを加えると沈殿するがコロイドにはならない。",
+          "choice_id": "ch2_3_q047_c4",
+          "tts_text": "水酸化ナトリウムを塩化鉄に加えて作る。水酸化ナトリウムを加えると水酸化鉄の沈殿が直接生じコロイド溶液にはならない。"
+        }
+      ],
+      "explanation": "水酸化鉄（三価）コロイドは沸騰水に塩化鉄（三価）水溶液を少量ずつ加えて作ります。加水分解によって水酸化鉄（三価）の微粒子が生成しコロイド状態で分散します。赤褐色のコロイド溶液が得られます。冷水で行ったり1℃に大量に加えると沈殿してしまいコロイドになりません。",
+      "evidence": [
+        {
+          "source_id": "3_3_sub_001",
+          "quote": "沸騰水に塩化鉄(III)水溶液を加えるとコロイド溶液となる"
+        }
+      ],
+      "related_concept_ids": [
+        "3_3_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "水酸化鉄（三価）コロイドの作り方として、正しいものを選びなさい。",
+      "tts_explanation": "水酸化鉄（三価）コロイドは沸騰水に塩化鉄（三価）水溶液を少量ずつ加えて作ります。加水分解によって水酸化鉄（三価）の微粒子が生成しコロイド状態で分散します。赤褐色のコロイド溶液が得られます。冷水で行ったり一度に大量に加えると沈殿してしまいコロイドになりません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q048",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "property",
+      "sub_category": "凝固点降下の利用",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "凝固点降下の身近な利用例として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "凝固点降下は実用的には使われない理論上の現象である。道路への融雪剤散布や不凍液など身近な場面で実用的に活用されている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "凍結防止剤や不凍液など多くの実用例がある。",
+          "choice_id": "ch2_3_q048_c1",
+          "tts_text": "凝固点降下は実用的には使われない理論上の現象である。道路への融雪剤散布や不凍液など身近な場面で実用的に活用されている。"
+        },
+        {
+          "label": "2",
+          "text": "冬に道路にCaCl₂を撒くと水の凝固点が下がり、路面の凍結を防ぐことができる。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q048_c2",
+          "tts_text": "冬に道路に塩化カルシウムを撒くと水の凝固点が下がり、路面の凍結を防ぐことができる。"
+        },
+        {
+          "label": "3",
+          "text": "CaCl₂は非電解質なので凝固点降下の効果は小さい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電解質であり三つのイオンに電離するため効果が大きい。",
+          "choice_id": "ch2_3_q048_c3",
+          "tts_text": "塩化カルシウムは非電解質なので凝固点降下の効果は小さい。"
+        },
+        {
+          "label": "4",
+          "text": "道路に塩を撒くと凝固点が上がるため路面が凍りやすくなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "凝固点は下がる。",
+          "choice_id": "ch2_3_q048_c4",
+          "tts_text": "道路に塩を撒くと凝固点が上がるため路面が凍りやすくなる。"
+        }
+      ],
+      "explanation": "凝固点降下は日常生活で広く利用されています。冬の道路にCaCl₂（凍結防止剤）を撒くと水の凝固点が0℃以下に下がるため凍結を防げます。CaCl₂は水中でカルシウムイオン一つと塩化物イオン二つの計三つのイオンに電離するため、非電解質の三倍近い凝固点降下効果があります。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "電解質の場合は、電離して粒子数が増えるため"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "凝固点降下の身近な利用例として、正しいものを選びなさい。",
+      "tts_explanation": "凝固点降下は日常生活で広く利用されています。冬の道路に塩化カルシウム（凍結防止剤）を撒くと水の凝固点が零度以下に下がるため凍結を防げます。塩化カルシウムは水中でカルシウムイオン一つと塩化物イオン二つの計三つのイオンに電離するため、非電解質の三倍近い凝固点降下効果があります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q049",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "confusion",
+      "sub_category": "モル沸点上昇とモル凝固点降下の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "水のモル沸点上昇定数とモル凝固点降下定数に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "モル沸点上昇定数は〇・五一五である。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q049_c1",
+          "tts_text": "モル沸点上昇定数は〇・五一五である。"
+        },
+        {
+          "label": "2",
+          "text": "モル凝固点降下定数の方がモル沸点上昇定数より大きい。水のモル凝固点降下定数は一・八六、沸点上昇定数は〇・五一五でありこの記述は正しい。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q049_c2",
+          "tts_text": "モル凝固点降下定数の方がモル沸点上昇定数より大きい。水のモル凝固点降下定数は一・八六、沸点上昇定数は〇・五一五でありこの記述は正しい。"
+        },
+        {
+          "label": "3",
+          "text": "モル凝固点降下定数は一・八六である。",
+          "is_correct": false,
+          "choice_id": "ch2_3_q049_c3",
+          "tts_text": "モル凝固点降下定数は一・八六である。"
+        },
+        {
+          "label": "4",
+          "text": "モル沸点上昇定数は一・八六であり、モル凝固点降下定数は〇・五一五である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "値が逆。沸点上昇が〇・五一五、凝固点降下が一・八六。",
+          "choice_id": "ch2_3_q049_c4",
+          "tts_text": "モル沸点上昇定数は一・八六であり、モル凝固点降下定数は〇・五一五である。"
+        }
+      ],
+      "explanation": "水のモル沸点上昇定数は〇・五一五、モル凝固点降下定数は一・八六です。この二つの値を逆に覚えてしまうのは非常に多いミスです。凝固点降下定数の方が大きいため、同じ濃度の溶液では沸点の上昇幅より凝固点の降下幅の方が大きくなります。",
+      "evidence": [
+        {
+          "source_id": "3_2_law_001",
+          "quote": "水のモル沸点上昇Kbは0.515 K・kg/mol"
+        }
+      ],
+      "related_concept_ids": [
+        "3_2_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "水のモル沸点上昇定数とモル凝固点降下定数に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "水のモル沸点上昇定数は〇・五一五、モル凝固点降下定数は一・八六です。この二つの値を逆に覚えてしまうのは非常に多いミスです。凝固点降下定数の方が大きいため、同じ濃度の溶液では沸点の上昇幅より凝固点の降下幅の方が大きくなります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch2_3_q050",
+      "chapter": "2-3",
+      "chapter_title": "溶液",
+      "category": "procedure",
+      "sub_category": "再結晶の保温漏斗の理由",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "再結晶の際に保温漏斗を使う理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ろ過速度を上げるため。保温漏斗の目的はろ過速度ではなく液温の低下による目的物質の結晶析出を防ぐことにある。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "速度向上は副次的効果に過ぎない。",
+          "choice_id": "ch2_3_q050_c1",
+          "tts_text": "ろ過速度を上げるため。保温漏斗の目的はろ過速度ではなく液温の低下による目的物質の結晶析出を防ぐことにある。"
+        },
+        {
+          "label": "2",
+          "text": "ろ過中に液温が下がると目的物質の結晶がろ紙上に析出してしまい収量が低下するのを防ぐため。",
+          "is_correct": true,
+          "choice_id": "ch2_3_q050_c2",
+          "tts_text": "ろ過中に液温が下がると目的物質の結晶がろ紙上に析出してしまい収量が低下するのを防ぐため。"
+        },
+        {
+          "label": "3",
+          "text": "不純物がろ紙を通過するのを防ぐため。不純物の除去はろ紙の役割であり保温漏斗の目的は温度を保つことで目的物質の析出を防ぐことである。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "不純物の除去は通常のろ過の目的。保温漏斗は温度維持が目的。",
+          "choice_id": "ch2_3_q050_c3",
+          "tts_text": "不純物がろ紙を通過するのを防ぐため。不純物の除去はろ紙の役割であり保温漏斗の目的は温度を保つことで目的物質の析出を防ぐことである。"
+        },
+        {
+          "label": "4",
+          "text": "保温漏斗を使う必要はなく通常の漏斗でよい。通常の漏斗では液温が下がり目的物質が結晶としてろ紙上に析出して収量が低下してしまう。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "温度低下で目的物質が析出する問題が生じる。",
+          "choice_id": "ch2_3_q050_c4",
+          "tts_text": "保温漏斗を使う必要はなく通常の漏斗でよい。通常の漏斗では液温が下がり目的物質が結晶としてろ紙上に析出して収量が低下してしまう。"
+        }
+      ],
+      "explanation": "再結晶で最初に行う熱いろ過では保温漏斗を使います。理由はろ過中に温度が下がると飽和溶液から目的物質が結晶化してろ紙の上に残ってしまい、最終的に得られる結晶の収量が減ってしまうからです。保温漏斗で温度を維持しながらろ過することで収量を最大化できます。",
+      "evidence": [
+        {
+          "source_id": "3_1_proc_001",
+          "quote": "ろ過の途中で液温が下がり、目的物質の結晶が析出してろ紙上に残ってしまい、収量が低下するのを防ぐため"
+        }
+      ],
+      "related_concept_ids": [
+        "3_1_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "再結晶の際に保温漏斗を使う理由として、正しいものを選びなさい。",
+      "tts_explanation": "再結晶で最初に行う熱いろ過では保温漏斗を使います。理由はろ過中に温度が下がると飽和溶液から目的物質が結晶化してろ紙の上に残ってしまい、最終的に得られる結晶の収量が減ってしまうからです。保温漏斗で温度を維持しながらろ過することで収量を最大化できます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    }
   ]
 }

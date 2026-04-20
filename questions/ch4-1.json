@@ -6,59 +6,3041 @@
     "textbook": "化学",
     "total_questions": 50,
     "version": "1.0",
-    "tts_policy": { "note": "TTS用。化学式・数式なし。", "no_chemical_formulas": true, "no_math_equations": true },
-    "trap_type_legend": { "keyword_swap": "キーワードすり替え", "concept_confusion": "類似概念混同", "property_swap": "性質入れ替え", "condition_change": "条件変更", "step_order": "手順入れ替え", "reason_swap": "理由すり替え", "partial_truth": "前半正後半誤", "multiple_swap": "複数すり替え", "negation": "肯定否定入れ替え" }
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    },
+    "display_policy": {
+      "note": "question / choices[].text / explanation は表示用（アラビア数字・単位記号・主要化学式）。tts_question / choices[].tts_text / tts_explanation は音声読み上げ用（漢数字・単位語・日本語化学名）。",
+      "display_fields": [
+        "question",
+        "choices[].text",
+        "explanation"
+      ],
+      "tts_fields": [
+        "tts_question",
+        "choices[].tts_text",
+        "tts_explanation"
+      ],
+      "number_unit_mapping": {
+        "立方センチメートルあたり": "cm³あたり",
+        "立方センチメートル": "cm³",
+        "キロジュール毎グラム": "kJ/g",
+        "キロジュール毎モル": "kJ/mol",
+        "キロジュール": "kJ",
+        "グラム毎モル": "g/mol",
+        "クーロン毎モル": "C/mol",
+        "グラム": "g",
+        "ミリリットル": "mL",
+        "モル": "mol",
+        "パーセント": "%",
+        "リットル": "L",
+        "アンペア": "A",
+        "クーロン": "C",
+        "度": "℃",
+        "気圧": "atm",
+        "パスカル": "Pa",
+        "ケルビン": "K"
+      },
+      "formula_mapping": {
+        "炭酸水素ナトリウム": "NaHCO₃",
+        "炭酸カルシウム": "CaCO₃",
+        "塩化マグネシウム": "MgCl₂",
+        "塩化カルシウム": "CaCl₂",
+        "塩化ナトリウム": "NaCl",
+        "水酸化ナトリウム": "NaOH",
+        "水酸化カルシウム": "Ca(OH)₂",
+        "硫酸ナトリウム": "Na₂SO₄",
+        "硝酸ナトリウム": "NaNO₃",
+        "硫酸銅": "CuSO₄",
+        "二酸化ケイ素": "SiO₂",
+        "二酸化硫黄": "SO₂",
+        "二酸化炭素": "CO₂",
+        "一酸化炭素": "CO",
+        "メタン": "CH₄",
+        "アンモニア": "NH₃"
+      }
+    },
+    "choice_shuffle_policy": {
+      "note": "choices[].choice_id は問題内で固有の安定識別子。アプリはユーザ提示時に choices を配列としてシャッフルし、choice_id と is_correct を参照して採点する。",
+      "runtime_shuffle": true,
+      "correct_positions_balanced_in_file": true
+    }
   },
   "questions": [
-    { "id": "ch4_1_q001", "chapter": "4-1", "chapter_title": "非金属元素", "category": "definition", "sub_category": "ハロゲンの酸化力", "difficulty": 3, "question_type": "correct", "question": "ハロゲン単体の酸化力の強さの順として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "フッ素が最も強く、塩素、臭素、ヨウ素の順に弱くなる。原子番号が小さいほど酸化力が強い。", "is_correct": true }, { "label": "2", "text": "ヨウ素が最も酸化力が強い。", "is_correct": false, "trap_type": "negation", "trap_detail": "フッ素が最強。ヨウ素は最弱。" }, { "label": "3", "text": "原子番号が大きいほど酸化力が強い。", "is_correct": false, "trap_type": "negation", "trap_detail": "小さいほど強い。" }, { "label": "4", "text": "ハロゲンの酸化力はすべて同等である。", "is_correct": false, "trap_type": "negation", "trap_detail": "明確な順序がある。" } ], "explanation": "ハロゲン単体の酸化力は原子番号が小さいほど強くなります。これはフッ素が最も原子半径が小さく電気陰性度が最大であるため電子を最も強く引きつけるからです。「ハロゲンは小さいものほど力持ち」と覚えましょう。", "evidence": [ { "source_id": "1_4_def_001", "quote": "酸化力はF2 > Cl2 > Br2 > I2の順に強い" } ], "related_concept_ids": ["1_4_def_001"], "mnemonic": "ハロゲンは小さいものほど力持ち" },
-    { "id": "ch4_1_q002", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "フッ素の性質", "difficulty": 3, "question_type": "correct", "question": "フッ素について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "淡黄色の気体で酸化力が最も強い。水と激しく反応して酸素を発生する。低温・暗所でも水素と爆発的に反応する。電気陰性度が全元素中最大。", "is_correct": true }, { "label": "2", "text": "フッ素は黄緑色の気体である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "黄緑色は塩素。フッ素は淡黄色。" }, { "label": "3", "text": "フッ素は水に溶けて安定に存在する。", "is_correct": false, "trap_type": "negation", "trap_detail": "水と激しく反応して酸素を発生する。" }, { "label": "4", "text": "フッ素は高温でないと水素と反応しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "低温・暗所でも爆発的に反応する。" } ], "explanation": "フッ素は全元素中で最も電気陰性度が大きく最も酸化力が強いハロゲンです。淡黄色で有毒、水すらも分解して酸素を発生させるほど反応性が高いです。塩素の黄緑色と混同しやすいので色の区別が重要です。", "evidence": [ { "source_id": "1_4_sub_001", "quote": "淡黄色。酸化力が最も強い。水と激しく反応してO2を発生" } ], "related_concept_ids": ["1_4_sub_001"], "mnemonic": null },
-    { "id": "ch4_1_q003", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "塩素の性質", "difficulty": 2, "question_type": "correct", "question": "塩素について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "黄緑色で刺激臭の有毒な気体。水に溶けやすく漂白作用と殺菌作用がある。湿ったヨウ化カリウムデンプン紙を青変させる。", "is_correct": true }, { "label": "2", "text": "塩素は無色無臭の気体である。", "is_correct": false, "trap_type": "negation", "trap_detail": "黄緑色で刺激臭。" }, { "label": "3", "text": "塩素は漂白作用を持たない。", "is_correct": false, "trap_type": "negation", "trap_detail": "漂白作用がある。" }, { "label": "4", "text": "塩素は水に溶けない。", "is_correct": false, "trap_type": "negation", "trap_detail": "水に溶けやすい。" } ], "explanation": "塩素は黄緑色で有毒な気体です。水に溶かすと塩酸と次亜塩素酸が生じ、次亜塩素酸の酸化力により漂白・殺菌作用を示します。塩素の検出には湿ったヨウ化カリウムデンプン紙を使い、ヨウ素が遊離してデンプンと反応し青変します。", "evidence": [ { "source_id": "1_4_sub_002", "quote": "黄緑色、刺激臭、有毒、漂白作用、殺菌作用" } ], "related_concept_ids": ["1_4_sub_002"], "mnemonic": null },
-    { "id": "ch4_1_q004", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "フッ化水素の特異性", "difficulty": 3, "question_type": "correct", "question": "フッ化水素について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "他のハロゲン化水素と異なり弱酸である。水素結合により沸点が高い。ガラスを腐食するためポリエチレン容器で保存する。", "is_correct": true }, { "label": "2", "text": "フッ化水素は強酸である。", "is_correct": false, "trap_type": "negation", "trap_detail": "弱酸。他のハロゲン化水素は強酸。" }, { "label": "3", "text": "フッ化水素はガラス瓶で保存する。", "is_correct": false, "trap_type": "negation", "trap_detail": "ガラスを溶かすのでポリエチレン容器。" }, { "label": "4", "text": "フッ化水素の沸点はハロゲン化水素の中で最も低い。", "is_correct": false, "trap_type": "negation", "trap_detail": "水素結合により最も高い。" } ], "explanation": "フッ化水素はハロゲン化水素の中で唯一の弱酸です。分子間に水素結合が形成されるため沸点が異常に高くなります。最も重要な性質はガラス（二酸化ケイ素）を腐食することで、これを利用してガラスのエッチング加工が行われます。", "evidence": [ { "source_id": "1_4_sub_003", "quote": "他のハロゲン化水素と異なり弱酸。水素結合により沸点が高い。ガラスを溶かす" } ], "related_concept_ids": ["1_4_sub_003"], "mnemonic": null },
-    { "id": "ch4_1_q005", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "濃硫酸の性質", "difficulty": 3, "question_type": "correct", "question": "濃硫酸の性質として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "不揮発性で吸湿性と脱水性をもつ。水で薄めるときは水に濃硫酸を少しずつ注ぐ。熱濃硫酸は酸化作用を示す。密度は約一点八三グラム毎立方センチメートル。", "is_correct": true }, { "label": "2", "text": "希釈するときは濃硫酸に水を注ぐ。", "is_correct": false, "trap_type": "negation", "trap_detail": "水に濃硫酸を少しずつ注ぐ。逆は危険。" }, { "label": "3", "text": "濃硫酸は揮発性が高い。", "is_correct": false, "trap_type": "negation", "trap_detail": "不揮発性。" }, { "label": "4", "text": "希硫酸にも強い酸化作用がある。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "酸化作用は熱濃硫酸のみ。" } ], "explanation": "濃硫酸は不揮発性・吸湿性・脱水性の三大特性が出題頻度最高です。吸湿性は乾燥剤として、脱水性は有機物の炭化として試験で頻出です。希釈は必ず「水に酸を注ぐ」で行います。逆にすると激しく沸騰して飛散し大変危険です。", "evidence": [ { "source_id": "1_5_sub_001", "quote": "不揮発性、吸湿性、脱水性、酸化作用（熱濃硫酸）。水に濃硫酸を少しずつ注ぐ" } ], "related_concept_ids": ["1_5_sub_001"], "mnemonic": null },
-    { "id": "ch4_1_q006", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "アンモニアの性質", "difficulty": 2, "question_type": "correct", "question": "アンモニアについて、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "無色で刺激臭の気体。水にきわめてよく溶けて弱塩基性を示す。空気より軽いため上方置換で捕集する。濃塩酸を近づけると白煙を生じる。", "is_correct": true }, { "label": "2", "text": "アンモニアは空気より重い。", "is_correct": false, "trap_type": "negation", "trap_detail": "空気より軽い。" }, { "label": "3", "text": "アンモニアは水に溶けにくい。", "is_correct": false, "trap_type": "negation", "trap_detail": "極めてよく溶ける。" }, { "label": "4", "text": "アンモニアは酸性を示す。", "is_correct": false, "trap_type": "negation", "trap_detail": "塩基性。" } ], "explanation": "アンモニアは分子量十七で空気（平均分子量約二十九）より軽い気体です。水に非常によく溶けて弱塩基性を示します。濃塩酸を近づけると気体のアンモニアと塩化水素が反応して塩化アンモニウムの白煙が生じるのが有名な検出反応です。", "evidence": [ { "source_id": "1_6_sub_001", "quote": "無色、刺激臭、水にきわめてよく溶ける、空気より軽い" } ], "related_concept_ids": ["1_6_sub_001"], "mnemonic": null },
-    { "id": "ch4_1_q007", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "硝酸の性質", "difficulty": 3, "question_type": "correct", "question": "硝酸について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "強い酸化力を持つ強酸。水素よりイオン化傾向の小さい銅や銀も溶かす。光で分解しやすいため褐色瓶で保存する。鉄やアルミニウムに不動態を形成する。", "is_correct": true }, { "label": "2", "text": "硝酸にはイオン化傾向が水素より小さい金属を溶かす力はない。", "is_correct": false, "trap_type": "negation", "trap_detail": "銅や銀を溶かせる。" }, { "label": "3", "text": "硝酸は無色透明のガラス瓶で保存する。", "is_correct": false, "trap_type": "negation", "trap_detail": "光分解するため褐色瓶。" }, { "label": "4", "text": "硝酸は弱酸である。", "is_correct": false, "trap_type": "negation", "trap_detail": "強酸。" } ], "explanation": "硝酸は強酸で強い酸化力があり、希硝酸も銅を溶かします。光によって分解（二酸化窒素を生じ褐色になる）するため褐色瓶で保存が必要です。濃硝酸は鉄やアルミニウムの表面に不動態（緻密な酸化被膜）を形成し、それ以上溶けなくなります。", "evidence": [ { "source_id": "1_6_sub_002", "quote": "水素よりイオン化傾向の小さいCuやAgも溶かす。光で分解しやすいため褐色瓶で保存" } ], "related_concept_ids": ["1_6_sub_002"], "mnemonic": null },
-    { "id": "ch4_1_q008", "chapter": "4-1", "chapter_title": "非金属元素", "category": "procedure", "sub_category": "塩素の製法", "difficulty": 4, "question_type": "correct", "question": "塩素の実験室的製法として、正しい手順を選びなさい。", "choices": [ { "label": "1", "text": "酸化マンガン（四価）に濃塩酸を加えて加熱する。発生した気体を水の入った洗気瓶に通し塩化水素を除去し、次に濃硫酸の洗気瓶に通して水分を除去し、下方置換で集める。", "is_correct": true }, { "label": "2", "text": "洗気瓶の順番は濃硫酸→水の順である。", "is_correct": false, "trap_type": "step_order", "trap_detail": "水→濃硫酸の順。逆にすると再び水蒸気が混じる。" }, { "label": "3", "text": "希塩酸を用いても塩素が発生する。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "必ず濃塩酸を用いる。" }, { "label": "4", "text": "塩素は上方置換で集める。", "is_correct": false, "trap_type": "negation", "trap_detail": "空気より重いので下方置換。" } ], "explanation": "塩素の製法で最も出題されるのは洗気瓶の順番です。水→濃硫酸の順に通します。水は塩化水素を吸収するため、濃硫酸は水蒸気を吸収するためです。順番を逆にすると最後に水を通すことになり再び水蒸気が混入してしまいます。", "evidence": [ { "source_id": "1_4_rxn_001", "quote": "水→濃硫酸の順番で洗気瓶を通す。順番を逆にしてはいけない" } ], "related_concept_ids": ["1_4_rxn_001"], "mnemonic": null },
-    { "id": "ch4_1_q009", "chapter": "4-1", "chapter_title": "非金属元素", "category": "procedure", "sub_category": "接触法", "difficulty": 4, "question_type": "correct", "question": "硫酸の工業的製法（接触法）として、正しい手順を選びなさい。", "choices": [ { "label": "1", "text": "硫黄を燃焼させて二酸化硫黄を作り、酸化バナジウム（五価）を触媒として三酸化硫黄にし、濃硫酸に吸収させて硫酸を得る。三酸化硫黄を直接水に入れてはいけない。", "is_correct": true }, { "label": "2", "text": "触媒は白金を使用する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "酸化バナジウム（五価）。白金はオストワルト法。" }, { "label": "3", "text": "三酸化硫黄を直接水に入れる。", "is_correct": false, "trap_type": "negation", "trap_detail": "激しく発熱するため濃硫酸に吸収させる。" }, { "label": "4", "text": "接触法は硝酸の製法である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "硫酸の製法。硝酸はオストワルト法。" } ], "explanation": "接触法は硫酸の工業的製法です。三段階で進みます。第一に硫黄を燃焼して二酸化硫黄を作る。第二に酸化バナジウム（五価）触媒で三酸化硫黄にする。第三に濃硫酸に吸収させる。三酸化硫黄を直接水に入れると激しく発熱して危険です。", "evidence": [ { "source_id": "1_5_rxn_001", "quote": "酸化バナジウム(V)触媒。SO3を直接水に入れてはいけない" } ], "related_concept_ids": ["1_5_rxn_001"], "mnemonic": null },
-    { "id": "ch4_1_q010", "chapter": "4-1", "chapter_title": "非金属元素", "category": "procedure", "sub_category": "ハーバー・ボッシュ法", "difficulty": 3, "question_type": "correct", "question": "ハーバー・ボッシュ法について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "窒素と水素からアンモニアを合成する工業的製法。四酸化三鉄を主成分とする触媒を使用し、高温・高圧の条件が必要である。", "is_correct": true }, { "label": "2", "text": "触媒は白金である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "四酸化三鉄。白金はオストワルト法。" }, { "label": "3", "text": "常温・常圧で反応が進む。", "is_correct": false, "trap_type": "negation", "trap_detail": "高温（四百〜六百度）・高圧（百〜三百気圧）が必要。" }, { "label": "4", "text": "ハーバー法は硝酸の製法である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "アンモニアの製法。硝酸はオストワルト法。" } ], "explanation": "ハーバー・ボッシュ法は窒素の三重結合を切ってアンモニアにする工業プロセスです。触媒は四酸化三鉄（鉄系触媒）で、四百〜六百度、百〜三百気圧という高温高圧条件が必要です。「ハーバーの鉄」と覚えましょう。", "evidence": [ { "source_id": "1_6_rxn_001", "quote": "四酸化三鉄を主成分とする触媒。高温・高圧" } ], "related_concept_ids": ["1_6_rxn_001"], "mnemonic": "ハーバーの鉄" },
-    { "id": "ch4_1_q011", "chapter": "4-1", "chapter_title": "非金属元素", "category": "procedure", "sub_category": "オストワルト法", "difficulty": 4, "question_type": "correct", "question": "オストワルト法について、正しい手順を選びなさい。", "choices": [ { "label": "1", "text": "アンモニアを白金触媒で酸化して一酸化窒素にし、さらに酸化して二酸化窒素にした後、水に吸収させて硝酸を得る三段階のプロセス。", "is_correct": true }, { "label": "2", "text": "触媒は四酸化三鉄である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "白金。四酸化三鉄はハーバー法。" }, { "label": "3", "text": "一段階で直接アンモニアから硝酸が得られる。", "is_correct": false, "trap_type": "negation", "trap_detail": "三段階必要。" }, { "label": "4", "text": "オストワルト法はアンモニアの製法である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "硝酸の製法。アンモニアはハーバー法。" } ], "explanation": "オストワルト法は硝酸の工業的製法です。アンモニア→一酸化窒素→二酸化窒素→硝酸の三段階です。第一段階のみ白金触媒が必要です。副生する一酸化窒素は回収して再利用されます。「オストワルトの白金で勝算（硝酸）あり」と覚えます。", "evidence": [ { "source_id": "1_6_rxn_002", "quote": "白金触媒で酸化して一酸化窒素にし、さらに酸化して二酸化窒素とした後、水に吸収させて硝酸を得る" } ], "related_concept_ids": ["1_6_rxn_002"], "mnemonic": "オストワルトの白金で勝算あり" },
-    { "id": "ch4_1_q012", "chapter": "4-1", "chapter_title": "非金属元素", "category": "procedure", "sub_category": "気体の捕集法", "difficulty": 3, "question_type": "correct", "question": "気体の捕集法の選択基準として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "水に溶けにくい気体は水上置換。水に溶けやすく空気より軽い気体は上方置換。水に溶けやすく空気より重い気体は下方置換。", "is_correct": true }, { "label": "2", "text": "水に溶ける気体も水上置換で集められる。", "is_correct": false, "trap_type": "negation", "trap_detail": "水に吸収されてしまい集まらない。" }, { "label": "3", "text": "アンモニアは下方置換で集める。", "is_correct": false, "trap_type": "negation", "trap_detail": "空気より軽いので上方置換。" }, { "label": "4", "text": "すべての気体は水上置換で集められる。", "is_correct": false, "trap_type": "negation", "trap_detail": "水溶性のものは集められない。" } ], "explanation": "気体の捕集法の判断フローは二段階です。まず水に溶けやすいかを判定。溶けにくければ水上置換（純度が高い）。溶けやすければ空気との重さを比較し、軽ければ上方、重ければ下方置換です。アンモニア（分子量十七）は唯一上方置換で集める代表例です。", "evidence": [ { "source_id": "1_8_proc_001", "quote": "水に溶けにくい→水上置換。水に溶けやすい→軽ければ上方、重ければ下方" } ], "related_concept_ids": ["1_8_proc_001"], "mnemonic": null },
-    { "id": "ch4_1_q013", "chapter": "4-1", "chapter_title": "非金属元素", "category": "procedure", "sub_category": "乾燥剤の選択", "difficulty": 3, "question_type": "correct", "question": "気体の乾燥剤の選択基準として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "気体と反応しない乾燥剤を選ぶ。濃硫酸は酸性乾燥剤でアンモニアには使えない。ソーダ石灰は塩基性乾燥剤で酸性気体には使えない。塩化カルシウムはアンモニアに使えない例外がある。", "is_correct": true }, { "label": "2", "text": "すべての気体に濃硫酸を乾燥剤として使える。", "is_correct": false, "trap_type": "negation", "trap_detail": "塩基性のアンモニアには使えない。" }, { "label": "3", "text": "アンモニアの乾燥には塩化カルシウムが最適である。", "is_correct": false, "trap_type": "negation", "trap_detail": "錯イオンを形成するため使えない。" }, { "label": "4", "text": "乾燥剤は気体との反応を考慮する必要はない。", "is_correct": false, "trap_type": "negation", "trap_detail": "反応しないものを選ぶ必要がある。" } ], "explanation": "乾燥剤の選択は「気体と反応しないこと」が大原則です。アンモニアは特殊で、酸性の濃硫酸とは中和反応、中性の塩化カルシウムとは錯イオン形成で吸収されてしまうため、ソーダ石灰や酸化カルシウムしか使えません。頻出の例外問題です。", "evidence": [ { "source_id": "1_8_proc_002", "quote": "アンモニアの乾燥に濃硫酸を使ってはいけない。塩化カルシウムも使ってはいけない" } ], "related_concept_ids": ["1_8_proc_002"], "mnemonic": null },
-    { "id": "ch4_1_q014", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "洗気瓶の順序の間違い", "difficulty": 4, "question_type": "incorrect", "question": "塩素の実験室的製法に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "酸化マンガン（四価）に濃塩酸を加えて加熱する。", "is_correct": false }, { "label": "2", "text": "水の洗気瓶で塩化水素を除去する。", "is_correct": false }, { "label": "3", "text": "次に濃硫酸の洗気瓶で水蒸気を除去する。", "is_correct": false }, { "label": "4", "text": "洗気瓶は濃硫酸を先に通し、次に水を通すのが正しい順序である。", "is_correct": true, "trap_type": "step_order", "trap_detail": "水→濃硫酸の順が正しい。逆にすると最後に水蒸気が混入する。" } ], "explanation": "洗気瓶の順番は最頻出のひっかけ問題です。正しくは水（塩化水素除去）→濃硫酸（水蒸気除去）の順です。逆にすると最後に水を通すことになり、せっかく除去した水蒸気が再び混入してしまいます。「水で洗ってから硫酸で乾燥」と覚えましょう。", "evidence": [ { "source_id": "1_4_rxn_001", "quote": "洗気瓶の順番を「濃硫酸→水」にしてはいけない" } ], "related_concept_ids": ["1_4_rxn_001"], "mnemonic": null },
-    { "id": "ch4_1_q015", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "工業的製法の触媒の混同", "difficulty": 4, "question_type": "incorrect", "question": "工業的製法の触媒に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "ハーバー・ボッシュ法では四酸化三鉄系の触媒を使用する。", "is_correct": false }, { "label": "2", "text": "オストワルト法では白金触媒を使用する。", "is_correct": false }, { "label": "3", "text": "接触法では酸化バナジウム（五価）を触媒として使用する。", "is_correct": false }, { "label": "4", "text": "ハーバー法は白金触媒、オストワルト法は鉄触媒を使用する。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "逆。ハーバー法は鉄、オストワルト法は白金。" } ], "explanation": "触媒の混同は定番のひっかけです。「ハーバーの鉄、オストワルトの白金で勝算（硝酸）あり」で覚えれば混乱しません。接触法の酸化バナジウムも加えた三つの製法と触媒のセットが頻出です。", "evidence": [ { "source_id": "1_6_tip_001", "quote": "ハーバーの鉄、オストワルトの白金で勝算あり" } ], "related_concept_ids": ["1_6_tip_001"], "mnemonic": "ハーバーの鉄、オストワルトの白金で勝算あり" },
-    { "id": "ch4_1_q016", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "濃硫酸の希釈方法", "difficulty": 3, "question_type": "incorrect", "question": "濃硫酸の取り扱いに関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "濃硫酸は密度が大きく約一点八三グラム毎立方センチメートルである。", "is_correct": false }, { "label": "2", "text": "水に溶解する際は多量の熱を発生する。", "is_correct": false }, { "label": "3", "text": "濃硫酸は不揮発性であり揮発性の酸の製造に利用できる。", "is_correct": false }, { "label": "4", "text": "希釈するときは濃硫酸に水を少しずつ加えるのが正しい方法である。", "is_correct": true, "trap_type": "negation", "trap_detail": "水に濃硫酸を少しずつ注ぐのが正しい。逆は突沸の危険。" } ], "explanation": "濃硫酸の希釈は「水に酸を注ぐ」が鉄則です。逆に（濃硫酸に水を注ぐと）比重の小さい水が硫酸の表面に留まり、溶解熱で一気に沸騰して飛散する危険があります。英語では「Do as you oughta, add acid to water」と覚えます。", "evidence": [ { "source_id": "1_5_sub_001", "quote": "水に濃硫酸を少しずつ注ぐ必要がある" } ], "related_concept_ids": ["1_5_sub_001"], "mnemonic": null },
-    { "id": "ch4_1_q017", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "フッ素と塩素の色の混同", "difficulty": 2, "question_type": "incorrect", "question": "ハロゲン単体の色に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "塩素は黄緑色の気体である。", "is_correct": false }, { "label": "2", "text": "臭素は赤褐色の液体である。", "is_correct": false }, { "label": "3", "text": "ヨウ素は黒紫色の固体である。", "is_correct": false }, { "label": "4", "text": "フッ素は黄緑色の気体である。", "is_correct": true, "trap_type": "property_swap", "trap_detail": "フッ素は淡黄色。黄緑色は塩素。" } ], "explanation": "ハロゲン単体の色は頻出です。フッ素は淡黄色、塩素は黄緑色、臭素は赤褐色の液体、ヨウ素は黒紫色の固体です。フッ素と塩素はどちらも黄色っぽい気体ですが、フッ素は淡黄色、塩素は黄緑色と明確に区別されます。", "evidence": [ { "source_id": "1_4_sub_001", "quote": "淡黄色" }, { "source_id": "1_4_sub_002", "quote": "黄緑色" } ], "related_concept_ids": ["1_4_sub_001", "1_4_sub_002"], "mnemonic": null },
-    { "id": "ch4_1_q018", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "硝酸の保存", "difficulty": 2, "question_type": "correct", "question": "硝酸の保存方法として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "光によって分解するため褐色瓶に入れて冷暗所で保存する。", "is_correct": true }, { "label": "2", "text": "透明なガラス瓶で日光に当てて保存する。", "is_correct": false, "trap_type": "negation", "trap_detail": "光分解するため褐色瓶と冷暗所が必要。" }, { "label": "3", "text": "ポリエチレン容器で保存する。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "ポリエチレンはフッ化水素の保存容器。" }, { "label": "4", "text": "硝酸は安定なので特別な保存は不要。", "is_correct": false, "trap_type": "negation", "trap_detail": "光分解性があり褐色瓶が必要。" } ], "explanation": "硝酸は光エネルギーで分解して二酸化窒素と酸素と水になります。生じた二酸化窒素は褐色の気体であるため古い硝酸が褐色になっていることがあります。これを防ぐため褐色瓶に入れて冷暗所に保存します。", "evidence": [ { "source_id": "1_6_sub_002", "quote": "光で分解しやすいため褐色瓶で保存する" } ], "related_concept_ids": ["1_6_sub_002"], "mnemonic": null },
-    { "id": "ch4_1_q019", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "製法と製品の混同", "difficulty": 3, "question_type": "incorrect", "question": "工業的製法と製品の組み合わせに関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "接触法で硫酸を製造する。", "is_correct": false }, { "label": "2", "text": "ハーバー・ボッシュ法でアンモニアを合成する。", "is_correct": false }, { "label": "3", "text": "オストワルト法で硝酸を製造する。", "is_correct": false }, { "label": "4", "text": "接触法でアンモニアを合成し、ハーバー法で硫酸を製造する。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "逆。接触法は硫酸、ハーバー法はアンモニア。" } ], "explanation": "三大工業的製法の製品を入れ替えるのは頻出のひっかけです。接触法→硫酸（触媒：酸化バナジウム）。ハーバー法→アンモニア（触媒：鉄）。オストワルト法→硝酸（触媒：白金）。この三つのセットを正確に覚えましょう。", "evidence": [ { "source_id": "1_5_rxn_001", "quote": "接触法は硫酸を製造する" }, { "source_id": "1_6_rxn_001", "quote": "ハーバー・ボッシュ法はアンモニアを合成する" } ], "related_concept_ids": ["1_5_rxn_001", "1_6_rxn_001"], "mnemonic": null },
-    { "id": "ch4_1_q020", "chapter": "4-1", "chapter_title": "非金属元素", "category": "mnemonic", "sub_category": "工業的製法の触媒", "difficulty": 2, "question_type": "correct", "question": "工業的製法の触媒の語呂合わせとして、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "「ハーバーの鉄、オストワルトの白金で勝算（硝酸）あり」で覚える。接触法の触媒は酸化バナジウム。", "is_correct": true }, { "label": "2", "text": "ハーバーの白金、オストワルトの鉄と覚える。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "逆。" }, { "label": "3", "text": "この語呂合わせでは硫酸の製法の触媒も覚えられる。", "is_correct": false, "trap_type": "partial_truth", "trap_detail": "この語呂合わせはアンモニアと硝酸のみ。硫酸の触媒は別に覚える。" }, { "label": "4", "text": "三つの製法すべて同じ触媒を使う。", "is_correct": false, "trap_type": "negation", "trap_detail": "すべて異なる。" } ], "explanation": "触媒の混同対策にこの語呂合わせは非常に有効です。ハーバー法→鉄（四酸化三鉄）、オストワルト法→白金。「勝算」は「硝酸」にかけています。接触法の酸化バナジウムは「接V（セツブイ）」と覚える方法もあります。", "evidence": [ { "source_id": "1_6_tip_001", "quote": "ハーバーの鉄、オストワルトの白金で勝算あり" } ], "related_concept_ids": ["1_6_tip_001"], "mnemonic": "ハーバーの鉄、オストワルトの白金で勝算あり" },
-    { "id": "ch4_1_q021", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "接触法での直接溶解の禁止", "difficulty": 3, "question_type": "incorrect", "question": "接触法に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "硫黄を燃焼させて二酸化硫黄を得る第一段階がある。", "is_correct": false }, { "label": "2", "text": "酸化バナジウム（五価）が触媒として使われる。", "is_correct": false }, { "label": "3", "text": "三酸化硫黄は濃硫酸に吸収させる。", "is_correct": false }, { "label": "4", "text": "三酸化硫黄を直接水に溶かすのが最も効率的で安全な方法である。", "is_correct": true, "trap_type": "negation", "trap_detail": "直接水に入れるのは激しい発熱で危険。濃硫酸に吸収させる。" } ], "explanation": "三酸化硫黄を水に直接入れると激しく発熱し、硫酸のミストが発生して危険です。そのためまず濃硫酸に吸収させて発煙硫酸とし、それを水で希釈して目的の濃度の硫酸にします。「直接水に入れない」がポイントです。", "evidence": [ { "source_id": "1_5_rxn_001", "quote": "SO3を直接水に溶かす手順はとらない" } ], "related_concept_ids": ["1_5_rxn_001"], "mnemonic": null },
-    { "id": "ch4_1_q022", "chapter": "4-1", "chapter_title": "非金属元素", "category": "classification", "sub_category": "気体の捕集法分類", "difficulty": 3, "question_type": "correct", "question": "次の気体と適切な捕集法の対応として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "水素と酸素と窒素は水上置換。塩素と二酸化炭素と塩化水素は下方置換。アンモニアは上方置換。", "is_correct": true }, { "label": "2", "text": "アンモニアは下方置換で集める。", "is_correct": false, "trap_type": "negation", "trap_detail": "上方置換。空気より軽い。" }, { "label": "3", "text": "塩素は水上置換で集める。", "is_correct": false, "trap_type": "negation", "trap_detail": "水に溶けやすいので下方置換。" }, { "label": "4", "text": "二酸化炭素は上方置換で集める。", "is_correct": false, "trap_type": "negation", "trap_detail": "空気より重いので下方置換。" } ], "explanation": "水に溶けにくい水素・酸素・窒素・一酸化窒素は水上置換。水に溶けやすく空気より重い塩素・二酸化炭素・塩化水素・二酸化硫黄・二酸化窒素は下方置換。水に溶けやすく空気より軽い気体はアンモニアだけで上方置換です。", "evidence": [ { "source_id": "1_8_proc_001", "quote": "水上置換、下方置換、上方置換の使い分け" } ], "related_concept_ids": ["1_8_proc_001"], "mnemonic": null },
-    { "id": "ch4_1_q023", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "アンモニアの乾燥剤の例外", "difficulty": 4, "question_type": "incorrect", "question": "アンモニアの乾燥に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "アンモニアは塩基性の気体である。", "is_correct": false }, { "label": "2", "text": "濃硫酸はアンモニアと中和反応するため使えない。", "is_correct": false }, { "label": "3", "text": "ソーダ石灰はアンモニアの乾燥に使える。", "is_correct": false }, { "label": "4", "text": "塩化カルシウムは中性なのでアンモニアの乾燥に適している。", "is_correct": true, "trap_type": "negation", "trap_detail": "塩化カルシウムはアンモニアと錯イオンを形成するため使えない。" } ], "explanation": "塩化カルシウムは一般的には中性の乾燥剤ですが、アンモニアとは特殊な反応（錯イオン形成）をしてアンモニアを吸収してしまうため使えません。「中性だから何にでも使える」と思い込むと間違えます。アンモニアの乾燥にはソーダ石灰や酸化カルシウムを使います。", "evidence": [ { "source_id": "1_8_proc_002", "quote": "アンモニアの乾燥に塩化カルシウムを使ってはいけない（錯イオン形成）" } ], "related_concept_ids": ["1_8_proc_002"], "mnemonic": null },
-    { "id": "ch4_1_q024", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "フッ化水素とガラス", "difficulty": 2, "question_type": "correct", "question": "フッ化水素がガラスを腐食する性質について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "フッ化水素はガラスの主成分である二酸化ケイ素と反応してガラスを溶かす。この性質を利用してガラスのエッチング加工が行われる。保存にはポリエチレン容器を用いる。", "is_correct": true }, { "label": "2", "text": "フッ化水素はガラスに影響を与えない。", "is_correct": false, "trap_type": "negation", "trap_detail": "ガラスを腐食する。" }, { "label": "3", "text": "すべてのハロゲン化水素がガラスを腐食する。", "is_correct": false, "trap_type": "negation", "trap_detail": "フッ化水素のみの特異な性質。" }, { "label": "4", "text": "フッ化水素はガラス瓶に保存できる。", "is_correct": false, "trap_type": "negation", "trap_detail": "ガラスを溶かすため不可。" } ], "explanation": "フッ化水素がガラスを腐食する性質はハロゲン化水素の中でフッ化水素だけの特異な性質です。二酸化ケイ素と反応してフルオロケイ酸を生じます。この性質を利用してガラスの曇りガラス加工（エッチング）が工業的に行われています。", "evidence": [ { "source_id": "1_4_rxn_002", "quote": "フッ化水素酸がガラスの主成分である二酸化ケイ素と反応する" } ], "related_concept_ids": ["1_4_rxn_002"], "mnemonic": null },
-    { "id": "ch4_1_q025", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "ハロゲン化水素の酸性", "difficulty": 3, "question_type": "incorrect", "question": "ハロゲン化水素の酸性に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "塩酸は強酸である。", "is_correct": false }, { "label": "2", "text": "臭化水素酸は強酸である。", "is_correct": false }, { "label": "3", "text": "ヨウ化水素酸は強酸である。", "is_correct": false }, { "label": "4", "text": "フッ化水素酸は強酸である。", "is_correct": true, "trap_type": "negation", "trap_detail": "弱酸。他のハロゲン化水素（塩酸・臭化水素酸・ヨウ化水素酸）は強酸。" } ], "explanation": "ハロゲン化水素の中でフッ化水素酸だけが弱酸である点は超頻出の出題ポイントです。フッ素は電気陰性度が極めて高く水素との結合が非常に強いため、水中での電離が不完全になり弱酸になります。他の三つ（塩酸・臭化水素酸・ヨウ化水素酸）はすべて強酸です。", "evidence": [ { "source_id": "1_4_sub_003", "quote": "他のハロゲン化水素と異なり弱酸" } ], "related_concept_ids": ["1_4_sub_003"], "mnemonic": null },
-    { "id": "ch4_1_q026", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "塩素の漂白と殺菌", "difficulty": 2, "question_type": "correct", "question": "塩素の漂白作用と殺菌作用の原因として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "塩素が水に溶けると塩酸と次亜塩素酸が生じ、次亜塩素酸の強い酸化力により漂白・殺菌できる。水道水の消毒にも利用される。", "is_correct": true }, { "label": "2", "text": "塩酸の酸性が漂白の原因である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "塩酸ではなく次亜塩素酸の酸化力。" }, { "label": "3", "text": "乾燥した塩素ガスに漂白作用がある。", "is_correct": false, "trap_type": "negation", "trap_detail": "湿った状態でないと次亜塩素酸が生じない。" }, { "label": "4", "text": "塩素には殺菌作用はない。", "is_correct": false, "trap_type": "negation", "trap_detail": "殺菌作用がある。" } ], "explanation": "塩素の漂白・殺菌のキーは次亜塩素酸です。塩素が水に溶けると塩酸と次亜塩素酸が同時に生成し、次亜塩素酸の酸化力で色素を分解（漂白）したり菌を死滅させたり（殺菌）します。乾燥した塩素ガスでは次亜塩素酸が生じないため漂白作用がありません。", "evidence": [ { "source_id": "1_4_sub_002", "quote": "水に溶けやすく（塩酸と次亜塩素酸を生じる）。漂白作用、殺菌作用" } ], "related_concept_ids": ["1_4_sub_002"], "mnemonic": null },
-    { "id": "ch4_1_q027", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "不動態", "difficulty": 3, "question_type": "incorrect", "question": "硝酸と不動態に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "濃硝酸は鉄やアルミニウムの表面に緻密な酸化被膜を形成する。", "is_correct": false }, { "label": "2", "text": "不動態が形成されるとそれ以上溶けなくなる。", "is_correct": false }, { "label": "3", "text": "希硝酸では不動態は形成されず鉄は溶ける。", "is_correct": false }, { "label": "4", "text": "不動態は濃硝酸によって全ての金属に形成されるため、どの金属も濃硝酸に溶けない。", "is_correct": true, "trap_type": "negation", "trap_detail": "不動態は鉄・アルミ・ニッケルなど特定の金属のみ。銅は溶ける。" } ], "explanation": "不動態は全ての金属に形成されるわけではありません。鉄、アルミニウム、ニッケル、クロムなど特定の金属表面にのみ緻密な酸化被膜が形成されます。銅は不動態を作らないため濃硝酸にも溶けます。", "evidence": [ { "source_id": "1_6_sub_002", "quote": "不動態を形成" } ], "related_concept_ids": ["1_6_sub_002"], "mnemonic": null },
-    { "id": "ch4_1_q028", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "濃硫酸の吸湿性と脱水性", "difficulty": 3, "question_type": "correct", "question": "濃硫酸の吸湿性と脱水性の違いとして、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "吸湿性は空気中や気体中の水分を吸い取る性質で乾燥剤として利用される。脱水性は物質から水素と酸素を二対一の割合で奪い取る性質で有機物を炭化させる。", "is_correct": true }, { "label": "2", "text": "吸湿性と脱水性は同じ意味である。", "is_correct": false, "trap_type": "negation", "trap_detail": "異なる性質。" }, { "label": "3", "text": "脱水性により乾燥剤として使える。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "乾燥剤は吸湿性。" }, { "label": "4", "text": "吸湿性で有機物を炭化させる。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "炭化は脱水性。" } ], "explanation": "吸湿性と脱水性は混同しやすいですが明確に異なります。吸湿性は水分子そのものを吸着する性質（乾燥剤として利用）。脱水性は物質の分子構造から水素と酸素を水の形で奪い取る性質（砂糖に濃硫酸をかけると炭化する実験）です。", "evidence": [ { "source_id": "1_5_sub_001", "quote": "吸湿性、脱水性" } ], "related_concept_ids": ["1_5_sub_001"], "mnemonic": null },
-    { "id": "ch4_1_q029", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "オストワルト法の段階", "difficulty": 4, "question_type": "incorrect", "question": "オストワルト法に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "第一段階でアンモニアを白金触媒で酸化して一酸化窒素を得る。", "is_correct": false }, { "label": "2", "text": "第二段階で一酸化窒素をさらに酸化して二酸化窒素にする。", "is_correct": false }, { "label": "3", "text": "第三段階で二酸化窒素を水に吸収させて硝酸を得る。", "is_correct": false }, { "label": "4", "text": "三段階すべてで白金触媒が必要である。", "is_correct": true, "trap_type": "negation", "trap_detail": "白金触媒が必要なのは第一段階のみ。第二段階以降は触媒不要。" } ], "explanation": "オストワルト法で白金触媒が必要なのは第一段階（アンモニアの酸化）のみです。第二段階（一酸化窒素の酸化）は空気中の酸素と自然に反応し、第三段階（二酸化窒素の水への吸収）も触媒不要です。", "evidence": [ { "source_id": "1_6_rxn_002", "quote": "白金網(Pt)を使用（第1段階のみ）" } ], "related_concept_ids": ["1_6_rxn_002"], "mnemonic": null },
-    { "id": "ch4_1_q030", "chapter": "4-1", "chapter_title": "非金属元素", "category": "comprehensive", "sub_category": "ハロゲンの総合", "difficulty": 4, "question_type": "correct", "question": "ハロゲン単体と水素との反応性に関する総合的な記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "フッ素は低温・暗所でも爆発的に反応。塩素は光照射で爆発的に反応。臭素は加熱で反応。ヨウ素は高温と白金触媒で反応。原子番号が大きくなるほど反応に強い条件が必要。", "is_correct": true }, { "label": "2", "text": "ヨウ素がもっとも反応しやすく、フッ素が最も反応しにくい。", "is_correct": false, "trap_type": "negation", "trap_detail": "逆。" }, { "label": "3", "text": "すべてのハロゲンが室温で水素と反応する。", "is_correct": false, "trap_type": "negation", "trap_detail": "フッ素のみ。" }, { "label": "4", "text": "反応条件はすべて同じである。", "is_correct": false, "trap_type": "negation", "trap_detail": "それぞれ異なる。" } ], "explanation": "ハロゲンの水素との反応性は酸化力の順序を直接反映しています。フッ素は最も激しくどんな条件でも反応、ヨウ素は最も穏やかで触媒と高温が必要です。この順序はフッ素＞塩素＞臭素＞ヨウ素という酸化力の順と完全に一致します。", "evidence": [ { "source_id": "1_4_def_001", "quote": "フッ素は低温暗所でも爆発的に反応し、塩素は光照射で爆発的に反応する" } ], "related_concept_ids": ["1_4_def_001"], "mnemonic": null },
-    { "id": "ch4_1_q031", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "濃硫酸と希硫酸の違い", "difficulty": 3, "question_type": "correct", "question": "濃硫酸と希硫酸の性質の違いとして、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "濃硫酸は不揮発性・吸湿性・脱水性・酸化作用（熱濃硫酸）があり、ほとんど電離していないため導電性は低い。希硫酸は強酸として電離し導電性が高い。", "is_correct": true }, { "label": "2", "text": "希硫酸にも脱水性がある。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "脱水性は濃硫酸のみ。" }, { "label": "3", "text": "濃硫酸の方が導電性が高い。", "is_correct": false, "trap_type": "negation", "trap_detail": "希硫酸の方が高い。濃硫酸はほとんど電離していない。" }, { "label": "4", "text": "希硫酸に酸化作用がある。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "酸化作用は熱濃硫酸のみ。" } ], "explanation": "濃硫酸と希硫酸は同じ物質ですが性質が大きく異なります。濃硫酸は分子のまま存在して不揮発・吸湿・脱水の性質を持ち、加熱すると酸化作用も示します。希硫酸は完全に電離した強酸としてはたらきます。この区別は必須知識です。", "evidence": [ { "source_id": "1_5_sub_001", "quote": "ほとんど電離していないため導電性は低い（希硫酸は高い）" } ], "related_concept_ids": ["1_5_sub_001"], "mnemonic": null },
-    { "id": "ch4_1_q032", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "塩素の捕集法", "difficulty": 2, "question_type": "incorrect", "question": "塩素の捕集に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "塩素は空気より重い気体である。", "is_correct": false }, { "label": "2", "text": "塩素は水に溶けやすい。", "is_correct": false }, { "label": "3", "text": "塩素は下方置換で集める。", "is_correct": false }, { "label": "4", "text": "塩素は水に溶けにくいため水上置換で集める。", "is_correct": true, "trap_type": "negation", "trap_detail": "水に溶けやすいため水上置換は不可。下方置換が正しい。" } ], "explanation": "塩素は水に溶けやすく空気より重い気体です。水に溶けやすいため水上置換では水に吸収されてしまい集められません。空気より重い（分子量約七十一）ため下方置換で集めます。", "evidence": [ { "source_id": "1_8_proc_001", "quote": "塩素は下方置換。水に溶けやすく空気より重い" } ], "related_concept_ids": ["1_8_proc_001"], "mnemonic": null },
-    { "id": "ch4_1_q033", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "アンモニアの検出", "difficulty": 2, "question_type": "correct", "question": "アンモニアの検出法として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "濃塩酸を近づけると塩化アンモニウムの白煙が生じる。この反応はアンモニアの気体検出に用いられる。", "is_correct": true }, { "label": "2", "text": "アンモニアは塩素によって検出する。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "塩素の検出はヨウ化カリウムデンプン紙。" }, { "label": "3", "text": "アンモニアは無臭で検出が困難である。", "is_correct": false, "trap_type": "negation", "trap_detail": "刺激臭がある。" }, { "label": "4", "text": "アンモニアと塩酸の反応で黄色の煙が生じる。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "白煙（白い煙）。" } ], "explanation": "アンモニアの典型的な検出法は濃塩酸を含ませたガラス棒を近づけることです。気体のアンモニアと塩化水素が反応して塩化アンモニウムの白い微粒子（白煙）が生じます。これ以外にも赤いリトマス紙が青くなるのも検出法です。", "evidence": [ { "source_id": "1_6_sub_001", "quote": "濃塩酸を近づけると塩化アンモニウムの白煙を生じる" } ], "related_concept_ids": ["1_6_sub_001"], "mnemonic": null },
-    { "id": "ch4_1_q034", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "フッ化水素の保存容器", "difficulty": 2, "question_type": "incorrect", "question": "フッ化水素の保存に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "フッ化水素はガラスを腐食する。", "is_correct": false }, { "label": "2", "text": "保存にはポリエチレン容器を使用する。", "is_correct": false }, { "label": "3", "text": "この性質はガラスのエッチング加工に利用される。", "is_correct": false }, { "label": "4", "text": "フッ化水素はガラス瓶に保存するのが最適である。", "is_correct": true, "trap_type": "negation", "trap_detail": "ガラスを腐食するため保存できない。ポリエチレン容器を使う。" } ], "explanation": "フッ化水素がガラスを溶かすのでガラス瓶に保存できないのは基本知識です。他の酸はほとんどガラス瓶に保存できるため、フッ化水素だけがポリエチレン容器を使うという例外を覚えておきましょう。", "evidence": [ { "source_id": "1_4_sub_003", "quote": "ガラスを腐食するためポリエチレン容器で保存する" } ], "related_concept_ids": ["1_4_sub_003"], "mnemonic": null },
-    { "id": "ch4_1_q035", "chapter": "4-1", "chapter_title": "非金属元素", "category": "comprehensive", "sub_category": "工業的製法の総合", "difficulty": 5, "question_type": "correct", "question": "工業的製法に関する総合的な記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "接触法は酸化バナジウム触媒で硫酸を製造。ハーバー法は鉄触媒で高温高圧でアンモニアを合成。オストワルト法は白金触媒でアンモニアから硝酸を製造。三酸化硫黄は濃硫酸に吸収させる。", "is_correct": true }, { "label": "2", "text": "三つの製法すべて白金触媒を使用し、すべて同じ条件で反応する。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "触媒も条件もすべて異なる。" }, { "label": "3", "text": "ハーバー法で硝酸を作り、オストワルト法でアンモニアを作る。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "逆。" }, { "label": "4", "text": "接触法では三酸化硫黄を直接水に溶かして硫酸にする。", "is_correct": false, "trap_type": "negation", "trap_detail": "濃硫酸に吸収させる。" } ], "explanation": "三大工業的製法を完全に整理した総合問題です。製法名→製品→触媒→特記事項のセットで確認しましょう。接触法（硫酸、バナジウム）、ハーバー法（アンモニア、鉄、高温高圧）、オストワルト法（硝酸、白金、三段階）。", "evidence": [ { "source_id": "1_5_rxn_001", "quote": "接触法は硫酸。酸化バナジウム触媒" }, { "source_id": "1_6_tip_001", "quote": "ハーバーの鉄、オストワルトの白金で勝算あり" } ], "related_concept_ids": ["1_5_rxn_001", "1_6_rxn_001", "1_6_rxn_002", "1_6_tip_001"], "mnemonic": null },
-    { "id": "ch4_1_q036", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "塩素の検出", "difficulty": 2, "question_type": "correct", "question": "塩素の検出法として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "湿ったヨウ化カリウムデンプン紙が青変する。塩素の酸化力でヨウ素が遊離し、ヨウ素がデンプンと反応して青色になる。", "is_correct": true }, { "label": "2", "text": "塩素は石灰水を白濁させることで検出する。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "石灰水白濁は二酸化炭素の検出法。" }, { "label": "3", "text": "塩素は濃塩酸で白煙を生じさせて検出する。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "白煙はアンモニアの検出法。" }, { "label": "4", "text": "塩素は無色無臭のため検出が困難である。", "is_correct": false, "trap_type": "negation", "trap_detail": "黄緑色で刺激臭があり容易に検出可能。" } ], "explanation": "塩素の検出にはヨウ化カリウムデンプン紙を使います。塩素の酸化力でヨウ化カリウムからヨウ素が遊離し、遊離したヨウ素がデンプンと反応してヨウ素・デンプン反応による青色を呈します。紙は湿った状態で使う必要があります。", "evidence": [ { "source_id": "1_4_sub_002", "quote": "湿ったヨウ化カリウムデンプン紙を青変させる" } ], "related_concept_ids": ["1_4_sub_002"], "mnemonic": null },
-    { "id": "ch4_1_q037", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "濃硫酸の乾燥剤としての制限", "difficulty": 3, "question_type": "incorrect", "question": "濃硫酸を乾燥剤として使用する場合の記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "濃硫酸は酸性の乾燥剤である。", "is_correct": false }, { "label": "2", "text": "酸性や中性の気体の乾燥に使用できる。", "is_correct": false }, { "label": "3", "text": "塩素の乾燥に濃硫酸を使える。", "is_correct": false }, { "label": "4", "text": "アンモニアの乾燥に濃硫酸を使うのが適切である。", "is_correct": true, "trap_type": "negation", "trap_detail": "アンモニアは塩基性なので酸性の濃硫酸とは中和反応してしまい使えない。" } ], "explanation": "濃硫酸は酸性の乾燥剤であり、塩基性のアンモニアとは中和反応して硫酸アンモニウムを生成してしまいます。この場合アンモニアは乾燥されるのではなく消費されてしまうため、濃硫酸はアンモニアの乾燥には使えません。", "evidence": [ { "source_id": "1_8_proc_002", "quote": "アンモニアの乾燥に濃硫酸を使ってはいけない（中和反応）" } ], "related_concept_ids": ["1_8_proc_002"], "mnemonic": null },
-    { "id": "ch4_1_q038", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "典型元素の特徴", "difficulty": 2, "question_type": "correct", "question": "典型元素について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "周期表の第一族・第二族および第十三〜十八族の元素であり、族番号の下一桁と価電子の数が一致する。同じ族の元素は化学的性質が似ている。", "is_correct": true }, { "label": "2", "text": "典型元素は第三〜第十二族の元素である。", "is_correct": false, "trap_type": "negation", "trap_detail": "それは遷移元素。" }, { "label": "3", "text": "典型元素では同じ族でも性質が全く異なる。", "is_correct": false, "trap_type": "negation", "trap_detail": "性質がよく似ている。" }, { "label": "4", "text": "典型元素には周期律が成り立たない。", "is_correct": false, "trap_type": "negation", "trap_detail": "周期律の考えがよく成り立つ。" } ], "explanation": "典型元素は周期表の両端（第一・二族と第十三〜十八族）に位置する元素です。族番号の下一桁が価電子の数と一致し（例えば第十七族アルカリ金属は価電子七個）、同族元素は化学的性質がよく似ています。これに対し遷移元素は第三〜十二族です。", "evidence": [ { "source_id": "1_1_def_001", "quote": "族番号の下一桁が価電子の数と一致するため、同じ族の元素は化学的性質がよく似ている" } ], "related_concept_ids": ["1_1_def_001"], "mnemonic": null },
-    { "id": "ch4_1_q039", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "不揮発性酸による揮発性酸の追い出し", "difficulty": 3, "question_type": "correct", "question": "濃硫酸の不揮発性を利用した反応として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "食塩に濃硫酸を加えて加熱すると揮発性の塩化水素が発生する。これは不揮発性の酸が揮発性の酸を追い出す反応であり、塩化水素の実験室的製法に用いられる。", "is_correct": true }, { "label": "2", "text": "希硫酸でも同じ反応が起こる。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "不揮発性の濃硫酸が必要。" }, { "label": "3", "text": "この反応では硫酸が揮発する。", "is_correct": false, "trap_type": "negation", "trap_detail": "硫酸は不揮発性なので揮発しない。" }, { "label": "4", "text": "この方法では塩素が発生する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "塩化水素が発生する。塩素ではない。" } ], "explanation": "不揮発性の酸が揮発性の酸を追い出す反応は重要な原理です。濃硫酸は沸点が高く（約三百四十度）不揮発性であるため、加熱すると揮発性の酸（塩化水素、フッ化水素など）だけが気体として出てきます。これを利用して酸の気体を実験室で発生させます。", "evidence": [ { "source_id": "1_5_sub_001", "quote": "不揮発性" } ], "related_concept_ids": ["1_5_sub_001"], "mnemonic": null },
-    { "id": "ch4_1_q040", "chapter": "4-1", "chapter_title": "非金属元素", "category": "comprehensive", "sub_category": "気体の製法と捕集の総合", "difficulty": 5, "question_type": "incorrect", "question": "気体の製法と捕集に関する総合的な記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "塩素は酸化マンガンと濃塩酸で発生させ、水→濃硫酸の順で洗気瓶を通し、下方置換で集める。", "is_correct": false }, { "label": "2", "text": "アンモニアは水にきわめてよく溶け空気より軽いため上方置換で集める。乾燥にはソーダ石灰を使う。", "is_correct": false }, { "label": "3", "text": "水素は水に溶けにくいため水上置換で集める。", "is_correct": false }, { "label": "4", "text": "塩素の洗気瓶は濃硫酸→水の順で、捕集は上方置換。アンモニアの乾燥には濃硫酸と塩化カルシウムが適切。", "is_correct": true, "trap_type": "multiple_swap", "trap_detail": "四か所すべて誤り。洗気瓶は水→濃硫酸、塩素は下方置換、アンモニアに濃硫酸と塩化カルシウムは不可。" } ], "explanation": "この問題は気体の製法・捕集・乾燥の全知識を問う総合問題です。洗気瓶は水→濃硫酸の順、塩素は下方置換（空気より重い）、アンモニアの乾燥には濃硫酸（中和）も塩化カルシウム（錯イオン形成）も使えません。すべてのポイントを正確に覚えましょう。", "evidence": [ { "source_id": "1_4_rxn_001", "quote": "水→濃硫酸の順で洗気瓶を通す" }, { "source_id": "1_8_proc_002", "quote": "アンモニアに濃硫酸も塩化カルシウムも不可" } ], "related_concept_ids": ["1_4_rxn_001", "1_8_proc_001", "1_8_proc_002"], "mnemonic": null },
-    { "id": "ch4_1_q041", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "フッ化水素の沸点", "difficulty": 3, "question_type": "correct", "question": "フッ化水素の沸点がハロゲン化水素の中で最も高い理由として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "フッ素の電気陰性度が極めて大きく分子間に強い水素結合が形成されるため沸点が異常に高い。", "is_correct": true }, { "label": "2", "text": "フッ化水素は分子量が最大であるため沸点が高い。", "is_correct": false, "trap_type": "negation", "trap_detail": "分子量は最小。水素結合が原因。" }, { "label": "3", "text": "ファンデルワールス力が最大であるため沸点が高い。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "水素結合が主因。" }, { "label": "4", "text": "フッ化水素は分子間力が弱いため沸点が低い。", "is_correct": false, "trap_type": "negation", "trap_detail": "水素結合で高い。" } ], "explanation": "通常は分子量が大きいほどファンデルワールス力が強く沸点が高くなります。しかしフッ化水素は分子量が最小であるにもかかわらず沸点が最も高いです。これはフッ素の極めて大きい電気陰性度により分子間に強い水素結合が形成されるためです。", "evidence": [ { "source_id": "1_4_sub_003", "quote": "水素結合により沸点が高い" } ], "related_concept_ids": ["1_4_sub_003"], "mnemonic": null },
-    { "id": "ch4_1_q042", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "塩素製法での塩酸の濃度", "difficulty": 3, "question_type": "incorrect", "question": "塩素の実験室的製法に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "酸化マンガン（四価）が酸化剤としてはたらく。", "is_correct": false }, { "label": "2", "text": "加熱が必要である。", "is_correct": false }, { "label": "3", "text": "下方置換で捕集する。", "is_correct": false }, { "label": "4", "text": "希塩酸を用いても塩素は発生する。", "is_correct": true, "trap_type": "condition_change", "trap_detail": "必ず濃塩酸を用いる。希塩酸では反応しない。" } ], "explanation": "塩素の製法では必ず「濃」塩酸を使います。希塩酸では反応が進行しません。これは濃塩酸でないと塩化物イオンを十分に酸化できないためです。「濃塩酸」という条件は見落としやすいポイントです。", "evidence": [ { "source_id": "1_4_rxn_001", "quote": "必ず濃塩酸を用いる（希塩酸では反応しない）" } ], "related_concept_ids": ["1_4_rxn_001"], "mnemonic": null },
-    { "id": "ch4_1_q043", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "ハーバー法の条件", "difficulty": 3, "question_type": "correct", "question": "ハーバー・ボッシュ法で高温高圧条件が必要な理由として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "窒素分子の三重結合は非常に安定で切断するためには高温のエネルギーと高圧が必要である。触媒を使っても厳しい条件が不可欠。", "is_correct": true }, { "label": "2", "text": "低温低圧で十分に反応が進む。", "is_correct": false, "trap_type": "negation", "trap_detail": "高温高圧が必須。" }, { "label": "3", "text": "触媒があれば常温常圧で反応する。", "is_correct": false, "trap_type": "negation", "trap_detail": "触媒があっても高温高圧が必要。" }, { "label": "4", "text": "アンモニアが不安定なので高温が必要。", "is_correct": false, "trap_type": "reason_swap", "trap_detail": "窒素の三重結合が安定なのが理由。" } ], "explanation": "窒素分子は三つの共有結合（三重結合）で結ばれており非常に安定です。この結合を切るために高温（四百〜六百度）が必要で、ルシャトリエの原理に基づき生成量を増やすために高圧（百〜三百気圧）条件にします。それでも平衡転化率は低いため、未反応ガスはリサイクルします。", "evidence": [ { "source_id": "1_6_rxn_001", "quote": "非常に安定な窒素分子の結合を切るため、高温・高圧の条件と触媒が不可欠" } ], "related_concept_ids": ["1_6_rxn_001"], "mnemonic": null },
-    { "id": "ch4_1_q044", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "水上置換の制限", "difficulty": 2, "question_type": "incorrect", "question": "気体の捕集法に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "水に溶けにくい気体は水上置換で純度高く集められる。", "is_correct": false }, { "label": "2", "text": "水上置換の利点は不純物の混入が少なく純度が高いことである。", "is_correct": false }, { "label": "3", "text": "酸素や窒素は水上置換で集められる。", "is_correct": false }, { "label": "4", "text": "塩化水素は水に溶けにくいので水上置換で集める。", "is_correct": true, "trap_type": "negation", "trap_detail": "塩化水素は水に極めてよく溶ける。下方置換が必要。" } ], "explanation": "塩化水素は水にきわめてよく溶けるため水上置換は使えません。空気より重い（分子量約三十六点五）ので下方置換で集めます。「水に溶けやすい→水上置換は不可」という判断が第一ステップです。", "evidence": [ { "source_id": "1_8_proc_001", "quote": "水に溶ける気体を水上置換で集めようとすると水に吸収されてしまい集まらない" } ], "related_concept_ids": ["1_8_proc_001"], "mnemonic": null },
-    { "id": "ch4_1_q045", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "オストワルト法の副生物", "difficulty": 3, "question_type": "correct", "question": "オストワルト法の第三段階で副生する物質について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "二酸化窒素を水に吸収させると硝酸と一酸化窒素が生じ、副生する一酸化窒素は回収して再利用される。", "is_correct": true }, { "label": "2", "text": "副生物は二酸化炭素である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "一酸化窒素。" }, { "label": "3", "text": "副生物はそのまま捨てる。", "is_correct": false, "trap_type": "negation", "trap_detail": "再利用される。" }, { "label": "4", "text": "第三段階では水素が副生する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "一酸化窒素が副生する。" } ], "explanation": "オストワルト法の第三段階では二酸化窒素を温水に吸収させると硝酸と一酸化窒素が生成します。この一酸化窒素は第二段階の原料として再利用でき（酸素と反応して再び二酸化窒素になる）、資源の無駄がない効率的なプロセスです。", "evidence": [ { "source_id": "1_6_rxn_002", "quote": "副生するNOは回収して再利用する" } ], "related_concept_ids": ["1_6_rxn_002"], "mnemonic": null },
-    { "id": "ch4_1_q046", "chapter": "4-1", "chapter_title": "非金属元素", "category": "classification", "sub_category": "ハロゲン単体の状態", "difficulty": 2, "question_type": "correct", "question": "ハロゲン単体の常温での状態として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "フッ素と塩素は気体、臭素は液体、ヨウ素は固体。原子番号が大きくなるほど沸点が高くなる。", "is_correct": true }, { "label": "2", "text": "臭素は気体である。", "is_correct": false, "trap_type": "negation", "trap_detail": "常温で唯一の液体非金属。" }, { "label": "3", "text": "ヨウ素は気体である。", "is_correct": false, "trap_type": "negation", "trap_detail": "固体（黒紫色）。" }, { "label": "4", "text": "すべてのハロゲンは気体である。", "is_correct": false, "trap_type": "negation", "trap_detail": "気体は二つだけ。" } ], "explanation": "ハロゲン単体は原子番号が大きくなるにつれ分子間力が強くなり、状態が気体→液体→固体と変わります。臭素は常温で液体（赤褐色）である唯一の非金属単体として有名です。ヨウ素は昇華性があり加熱すると直接気体になります。", "evidence": [ { "source_id": "1_4_def_001", "quote": "ハロゲン単体の性質" } ], "related_concept_ids": ["1_4_def_001"], "mnemonic": null },
-    { "id": "ch4_1_q047", "chapter": "4-1", "chapter_title": "非金属元素", "category": "confusion", "sub_category": "濃硫酸の導電性", "difficulty": 3, "question_type": "incorrect", "question": "濃硫酸と希硫酸の導電性に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "希硫酸は水中で電離しているため導電性が高い。", "is_correct": false }, { "label": "2", "text": "濃硫酸はほとんど電離していないため導電性は低い。", "is_correct": false }, { "label": "3", "text": "電解質水溶液の導電性はイオンの存在量に依存する。", "is_correct": false }, { "label": "4", "text": "濃硫酸は完全に電離しているため希硫酸より導電性が高い。", "is_correct": true, "trap_type": "negation", "trap_detail": "逆。濃硫酸はほとんど電離しておらず導電性は低い。" } ], "explanation": "「濃い方が電離が多くて導電性が高いのでは」という直感は誤りです。濃硫酸は約九十八パーセントの硫酸で水が極めて少ないため、ほとんど電離しておらず導電性は低いです。希硫酸は水が多くイオンに電離しているため導電性が高くなります。", "evidence": [ { "source_id": "1_5_sub_001", "quote": "ほとんど電離していないため導電性は低い（希硫酸は高い）" } ], "related_concept_ids": ["1_5_sub_001"], "mnemonic": null },
-    { "id": "ch4_1_q048", "chapter": "4-1", "chapter_title": "非金属元素", "category": "property", "sub_category": "ハロゲンの置換反応", "difficulty": 3, "question_type": "correct", "question": "ハロゲンの酸化力と置換反応の関係として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "酸化力の強いハロゲンは酸化力の弱いハロゲンのイオンから電子を奪い単体を遊離させる。例えば塩素水にヨウ化カリウム水溶液を加えるとヨウ素が遊離する。", "is_correct": true }, { "label": "2", "text": "ヨウ素水に塩化カリウムを加えると塩素が遊離する。", "is_correct": false, "trap_type": "negation", "trap_detail": "ヨウ素は塩素より酸化力が弱いので塩化物イオンから電子を奪えない。" }, { "label": "3", "text": "酸化力の弱いハロゲンが強い方を置換できる。", "is_correct": false, "trap_type": "negation", "trap_detail": "強い方が弱い方を置換する。" }, { "label": "4", "text": "ハロゲン間の置換反応は起こらない。", "is_correct": false, "trap_type": "negation", "trap_detail": "酸化力の差があれば起こる。" } ], "explanation": "酸化力の強いハロゲンは弱いハロゲンのイオンを酸化して単体にします。塩素は臭素やヨウ素よりも酸化力が強いため、臭化物イオンやヨウ化物イオンから電子を奪えます。逆は不可能です。この置換反応で酸化力の順位を実験的に確認できます。", "evidence": [ { "source_id": "1_4_def_001", "quote": "酸化力はF2 > Cl2 > Br2 > I2" } ], "related_concept_ids": ["1_4_def_001"], "mnemonic": null },
-    { "id": "ch4_1_q049", "chapter": "4-1", "chapter_title": "非金属元素", "category": "comprehensive", "sub_category": "乾燥剤の総合", "difficulty": 4, "question_type": "incorrect", "question": "乾燥剤と気体の組み合わせに関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "塩素の乾燥に濃硫酸を使える。塩素は酸性気体で濃硫酸と反応しない。", "is_correct": false }, { "label": "2", "text": "アンモニアの乾燥にはソーダ石灰を使う。", "is_correct": false }, { "label": "3", "text": "二酸化炭素の乾燥に濃硫酸を使える。", "is_correct": false }, { "label": "4", "text": "硫化水素（酸性気体）の乾燥にソーダ石灰（塩基性乾燥剤）を使うのが適切である。", "is_correct": true, "trap_type": "negation", "trap_detail": "酸性気体に塩基性乾燥剤は使えない。反応してしまう。" } ], "explanation": "乾燥剤選択の原則は「気体と反応しないこと」です。硫化水素は酸性気体であり、ソーダ石灰は塩基性乾燥剤です。酸と塩基が反応して硫化水素が消費されてしまうため使えません。酸性気体の乾燥には酸性または中性の乾燥剤を使います。", "evidence": [ { "source_id": "1_8_proc_002", "quote": "ソーダ石灰は酸性の気体には使用不可" } ], "related_concept_ids": ["1_8_proc_002"], "mnemonic": null },
-    { "id": "ch4_1_q050", "chapter": "4-1", "chapter_title": "非金属元素", "category": "comprehensive", "sub_category": "非金属元素の全体総合", "difficulty": 5, "question_type": "correct", "question": "非金属元素に関する全体の総合記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "ハロゲンは原子番号が小さいほど酸化力が強い。フッ化水素のみ弱酸でガラスを腐食。濃硫酸は不揮発性・吸湿性・脱水性。接触法は酸化バナジウム触媒で硫酸を製造。ハーバー法は鉄触媒でアンモニア合成。オストワルト法は白金触媒で硝酸を製造。気体捕集は水溶性と密度で判断。", "is_correct": true }, { "label": "2", "text": "ハロゲンの酸化力は原子番号が大きいほど強い。フッ化水素は強酸。接触法の触媒は白金。ハーバー法の触媒は酸化バナジウム。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "四か所すべて誤り。" }, { "label": "3", "text": "すべてのハロゲン化水素は強酸で、洗気瓶は濃硫酸→水の順で通す。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "二か所誤り。" }, { "label": "4", "text": "アンモニアの乾燥には濃硫酸と塩化カルシウムが適している。", "is_correct": false, "trap_type": "negation", "trap_detail": "どちらも使えない。" } ], "explanation": "非金属元素の章全体を網羅した最終問題です。ハロゲンの性質、フッ化水素の特異性、濃硫酸の三大特性、三大工業的製法（接触法・ハーバー法・オストワルト法）の触媒、気体の捕集法と乾燥剤の選択をすべて体系的に理解することが重要です。", "evidence": [ { "source_id": "1_4_def_001", "quote": "酸化力はF2 > Cl2 > Br2 > I2" }, { "source_id": "1_6_tip_001", "quote": "ハーバーの鉄、オストワルトの白金で勝算あり" } ], "related_concept_ids": ["1_4_def_001", "1_4_sub_003", "1_5_sub_001", "1_5_rxn_001", "1_6_rxn_001", "1_6_rxn_002", "1_8_proc_001", "1_8_proc_002"], "mnemonic": null }
+    {
+      "id": "ch4_1_q001",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "definition",
+      "sub_category": "ハロゲンの酸化力",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ハロゲン単体の酸化力の強さの順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "原子番号が大きいほど酸化力が強い。逆で原子番号が小さいほど酸化力が強くフッ素が最強でヨウ素が最も弱い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "小さいほど強い。",
+          "choice_id": "ch4_1_q001_c1",
+          "tts_text": "原子番号が大きいほど酸化力が強い。逆で原子番号が小さいほど酸化力が強くフッ素が最強でヨウ素が最も弱い。"
+        },
+        {
+          "label": "2",
+          "text": "ハロゲンの酸化力はすべて同等である。ハロゲンの酸化力には差がありフッ素が最も強く塩素臭素ヨウ素の順に弱くなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "明確な順序がある。",
+          "choice_id": "ch4_1_q001_c2",
+          "tts_text": "ハロゲンの酸化力はすべて同等である。ハロゲンの酸化力には差がありフッ素が最も強く塩素臭素ヨウ素の順に弱くなる。"
+        },
+        {
+          "label": "3",
+          "text": "フッ素が最も強く、塩素、臭素、ヨウ素の順に弱くなる。原子番号が小さいほど酸化力が強い。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q001_c3",
+          "tts_text": "フッ素が最も強く、塩素、臭素、ヨウ素の順に弱くなる。原子番号が小さいほど酸化力が強い。"
+        },
+        {
+          "label": "4",
+          "text": "ヨウ素が最も酸化力が強い。逆でヨウ素はハロゲンの中で最も酸化力が弱くフッ素が最も強い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "フッ素が最強。ヨウ素は最弱。",
+          "choice_id": "ch4_1_q001_c4",
+          "tts_text": "ヨウ素が最も酸化力が強い。逆でヨウ素はハロゲンの中で最も酸化力が弱くフッ素が最も強い。"
+        }
+      ],
+      "explanation": "ハロゲン単体の酸化力は原子番号が小さいほど強くなります。これはフッ素が最も原子半径が小さく電気陰性度が最大であるため電子を最も強く引きつけるからです。「ハロゲンは小さいものほど力持ち」と覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "1_4_def_001",
+          "quote": "酸化力はF2 > Cl2 > Br2 > I2の順に強い"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_def_001"
+      ],
+      "mnemonic": "ハロゲンは小さいものほど力持ち",
+      "tts_question": "ハロゲン単体の酸化力の強さの順として、正しいものを選びなさい。",
+      "tts_explanation": "ハロゲン単体の酸化力は原子番号が小さいほど強くなります。これはフッ素が最も原子半径が小さく電気陰性度が最大であるため電子を最も強く引きつけるからです。「ハロゲンは小さいものほど力持ち」と覚えましょう。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q002",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "フッ素の性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "フッ素について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フッ素は高温でないと水素と反応しない。フッ素は低温・暗所でも水素と爆発的に反応する。高温が必要なのはヨウ素の方である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "低温・暗所でも爆発的に反応する。",
+          "choice_id": "ch4_1_q002_c1",
+          "tts_text": "フッ素は高温でないと水素と反応しない。フッ素は低温・暗所でも水素と爆発的に反応する。高温が必要なのはヨウ素の方である。"
+        },
+        {
+          "label": "2",
+          "text": "フッ素は黄緑色の気体である。黄緑色は塩素の色でありフッ素は淡黄色の気体である。両者の色を混同しないよう注意が必要。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "黄緑色は塩素。フッ素は淡黄色。",
+          "choice_id": "ch4_1_q002_c2",
+          "tts_text": "フッ素は黄緑色の気体である。黄緑色は塩素の色でありフッ素は淡黄色の気体である。両者の色を混同しないよう注意が必要。"
+        },
+        {
+          "label": "3",
+          "text": "淡黄色の気体で酸化力が最も強い。水と激しく反応して酸素を発生する。低温・暗所でも水素と爆発的に反応する。電気陰性度が全元素中最大。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q002_c3",
+          "tts_text": "淡黄色の気体で酸化力が最も強い。水と激しく反応して酸素を発生する。低温・暗所でも水素と爆発的に反応する。電気陰性度が全元素中最大。"
+        },
+        {
+          "label": "4",
+          "text": "フッ素は水に溶けて安定に存在する。フッ素は水と激しく反応して酸素を発生するため水に安定に溶けることはない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水と激しく反応して酸素を発生する。",
+          "choice_id": "ch4_1_q002_c4",
+          "tts_text": "フッ素は水に溶けて安定に存在する。フッ素は水と激しく反応して酸素を発生するため水に安定に溶けることはない。"
+        }
+      ],
+      "explanation": "フッ素は全元素中で最も電気陰性度が大きく最も酸化力が強いハロゲンです。淡黄色で有毒、水すらも分解して酸素を発生させるほど反応性が高いです。塩素の黄緑色と混同しやすいので色の区別が重要です。",
+      "evidence": [
+        {
+          "source_id": "1_4_sub_001",
+          "quote": "淡黄色。酸化力が最も強い。水と激しく反応してO2を発生"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "フッ素について、正しい記述を選びなさい。",
+      "tts_explanation": "フッ素は全元素中で最も電気陰性度が大きく最も酸化力が強いハロゲンです。淡黄色で有毒、水すらも分解して酸素を発生させるほど反応性が高いです。塩素の黄緑色と混同しやすいので色の区別が重要です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q003",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "塩素の性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "塩素について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩素は水に溶けない。塩素は水に溶けやすく溶けると塩酸と次亜塩素酸を生じる。これが漂白殺菌作用の原因である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水に溶けやすい。",
+          "choice_id": "ch4_1_q003_c1",
+          "tts_text": "塩素は水に溶けない。塩素は水に溶けやすく溶けると塩酸と次亜塩素酸を生じる。これが漂白殺菌作用の原因である。"
+        },
+        {
+          "label": "2",
+          "text": "塩素は漂白作用を持たない。塩素が水に溶けて生じる次亜塩素酸の酸化力により強い漂白作用と殺菌作用を示す。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "漂白作用がある。",
+          "choice_id": "ch4_1_q003_c2",
+          "tts_text": "塩素は漂白作用を持たない。塩素が水に溶けて生じる次亜塩素酸の酸化力により強い漂白作用と殺菌作用を示す。"
+        },
+        {
+          "label": "3",
+          "text": "黄緑色で刺激臭の有毒な気体。水に溶けやすく漂白作用と殺菌作用がある。湿ったヨウ化カリウムデンプン紙を青変させる。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q003_c3",
+          "tts_text": "黄緑色で刺激臭の有毒な気体。水に溶けやすく漂白作用と殺菌作用がある。湿ったヨウ化カリウムデンプン紙を青変させる。"
+        },
+        {
+          "label": "4",
+          "text": "塩素は無色無臭の気体である。塩素は黄緑色で刺激臭のある有毒な気体であり無色無臭ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "黄緑色で刺激臭。",
+          "choice_id": "ch4_1_q003_c4",
+          "tts_text": "塩素は無色無臭の気体である。塩素は黄緑色で刺激臭のある有毒な気体であり無色無臭ではない。"
+        }
+      ],
+      "explanation": "塩素は黄緑色で有毒な気体です。水に溶かすと塩酸と次亜塩素酸が生じ、次亜塩素酸の酸化力により漂白・殺菌作用を示します。塩素の検出には湿ったヨウ化カリウムデンプン紙を使い、ヨウ素が遊離してデンプンと反応し青変します。",
+      "evidence": [
+        {
+          "source_id": "1_4_sub_002",
+          "quote": "黄緑色、刺激臭、有毒、漂白作用、殺菌作用"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_sub_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "塩素について、正しい記述を選びなさい。",
+      "tts_explanation": "塩素は黄緑色で有毒な気体です。水に溶かすと塩酸と次亜塩素酸が生じ、次亜塩素酸の酸化力により漂白・殺菌作用を示します。塩素の検出には湿ったヨウ化カリウムデンプン紙を使い、ヨウ素が遊離してデンプンと反応し青変します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q004",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "フッ化水素の特異性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "フッ化水素について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フッ化水素の沸点はハロゲン化水素の中で最も低い。逆でフッ化水素は水素結合により沸点がハロゲン化水素の中で最も高い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水素結合により最も高い。",
+          "choice_id": "ch4_1_q004_c1",
+          "tts_text": "フッ化水素の沸点はハロゲン化水素の中で最も低い。逆でフッ化水素は水素結合により沸点がハロゲン化水素の中で最も高い。"
+        },
+        {
+          "label": "2",
+          "text": "他のハロゲン化水素と異なり弱酸である。水素結合により沸点が高い。ガラスを腐食するためポリエチレン容器で保存する。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q004_c2",
+          "tts_text": "他のハロゲン化水素と異なり弱酸である。水素結合により沸点が高い。ガラスを腐食するためポリエチレン容器で保存する。"
+        },
+        {
+          "label": "3",
+          "text": "フッ化水素はガラス瓶で保存する。フッ化水素はガラスを腐食するためガラス瓶では保存できずポリエチレン容器を用いる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ガラスを溶かすのでポリエチレン容器。",
+          "choice_id": "ch4_1_q004_c3",
+          "tts_text": "フッ化水素はガラス瓶で保存する。フッ化水素はガラスを腐食するためガラス瓶では保存できずポリエチレン容器を用いる。"
+        },
+        {
+          "label": "4",
+          "text": "フッ化水素は強酸である。フッ化水素は他のハロゲン化水素と異なり弱酸であり水溶液中で一部しか電離しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "弱酸。他のハロゲン化水素は強酸。",
+          "choice_id": "ch4_1_q004_c4",
+          "tts_text": "フッ化水素は強酸である。フッ化水素は他のハロゲン化水素と異なり弱酸であり水溶液中で一部しか電離しない。"
+        }
+      ],
+      "explanation": "フッ化水素はハロゲン化水素の中で唯一の弱酸です。分子間に水素結合が形成されるため沸点が異常に高くなります。最も重要な性質はガラス（SiO₂）を腐食することで、これを利用してガラスのエッチング加工が行われます。",
+      "evidence": [
+        {
+          "source_id": "1_4_sub_003",
+          "quote": "他のハロゲン化水素と異なり弱酸。水素結合により沸点が高い。ガラスを溶かす"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_sub_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "フッ化水素について、正しい記述を選びなさい。",
+      "tts_explanation": "フッ化水素はハロゲン化水素の中で唯一の弱酸です。分子間に水素結合が形成されるため沸点が異常に高くなります。最も重要な性質はガラス（二酸化ケイ素）を腐食することで、これを利用してガラスのエッチング加工が行われます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q005",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "濃硫酸の性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "濃硫酸の性質として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "希釈するときは濃硫酸に水を注ぐと誤って覚えやすい典型例だが、逆で水に濃硫酸を少しずつ注ぐのが正しい方法であり逆にすると突沸の危険がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水に濃硫酸を少しずつ注ぐ。逆は危険。",
+          "choice_id": "ch4_1_q005_c1",
+          "tts_text": "希釈するときは濃硫酸に水を注ぐと誤って覚えやすい典型例だが、逆で水に濃硫酸を少しずつ注ぐのが正しい方法であり逆にすると突沸の危険がある。"
+        },
+        {
+          "label": "2",
+          "text": "希硫酸にも強い酸化作用がある。希硫酸には酸化作用はなく酸化作用を示すのは熱濃硫酸の方である。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "酸化作用は熱濃硫酸のみ。",
+          "choice_id": "ch4_1_q005_c2",
+          "tts_text": "希硫酸にも強い酸化作用がある。希硫酸には酸化作用はなく酸化作用を示すのは熱濃硫酸の方である。"
+        },
+        {
+          "label": "3",
+          "text": "濃硫酸は揮発性が高いと勘違いされやすいが、濃硫酸は不揮発性であり揮発性が高いのは塩酸や硝酸などの方である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不揮発性。",
+          "choice_id": "ch4_1_q005_c3",
+          "tts_text": "濃硫酸は揮発性が高いと勘違いされやすいが、濃硫酸は不揮発性であり揮発性が高いのは塩酸や硝酸などの方である。"
+        },
+        {
+          "label": "4",
+          "text": "不揮発性で吸湿性と脱水性をもつ。水で薄めるときは水に濃硫酸を少しずつ注ぐ。熱濃硫酸は酸化作用を示す。密度は約1.83g毎立方センチメートル。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q005_c4",
+          "tts_text": "不揮発性で吸湿性と脱水性をもつ。水で薄めるときは水に濃硫酸を少しずつ注ぐ。熱濃硫酸は酸化作用を示す。密度は約一点八三グラム毎立方センチメートル。"
+        }
+      ],
+      "explanation": "濃硫酸は不揮発性・吸湿性・脱水性の三大特性が出題頻度最高です。吸湿性は乾燥剤として、脱水性は有機物の炭化として試験で頻出です。希釈は必ず「水に酸を注ぐ」で行います。逆にすると激しく沸騰して飛散し大変危険です。",
+      "evidence": [
+        {
+          "source_id": "1_5_sub_001",
+          "quote": "不揮発性、吸湿性、脱水性、酸化作用（熱濃硫酸）。水に濃硫酸を少しずつ注ぐ"
+        }
+      ],
+      "related_concept_ids": [
+        "1_5_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "濃硫酸の性質として、正しい記述を選びなさい。",
+      "tts_explanation": "濃硫酸は不揮発性・吸湿性・脱水性の三大特性が出題頻度最高です。吸湿性は乾燥剤として、脱水性は有機物の炭化として試験で頻出です。希釈は必ず「水に酸を注ぐ」で行います。逆にすると激しく沸騰して飛散し大変危険です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q006",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "アンモニアの性質",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "NH₃について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "NH₃は水に溶けにくい。NH₃は水にきわめてよく溶ける気体であり常温常圧で大量に溶解する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "極めてよく溶ける。",
+          "choice_id": "ch4_1_q006_c1",
+          "tts_text": "アンモニアは水に溶けにくい。アンモニアは水にきわめてよく溶ける気体であり常温常圧で大量に溶解する。"
+        },
+        {
+          "label": "2",
+          "text": "NH₃は空気より重いと誤って覚えやすい典型例だが、NH₃の分子量は十七で空気の平均分子量約二十九より小さいため空気より軽い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "空気より軽い。",
+          "choice_id": "ch4_1_q006_c2",
+          "tts_text": "アンモニアは空気より重いと誤って覚えやすい典型例だが、アンモニアの分子量は十七で空気の平均分子量約二十九より小さいため空気より軽い。"
+        },
+        {
+          "label": "3",
+          "text": "NH₃は酸性を示すと誤解されやすいが、NH₃は水に溶けると弱塩基性を示す物質であり酸性ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "塩基性。",
+          "choice_id": "ch4_1_q006_c3",
+          "tts_text": "アンモニアは酸性を示すと誤解されやすいが、アンモニアは水に溶けると弱塩基性を示す物質であり酸性ではない。"
+        },
+        {
+          "label": "4",
+          "text": "無色で刺激臭の気体。水にきわめてよく溶けて弱塩基性を示す。空気より軽いため上方置換で捕集する。濃塩酸を近づけると白煙を生じる。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q006_c4",
+          "tts_text": "無色で刺激臭の気体。水にきわめてよく溶けて弱塩基性を示す。空気より軽いため上方置換で捕集する。濃塩酸を近づけると白煙を生じる。"
+        }
+      ],
+      "explanation": "NH₃は分子量十七で空気（平均分子量約二十九）より軽い気体です。水に非常によく溶けて弱塩基性を示します。濃塩酸を近づけると気体のNH₃と塩化水素が反応して塩化アンモニウムの白煙が生じるのが有名な検出反応です。",
+      "evidence": [
+        {
+          "source_id": "1_6_sub_001",
+          "quote": "無色、刺激臭、水にきわめてよく溶ける、空気より軽い"
+        }
+      ],
+      "related_concept_ids": [
+        "1_6_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "アンモニアについて、正しい記述を選びなさい。",
+      "tts_explanation": "アンモニアは分子量十七で空気（平均分子量約二十九）より軽い気体です。水に非常によく溶けて弱塩基性を示します。濃塩酸を近づけると気体のアンモニアと塩化水素が反応して塩化アンモニウムの白煙が生じるのが有名な検出反応です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q007",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "硝酸の性質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "硝酸について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "硝酸は弱酸である。硝酸は強い酸化力を持つ強酸であり水溶液中ではほぼ完全に電離する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "強酸。",
+          "choice_id": "ch4_1_q007_c1",
+          "tts_text": "硝酸は弱酸である。硝酸は強い酸化力を持つ強酸であり水溶液中ではほぼ完全に電離する。"
+        },
+        {
+          "label": "2",
+          "text": "強い酸化力を持つ強酸。水素よりイオン化傾向の小さい銅や銀も溶かす。光で分解しやすいため褐色瓶で保存する。鉄やアルミニウムに不動態を形成する。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q007_c2",
+          "tts_text": "強い酸化力を持つ強酸。水素よりイオン化傾向の小さい銅や銀も溶かす。光で分解しやすいため褐色瓶で保存する。鉄やアルミニウムに不動態を形成する。"
+        },
+        {
+          "label": "3",
+          "text": "硝酸は無色透明のガラス瓶で保存する。硝酸は光で分解しやすいため褐色瓶で保存する必要がある。無色透明の瓶は不適切。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "光分解するため褐色瓶。",
+          "choice_id": "ch4_1_q007_c3",
+          "tts_text": "硝酸は無色透明のガラス瓶で保存する。硝酸は光で分解しやすいため褐色瓶で保存する必要がある。無色透明の瓶は不適切。"
+        },
+        {
+          "label": "4",
+          "text": "硝酸にはイオン化傾向が水素より小さい金属を溶かす力はない。硝酸は強い酸化力を持ち銅や銀など水素より下の金属も溶かすことができる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "銅や銀を溶かせる。",
+          "choice_id": "ch4_1_q007_c4",
+          "tts_text": "硝酸にはイオン化傾向が水素より小さい金属を溶かす力はない。硝酸は強い酸化力を持ち銅や銀など水素より下の金属も溶かすことができる。"
+        }
+      ],
+      "explanation": "硝酸は強酸で強い酸化力があり、希硝酸も銅を溶かします。光によって分解（二酸化窒素を生じ褐色になる）するため褐色瓶で保存が必要です。濃硝酸は鉄やアルミニウムの表面に不動態（緻密な酸化被膜）を形成し、それ以上溶けなくなります。",
+      "evidence": [
+        {
+          "source_id": "1_6_sub_002",
+          "quote": "水素よりイオン化傾向の小さいCuやAgも溶かす。光で分解しやすいため褐色瓶で保存"
+        }
+      ],
+      "related_concept_ids": [
+        "1_6_sub_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "硝酸について、正しい記述を選びなさい。",
+      "tts_explanation": "硝酸は強酸で強い酸化力があり、希硝酸も銅を溶かします。光によって分解（二酸化窒素を生じ褐色になる）するため褐色瓶で保存が必要です。濃硝酸は鉄やアルミニウムの表面に不動態（緻密な酸化被膜）を形成し、それ以上溶けなくなります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q008",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "procedure",
+      "sub_category": "塩素の製法",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "塩素の実験室的製法として、正しい手順を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩素は上方置換で集めると誤って覚えがちだが、塩素は空気より重い気体であるため下方置換で集めると誤って覚えやすい典型例だが、上方置換は空気より軽い気体に用いる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "空気より重いので下方置換。",
+          "choice_id": "ch4_1_q008_c1",
+          "tts_text": "塩素は上方置換で集めると誤って覚えがちだが、塩素は空気より重い気体であるため下方置換で集めると誤って覚えやすい典型例だが、上方置換は空気より軽い気体に用いる。"
+        },
+        {
+          "label": "2",
+          "text": "洗気瓶の順番は濃硫酸→水の順である。逆で水→濃硫酸の順が正しい。先に水で塩化水素を除去し次に濃硫酸で水分を除去する。",
+          "is_correct": false,
+          "trap_type": "step_order",
+          "trap_detail": "水→濃硫酸の順。逆にすると再び水蒸気が混じる。",
+          "choice_id": "ch4_1_q008_c2",
+          "tts_text": "洗気瓶の順番は濃硫酸→水の順である。逆で水→濃硫酸の順が正しい。先に水で塩化水素を除去し次に濃硫酸で水分を除去する。"
+        },
+        {
+          "label": "3",
+          "text": "希塩酸を用いても塩素が発生する。塩素の実験室的製法では濃塩酸を用いる必要があり希塩酸では十分な反応が起こらない。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "必ず濃塩酸を用いる。",
+          "choice_id": "ch4_1_q008_c3",
+          "tts_text": "希塩酸を用いても塩素が発生する。塩素の実験室的製法では濃塩酸を用いる必要があり希塩酸では十分な反応が起こらない。"
+        },
+        {
+          "label": "4",
+          "text": "酸化マンガン（四価）に濃塩酸を加えて加熱する。発生した気体を水の入った洗気瓶に通し塩化水素を除去し、次に濃硫酸の洗気瓶に通して水分を除去し、下方置換で集める。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q008_c4",
+          "tts_text": "酸化マンガン（四価）に濃塩酸を加えて加熱する。発生した気体を水の入った洗気瓶に通し塩化水素を除去し、次に濃硫酸の洗気瓶に通して水分を除去し、下方置換で集める。"
+        }
+      ],
+      "explanation": "塩素の製法で最も出題されるのは洗気瓶の順番です。水→濃硫酸の順に通します。水は塩化水素を吸収するため、濃硫酸は水蒸気を吸収するためです。順番を逆にすると最後に水を通すことになり再び水蒸気が混入してしまいます。",
+      "evidence": [
+        {
+          "source_id": "1_4_rxn_001",
+          "quote": "水→濃硫酸の順番で洗気瓶を通す。順番を逆にしてはいけない"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "塩素の実験室的製法として、正しい手順を選びなさい。",
+      "tts_explanation": "塩素の製法で最も出題されるのは洗気瓶の順番です。水→濃硫酸の順に通します。水は塩化水素を吸収するため、濃硫酸は水蒸気を吸収するためです。順番を逆にすると最後に水を通すことになり再び水蒸気が混入してしまいます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q009",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "procedure",
+      "sub_category": "接触法",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "硫酸の工業的製法（接触法）として、正しい手順を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "硫黄を燃焼させてSO₂を作り、酸化バナジウム（五価）を触媒として三酸化硫黄にし、濃硫酸に吸収させて硫酸を得る。三酸化硫黄を直接水に入れてはいけない。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q009_c1",
+          "tts_text": "硫黄を燃焼させて二酸化硫黄を作り、酸化バナジウム（五価）を触媒として三酸化硫黄にし、濃硫酸に吸収させて硫酸を得る。三酸化硫黄を直接水に入れてはいけない。"
+        },
+        {
+          "label": "2",
+          "text": "三酸化硫黄を直接水に入れると誤って覚えやすい典型例だが、三酸化硫黄を水に直接入れると激しく反応して硫酸の霧が発生し危険なため濃硫酸に吸収させる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "激しく発熱するため濃硫酸に吸収させる。",
+          "choice_id": "ch4_1_q009_c2",
+          "tts_text": "三酸化硫黄を直接水に入れると誤って覚えやすい典型例だが、三酸化硫黄を水に直接入れると激しく反応して硫酸の霧が発生し危険なため濃硫酸に吸収させる。"
+        },
+        {
+          "label": "3",
+          "text": "接触法は硝酸の製法であると思い込みがちだが、接触法は硫酸の工業的製法であり硝酸の製法はオストワルト法である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "硫酸の製法。硝酸はオストワルト法。",
+          "choice_id": "ch4_1_q009_c3",
+          "tts_text": "接触法は硝酸の製法であると思い込みがちだが、接触法は硫酸の工業的製法であり硝酸の製法はオストワルト法である。"
+        },
+        {
+          "label": "4",
+          "text": "触媒は白金を使用する。接触法の触媒は酸化バナジウム（五価）であり白金はオストワルト法の触媒である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸化バナジウム（五価）。白金はオストワルト法。",
+          "choice_id": "ch4_1_q009_c4",
+          "tts_text": "触媒は白金を使用する。接触法の触媒は酸化バナジウム（五価）であり白金はオストワルト法の触媒である。"
+        }
+      ],
+      "explanation": "接触法は硫酸の工業的製法です。三段階で進みます。第一に硫黄を燃焼してSO₂を作る。第二に酸化バナジウム（五価）触媒で三酸化硫黄にする。第三に濃硫酸に吸収させる。三酸化硫黄を直接水に入れると激しく発熱して危険です。",
+      "evidence": [
+        {
+          "source_id": "1_5_rxn_001",
+          "quote": "酸化バナジウム(V)触媒。SO3を直接水に入れてはいけない"
+        }
+      ],
+      "related_concept_ids": [
+        "1_5_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "硫酸の工業的製法（接触法）として、正しい手順を選びなさい。",
+      "tts_explanation": "接触法は硫酸の工業的製法です。三段階で進みます。第一に硫黄を燃焼して二酸化硫黄を作る。第二に酸化バナジウム（五価）触媒で三酸化硫黄にする。第三に濃硫酸に吸収させる。三酸化硫黄を直接水に入れると激しく発熱して危険です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q010",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "procedure",
+      "sub_category": "ハーバー・ボッシュ法",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ハーバー・ボッシュ法について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "常温・常圧で反応が進む。窒素分子の三重結合は非常に安定であるため高温・高圧条件と触媒が不可欠である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高温（四百〜六百度）・高圧（百〜三百気圧）が必要。",
+          "choice_id": "ch4_1_q010_c1",
+          "tts_text": "常温・常圧で反応が進む。窒素分子の三重結合は非常に安定であるため高温・高圧条件と触媒が不可欠である。"
+        },
+        {
+          "label": "2",
+          "text": "窒素と水素からNH₃を合成する工業的製法。四酸化三鉄を主成分とする触媒を使用し、高温・高圧の条件が必要である。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q010_c2",
+          "tts_text": "窒素と水素からアンモニアを合成する工業的製法。四酸化三鉄を主成分とする触媒を使用し、高温・高圧の条件が必要である。"
+        },
+        {
+          "label": "3",
+          "text": "ハーバー法は硝酸の製法である。ハーバー法はNH₃の合成法であり硝酸の製法はオストワルト法である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "アンモニアの製法。硝酸はオストワルト法。",
+          "choice_id": "ch4_1_q010_c3",
+          "tts_text": "ハーバー法は硝酸の製法である。ハーバー法はアンモニアの合成法であり硝酸の製法はオストワルト法である。"
+        },
+        {
+          "label": "4",
+          "text": "触媒は白金である。ハーバー法の触媒は四酸化三鉄を主成分とする鉄系触媒であり白金はオストワルト法の触媒。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "四酸化三鉄。白金はオストワルト法。",
+          "choice_id": "ch4_1_q010_c4",
+          "tts_text": "触媒は白金である。ハーバー法の触媒は四酸化三鉄を主成分とする鉄系触媒であり白金はオストワルト法の触媒。"
+        }
+      ],
+      "explanation": "ハーバー・ボッシュ法は窒素の三重結合を切ってNH₃にする工業プロセスです。触媒は四酸化三鉄（鉄系触媒）で、四百〜600℃、百〜300atmという高温高圧条件が必要です。「ハーバーの鉄」と覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "1_6_rxn_001",
+          "quote": "四酸化三鉄を主成分とする触媒。高温・高圧"
+        }
+      ],
+      "related_concept_ids": [
+        "1_6_rxn_001"
+      ],
+      "mnemonic": "ハーバーの鉄",
+      "tts_question": "ハーバー・ボッシュ法について、正しい記述を選びなさい。",
+      "tts_explanation": "ハーバー・ボッシュ法は窒素の三重結合を切ってアンモニアにする工業プロセスです。触媒は四酸化三鉄（鉄系触媒）で、四百〜六百度、百〜三百気圧という高温高圧条件が必要です。「ハーバーの鉄」と覚えましょう。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q011",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "procedure",
+      "sub_category": "オストワルト法",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "オストワルト法について、正しい手順を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "オストワルト法はNH₃の製法である。オストワルト法は硝酸の製法でありNH₃の合成はハーバー法である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "硝酸の製法。アンモニアはハーバー法。",
+          "choice_id": "ch4_1_q011_c1",
+          "tts_text": "オストワルト法はアンモニアの製法である。オストワルト法は硝酸の製法でありアンモニアの合成はハーバー法である。"
+        },
+        {
+          "label": "2",
+          "text": "一段階で直接NH₃から硝酸が得られる。三段階のプロセスが必要であり一酸化窒素、二酸化窒素を経由して硝酸を得る。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "三段階必要。",
+          "choice_id": "ch4_1_q011_c2",
+          "tts_text": "一段階で直接アンモニアから硝酸が得られる。三段階のプロセスが必要であり一酸化窒素、二酸化窒素を経由して硝酸を得る。"
+        },
+        {
+          "label": "3",
+          "text": "NH₃を白金触媒で酸化して一酸化窒素にし、さらに酸化して二酸化窒素にした後、水に吸収させて硝酸を得る三段階のプロセス。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q011_c3",
+          "tts_text": "アンモニアを白金触媒で酸化して一酸化窒素にし、さらに酸化して二酸化窒素にした後、水に吸収させて硝酸を得る三段階のプロセス。"
+        },
+        {
+          "label": "4",
+          "text": "触媒は四酸化三鉄である。オストワルト法の触媒は白金であり四酸化三鉄はハーバー法の触媒である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "白金。四酸化三鉄はハーバー法。",
+          "choice_id": "ch4_1_q011_c4",
+          "tts_text": "触媒は四酸化三鉄である。オストワルト法の触媒は白金であり四酸化三鉄はハーバー法の触媒である。"
+        }
+      ],
+      "explanation": "オストワルト法は硝酸の工業的製法です。NH₃→一酸化窒素→二酸化窒素→硝酸の三段階です。第一段階のみ白金触媒が必要です。副生する一酸化窒素は回収して再利用されます。「オストワルトの白金で勝算（硝酸）あり」と覚えます。",
+      "evidence": [
+        {
+          "source_id": "1_6_rxn_002",
+          "quote": "白金触媒で酸化して一酸化窒素にし、さらに酸化して二酸化窒素とした後、水に吸収させて硝酸を得る"
+        }
+      ],
+      "related_concept_ids": [
+        "1_6_rxn_002"
+      ],
+      "mnemonic": "オストワルトの白金で勝算あり",
+      "tts_question": "オストワルト法について、正しい手順を選びなさい。",
+      "tts_explanation": "オストワルト法は硝酸の工業的製法です。アンモニア→一酸化窒素→二酸化窒素→硝酸の三段階です。第一段階のみ白金触媒が必要です。副生する一酸化窒素は回収して再利用されます。「オストワルトの白金で勝算（硝酸）あり」と覚えます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q012",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "procedure",
+      "sub_category": "気体の捕集法",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "気体の捕集法の選択基準として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水に溶けにくい気体は水上置換。水に溶けやすく空気より軽い気体は上方置換。水に溶けやすく空気より重い気体は下方置換。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q012_c1",
+          "tts_text": "水に溶けにくい気体は水上置換。水に溶けやすく空気より軽い気体は上方置換。水に溶けやすく空気より重い気体は下方置換。"
+        },
+        {
+          "label": "2",
+          "text": "NH₃は下方置換で集める。NH₃は空気より軽いため上方置換で集める。下方置換は空気より重い気体に用いる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "空気より軽いので上方置換。",
+          "choice_id": "ch4_1_q012_c2",
+          "tts_text": "アンモニアは下方置換で集める。アンモニアは空気より軽いため上方置換で集める。下方置換は空気より重い気体に用いる。"
+        },
+        {
+          "label": "3",
+          "text": "水に溶ける気体も水上置換で集められる。水に溶けやすい気体は水上置換では捕集できないため上方置換か下方置換を用いる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水に吸収されてしまい集まらない。",
+          "choice_id": "ch4_1_q012_c3",
+          "tts_text": "水に溶ける気体も水上置換で集められる。水に溶けやすい気体は水上置換では捕集できないため上方置換か下方置換を用いる。"
+        },
+        {
+          "label": "4",
+          "text": "すべての気体は水上置換で集められる。水に溶けやすい気体は水上置換では正しく捕集できないため気体の性質に応じた方法を選ぶ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水溶性のものは集められない。",
+          "choice_id": "ch4_1_q012_c4",
+          "tts_text": "すべての気体は水上置換で集められる。水に溶けやすい気体は水上置換では正しく捕集できないため気体の性質に応じた方法を選ぶ。"
+        }
+      ],
+      "explanation": "気体の捕集法の判断フローは二段階です。まず水に溶けやすいかを判定。溶けにくければ水上置換（純度が高い）。溶けやすければ空気との重さを比較し、軽ければ上方、重ければ下方置換です。NH₃（分子量十七）は唯一上方置換で集める代表例です。",
+      "evidence": [
+        {
+          "source_id": "1_8_proc_001",
+          "quote": "水に溶けにくい→水上置換。水に溶けやすい→軽ければ上方、重ければ下方"
+        }
+      ],
+      "related_concept_ids": [
+        "1_8_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "気体の捕集法の選択基準として、正しいものを選びなさい。",
+      "tts_explanation": "気体の捕集法の判断フローは二段階です。まず水に溶けやすいかを判定。溶けにくければ水上置換（純度が高い）。溶けやすければ空気との重さを比較し、軽ければ上方、重ければ下方置換です。アンモニア（分子量十七）は唯一上方置換で集める代表例です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q013",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "procedure",
+      "sub_category": "乾燥剤の選択",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "気体の乾燥剤の選択基準として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "気体と反応しない乾燥剤を選ぶ。濃硫酸は酸性乾燥剤でNH₃には使えない。ソーダ石灰は塩基性乾燥剤で酸性気体には使えない。CaCl₂はNH₃に使えない例外がある。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q013_c1",
+          "tts_text": "気体と反応しない乾燥剤を選ぶ。濃硫酸は酸性乾燥剤でアンモニアには使えない。ソーダ石灰は塩基性乾燥剤で酸性気体には使えない。塩化カルシウムはアンモニアに使えない例外がある。"
+        },
+        {
+          "label": "2",
+          "text": "すべての気体に濃硫酸を乾燥剤として使えると勘違いされやすいが、濃硫酸は酸性乾燥剤であるためNH₃などの塩基性気体には使用できない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "塩基性のアンモニアには使えない。",
+          "choice_id": "ch4_1_q013_c2",
+          "tts_text": "すべての気体に濃硫酸を乾燥剤として使えると勘違いされやすいが、濃硫酸は酸性乾燥剤であるためアンモニアなどの塩基性気体には使用できない。"
+        },
+        {
+          "label": "3",
+          "text": "NH₃の乾燥にはCaCl₂が最適である。CaCl₂はNH₃と反応するため使えない例外がありソーダ石灰を用いる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "錯イオンを形成するため使えない。",
+          "choice_id": "ch4_1_q013_c3",
+          "tts_text": "アンモニアの乾燥には塩化カルシウムが最適である。塩化カルシウムはアンモニアと反応するため使えない例外がありソーダ石灰を用いる。"
+        },
+        {
+          "label": "4",
+          "text": "乾燥剤は気体との反応を考慮する必要はないと初学者は誤解しがちな説明だが、気体と反応しない乾燥剤を選ぶ必要があり酸性・塩基性の相性が重要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "反応しないものを選ぶ必要がある。",
+          "choice_id": "ch4_1_q013_c4",
+          "tts_text": "乾燥剤は気体との反応を考慮する必要はないと初学者は誤解しがちな説明だが、気体と反応しない乾燥剤を選ぶ必要があり酸性・塩基性の相性が重要である。"
+        }
+      ],
+      "explanation": "乾燥剤の選択は「気体と反応しないこと」が大原則です。NH₃は特殊で、酸性の濃硫酸とは中和反応、中性のCaCl₂とは錯イオン形成で吸収されてしまうため、ソーダ石灰や酸化カルシウムしか使えません。頻出の例外問題です。",
+      "evidence": [
+        {
+          "source_id": "1_8_proc_002",
+          "quote": "アンモニアの乾燥に濃硫酸を使ってはいけない。塩化カルシウムも使ってはいけない"
+        }
+      ],
+      "related_concept_ids": [
+        "1_8_proc_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "気体の乾燥剤の選択基準として、正しいものを選びなさい。",
+      "tts_explanation": "乾燥剤の選択は「気体と反応しないこと」が大原則です。アンモニアは特殊で、酸性の濃硫酸とは中和反応、中性の塩化カルシウムとは錯イオン形成で吸収されてしまうため、ソーダ石灰や酸化カルシウムしか使えません。頻出の例外問題です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q014",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "洗気瓶の順序の間違い",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "塩素の実験室的製法に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸化マンガン（四価）に濃塩酸を加えて加熱する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q014_c1",
+          "tts_text": "酸化マンガン（四価）に濃塩酸を加えて加熱する。"
+        },
+        {
+          "label": "2",
+          "text": "水の洗気瓶で塩化水素を除去する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q014_c2",
+          "tts_text": "水の洗気瓶で塩化水素を除去する。"
+        },
+        {
+          "label": "3",
+          "text": "次に濃硫酸の洗気瓶で水蒸気を除去する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q014_c3",
+          "tts_text": "次に濃硫酸の洗気瓶で水蒸気を除去する。"
+        },
+        {
+          "label": "4",
+          "text": "洗気瓶は濃硫酸を先に通し、次に水を通すのが正しい順序である。",
+          "is_correct": true,
+          "trap_type": "step_order",
+          "trap_detail": "水→濃硫酸の順が正しい。逆にすると最後に水蒸気が混入する。",
+          "choice_id": "ch4_1_q014_c4",
+          "tts_text": "洗気瓶は濃硫酸を先に通し、次に水を通すのが正しい順序である。"
+        }
+      ],
+      "explanation": "洗気瓶の順番は最頻出のひっかけ問題です。正しくは水（塩化水素除去）→濃硫酸（水蒸気除去）の順です。逆にすると最後に水を通すことになり、せっかく除去した水蒸気が再び混入してしまいます。「水で洗ってから硫酸で乾燥」と覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "1_4_rxn_001",
+          "quote": "洗気瓶の順番を「濃硫酸→水」にしてはいけない"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "塩素の実験室的製法に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "洗気瓶の順番は最頻出のひっかけ問題です。正しくは水（塩化水素除去）→濃硫酸（水蒸気除去）の順です。逆にすると最後に水を通すことになり、せっかく除去した水蒸気が再び混入してしまいます。「水で洗ってから硫酸で乾燥」と覚えましょう。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q015",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "工業的製法の触媒の混同",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "工業的製法の触媒に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "オストワルト法では白金触媒を使用する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q015_c1",
+          "tts_text": "オストワルト法では白金触媒を使用する。"
+        },
+        {
+          "label": "2",
+          "text": "ハーバー法は白金触媒、オストワルト法は鉄触媒を使用する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。ハーバー法は鉄、オストワルト法は白金。",
+          "choice_id": "ch4_1_q015_c2",
+          "tts_text": "ハーバー法は白金触媒、オストワルト法は鉄触媒を使用する。"
+        },
+        {
+          "label": "3",
+          "text": "接触法では酸化バナジウム（五価）を触媒として使用する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q015_c3",
+          "tts_text": "接触法では酸化バナジウム（五価）を触媒として使用する。"
+        },
+        {
+          "label": "4",
+          "text": "ハーバー・ボッシュ法では四酸化三鉄系の触媒を使用する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q015_c4",
+          "tts_text": "ハーバー・ボッシュ法では四酸化三鉄系の触媒を使用する。"
+        }
+      ],
+      "explanation": "触媒の混同は定番のひっかけです。「ハーバーの鉄、オストワルトの白金で勝算（硝酸）あり」で覚えれば混乱しません。接触法の酸化バナジウムも加えた三つの製法と触媒のセットが頻出です。",
+      "evidence": [
+        {
+          "source_id": "1_6_tip_001",
+          "quote": "ハーバーの鉄、オストワルトの白金で勝算あり"
+        }
+      ],
+      "related_concept_ids": [
+        "1_6_tip_001"
+      ],
+      "mnemonic": "ハーバーの鉄、オストワルトの白金で勝算あり",
+      "tts_question": "工業的製法の触媒に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "触媒の混同は定番のひっかけです。「ハーバーの鉄、オストワルトの白金で勝算（硝酸）あり」で覚えれば混乱しません。接触法の酸化バナジウムも加えた三つの製法と触媒のセットが頻出です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q016",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "濃硫酸の希釈方法",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "濃硫酸の取り扱いに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水に溶解する際は多量の熱を発生する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q016_c1",
+          "tts_text": "水に溶解する際は多量の熱を発生する。"
+        },
+        {
+          "label": "2",
+          "text": "濃硫酸は密度が大きく約1.83g毎立方センチメートルである。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q016_c2",
+          "tts_text": "濃硫酸は密度が大きく約一点八三グラム毎立方センチメートルである。"
+        },
+        {
+          "label": "3",
+          "text": "濃硫酸は不揮発性であり揮発性の酸の製造に利用できる。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q016_c3",
+          "tts_text": "濃硫酸は不揮発性であり揮発性の酸の製造に利用できる。"
+        },
+        {
+          "label": "4",
+          "text": "希釈するときは濃硫酸に水を少しずつ加えるのが正しい方法である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "水に濃硫酸を少しずつ注ぐのが正しい。逆は突沸の危険。",
+          "choice_id": "ch4_1_q016_c4",
+          "tts_text": "希釈するときは濃硫酸に水を少しずつ加えるのが正しい方法である。"
+        }
+      ],
+      "explanation": "濃硫酸の希釈は「水に酸を注ぐ」が鉄則です。逆に（濃硫酸に水を注ぐと）比重の小さい水が硫酸の表面に留まり、溶解熱で一気に沸騰して飛散する危険があります。英語では「Do as you oughta, add acid to water」と覚えます。",
+      "evidence": [
+        {
+          "source_id": "1_5_sub_001",
+          "quote": "水に濃硫酸を少しずつ注ぐ必要がある"
+        }
+      ],
+      "related_concept_ids": [
+        "1_5_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "濃硫酸の取り扱いに関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "濃硫酸の希釈は「水に酸を注ぐ」が鉄則です。逆に（濃硫酸に水を注ぐと）比重の小さい水が硫酸の表面に留まり、溶解熱で一気に沸騰して飛散する危険があります。英語では「Do as you oughta, add acid to water」と覚えます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q017",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "フッ素と塩素の色の混同",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "ハロゲン単体の色に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヨウ素は黒紫色の固体である。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q017_c1",
+          "tts_text": "ヨウ素は黒紫色の固体である。"
+        },
+        {
+          "label": "2",
+          "text": "フッ素は黄緑色の気体である。",
+          "is_correct": true,
+          "trap_type": "property_swap",
+          "trap_detail": "フッ素は淡黄色。黄緑色は塩素。",
+          "choice_id": "ch4_1_q017_c2",
+          "tts_text": "フッ素は黄緑色の気体である。"
+        },
+        {
+          "label": "3",
+          "text": "臭素は赤褐色の液体である。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q017_c3",
+          "tts_text": "臭素は赤褐色の液体である。"
+        },
+        {
+          "label": "4",
+          "text": "塩素は黄緑色の気体である。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q017_c4",
+          "tts_text": "塩素は黄緑色の気体である。"
+        }
+      ],
+      "explanation": "ハロゲン単体の色は頻出です。フッ素は淡黄色、塩素は黄緑色、臭素は赤褐色の液体、ヨウ素は黒紫色の固体です。フッ素と塩素はどちらも黄色っぽい気体ですが、フッ素は淡黄色、塩素は黄緑色と明確に区別されます。",
+      "evidence": [
+        {
+          "source_id": "1_4_sub_001",
+          "quote": "淡黄色"
+        },
+        {
+          "source_id": "1_4_sub_002",
+          "quote": "黄緑色"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_sub_001",
+        "1_4_sub_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "ハロゲン単体の色に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "ハロゲン単体の色は頻出です。フッ素は淡黄色、塩素は黄緑色、臭素は赤褐色の液体、ヨウ素は黒紫色の固体です。フッ素と塩素はどちらも黄色っぽい気体ですが、フッ素は淡黄色、塩素は黄緑色と明確に区別されます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q018",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "硝酸の保存",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "硝酸の保存方法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "光によって分解するため褐色瓶に入れて冷暗所で保存する。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q018_c1",
+          "tts_text": "光によって分解するため褐色瓶に入れて冷暗所で保存する。"
+        },
+        {
+          "label": "2",
+          "text": "透明なガラス瓶で日光に当てて保存する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "光分解するため褐色瓶と冷暗所が必要。",
+          "choice_id": "ch4_1_q018_c2",
+          "tts_text": "透明なガラス瓶で日光に当てて保存する。"
+        },
+        {
+          "label": "3",
+          "text": "ポリエチレン容器で保存する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "ポリエチレンはフッ化水素の保存容器。",
+          "choice_id": "ch4_1_q018_c3",
+          "tts_text": "ポリエチレン容器で保存する。"
+        },
+        {
+          "label": "4",
+          "text": "硝酸は安定なので特別な保存は不要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "光分解性があり褐色瓶が必要。",
+          "choice_id": "ch4_1_q018_c4",
+          "tts_text": "硝酸は安定なので特別な保存は不要。"
+        }
+      ],
+      "explanation": "硝酸は光エネルギーで分解して二酸化窒素と酸素と水になります。生じた二酸化窒素は褐色の気体であるため古い硝酸が褐色になっていることがあります。これを防ぐため褐色瓶に入れて冷暗所に保存します。",
+      "evidence": [
+        {
+          "source_id": "1_6_sub_002",
+          "quote": "光で分解しやすいため褐色瓶で保存する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_6_sub_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "硝酸の保存方法として、正しいものを選びなさい。",
+      "tts_explanation": "硝酸は光エネルギーで分解して二酸化窒素と酸素と水になります。生じた二酸化窒素は褐色の気体であるため古い硝酸が褐色になっていることがあります。これを防ぐため褐色瓶に入れて冷暗所に保存します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q019",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "製法と製品の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "工業的製法と製品の組み合わせに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "接触法で硫酸を製造する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q019_c1",
+          "tts_text": "接触法で硫酸を製造する。"
+        },
+        {
+          "label": "2",
+          "text": "ハーバー・ボッシュ法でNH₃を合成する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q019_c2",
+          "tts_text": "ハーバー・ボッシュ法でアンモニアを合成する。"
+        },
+        {
+          "label": "3",
+          "text": "接触法でNH₃を合成し、ハーバー法で硫酸を製造する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。接触法は硫酸、ハーバー法はアンモニア。",
+          "choice_id": "ch4_1_q019_c3",
+          "tts_text": "接触法でアンモニアを合成し、ハーバー法で硫酸を製造する。"
+        },
+        {
+          "label": "4",
+          "text": "オストワルト法で硝酸を製造する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q019_c4",
+          "tts_text": "オストワルト法で硝酸を製造する。"
+        }
+      ],
+      "explanation": "三大工業的製法の製品を入れ替えるのは頻出のひっかけです。接触法→硫酸（触媒：酸化バナジウム）。ハーバー法→NH₃（触媒：鉄）。オストワルト法→硝酸（触媒：白金）。この三つのセットを正確に覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "1_5_rxn_001",
+          "quote": "接触法は硫酸を製造する"
+        },
+        {
+          "source_id": "1_6_rxn_001",
+          "quote": "ハーバー・ボッシュ法はアンモニアを合成する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_5_rxn_001",
+        "1_6_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "工業的製法と製品の組み合わせに関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "三大工業的製法の製品を入れ替えるのは頻出のひっかけです。接触法→硫酸（触媒：酸化バナジウム）。ハーバー法→アンモニア（触媒：鉄）。オストワルト法→硝酸（触媒：白金）。この三つのセットを正確に覚えましょう。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q020",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "mnemonic",
+      "sub_category": "工業的製法の触媒",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "工業的製法の触媒の語呂合わせとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "この語呂合わせでは硫酸の製法の触媒も覚えられる。この語呂合わせはハーバーの鉄とオストワルトの白金だけであり接触法の触媒は別途覚える。",
+          "is_correct": false,
+          "trap_type": "partial_truth",
+          "trap_detail": "この語呂合わせはアンモニアと硝酸のみ。硫酸の触媒は別に覚える。",
+          "choice_id": "ch4_1_q020_c1",
+          "tts_text": "この語呂合わせでは硫酸の製法の触媒も覚えられる。この語呂合わせはハーバーの鉄とオストワルトの白金だけであり接触法の触媒は別途覚える。"
+        },
+        {
+          "label": "2",
+          "text": "三つの製法すべて同じ触媒を使う。三つの製法はそれぞれ異なる触媒を使いハーバーは鉄、オストワルトは白金、接触法は酸化バナジウム。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "すべて異なる。",
+          "choice_id": "ch4_1_q020_c2",
+          "tts_text": "三つの製法すべて同じ触媒を使う。三つの製法はそれぞれ異なる触媒を使いハーバーは鉄、オストワルトは白金、接触法は酸化バナジウム。"
+        },
+        {
+          "label": "3",
+          "text": "「ハーバーの鉄、オストワルトの白金で勝算（硝酸）あり」で覚える。接触法の触媒は酸化バナジウム。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q020_c3",
+          "tts_text": "「ハーバーの鉄、オストワルトの白金で勝算（硝酸）あり」で覚える。接触法の触媒は酸化バナジウム。"
+        },
+        {
+          "label": "4",
+          "text": "ハーバーの白金、オストワルトの鉄と覚える。逆でハーバーが鉄触媒、オストワルトが白金触媒であり入れ替わっている。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。",
+          "choice_id": "ch4_1_q020_c4",
+          "tts_text": "ハーバーの白金、オストワルトの鉄と覚える。逆でハーバーが鉄触媒、オストワルトが白金触媒であり入れ替わっている。"
+        }
+      ],
+      "explanation": "触媒の混同対策にこの語呂合わせは非常に有効です。ハーバー法→鉄（四酸化三鉄）、オストワルト法→白金。「勝算」は「硝酸」にかけています。接触法の酸化バナジウムは「接V（セツブイ）」と覚える方法もあります。",
+      "evidence": [
+        {
+          "source_id": "1_6_tip_001",
+          "quote": "ハーバーの鉄、オストワルトの白金で勝算あり"
+        }
+      ],
+      "related_concept_ids": [
+        "1_6_tip_001"
+      ],
+      "mnemonic": "ハーバーの鉄、オストワルトの白金で勝算あり",
+      "tts_question": "工業的製法の触媒の語呂合わせとして、正しいものを選びなさい。",
+      "tts_explanation": "触媒の混同対策にこの語呂合わせは非常に有効です。ハーバー法→鉄（四酸化三鉄）、オストワルト法→白金。「勝算」は「硝酸」にかけています。接触法の酸化バナジウムは「接V（セツブイ）」と覚える方法もあります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q021",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "接触法での直接溶解の禁止",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "接触法に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸化バナジウム（五価）が触媒として使われる。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q021_c1",
+          "tts_text": "酸化バナジウム（五価）が触媒として使われる。"
+        },
+        {
+          "label": "2",
+          "text": "硫黄を燃焼させてSO₂を得る第一段階がある。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q021_c2",
+          "tts_text": "硫黄を燃焼させて二酸化硫黄を得る第一段階がある。"
+        },
+        {
+          "label": "3",
+          "text": "三酸化硫黄は濃硫酸に吸収させる。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q021_c3",
+          "tts_text": "三酸化硫黄は濃硫酸に吸収させる。"
+        },
+        {
+          "label": "4",
+          "text": "三酸化硫黄を直接水に溶かすのが最も効率的で安全な方法である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "直接水に入れるのは激しい発熱で危険。濃硫酸に吸収させる。",
+          "choice_id": "ch4_1_q021_c4",
+          "tts_text": "三酸化硫黄を直接水に溶かすのが最も効率的で安全な方法である。"
+        }
+      ],
+      "explanation": "三酸化硫黄を水に直接入れると激しく発熱し、硫酸のミストが発生して危険です。そのためまず濃硫酸に吸収させて発煙硫酸とし、それを水で希釈して目的の濃度の硫酸にします。「直接水に入れない」がポイントです。",
+      "evidence": [
+        {
+          "source_id": "1_5_rxn_001",
+          "quote": "SO3を直接水に溶かす手順はとらない"
+        }
+      ],
+      "related_concept_ids": [
+        "1_5_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "接触法に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "三酸化硫黄を水に直接入れると激しく発熱し、硫酸のミストが発生して危険です。そのためまず濃硫酸に吸収させて発煙硫酸とし、それを水で希釈して目的の濃度の硫酸にします。「直接水に入れない」がポイントです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q022",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "classification",
+      "sub_category": "気体の捕集法分類",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "次の気体と適切な捕集法の対応として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "NH₃は下方置換で集める。NH₃は空気より軽いため上方置換で集める。下方置換は空気より重い気体に用いる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "上方置換。空気より軽い。",
+          "choice_id": "ch4_1_q022_c1",
+          "tts_text": "アンモニアは下方置換で集める。アンモニアは空気より軽いため上方置換で集める。下方置換は空気より重い気体に用いる。"
+        },
+        {
+          "label": "2",
+          "text": "水素と酸素と窒素は水上置換。塩素とCO₂と塩化水素は下方置換。NH₃は上方置換。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q022_c2",
+          "tts_text": "水素と酸素と窒素は水上置換。塩素と二酸化炭素と塩化水素は下方置換。アンモニアは上方置換。"
+        },
+        {
+          "label": "3",
+          "text": "CO₂は上方置換で集める。CO₂は空気より重いため下方置換で集める。上方置換は空気より軽い気体に用いる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "空気より重いので下方置換。",
+          "choice_id": "ch4_1_q022_c3",
+          "tts_text": "二酸化炭素は上方置換で集める。二酸化炭素は空気より重いため下方置換で集める。上方置換は空気より軽い気体に用いる。"
+        },
+        {
+          "label": "4",
+          "text": "塩素は水上置換で集める。塩素は水に溶けやすいため水上置換では集められない。空気より重いので下方置換を用いる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水に溶けやすいので下方置換。",
+          "choice_id": "ch4_1_q022_c4",
+          "tts_text": "塩素は水上置換で集める。塩素は水に溶けやすいため水上置換では集められない。空気より重いので下方置換を用いる。"
+        }
+      ],
+      "explanation": "水に溶けにくい水素・酸素・窒素・一酸化窒素は水上置換。水に溶けやすく空気より重い塩素・CO₂・塩化水素・SO₂・二酸化窒素は下方置換。水に溶けやすく空気より軽い気体はNH₃だけで上方置換です。",
+      "evidence": [
+        {
+          "source_id": "1_8_proc_001",
+          "quote": "水上置換、下方置換、上方置換の使い分け"
+        }
+      ],
+      "related_concept_ids": [
+        "1_8_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "次の気体と適切な捕集法の対応として、正しいものを選びなさい。",
+      "tts_explanation": "水に溶けにくい水素・酸素・窒素・一酸化窒素は水上置換。水に溶けやすく空気より重い塩素・二酸化炭素・塩化水素・二酸化硫黄・二酸化窒素は下方置換。水に溶けやすく空気より軽い気体はアンモニアだけで上方置換です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q023",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "アンモニアの乾燥剤の例外",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "NH₃の乾燥に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "CaCl₂は中性なのでNH₃の乾燥に適している。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "塩化カルシウムはアンモニアと錯イオンを形成するため使えない。",
+          "choice_id": "ch4_1_q023_c1",
+          "tts_text": "塩化カルシウムは中性なのでアンモニアの乾燥に適している。"
+        },
+        {
+          "label": "2",
+          "text": "濃硫酸はNH₃と中和反応するため使えない。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q023_c2",
+          "tts_text": "濃硫酸はアンモニアと中和反応するため使えない。"
+        },
+        {
+          "label": "3",
+          "text": "NH₃は塩基性の気体である。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q023_c3",
+          "tts_text": "アンモニアは塩基性の気体である。"
+        },
+        {
+          "label": "4",
+          "text": "ソーダ石灰はNH₃の乾燥に使える。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q023_c4",
+          "tts_text": "ソーダ石灰はアンモニアの乾燥に使える。"
+        }
+      ],
+      "explanation": "CaCl₂は一般的には中性の乾燥剤ですが、NH₃とは特殊な反応（錯イオン形成）をしてNH₃を吸収してしまうため使えません。「中性だから何にでも使える」と思い込むと間違えます。NH₃の乾燥にはソーダ石灰や酸化カルシウムを使います。",
+      "evidence": [
+        {
+          "source_id": "1_8_proc_002",
+          "quote": "アンモニアの乾燥に塩化カルシウムを使ってはいけない（錯イオン形成）"
+        }
+      ],
+      "related_concept_ids": [
+        "1_8_proc_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "アンモニアの乾燥に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "塩化カルシウムは一般的には中性の乾燥剤ですが、アンモニアとは特殊な反応（錯イオン形成）をしてアンモニアを吸収してしまうため使えません。「中性だから何にでも使える」と思い込むと間違えます。アンモニアの乾燥にはソーダ石灰や酸化カルシウムを使います。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q024",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "フッ化水素とガラス",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "フッ化水素がガラスを腐食する性質について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フッ化水素はガラスの主成分であるSiO₂と反応してガラスを溶かす。この性質を利用してガラスのエッチング加工が行われる。保存にはポリエチレン容器を用いる。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q024_c1",
+          "tts_text": "フッ化水素はガラスの主成分である二酸化ケイ素と反応してガラスを溶かす。この性質を利用してガラスのエッチング加工が行われる。保存にはポリエチレン容器を用いる。"
+        },
+        {
+          "label": "2",
+          "text": "フッ化水素はガラスに影響を与えないと誤解されやすいが、フッ化水素はガラスの主成分のSiO₂と反応しガラスを溶かす腐食性を持つ。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ガラスを腐食する。",
+          "choice_id": "ch4_1_q024_c2",
+          "tts_text": "フッ化水素はガラスに影響を与えないと誤解されやすいが、フッ化水素はガラスの主成分の二酸化ケイ素と反応しガラスを溶かす腐食性を持つ。"
+        },
+        {
+          "label": "3",
+          "text": "すべてのハロゲン化水素がガラスを腐食すると誤って覚えやすい典型例だが、ガラスを腐食するのはフッ化水素のみであり他の塩化水素などはガラスを腐食しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "フッ化水素のみの特異な性質。",
+          "choice_id": "ch4_1_q024_c3",
+          "tts_text": "すべてのハロゲン化水素がガラスを腐食すると誤って覚えやすい典型例だが、ガラスを腐食するのはフッ化水素のみであり他の塩化水素などはガラスを腐食しない。"
+        },
+        {
+          "label": "4",
+          "text": "フッ化水素はガラス瓶に保存できる。フッ化水素はガラスを腐食するためガラス瓶では保存できずポリエチレン容器を使用する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ガラスを溶かすため不可。",
+          "choice_id": "ch4_1_q024_c4",
+          "tts_text": "フッ化水素はガラス瓶に保存できる。フッ化水素はガラスを腐食するためガラス瓶では保存できずポリエチレン容器を使用する。"
+        }
+      ],
+      "explanation": "フッ化水素がガラスを腐食する性質はハロゲン化水素の中でフッ化水素だけの特異な性質です。SiO₂と反応してフルオロケイ酸を生じます。この性質を利用してガラスの曇りガラス加工（エッチング）が工業的に行われています。",
+      "evidence": [
+        {
+          "source_id": "1_4_rxn_002",
+          "quote": "フッ化水素酸がガラスの主成分である二酸化ケイ素と反応する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_rxn_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "フッ化水素がガラスを腐食する性質について、正しい記述を選びなさい。",
+      "tts_explanation": "フッ化水素がガラスを腐食する性質はハロゲン化水素の中でフッ化水素だけの特異な性質です。二酸化ケイ素と反応してフルオロケイ酸を生じます。この性質を利用してガラスの曇りガラス加工（エッチング）が工業的に行われています。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q025",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "ハロゲン化水素の酸性",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "ハロゲン化水素の酸性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヨウ化水素酸は強酸である。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q025_c1",
+          "tts_text": "ヨウ化水素酸は強酸である。"
+        },
+        {
+          "label": "2",
+          "text": "塩酸は強酸である。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q025_c2",
+          "tts_text": "塩酸は強酸である。"
+        },
+        {
+          "label": "3",
+          "text": "フッ化水素酸は強酸である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "弱酸。他のハロゲン化水素（塩酸・臭化水素酸・ヨウ化水素酸）は強酸。",
+          "choice_id": "ch4_1_q025_c3",
+          "tts_text": "フッ化水素酸は強酸である。"
+        },
+        {
+          "label": "4",
+          "text": "臭化水素酸は強酸である。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q025_c4",
+          "tts_text": "臭化水素酸は強酸である。"
+        }
+      ],
+      "explanation": "ハロゲン化水素の中でフッ化水素酸だけが弱酸である点は超頻出の出題ポイントです。フッ素は電気陰性度が極めて高く水素との結合が非常に強いため、水中での電離が不完全になり弱酸になります。他の三つ（塩酸・臭化水素酸・ヨウ化水素酸）はすべて強酸です。",
+      "evidence": [
+        {
+          "source_id": "1_4_sub_003",
+          "quote": "他のハロゲン化水素と異なり弱酸"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_sub_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "ハロゲン化水素の酸性に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "ハロゲン化水素の中でフッ化水素酸だけが弱酸である点は超頻出の出題ポイントです。フッ素は電気陰性度が極めて高く水素との結合が非常に強いため、水中での電離が不完全になり弱酸になります。他の三つ（塩酸・臭化水素酸・ヨウ化水素酸）はすべて強酸です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q026",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "塩素の漂白と殺菌",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "塩素の漂白作用と殺菌作用の原因として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩素が水に溶けると塩酸と次亜塩素酸が生じ、次亜塩素酸の強い酸化力により漂白・殺菌できる。水道水の消毒にも利用される。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q026_c1",
+          "tts_text": "塩素が水に溶けると塩酸と次亜塩素酸が生じ、次亜塩素酸の強い酸化力により漂白・殺菌できる。水道水の消毒にも利用される。"
+        },
+        {
+          "label": "2",
+          "text": "塩酸の酸性が漂白の原因である。漂白の原因は塩酸ではなく次亜塩素酸の強い酸化力であり酸性そのものは漂白に関与しない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩酸ではなく次亜塩素酸の酸化力。",
+          "choice_id": "ch4_1_q026_c2",
+          "tts_text": "塩酸の酸性が漂白の原因である。漂白の原因は塩酸ではなく次亜塩素酸の強い酸化力であり酸性そのものは漂白に関与しない。"
+        },
+        {
+          "label": "3",
+          "text": "乾燥した塩素ガスに漂白作用がある。乾燥した塩素ガスには漂白作用がなく水分が必要で次亜塩素酸が生じて初めて漂白できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "湿った状態でないと次亜塩素酸が生じない。",
+          "choice_id": "ch4_1_q026_c3",
+          "tts_text": "乾燥した塩素ガスに漂白作用がある。乾燥した塩素ガスには漂白作用がなく水分が必要で次亜塩素酸が生じて初めて漂白できる。"
+        },
+        {
+          "label": "4",
+          "text": "塩素には殺菌作用はない。塩素が水に溶けて生じる次亜塩素酸には殺菌作用があり水道水の消毒にも利用されている。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "殺菌作用がある。",
+          "choice_id": "ch4_1_q026_c4",
+          "tts_text": "塩素には殺菌作用はない。塩素が水に溶けて生じる次亜塩素酸には殺菌作用があり水道水の消毒にも利用されている。"
+        }
+      ],
+      "explanation": "塩素の漂白・殺菌のキーは次亜塩素酸です。塩素が水に溶けると塩酸と次亜塩素酸が同時に生成し、次亜塩素酸の酸化力で色素を分解（漂白）したり菌を死滅させたり（殺菌）します。乾燥した塩素ガスでは次亜塩素酸が生じないため漂白作用がありません。",
+      "evidence": [
+        {
+          "source_id": "1_4_sub_002",
+          "quote": "水に溶けやすく（塩酸と次亜塩素酸を生じる）。漂白作用、殺菌作用"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_sub_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "塩素の漂白作用と殺菌作用の原因として、正しいものを選びなさい。",
+      "tts_explanation": "塩素の漂白・殺菌のキーは次亜塩素酸です。塩素が水に溶けると塩酸と次亜塩素酸が同時に生成し、次亜塩素酸の酸化力で色素を分解（漂白）したり菌を死滅させたり（殺菌）します。乾燥した塩素ガスでは次亜塩素酸が生じないため漂白作用がありません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q027",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "不動態",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "硝酸と不動態に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "不動態が形成されるとそれ以上溶けなくなる。これは正しい記述であり表面に緻密な酸化被膜が形成され内部を保護する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q027_c1",
+          "tts_text": "不動態が形成されるとそれ以上溶けなくなる。これは正しい記述であり表面に緻密な酸化被膜が形成され内部を保護する。"
+        },
+        {
+          "label": "2",
+          "text": "希硝酸では不動態は形成されず鉄は溶ける。これは正しい記述であり不動態を形成するのは濃硝酸のみで希硝酸では金属は溶ける。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q027_c2",
+          "tts_text": "希硝酸では不動態は形成されず鉄は溶ける。これは正しい記述であり不動態を形成するのは濃硝酸のみで希硝酸では金属は溶ける。"
+        },
+        {
+          "label": "3",
+          "text": "不動態は濃硝酸によって全ての金属に形成されるため、どの金属も濃硝酸に溶けない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "不動態は鉄・アルミ・ニッケルなど特定の金属のみ。銅は溶ける。",
+          "choice_id": "ch4_1_q027_c3",
+          "tts_text": "不動態は濃硝酸によって全ての金属に形成されるため、どの金属も濃硝酸に溶けない。"
+        },
+        {
+          "label": "4",
+          "text": "濃硝酸は鉄やアルミニウムの表面に緻密な酸化被膜を形成する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q027_c4",
+          "tts_text": "濃硝酸は鉄やアルミニウムの表面に緻密な酸化被膜を形成する。"
+        }
+      ],
+      "explanation": "不動態は全ての金属に形成されるわけではありません。鉄、アルミニウム、ニッケル、クロムなど特定の金属表面にのみ緻密な酸化被膜が形成されます。銅は不動態を作らないため濃硝酸にも溶けます。",
+      "evidence": [
+        {
+          "source_id": "1_6_sub_002",
+          "quote": "不動態を形成"
+        }
+      ],
+      "related_concept_ids": [
+        "1_6_sub_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "硝酸と不動態に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "不動態は全ての金属に形成されるわけではありません。鉄、アルミニウム、ニッケル、クロムなど特定の金属表面にのみ緻密な酸化被膜が形成されます。銅は不動態を作らないため濃硝酸にも溶けます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q028",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "濃硫酸の吸湿性と脱水性",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "濃硫酸の吸湿性と脱水性の違いとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "脱水性により乾燥剤として使えると誤って覚えがちだが、乾燥剤として使えるのは吸湿性の方であり脱水性は有機物を炭化させる別の性質である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "乾燥剤は吸湿性。",
+          "choice_id": "ch4_1_q028_c1",
+          "tts_text": "脱水性により乾燥剤として使えると誤って覚えがちだが、乾燥剤として使えるのは吸湿性の方であり脱水性は有機物を炭化させる別の性質である。"
+        },
+        {
+          "label": "2",
+          "text": "吸湿性と脱水性は同じ意味である。吸湿性は空気中の水分を吸う性質で脱水性は物質から水素と酸素を奪う性質であり全く異なる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "異なる性質。",
+          "choice_id": "ch4_1_q028_c2",
+          "tts_text": "吸湿性と脱水性は同じ意味である。吸湿性は空気中の水分を吸う性質で脱水性は物質から水素と酸素を奪う性質であり全く異なる。"
+        },
+        {
+          "label": "3",
+          "text": "吸湿性で有機物を炭化させる。有機物を炭化させるのは脱水性の方であり吸湿性は空気中や気体中の水分を吸い取る性質である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "炭化は脱水性。",
+          "choice_id": "ch4_1_q028_c3",
+          "tts_text": "吸湿性で有機物を炭化させる。有機物を炭化させるのは脱水性の方であり吸湿性は空気中や気体中の水分を吸い取る性質である。"
+        },
+        {
+          "label": "4",
+          "text": "吸湿性は空気中や気体中の水分を吸い取る性質で乾燥剤として利用される。脱水性は物質から水素と酸素を二対一の割合で奪い取る性質で有機物を炭化させる。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q028_c4",
+          "tts_text": "吸湿性は空気中や気体中の水分を吸い取る性質で乾燥剤として利用される。脱水性は物質から水素と酸素を二対一の割合で奪い取る性質で有機物を炭化させる。"
+        }
+      ],
+      "explanation": "吸湿性と脱水性は混同しやすいですが明確に異なります。吸湿性は水分子そのものを吸着する性質（乾燥剤として利用）。脱水性は物質の分子構造から水素と酸素を水の形で奪い取る性質（砂糖に濃硫酸をかけると炭化する実験）です。",
+      "evidence": [
+        {
+          "source_id": "1_5_sub_001",
+          "quote": "吸湿性、脱水性"
+        }
+      ],
+      "related_concept_ids": [
+        "1_5_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "濃硫酸の吸湿性と脱水性の違いとして、正しいものを選びなさい。",
+      "tts_explanation": "吸湿性と脱水性は混同しやすいですが明確に異なります。吸湿性は水分子そのものを吸着する性質（乾燥剤として利用）。脱水性は物質の分子構造から水素と酸素を水の形で奪い取る性質（砂糖に濃硫酸をかけると炭化する実験）です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q029",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "オストワルト法の段階",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "オストワルト法に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "第一段階でNH₃を白金触媒で酸化して一酸化窒素を得る。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q029_c1",
+          "tts_text": "第一段階でアンモニアを白金触媒で酸化して一酸化窒素を得る。"
+        },
+        {
+          "label": "2",
+          "text": "三段階すべてで白金触媒が必要である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "白金触媒が必要なのは第一段階のみ。第二段階以降は触媒不要。",
+          "choice_id": "ch4_1_q029_c2",
+          "tts_text": "三段階すべてで白金触媒が必要である。"
+        },
+        {
+          "label": "3",
+          "text": "第三段階で二酸化窒素を水に吸収させて硝酸を得る。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q029_c3",
+          "tts_text": "第三段階で二酸化窒素を水に吸収させて硝酸を得る。"
+        },
+        {
+          "label": "4",
+          "text": "第二段階で一酸化窒素をさらに酸化して二酸化窒素にする。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q029_c4",
+          "tts_text": "第二段階で一酸化窒素をさらに酸化して二酸化窒素にする。"
+        }
+      ],
+      "explanation": "オストワルト法で白金触媒が必要なのは第一段階（NH₃の酸化）のみです。第二段階（一酸化窒素の酸化）は空気中の酸素と自然に反応し、第三段階（二酸化窒素の水への吸収）も触媒不要です。",
+      "evidence": [
+        {
+          "source_id": "1_6_rxn_002",
+          "quote": "白金網(Pt)を使用（第1段階のみ）"
+        }
+      ],
+      "related_concept_ids": [
+        "1_6_rxn_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "オストワルト法に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "オストワルト法で白金触媒が必要なのは第一段階（アンモニアの酸化）のみです。第二段階（一酸化窒素の酸化）は空気中の酸素と自然に反応し、第三段階（二酸化窒素の水への吸収）も触媒不要です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q030",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "comprehensive",
+      "sub_category": "ハロゲンの総合",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ハロゲン単体と水素との反応性に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ヨウ素がもっとも反応しやすく、フッ素が最も反応しにくいと誤って覚えやすい典型例だが、逆でフッ素が最も反応しやすく低温暗所でも爆発的に反応しヨウ素は高温と触媒が必要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "逆。",
+          "choice_id": "ch4_1_q030_c1",
+          "tts_text": "ヨウ素がもっとも反応しやすく、フッ素が最も反応しにくいと誤って覚えやすい典型例だが、逆でフッ素が最も反応しやすく低温暗所でも爆発的に反応しヨウ素は高温と触媒が必要。"
+        },
+        {
+          "label": "2",
+          "text": "すべてのハロゲンが室温で水素と反応すると思い込みがちだが、臭素は加熱が必要でありヨウ素は高温と白金触媒がなければ反応しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "フッ素のみ。",
+          "choice_id": "ch4_1_q030_c2",
+          "tts_text": "すべてのハロゲンが室温で水素と反応すると思い込みがちだが、臭素は加熱が必要でありヨウ素は高温と白金触媒がなければ反応しない。"
+        },
+        {
+          "label": "3",
+          "text": "反応条件はすべて同じである。フッ素は低温暗所、塩素は光照射、臭素は加熱、ヨウ素は高温と触媒とそれぞれ異なる条件が必要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "それぞれ異なる。",
+          "choice_id": "ch4_1_q030_c3",
+          "tts_text": "反応条件はすべて同じである。フッ素は低温暗所、塩素は光照射、臭素は加熱、ヨウ素は高温と触媒とそれぞれ異なる条件が必要。"
+        },
+        {
+          "label": "4",
+          "text": "フッ素は低温・暗所でも爆発的に反応。塩素は光照射で爆発的に反応。臭素は加熱で反応。ヨウ素は高温と白金触媒で反応。原子番号が大きくなるほど反応に強い条件が必要。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q030_c4",
+          "tts_text": "フッ素は低温・暗所でも爆発的に反応。塩素は光照射で爆発的に反応。臭素は加熱で反応。ヨウ素は高温と白金触媒で反応。原子番号が大きくなるほど反応に強い条件が必要。"
+        }
+      ],
+      "explanation": "ハロゲンの水素との反応性は酸化力の順序を直接反映しています。フッ素は最も激しくどんな条件でも反応、ヨウ素は最も穏やかで触媒と高温が必要です。この順序はフッ素＞塩素＞臭素＞ヨウ素という酸化力の順と完全に一致します。",
+      "evidence": [
+        {
+          "source_id": "1_4_def_001",
+          "quote": "フッ素は低温暗所でも爆発的に反応し、塩素は光照射で爆発的に反応する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ハロゲン単体と水素との反応性に関する総合的な記述として、正しいものを選びなさい。",
+      "tts_explanation": "ハロゲンの水素との反応性は酸化力の順序を直接反映しています。フッ素は最も激しくどんな条件でも反応、ヨウ素は最も穏やかで触媒と高温が必要です。この順序はフッ素＞塩素＞臭素＞ヨウ素という酸化力の順と完全に一致します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q031",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "濃硫酸と希硫酸の違い",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "濃硫酸と希硫酸の性質の違いとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "希硫酸にも脱水性がある。脱水性は濃硫酸特有の性質であり希硫酸には脱水性はない。希硫酸は通常の強酸としてはたらく。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "脱水性は濃硫酸のみ。",
+          "choice_id": "ch4_1_q031_c1",
+          "tts_text": "希硫酸にも脱水性がある。脱水性は濃硫酸特有の性質であり希硫酸には脱水性はない。希硫酸は通常の強酸としてはたらく。"
+        },
+        {
+          "label": "2",
+          "text": "濃硫酸は不揮発性・吸湿性・脱水性・酸化作用（熱濃硫酸）があり、ほとんど電離していないため導電性は低い。希硫酸は強酸として電離し導電性が高い。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q031_c2",
+          "tts_text": "濃硫酸は不揮発性・吸湿性・脱水性・酸化作用（熱濃硫酸）があり、ほとんど電離していないため導電性は低い。希硫酸は強酸として電離し導電性が高い。"
+        },
+        {
+          "label": "3",
+          "text": "希硫酸に酸化作用がある。酸化作用を示すのは熱濃硫酸であり希硫酸には酸化作用はない。希硫酸は通常の酸として作用する。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "酸化作用は熱濃硫酸のみ。",
+          "choice_id": "ch4_1_q031_c3",
+          "tts_text": "希硫酸に酸化作用がある。酸化作用を示すのは熱濃硫酸であり希硫酸には酸化作用はない。希硫酸は通常の酸として作用する。"
+        },
+        {
+          "label": "4",
+          "text": "濃硫酸の方が導電性が高いと勘違いされやすいが、逆で濃硫酸はほとんど電離していないため導電性が低く希硫酸の方が電離して導電性が高い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "希硫酸の方が高い。濃硫酸はほとんど電離していない。",
+          "choice_id": "ch4_1_q031_c4",
+          "tts_text": "濃硫酸の方が導電性が高いと勘違いされやすいが、逆で濃硫酸はほとんど電離していないため導電性が低く希硫酸の方が電離して導電性が高い。"
+        }
+      ],
+      "explanation": "濃硫酸と希硫酸は同じ物質ですが性質が大きく異なります。濃硫酸は分子のまま存在して不揮発・吸湿・脱水の性質を持ち、加熱すると酸化作用も示します。希硫酸は完全に電離した強酸としてはたらきます。この区別は必須知識です。",
+      "evidence": [
+        {
+          "source_id": "1_5_sub_001",
+          "quote": "ほとんど電離していないため導電性は低い（希硫酸は高い）"
+        }
+      ],
+      "related_concept_ids": [
+        "1_5_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "濃硫酸と希硫酸の性質の違いとして、正しいものを選びなさい。",
+      "tts_explanation": "濃硫酸と希硫酸は同じ物質ですが性質が大きく異なります。濃硫酸は分子のまま存在して不揮発・吸湿・脱水の性質を持ち、加熱すると酸化作用も示します。希硫酸は完全に電離した強酸としてはたらきます。この区別は必須知識です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q032",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "塩素の捕集法",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "塩素の捕集に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩素は空気より重い気体である。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q032_c1",
+          "tts_text": "塩素は空気より重い気体である。"
+        },
+        {
+          "label": "2",
+          "text": "塩素は水に溶けやすい。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q032_c2",
+          "tts_text": "塩素は水に溶けやすい。"
+        },
+        {
+          "label": "3",
+          "text": "塩素は水に溶けにくいため水上置換で集める。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "水に溶けやすいため水上置換は不可。下方置換が正しい。",
+          "choice_id": "ch4_1_q032_c3",
+          "tts_text": "塩素は水に溶けにくいため水上置換で集める。"
+        },
+        {
+          "label": "4",
+          "text": "塩素は下方置換で集める。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q032_c4",
+          "tts_text": "塩素は下方置換で集める。"
+        }
+      ],
+      "explanation": "塩素は水に溶けやすく空気より重い気体です。水に溶けやすいため水上置換では水に吸収されてしまい集められません。空気より重い（分子量約七十一）ため下方置換で集めます。",
+      "evidence": [
+        {
+          "source_id": "1_8_proc_001",
+          "quote": "塩素は下方置換。水に溶けやすく空気より重い"
+        }
+      ],
+      "related_concept_ids": [
+        "1_8_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "塩素の捕集に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "塩素は水に溶けやすく空気より重い気体です。水に溶けやすいため水上置換では水に吸収されてしまい集められません。空気より重い（分子量約七十一）ため下方置換で集めます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q033",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "アンモニアの検出",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "NH₃の検出法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "NH₃は無臭で検出が困難である。NH₃は強い刺激臭を持つため臭いでも容易に検出でき無臭ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "刺激臭がある。",
+          "choice_id": "ch4_1_q033_c1",
+          "tts_text": "アンモニアは無臭で検出が困難である。アンモニアは強い刺激臭を持つため臭いでも容易に検出でき無臭ではない。"
+        },
+        {
+          "label": "2",
+          "text": "NH₃は塩素によって検出する。NH₃の検出には濃塩酸を使い塩化アンモニウムの白煙が生じることで確認する。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "塩素の検出はヨウ化カリウムデンプン紙。",
+          "choice_id": "ch4_1_q033_c2",
+          "tts_text": "アンモニアは塩素によって検出する。アンモニアの検出には濃塩酸を使い塩化アンモニウムの白煙が生じることで確認する。"
+        },
+        {
+          "label": "3",
+          "text": "NH₃と塩酸の反応で黄色の煙が生じる。NH₃と塩酸の反応で生じるのは塩化アンモニウムの白煙であり黄色ではない。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "白煙（白い煙）。",
+          "choice_id": "ch4_1_q033_c3",
+          "tts_text": "アンモニアと塩酸の反応で黄色の煙が生じる。アンモニアと塩酸の反応で生じるのは塩化アンモニウムの白煙であり黄色ではない。"
+        },
+        {
+          "label": "4",
+          "text": "濃塩酸を近づけると塩化アンモニウムの白煙が生じる。この反応はNH₃の気体検出に用いられる。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q033_c4",
+          "tts_text": "濃塩酸を近づけると塩化アンモニウムの白煙が生じる。この反応はアンモニアの気体検出に用いられる。"
+        }
+      ],
+      "explanation": "NH₃の典型的な検出法は濃塩酸を含ませたガラス棒を近づけることです。気体のNH₃と塩化水素が反応して塩化アンモニウムの白い微粒子（白煙）が生じます。これ以外にも赤いリトマス紙が青くなるのも検出法です。",
+      "evidence": [
+        {
+          "source_id": "1_6_sub_001",
+          "quote": "濃塩酸を近づけると塩化アンモニウムの白煙を生じる"
+        }
+      ],
+      "related_concept_ids": [
+        "1_6_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "アンモニアの検出法として、正しいものを選びなさい。",
+      "tts_explanation": "アンモニアの典型的な検出法は濃塩酸を含ませたガラス棒を近づけることです。気体のアンモニアと塩化水素が反応して塩化アンモニウムの白い微粒子（白煙）が生じます。これ以外にも赤いリトマス紙が青くなるのも検出法です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q034",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "フッ化水素の保存容器",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "フッ化水素の保存に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フッ化水素はガラス瓶に保存するのが最適である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "ガラスを腐食するため保存できない。ポリエチレン容器を使う。",
+          "choice_id": "ch4_1_q034_c1",
+          "tts_text": "フッ化水素はガラス瓶に保存するのが最適である。"
+        },
+        {
+          "label": "2",
+          "text": "フッ化水素はガラスを腐食する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q034_c2",
+          "tts_text": "フッ化水素はガラスを腐食する。"
+        },
+        {
+          "label": "3",
+          "text": "この性質はガラスのエッチング加工に利用される。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q034_c3",
+          "tts_text": "この性質はガラスのエッチング加工に利用される。"
+        },
+        {
+          "label": "4",
+          "text": "保存にはポリエチレン容器を使用する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q034_c4",
+          "tts_text": "保存にはポリエチレン容器を使用する。"
+        }
+      ],
+      "explanation": "フッ化水素がガラスを溶かすのでガラス瓶に保存できないのは基本知識です。他の酸はほとんどガラス瓶に保存できるため、フッ化水素だけがポリエチレン容器を使うという例外を覚えておきましょう。",
+      "evidence": [
+        {
+          "source_id": "1_4_sub_003",
+          "quote": "ガラスを腐食するためポリエチレン容器で保存する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_sub_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "フッ化水素の保存に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "フッ化水素がガラスを溶かすのでガラス瓶に保存できないのは基本知識です。他の酸はほとんどガラス瓶に保存できるため、フッ化水素だけがポリエチレン容器を使うという例外を覚えておきましょう。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q035",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "comprehensive",
+      "sub_category": "工業的製法の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "工業的製法に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "接触法は酸化バナジウム触媒で硫酸を製造。ハーバー法は鉄触媒で高温高圧でNH₃を合成。オストワルト法は白金触媒でNH₃から硝酸を製造。三酸化硫黄は濃硫酸に吸収させる。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q035_c1",
+          "tts_text": "接触法は酸化バナジウム触媒で硫酸を製造。ハーバー法は鉄触媒で高温高圧でアンモニアを合成。オストワルト法は白金触媒でアンモニアから硝酸を製造。三酸化硫黄は濃硫酸に吸収させる。"
+        },
+        {
+          "label": "2",
+          "text": "ハーバー法で硝酸を作り、オストワルト法でNH₃を作ると誤解されやすいが、逆でハーバー法がNH₃合成でオストワルト法が硝酸製造である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。",
+          "choice_id": "ch4_1_q035_c2",
+          "tts_text": "ハーバー法で硝酸を作り、オストワルト法でアンモニアを作ると誤解されやすいが、逆でハーバー法がアンモニア合成でオストワルト法が硝酸製造である。"
+        },
+        {
+          "label": "3",
+          "text": "三つの製法すべて白金触媒を使用し、すべて同じ条件で反応すると誤って覚えやすい典型例だが、白金触媒を使うのはオストワルト法のみでハーバーは鉄、接触法は酸化バナジウム。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "触媒も条件もすべて異なる。",
+          "choice_id": "ch4_1_q035_c3",
+          "tts_text": "三つの製法すべて白金触媒を使用し、すべて同じ条件で反応すると誤って覚えやすい典型例だが、白金触媒を使うのはオストワルト法のみでハーバーは鉄、接触法は酸化バナジウム。"
+        },
+        {
+          "label": "4",
+          "text": "接触法では三酸化硫黄を直接水に溶かして硫酸にする。三酸化硫黄を水に直接入れると危険なため濃硫酸に吸収させて発煙硫酸にする。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "濃硫酸に吸収させる。",
+          "choice_id": "ch4_1_q035_c4",
+          "tts_text": "接触法では三酸化硫黄を直接水に溶かして硫酸にする。三酸化硫黄を水に直接入れると危険なため濃硫酸に吸収させて発煙硫酸にする。"
+        }
+      ],
+      "explanation": "三大工業的製法を完全に整理した総合問題です。製法名→製品→触媒→特記事項のセットで確認しましょう。接触法（硫酸、バナジウム）、ハーバー法（NH₃、鉄、高温高圧）、オストワルト法（硝酸、白金、三段階）。",
+      "evidence": [
+        {
+          "source_id": "1_5_rxn_001",
+          "quote": "接触法は硫酸。酸化バナジウム触媒"
+        },
+        {
+          "source_id": "1_6_tip_001",
+          "quote": "ハーバーの鉄、オストワルトの白金で勝算あり"
+        }
+      ],
+      "related_concept_ids": [
+        "1_5_rxn_001",
+        "1_6_rxn_001",
+        "1_6_rxn_002",
+        "1_6_tip_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "工業的製法に関する総合的な記述として、正しいものを選びなさい。",
+      "tts_explanation": "三大工業的製法を完全に整理した総合問題です。製法名→製品→触媒→特記事項のセットで確認しましょう。接触法（硫酸、バナジウム）、ハーバー法（アンモニア、鉄、高温高圧）、オストワルト法（硝酸、白金、三段階）。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q036",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "塩素の検出",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "塩素の検出法として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩素は石灰水を白濁させることで検出する。石灰水を白濁させるのはCO₂の検出法であり塩素の検出には使えない。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "石灰水白濁は二酸化炭素の検出法。",
+          "choice_id": "ch4_1_q036_c1",
+          "tts_text": "塩素は石灰水を白濁させることで検出する。石灰水を白濁させるのは二酸化炭素の検出法であり塩素の検出には使えない。"
+        },
+        {
+          "label": "2",
+          "text": "塩素は無色無臭のため検出が困難である。塩素は黄緑色で刺激臭があるため視覚や嗅覚でも確認でき無色無臭ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "黄緑色で刺激臭があり容易に検出可能。",
+          "choice_id": "ch4_1_q036_c2",
+          "tts_text": "塩素は無色無臭のため検出が困難である。塩素は黄緑色で刺激臭があるため視覚や嗅覚でも確認でき無色無臭ではない。"
+        },
+        {
+          "label": "3",
+          "text": "塩素は濃塩酸で白煙を生じさせて検出する。濃塩酸で白煙が生じるのはNH₃の検出法であり塩素にはヨウ化カリウムデンプン紙を用いる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "白煙はアンモニアの検出法。",
+          "choice_id": "ch4_1_q036_c3",
+          "tts_text": "塩素は濃塩酸で白煙を生じさせて検出する。濃塩酸で白煙が生じるのはアンモニアの検出法であり塩素にはヨウ化カリウムデンプン紙を用いる。"
+        },
+        {
+          "label": "4",
+          "text": "湿ったヨウ化カリウムデンプン紙が青変する。塩素の酸化力でヨウ素が遊離し、ヨウ素がデンプンと反応して青色になる。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q036_c4",
+          "tts_text": "湿ったヨウ化カリウムデンプン紙が青変する。塩素の酸化力でヨウ素が遊離し、ヨウ素がデンプンと反応して青色になる。"
+        }
+      ],
+      "explanation": "塩素の検出にはヨウ化カリウムデンプン紙を使います。塩素の酸化力でヨウ化カリウムからヨウ素が遊離し、遊離したヨウ素がデンプンと反応してヨウ素・デンプン反応による青色を呈します。紙は湿った状態で使う必要があります。",
+      "evidence": [
+        {
+          "source_id": "1_4_sub_002",
+          "quote": "湿ったヨウ化カリウムデンプン紙を青変させる"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_sub_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "塩素の検出法として、正しいものを選びなさい。",
+      "tts_explanation": "塩素の検出にはヨウ化カリウムデンプン紙を使います。塩素の酸化力でヨウ化カリウムからヨウ素が遊離し、遊離したヨウ素がデンプンと反応してヨウ素・デンプン反応による青色を呈します。紙は湿った状態で使う必要があります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q037",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "濃硫酸の乾燥剤としての制限",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "濃硫酸を乾燥剤として使用する場合の記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "濃硫酸は酸性の乾燥剤である。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q037_c1",
+          "tts_text": "濃硫酸は酸性の乾燥剤である。"
+        },
+        {
+          "label": "2",
+          "text": "NH₃の乾燥に濃硫酸を使うのが適切である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "アンモニアは塩基性なので酸性の濃硫酸とは中和反応してしまい使えない。",
+          "choice_id": "ch4_1_q037_c2",
+          "tts_text": "アンモニアの乾燥に濃硫酸を使うのが適切である。"
+        },
+        {
+          "label": "3",
+          "text": "酸性や中性の気体の乾燥に使用できる。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q037_c3",
+          "tts_text": "酸性や中性の気体の乾燥に使用できる。"
+        },
+        {
+          "label": "4",
+          "text": "塩素の乾燥に濃硫酸を使える。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q037_c4",
+          "tts_text": "塩素の乾燥に濃硫酸を使える。"
+        }
+      ],
+      "explanation": "濃硫酸は酸性の乾燥剤であり、塩基性のNH₃とは中和反応して硫酸アンモニウムを生成してしまいます。この場合NH₃は乾燥されるのではなく消費されてしまうため、濃硫酸はNH₃の乾燥には使えません。",
+      "evidence": [
+        {
+          "source_id": "1_8_proc_002",
+          "quote": "アンモニアの乾燥に濃硫酸を使ってはいけない（中和反応）"
+        }
+      ],
+      "related_concept_ids": [
+        "1_8_proc_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "濃硫酸を乾燥剤として使用する場合の記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "濃硫酸は酸性の乾燥剤であり、塩基性のアンモニアとは中和反応して硫酸アンモニウムを生成してしまいます。この場合アンモニアは乾燥されるのではなく消費されてしまうため、濃硫酸はアンモニアの乾燥には使えません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q038",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "典型元素の特徴",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "典型元素について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "典型元素では同じ族でも性質が全く異なる。典型元素は同じ族の元素同士で化学的性質が類似しており全く異なるわけではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "性質がよく似ている。",
+          "choice_id": "ch4_1_q038_c1",
+          "tts_text": "典型元素では同じ族でも性質が全く異なる。典型元素は同じ族の元素同士で化学的性質が類似しており全く異なるわけではない。"
+        },
+        {
+          "label": "2",
+          "text": "典型元素には周期律が成り立たない。典型元素こそ周期律がよく成り立ち族番号の下一桁と価電子数が一致する規則的な特徴がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "周期律の考えがよく成り立つ。",
+          "choice_id": "ch4_1_q038_c2",
+          "tts_text": "典型元素には周期律が成り立たない。典型元素こそ周期律がよく成り立ち族番号の下一桁と価電子数が一致する規則的な特徴がある。"
+        },
+        {
+          "label": "3",
+          "text": "周期表の第一族・第二族および第十三〜十八族の元素であり、族番号の下一桁と価電子の数が一致する。同じ族の元素は化学的性質が似ている。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q038_c3",
+          "tts_text": "周期表の第一族・第二族および第十三〜十八族の元素であり、族番号の下一桁と価電子の数が一致する。同じ族の元素は化学的性質が似ている。"
+        },
+        {
+          "label": "4",
+          "text": "典型元素は第三〜第十二族の元素である。第三〜第十二族は遷移元素であり典型元素は第一族第二族と第十三〜十八族の元素である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "それは遷移元素。",
+          "choice_id": "ch4_1_q038_c4",
+          "tts_text": "典型元素は第三〜第十二族の元素である。第三〜第十二族は遷移元素であり典型元素は第一族第二族と第十三〜十八族の元素である。"
+        }
+      ],
+      "explanation": "典型元素は周期表の両端（第一・二族と第十三〜十八族）に位置する元素です。族番号の下一桁が価電子の数と一致し（例えば第十七族アルカリ金属は価電子七個）、同族元素は化学的性質がよく似ています。これに対し遷移元素は第三〜十二族です。",
+      "evidence": [
+        {
+          "source_id": "1_1_def_001",
+          "quote": "族番号の下一桁が価電子の数と一致するため、同じ族の元素は化学的性質がよく似ている"
+        }
+      ],
+      "related_concept_ids": [
+        "1_1_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "典型元素について、正しい記述を選びなさい。",
+      "tts_explanation": "典型元素は周期表の両端（第一・二族と第十三〜十八族）に位置する元素です。族番号の下一桁が価電子の数と一致し（例えば第十七族アルカリ金属は価電子七個）、同族元素は化学的性質がよく似ています。これに対し遷移元素は第三〜十二族です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q039",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "不揮発性酸による揮発性酸の追い出し",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "濃硫酸の不揮発性を利用した反応として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "この方法では塩素が発生すると誤って覚えがちだが、食塩に濃硫酸を加えて加熱すると発生するのは塩化水素であり塩素ではないと誤って覚えやすい典型例だが、",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩化水素が発生する。塩素ではない。",
+          "choice_id": "ch4_1_q039_c1",
+          "tts_text": "この方法では塩素が発生すると誤って覚えがちだが、食塩に濃硫酸を加えて加熱すると発生するのは塩化水素であり塩素ではないと誤って覚えやすい典型例だが、"
+        },
+        {
+          "label": "2",
+          "text": "この反応では硫酸が揮発する。濃硫酸は不揮発性であるため揮発しない。揮発するのは生成した塩化水素の方である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "硫酸は不揮発性なので揮発しない。",
+          "choice_id": "ch4_1_q039_c2",
+          "tts_text": "この反応では硫酸が揮発する。濃硫酸は不揮発性であるため揮発しない。揮発するのは生成した塩化水素の方である。"
+        },
+        {
+          "label": "3",
+          "text": "食塩に濃硫酸を加えて加熱すると揮発性の塩化水素が発生する。これは不揮発性の酸が揮発性の酸を追い出す反応であり、塩化水素の実験室的製法に用いられる。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q039_c3",
+          "tts_text": "食塩に濃硫酸を加えて加熱すると揮発性の塩化水素が発生する。これは不揮発性の酸が揮発性の酸を追い出す反応であり、塩化水素の実験室的製法に用いられる。"
+        },
+        {
+          "label": "4",
+          "text": "希硫酸でも同じ反応が起こる。この反応は不揮発性の濃硫酸が揮発性の酸を追い出す原理であり希硫酸では効果的に進行しない。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "不揮発性の濃硫酸が必要。",
+          "choice_id": "ch4_1_q039_c4",
+          "tts_text": "希硫酸でも同じ反応が起こる。この反応は不揮発性の濃硫酸が揮発性の酸を追い出す原理であり希硫酸では効果的に進行しない。"
+        }
+      ],
+      "explanation": "不揮発性の酸が揮発性の酸を追い出す反応は重要な原理です。濃硫酸は沸点が高く（約340℃）不揮発性であるため、加熱すると揮発性の酸（塩化水素、フッ化水素など）だけが気体として出てきます。これを利用して酸の気体を実験室で発生させます。",
+      "evidence": [
+        {
+          "source_id": "1_5_sub_001",
+          "quote": "不揮発性"
+        }
+      ],
+      "related_concept_ids": [
+        "1_5_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "濃硫酸の不揮発性を利用した反応として、正しいものを選びなさい。",
+      "tts_explanation": "不揮発性の酸が揮発性の酸を追い出す反応は重要な原理です。濃硫酸は沸点が高く（約三百四十度）不揮発性であるため、加熱すると揮発性の酸（塩化水素、フッ化水素など）だけが気体として出てきます。これを利用して酸の気体を実験室で発生させます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q040",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "comprehensive",
+      "sub_category": "気体の製法と捕集の総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "気体の製法と捕集に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "NH₃は水にきわめてよく溶け空気より軽いため上方置換で集める。乾燥にはソーダ石灰を使う。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q040_c1",
+          "tts_text": "アンモニアは水にきわめてよく溶け空気より軽いため上方置換で集める。乾燥にはソーダ石灰を使う。"
+        },
+        {
+          "label": "2",
+          "text": "塩素は酸化マンガンと濃塩酸で発生させ、水→濃硫酸の順で洗気瓶を通し、下方置換で集める。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q040_c2",
+          "tts_text": "塩素は酸化マンガンと濃塩酸で発生させ、水→濃硫酸の順で洗気瓶を通し、下方置換で集める。"
+        },
+        {
+          "label": "3",
+          "text": "水素は水に溶けにくいため水上置換で集める。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q040_c3",
+          "tts_text": "水素は水に溶けにくいため水上置換で集める。"
+        },
+        {
+          "label": "4",
+          "text": "塩素の洗気瓶は濃硫酸→水の順で、捕集は上方置換。NH₃の乾燥には濃硫酸とCaCl₂が適切。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。洗気瓶は水→濃硫酸、塩素は下方置換、アンモニアに濃硫酸と塩化カルシウムは不可。",
+          "choice_id": "ch4_1_q040_c4",
+          "tts_text": "塩素の洗気瓶は濃硫酸→水の順で、捕集は上方置換。アンモニアの乾燥には濃硫酸と塩化カルシウムが適切。"
+        }
+      ],
+      "explanation": "この問題は気体の製法・捕集・乾燥の全知識を問う総合問題です。洗気瓶は水→濃硫酸の順、塩素は下方置換（空気より重い）、NH₃の乾燥には濃硫酸（中和）もCaCl₂（錯イオン形成）も使えません。すべてのポイントを正確に覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "1_4_rxn_001",
+          "quote": "水→濃硫酸の順で洗気瓶を通す"
+        },
+        {
+          "source_id": "1_8_proc_002",
+          "quote": "アンモニアに濃硫酸も塩化カルシウムも不可"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_rxn_001",
+        "1_8_proc_001",
+        "1_8_proc_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "気体の製法と捕集に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "この問題は気体の製法・捕集・乾燥の全知識を問う総合問題です。洗気瓶は水→濃硫酸の順、塩素は下方置換（空気より重い）、アンモニアの乾燥には濃硫酸（中和）も塩化カルシウム（錯イオン形成）も使えません。すべてのポイントを正確に覚えましょう。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q041",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "フッ化水素の沸点",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "フッ化水素の沸点がハロゲン化水素の中で最も高い理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フッ素の電気陰性度が極めて大きく分子間に強い水素結合が形成されるため沸点が異常に高い。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q041_c1",
+          "tts_text": "フッ素の電気陰性度が極めて大きく分子間に強い水素結合が形成されるため沸点が異常に高い。"
+        },
+        {
+          "label": "2",
+          "text": "フッ化水素は分子間力が弱いため沸点が低い。逆でフッ化水素は強い水素結合があるため分子間力が強く沸点がハロゲン化水素中最も高い。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水素結合で高い。",
+          "choice_id": "ch4_1_q041_c2",
+          "tts_text": "フッ化水素は分子間力が弱いため沸点が低い。逆でフッ化水素は強い水素結合があるため分子間力が強く沸点がハロゲン化水素中最も高い。"
+        },
+        {
+          "label": "3",
+          "text": "フッ化水素は分子量が最大であるため沸点が高い。フッ化水素は分子量が最小だが水素結合により沸点が最も高い。分子量は関係しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "分子量は最小。水素結合が原因。",
+          "choice_id": "ch4_1_q041_c3",
+          "tts_text": "フッ化水素は分子量が最大であるため沸点が高い。フッ化水素は分子量が最小だが水素結合により沸点が最も高い。分子量は関係しない。"
+        },
+        {
+          "label": "4",
+          "text": "ファンデルワールス力が最大であるため沸点が高い。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水素結合が主因。",
+          "choice_id": "ch4_1_q041_c4",
+          "tts_text": "ファンデルワールス力が最大であるため沸点が高い。"
+        }
+      ],
+      "explanation": "通常は分子量が大きいほどファンデルワールス力が強く沸点が高くなります。しかしフッ化水素は分子量が最小であるにもかかわらず沸点が最も高いです。これはフッ素の極めて大きい電気陰性度により分子間に強い水素結合が形成されるためです。",
+      "evidence": [
+        {
+          "source_id": "1_4_sub_003",
+          "quote": "水素結合により沸点が高い"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_sub_003"
+      ],
+      "mnemonic": null,
+      "tts_question": "フッ化水素の沸点がハロゲン化水素の中で最も高い理由として、正しいものを選びなさい。",
+      "tts_explanation": "通常は分子量が大きいほどファンデルワールス力が強く沸点が高くなります。しかしフッ化水素は分子量が最小であるにもかかわらず沸点が最も高いです。これはフッ素の極めて大きい電気陰性度により分子間に強い水素結合が形成されるためです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q042",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "塩素製法での塩酸の濃度",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "塩素の実験室的製法に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "希塩酸を用いても塩素は発生する。",
+          "is_correct": true,
+          "trap_type": "condition_change",
+          "trap_detail": "必ず濃塩酸を用いる。希塩酸では反応しない。",
+          "choice_id": "ch4_1_q042_c1",
+          "tts_text": "希塩酸を用いても塩素は発生する。"
+        },
+        {
+          "label": "2",
+          "text": "下方置換で捕集する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q042_c2",
+          "tts_text": "下方置換で捕集する。"
+        },
+        {
+          "label": "3",
+          "text": "酸化マンガン（四価）が酸化剤としてはたらく。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q042_c3",
+          "tts_text": "酸化マンガン（四価）が酸化剤としてはたらく。"
+        },
+        {
+          "label": "4",
+          "text": "加熱が必要である。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q042_c4",
+          "tts_text": "加熱が必要である。"
+        }
+      ],
+      "explanation": "塩素の製法では必ず「濃」塩酸を使います。希塩酸では反応が進行しません。これは濃塩酸でないと塩化物イオンを十分に酸化できないためです。「濃塩酸」という条件は見落としやすいポイントです。",
+      "evidence": [
+        {
+          "source_id": "1_4_rxn_001",
+          "quote": "必ず濃塩酸を用いる（希塩酸では反応しない）"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "塩素の実験室的製法に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "塩素の製法では必ず「濃」塩酸を使います。希塩酸では反応が進行しません。これは濃塩酸でないと塩化物イオンを十分に酸化できないためです。「濃塩酸」という条件は見落としやすいポイントです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q043",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "ハーバー法の条件",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ハーバー・ボッシュ法で高温高圧条件が必要な理由として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "低温低圧で十分に反応が進む。窒素分子の三重結合は非常に安定で切断に大きなエネルギーが必要であるため高温高圧が不可欠である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高温高圧が必須。",
+          "choice_id": "ch4_1_q043_c1",
+          "tts_text": "低温低圧で十分に反応が進む。窒素分子の三重結合は非常に安定で切断に大きなエネルギーが必要であるため高温高圧が不可欠である。"
+        },
+        {
+          "label": "2",
+          "text": "窒素分子の三重結合は非常に安定で切断するためには高温のエネルギーと高圧が必要である。触媒を使っても厳しい条件が不可欠。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q043_c2",
+          "tts_text": "窒素分子の三重結合は非常に安定で切断するためには高温のエネルギーと高圧が必要である。触媒を使っても厳しい条件が不可欠。"
+        },
+        {
+          "label": "3",
+          "text": "NH₃が不安定なので高温が必要。高温が必要な理由はNH₃が不安定だからではなく窒素の三重結合を切断するためである。",
+          "is_correct": false,
+          "trap_type": "reason_swap",
+          "trap_detail": "窒素の三重結合が安定なのが理由。",
+          "choice_id": "ch4_1_q043_c3",
+          "tts_text": "アンモニアが不安定なので高温が必要。高温が必要な理由はアンモニアが不安定だからではなく窒素の三重結合を切断するためである。"
+        },
+        {
+          "label": "4",
+          "text": "触媒があれば常温常圧で反応する。触媒は活性化エネルギーを下げるが窒素の三重結合は非常に安定なため高温高圧の条件が依然として必要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "触媒があっても高温高圧が必要。",
+          "choice_id": "ch4_1_q043_c4",
+          "tts_text": "触媒があれば常温常圧で反応する。触媒は活性化エネルギーを下げるが窒素の三重結合は非常に安定なため高温高圧の条件が依然として必要。"
+        }
+      ],
+      "explanation": "窒素分子は三つの共有結合（三重結合）で結ばれており非常に安定です。この結合を切るために高温（四百〜600℃）が必要で、ルシャトリエの原理に基づき生成量を増やすために高圧（百〜300atm）条件にします。それでも平衡転化率は低いため、未反応ガスはリサイクルします。",
+      "evidence": [
+        {
+          "source_id": "1_6_rxn_001",
+          "quote": "非常に安定な窒素分子の結合を切るため、高温・高圧の条件と触媒が不可欠"
+        }
+      ],
+      "related_concept_ids": [
+        "1_6_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ハーバー・ボッシュ法で高温高圧条件が必要な理由として、正しいものを選びなさい。",
+      "tts_explanation": "窒素分子は三つの共有結合（三重結合）で結ばれており非常に安定です。この結合を切るために高温（四百〜六百度）が必要で、ルシャトリエの原理に基づき生成量を増やすために高圧（百〜三百気圧）条件にします。それでも平衡転化率は低いため、未反応ガスはリサイクルします。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q044",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "水上置換の制限",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "気体の捕集法に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水上置換の利点は不純物の混入が少なく純度が高いことである。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q044_c1",
+          "tts_text": "水上置換の利点は不純物の混入が少なく純度が高いことである。"
+        },
+        {
+          "label": "2",
+          "text": "塩化水素は水に溶けにくいので水上置換で集める。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "塩化水素は水に極めてよく溶ける。下方置換が必要。",
+          "choice_id": "ch4_1_q044_c2",
+          "tts_text": "塩化水素は水に溶けにくいので水上置換で集める。"
+        },
+        {
+          "label": "3",
+          "text": "水に溶けにくい気体は水上置換で純度高く集められる。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q044_c3",
+          "tts_text": "水に溶けにくい気体は水上置換で純度高く集められる。"
+        },
+        {
+          "label": "4",
+          "text": "酸素や窒素は水上置換で集められる。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q044_c4",
+          "tts_text": "酸素や窒素は水上置換で集められる。"
+        }
+      ],
+      "explanation": "塩化水素は水にきわめてよく溶けるため水上置換は使えません。空気より重い（分子量約三十六点五）ので下方置換で集めます。「水に溶けやすい→水上置換は不可」という判断が第一ステップです。",
+      "evidence": [
+        {
+          "source_id": "1_8_proc_001",
+          "quote": "水に溶ける気体を水上置換で集めようとすると水に吸収されてしまい集まらない"
+        }
+      ],
+      "related_concept_ids": [
+        "1_8_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "気体の捕集法に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "塩化水素は水にきわめてよく溶けるため水上置換は使えません。空気より重い（分子量約三十六点五）ので下方置換で集めます。「水に溶けやすい→水上置換は不可」という判断が第一ステップです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q045",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "オストワルト法の副生物",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "オストワルト法の第三段階で副生する物質について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "二酸化窒素を水に吸収させると硝酸と一酸化窒素が生じ、副生する一酸化窒素は回収して再利用される。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q045_c1",
+          "tts_text": "二酸化窒素を水に吸収させると硝酸と一酸化窒素が生じ、副生する一酸化窒素は回収して再利用される。"
+        },
+        {
+          "label": "2",
+          "text": "副生物はCO₂である。副生するのは一酸化窒素でありCO₂ではない。一酸化窒素は回収して再利用される。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "一酸化窒素。",
+          "choice_id": "ch4_1_q045_c2",
+          "tts_text": "副生物は二酸化炭素である。副生するのは一酸化窒素であり二酸化炭素ではない。一酸化窒素は回収して再利用される。"
+        },
+        {
+          "label": "3",
+          "text": "第三段階では水素が副生する。第三段階ではなく副生するのは一酸化窒素であり水素は副生しない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "一酸化窒素が副生する。",
+          "choice_id": "ch4_1_q045_c3",
+          "tts_text": "第三段階では水素が副生する。第三段階ではなく副生するのは一酸化窒素であり水素は副生しない。"
+        },
+        {
+          "label": "4",
+          "text": "副生物はそのまま捨てる。副生する一酸化窒素は回収して再び酸化し二酸化窒素に戻すことで原料として再利用される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "再利用される。",
+          "choice_id": "ch4_1_q045_c4",
+          "tts_text": "副生物はそのまま捨てる。副生する一酸化窒素は回収して再び酸化し二酸化窒素に戻すことで原料として再利用される。"
+        }
+      ],
+      "explanation": "オストワルト法の第三段階では二酸化窒素を温水に吸収させると硝酸と一酸化窒素が生成します。この一酸化窒素は第二段階の原料として再利用でき（酸素と反応して再び二酸化窒素になる）、資源の無駄がない効率的なプロセスです。",
+      "evidence": [
+        {
+          "source_id": "1_6_rxn_002",
+          "quote": "副生するNOは回収して再利用する"
+        }
+      ],
+      "related_concept_ids": [
+        "1_6_rxn_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "オストワルト法の第三段階で副生する物質について、正しい記述を選びなさい。",
+      "tts_explanation": "オストワルト法の第三段階では二酸化窒素を温水に吸収させると硝酸と一酸化窒素が生成します。この一酸化窒素は第二段階の原料として再利用でき（酸素と反応して再び二酸化窒素になる）、資源の無駄がない効率的なプロセスです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q046",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "classification",
+      "sub_category": "ハロゲン単体の状態",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ハロゲン単体の常温での状態として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "フッ素と塩素は気体、臭素は液体、ヨウ素は固体。原子番号が大きくなるほど沸点が高くなる。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q046_c1",
+          "tts_text": "フッ素と塩素は気体、臭素は液体、ヨウ素は固体。原子番号が大きくなるほど沸点が高くなる。"
+        },
+        {
+          "label": "2",
+          "text": "臭素は気体である。臭素は常温で液体の数少ない元素であり赤褐色の液体として存在する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "常温で唯一の液体非金属。",
+          "choice_id": "ch4_1_q046_c2",
+          "tts_text": "臭素は気体である。臭素は常温で液体の数少ない元素であり赤褐色の液体として存在する。"
+        },
+        {
+          "label": "3",
+          "text": "すべてのハロゲンは気体である。フッ素と塩素は気体だが臭素は液体、ヨウ素は固体であり状態が異なる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "気体は二つだけ。",
+          "choice_id": "ch4_1_q046_c3",
+          "tts_text": "すべてのハロゲンは気体である。フッ素と塩素は気体だが臭素は液体、ヨウ素は固体であり状態が異なる。"
+        },
+        {
+          "label": "4",
+          "text": "ヨウ素は気体である。ヨウ素は常温で黒紫色の固体であり昇華性を持つ。気体ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "固体（黒紫色）。",
+          "choice_id": "ch4_1_q046_c4",
+          "tts_text": "ヨウ素は気体である。ヨウ素は常温で黒紫色の固体であり昇華性を持つ。気体ではない。"
+        }
+      ],
+      "explanation": "ハロゲン単体は原子番号が大きくなるにつれ分子間力が強くなり、状態が気体→液体→固体と変わります。臭素は常温で液体（赤褐色）である唯一の非金属単体として有名です。ヨウ素は昇華性があり加熱すると直接気体になります。",
+      "evidence": [
+        {
+          "source_id": "1_4_def_001",
+          "quote": "ハロゲン単体の性質"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ハロゲン単体の常温での状態として、正しいものを選びなさい。",
+      "tts_explanation": "ハロゲン単体は原子番号が大きくなるにつれ分子間力が強くなり、状態が気体→液体→固体と変わります。臭素は常温で液体（赤褐色）である唯一の非金属単体として有名です。ヨウ素は昇華性があり加熱すると直接気体になります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q047",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "confusion",
+      "sub_category": "濃硫酸の導電性",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "濃硫酸と希硫酸の導電性に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電解質水溶液の導電性はイオンの存在量に依存する。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q047_c1",
+          "tts_text": "電解質水溶液の導電性はイオンの存在量に依存する。"
+        },
+        {
+          "label": "2",
+          "text": "希硫酸は水中で電離しているため導電性が高い。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q047_c2",
+          "tts_text": "希硫酸は水中で電離しているため導電性が高い。"
+        },
+        {
+          "label": "3",
+          "text": "濃硫酸は完全に電離しているため希硫酸より導電性が高い。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "逆。濃硫酸はほとんど電離しておらず導電性は低い。",
+          "choice_id": "ch4_1_q047_c3",
+          "tts_text": "濃硫酸は完全に電離しているため希硫酸より導電性が高い。"
+        },
+        {
+          "label": "4",
+          "text": "濃硫酸はほとんど電離していないため導電性は低い。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q047_c4",
+          "tts_text": "濃硫酸はほとんど電離していないため導電性は低い。"
+        }
+      ],
+      "explanation": "「濃い方が電離が多くて導電性が高いのでは」という直感は誤りです。濃硫酸は約98%の硫酸で水が極めて少ないため、ほとんど電離しておらず導電性は低いです。希硫酸は水が多くイオンに電離しているため導電性が高くなります。",
+      "evidence": [
+        {
+          "source_id": "1_5_sub_001",
+          "quote": "ほとんど電離していないため導電性は低い（希硫酸は高い）"
+        }
+      ],
+      "related_concept_ids": [
+        "1_5_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "濃硫酸と希硫酸の導電性に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "「濃い方が電離が多くて導電性が高いのでは」という直感は誤りです。濃硫酸は約九十八パーセントの硫酸で水が極めて少ないため、ほとんど電離しておらず導電性は低いです。希硫酸は水が多くイオンに電離しているため導電性が高くなります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch4_1_q048",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "property",
+      "sub_category": "ハロゲンの置換反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ハロゲンの酸化力と置換反応の関係として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸化力の弱いハロゲンが強い方を置換できる。逆で酸化力の強いハロゲンが弱い方のイオンから電子を奪い単体を遊離させる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "強い方が弱い方を置換する。",
+          "choice_id": "ch4_1_q048_c1",
+          "tts_text": "酸化力の弱いハロゲンが強い方を置換できる。逆で酸化力の強いハロゲンが弱い方のイオンから電子を奪い単体を遊離させる。"
+        },
+        {
+          "label": "2",
+          "text": "酸化力の強いハロゲンは酸化力の弱いハロゲンのイオンから電子を奪い単体を遊離させる。例えば塩素水にヨウ化カリウム水溶液を加えるとヨウ素が遊離する。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q048_c2",
+          "tts_text": "酸化力の強いハロゲンは酸化力の弱いハロゲンのイオンから電子を奪い単体を遊離させる。例えば塩素水にヨウ化カリウム水溶液を加えるとヨウ素が遊離する。"
+        },
+        {
+          "label": "3",
+          "text": "ハロゲン間の置換反応は起こらない。酸化力に差があるハロゲン間では置換反応が起こり強い方が弱い方を遊離させる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸化力の差があれば起こる。",
+          "choice_id": "ch4_1_q048_c3",
+          "tts_text": "ハロゲン間の置換反応は起こらない。酸化力に差があるハロゲン間では置換反応が起こり強い方が弱い方を遊離させる。"
+        },
+        {
+          "label": "4",
+          "text": "ヨウ素水に塩化カリウムを加えると塩素が遊離する。ヨウ素は塩素より酸化力が弱いため塩化物イオンから電子を奪えず塩素は遊離しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ヨウ素は塩素より酸化力が弱いので塩化物イオンから電子を奪えない。",
+          "choice_id": "ch4_1_q048_c4",
+          "tts_text": "ヨウ素水に塩化カリウムを加えると塩素が遊離する。ヨウ素は塩素より酸化力が弱いため塩化物イオンから電子を奪えず塩素は遊離しない。"
+        }
+      ],
+      "explanation": "酸化力の強いハロゲンは弱いハロゲンのイオンを酸化して単体にします。塩素は臭素やヨウ素よりも酸化力が強いため、臭化物イオンやヨウ化物イオンから電子を奪えます。逆は不可能です。この置換反応で酸化力の順位を実験的に確認できます。",
+      "evidence": [
+        {
+          "source_id": "1_4_def_001",
+          "quote": "酸化力はF2 > Cl2 > Br2 > I2"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ハロゲンの酸化力と置換反応の関係として、正しいものを選びなさい。",
+      "tts_explanation": "酸化力の強いハロゲンは弱いハロゲンのイオンを酸化して単体にします。塩素は臭素やヨウ素よりも酸化力が強いため、臭化物イオンやヨウ化物イオンから電子を奪えます。逆は不可能です。この置換反応で酸化力の順位を実験的に確認できます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q049",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "comprehensive",
+      "sub_category": "乾燥剤の総合",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "乾燥剤と気体の組み合わせに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩素の乾燥に濃硫酸を使える。塩素は酸性気体で濃硫酸と反応しない。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q049_c1",
+          "tts_text": "塩素の乾燥に濃硫酸を使える。塩素は酸性気体で濃硫酸と反応しない。"
+        },
+        {
+          "label": "2",
+          "text": "CO₂の乾燥に濃硫酸を使える。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q049_c2",
+          "tts_text": "二酸化炭素の乾燥に濃硫酸を使える。"
+        },
+        {
+          "label": "3",
+          "text": "NH₃の乾燥にはソーダ石灰を使う。",
+          "is_correct": false,
+          "choice_id": "ch4_1_q049_c3",
+          "tts_text": "アンモニアの乾燥にはソーダ石灰を使う。"
+        },
+        {
+          "label": "4",
+          "text": "硫化水素（酸性気体）の乾燥にソーダ石灰（塩基性乾燥剤）を使うのが適切である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "酸性気体に塩基性乾燥剤は使えない。反応してしまう。",
+          "choice_id": "ch4_1_q049_c4",
+          "tts_text": "硫化水素（酸性気体）の乾燥にソーダ石灰（塩基性乾燥剤）を使うのが適切である。"
+        }
+      ],
+      "explanation": "乾燥剤選択の原則は「気体と反応しないこと」です。硫化水素は酸性気体であり、ソーダ石灰は塩基性乾燥剤です。酸と塩基が反応して硫化水素が消費されてしまうため使えません。酸性気体の乾燥には酸性または中性の乾燥剤を使います。",
+      "evidence": [
+        {
+          "source_id": "1_8_proc_002",
+          "quote": "ソーダ石灰は酸性の気体には使用不可"
+        }
+      ],
+      "related_concept_ids": [
+        "1_8_proc_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "乾燥剤と気体の組み合わせに関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "乾燥剤選択の原則は「気体と反応しないこと」です。硫化水素は酸性気体であり、ソーダ石灰は塩基性乾燥剤です。酸と塩基が反応して硫化水素が消費されてしまうため使えません。酸性気体の乾燥には酸性または中性の乾燥剤を使います。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch4_1_q050",
+      "chapter": "4-1",
+      "chapter_title": "非金属元素",
+      "category": "comprehensive",
+      "sub_category": "非金属元素の全体総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "非金属元素に関する全体の総合記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "すべてのハロゲン化水素は強酸で、洗気瓶は濃硫酸→水の順で通すと初学者が陥りやすい代表的な誤解の一つとしてよく挙げられる主張だが、フッ化水素のみ弱酸であり洗気瓶は水→濃硫酸の順が正しいと説明されることがあるが丁寧に考えると誤りで、",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "二か所誤り。",
+          "choice_id": "ch4_1_q050_c1",
+          "tts_text": "すべてのハロゲン化水素は強酸で、洗気瓶は濃硫酸→水の順で通すと初学者が陥りやすい代表的な誤解の一つとしてよく挙げられる主張だが、フッ化水素のみ弱酸であり洗気瓶は水→濃硫酸の順が正しいと説明されることがあるが丁寧に考えると誤りで、"
+        },
+        {
+          "label": "2",
+          "text": "ハロゲンは原子番号が小さいほど酸化力が強い。フッ化水素のみ弱酸でガラスを腐食。濃硫酸は不揮発性・吸湿性・脱水性。接触法は酸化バナジウム触媒で硫酸を製造。ハーバー法は鉄触媒でNH₃合成。オストワルト法は白金触媒で硝酸を製造。気体捕集は水溶性と密度で判断。",
+          "is_correct": true,
+          "choice_id": "ch4_1_q050_c2",
+          "tts_text": "ハロゲンは原子番号が小さいほど酸化力が強い。フッ化水素のみ弱酸でガラスを腐食。濃硫酸は不揮発性・吸湿性・脱水性。接触法は酸化バナジウム触媒で硫酸を製造。ハーバー法は鉄触媒でアンモニア合成。オストワルト法は白金触媒で硝酸を製造。気体捕集は水溶性と密度で判断。"
+        },
+        {
+          "label": "3",
+          "text": "ハロゲンの酸化力は原子番号が大きいほど強いと勘違いされやすいが、フッ化水素は強酸と初学者が陥りやすい代表的な誤解の一つとしてよく挙げられる主張だが、接触法の触媒は白金と初学者は誤解しがちな説明だが、ハーバー法の触媒は酸化バナジウムと誤って覚えやすい典型例だが、",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。",
+          "choice_id": "ch4_1_q050_c3",
+          "tts_text": "ハロゲンの酸化力は原子番号が大きいほど強いと勘違いされやすいが、フッ化水素は強酸と初学者が陥りやすい代表的な誤解の一つとしてよく挙げられる主張だが、接触法の触媒は白金と初学者は誤解しがちな説明だが、ハーバー法の触媒は酸化バナジウムと誤って覚えやすい典型例だが、"
+        },
+        {
+          "label": "4",
+          "text": "NH₃の乾燥には濃硫酸とCaCl₂が適していると思い込みがちだが、どちらもNH₃と反応するため使えないと初学者が陥りやすい代表的な誤解の一つとしてよく挙げられる主張だが、ソーダ石灰を使用する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "どちらも使えない。",
+          "choice_id": "ch4_1_q050_c4",
+          "tts_text": "アンモニアの乾燥には濃硫酸と塩化カルシウムが適していると思い込みがちだが、どちらもアンモニアと反応するため使えないと初学者が陥りやすい代表的な誤解の一つとしてよく挙げられる主張だが、ソーダ石灰を使用する。"
+        }
+      ],
+      "explanation": "非金属元素の章全体を網羅した最終問題です。ハロゲンの性質、フッ化水素の特異性、濃硫酸の三大特性、三大工業的製法（接触法・ハーバー法・オストワルト法）の触媒、気体の捕集法と乾燥剤の選択をすべて体系的に理解することが重要です。",
+      "evidence": [
+        {
+          "source_id": "1_4_def_001",
+          "quote": "酸化力はF2 > Cl2 > Br2 > I2"
+        },
+        {
+          "source_id": "1_6_tip_001",
+          "quote": "ハーバーの鉄、オストワルトの白金で勝算あり"
+        }
+      ],
+      "related_concept_ids": [
+        "1_4_def_001",
+        "1_4_sub_003",
+        "1_5_sub_001",
+        "1_5_rxn_001",
+        "1_6_rxn_001",
+        "1_6_rxn_002",
+        "1_8_proc_001",
+        "1_8_proc_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "非金属元素に関する全体の総合記述として、正しいものを選びなさい。",
+      "tts_explanation": "非金属元素の章全体を網羅した最終問題です。ハロゲンの性質、フッ化水素の特異性、濃硫酸の三大特性、三大工業的製法（接触法・ハーバー法・オストワルト法）の触媒、気体の捕集法と乾燥剤の選択をすべて体系的に理解することが重要です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    }
   ]
 }

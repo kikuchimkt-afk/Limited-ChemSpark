@@ -81,7 +81,7 @@ python questions\_check_all.py <chapter>
 # 5. (Optional) Length bias
 python questions\_dump_for_pads.py <chapter> > _tmp\<chapter>_pad_input.txt
 #   draft questions\_pads\<chapter>.json using that file
-python questions\_pad_wrongs_chapter.py <chapter>
+python questions\_pad_wrongs_chapter.py <chapter>   # auto-deletes stale mp3s
 python questions\_check_all.py <chapter>
 
 # 6. Rewrite stale tts_explanation
@@ -109,5 +109,18 @@ python audio\_regen_explanations.py <chapter>
 - Display `explanation` references (`選択肢N` in Arabic) are remapped at
   render time by `js/app.js :: remapChoiceRefs`. TTS (`tts_explanation`)
   cannot be remapped at runtime — that is why it must be content-based.
+
+## Audio-cache invariants
+
+- `audio/_generate.py` uses **file existence** as its only skip check. It
+  does not detect content changes in `tts_*` fields. Whenever you change
+  a `tts_*` value, the matching mp3 must be deleted before the next
+  `_generate.py` run.
+- `_pad_wrongs_chapter.py` and `_regen_explanations.py` both handle this
+  deletion automatically. Do not pass `--keep-audio` unless you will
+  delete the stale files yourself.
+- If you hand-edit a `tts_*` field in `questions/<chapter>.json` (avoid
+  this), you must manually `Remove-Item` the affected mp3 before running
+  `audio\_generate.py`.
 
 If in doubt, re-read `WORKFLOW.md`. Do not improvise.

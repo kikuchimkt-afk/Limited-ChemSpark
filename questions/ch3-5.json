@@ -6,59 +6,3022 @@
     "textbook": "化学",
     "total_questions": 50,
     "version": "1.0",
-    "tts_policy": { "note": "TTS用。化学式・数式なし。", "no_chemical_formulas": true, "no_math_equations": true },
-    "trap_type_legend": { "keyword_swap": "キーワードすり替え", "concept_confusion": "類似概念混同", "property_swap": "性質入れ替え", "condition_change": "条件変更", "step_order": "手順入れ替え", "reason_swap": "理由すり替え", "partial_truth": "前半正後半誤", "multiple_swap": "複数すり替え", "negation": "肯定否定入れ替え" }
+    "tts_policy": {
+      "note": "TTS用。化学式・数式なし。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワードすり替え",
+      "concept_confusion": "類似概念混同",
+      "property_swap": "性質入れ替え",
+      "condition_change": "条件変更",
+      "step_order": "手順入れ替え",
+      "reason_swap": "理由すり替え",
+      "partial_truth": "前半正後半誤",
+      "multiple_swap": "複数すり替え",
+      "negation": "肯定否定入れ替え"
+    },
+    "display_policy": {
+      "note": "question / choices[].text / explanation は表示用（アラビア数字・単位記号・主要化学式）。tts_question / choices[].tts_text / tts_explanation は音声読み上げ用（漢数字・単位語・日本語化学名）。",
+      "display_fields": [
+        "question",
+        "choices[].text",
+        "explanation"
+      ],
+      "tts_fields": [
+        "tts_question",
+        "choices[].tts_text",
+        "tts_explanation"
+      ],
+      "number_unit_mapping": {
+        "立方センチメートルあたり": "cm³あたり",
+        "立方センチメートル": "cm³",
+        "キロジュール毎グラム": "kJ/g",
+        "キロジュール毎モル": "kJ/mol",
+        "キロジュール": "kJ",
+        "グラム毎モル": "g/mol",
+        "クーロン毎モル": "C/mol",
+        "グラム": "g",
+        "ミリリットル": "mL",
+        "モル": "mol",
+        "パーセント": "%",
+        "リットル": "L",
+        "アンペア": "A",
+        "クーロン": "C",
+        "度": "℃",
+        "気圧": "atm",
+        "パスカル": "Pa",
+        "ケルビン": "K"
+      },
+      "formula_mapping": {
+        "炭酸水素ナトリウム": "NaHCO₃",
+        "炭酸カルシウム": "CaCO₃",
+        "塩化マグネシウム": "MgCl₂",
+        "塩化カルシウム": "CaCl₂",
+        "塩化ナトリウム": "NaCl",
+        "水酸化ナトリウム": "NaOH",
+        "水酸化カルシウム": "Ca(OH)₂",
+        "硫酸ナトリウム": "Na₂SO₄",
+        "硝酸ナトリウム": "NaNO₃",
+        "硫酸銅": "CuSO₄",
+        "二酸化ケイ素": "SiO₂",
+        "二酸化硫黄": "SO₂",
+        "二酸化炭素": "CO₂",
+        "一酸化炭素": "CO",
+        "メタン": "CH₄",
+        "アンモニア": "NH₃"
+      }
+    },
+    "choice_shuffle_policy": {
+      "note": "choices[].choice_id は問題内で固有の安定識別子。アプリはユーザ提示時に choices を配列としてシャッフルし、choice_id と is_correct を参照して採点する。",
+      "runtime_shuffle": true,
+      "correct_positions_balanced_in_file": true
+    }
   },
   "questions": [
-    { "id": "ch3_5_q001", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "definition", "sub_category": "酸化と還元の定義", "difficulty": 2, "question_type": "correct", "question": "酸化と還元の定義として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "酸化とは物質が酸素を受け取る、水素を失う、または電子を失う反応である。還元とは物質が酸素を失う、水素を受け取る、または電子を受け取る反応である。酸化と還元は必ず同時に起こる。", "is_correct": true }, { "label": "2", "text": "電子を受け取ることが酸化である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "電子を受け取るのは還元。" }, { "label": "3", "text": "酸化と還元は別々に起こることがある。", "is_correct": false, "trap_type": "negation", "trap_detail": "必ず同時に起こる。" }, { "label": "4", "text": "水素を受け取ると酸化される。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "水素を受け取るのは還元。" } ], "explanation": "酸化還元は三つの視点（酸素・水素・電子）で定義されます。最も一般的な「電子」の定義では、電子を失うと酸化、受け取ると還元です。重要なのは酸化と還元は必ずセットで起こるということです。一方が電子を失えば他方が受け取るため同時発生します。", "evidence": [ { "source_id": "5_1_def_001", "quote": "酸化とは電子を失う反応、還元とは電子を受け取る反応。酸化と還元は必ず同時に起こる" } ], "related_concept_ids": ["5_1_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q002", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "definition", "sub_category": "酸化数の定義", "difficulty": 3, "question_type": "correct", "question": "酸化数の決め方として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "単体の原子はゼロ、化合物中の酸素は通常マイナス二、水素は通常プラス一。化合物全体の酸化数の総和はゼロ。多原子イオンの総和はイオンの価数に等しい。", "is_correct": true }, { "label": "2", "text": "化合物中の酸素は常にマイナス一である。", "is_correct": false, "trap_type": "negation", "trap_detail": "通常マイナス二。過酸化物ではマイナス一。" }, { "label": "3", "text": "単体の原子の酸化数はプラス一である。", "is_correct": false, "trap_type": "negation", "trap_detail": "ゼロ。" }, { "label": "4", "text": "化合物全体の酸化数の総和はイオンの価数に等しい。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "全体がゼロ。イオンの場合のみ価数に等しい。" } ], "explanation": "酸化数のルールを覚えることが酸化還元反応を理解する出発点です。特に重要なのは過酸化物での酸素（マイナス一）と金属水素化物での水素（マイナス一）の例外です。酸化数が増加した原子は酸化され、減少した原子は還元されたと判断します。", "evidence": [ { "source_id": "5_1_law_001", "quote": "単体の原子は0、化合物中の酸素は通常-2、水素は通常+1" } ], "related_concept_ids": ["5_1_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q003", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "definition", "sub_category": "酸化剤と還元剤", "difficulty": 3, "question_type": "correct", "question": "酸化剤と還元剤について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "酸化剤は他の物質を酸化し自身は還元される物質であり電子を受け取りやすい。還元剤は他の物質を還元し自身は酸化される物質であり電子を放出しやすい。", "is_correct": true }, { "label": "2", "text": "酸化剤は自身が酸化される物質である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "酸化剤自身は還元される。" }, { "label": "3", "text": "還元剤は電子を受け取りやすい物質である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "電子を放出しやすい。" }, { "label": "4", "text": "過酸化水素は酸化剤としてのみはたらく。", "is_correct": false, "trap_type": "negation", "trap_detail": "相手によって酸化剤にも還元剤にもなる二刀流。" } ], "explanation": "酸化剤と還元剤の名前は「相手にすること」で決まります。酸化剤は「相手を酸化する」→自身は還元される。還元剤は「相手を還元する」→自身は酸化される。名前と自身の変化が逆になるため混同しやすい最大のポイントです。過酸化水素は二刀流で相手次第でどちらにもなります。", "evidence": [ { "source_id": "5_2_def_001", "quote": "酸化剤は他の物質を酸化する（自身は還元される）物質" } ], "related_concept_ids": ["5_2_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q004", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "definition", "sub_category": "イオン化傾向", "difficulty": 3, "question_type": "correct", "question": "金属のイオン化傾向について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "金属が電子を放出して陽イオンになろうとする傾向の大きさである。イオン化傾向が大きい金属ほど酸化されやすく還元性が強い。", "is_correct": true }, { "label": "2", "text": "イオン化傾向が大きい金属ほど酸化されにくい。", "is_correct": false, "trap_type": "negation", "trap_detail": "酸化されやすい。" }, { "label": "3", "text": "金が最もイオン化傾向が大きい。", "is_correct": false, "trap_type": "negation", "trap_detail": "金は最も小さい。リチウムが最大。" }, { "label": "4", "text": "イオン化傾向は水溶液の種類に依存する。", "is_correct": false, "trap_type": "negation", "trap_detail": "金属固有の性質。" } ], "explanation": "イオン化傾向は金属の反応性を比較するための指標です。リチウムが最大で金が最小です。語呂合わせ「リッチに貸そうかまがあるすんなひどすぎる借金」で覚えます。イオン化傾向が大きい金属ほど電子を出しやすく酸化されやすい（還元性が強い）です。", "evidence": [ { "source_id": "5_3_law_001", "quote": "金属が電子を放出して陽イオンになろうとする傾向の大きさ" } ], "related_concept_ids": ["5_3_law_001"], "mnemonic": "リッチに貸そうかまがあるすんなひどすぎる借金" },
-    { "id": "ch3_5_q005", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "definition", "sub_category": "電池の定義", "difficulty": 3, "question_type": "correct", "question": "電池について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "酸化還元反応の化学エネルギーを電気エネルギーに変換する装置。イオン化傾向が大きい金属が負極、小さい金属が正極になる。", "is_correct": true }, { "label": "2", "text": "イオン化傾向が大きい金属が正極になる。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "負極になる。" }, { "label": "3", "text": "電池では電気エネルギーを化学エネルギーに変換する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "それは電気分解。電池は逆。" }, { "label": "4", "text": "同じイオン化傾向の金属でも電池ができる。", "is_correct": false, "trap_type": "negation", "trap_detail": "差が必要。" } ], "explanation": "電池は化学エネルギーを電気エネルギーに変換する装置です。イオン化傾向に差がある二種類の金属を電解質溶液に浸すとイオン化傾向が大きい方が電子を放出して負極に、小さい方が正極になります。「イオン化傾向大→負極→マイナス」と覚えましょう。", "evidence": [ { "source_id": "5_4_def_001", "quote": "イオン化傾向の大きい金属が負極、小さい金属が正極" } ], "related_concept_ids": ["5_4_def_001"], "mnemonic": "イオン化傾向の大きいほうがマイナス（負極）" },
-    { "id": "ch3_5_q006", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "definition", "sub_category": "ファラデーの法則", "difficulty": 3, "question_type": "correct", "question": "ファラデーの法則について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "電気分解で電極に析出する物質の量は流した電気量に比例する。電気量は電流かける時間で求まり、ファラデー定数は電子一モルあたりの電気量である。", "is_correct": true }, { "label": "2", "text": "析出量は電気量に反比例する。", "is_correct": false, "trap_type": "negation", "trap_detail": "比例する。" }, { "label": "3", "text": "電気量は電流を時間で割って求める。", "is_correct": false, "trap_type": "negation", "trap_detail": "掛けて求める。" }, { "label": "4", "text": "ファラデー定数は不要で電気量だけで析出量が決まる。", "is_correct": false, "trap_type": "negation", "trap_detail": "電子の物質量に換算するためファラデー定数が必要。" } ], "explanation": "ファラデーの法則は電気分解の計算の基本です。電気量キューイコール電流アイかける時間ティーで求まり、電子のモル数はキュー割るファラデー定数（約九万六千五百クーロン毎モル）で求められます。ここから化学量論を使って析出量を計算します。", "evidence": [ { "source_id": "5_4_law_001", "quote": "電極で変化する物質の物質量は通じた電気量に比例する" } ], "related_concept_ids": ["5_4_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q007", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "鉛蓄電池", "difficulty": 4, "question_type": "correct", "question": "鉛蓄電池の放電について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "負極に鉛、正極に酸化鉛（四価）、電解液に希硫酸を用いる。放電すると両極で硫酸鉛が生成し硫酸が消費されて水が生じるため電解液の密度が低下する。充電可能な二次電池である。", "is_correct": true }, { "label": "2", "text": "放電すると電解液の密度が上昇する。", "is_correct": false, "trap_type": "negation", "trap_detail": "密度が低下する。硫酸が消費され水が増えるため。" }, { "label": "3", "text": "鉛蓄電池は一次電池で充電できない。", "is_correct": false, "trap_type": "negation", "trap_detail": "二次電池で充電可能。" }, { "label": "4", "text": "正極のみで硫酸鉛が生成し負極では変化しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "両極で硫酸鉛が生成する。" } ], "explanation": "鉛蓄電池は自動車用バッテリーとして広く使われる二次電池です。放電時の全体反応は鉛プラス酸化鉛プラス硫酸→硫酸鉛プラス水です。特徴は両極とも硫酸鉛になること、硫酸が消費されて密度が下がること、充電で元に戻せることです。", "evidence": [ { "source_id": "5_4_rxn_001", "quote": "正極・負極の両方で硫酸鉛が生成し、電解液の硫酸が消費されて密度が低下する" } ], "related_concept_ids": ["5_4_rxn_001"], "mnemonic": null },
-    { "id": "ch3_5_q008", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "酸化剤と還元剤の名前の混同", "difficulty": 3, "question_type": "incorrect", "question": "酸化剤と還元剤に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "酸化剤は相手を酸化する物質である。", "is_correct": false }, { "label": "2", "text": "酸化剤自身は還元される。", "is_correct": false }, { "label": "3", "text": "還元剤は電子を放出する物質である。", "is_correct": false }, { "label": "4", "text": "酸化剤は自身が酸化される物質であり、還元剤は自身が還元される物質である。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "逆。酸化剤自身は還元され、還元剤自身は酸化される。" } ], "explanation": "酸化剤・還元剤の最大のひっかけは「名前と自身の変化が逆」ということです。酸化剤は「相手を酸化する→自身は還元される」、還元剤は「相手を還元する→自身は酸化される」です。名前は相手への作用を表しており、自身の変化ではありません。", "evidence": [ { "source_id": "5_2_def_001", "quote": "酸化剤は自身は還元される、還元剤は自身は酸化される" } ], "related_concept_ids": ["5_2_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q009", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "電子の流れと電流の向き", "difficulty": 3, "question_type": "incorrect", "question": "電池における電流の向きに関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "電子は負極から正極へ流れる。", "is_correct": false }, { "label": "2", "text": "電流の向きは電子の流れと逆である。", "is_correct": false }, { "label": "3", "text": "電流は正極から負極の向きに流れる（外部回路）。", "is_correct": false }, { "label": "4", "text": "電流は電子と同じ方向すなわち負極から正極へ流れる。", "is_correct": true, "trap_type": "negation", "trap_detail": "電流は電子と逆方向。正極から負極へ流れる。" } ], "explanation": "電池で最も間違えやすいのは電子の流れと電流の向きの関係です。電子は負極から導線を通って正極へ流れますが、電流（正電荷の流れ）は慣習的に逆方向（正極→負極）と定義されています。", "evidence": [ { "source_id": "5_4_def_001", "quote": "電流の向きは電子の流れと逆の向き" } ], "related_concept_ids": ["5_4_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q010", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "酸化数のルールの例外", "difficulty": 3, "question_type": "incorrect", "question": "酸化数の決め方に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "過酸化物中の酸素の酸化数はマイナス一である。", "is_correct": false }, { "label": "2", "text": "金属水素化物中の水素の酸化数はマイナス一である。", "is_correct": false }, { "label": "3", "text": "酸化数が増加した原子は酸化されたと判断する。", "is_correct": false }, { "label": "4", "text": "すべての化合物で酸素の酸化数はマイナス二であり例外はない。", "is_correct": true, "trap_type": "negation", "trap_detail": "過酸化物ではマイナス一の例外がある。" } ], "explanation": "酸化数の規則で最も重要な例外は過酸化水素などの過酸化物で酸素がマイナス一になることと、水素化リチウムなどの金属水素化物で水素がマイナス一になることです。「通常」の規則と「例外」を区別することが試験対策のポイントです。", "evidence": [ { "source_id": "5_1_law_001", "quote": "過酸化物中のOの酸化数は-1となる例外がある" } ], "related_concept_ids": ["5_1_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q011", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "過酸化水素の二刀流", "difficulty": 3, "question_type": "correct", "question": "過酸化水素の酸化還元における特徴として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "相手によって酸化剤にも還元剤にもなる二刀流の物質である。過マンガン酸カリウムに対しては還元剤、ヨウ化カリウムに対しては酸化剤としてはたらく。", "is_correct": true }, { "label": "2", "text": "過酸化水素は常に酸化剤としてのみはたらく。", "is_correct": false, "trap_type": "negation", "trap_detail": "還元剤にもなる。" }, { "label": "3", "text": "過酸化水素は常に還元剤としてのみはたらく。", "is_correct": false, "trap_type": "negation", "trap_detail": "酸化剤にもなる。" }, { "label": "4", "text": "過酸化水素は酸化還元反応に関与しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "酸化剤にも還元剤にもなる。" } ], "explanation": "過酸化水素中の酸素の酸化数はマイナス一であり、通常のマイナス二よりも大きくゼロよりは小さい中間の値です。このため、より強い酸化剤（過マンガン酸カリウムなど）に対しては酸化数がゼロに向かって還元剤に、さらに弱い物質に対しては酸化数がマイナス二に向かって酸化剤になります。", "evidence": [ { "source_id": "5_2_sub_002", "quote": "相手によって酸化剤にも還元剤にもなる物質（二刀流）" } ], "related_concept_ids": ["5_2_sub_002"], "mnemonic": null },
-    { "id": "ch3_5_q012", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "過マンガン酸カリウム", "difficulty": 3, "question_type": "correct", "question": "過マンガン酸カリウムについて、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "黒紫色の結晶で水溶液は濃い赤紫色を呈する強力な酸化剤である。酸性条件では淡桃色（ほぼ無色）のマンガンイオンに還元される。", "is_correct": true }, { "label": "2", "text": "過マンガン酸カリウムは還元剤である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "酸化剤。" }, { "label": "3", "text": "水溶液は無色透明である。", "is_correct": false, "trap_type": "negation", "trap_detail": "濃い赤紫色。" }, { "label": "4", "text": "酸性条件で還元されると色が濃くなる。", "is_correct": false, "trap_type": "negation", "trap_detail": "淡桃色（ほぼ無色）になる。" } ], "explanation": "過マンガン酸カリウムはマンガンの酸化数がプラス七の強力な酸化剤です。酸性条件で還元されるとマンガンの酸化数がプラス二になり、赤紫色が消えてほぼ無色になります。この色の変化を利用して酸化還元滴定に使われます。", "evidence": [ { "source_id": "5_2_sub_001", "quote": "強力な酸化剤。酸性条件ではMn2+（淡桃色/無色）に還元される" } ], "related_concept_ids": ["5_2_sub_001"], "mnemonic": null },
-    { "id": "ch3_5_q013", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "procedure", "sub_category": "酸化還元反応式の作り方", "difficulty": 4, "question_type": "correct", "question": "酸化還元反応の化学反応式の作り方として、正しい手順を選びなさい。", "choices": [ { "label": "1", "text": "酸化剤と還元剤の半反応式を書き、電子の数を揃えて足し合わせイオン反応式を作り、省略されていたイオンを補って完成させる。", "is_correct": true }, { "label": "2", "text": "電子の数を揃える必要はない。", "is_correct": false, "trap_type": "negation", "trap_detail": "電子の数を揃えるのが最重要ステップ。" }, { "label": "3", "text": "酸化剤の式だけで反応式は完成する。", "is_correct": false, "trap_type": "negation", "trap_detail": "還元剤の式も必要。" }, { "label": "4", "text": "半反応式なしに直接完全な反応式を書けばよい。", "is_correct": false, "trap_type": "negation", "trap_detail": "半反応式から組み立てるのが基本。" } ], "explanation": "酸化還元反応式の作成は四段階です。第一に酸化剤と還元剤の半反応式（電子を含む式）を書く。第二に電子の数を最小公倍数で揃える。第三に二つの式を足して電子を消去しイオン反応式を得る。第四に省略されていたイオンを両辺に加え完全な式にする。", "evidence": [ { "source_id": "5_2_proc_001", "quote": "電子の数を揃えて足し合わせ、イオン反応式を作った後、省略されていたイオンを補って完成" } ], "related_concept_ids": ["5_2_proc_001"], "mnemonic": null },
-    { "id": "ch3_5_q014", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "金属と水の反応", "difficulty": 3, "question_type": "correct", "question": "金属のイオン化傾向と水との反応として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "ナトリウムは常温の水と激しく反応する。マグネシウムは熱水と反応する。鉄は高温の水蒸気と反応する。銅は水とは反応しない。", "is_correct": true }, { "label": "2", "text": "銅は常温の水と反応する。", "is_correct": false, "trap_type": "negation", "trap_detail": "銅は水素より下なので水とは反応しない。" }, { "label": "3", "text": "すべての金属が常温の水と反応する。", "is_correct": false, "trap_type": "negation", "trap_detail": "イオン化傾向で反応性が異なる。" }, { "label": "4", "text": "金はどんな酸にも溶ける。", "is_correct": false, "trap_type": "negation", "trap_detail": "王水にしか溶けない。" } ], "explanation": "イオン化傾向の順位により水との反応性が決まります。カリウムやナトリウムは常温の水でも激しく反応（水素発生）。マグネシウムは熱水で反応。鉄やアルミニウムは高温の水蒸気で反応。水素より下の銅以降は水とは反応しません。金と白金は王水でのみ溶けます。", "evidence": [ { "source_id": "5_3_law_001", "quote": "Naは常温の水と激しく反応、Mgは熱水、Feは高温の水蒸気と反応" } ], "related_concept_ids": ["5_3_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q015", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "電池と電気分解の混同", "difficulty": 3, "question_type": "incorrect", "question": "電池と電気分解に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "電池は化学エネルギーを電気エネルギーに変換する。", "is_correct": false }, { "label": "2", "text": "電気分解は電気エネルギーを化学エネルギーに変換する。", "is_correct": false }, { "label": "3", "text": "電池の負極ではイオン化傾向の大きい金属が溶ける。", "is_correct": false }, { "label": "4", "text": "電池は電気エネルギーを化学エネルギーに変換する装置であり、電気分解は化学エネルギーを電気エネルギーに変換する装置である。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "逆。電池が化学→電気、電気分解が電気→化学。" } ], "explanation": "電池と電気分解はエネルギー変換の方向が逆です。電池は化学エネルギーを電気エネルギーに変換し、電気分解は電気エネルギーを使って化学変化を起こします。鉛蓄電池の放電は電池、充電は電気分解に相当します。", "evidence": [ { "source_id": "5_4_def_001", "quote": "酸化還元反応の化学エネルギーを電気エネルギーに変換して取り出す装置" } ], "related_concept_ids": ["5_4_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q016", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "鉛蓄電池の充電接続", "difficulty": 4, "question_type": "incorrect", "question": "鉛蓄電池の充電に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "充電すると放電の逆反応が起こる。", "is_correct": false }, { "label": "2", "text": "充電時は外部電源の正極を鉛蓄電池の正極に接続する。", "is_correct": false }, { "label": "3", "text": "充電すると電解液の密度が回復する。", "is_correct": false }, { "label": "4", "text": "充電時は外部電源の正極を鉛蓄電池の負極に接続する。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "正極同士、負極同士を接続する。" } ], "explanation": "鉛蓄電池の充電では外部電源の正極を鉛蓄電池の正極に、外部電源の負極を鉛蓄電池の負極に接続します。これにより放電の逆反応が起こり硫酸鉛が元の鉛と酸化鉛に戻り、硫酸が再生されて密度が回復します。", "evidence": [ { "source_id": "5_4_rxn_001", "quote": "外部電源の負極を鉛蓄電池の負極に、正極を正極につなぐ" } ], "related_concept_ids": ["5_4_rxn_001"], "mnemonic": null },
-    { "id": "ch3_5_q017", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "酸化銅の還元", "difficulty": 2, "question_type": "correct", "question": "酸化銅（二価）について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "黒色の固体で水に不溶。銅を空気中で加熱すると生成する。水素や炭素で還元すると金属銅に戻る。", "is_correct": true }, { "label": "2", "text": "酸化銅は白色の固体である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "黒色。" }, { "label": "3", "text": "酸化銅は水によく溶ける。", "is_correct": false, "trap_type": "negation", "trap_detail": "不溶。" }, { "label": "4", "text": "酸化銅を水素で加熱しても変化しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "還元されて銅になる。" } ], "explanation": "酸化銅（二価）は銅の酸化物で黒色です。水素気流中で加熱すると酸化銅が還元されて赤色の金属銅になり水が生成します。この反応で酸化銅は酸化剤、水素は還元剤です。", "evidence": [ { "source_id": "5_1_sub_001", "quote": "黒色。水に不溶。銅を空気中で加熱すると生成" } ], "related_concept_ids": ["5_1_sub_001"], "mnemonic": null },
-    { "id": "ch3_5_q018", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "正極負極の判定", "difficulty": 3, "question_type": "incorrect", "question": "電池の正極・負極の判定に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "イオン化傾向が大きい金属が負極になる。", "is_correct": false }, { "label": "2", "text": "負極では金属が電子を放出して陽イオンとなり溶ける。", "is_correct": false }, { "label": "3", "text": "電子は負極から正極へ外部回路を流れる。", "is_correct": false }, { "label": "4", "text": "イオン化傾向が小さい金属が負極になり、大きい金属が正極になる。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "逆。大きい方が負極。" } ], "explanation": "電池の極性判定で最もよくある間違いはイオン化傾向と極性の対応を逆にすることです。「イオンになりたがる（イオン化傾向大）→電子を出す→負極（マイナス）」と覚えましょう。亜鉛と銅なら亜鉛が負極です。", "evidence": [ { "source_id": "5_4_def_001", "quote": "イオン化傾向の大きい金属が負極" } ], "related_concept_ids": ["5_4_def_001", "5_3_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q019", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "mnemonic", "sub_category": "イオン化傾向の語呂合わせ", "difficulty": 2, "question_type": "correct", "question": "イオン化傾向の語呂合わせとして、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "「リッチに貸そうかまがあるすんなひどすぎる借金」で覚える。リチウムからカリウム、カルシウム、ナトリウム、マグネシウム、アルミニウム、亜鉛、鉄、ニッケル、スズ、鉛、水素、銅、水銀、銀、白金、金の順になる。", "is_correct": true }, { "label": "2", "text": "この語呂合わせは金が最も大きい順番である。", "is_correct": false, "trap_type": "negation", "trap_detail": "リチウムが最大で金が最小。" }, { "label": "3", "text": "この語呂合わせは酸化数に関するものである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "イオン化傾向に関するもの。" }, { "label": "4", "text": "水素はイオン化傾向の順列に含まれない。", "is_correct": false, "trap_type": "negation", "trap_detail": "水素も含む。金属と酸の反応性の境界となる。" } ], "explanation": "イオン化傾向の順番を覚える語呂合わせは非常に重要です。リチウムが最もイオンになりやすく金が最もなりにくい順番です。水素がスズと鉛の間に入るのは金属と酸の反応性の境界として重要です。水素より上は酸に溶けて水素を発生します。", "evidence": [ { "source_id": "5_3_law_001", "quote": "リッチに貸そうかまがあるすんなひどすぎる借金" } ], "related_concept_ids": ["5_3_law_001"], "mnemonic": "リッチに貸そうかまがあるすんなひどすぎる借金" },
-    { "id": "ch3_5_q020", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "classification", "sub_category": "一次電池と二次電池", "difficulty": 2, "question_type": "correct", "question": "一次電池と二次電池の分類として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "一次電池は使い切りで充電できない電池である。二次電池は充電して繰り返し使える電池であり鉛蓄電池やリチウムイオン電池が代表例である。", "is_correct": true }, { "label": "2", "text": "鉛蓄電池は一次電池である。", "is_correct": false, "trap_type": "negation", "trap_detail": "二次電池。" }, { "label": "3", "text": "すべての電池は充電可能である。", "is_correct": false, "trap_type": "negation", "trap_detail": "一次電池は充電不可。" }, { "label": "4", "text": "二次電池は一度しか使えない。", "is_correct": false, "trap_type": "negation", "trap_detail": "繰り返し使える。" } ], "explanation": "電池は充電の可否で一次電池と二次電池に分類されます。マンガン乾電池やアルカリ乾電池は一次電池で使い切りです。鉛蓄電池やリチウムイオン電池は二次電池で充電して何度も使えます。", "evidence": [ { "source_id": "5_4_rxn_001", "quote": "外部電源を逆につなぐと充電でき、反応が元に戻る" } ], "related_concept_ids": ["5_4_rxn_001"], "mnemonic": null },
-    { "id": "ch3_5_q021", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "酸化数の合計と個別の混同", "difficulty": 3, "question_type": "incorrect", "question": "酸化数に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "酸化数は原子一つ一つについて示す値である。", "is_correct": false }, { "label": "2", "text": "化合物全体の酸化数の総和はゼロである。", "is_correct": false }, { "label": "3", "text": "酸化数の変化から酸化・還元を判断する。", "is_correct": false }, { "label": "4", "text": "水中の水素の酸化数はプラス一かける二でプラス二である。", "is_correct": true, "trap_type": "negation", "trap_detail": "酸化数は原子一個ずつの値でプラス一。二個分の合計ではない。" } ], "explanation": "酸化数は原子一個あたりの値です。水の水素は一個あたりプラス一であり、二個だからプラス二とするのは誤りです。化合物全体の酸化数の「総和」はゼロですが個別の原子の酸化数と混同しないようにしましょう。", "evidence": [ { "source_id": "5_1_law_001", "quote": "酸化数は原子1つ1つについて示す。H2OのHの酸化数を+2としてはいけない" } ], "related_concept_ids": ["5_1_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q022", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "王水", "difficulty": 3, "question_type": "correct", "question": "王水について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "濃硝酸と濃塩酸を体積比一対三で混合した液体であり、イオン化傾向が極めて小さい金や白金も溶かすことができる。", "is_correct": true }, { "label": "2", "text": "濃塩酸と濃硝酸の体積比一対三の混合物である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "濃硝酸一対濃塩酸三。順番が逆。" }, { "label": "3", "text": "王水はすべての物質を溶かす万能溶媒である。", "is_correct": false, "trap_type": "negation", "trap_detail": "万能ではない。" }, { "label": "4", "text": "金は王水にも溶けない。", "is_correct": false, "trap_type": "negation", "trap_detail": "金は王水に溶ける。" } ], "explanation": "王水は濃硝酸一対濃塩酸三の混合物で、金属の王（金）をも溶かすことからこの名前がつきました。通常の酸には溶けない金や白金を溶かすことができます。比率は「いっさん（一三）」で覚えます。", "evidence": [ { "source_id": "5_3_law_001", "quote": "王水には、イオン化傾向が極めて小さいPtやAuも溶ける" } ], "related_concept_ids": ["5_3_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q023", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "procedure", "sub_category": "ファラデーの計算手順", "difficulty": 4, "question_type": "correct", "question": "ファラデーの法則を用いた計算手順として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "電気量イコール電流かける時間で電気量を求め、電気量をファラデー定数で割って電子のモル数を求め、半反応式の係数比から析出物のモル数を計算し、最後にモル質量を使って質量を求める。", "is_correct": true }, { "label": "2", "text": "電気量を直接モル質量で割れば質量が出る。", "is_correct": false, "trap_type": "negation", "trap_detail": "中間にモル数の計算が必要。" }, { "label": "3", "text": "ファラデー定数は不要である。", "is_correct": false, "trap_type": "negation", "trap_detail": "電子のモル数への変換に不可欠。" }, { "label": "4", "text": "半反応式は不要で電子一モルあたり常に一モルの物質が析出する。", "is_correct": false, "trap_type": "negation", "trap_detail": "係数比を確認する必要がある。" } ], "explanation": "ファラデーの法則の計算は四段階です。第一に電気量を求める。第二にファラデー定数で割って電子のモル数を求める。第三に半反応式の係数比で析出物のモル数を求める（二価イオンなら電子二モルで一モル析出）。第四にモル質量を掛けて質量にする。", "evidence": [ { "source_id": "5_4_law_001", "quote": "電気量Q = 電流i × 時間t。電子の物質量 = Q / F" } ], "related_concept_ids": ["5_4_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q024", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "酸化されたの表現", "difficulty": 2, "question_type": "incorrect", "question": "酸化還元の表現に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "銅は酸化されて酸化銅になる。", "is_correct": false }, { "label": "2", "text": "「酸化される」は受け身の表現を使う。", "is_correct": false }, { "label": "3", "text": "酸化銅中の銅は酸化数がプラス二である。", "is_correct": false }, { "label": "4", "text": "銅は酸化して酸化銅になるという表現が正しい。", "is_correct": true, "trap_type": "negation", "trap_detail": "「酸化する」ではなく「酸化される」（受け身形）が正しい。" } ], "explanation": "日本語表現で注意すべきは「酸化される」と「酸化する」の違いです。銅は酸化「される」側であり「された」と受け身で表現します。「銅が酸化する」は銅が他のものを酸化する（酸化剤として働く）意味になり不適切です。", "evidence": [ { "source_id": "5_1_def_001", "quote": "「銅は酸化して」は誤り。正しくは「銅は酸化されて（受け身形）」" } ], "related_concept_ids": ["5_1_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q025", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "comprehensive", "sub_category": "酸化還元の三視点", "difficulty": 4, "question_type": "correct", "question": "酸化還元の三つの定義の関係として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "酸素を受け取る、水素を失う、電子を失うはすべて酸化の定義であり矛盾しない。最も一般的なのは電子の授受による定義であり、すべての酸化還元反応を説明できる。", "is_correct": true }, { "label": "2", "text": "三つの定義は互いに矛盾する。", "is_correct": false, "trap_type": "negation", "trap_detail": "矛盾しない。電子の視点で統一できる。" }, { "label": "3", "text": "酸素の授受による定義がすべての反応を説明できる。", "is_correct": false, "trap_type": "negation", "trap_detail": "酸素が関与しない反応は説明できない。" }, { "label": "4", "text": "電子の授受による定義は酸素の授受には適用できない。", "is_correct": false, "trap_type": "negation", "trap_detail": "適用できる。" } ], "explanation": "酸化還元の三つの定義は視点は違いますが矛盾しません。酸素を受け取ると酸化数が増加（電子を失う）し、水素を失っても酸化数が増加します。電子の授受による定義が最も一般的で、酸素が関与しない反応（金属のイオン化など）も説明できます。", "evidence": [ { "source_id": "5_1_def_001", "quote": "電子のやり取りに注目することで酸化・還元として統一的に説明できる" } ], "related_concept_ids": ["5_1_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q026", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "ボルタ電池", "difficulty": 3, "question_type": "correct", "question": "ボルタ電池について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "亜鉛板と銅板を希硫酸に浸した電池。亜鉛がイオン化傾向大なので負極に、銅が正極になる。起電力は約一点一ボルト。", "is_correct": true }, { "label": "2", "text": "銅板が負極で亜鉛板が正極である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "逆。亜鉛が負極。" }, { "label": "3", "text": "電解質溶液は水酸化ナトリウム水溶液を用いる。", "is_correct": false, "trap_type": "negation", "trap_detail": "希硫酸。" }, { "label": "4", "text": "正極で亜鉛が溶ける。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "負極で亜鉛が溶ける。" } ], "explanation": "ボルタ電池は最も基本的な電池の例です。亜鉛は銅よりイオン化傾向が大きいため負極となり電子を放出して溶けます。銅極（正極）では溶液中の水素イオンが電子を受け取って水素ガスが発生します。", "evidence": [ { "source_id": "5_4_def_001", "quote": "Zn板とCu板を希硫酸に浸した電池。起電力1.1V" } ], "related_concept_ids": ["5_4_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q027", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "鉛蓄電池の密度変化の理由", "difficulty": 4, "question_type": "incorrect", "question": "鉛蓄電池の放電時の変化に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "放電すると硫酸が消費されて水が生成する。", "is_correct": false }, { "label": "2", "text": "放電すると電解液の密度が低下する。", "is_correct": false }, { "label": "3", "text": "放電すると両極で硫酸鉛が生成する。", "is_correct": false }, { "label": "4", "text": "放電すると硫酸が生成されて電解液の密度が上昇する。", "is_correct": true, "trap_type": "negation", "trap_detail": "逆。硫酸は消費され密度は低下する。" } ], "explanation": "鉛蓄電池の放電では硫酸が消費されて水が生成するため、電解液中の硫酸濃度が下がり密度が低下します。自動車のバッテリーの比重計で充電状態を確認できるのはこの原理によります。充電すればこの逆反応が起こり密度は回復します。", "evidence": [ { "source_id": "5_4_rxn_001", "quote": "硫酸が消費されて水が生成するため溶液の密度が低下する" } ], "related_concept_ids": ["5_4_rxn_001"], "mnemonic": null },
-    { "id": "ch3_5_q028", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "classification", "sub_category": "酸化剤の代表例", "difficulty": 3, "question_type": "correct", "question": "代表的な酸化剤の分類として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "過マンガン酸カリウム、二クロム酸カリウム、濃硝酸、希硝酸、濃硫酸（熱濃硫酸）、ハロゲン単体は酸化剤の代表例である。", "is_correct": true }, { "label": "2", "text": "水素は代表的な酸化剤である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "水素は還元剤。" }, { "label": "3", "text": "希硫酸は酸化剤として有名である。", "is_correct": false, "trap_type": "condition_change", "trap_detail": "熱濃硫酸が酸化剤。希硫酸は通常の酸。" }, { "label": "4", "text": "酸化剤は電子を放出する物質の総称である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "電子を受け取る物質。" } ], "explanation": "酸化剤は「電子を奪う側」です。代表例として過マンガン酸カリウム（マンガンプラス七）、二クロム酸カリウム（クロムプラス六）など酸化数が高い原子を含む物質が多いです。希硫酸と熱濃硫酸の違い（後者のみ酸化力あり）も注意が必要です。", "evidence": [ { "source_id": "5_2_def_001", "quote": "酸化剤は電子を受け取りやすい物質" } ], "related_concept_ids": ["5_2_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q029", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "酸化鉛の正極活物質", "difficulty": 3, "question_type": "correct", "question": "鉛蓄電池の正極活物質について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "正極活物質は酸化鉛（四価）であり褐色の固体である。放電すると還元されて硫酸鉛になる。", "is_correct": true }, { "label": "2", "text": "正極活物質は鉛である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "鉛は負極活物質。" }, { "label": "3", "text": "酸化鉛は白色の固体である。", "is_correct": false, "trap_type": "property_swap", "trap_detail": "褐色。" }, { "label": "4", "text": "正極の酸化鉛は放電しても変化しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "硫酸鉛に変化する。" } ], "explanation": "鉛蓄電池の正極活物質は酸化鉛（四価）で褐色をしています。放電時は鉛の酸化数がプラス四からプラス二に減少（還元）し硫酸鉛になります。負極の鉛はゼロからプラス二に増加（酸化）し同じく硫酸鉛になります。", "evidence": [ { "source_id": "5_4_sub_001", "quote": "鉛蓄電池の正極活物質。褐色" } ], "related_concept_ids": ["5_4_sub_001"], "mnemonic": null },
-    { "id": "ch3_5_q030", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "comprehensive", "sub_category": "酸化還元の総合", "difficulty": 5, "question_type": "correct", "question": "酸化還元反応に関する総合的な記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "酸化は電子を失い酸化数が増加する反応。酸化剤は相手を酸化し自身は還元される。イオン化傾向大の金属が負極。電池は化学→電気、電気分解は電気→化学。ファラデーの法則で電気量から析出量を計算する。", "is_correct": true }, { "label": "2", "text": "電子を受け取るのが酸化。酸化剤は自身が酸化される。イオン化傾向大が正極。電気分解が化学→電気。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "四か所すべて誤り。" }, { "label": "3", "text": "酸化と還元は別々に起こることがある。", "is_correct": false, "trap_type": "negation", "trap_detail": "必ず同時に起こる。" }, { "label": "4", "text": "鉛蓄電池は一次電池であり充電できない。", "is_correct": false, "trap_type": "negation", "trap_detail": "二次電池で充電可能。" } ], "explanation": "この章の全体を網羅した問題です。酸化還元の定義、酸化数、酸化剤・還元剤、イオン化傾向、電池の正負極、電池と電気分解の違い、ファラデーの法則がすべてつながっています。これらを体系的に理解することが重要です。", "evidence": [ { "source_id": "5_1_def_001", "quote": "電子を失うと酸化、受け取ると還元" }, { "source_id": "5_4_def_001", "quote": "化学エネルギーを電気エネルギーに変換" } ], "related_concept_ids": ["5_1_def_001", "5_1_law_001", "5_2_def_001", "5_3_law_001", "5_4_def_001", "5_4_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q031", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "酸化数増加と酸化の対応", "difficulty": 3, "question_type": "incorrect", "question": "酸化数の変化に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "酸化数が増加した原子は酸化された。", "is_correct": false }, { "label": "2", "text": "酸化数が減少した原子は還元された。", "is_correct": false }, { "label": "3", "text": "酸化数が変化しなければ酸化還元反応には関与していない。", "is_correct": false }, { "label": "4", "text": "酸化数が増加した原子は還元されたことを意味する。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "増加は酸化。減少が還元。" } ], "explanation": "酸化数の変化と酸化・還元の対応を逆にする間違いは非常に多いです。「酸化数が増加→酸化された」「酸化数が減少→還元された」です。酸化は「上がる」、還元は「下がる」と覚えましょう。", "evidence": [ { "source_id": "5_1_law_001", "quote": "酸化数が増加すれば酸化された、減少すれば還元された" } ], "related_concept_ids": ["5_1_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q032", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "水素より下の金属", "difficulty": 3, "question_type": "correct", "question": "イオン化傾向が水素より小さい金属の特徴として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "希酸と反応して水素を発生することはない。銅、水銀、銀、白金、金がこれに該当する。ただし銅は酸化力のある酸（希硝酸・熱濃硫酸）には溶ける。", "is_correct": true }, { "label": "2", "text": "水素より下の金属もすべての酸に溶ける。", "is_correct": false, "trap_type": "negation", "trap_detail": "希酸では水素発生しないため溶けない。" }, { "label": "3", "text": "金は希塩酸に溶ける。", "is_correct": false, "trap_type": "negation", "trap_detail": "金は王水のみ。" }, { "label": "4", "text": "鉄は水素より下にある。", "is_correct": false, "trap_type": "negation", "trap_detail": "鉄は水素より上。" } ], "explanation": "イオン化傾向の順列で水素より下の金属（銅以降）は希酸と反応して水素を発生しません。ただし酸化力のある酸（硝酸・熱濃硫酸）なら銅や銀は溶けます。白金と金はそれでも溶けず王水が必要です。", "evidence": [ { "source_id": "5_3_law_001", "quote": "イオン化傾向が極めて小さいPtやAuは王水にのみ溶ける" } ], "related_concept_ids": ["5_3_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q033", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "procedure", "sub_category": "半反応式の意味", "difficulty": 3, "question_type": "correct", "question": "半反応式について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "酸化剤または還元剤の片方だけの電子の授受を表す式である。酸化剤の半反応式は電子が左辺に、還元剤の半反応式は電子が右辺に書かれる。", "is_correct": true }, { "label": "2", "text": "半反応式はそのまま実際の反応を表す。", "is_correct": false, "trap_type": "negation", "trap_detail": "半反応式だけでは実際の反応にならない。二つを組み合わせる必要がある。" }, { "label": "3", "text": "酸化剤の半反応式では電子が右辺に書かれる。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "酸化剤は電子を受け取るので左辺。" }, { "label": "4", "text": "半反応式は全体の反応式の半分を消したものである。", "is_correct": false, "trap_type": "negation", "trap_detail": "電子を含む独立した式。" } ], "explanation": "半反応式は酸化剤または還元剤の電子の授受を表す式です。酸化剤は電子を受け取る側なので電子が左辺（反応物側）に、還元剤は電子を放出する側なので電子が右辺（生成物側）に書かれます。二つの半反応式の電子を揃えて足し合わせると全体の反応式が得られます。", "evidence": [ { "source_id": "5_2_proc_001", "quote": "酸化剤と還元剤の電子を含む反応式（半反応式）" } ], "related_concept_ids": ["5_2_proc_001"], "mnemonic": null },
-    { "id": "ch3_5_q034", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "mnemonic", "sub_category": "電池の負極の覚え方", "difficulty": 2, "question_type": "correct", "question": "電池の正極・負極の覚え方として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "「イオン化傾向の大きいほうがマイナス（負極）」で覚える。イオンになりたがる金属が電子を出して負極になる。", "is_correct": true }, { "label": "2", "text": "イオン化傾向の大きいほうがプラス（正極）で覚える。", "is_correct": false, "trap_type": "negation", "trap_detail": "マイナス（負極）。" }, { "label": "3", "text": "この覚え方は電気分解に関するものである。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "電池に関する覚え方。" }, { "label": "4", "text": "極性はイオン化傾向と無関係に決まる。", "is_correct": false, "trap_type": "negation", "trap_detail": "イオン化傾向で決まる。" } ], "explanation": "電池では「イオン化傾向が大きい金属が負極」です。イオンに「なりたがる」金属は電子を「出したがる」ため電子が流れ出す側（マイナス、負極）になります。亜鉛と銅の組み合わせなら亜鉛が負極です。", "evidence": [ { "source_id": "5_4_def_001", "quote": "イオン化傾向の大きいほうがマイナス（負極）だ" } ], "related_concept_ids": ["5_4_def_001"], "mnemonic": "イオン化傾向の大きいほうがマイナス（負極）" },
-    { "id": "ch3_5_q035", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "電気量の計算ミス", "difficulty": 3, "question_type": "incorrect", "question": "電気量の計算に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "電気量は電流（アンペア）かける時間（秒）で求める。", "is_correct": false }, { "label": "2", "text": "時間の単位は秒に統一する必要がある。", "is_correct": false }, { "label": "3", "text": "ファラデー定数は約九万六千五百クーロン毎モルである。", "is_correct": false }, { "label": "4", "text": "電気量は電流を時間で割って求める。", "is_correct": true, "trap_type": "negation", "trap_detail": "掛けて求める。割るのではない。" } ], "explanation": "電気量の計算で「掛ける」と「割る」を間違えるのは基本的だが致命的な誤りです。キューイコールアイかけるティーです。十アンペアの電流を九十六点五秒間流すと電気量は九百六十五クーロンとなり、電子のモル数は約零点零一モルです。", "evidence": [ { "source_id": "5_4_law_001", "quote": "Q = i × t" } ], "related_concept_ids": ["5_4_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q036", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "classification", "sub_category": "還元剤の代表例", "difficulty": 3, "question_type": "correct", "question": "代表的な還元剤の分類として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "水素、炭素、一酸化炭素、硫化水素、シュウ酸、金属単体は還元剤の代表例である。還元剤は電子を放出して自身は酸化される。", "is_correct": true }, { "label": "2", "text": "塩素は還元剤の代表である。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "塩素は酸化剤。" }, { "label": "3", "text": "還元剤は自身が還元される。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "自身は酸化される。" }, { "label": "4", "text": "金属は酸化剤としてはたらくことが多い。", "is_correct": false, "trap_type": "negation", "trap_detail": "還元剤（電子を出す）としてはたらく。" } ], "explanation": "還元剤は「電子を出す側」です。金属単体（酸化数ゼロ）は電子を放出して陽イオンになりやすいため典型的な還元剤です。水素や炭素も相手の酸化物から酸素を奪って還元する代表的な還元剤です。", "evidence": [ { "source_id": "5_2_def_001", "quote": "還元剤は電子を放出しやすい物質" } ], "related_concept_ids": ["5_2_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q037", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "電池と電気分解の正負極でのの反応", "difficulty": 4, "question_type": "incorrect", "question": "電池と電気分解の電極における反応に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "電池の負極では酸化反応が起こる。", "is_correct": false }, { "label": "2", "text": "電池の正極では還元反応が起こる。", "is_correct": false }, { "label": "3", "text": "電気分解の陽極では酸化反応が起こる。", "is_correct": false }, { "label": "4", "text": "電池でも電気分解でも正極と陽極で酸化反応が起こる。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "電池の正極では還元反応（電子を受け取る）。酸化反応が起こるのは電池の負極と電気分解の陽極。" } ], "explanation": "電池の負極と電気分解の陽極で酸化反応、電池の正極と電気分解の陰極で還元反応が起こります。紛らわしいのは「正極」と「陽極」で反応の種類が異なることです。アノード（酸化）とカソード（還元）で覚えると統一的です。", "evidence": [ { "source_id": "5_4_def_001", "quote": "イオン化傾向の大きい金属が負極、電子が流れ出す極" } ], "related_concept_ids": ["5_4_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q038", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "単体の酸化数", "difficulty": 2, "question_type": "correct", "question": "単体の原子の酸化数について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "単体を構成する原子の酸化数はゼロである。これは金属でも非金属でも同じである。", "is_correct": true }, { "label": "2", "text": "金属単体の酸化数はプラス一である。", "is_correct": false, "trap_type": "negation", "trap_detail": "ゼロ。" }, { "label": "3", "text": "水素ガスの水素の酸化数はプラス一である。", "is_correct": false, "trap_type": "negation", "trap_detail": "単体なのでゼロ。プラス一は化合物中の水素。" }, { "label": "4", "text": "酸素ガスの酸素の酸化数はマイナス二である。", "is_correct": false, "trap_type": "negation", "trap_detail": "単体なのでゼロ。マイナス二は化合物中の酸素。" } ], "explanation": "「単体はゼロ」は酸化数の最も基本的なルールです。水素ガスの水素原子も酸素ガスの酸素原子も鉄の塊の鉄原子もすべてゼロです。プラス一やマイナス二は化合物中の値であり、単体に適用してはいけません。", "evidence": [ { "source_id": "5_1_law_001", "quote": "単体の原子は0" } ], "related_concept_ids": ["5_1_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q039", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "イオンの酸化数の総和", "difficulty": 3, "question_type": "incorrect", "question": "多原子イオンの酸化数に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "多原子イオンの酸化数の総和はそのイオンの価数に等しい。", "is_correct": false }, { "label": "2", "text": "硫酸イオン（二価のマイナスイオン）の酸化数の総和はマイナス二である。", "is_correct": false }, { "label": "3", "text": "過マンガン酸イオンのマンガンの酸化数はプラス七である。", "is_correct": false }, { "label": "4", "text": "多原子イオンの酸化数の総和はゼロである。", "is_correct": true, "trap_type": "negation", "trap_detail": "化合物はゼロだがイオンはイオンの価数に等しい。" } ], "explanation": "電荷を持たない化合物の酸化数の総和はゼロですが、多原子イオンでは総和がイオンの価数に等しくなります。硫酸イオン（マイナス二）なら総和がマイナス二、過マンガン酸イオン（マイナス一）なら総和がマイナス一です。この区別は重要です。", "evidence": [ { "source_id": "5_1_law_001", "quote": "多原子イオンの総和はそのイオンの価数に等しい" } ], "related_concept_ids": ["5_1_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q040", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "comprehensive", "sub_category": "第三章第五節の全体総合", "difficulty": 5, "question_type": "incorrect", "question": "酸化還元反応と電池・電気分解に関する総合的な記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "酸化は電子を失うこと、還元は電子を受け取ることであり必ず同時に起こる。酸化数の増加は酸化、減少は還元。", "is_correct": false }, { "label": "2", "text": "酸化剤は相手を酸化し自身は還元される。過酸化水素は相手次第で酸化剤にも還元剤にもなる二刀流。", "is_correct": false }, { "label": "3", "text": "電池の負極ではイオン化傾向大の金属が酸化される。ファラデーの法則で電気量から析出量を計算できる。", "is_correct": false }, { "label": "4", "text": "電子を受け取ると酸化。酸化剤は自身が酸化される。イオン化傾向大が正極。電気量は電流を時間で割る。鉛蓄電池の放電で密度は上昇。", "is_correct": true, "trap_type": "multiple_swap", "trap_detail": "五か所すべて誤り。" } ], "explanation": "この章のすべてを総合した問題です。電子を受け取るのは還元（酸化ではない）。酸化剤自身は還元される（酸化ではない）。イオン化傾向大は負極（正極ではない）。電気量は電流かける時間（割るではない）。放電で密度は低下（上昇ではない）。", "evidence": [ { "source_id": "5_1_def_001", "quote": "電子を失うと酸化、受け取ると還元" }, { "source_id": "5_4_def_001", "quote": "イオン化傾向の大きい金属が負極" } ], "related_concept_ids": ["5_1_def_001", "5_2_def_001", "5_3_law_001", "5_4_def_001", "5_4_law_001", "5_4_rxn_001"], "mnemonic": null },
-    { "id": "ch3_5_q041", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "電解質溶液の必要性", "difficulty": 2, "question_type": "correct", "question": "電池が機能するための条件として、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "イオン化傾向に差がある二種類の電極と電解質溶液が必要である。電解質溶液はイオンの移動による電荷の運搬を担う。", "is_correct": true }, { "label": "2", "text": "純水だけで電池が機能する。", "is_correct": false, "trap_type": "negation", "trap_detail": "電解質が必要。" }, { "label": "3", "text": "一種類の金属だけで電池ができる。", "is_correct": false, "trap_type": "negation", "trap_detail": "二種類必要。" }, { "label": "4", "text": "電解質溶液は不要で金属だけで機能する。", "is_correct": false, "trap_type": "negation", "trap_detail": "電解質溶液が必要。" } ], "explanation": "電池が機能するには三つの要素が必要です。イオン化傾向が異なる二種類の金属電極、電解質溶液（イオンが移動して内部回路を形成）、外部の導線（電子の通り道）です。いずれが欠けても電池は機能しません。", "evidence": [ { "source_id": "5_4_def_001", "quote": "イオン化傾向に差がある2種の電極と電解質水溶液が必要" } ], "related_concept_ids": ["5_4_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q042", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "過酸化物中の酸素", "difficulty": 3, "question_type": "incorrect", "question": "過酸化水素中の酸素の酸化数に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "過酸化水素中の酸素の酸化数はマイナス一である。", "is_correct": false }, { "label": "2", "text": "これは酸素の酸化数の例外的な値である。", "is_correct": false }, { "label": "3", "text": "酸素原子間の結合が特殊であるため通常と異なる酸化数になる。", "is_correct": false }, { "label": "4", "text": "過酸化水素だろうと酸素の酸化数は常にマイナス二であり例外はない。", "is_correct": true, "trap_type": "negation", "trap_detail": "過酸化物ではマイナス一。例外がある。" } ], "explanation": "過酸化水素では水素がプラス一、酸素の酸化数をエックスとすると、プラス一かける二プラスエックスかける二イコールゼロでエックスイコールマイナス一です。これは酸素が酸素同士で一重結合している特殊な構造のためです。", "evidence": [ { "source_id": "5_1_law_001", "quote": "過酸化物中のOの酸化数は-1となる例外がある" } ], "related_concept_ids": ["5_1_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q043", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "ファラデー定数の値", "difficulty": 2, "question_type": "correct", "question": "ファラデー定数について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "電子一モルあたりの電気量であり約九万六千五百クーロン毎モルである。この値を使って電気量から電子の物質量に換算する。", "is_correct": true }, { "label": "2", "text": "ファラデー定数は約九千六百クーロン毎モルである。", "is_correct": false, "trap_type": "negation", "trap_detail": "約九万六千五百。一桁違う。" }, { "label": "3", "text": "ファラデー定数は電流の単位である。", "is_correct": false, "trap_type": "concept_confusion", "trap_detail": "電子一モルの電気量。電流はアンペア。" }, { "label": "4", "text": "ファラデー定数は温度によって大きく変化する。", "is_correct": false, "trap_type": "negation", "trap_detail": "物理定数であり変化しない。" } ], "explanation": "ファラデー定数エフイコール九万六千五百クーロン毎モルは電気化学の最も重要な定数です。アボガドロ数と電気素量の積に等しく、電子一モルが運ぶ電気量を表します。この値は物理定数なので温度や圧力で変化しません。", "evidence": [ { "source_id": "5_4_law_001", "quote": "ファラデー定数 F = 9.65 × 10^4 C/mol" } ], "related_concept_ids": ["5_4_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q044", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "還元剤と還元されるの混同", "difficulty": 3, "question_type": "incorrect", "question": "還元剤に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "還元剤は相手を還元する物質である。", "is_correct": false }, { "label": "2", "text": "還元剤自身は酸化される。", "is_correct": false }, { "label": "3", "text": "還元剤は電子を放出する。", "is_correct": false }, { "label": "4", "text": "還元剤は自身が還元される物質であり酸化数が減少する。", "is_correct": true, "trap_type": "keyword_swap", "trap_detail": "還元剤自身は酸化され酸化数は増加する。" } ], "explanation": "還元剤の名前に「還元」が入っているため「自身が還元される」と間違えやすいですが、還元剤は「相手を還元する側」であり自身は酸化されます。つまり還元剤の酸化数は増加します。名前は「相手への効果」を示しています。", "evidence": [ { "source_id": "5_2_def_001", "quote": "還元剤は自身は酸化される" } ], "related_concept_ids": ["5_2_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q045", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "comprehensive", "sub_category": "イオン化傾向の総合", "difficulty": 5, "question_type": "correct", "question": "イオン化傾向に関する総合的な記述として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "イオン化傾向大ほど酸化されやすく還元性が強い。ナトリウムは常温の水と反応。水素より上は希酸で溶ける。水素より下は酸化力のある酸が必要。白金と金は王水でのみ溶ける。電池ではイオン化傾向大が負極。", "is_correct": true }, { "label": "2", "text": "イオン化傾向大ほど酸化されにくい。銅は希塩酸に溶ける。金は硝酸に溶ける。イオン化傾向大が正極。", "is_correct": false, "trap_type": "multiple_swap", "trap_detail": "四か所すべて誤り。" }, { "label": "3", "text": "すべての金属は常温の水と反応する。", "is_correct": false, "trap_type": "negation", "trap_detail": "一部のみ。" }, { "label": "4", "text": "イオン化傾向は非金属にも定義される。", "is_correct": false, "trap_type": "negation", "trap_detail": "金属に対して定義される。水素は例外的に含まれる。" } ], "explanation": "イオン化傾向の総合問題です。反応性が高い方から低い方へ、水との反応性、酸との反応性、電池の極性がすべてつながります。語呂合わせの順番を覚え各区分（水と反応、酸と反応、酸化力のある酸が必要、王水が必要）を正確に理解することが重要です。", "evidence": [ { "source_id": "5_3_law_001", "quote": "イオン化傾向が大きい金属ほど酸化されやすく還元性が強い" } ], "related_concept_ids": ["5_3_law_001", "5_4_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q046", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "電気分解の陰極反応", "difficulty": 3, "question_type": "correct", "question": "電気分解の陰極で起こる反応として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "陰極では還元反応が起こる。溶液中の陽イオンが電子を受け取って金属として析出するか、水素が発生する。", "is_correct": true }, { "label": "2", "text": "陰極で酸化反応が起こる。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "陰極は還元。陽極が酸化。" }, { "label": "3", "text": "陰極で酸素が発生する。", "is_correct": false, "trap_type": "keyword_swap", "trap_detail": "酸素は陽極で発生。陰極は水素か金属析出。" }, { "label": "4", "text": "陰極では何も反応しない。", "is_correct": false, "trap_type": "negation", "trap_detail": "還元反応が起こる。" } ], "explanation": "電気分解の陰極（マイナス極）には電子が供給されるため還元反応が起こります。銅イオンの溶液なら銅が析出し、水酸化ナトリウム溶液なら水が還元されて水素が発生します。陽極では酸化反応で酸素発生や電極の溶解が起こります。", "evidence": [ { "source_id": "5_4_law_001", "quote": "電気分解によって電極で変化する物質の物質量は電気量に比例する" } ], "related_concept_ids": ["5_4_law_001"], "mnemonic": null },
-    { "id": "ch3_5_q047", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "confusion", "sub_category": "電子数合わせ忘れ", "difficulty": 4, "question_type": "incorrect", "question": "酸化還元反応式の作成に関する記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "二つの半反応式の電子の数を最小公倍数で揃える必要がある。", "is_correct": false }, { "label": "2", "text": "電子の数を揃えた後に二つの式を足し合わせる。", "is_correct": false }, { "label": "3", "text": "足し合わせると電子が消去される。", "is_correct": false }, { "label": "4", "text": "電子の数を揃えなくてもそのまま足し合わせれば正しい反応式が得られる。", "is_correct": true, "trap_type": "negation", "trap_detail": "電子の数を揃えないと消去できず正しい式にならない。" } ], "explanation": "酸化還元反応式の作成で電子の数合わせを忘れると、足し合わせても電子が残ってしまい正しい化学反応式になりません。酸化剤が五電子受け取り還元剤が二電子放出する場合は十電子に揃える（酸化剤を二倍、還元剤を五倍する）必要があります。", "evidence": [ { "source_id": "5_2_proc_001", "quote": "e-の数が等しくなるように式全体を整数倍する" } ], "related_concept_ids": ["5_2_proc_001"], "mnemonic": null },
-    { "id": "ch3_5_q048", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "property", "sub_category": "燃料電池", "difficulty": 3, "question_type": "correct", "question": "燃料電池について、正しい記述を選びなさい。", "choices": [ { "label": "1", "text": "水素と酸素を反応させて電気エネルギーを取り出す電池であり、生成物は水のみでクリーンなエネルギー源である。外部から燃料を供給し続ける限り発電できる。", "is_correct": true }, { "label": "2", "text": "燃料電池は充電式の二次電池である。", "is_correct": false, "trap_type": "negation", "trap_detail": "充電ではなく燃料供給で継続的に発電する。" }, { "label": "3", "text": "燃料電池は化石燃料を燃焼させる装置である。", "is_correct": false, "trap_type": "negation", "trap_detail": "電気化学的に反応させる。燃焼ではない。" }, { "label": "4", "text": "燃料電池の生成物は二酸化炭素である。", "is_correct": false, "trap_type": "negation", "trap_detail": "水のみ。" } ], "explanation": "燃料電池は水素と酸素の酸化還元反応を利用した電池です。水素が負極で酸化され、酸素が正極で還元されます。全体としては水素と酸素から水ができる反応であり、二酸化炭素を排出しないクリーンなエネルギー源として注目されています。", "evidence": [], "related_concept_ids": ["5_4_def_001"], "mnemonic": null },
-    { "id": "ch3_5_q049", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "mnemonic", "sub_category": "酸化還元のゴロ合わせ", "difficulty": 2, "question_type": "correct", "question": "酸化と還元の覚え方として、正しいものを選びなさい。", "choices": [ { "label": "1", "text": "「酸化は電子を失う。OIL RIG（オイルリグ）で覚える。Oxidation Is Loss、Reduction Is Gain」と覚える。", "is_correct": true }, { "label": "2", "text": "酸化は電子を得ると覚える。", "is_correct": false, "trap_type": "negation", "trap_detail": "失う。" }, { "label": "3", "text": "この覚え方は酸化数とは無関係である。", "is_correct": false, "trap_type": "negation", "trap_detail": "電子の授受は酸化数と直結する。" }, { "label": "4", "text": "還元は電子を失うと覚える。", "is_correct": false, "trap_type": "negation", "trap_detail": "得る。" } ], "explanation": "OIL RIG（オイルリグ）は英語での有名な覚え方です。Oxidation Is Loss of electrons（酸化は電子を失う）、Reduction Is Gain of electrons（還元は電子を得る）の頭文字です。電子の移動方向を確実に覚えられます。", "evidence": [ { "source_id": "5_1_def_001", "quote": "電子を失うと酸化された、電子を受け取ると還元された" } ], "related_concept_ids": ["5_1_def_001"], "mnemonic": "OIL RIG: Oxidation Is Loss, Reduction Is Gain" },
-    { "id": "ch3_5_q050", "chapter": "3-5", "chapter_title": "酸化還元反応と電池・電気分解", "category": "comprehensive", "sub_category": "鉛蓄電池の総合", "difficulty": 5, "question_type": "incorrect", "question": "鉛蓄電池に関する総合的な記述のうち、誤りを含むものを選びなさい。", "choices": [ { "label": "1", "text": "負極に鉛、正極に酸化鉛（四価）、電解液に希硫酸を用いる二次電池。放電で両極に硫酸鉛が生成する。", "is_correct": false }, { "label": "2", "text": "放電すると硫酸が消費されて電解液の密度が低下する。充電で逆反応が起こり密度が回復する。", "is_correct": false }, { "label": "3", "text": "充電時は外部電源の正極を鉛蓄電池の正極に接続する（正極同士、負極同士）。", "is_correct": false }, { "label": "4", "text": "一次電池で充電不可。放電で硫酸が生成して密度が上昇する。充電時は外部電源の正極を鉛蓄電池の負極に接続する。", "is_correct": true, "trap_type": "multiple_swap", "trap_detail": "三か所すべて誤り。二次電池で充電可能、硫酸は消費され密度は低下、正極同士を接続。" } ], "explanation": "鉛蓄電池のすべてのポイントをまとめた最終問題です。二次電池で充電可能、放電で硫酸消費・密度低下、充電は正極同士・負極同士を接続、両極で硫酸鉛生成。これらをすべて正確に理解することが求められます。", "evidence": [ { "source_id": "5_4_rxn_001", "quote": "充電でき、反応が元に戻る。放電で密度が低下" } ], "related_concept_ids": ["5_4_rxn_001"], "mnemonic": null }
+    {
+      "id": "ch3_5_q001",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "definition",
+      "sub_category": "酸化と還元の定義",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "酸化と還元の定義として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸化と還元は別々に起こることがあると説明されることがあるが丁寧に考えると誤りで、酸化と還元は必ず同時に起こるものであり一方だけが単独で進行することはないと誤って覚えやすい典型例だが、",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "必ず同時に起こる。",
+          "choice_id": "ch3_5_q001_c1",
+          "tts_text": "酸化と還元は別々に起こることがあると説明されることがあるが丁寧に考えると誤りで、酸化と還元は必ず同時に起こるものであり一方だけが単独で進行することはないと誤って覚えやすい典型例だが、"
+        },
+        {
+          "label": "2",
+          "text": "水素を受け取ると酸化されると勘違いされやすいが、逆で水素を受け取ると還元される。水素を失う反応が酸化である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水素を受け取るのは還元。",
+          "choice_id": "ch3_5_q001_c2",
+          "tts_text": "水素を受け取ると酸化されると勘違いされやすいが、逆で水素を受け取ると還元される。水素を失う反応が酸化である。"
+        },
+        {
+          "label": "3",
+          "text": "酸化とは物質が酸素を受け取る、水素を失う、または電子を失う反応である。還元とは物質が酸素を失う、水素を受け取る、または電子を受け取る反応である。酸化と還元は必ず同時に起こる。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q001_c3",
+          "tts_text": "酸化とは物質が酸素を受け取る、水素を失う、または電子を失う反応である。還元とは物質が酸素を失う、水素を受け取る、または電子を受け取る反応である。酸化と還元は必ず同時に起こる。"
+        },
+        {
+          "label": "4",
+          "text": "電子を受け取ることが酸化である。逆で電子を受け取ることは還元であり電子を失うことが酸化である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "電子を受け取るのは還元。",
+          "choice_id": "ch3_5_q001_c4",
+          "tts_text": "電子を受け取ることが酸化である。逆で電子を受け取ることは還元であり電子を失うことが酸化である。"
+        }
+      ],
+      "explanation": "酸化還元は三つの視点（酸素・水素・電子）で定義されます。最も一般的な「電子」の定義では、電子を失うと酸化、受け取ると還元です。重要なのは酸化と還元は必ずセットで起こるということです。一方が電子を失えば他方が受け取るため同時発生します。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "酸化とは電子を失う反応、還元とは電子を受け取る反応。酸化と還元は必ず同時に起こる"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化と還元の定義として、正しいものを選びなさい。",
+      "tts_explanation": "酸化還元は三つの視点（酸素・水素・電子）で定義されます。最も一般的な「電子」の定義では、電子を失うと酸化、受け取ると還元です。重要なのは酸化と還元は必ずセットで起こるということです。一方が電子を失えば他方が受け取るため同時発生します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q002",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "definition",
+      "sub_category": "酸化数の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "酸化数の決め方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "化合物全体の酸化数の総和はイオンの価数に等しい。化合物全体の総和はゼロである。イオンの価数に等しいのは多原子イオンの場合である。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "全体がゼロ。イオンの場合のみ価数に等しい。",
+          "choice_id": "ch3_5_q002_c1",
+          "tts_text": "化合物全体の酸化数の総和はイオンの価数に等しい。化合物全体の総和はゼロである。イオンの価数に等しいのは多原子イオンの場合である。"
+        },
+        {
+          "label": "2",
+          "text": "化合物中の酸素は常にマイナス一である。化合物中の酸素は通常マイナス二であり過酸化物でのみマイナス一となる例外がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "通常マイナス二。過酸化物ではマイナス一。",
+          "choice_id": "ch3_5_q002_c2",
+          "tts_text": "化合物中の酸素は常にマイナス一である。化合物中の酸素は通常マイナス二であり過酸化物でのみマイナス一となる例外がある。"
+        },
+        {
+          "label": "3",
+          "text": "単体の原子はゼロ、化合物中の酸素は通常マイナス二、水素は通常プラス一。化合物全体の酸化数の総和はゼロ。多原子イオンの総和はイオンの価数に等しい。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q002_c3",
+          "tts_text": "単体の原子はゼロ、化合物中の酸素は通常マイナス二、水素は通常プラス一。化合物全体の酸化数の総和はゼロ。多原子イオンの総和はイオンの価数に等しい。"
+        },
+        {
+          "label": "4",
+          "text": "単体の原子の酸化数はプラス一である。単体の原子の酸化数はゼロであり金属でも非金属でも同じである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ゼロ。",
+          "choice_id": "ch3_5_q002_c4",
+          "tts_text": "単体の原子の酸化数はプラス一である。単体の原子の酸化数はゼロであり金属でも非金属でも同じである。"
+        }
+      ],
+      "explanation": "酸化数のルールを覚えることが酸化還元反応を理解する出発点です。特に重要なのは過酸化物での酸素（マイナス一）と金属水素化物での水素（マイナス一）の例外です。酸化数が増加した原子は酸化され、減少した原子は還元されたと判断します。",
+      "evidence": [
+        {
+          "source_id": "5_1_law_001",
+          "quote": "単体の原子は0、化合物中の酸素は通常-2、水素は通常+1"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化数の決め方として、正しいものを選びなさい。",
+      "tts_explanation": "酸化数のルールを覚えることが酸化還元反応を理解する出発点です。特に重要なのは過酸化物での酸素（マイナス一）と金属水素化物での水素（マイナス一）の例外です。酸化数が増加した原子は酸化され、減少した原子は還元されたと判断します。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q003",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "definition",
+      "sub_category": "酸化剤と還元剤",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "酸化剤と還元剤について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "過酸化水素は酸化剤としてのみはたらく。過酸化水素は相手によって酸化剤にも還元剤にもなる二刀流の物質である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "相手によって酸化剤にも還元剤にもなる二刀流。",
+          "choice_id": "ch3_5_q003_c1",
+          "tts_text": "過酸化水素は酸化剤としてのみはたらく。過酸化水素は相手によって酸化剤にも還元剤にもなる二刀流の物質である。"
+        },
+        {
+          "label": "2",
+          "text": "還元剤は電子を受け取りやすい物質である。逆で還元剤は電子を放出しやすい物質であり電子を受け取りやすいのは酸化剤である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "電子を放出しやすい。",
+          "choice_id": "ch3_5_q003_c2",
+          "tts_text": "還元剤は電子を受け取りやすい物質である。逆で還元剤は電子を放出しやすい物質であり電子を受け取りやすいのは酸化剤である。"
+        },
+        {
+          "label": "3",
+          "text": "酸化剤は他の物質を酸化し自身は還元される物質であり電子を受け取りやすい。還元剤は他の物質を還元し自身は酸化される物質であり電子を放出しやすい。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q003_c3",
+          "tts_text": "酸化剤は他の物質を酸化し自身は還元される物質であり電子を受け取りやすい。還元剤は他の物質を還元し自身は酸化される物質であり電子を放出しやすい。"
+        },
+        {
+          "label": "4",
+          "text": "酸化剤は自身が酸化される物質であると誤解されやすいが、逆で酸化剤は自身が還元される物質であり他の物質を酸化する役割をもつと誤って覚えやすい典型例だが、",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸化剤自身は還元される。",
+          "choice_id": "ch3_5_q003_c4",
+          "tts_text": "酸化剤は自身が酸化される物質であると誤解されやすいが、逆で酸化剤は自身が還元される物質であり他の物質を酸化する役割をもつと誤って覚えやすい典型例だが、"
+        }
+      ],
+      "explanation": "酸化剤と還元剤の名前は「相手にすること」で決まります。酸化剤は「相手を酸化する」→自身は還元される。還元剤は「相手を還元する」→自身は酸化される。名前と自身の変化が逆になるため混同しやすい最大のポイントです。過酸化水素は二刀流で相手次第でどちらにもなります。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_001",
+          "quote": "酸化剤は他の物質を酸化する（自身は還元される）物質"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化剤と還元剤について、正しい記述を選びなさい。",
+      "tts_explanation": "酸化剤と還元剤の名前は「相手にすること」で決まります。酸化剤は「相手を酸化する」→自身は還元される。還元剤は「相手を還元する」→自身は酸化される。名前と自身の変化が逆になるため混同しやすい最大のポイントです。過酸化水素は二刀流で相手次第でどちらにもなります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q004",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "definition",
+      "sub_category": "イオン化傾向",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "金属のイオン化傾向について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン化傾向は水溶液の種類に依存する。イオン化傾向は金属固有の性質であり水溶液の種類には基本的に依存しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "金属固有の性質。",
+          "choice_id": "ch3_5_q004_c1",
+          "tts_text": "イオン化傾向は水溶液の種類に依存する。イオン化傾向は金属固有の性質であり水溶液の種類には基本的に依存しない。"
+        },
+        {
+          "label": "2",
+          "text": "金属が電子を放出して陽イオンになろうとする傾向の大きさである。イオン化傾向が大きい金属ほど酸化されやすく還元性が強い。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q004_c2",
+          "tts_text": "金属が電子を放出して陽イオンになろうとする傾向の大きさである。イオン化傾向が大きい金属ほど酸化されやすく還元性が強い。"
+        },
+        {
+          "label": "3",
+          "text": "金が最もイオン化傾向が大きい。逆で金はイオン化傾向が最も小さく最も酸化されにくい金属である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "金は最も小さい。リチウムが最大。",
+          "choice_id": "ch3_5_q004_c3",
+          "tts_text": "金が最もイオン化傾向が大きい。逆で金はイオン化傾向が最も小さく最も酸化されにくい金属である。"
+        },
+        {
+          "label": "4",
+          "text": "イオン化傾向が大きい金属ほど酸化されにくい。逆でイオン化傾向が大きい金属ほど電子を放出しやすく酸化されやすい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸化されやすい。",
+          "choice_id": "ch3_5_q004_c4",
+          "tts_text": "イオン化傾向が大きい金属ほど酸化されにくい。逆でイオン化傾向が大きい金属ほど電子を放出しやすく酸化されやすい。"
+        }
+      ],
+      "explanation": "イオン化傾向は金属の反応性を比較するための指標です。リチウムが最大で金が最小です。語呂合わせ「リッチに貸そうかまがあるすんなひどすぎる借金」で覚えます。イオン化傾向が大きい金属ほど電子を出しやすく酸化されやすい（還元性が強い）です。",
+      "evidence": [
+        {
+          "source_id": "5_3_law_001",
+          "quote": "金属が電子を放出して陽イオンになろうとする傾向の大きさ"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_law_001"
+      ],
+      "mnemonic": "リッチに貸そうかまがあるすんなひどすぎる借金",
+      "tts_question": "金属のイオン化傾向について、正しい記述を選びなさい。",
+      "tts_explanation": "イオン化傾向は金属の反応性を比較するための指標です。リチウムが最大で金が最小です。語呂合わせ「リッチに貸そうかまがあるすんなひどすぎる借金」で覚えます。イオン化傾向が大きい金属ほど電子を出しやすく酸化されやすい（還元性が強い）です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q005",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "definition",
+      "sub_category": "電池の定義",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "電池について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン化傾向が大きい金属が正極になる。逆でイオン化傾向が大きい金属は電子を放出して負極になる。正極はイオン化傾向が小さい方である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "負極になる。",
+          "choice_id": "ch3_5_q005_c1",
+          "tts_text": "イオン化傾向が大きい金属が正極になる。逆でイオン化傾向が大きい金属は電子を放出して負極になる。正極はイオン化傾向が小さい方である。"
+        },
+        {
+          "label": "2",
+          "text": "同じイオン化傾向の金属でも電池ができる。電池にはイオン化傾向に差がある二種類の金属が必要であり同じでは電位差が生じない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "差が必要。",
+          "choice_id": "ch3_5_q005_c2",
+          "tts_text": "同じイオン化傾向の金属でも電池ができる。電池にはイオン化傾向に差がある二種類の金属が必要であり同じでは電位差が生じない。"
+        },
+        {
+          "label": "3",
+          "text": "電池では電気エネルギーを化学エネルギーに変換する。逆で電池は化学エネルギーを電気エネルギーに変換する装置である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "それは電気分解。電池は逆。",
+          "choice_id": "ch3_5_q005_c3",
+          "tts_text": "電池では電気エネルギーを化学エネルギーに変換する。逆で電池は化学エネルギーを電気エネルギーに変換する装置である。"
+        },
+        {
+          "label": "4",
+          "text": "酸化還元反応の化学エネルギーを電気エネルギーに変換する装置。イオン化傾向が大きい金属が負極、小さい金属が正極になる。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q005_c4",
+          "tts_text": "酸化還元反応の化学エネルギーを電気エネルギーに変換する装置。イオン化傾向が大きい金属が負極、小さい金属が正極になる。"
+        }
+      ],
+      "explanation": "電池は化学エネルギーを電気エネルギーに変換する装置です。イオン化傾向に差がある二種類の金属を電解質溶液に浸すとイオン化傾向が大きい方が電子を放出して負極に、小さい方が正極になります。「イオン化傾向大→負極→マイナス」と覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "5_4_def_001",
+          "quote": "イオン化傾向の大きい金属が負極、小さい金属が正極"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_def_001"
+      ],
+      "mnemonic": "イオン化傾向の大きいほうがマイナス（負極）",
+      "tts_question": "電池について、正しい記述を選びなさい。",
+      "tts_explanation": "電池は化学エネルギーを電気エネルギーに変換する装置です。イオン化傾向に差がある二種類の金属を電解質溶液に浸すとイオン化傾向が大きい方が電子を放出して負極に、小さい方が正極になります。「イオン化傾向大→負極→マイナス」と覚えましょう。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q006",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "definition",
+      "sub_category": "ファラデーの法則",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ファラデーの法則について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電気量は電流を時間で割って求める。逆で電気量は電流かける時間で求める。割るのではなく掛け算である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "掛けて求める。",
+          "choice_id": "ch3_5_q006_c1",
+          "tts_text": "電気量は電流を時間で割って求める。逆で電気量は電流かける時間で求める。割るのではなく掛け算である。"
+        },
+        {
+          "label": "2",
+          "text": "析出量は電気量に反比例すると誤って覚えがちだが、ファラデーの法則により析出量は電気量に比例する。反比例ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "比例する。",
+          "choice_id": "ch3_5_q006_c2",
+          "tts_text": "析出量は電気量に反比例すると誤って覚えがちだが、ファラデーの法則により析出量は電気量に比例する。反比例ではない。"
+        },
+        {
+          "label": "3",
+          "text": "ファラデー定数は不要で電気量だけで析出量が決まると誤って覚えやすい典型例だが、電気量から電子のモル数に換算するためにファラデー定数が必要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電子の物質量に換算するためファラデー定数が必要。",
+          "choice_id": "ch3_5_q006_c3",
+          "tts_text": "ファラデー定数は不要で電気量だけで析出量が決まると誤って覚えやすい典型例だが、電気量から電子のモル数に換算するためにファラデー定数が必要である。"
+        },
+        {
+          "label": "4",
+          "text": "電気分解で電極に析出する物質の量は流した電気量に比例する。電気量は電流かける時間で求まり、ファラデー定数は電子1molあたりの電気量である。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q006_c4",
+          "tts_text": "電気分解で電極に析出する物質の量は流した電気量に比例する。電気量は電流かける時間で求まり、ファラデー定数は電子一モルあたりの電気量である。"
+        }
+      ],
+      "explanation": "ファラデーの法則は電気分解の計算の基本です。電気量キューイコール電流アイかける時間ティーで求まり、電子のモル数はキュー割るファラデー定数（約九万6500C/mol）で求められます。ここから化学量論を使って析出量を計算します。",
+      "evidence": [
+        {
+          "source_id": "5_4_law_001",
+          "quote": "電極で変化する物質の物質量は通じた電気量に比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ファラデーの法則について、正しい記述を選びなさい。",
+      "tts_explanation": "ファラデーの法則は電気分解の計算の基本です。電気量キューイコール電流アイかける時間ティーで求まり、電子のモル数はキュー割るファラデー定数（約九万六千五百クーロン毎モル）で求められます。ここから化学量論を使って析出量を計算します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q007",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "鉛蓄電池",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "鉛蓄電池の放電について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "正極のみで硫酸鉛が生成し負極では変化しないと初学者は誤解しがちな説明だが、放電では正極でも負極でも硫酸鉛が生成する。両極で変化が起こるのが特徴である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "両極で硫酸鉛が生成する。",
+          "choice_id": "ch3_5_q007_c1",
+          "tts_text": "正極のみで硫酸鉛が生成し負極では変化しないと初学者は誤解しがちな説明だが、放電では正極でも負極でも硫酸鉛が生成する。両極で変化が起こるのが特徴である。"
+        },
+        {
+          "label": "2",
+          "text": "負極に鉛、正極に酸化鉛（四価）、電解液に希硫酸を用いる。放電すると両極で硫酸鉛が生成し硫酸が消費されて水が生じるため電解液の密度が低下する。充電可能な二次電池である。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q007_c2",
+          "tts_text": "負極に鉛、正極に酸化鉛（四価）、電解液に希硫酸を用いる。放電すると両極で硫酸鉛が生成し硫酸が消費されて水が生じるため電解液の密度が低下する。充電可能な二次電池である。"
+        },
+        {
+          "label": "3",
+          "text": "鉛蓄電池は一次電池で充電できない。鉛蓄電池は充電可能な二次電池の代表であり外部電源で充電すると元の状態に戻る。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二次電池で充電可能。",
+          "choice_id": "ch3_5_q007_c3",
+          "tts_text": "鉛蓄電池は一次電池で充電できない。鉛蓄電池は充電可能な二次電池の代表であり外部電源で充電すると元の状態に戻る。"
+        },
+        {
+          "label": "4",
+          "text": "放電すると電解液の密度が上昇すると思い込みがちだが、逆で放電すると硫酸が消費されて水が生じるため電解液の密度は低下する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "密度が低下する。硫酸が消費され水が増えるため。",
+          "choice_id": "ch3_5_q007_c4",
+          "tts_text": "放電すると電解液の密度が上昇すると思い込みがちだが、逆で放電すると硫酸が消費されて水が生じるため電解液の密度は低下する。"
+        }
+      ],
+      "explanation": "鉛蓄電池は自動車用バッテリーとして広く使われる二次電池です。放電時の全体反応は鉛プラス酸化鉛プラス硫酸→硫酸鉛プラス水です。特徴は両極とも硫酸鉛になること、硫酸が消費されて密度が下がること、充電で元に戻せることです。",
+      "evidence": [
+        {
+          "source_id": "5_4_rxn_001",
+          "quote": "正極・負極の両方で硫酸鉛が生成し、電解液の硫酸が消費されて密度が低下する"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "鉛蓄電池の放電について、正しい記述を選びなさい。",
+      "tts_explanation": "鉛蓄電池は自動車用バッテリーとして広く使われる二次電池です。放電時の全体反応は鉛プラス酸化鉛プラス硫酸→硫酸鉛プラス水です。特徴は両極とも硫酸鉛になること、硫酸が消費されて密度が下がること、充電で元に戻せることです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q008",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "酸化剤と還元剤の名前の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "酸化剤と還元剤に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "還元剤は電子を放出する物質である。これは正しい記述であり還元剤は自身が酸化されて電子を放出する。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q008_c1",
+          "tts_text": "還元剤は電子を放出する物質である。これは正しい記述であり還元剤は自身が酸化されて電子を放出する。"
+        },
+        {
+          "label": "2",
+          "text": "酸化剤は相手を酸化する物質である。これは正しい記述であり酸化剤は相手から電子を奪って相手を酸化する。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q008_c2",
+          "tts_text": "酸化剤は相手を酸化する物質である。これは正しい記述であり酸化剤は相手から電子を奪って相手を酸化する。"
+        },
+        {
+          "label": "3",
+          "text": "酸化剤自身は還元される。これは正しい記述であり酸化剤は電子を受け取るため自身の酸化数は減少し還元される。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q008_c3",
+          "tts_text": "酸化剤自身は還元される。これは正しい記述であり酸化剤は電子を受け取るため自身の酸化数は減少し還元される。"
+        },
+        {
+          "label": "4",
+          "text": "酸化剤は自身が酸化される物質であり、還元剤は自身が還元される物質である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。酸化剤自身は還元され、還元剤自身は酸化される。",
+          "choice_id": "ch3_5_q008_c4",
+          "tts_text": "酸化剤は自身が酸化される物質であり、還元剤は自身が還元される物質である。"
+        }
+      ],
+      "explanation": "酸化剤・還元剤の最大のひっかけは「名前と自身の変化が逆」ということです。酸化剤は「相手を酸化する→自身は還元される」、還元剤は「相手を還元する→自身は酸化される」です。名前は相手への作用を表しており、自身の変化ではありません。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_001",
+          "quote": "酸化剤は自身は還元される、還元剤は自身は酸化される"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化剤と還元剤に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "酸化剤・還元剤の最大のひっかけは「名前と自身の変化が逆」ということです。酸化剤は「相手を酸化する→自身は還元される」、還元剤は「相手を還元する→自身は酸化される」です。名前は相手への作用を表しており、自身の変化ではありません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q009",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "電子の流れと電流の向き",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "電池における電流の向きに関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電流は電子と同じ方向すなわち負極から正極へ流れる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "電流は電子と逆方向。正極から負極へ流れる。",
+          "choice_id": "ch3_5_q009_c1",
+          "tts_text": "電流は電子と同じ方向すなわち負極から正極へ流れる。"
+        },
+        {
+          "label": "2",
+          "text": "電流の向きは電子の流れと逆である。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q009_c2",
+          "tts_text": "電流の向きは電子の流れと逆である。"
+        },
+        {
+          "label": "3",
+          "text": "電流は正極から負極の向きに流れる（外部回路）。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q009_c3",
+          "tts_text": "電流は正極から負極の向きに流れる（外部回路）。"
+        },
+        {
+          "label": "4",
+          "text": "電子は負極から正極へ流れる。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q009_c4",
+          "tts_text": "電子は負極から正極へ流れる。"
+        }
+      ],
+      "explanation": "電池で最も間違えやすいのは電子の流れと電流の向きの関係です。電子は負極から導線を通って正極へ流れますが、電流（正電荷の流れ）は慣習的に逆方向（正極→負極）と定義されています。",
+      "evidence": [
+        {
+          "source_id": "5_4_def_001",
+          "quote": "電流の向きは電子の流れと逆の向き"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "電池における電流の向きに関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "電池で最も間違えやすいのは電子の流れと電流の向きの関係です。電子は負極から導線を通って正極へ流れますが、電流（正電荷の流れ）は慣習的に逆方向（正極→負極）と定義されています。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q010",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "酸化数のルールの例外",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "酸化数の決め方に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "金属水素化物中の水素の酸化数はマイナス一である。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q010_c1",
+          "tts_text": "金属水素化物中の水素の酸化数はマイナス一である。"
+        },
+        {
+          "label": "2",
+          "text": "すべての化合物で酸素の酸化数はマイナス二であり例外はない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "過酸化物ではマイナス一の例外がある。",
+          "choice_id": "ch3_5_q010_c2",
+          "tts_text": "すべての化合物で酸素の酸化数はマイナス二であり例外はない。"
+        },
+        {
+          "label": "3",
+          "text": "酸化数が増加した原子は酸化されたと判断する。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q010_c3",
+          "tts_text": "酸化数が増加した原子は酸化されたと判断する。"
+        },
+        {
+          "label": "4",
+          "text": "過酸化物中の酸素の酸化数はマイナス一である。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q010_c4",
+          "tts_text": "過酸化物中の酸素の酸化数はマイナス一である。"
+        }
+      ],
+      "explanation": "酸化数の規則で最も重要な例外は過酸化水素などの過酸化物で酸素がマイナス一になることと、水素化リチウムなどの金属水素化物で水素がマイナス一になることです。「通常」の規則と「例外」を区別することが試験対策のポイントです。",
+      "evidence": [
+        {
+          "source_id": "5_1_law_001",
+          "quote": "過酸化物中のOの酸化数は-1となる例外がある"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化数の決め方に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "酸化数の規則で最も重要な例外は過酸化水素などの過酸化物で酸素がマイナス一になることと、水素化リチウムなどの金属水素化物で水素がマイナス一になることです。「通常」の規則と「例外」を区別することが試験対策のポイントです。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q011",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "過酸化水素の二刀流",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "過酸化水素の酸化還元における特徴として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "過酸化水素は酸化還元反応に関与しない。過酸化水素は酸化剤にも還元剤にもなる典型的な酸化還元物質であり反応に積極的に関与する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸化剤にも還元剤にもなる。",
+          "choice_id": "ch3_5_q011_c1",
+          "tts_text": "過酸化水素は酸化還元反応に関与しない。過酸化水素は酸化剤にも還元剤にもなる典型的な酸化還元物質であり反応に積極的に関与する。"
+        },
+        {
+          "label": "2",
+          "text": "過酸化水素は常に還元剤としてのみはたらく。過酸化水素は相手によって酸化剤にもなる二刀流であり常に還元剤とは限らない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸化剤にもなる。",
+          "choice_id": "ch3_5_q011_c2",
+          "tts_text": "過酸化水素は常に還元剤としてのみはたらく。過酸化水素は相手によって酸化剤にもなる二刀流であり常に還元剤とは限らない。"
+        },
+        {
+          "label": "3",
+          "text": "相手によって酸化剤にも還元剤にもなる二刀流の物質である。過マンガン酸カリウムに対しては還元剤、ヨウ化カリウムに対しては酸化剤としてはたらく。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q011_c3",
+          "tts_text": "相手によって酸化剤にも還元剤にもなる二刀流の物質である。過マンガン酸カリウムに対しては還元剤、ヨウ化カリウムに対しては酸化剤としてはたらく。"
+        },
+        {
+          "label": "4",
+          "text": "過酸化水素は常に酸化剤としてのみはたらく。過酸化水素は相手によって還元剤にもなる二刀流であり常に酸化剤とは限らない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "還元剤にもなる。",
+          "choice_id": "ch3_5_q011_c4",
+          "tts_text": "過酸化水素は常に酸化剤としてのみはたらく。過酸化水素は相手によって還元剤にもなる二刀流であり常に酸化剤とは限らない。"
+        }
+      ],
+      "explanation": "過酸化水素中の酸素の酸化数はマイナス一であり、通常のマイナス二よりも大きくゼロよりは小さい中間の値です。このため、より強い酸化剤（過マンガン酸カリウムなど）に対しては酸化数がゼロに向かって還元剤に、さらに弱い物質に対しては酸化数がマイナス二に向かって酸化剤になります。",
+      "evidence": [
+        {
+          "source_id": "5_2_sub_002",
+          "quote": "相手によって酸化剤にも還元剤にもなる物質（二刀流）"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_sub_002"
+      ],
+      "mnemonic": null,
+      "tts_question": "過酸化水素の酸化還元における特徴として、正しい記述を選びなさい。",
+      "tts_explanation": "過酸化水素中の酸素の酸化数はマイナス一であり、通常のマイナス二よりも大きくゼロよりは小さい中間の値です。このため、より強い酸化剤（過マンガン酸カリウムなど）に対しては酸化数がゼロに向かって還元剤に、さらに弱い物質に対しては酸化数がマイナス二に向かって酸化剤になります。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q012",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "過マンガン酸カリウム",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "過マンガン酸カリウムについて、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "黒紫色の結晶で水溶液は濃い赤紫色を呈する強力な酸化剤である。酸性条件では淡桃色（ほぼ無色）のマンガンイオンに還元される。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q012_c1",
+          "tts_text": "黒紫色の結晶で水溶液は濃い赤紫色を呈する強力な酸化剤である。酸性条件では淡桃色（ほぼ無色）のマンガンイオンに還元される。"
+        },
+        {
+          "label": "2",
+          "text": "水溶液は無色透明である。過マンガン酸カリウムの水溶液は濃い赤紫色を呈しており無色透明ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "濃い赤紫色。",
+          "choice_id": "ch3_5_q012_c2",
+          "tts_text": "水溶液は無色透明である。過マンガン酸カリウムの水溶液は濃い赤紫色を呈しており無色透明ではない。"
+        },
+        {
+          "label": "3",
+          "text": "過マンガン酸カリウムは還元剤である。過マンガン酸カリウムは強力な酸化剤の代表であり還元剤ではない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸化剤。",
+          "choice_id": "ch3_5_q012_c3",
+          "tts_text": "過マンガン酸カリウムは還元剤である。過マンガン酸カリウムは強力な酸化剤の代表であり還元剤ではない。"
+        },
+        {
+          "label": "4",
+          "text": "酸性条件で還元されると色が濃くなる。逆で酸性条件では淡桃色（ほぼ無色）のマンガンイオンに還元されるため色は薄くなる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "淡桃色（ほぼ無色）になる。",
+          "choice_id": "ch3_5_q012_c4",
+          "tts_text": "酸性条件で還元されると色が濃くなる。逆で酸性条件では淡桃色（ほぼ無色）のマンガンイオンに還元されるため色は薄くなる。"
+        }
+      ],
+      "explanation": "過マンガン酸カリウムはマンガンの酸化数がプラス七の強力な酸化剤です。酸性条件で還元されるとマンガンの酸化数がプラス二になり、赤紫色が消えてほぼ無色になります。この色の変化を利用して酸化還元滴定に使われます。",
+      "evidence": [
+        {
+          "source_id": "5_2_sub_001",
+          "quote": "強力な酸化剤。酸性条件ではMn2+（淡桃色/無色）に還元される"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "過マンガン酸カリウムについて、正しい記述を選びなさい。",
+      "tts_explanation": "過マンガン酸カリウムはマンガンの酸化数がプラス七の強力な酸化剤です。酸性条件で還元されるとマンガンの酸化数がプラス二になり、赤紫色が消えてほぼ無色になります。この色の変化を利用して酸化還元滴定に使われます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q013",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "procedure",
+      "sub_category": "酸化還元反応式の作り方",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "酸化還元反応の化学反応式の作り方として、正しい手順を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸化剤と還元剤の半反応式を書き、電子の数を揃えて足し合わせイオン反応式を作り、省略されていたイオンを補って完成させる。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q013_c1",
+          "tts_text": "酸化剤と還元剤の半反応式を書き、電子の数を揃えて足し合わせイオン反応式を作り、省略されていたイオンを補って完成させる。"
+        },
+        {
+          "label": "2",
+          "text": "電子の数を揃える必要はない。酸化剤と還元剤の半反応式を足し合わせる際には電子の数を揃えなければ正しいイオン反応式にならない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電子の数を揃えるのが最重要ステップ。",
+          "choice_id": "ch3_5_q013_c2",
+          "tts_text": "電子の数を揃える必要はない。酸化剤と還元剤の半反応式を足し合わせる際には電子の数を揃えなければ正しいイオン反応式にならない。"
+        },
+        {
+          "label": "3",
+          "text": "酸化剤の式だけで反応式は完成する。酸化還元反応には酸化剤と還元剤の両方の半反応式が必要であり片方だけでは不完全である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "還元剤の式も必要。",
+          "choice_id": "ch3_5_q013_c3",
+          "tts_text": "酸化剤の式だけで反応式は完成する。酸化還元反応には酸化剤と還元剤の両方の半反応式が必要であり片方だけでは不完全である。"
+        },
+        {
+          "label": "4",
+          "text": "半反応式なしに直接完全な反応式を書けばよい。複雑な酸化還元反応では半反応式を経由して電子の授受を整理する手順が不可欠である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "半反応式から組み立てるのが基本。",
+          "choice_id": "ch3_5_q013_c4",
+          "tts_text": "半反応式なしに直接完全な反応式を書けばよい。複雑な酸化還元反応では半反応式を経由して電子の授受を整理する手順が不可欠である。"
+        }
+      ],
+      "explanation": "酸化還元反応式の作成は四段階です。第一に酸化剤と還元剤の半反応式（電子を含む式）を書く。第二に電子の数を最小公倍数で揃える。第三に二つの式を足して電子を消去しイオン反応式を得る。第四に省略されていたイオンを両辺に加え完全な式にする。",
+      "evidence": [
+        {
+          "source_id": "5_2_proc_001",
+          "quote": "電子の数を揃えて足し合わせ、イオン反応式を作った後、省略されていたイオンを補って完成"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化還元反応の化学反応式の作り方として、正しい手順を選びなさい。",
+      "tts_explanation": "酸化還元反応式の作成は四段階です。第一に酸化剤と還元剤の半反応式（電子を含む式）を書く。第二に電子の数を最小公倍数で揃える。第三に二つの式を足して電子を消去しイオン反応式を得る。第四に省略されていたイオンを両辺に加え完全な式にする。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q014",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "金属と水の反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "金属のイオン化傾向と水との反応として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銅は常温の水と反応する。銅はイオン化傾向が水素より小さいため常温の水とは反応しない。酸化力のある酸には溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "銅は水素より下なので水とは反応しない。",
+          "choice_id": "ch3_5_q014_c1",
+          "tts_text": "銅は常温の水と反応する。銅はイオン化傾向が水素より小さいため常温の水とは反応しない。酸化力のある酸には溶ける。"
+        },
+        {
+          "label": "2",
+          "text": "すべての金属が常温の水と反応する。常温の水と反応するのはリチウムやナトリウムなどイオン化傾向が非常に大きい金属のみである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "イオン化傾向で反応性が異なる。",
+          "choice_id": "ch3_5_q014_c2",
+          "tts_text": "すべての金属が常温の水と反応する。常温の水と反応するのはリチウムやナトリウムなどイオン化傾向が非常に大きい金属のみである。"
+        },
+        {
+          "label": "3",
+          "text": "金はどんな酸にも溶ける。金はイオン化傾向が極めて小さく通常の酸には溶けない。溶かすには王水が必要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "王水にしか溶けない。",
+          "choice_id": "ch3_5_q014_c3",
+          "tts_text": "金はどんな酸にも溶ける。金はイオン化傾向が極めて小さく通常の酸には溶けない。溶かすには王水が必要である。"
+        },
+        {
+          "label": "4",
+          "text": "ナトリウムは常温の水と激しく反応する。マグネシウムは熱水と反応する。鉄は高温の水蒸気と反応する。銅は水とは反応しない。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q014_c4",
+          "tts_text": "ナトリウムは常温の水と激しく反応する。マグネシウムは熱水と反応する。鉄は高温の水蒸気と反応する。銅は水とは反応しない。"
+        }
+      ],
+      "explanation": "イオン化傾向の順位により水との反応性が決まります。カリウムやナトリウムは常温の水でも激しく反応（水素発生）。マグネシウムは熱水で反応。鉄やアルミニウムは高温の水蒸気で反応。水素より下の銅以降は水とは反応しません。金と白金は王水でのみ溶けます。",
+      "evidence": [
+        {
+          "source_id": "5_3_law_001",
+          "quote": "Naは常温の水と激しく反応、Mgは熱水、Feは高温の水蒸気と反応"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "金属のイオン化傾向と水との反応として、正しい記述を選びなさい。",
+      "tts_explanation": "イオン化傾向の順位により水との反応性が決まります。カリウムやナトリウムは常温の水でも激しく反応（水素発生）。マグネシウムは熱水で反応。鉄やアルミニウムは高温の水蒸気で反応。水素より下の銅以降は水とは反応しません。金と白金は王水でのみ溶けます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q015",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "電池と電気分解の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "電池と電気分解に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電気分解は電気エネルギーを化学エネルギーに変換する。これは正しい記述であり外部電源の電気エネルギーで化学反応を起こす操作である。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q015_c1",
+          "tts_text": "電気分解は電気エネルギーを化学エネルギーに変換する。これは正しい記述であり外部電源の電気エネルギーで化学反応を起こす操作である。"
+        },
+        {
+          "label": "2",
+          "text": "電池は電気エネルギーを化学エネルギーに変換する装置であり、電気分解は化学エネルギーを電気エネルギーに変換する装置である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。電池が化学→電気、電気分解が電気→化学。",
+          "choice_id": "ch3_5_q015_c2",
+          "tts_text": "電池は電気エネルギーを化学エネルギーに変換する装置であり、電気分解は化学エネルギーを電気エネルギーに変換する装置である。"
+        },
+        {
+          "label": "3",
+          "text": "電池の負極ではイオン化傾向の大きい金属が溶ける。これは正しい記述であり負極の金属が電子を放出してイオンとなって溶け出す。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q015_c3",
+          "tts_text": "電池の負極ではイオン化傾向の大きい金属が溶ける。これは正しい記述であり負極の金属が電子を放出してイオンとなって溶け出す。"
+        },
+        {
+          "label": "4",
+          "text": "電池は化学エネルギーを電気エネルギーに変換する。これは正しい記述であり酸化還元反応の化学エネルギーを利用して電気を取り出す。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q015_c4",
+          "tts_text": "電池は化学エネルギーを電気エネルギーに変換する。これは正しい記述であり酸化還元反応の化学エネルギーを利用して電気を取り出す。"
+        }
+      ],
+      "explanation": "電池と電気分解はエネルギー変換の方向が逆です。電池は化学エネルギーを電気エネルギーに変換し、電気分解は電気エネルギーを使って化学変化を起こします。鉛蓄電池の放電は電池、充電は電気分解に相当します。",
+      "evidence": [
+        {
+          "source_id": "5_4_def_001",
+          "quote": "酸化還元反応の化学エネルギーを電気エネルギーに変換して取り出す装置"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "電池と電気分解に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "電池と電気分解はエネルギー変換の方向が逆です。電池は化学エネルギーを電気エネルギーに変換し、電気分解は電気エネルギーを使って化学変化を起こします。鉛蓄電池の放電は電池、充電は電気分解に相当します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q016",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "鉛蓄電池の充電接続",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "鉛蓄電池の充電に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "充電時は外部電源の正極を鉛蓄電池の正極に接続する。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q016_c1",
+          "tts_text": "充電時は外部電源の正極を鉛蓄電池の正極に接続する。"
+        },
+        {
+          "label": "2",
+          "text": "充電すると放電の逆反応が起こる。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q016_c2",
+          "tts_text": "充電すると放電の逆反応が起こる。"
+        },
+        {
+          "label": "3",
+          "text": "充電すると電解液の密度が回復する。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q016_c3",
+          "tts_text": "充電すると電解液の密度が回復する。"
+        },
+        {
+          "label": "4",
+          "text": "充電時は外部電源の正極を鉛蓄電池の負極に接続する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "正極同士、負極同士を接続する。",
+          "choice_id": "ch3_5_q016_c4",
+          "tts_text": "充電時は外部電源の正極を鉛蓄電池の負極に接続する。"
+        }
+      ],
+      "explanation": "鉛蓄電池の充電では外部電源の正極を鉛蓄電池の正極に、外部電源の負極を鉛蓄電池の負極に接続します。これにより放電の逆反応が起こり硫酸鉛が元の鉛と酸化鉛に戻り、硫酸が再生されて密度が回復します。",
+      "evidence": [
+        {
+          "source_id": "5_4_rxn_001",
+          "quote": "外部電源の負極を鉛蓄電池の負極に、正極を正極につなぐ"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "鉛蓄電池の充電に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "鉛蓄電池の充電では外部電源の正極を鉛蓄電池の正極に、外部電源の負極を鉛蓄電池の負極に接続します。これにより放電の逆反応が起こり硫酸鉛が元の鉛と酸化鉛に戻り、硫酸が再生されて密度が回復します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q017",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "酸化銅の還元",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "酸化銅（二価）について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸化銅を水素で加熱しても変化しない。酸化銅を水素で加熱すると還元されて金属銅と水が生成する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "還元されて銅になる。",
+          "choice_id": "ch3_5_q017_c1",
+          "tts_text": "酸化銅を水素で加熱しても変化しない。酸化銅を水素で加熱すると還元されて金属銅と水が生成する。"
+        },
+        {
+          "label": "2",
+          "text": "黒色の固体で水に不溶。銅を空気中で加熱すると生成する。水素や炭素で還元すると金属銅に戻る。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q017_c2",
+          "tts_text": "黒色の固体で水に不溶。銅を空気中で加熱すると生成する。水素や炭素で還元すると金属銅に戻る。"
+        },
+        {
+          "label": "3",
+          "text": "酸化銅は水によく溶ける。酸化銅は水に不溶の固体であり水には溶けない。酸には溶解する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "不溶。",
+          "choice_id": "ch3_5_q017_c3",
+          "tts_text": "酸化銅は水によく溶ける。酸化銅は水に不溶の固体であり水には溶けない。酸には溶解する。"
+        },
+        {
+          "label": "4",
+          "text": "酸化銅は白色の固体である。酸化銅（二価）は黒色の固体であり白色ではない。銅を空気中で加熱すると生成する。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "黒色。",
+          "choice_id": "ch3_5_q017_c4",
+          "tts_text": "酸化銅は白色の固体である。酸化銅（二価）は黒色の固体であり白色ではない。銅を空気中で加熱すると生成する。"
+        }
+      ],
+      "explanation": "酸化銅（二価）は銅の酸化物で黒色です。水素気流中で加熱すると酸化銅が還元されて赤色の金属銅になり水が生成します。この反応で酸化銅は酸化剤、水素は還元剤です。",
+      "evidence": [
+        {
+          "source_id": "5_1_sub_001",
+          "quote": "黒色。水に不溶。銅を空気中で加熱すると生成"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化銅（二価）について、正しい記述を選びなさい。",
+      "tts_explanation": "酸化銅（二価）は銅の酸化物で黒色です。水素気流中で加熱すると酸化銅が還元されて赤色の金属銅になり水が生成します。この反応で酸化銅は酸化剤、水素は還元剤です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q018",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "正極負極の判定",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "電池の正極・負極の判定に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン化傾向が小さい金属が負極になり、大きい金属が正極になる。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。大きい方が負極。",
+          "choice_id": "ch3_5_q018_c1",
+          "tts_text": "イオン化傾向が小さい金属が負極になり、大きい金属が正極になる。"
+        },
+        {
+          "label": "2",
+          "text": "イオン化傾向が大きい金属が負極になる。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q018_c2",
+          "tts_text": "イオン化傾向が大きい金属が負極になる。"
+        },
+        {
+          "label": "3",
+          "text": "負極では金属が電子を放出して陽イオンとなり溶ける。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q018_c3",
+          "tts_text": "負極では金属が電子を放出して陽イオンとなり溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "電子は負極から正極へ外部回路を流れる。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q018_c4",
+          "tts_text": "電子は負極から正極へ外部回路を流れる。"
+        }
+      ],
+      "explanation": "電池の極性判定で最もよくある間違いはイオン化傾向と極性の対応を逆にすることです。「イオンになりたがる（イオン化傾向大）→電子を出す→負極（マイナス）」と覚えましょう。亜鉛と銅なら亜鉛が負極です。",
+      "evidence": [
+        {
+          "source_id": "5_4_def_001",
+          "quote": "イオン化傾向の大きい金属が負極"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_def_001",
+        "5_3_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "電池の正極・負極の判定に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "電池の極性判定で最もよくある間違いはイオン化傾向と極性の対応を逆にすることです。「イオンになりたがる（イオン化傾向大）→電子を出す→負極（マイナス）」と覚えましょう。亜鉛と銅なら亜鉛が負極です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q019",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "mnemonic",
+      "sub_category": "イオン化傾向の語呂合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "イオン化傾向の語呂合わせとして、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "この語呂合わせは金が最も大きい順番であると勘違いされやすいが、逆でリチウムが最も大きく金が最も小さい順番であり酸化されやすい順に並んでいると説明されることがあるが丁寧に考えると誤りで、",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "リチウムが最大で金が最小。",
+          "choice_id": "ch3_5_q019_c1",
+          "tts_text": "この語呂合わせは金が最も大きい順番であると勘違いされやすいが、逆でリチウムが最も大きく金が最も小さい順番であり酸化されやすい順に並んでいると説明されることがあるが丁寧に考えると誤りで、"
+        },
+        {
+          "label": "2",
+          "text": "この語呂合わせは酸化数に関するものであると誤解されやすいが、この語呂合わせはイオン化傾向の大小の順番に関するものであり酸化数とは無関係であると一見もっともらしく聞こえる説明だが、",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "イオン化傾向に関するもの。",
+          "choice_id": "ch3_5_q019_c2",
+          "tts_text": "この語呂合わせは酸化数に関するものであると誤解されやすいが、この語呂合わせはイオン化傾向の大小の順番に関するものであり酸化数とは無関係であると一見もっともらしく聞こえる説明だが、"
+        },
+        {
+          "label": "3",
+          "text": "「リッチに貸そうかまがあるすんなひどすぎる借金」で覚える。リチウムからカリウム、カルシウム、ナトリウム、マグネシウム、アルミニウム、亜鉛、鉄、ニッケル、スズ、鉛、水素、銅、水銀、銀、白金、金の順になる。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q019_c3",
+          "tts_text": "「リッチに貸そうかまがあるすんなひどすぎる借金」で覚える。リチウムからカリウム、カルシウム、ナトリウム、マグネシウム、アルミニウム、亜鉛、鉄、ニッケル、スズ、鉛、水素、銅、水銀、銀、白金、金の順になる。"
+        },
+        {
+          "label": "4",
+          "text": "水素はイオン化傾向の順列に含まれない。水素は金属ではないが基準として順列に含まれており金属が酸に溶けるかどうかの判定に使われる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水素も含む。金属と酸の反応性の境界となる。",
+          "choice_id": "ch3_5_q019_c4",
+          "tts_text": "水素はイオン化傾向の順列に含まれない。水素は金属ではないが基準として順列に含まれており金属が酸に溶けるかどうかの判定に使われる。"
+        }
+      ],
+      "explanation": "イオン化傾向の順番を覚える語呂合わせは非常に重要です。リチウムが最もイオンになりやすく金が最もなりにくい順番です。水素がスズと鉛の間に入るのは金属と酸の反応性の境界として重要です。水素より上は酸に溶けて水素を発生します。",
+      "evidence": [
+        {
+          "source_id": "5_3_law_001",
+          "quote": "リッチに貸そうかまがあるすんなひどすぎる借金"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_law_001"
+      ],
+      "mnemonic": "リッチに貸そうかまがあるすんなひどすぎる借金",
+      "tts_question": "イオン化傾向の語呂合わせとして、正しいものを選びなさい。",
+      "tts_explanation": "イオン化傾向の順番を覚える語呂合わせは非常に重要です。リチウムが最もイオンになりやすく金が最もなりにくい順番です。水素がスズと鉛の間に入るのは金属と酸の反応性の境界として重要です。水素より上は酸に溶けて水素を発生します。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q020",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "classification",
+      "sub_category": "一次電池と二次電池",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "一次電池と二次電池の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "すべての電池は充電可能である。一次電池は使い切りであり充電はできない。充電可能なのは二次電池のみである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一次電池は充電不可。",
+          "choice_id": "ch3_5_q020_c1",
+          "tts_text": "すべての電池は充電可能である。一次電池は使い切りであり充電はできない。充電可能なのは二次電池のみである。"
+        },
+        {
+          "label": "2",
+          "text": "二次電池は1℃しか使えない。逆で二次電池は充電して繰り返し使える電池であり鉛蓄電池やリチウムイオン電池が代表例である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "繰り返し使える。",
+          "choice_id": "ch3_5_q020_c2",
+          "tts_text": "二次電池は一度しか使えない。逆で二次電池は充電して繰り返し使える電池であり鉛蓄電池やリチウムイオン電池が代表例である。"
+        },
+        {
+          "label": "3",
+          "text": "一次電池は使い切りで充電できない電池である。二次電池は充電して繰り返し使える電池であり鉛蓄電池やリチウムイオン電池が代表例である。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q020_c3",
+          "tts_text": "一次電池は使い切りで充電できない電池である。二次電池は充電して繰り返し使える電池であり鉛蓄電池やリチウムイオン電池が代表例である。"
+        },
+        {
+          "label": "4",
+          "text": "鉛蓄電池は一次電池である。鉛蓄電池は充電可能な二次電池の代表であり外部電源から充電して繰り返し使用できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二次電池。",
+          "choice_id": "ch3_5_q020_c4",
+          "tts_text": "鉛蓄電池は一次電池である。鉛蓄電池は充電可能な二次電池の代表であり外部電源から充電して繰り返し使用できる。"
+        }
+      ],
+      "explanation": "電池は充電の可否で一次電池と二次電池に分類されます。マンガン乾電池やアルカリ乾電池は一次電池で使い切りです。鉛蓄電池やリチウムイオン電池は二次電池で充電して何度も使えます。",
+      "evidence": [
+        {
+          "source_id": "5_4_rxn_001",
+          "quote": "外部電源を逆につなぐと充電でき、反応が元に戻る"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "一次電池と二次電池の分類として、正しいものを選びなさい。",
+      "tts_explanation": "電池は充電の可否で一次電池と二次電池に分類されます。マンガン乾電池やアルカリ乾電池は一次電池で使い切りです。鉛蓄電池やリチウムイオン電池は二次電池で充電して何度も使えます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q021",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "酸化数の合計と個別の混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "酸化数に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "化合物全体の酸化数の総和はゼロである。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q021_c1",
+          "tts_text": "化合物全体の酸化数の総和はゼロである。"
+        },
+        {
+          "label": "2",
+          "text": "酸化数は原子一つ一つについて示す値である。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q021_c2",
+          "tts_text": "酸化数は原子一つ一つについて示す値である。"
+        },
+        {
+          "label": "3",
+          "text": "酸化数の変化から酸化・還元を判断する。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q021_c3",
+          "tts_text": "酸化数の変化から酸化・還元を判断する。"
+        },
+        {
+          "label": "4",
+          "text": "水中の水素の酸化数はプラス一かける二でプラス二である。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "酸化数は原子一個ずつの値でプラス一。二個分の合計ではない。",
+          "choice_id": "ch3_5_q021_c4",
+          "tts_text": "水中の水素の酸化数はプラス一かける二でプラス二である。"
+        }
+      ],
+      "explanation": "酸化数は原子一個あたりの値です。水の水素は一個あたりプラス一であり、二個だからプラス二とするのは誤りです。化合物全体の酸化数の「総和」はゼロですが個別の原子の酸化数と混同しないようにしましょう。",
+      "evidence": [
+        {
+          "source_id": "5_1_law_001",
+          "quote": "酸化数は原子1つ1つについて示す。H2OのHの酸化数を+2としてはいけない"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化数に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "酸化数は原子一個あたりの値です。水の水素は一個あたりプラス一であり、二個だからプラス二とするのは誤りです。化合物全体の酸化数の「総和」はゼロですが個別の原子の酸化数と混同しないようにしましょう。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q022",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "王水",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "王水について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "濃塩酸と濃硝酸の体積比一対三の混合物である。逆で濃硝酸と濃塩酸を体積比一対三で混合した液体であり硝酸が一で塩酸が三である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "濃硝酸一対濃塩酸三。順番が逆。",
+          "choice_id": "ch3_5_q022_c1",
+          "tts_text": "濃塩酸と濃硝酸の体積比一対三の混合物である。逆で濃硝酸と濃塩酸を体積比一対三で混合した液体であり硝酸が一で塩酸が三である。"
+        },
+        {
+          "label": "2",
+          "text": "濃硝酸と濃塩酸を体積比一対三で混合した液体であり、イオン化傾向が極めて小さい金や白金も溶かすことができる。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q022_c2",
+          "tts_text": "濃硝酸と濃塩酸を体積比一対三で混合した液体であり、イオン化傾向が極めて小さい金や白金も溶かすことができる。"
+        },
+        {
+          "label": "3",
+          "text": "金は王水にも溶けない。金は通常の酸には溶けないが王水には溶ける。王水は金や白金を溶かすことができる特殊な液体である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "金は王水に溶ける。",
+          "choice_id": "ch3_5_q022_c3",
+          "tts_text": "金は王水にも溶けない。金は通常の酸には溶けないが王水には溶ける。王水は金や白金を溶かすことができる特殊な液体である。"
+        },
+        {
+          "label": "4",
+          "text": "王水はすべての物質を溶かす万能溶媒である。王水は金や白金など特定の金属を溶かすが万能溶媒ではなくすべての物質を溶かすわけではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "万能ではない。",
+          "choice_id": "ch3_5_q022_c4",
+          "tts_text": "王水はすべての物質を溶かす万能溶媒である。王水は金や白金など特定の金属を溶かすが万能溶媒ではなくすべての物質を溶かすわけではない。"
+        }
+      ],
+      "explanation": "王水は濃硝酸一対濃塩酸三の混合物で、金属の王（金）をも溶かすことからこの名前がつきました。通常の酸には溶けない金や白金を溶かすことができます。比率は「いっさん（一三）」で覚えます。",
+      "evidence": [
+        {
+          "source_id": "5_3_law_001",
+          "quote": "王水には、イオン化傾向が極めて小さいPtやAuも溶ける"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "王水について、正しい記述を選びなさい。",
+      "tts_explanation": "王水は濃硝酸一対濃塩酸三の混合物で、金属の王（金）をも溶かすことからこの名前がつきました。通常の酸には溶けない金や白金を溶かすことができます。比率は「いっさん（一三）」で覚えます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q023",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "procedure",
+      "sub_category": "ファラデーの計算手順",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "ファラデーの法則を用いた計算手順として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電気量イコール電流かける時間で電気量を求め、電気量をファラデー定数で割って電子のモル数を求め、半反応式の係数比から析出物のモル数を計算し、最後にモル質量を使って質量を求める。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q023_c1",
+          "tts_text": "電気量イコール電流かける時間で電気量を求め、電気量をファラデー定数で割って電子のモル数を求め、半反応式の係数比から析出物のモル数を計算し、最後にモル質量を使って質量を求める。"
+        },
+        {
+          "label": "2",
+          "text": "ファラデー定数は不要であると誤って覚えがちだが、電気量から電子のモル数に換算するためにはファラデー定数（約九万6500C/mol）が不可欠である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電子のモル数への変換に不可欠。",
+          "choice_id": "ch3_5_q023_c2",
+          "tts_text": "ファラデー定数は不要であると誤って覚えがちだが、電気量から電子のモル数に換算するためにはファラデー定数（約九万六千五百クーロン毎モル）が不可欠である。"
+        },
+        {
+          "label": "3",
+          "text": "電気量を直接モル質量で割れば質量が出る。電気量からまず電子のモル数を求めそこから半反応式の係数比で析出物のモル数を求める手順が必要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "中間にモル数の計算が必要。",
+          "choice_id": "ch3_5_q023_c3",
+          "tts_text": "電気量を直接モル質量で割れば質量が出る。電気量からまず電子のモル数を求めそこから半反応式の係数比で析出物のモル数を求める手順が必要である。"
+        },
+        {
+          "label": "4",
+          "text": "半反応式は不要で電子1molあたり常に1molの物質が析出すると誤って覚えやすい典型例だが、イオンの価数によって必要な電子数は異なり半反応式で係数比を確認する必要がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "係数比を確認する必要がある。",
+          "choice_id": "ch3_5_q023_c4",
+          "tts_text": "半反応式は不要で電子一モルあたり常に一モルの物質が析出すると誤って覚えやすい典型例だが、イオンの価数によって必要な電子数は異なり半反応式で係数比を確認する必要がある。"
+        }
+      ],
+      "explanation": "ファラデーの法則の計算は四段階です。第一に電気量を求める。第二にファラデー定数で割って電子のモル数を求める。第三に半反応式の係数比で析出物のモル数を求める（二価イオンなら電子2molで1mol析出）。第四にモル質量を掛けて質量にする。",
+      "evidence": [
+        {
+          "source_id": "5_4_law_001",
+          "quote": "電気量Q = 電流i × 時間t。電子の物質量 = Q / F"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ファラデーの法則を用いた計算手順として、正しいものを選びなさい。",
+      "tts_explanation": "ファラデーの法則の計算は四段階です。第一に電気量を求める。第二にファラデー定数で割って電子のモル数を求める。第三に半反応式の係数比で析出物のモル数を求める（二価イオンなら電子二モルで一モル析出）。第四にモル質量を掛けて質量にする。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q024",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "酸化されたの表現",
+      "difficulty": 2,
+      "question_type": "incorrect",
+      "question": "酸化還元の表現に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "銅は酸化して酸化銅になるという表現が正しい。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "「酸化する」ではなく「酸化される」（受け身形）が正しい。",
+          "choice_id": "ch3_5_q024_c1",
+          "tts_text": "銅は酸化して酸化銅になるという表現が正しい。"
+        },
+        {
+          "label": "2",
+          "text": "銅は酸化されて酸化銅になる。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q024_c2",
+          "tts_text": "銅は酸化されて酸化銅になる。"
+        },
+        {
+          "label": "3",
+          "text": "「酸化される」は受け身の表現を使う。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q024_c3",
+          "tts_text": "「酸化される」は受け身の表現を使う。"
+        },
+        {
+          "label": "4",
+          "text": "酸化銅中の銅は酸化数がプラス二である。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q024_c4",
+          "tts_text": "酸化銅中の銅は酸化数がプラス二である。"
+        }
+      ],
+      "explanation": "日本語表現で注意すべきは「酸化される」と「酸化する」の違いです。銅は酸化「される」側であり「された」と受け身で表現します。「銅が酸化する」は銅が他のものを酸化する（酸化剤として働く）意味になり不適切です。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "「銅は酸化して」は誤り。正しくは「銅は酸化されて（受け身形）」"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化還元の表現に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "日本語表現で注意すべきは「酸化される」と「酸化する」の違いです。銅は酸化「される」側であり「された」と受け身で表現します。「銅が酸化する」は銅が他のものを酸化する（酸化剤として働く）意味になり不適切です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q025",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "comprehensive",
+      "sub_category": "酸化還元の三視点",
+      "difficulty": 4,
+      "question_type": "correct",
+      "question": "酸化還元の三つの定義の関係として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電子の授受による定義は酸素の授受には適用できない。電子の授受による定義は最も広い適用範囲を持ち酸素の授受を含むすべての酸化還元反応を説明できる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "適用できる。",
+          "choice_id": "ch3_5_q025_c1",
+          "tts_text": "電子の授受による定義は酸素の授受には適用できない。電子の授受による定義は最も広い適用範囲を持ち酸素の授受を含むすべての酸化還元反応を説明できる。"
+        },
+        {
+          "label": "2",
+          "text": "三つの定義は互いに矛盾する。三つの定義は互いに矛盾せず酸素・水素・電子のどの視点から見ても一貫した説明が可能である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "矛盾しない。電子の視点で統一できる。",
+          "choice_id": "ch3_5_q025_c2",
+          "tts_text": "三つの定義は互いに矛盾する。三つの定義は互いに矛盾せず酸素・水素・電子のどの視点から見ても一貫した説明が可能である。"
+        },
+        {
+          "label": "3",
+          "text": "酸素を受け取る、水素を失う、電子を失うはすべて酸化の定義であり矛盾しない。最も一般的なのは電子の授受による定義であり、すべての酸化還元反応を説明できる。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q025_c3",
+          "tts_text": "酸素を受け取る、水素を失う、電子を失うはすべて酸化の定義であり矛盾しない。最も一般的なのは電子の授受による定義であり、すべての酸化還元反応を説明できる。"
+        },
+        {
+          "label": "4",
+          "text": "酸素の授受による定義がすべての反応を説明できる。酸素の授受では酸素が関与しない反応は説明できないため最も一般的なのは電子の授受である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "酸素が関与しない反応は説明できない。",
+          "choice_id": "ch3_5_q025_c4",
+          "tts_text": "酸素の授受による定義がすべての反応を説明できる。酸素の授受では酸素が関与しない反応は説明できないため最も一般的なのは電子の授受である。"
+        }
+      ],
+      "explanation": "酸化還元の三つの定義は視点は違いますが矛盾しません。酸素を受け取ると酸化数が増加（電子を失う）し、水素を失っても酸化数が増加します。電子の授受による定義が最も一般的で、酸素が関与しない反応（金属のイオン化など）も説明できます。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "電子のやり取りに注目することで酸化・還元として統一的に説明できる"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化還元の三つの定義の関係として、正しいものを選びなさい。",
+      "tts_explanation": "酸化還元の三つの定義は視点は違いますが矛盾しません。酸素を受け取ると酸化数が増加（電子を失う）し、水素を失っても酸化数が増加します。電子の授受による定義が最も一般的で、酸素が関与しない反応（金属のイオン化など）も説明できます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q026",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "ボルタ電池",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "ボルタ電池について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "亜鉛板と銅板を希硫酸に浸した電池。亜鉛がイオン化傾向大なので負極に、銅が正極になる。起電力は約一点一ボルト。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q026_c1",
+          "tts_text": "亜鉛板と銅板を希硫酸に浸した電池。亜鉛がイオン化傾向大なので負極に、銅が正極になる。起電力は約一点一ボルト。"
+        },
+        {
+          "label": "2",
+          "text": "銅板が負極で亜鉛板が正極である。逆で亜鉛の方がイオン化傾向が大きいため亜鉛が負極になり銅が正極になる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。亜鉛が負極。",
+          "choice_id": "ch3_5_q026_c2",
+          "tts_text": "銅板が負極で亜鉛板が正極である。逆で亜鉛の方がイオン化傾向が大きいため亜鉛が負極になり銅が正極になる。"
+        },
+        {
+          "label": "3",
+          "text": "電解質溶液はNaOH水溶液を用いる。ボルタ電池の電解質溶液は希硫酸でありNaOHは使用しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "希硫酸。",
+          "choice_id": "ch3_5_q026_c3",
+          "tts_text": "電解質溶液は水酸化ナトリウム水溶液を用いる。ボルタ電池の電解質溶液は希硫酸であり水酸化ナトリウムは使用しない。"
+        },
+        {
+          "label": "4",
+          "text": "正極で亜鉛が溶ける。亜鉛が溶けるのは負極側であり正極では水素イオンが電子を受け取って水素が発生する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "負極で亜鉛が溶ける。",
+          "choice_id": "ch3_5_q026_c4",
+          "tts_text": "正極で亜鉛が溶ける。亜鉛が溶けるのは負極側であり正極では水素イオンが電子を受け取って水素が発生する。"
+        }
+      ],
+      "explanation": "ボルタ電池は最も基本的な電池の例です。亜鉛は銅よりイオン化傾向が大きいため負極となり電子を放出して溶けます。銅極（正極）では溶液中の水素イオンが電子を受け取って水素ガスが発生します。",
+      "evidence": [
+        {
+          "source_id": "5_4_def_001",
+          "quote": "Zn板とCu板を希硫酸に浸した電池。起電力1.1V"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ボルタ電池について、正しい記述を選びなさい。",
+      "tts_explanation": "ボルタ電池は最も基本的な電池の例です。亜鉛は銅よりイオン化傾向が大きいため負極となり電子を放出して溶けます。銅極（正極）では溶液中の水素イオンが電子を受け取って水素ガスが発生します。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q027",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "鉛蓄電池の密度変化の理由",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "鉛蓄電池の放電時の変化に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "放電すると電解液の密度が低下する。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q027_c1",
+          "tts_text": "放電すると電解液の密度が低下する。"
+        },
+        {
+          "label": "2",
+          "text": "放電すると両極で硫酸鉛が生成する。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q027_c2",
+          "tts_text": "放電すると両極で硫酸鉛が生成する。"
+        },
+        {
+          "label": "3",
+          "text": "放電すると硫酸が生成されて電解液の密度が上昇する。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "逆。硫酸は消費され密度は低下する。",
+          "choice_id": "ch3_5_q027_c3",
+          "tts_text": "放電すると硫酸が生成されて電解液の密度が上昇する。"
+        },
+        {
+          "label": "4",
+          "text": "放電すると硫酸が消費されて水が生成する。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q027_c4",
+          "tts_text": "放電すると硫酸が消費されて水が生成する。"
+        }
+      ],
+      "explanation": "鉛蓄電池の放電では硫酸が消費されて水が生成するため、電解液中の硫酸濃度が下がり密度が低下します。自動車のバッテリーの比重計で充電状態を確認できるのはこの原理によります。充電すればこの逆反応が起こり密度は回復します。",
+      "evidence": [
+        {
+          "source_id": "5_4_rxn_001",
+          "quote": "硫酸が消費されて水が生成するため溶液の密度が低下する"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "鉛蓄電池の放電時の変化に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "鉛蓄電池の放電では硫酸が消費されて水が生成するため、電解液中の硫酸濃度が下がり密度が低下します。自動車のバッテリーの比重計で充電状態を確認できるのはこの原理によります。充電すればこの逆反応が起こり密度は回復します。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q028",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "classification",
+      "sub_category": "酸化剤の代表例",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "代表的な酸化剤の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "希硫酸は酸化剤として有名である。希硫酸は酸化力をもたない酸であり酸化剤の代表は濃硫酸（熱濃硫酸）の方である。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "熱濃硫酸が酸化剤。希硫酸は通常の酸。",
+          "choice_id": "ch3_5_q028_c1",
+          "tts_text": "希硫酸は酸化剤として有名である。希硫酸は酸化力をもたない酸であり酸化剤の代表は濃硫酸（熱濃硫酸）の方である。"
+        },
+        {
+          "label": "2",
+          "text": "水素は代表的な酸化剤である。水素は還元剤であり電子を放出して自身が酸化される物質である。酸化剤ではない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水素は還元剤。",
+          "choice_id": "ch3_5_q028_c2",
+          "tts_text": "水素は代表的な酸化剤である。水素は還元剤であり電子を放出して自身が酸化される物質である。酸化剤ではない。"
+        },
+        {
+          "label": "3",
+          "text": "酸化剤は電子を放出する物質の総称である。逆で酸化剤は電子を受け取る物質であり電子を放出するのは還元剤である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "電子を受け取る物質。",
+          "choice_id": "ch3_5_q028_c3",
+          "tts_text": "酸化剤は電子を放出する物質の総称である。逆で酸化剤は電子を受け取る物質であり電子を放出するのは還元剤である。"
+        },
+        {
+          "label": "4",
+          "text": "過マンガン酸カリウム、二クロム酸カリウム、濃硝酸、希硝酸、濃硫酸（熱濃硫酸）、ハロゲン単体は酸化剤の代表例である。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q028_c4",
+          "tts_text": "過マンガン酸カリウム、二クロム酸カリウム、濃硝酸、希硝酸、濃硫酸（熱濃硫酸）、ハロゲン単体は酸化剤の代表例である。"
+        }
+      ],
+      "explanation": "酸化剤は「電子を奪う側」です。代表例として過マンガン酸カリウム（マンガンプラス七）、二クロム酸カリウム（クロムプラス六）など酸化数が高い原子を含む物質が多いです。希硫酸と熱濃硫酸の違い（後者のみ酸化力あり）も注意が必要です。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_001",
+          "quote": "酸化剤は電子を受け取りやすい物質"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "代表的な酸化剤の分類として、正しいものを選びなさい。",
+      "tts_explanation": "酸化剤は「電子を奪う側」です。代表例として過マンガン酸カリウム（マンガンプラス七）、二クロム酸カリウム（クロムプラス六）など酸化数が高い原子を含む物質が多いです。希硫酸と熱濃硫酸の違い（後者のみ酸化力あり）も注意が必要です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q029",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "酸化鉛の正極活物質",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "鉛蓄電池の正極活物質について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "正極活物質は鉛である。鉛は負極活物質であり正極活物質は酸化鉛（四価）である。両者を混同しないよう注意が必要。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "鉛は負極活物質。",
+          "choice_id": "ch3_5_q029_c1",
+          "tts_text": "正極活物質は鉛である。鉛は負極活物質であり正極活物質は酸化鉛（四価）である。両者を混同しないよう注意が必要。"
+        },
+        {
+          "label": "2",
+          "text": "正極活物質は酸化鉛（四価）であり褐色の固体である。放電すると還元されて硫酸鉛になる。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q029_c2",
+          "tts_text": "正極活物質は酸化鉛（四価）であり褐色の固体である。放電すると還元されて硫酸鉛になる。"
+        },
+        {
+          "label": "3",
+          "text": "正極の酸化鉛は放電しても変化しない。放電すると正極の酸化鉛は還元されて硫酸鉛に変化する。充電で元に戻る。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "硫酸鉛に変化する。",
+          "choice_id": "ch3_5_q029_c3",
+          "tts_text": "正極の酸化鉛は放電しても変化しない。放電すると正極の酸化鉛は還元されて硫酸鉛に変化する。充電で元に戻る。"
+        },
+        {
+          "label": "4",
+          "text": "酸化鉛は白色の固体である。酸化鉛（四価）は褐色の固体であり白色ではない。鉛蓄電池の正極に使用される。",
+          "is_correct": false,
+          "trap_type": "property_swap",
+          "trap_detail": "褐色。",
+          "choice_id": "ch3_5_q029_c4",
+          "tts_text": "酸化鉛は白色の固体である。酸化鉛（四価）は褐色の固体であり白色ではない。鉛蓄電池の正極に使用される。"
+        }
+      ],
+      "explanation": "鉛蓄電池の正極活物質は酸化鉛（四価）で褐色をしています。放電時は鉛の酸化数がプラス四からプラス二に減少（還元）し硫酸鉛になります。負極の鉛はゼロからプラス二に増加（酸化）し同じく硫酸鉛になります。",
+      "evidence": [
+        {
+          "source_id": "5_4_sub_001",
+          "quote": "鉛蓄電池の正極活物質。褐色"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_sub_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "鉛蓄電池の正極活物質について、正しい記述を選びなさい。",
+      "tts_explanation": "鉛蓄電池の正極活物質は酸化鉛（四価）で褐色をしています。放電時は鉛の酸化数がプラス四からプラス二に減少（還元）し硫酸鉛になります。負極の鉛はゼロからプラス二に増加（酸化）し同じく硫酸鉛になります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q030",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "comprehensive",
+      "sub_category": "酸化還元の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "酸化還元反応に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電子を受け取るのが酸化。酸化剤は自身が酸化される。イオン化傾向大が正極。電気分解が化学→電気。四箇所すべて誤りで正しくは電子を失うのが酸化、酸化剤は自身が還元、イオン化傾向大は負極、電気分解は電気→化学。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。",
+          "choice_id": "ch3_5_q030_c1",
+          "tts_text": "電子を受け取るのが酸化。酸化剤は自身が酸化される。イオン化傾向大が正極。電気分解が化学→電気。四箇所すべて誤りで正しくは電子を失うのが酸化、酸化剤は自身が還元、イオン化傾向大は負極、電気分解は電気→化学。"
+        },
+        {
+          "label": "2",
+          "text": "酸化と還元は別々に起こることがある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "必ず同時に起こる。",
+          "choice_id": "ch3_5_q030_c2",
+          "tts_text": "酸化と還元は別々に起こることがある。"
+        },
+        {
+          "label": "3",
+          "text": "鉛蓄電池は一次電池であり充電できない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二次電池で充電可能。",
+          "choice_id": "ch3_5_q030_c3",
+          "tts_text": "鉛蓄電池は一次電池であり充電できない。"
+        },
+        {
+          "label": "4",
+          "text": "酸化は電子を失い酸化数が増加する反応。酸化剤は相手を酸化し自身は還元される。イオン化傾向大の金属が負極。電池は化学→電気、電気分解は電気→化学。ファラデーの法則で電気量から析出量を計算する。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q030_c4",
+          "tts_text": "酸化は電子を失い酸化数が増加する反応。酸化剤は相手を酸化し自身は還元される。イオン化傾向大の金属が負極。電池は化学→電気、電気分解は電気→化学。ファラデーの法則で電気量から析出量を計算する。"
+        }
+      ],
+      "explanation": "この章の全体を網羅した問題です。酸化還元の定義、酸化数、酸化剤・還元剤、イオン化傾向、電池の正負極、電池と電気分解の違い、ファラデーの法則がすべてつながっています。これらを体系的に理解することが重要です。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "電子を失うと酸化、受け取ると還元"
+        },
+        {
+          "source_id": "5_4_def_001",
+          "quote": "化学エネルギーを電気エネルギーに変換"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001",
+        "5_1_law_001",
+        "5_2_def_001",
+        "5_3_law_001",
+        "5_4_def_001",
+        "5_4_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化還元反応に関する総合的な記述として、正しいものを選びなさい。",
+      "tts_explanation": "この章の全体を網羅した問題です。酸化還元の定義、酸化数、酸化剤・還元剤、イオン化傾向、電池の正負極、電池と電気分解の違い、ファラデーの法則がすべてつながっています。これらを体系的に理解することが重要です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q031",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "酸化数増加と酸化の対応",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "酸化数の変化に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸化数が増加した原子は酸化された。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q031_c1",
+          "tts_text": "酸化数が増加した原子は酸化された。"
+        },
+        {
+          "label": "2",
+          "text": "酸化数が増加した原子は還元されたことを意味する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "増加は酸化。減少が還元。",
+          "choice_id": "ch3_5_q031_c2",
+          "tts_text": "酸化数が増加した原子は還元されたことを意味する。"
+        },
+        {
+          "label": "3",
+          "text": "酸化数が変化しなければ酸化還元反応には関与していない。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q031_c3",
+          "tts_text": "酸化数が変化しなければ酸化還元反応には関与していない。"
+        },
+        {
+          "label": "4",
+          "text": "酸化数が減少した原子は還元された。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q031_c4",
+          "tts_text": "酸化数が減少した原子は還元された。"
+        }
+      ],
+      "explanation": "酸化数の変化と酸化・還元の対応を逆にする間違いは非常に多いです。「酸化数が増加→酸化された」「酸化数が減少→還元された」です。酸化は「上がる」、還元は「下がる」と覚えましょう。",
+      "evidence": [
+        {
+          "source_id": "5_1_law_001",
+          "quote": "酸化数が増加すれば酸化された、減少すれば還元された"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化数の変化に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "酸化数の変化と酸化・還元の対応を逆にする間違いは非常に多いです。「酸化数が増加→酸化された」「酸化数が減少→還元された」です。酸化は「上がる」、還元は「下がる」と覚えましょう。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q032",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "水素より下の金属",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "イオン化傾向が水素より小さい金属の特徴として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水素より下の金属もすべての酸に溶ける。水素より下の金属は希酸では溶けない。銅などは酸化力のある酸のみに溶け白金や金は王水が必要。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "希酸では水素発生しないため溶けない。",
+          "choice_id": "ch3_5_q032_c1",
+          "tts_text": "水素より下の金属もすべての酸に溶ける。水素より下の金属は希酸では溶けない。銅などは酸化力のある酸のみに溶け白金や金は王水が必要。"
+        },
+        {
+          "label": "2",
+          "text": "金は希塩酸に溶ける。金はイオン化傾向が極めて小さいため希塩酸とは反応せず溶けない。溶かすには王水が必要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "金は王水のみ。",
+          "choice_id": "ch3_5_q032_c2",
+          "tts_text": "金は希塩酸に溶ける。金はイオン化傾向が極めて小さいため希塩酸とは反応せず溶けない。溶かすには王水が必要である。"
+        },
+        {
+          "label": "3",
+          "text": "希酸と反応して水素を発生することはない。銅、水銀、銀、白金、金がこれに該当する。ただし銅は酸化力のある酸（希硝酸・熱濃硫酸）には溶ける。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q032_c3",
+          "tts_text": "希酸と反応して水素を発生することはない。銅、水銀、銀、白金、金がこれに該当する。ただし銅は酸化力のある酸（希硝酸・熱濃硫酸）には溶ける。"
+        },
+        {
+          "label": "4",
+          "text": "鉄は水素より下にある。鉄はイオン化傾向が水素より大きく水素より上に位置する金属であり希酸に溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "鉄は水素より上。",
+          "choice_id": "ch3_5_q032_c4",
+          "tts_text": "鉄は水素より下にある。鉄はイオン化傾向が水素より大きく水素より上に位置する金属であり希酸に溶ける。"
+        }
+      ],
+      "explanation": "イオン化傾向の順列で水素より下の金属（銅以降）は希酸と反応して水素を発生しません。ただし酸化力のある酸（硝酸・熱濃硫酸）なら銅や銀は溶けます。白金と金はそれでも溶けず王水が必要です。",
+      "evidence": [
+        {
+          "source_id": "5_3_law_001",
+          "quote": "イオン化傾向が極めて小さいPtやAuは王水にのみ溶ける"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "イオン化傾向が水素より小さい金属の特徴として、正しいものを選びなさい。",
+      "tts_explanation": "イオン化傾向の順列で水素より下の金属（銅以降）は希酸と反応して水素を発生しません。ただし酸化力のある酸（硝酸・熱濃硫酸）なら銅や銀は溶けます。白金と金はそれでも溶けず王水が必要です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q033",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "procedure",
+      "sub_category": "半反応式の意味",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "半反応式について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸化剤の半反応式では電子が右辺に書かれる。逆で酸化剤の半反応式は電子が左辺に書かれ電子を受け取ることを表す。右辺は還元剤である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸化剤は電子を受け取るので左辺。",
+          "choice_id": "ch3_5_q033_c1",
+          "tts_text": "酸化剤の半反応式では電子が右辺に書かれる。逆で酸化剤の半反応式は電子が左辺に書かれ電子を受け取ることを表す。右辺は還元剤である。"
+        },
+        {
+          "label": "2",
+          "text": "半反応式はそのまま実際の反応を表す。半反応式は酸化剤または還元剤の片方だけを表したもので二つを合わせて実際の反応式になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "半反応式だけでは実際の反応にならない。二つを組み合わせる必要がある。",
+          "choice_id": "ch3_5_q033_c2",
+          "tts_text": "半反応式はそのまま実際の反応を表す。半反応式は酸化剤または還元剤の片方だけを表したもので二つを合わせて実際の反応式になる。"
+        },
+        {
+          "label": "3",
+          "text": "半反応式は全体の反応式の半分を消したものである。半反応式は電子の授受を明示するために書く式であり全体式を分割したものとは異なる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電子を含む独立した式。",
+          "choice_id": "ch3_5_q033_c3",
+          "tts_text": "半反応式は全体の反応式の半分を消したものである。半反応式は電子の授受を明示するために書く式であり全体式を分割したものとは異なる。"
+        },
+        {
+          "label": "4",
+          "text": "酸化剤または還元剤の片方だけの電子の授受を表す式である。酸化剤の半反応式は電子が左辺に、還元剤の半反応式は電子が右辺に書かれる。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q033_c4",
+          "tts_text": "酸化剤または還元剤の片方だけの電子の授受を表す式である。酸化剤の半反応式は電子が左辺に、還元剤の半反応式は電子が右辺に書かれる。"
+        }
+      ],
+      "explanation": "半反応式は酸化剤または還元剤の電子の授受を表す式です。酸化剤は電子を受け取る側なので電子が左辺（反応物側）に、還元剤は電子を放出する側なので電子が右辺（生成物側）に書かれます。二つの半反応式の電子を揃えて足し合わせると全体の反応式が得られます。",
+      "evidence": [
+        {
+          "source_id": "5_2_proc_001",
+          "quote": "酸化剤と還元剤の電子を含む反応式（半反応式）"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "半反応式について、正しい記述を選びなさい。",
+      "tts_explanation": "半反応式は酸化剤または還元剤の電子の授受を表す式です。酸化剤は電子を受け取る側なので電子が左辺（反応物側）に、還元剤は電子を放出する側なので電子が右辺（生成物側）に書かれます。二つの半反応式の電子を揃えて足し合わせると全体の反応式が得られます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q034",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "mnemonic",
+      "sub_category": "電池の負極の覚え方",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "電池の正極・負極の覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "「イオン化傾向の大きいほうがマイナス（負極）」で覚える。イオンになりたがる金属が電子を出して負極になる。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q034_c1",
+          "tts_text": "「イオン化傾向の大きいほうがマイナス（負極）」で覚える。イオンになりたがる金属が電子を出して負極になる。"
+        },
+        {
+          "label": "2",
+          "text": "イオン化傾向の大きいほうがプラス（正極）で覚える。逆でイオン化傾向の大きいほうがマイナス（負極）であり電子を出す側が負極である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "マイナス（負極）。",
+          "choice_id": "ch3_5_q034_c2",
+          "tts_text": "イオン化傾向の大きいほうがプラス（正極）で覚える。逆でイオン化傾向の大きいほうがマイナス（負極）であり電子を出す側が負極である。"
+        },
+        {
+          "label": "3",
+          "text": "極性はイオン化傾向と無関係に決まる。電池の極性はイオン化傾向の大小で決まるため密接に関係しており無関係ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "イオン化傾向で決まる。",
+          "choice_id": "ch3_5_q034_c3",
+          "tts_text": "極性はイオン化傾向と無関係に決まる。電池の極性はイオン化傾向の大小で決まるため密接に関係しており無関係ではない。"
+        },
+        {
+          "label": "4",
+          "text": "この覚え方は電気分解に関するものである。この覚え方は電池の正極と負極に関するものであり電気分解とは別の内容である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "電池に関する覚え方。",
+          "choice_id": "ch3_5_q034_c4",
+          "tts_text": "この覚え方は電気分解に関するものである。この覚え方は電池の正極と負極に関するものであり電気分解とは別の内容である。"
+        }
+      ],
+      "explanation": "電池では「イオン化傾向が大きい金属が負極」です。イオンに「なりたがる」金属は電子を「出したがる」ため電子が流れ出す側（マイナス、負極）になります。亜鉛と銅の組み合わせなら亜鉛が負極です。",
+      "evidence": [
+        {
+          "source_id": "5_4_def_001",
+          "quote": "イオン化傾向の大きいほうがマイナス（負極）だ"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_def_001"
+      ],
+      "mnemonic": "イオン化傾向の大きいほうがマイナス（負極）",
+      "tts_question": "電池の正極・負極の覚え方として、正しいものを選びなさい。",
+      "tts_explanation": "電池では「イオン化傾向が大きい金属が負極」です。イオンに「なりたがる」金属は電子を「出したがる」ため電子が流れ出す側（マイナス、負極）になります。亜鉛と銅の組み合わせなら亜鉛が負極です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q035",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "電気量の計算ミス",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "電気量の計算に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電気量は電流を時間で割って求める。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "掛けて求める。割るのではない。",
+          "choice_id": "ch3_5_q035_c1",
+          "tts_text": "電気量は電流を時間で割って求める。"
+        },
+        {
+          "label": "2",
+          "text": "時間の単位は秒に統一する必要がある。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q035_c2",
+          "tts_text": "時間の単位は秒に統一する必要がある。"
+        },
+        {
+          "label": "3",
+          "text": "電気量は電流（アンペア）かける時間（秒）で求める。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q035_c3",
+          "tts_text": "電気量は電流（アンペア）かける時間（秒）で求める。"
+        },
+        {
+          "label": "4",
+          "text": "ファラデー定数は約九万6500C/molである。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q035_c4",
+          "tts_text": "ファラデー定数は約九万六千五百クーロン毎モルである。"
+        }
+      ],
+      "explanation": "電気量の計算で「掛ける」と「割る」を間違えるのは基本的だが致命的な誤りです。キューイコールアイかけるティーです。10Aの電流を九十六点五秒間流すと電気量は965Cとなり、電子のモル数は約0.01molです。",
+      "evidence": [
+        {
+          "source_id": "5_4_law_001",
+          "quote": "Q = i × t"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "電気量の計算に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "電気量の計算で「掛ける」と「割る」を間違えるのは基本的だが致命的な誤りです。キューイコールアイかけるティーです。十アンペアの電流を九十六点五秒間流すと電気量は九百六十五クーロンとなり、電子のモル数は約零点零一モルです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q036",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "classification",
+      "sub_category": "還元剤の代表例",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "代表的な還元剤の分類として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "塩素は還元剤の代表である。塩素はハロゲン単体であり酸化剤の代表である。還元剤ではない。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩素は酸化剤。",
+          "choice_id": "ch3_5_q036_c1",
+          "tts_text": "塩素は還元剤の代表である。塩素はハロゲン単体であり酸化剤の代表である。還元剤ではない。"
+        },
+        {
+          "label": "2",
+          "text": "金属は酸化剤としてはたらくことが多い。金属単体は電子を放出しやすく還元剤としてはたらくものが多い。酸化剤ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "還元剤（電子を出す）としてはたらく。",
+          "choice_id": "ch3_5_q036_c2",
+          "tts_text": "金属は酸化剤としてはたらくことが多い。金属単体は電子を放出しやすく還元剤としてはたらくものが多い。酸化剤ではない。"
+        },
+        {
+          "label": "3",
+          "text": "還元剤は自身が還元される。逆で還元剤は電子を放出して自身が酸化される物質であり自身が還元されるのは酸化剤の方。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "自身は酸化される。",
+          "choice_id": "ch3_5_q036_c3",
+          "tts_text": "還元剤は自身が還元される。逆で還元剤は電子を放出して自身が酸化される物質であり自身が還元されるのは酸化剤の方。"
+        },
+        {
+          "label": "4",
+          "text": "水素、炭素、CO、硫化水素、シュウ酸、金属単体は還元剤の代表例である。還元剤は電子を放出して自身は酸化される。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q036_c4",
+          "tts_text": "水素、炭素、一酸化炭素、硫化水素、シュウ酸、金属単体は還元剤の代表例である。還元剤は電子を放出して自身は酸化される。"
+        }
+      ],
+      "explanation": "還元剤は「電子を出す側」です。金属単体（酸化数ゼロ）は電子を放出して陽イオンになりやすいため典型的な還元剤です。水素や炭素も相手の酸化物から酸素を奪って還元する代表的な還元剤です。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_001",
+          "quote": "還元剤は電子を放出しやすい物質"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "代表的な還元剤の分類として、正しいものを選びなさい。",
+      "tts_explanation": "還元剤は「電子を出す側」です。金属単体（酸化数ゼロ）は電子を放出して陽イオンになりやすいため典型的な還元剤です。水素や炭素も相手の酸化物から酸素を奪って還元する代表的な還元剤です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q037",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "電池と電気分解の正負極でのの反応",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "電池と電気分解の電極における反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "電池の負極では酸化反応が起こる。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q037_c1",
+          "tts_text": "電池の負極では酸化反応が起こる。"
+        },
+        {
+          "label": "2",
+          "text": "電池でも電気分解でも正極と陽極で酸化反応が起こる。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "電池の正極では還元反応（電子を受け取る）。酸化反応が起こるのは電池の負極と電気分解の陽極。",
+          "choice_id": "ch3_5_q037_c2",
+          "tts_text": "電池でも電気分解でも正極と陽極で酸化反応が起こる。"
+        },
+        {
+          "label": "3",
+          "text": "電池の正極では還元反応が起こる。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q037_c3",
+          "tts_text": "電池の正極では還元反応が起こる。"
+        },
+        {
+          "label": "4",
+          "text": "電気分解の陽極では酸化反応が起こる。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q037_c4",
+          "tts_text": "電気分解の陽極では酸化反応が起こる。"
+        }
+      ],
+      "explanation": "電池の負極と電気分解の陽極で酸化反応、電池の正極と電気分解の陰極で還元反応が起こります。紛らわしいのは「正極」と「陽極」で反応の種類が異なることです。アノード（酸化）とカソード（還元）で覚えると統一的です。",
+      "evidence": [
+        {
+          "source_id": "5_4_def_001",
+          "quote": "イオン化傾向の大きい金属が負極、電子が流れ出す極"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "電池と電気分解の電極における反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "電池の負極と電気分解の陽極で酸化反応、電池の正極と電気分解の陰極で還元反応が起こります。紛らわしいのは「正極」と「陽極」で反応の種類が異なることです。アノード（酸化）とカソード（還元）で覚えると統一的です。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q038",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "単体の酸化数",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "単体の原子の酸化数について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "水素ガスの水素の酸化数はプラス一である。水素ガスは単体であるため酸化数はゼロである。プラス一は化合物中での値。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "単体なのでゼロ。プラス一は化合物中の水素。",
+          "choice_id": "ch3_5_q038_c1",
+          "tts_text": "水素ガスの水素の酸化数はプラス一である。水素ガスは単体であるため酸化数はゼロである。プラス一は化合物中での値。"
+        },
+        {
+          "label": "2",
+          "text": "酸素ガスの酸素の酸化数はマイナス二である。酸素ガスは単体であるため酸化数はゼロである。マイナス二は化合物中での値。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "単体なのでゼロ。マイナス二は化合物中の酸素。",
+          "choice_id": "ch3_5_q038_c2",
+          "tts_text": "酸素ガスの酸素の酸化数はマイナス二である。酸素ガスは単体であるため酸化数はゼロである。マイナス二は化合物中での値。"
+        },
+        {
+          "label": "3",
+          "text": "単体を構成する原子の酸化数はゼロである。これは金属でも非金属でも同じである。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q038_c3",
+          "tts_text": "単体を構成する原子の酸化数はゼロである。これは金属でも非金属でも同じである。"
+        },
+        {
+          "label": "4",
+          "text": "金属単体の酸化数はプラス一である。金属単体の酸化数もゼロである。プラスの値をとるのは化合物やイオンの状態のときである。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "ゼロ。",
+          "choice_id": "ch3_5_q038_c4",
+          "tts_text": "金属単体の酸化数はプラス一である。金属単体の酸化数もゼロである。プラスの値をとるのは化合物やイオンの状態のときである。"
+        }
+      ],
+      "explanation": "「単体はゼロ」は酸化数の最も基本的なルールです。水素ガスの水素原子も酸素ガスの酸素原子も鉄の塊の鉄原子もすべてゼロです。プラス一やマイナス二は化合物中の値であり、単体に適用してはいけません。",
+      "evidence": [
+        {
+          "source_id": "5_1_law_001",
+          "quote": "単体の原子は0"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "単体の原子の酸化数について、正しい記述を選びなさい。",
+      "tts_explanation": "「単体はゼロ」は酸化数の最も基本的なルールです。水素ガスの水素原子も酸素ガスの酸素原子も鉄の塊の鉄原子もすべてゼロです。プラス一やマイナス二は化合物中の値であり、単体に適用してはいけません。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q039",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "イオンの酸化数の総和",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "多原子イオンの酸化数に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "過マンガン酸イオンのマンガンの酸化数はプラス七である。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q039_c1",
+          "tts_text": "過マンガン酸イオンのマンガンの酸化数はプラス七である。"
+        },
+        {
+          "label": "2",
+          "text": "硫酸イオン（二価のマイナスイオン）の酸化数の総和はマイナス二である。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q039_c2",
+          "tts_text": "硫酸イオン（二価のマイナスイオン）の酸化数の総和はマイナス二である。"
+        },
+        {
+          "label": "3",
+          "text": "多原子イオンの酸化数の総和はゼロである。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "化合物はゼロだがイオンはイオンの価数に等しい。",
+          "choice_id": "ch3_5_q039_c3",
+          "tts_text": "多原子イオンの酸化数の総和はゼロである。"
+        },
+        {
+          "label": "4",
+          "text": "多原子イオンの酸化数の総和はそのイオンの価数に等しい。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q039_c4",
+          "tts_text": "多原子イオンの酸化数の総和はそのイオンの価数に等しい。"
+        }
+      ],
+      "explanation": "電荷を持たない化合物の酸化数の総和はゼロですが、多原子イオンでは総和がイオンの価数に等しくなります。硫酸イオン（マイナス二）なら総和がマイナス二、過マンガン酸イオン（マイナス一）なら総和がマイナス一です。この区別は重要です。",
+      "evidence": [
+        {
+          "source_id": "5_1_law_001",
+          "quote": "多原子イオンの総和はそのイオンの価数に等しい"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "多原子イオンの酸化数に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "電荷を持たない化合物の酸化数の総和はゼロですが、多原子イオンでは総和がイオンの価数に等しくなります。硫酸イオン（マイナス二）なら総和がマイナス二、過マンガン酸イオン（マイナス一）なら総和がマイナス一です。この区別は重要です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q040",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "comprehensive",
+      "sub_category": "第三章第五節の全体総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "酸化還元反応と電池・電気分解に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸化剤は相手を酸化し自身は還元される。過酸化水素は相手次第で酸化剤にも還元剤にもなる二刀流。これは正しい記述であり酸化剤と過酸化水素の特徴を正確に述べている。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q040_c1",
+          "tts_text": "酸化剤は相手を酸化し自身は還元される。過酸化水素は相手次第で酸化剤にも還元剤にもなる二刀流。これは正しい記述であり酸化剤と過酸化水素の特徴を正確に述べている。"
+        },
+        {
+          "label": "2",
+          "text": "酸化は電子を失うこと、還元は電子を受け取ることであり必ず同時に起こる。酸化数の増加は酸化、減少は還元。これは正しい記述であり酸化還元の基本定義を正確に述べている。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q040_c2",
+          "tts_text": "酸化は電子を失うこと、還元は電子を受け取ることであり必ず同時に起こる。酸化数の増加は酸化、減少は還元。これは正しい記述であり酸化還元の基本定義を正確に述べている。"
+        },
+        {
+          "label": "3",
+          "text": "電池の負極ではイオン化傾向大の金属が酸化される。ファラデーの法則で電気量から析出量を計算できる。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q040_c3",
+          "tts_text": "電池の負極ではイオン化傾向大の金属が酸化される。ファラデーの法則で電気量から析出量を計算できる。"
+        },
+        {
+          "label": "4",
+          "text": "電子を受け取ると酸化。酸化剤は自身が酸化される。イオン化傾向大が正極。電気量は電流を時間で割る。鉛蓄電池の放電で密度は上昇。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "五か所すべて誤り。",
+          "choice_id": "ch3_5_q040_c4",
+          "tts_text": "電子を受け取ると酸化。酸化剤は自身が酸化される。イオン化傾向大が正極。電気量は電流を時間で割る。鉛蓄電池の放電で密度は上昇。"
+        }
+      ],
+      "explanation": "この章のすべてを総合した問題です。電子を受け取るのは還元（酸化ではない）。酸化剤自身は還元される（酸化ではない）。イオン化傾向大は負極（正極ではない）。電気量は電流かける時間（割るではない）。放電で密度は低下（上昇ではない）。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "電子を失うと酸化、受け取ると還元"
+        },
+        {
+          "source_id": "5_4_def_001",
+          "quote": "イオン化傾向の大きい金属が負極"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001",
+        "5_2_def_001",
+        "5_3_law_001",
+        "5_4_def_001",
+        "5_4_law_001",
+        "5_4_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化還元反応と電池・電気分解に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "この章のすべてを総合した問題です。電子を受け取るのは還元（酸化ではない）。酸化剤自身は還元される（酸化ではない）。イオン化傾向大は負極（正極ではない）。電気量は電流かける時間（割るではない）。放電で密度は低下（上昇ではない）。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q041",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "電解質溶液の必要性",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "電池が機能するための条件として、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン化傾向に差がある二種類の電極と電解質溶液が必要である。電解質溶液はイオンの移動による電荷の運搬を担う。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q041_c1",
+          "tts_text": "イオン化傾向に差がある二種類の電極と電解質溶液が必要である。電解質溶液はイオンの移動による電荷の運搬を担う。"
+        },
+        {
+          "label": "2",
+          "text": "電解質溶液は不要で金属だけで機能する。電池にはイオンの移動による電荷の運搬を担う電解質溶液が不可欠であり金属だけでは機能しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電解質溶液が必要。",
+          "choice_id": "ch3_5_q041_c2",
+          "tts_text": "電解質溶液は不要で金属だけで機能する。電池にはイオンの移動による電荷の運搬を担う電解質溶液が不可欠であり金属だけでは機能しない。"
+        },
+        {
+          "label": "3",
+          "text": "純水だけで電池が機能する。純水は電気をほとんど通さないため電池は機能しない。イオンを含む電解質溶液が必要である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電解質が必要。",
+          "choice_id": "ch3_5_q041_c3",
+          "tts_text": "純水だけで電池が機能する。純水は電気をほとんど通さないため電池は機能しない。イオンを含む電解質溶液が必要である。"
+        },
+        {
+          "label": "4",
+          "text": "一種類の金属だけで電池ができる。電池にはイオン化傾向に差がある二種類の金属が必要であり一種類では電位差が生じない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "二種類必要。",
+          "choice_id": "ch3_5_q041_c4",
+          "tts_text": "一種類の金属だけで電池ができる。電池にはイオン化傾向に差がある二種類の金属が必要であり一種類では電位差が生じない。"
+        }
+      ],
+      "explanation": "電池が機能するには三つの要素が必要です。イオン化傾向が異なる二種類の金属電極、電解質溶液（イオンが移動して内部回路を形成）、外部の導線（電子の通り道）です。いずれが欠けても電池は機能しません。",
+      "evidence": [
+        {
+          "source_id": "5_4_def_001",
+          "quote": "イオン化傾向に差がある2種の電極と電解質水溶液が必要"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "電池が機能するための条件として、正しい記述を選びなさい。",
+      "tts_explanation": "電池が機能するには三つの要素が必要です。イオン化傾向が異なる二種類の金属電極、電解質溶液（イオンが移動して内部回路を形成）、外部の導線（電子の通り道）です。いずれが欠けても電池は機能しません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q042",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "過酸化物中の酸素",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "過酸化水素中の酸素の酸化数に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "過酸化水素だろうと酸素の酸化数は常にマイナス二であり例外はない。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "過酸化物ではマイナス一。例外がある。",
+          "choice_id": "ch3_5_q042_c1",
+          "tts_text": "過酸化水素だろうと酸素の酸化数は常にマイナス二であり例外はない。"
+        },
+        {
+          "label": "2",
+          "text": "酸素原子間の結合が特殊であるため通常と異なる酸化数になる。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q042_c2",
+          "tts_text": "酸素原子間の結合が特殊であるため通常と異なる酸化数になる。"
+        },
+        {
+          "label": "3",
+          "text": "過酸化水素中の酸素の酸化数はマイナス一である。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q042_c3",
+          "tts_text": "過酸化水素中の酸素の酸化数はマイナス一である。"
+        },
+        {
+          "label": "4",
+          "text": "これは酸素の酸化数の例外的な値である。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q042_c4",
+          "tts_text": "これは酸素の酸化数の例外的な値である。"
+        }
+      ],
+      "explanation": "過酸化水素では水素がプラス一、酸素の酸化数をエックスとすると、プラス一かける二プラスエックスかける二イコールゼロでエックスイコールマイナス一です。これは酸素が酸素同士で一重結合している特殊な構造のためです。",
+      "evidence": [
+        {
+          "source_id": "5_1_law_001",
+          "quote": "過酸化物中のOの酸化数は-1となる例外がある"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "過酸化水素中の酸素の酸化数に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "過酸化水素では水素がプラス一、酸素の酸化数をエックスとすると、プラス一かける二プラスエックスかける二イコールゼロでエックスイコールマイナス一です。これは酸素が酸素同士で一重結合している特殊な構造のためです。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q043",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "ファラデー定数の値",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "ファラデー定数について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "ファラデー定数は約9600C/molである。ファラデー定数は約九万6500C/molであり桁が一つ違う。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "約九万六千五百。一桁違う。",
+          "choice_id": "ch3_5_q043_c1",
+          "tts_text": "ファラデー定数は約九千六百クーロン毎モルである。ファラデー定数は約九万六千五百クーロン毎モルであり桁が一つ違う。"
+        },
+        {
+          "label": "2",
+          "text": "電子1molあたりの電気量であり約九万6500C/molである。この値を使って電気量から電子の物質量に換算する。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q043_c2",
+          "tts_text": "電子一モルあたりの電気量であり約九万六千五百クーロン毎モルである。この値を使って電気量から電子の物質量に換算する。"
+        },
+        {
+          "label": "3",
+          "text": "ファラデー定数は温度によって大きく変化する。ファラデー定数は物理定数であり温度によって変化することはない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "物理定数であり変化しない。",
+          "choice_id": "ch3_5_q043_c3",
+          "tts_text": "ファラデー定数は温度によって大きく変化する。ファラデー定数は物理定数であり温度によって変化することはない。"
+        },
+        {
+          "label": "4",
+          "text": "ファラデー定数は電流の単位である。ファラデー定数は電子1molあたりの電気量の定数であり電流の単位のアンペアとは別物である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "電子一モルの電気量。電流はアンペア。",
+          "choice_id": "ch3_5_q043_c4",
+          "tts_text": "ファラデー定数は電流の単位である。ファラデー定数は電子一モルあたりの電気量の定数であり電流の単位のアンペアとは別物である。"
+        }
+      ],
+      "explanation": "ファラデー定数エフイコール九万6500C/molは電気化学の最も重要な定数です。アボガドロ数と電気素量の積に等しく、電子1molが運ぶ電気量を表します。この値は物理定数なので温度や圧力で変化しません。",
+      "evidence": [
+        {
+          "source_id": "5_4_law_001",
+          "quote": "ファラデー定数 F = 9.65 × 10^4 C/mol"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "ファラデー定数について、正しい記述を選びなさい。",
+      "tts_explanation": "ファラデー定数エフイコール九万六千五百クーロン毎モルは電気化学の最も重要な定数です。アボガドロ数と電気素量の積に等しく、電子一モルが運ぶ電気量を表します。この値は物理定数なので温度や圧力で変化しません。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q044",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "還元剤と還元されるの混同",
+      "difficulty": 3,
+      "question_type": "incorrect",
+      "question": "還元剤に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "還元剤自身は酸化される。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q044_c1",
+          "tts_text": "還元剤自身は酸化される。"
+        },
+        {
+          "label": "2",
+          "text": "還元剤は自身が還元される物質であり酸化数が減少する。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "還元剤自身は酸化され酸化数は増加する。",
+          "choice_id": "ch3_5_q044_c2",
+          "tts_text": "還元剤は自身が還元される物質であり酸化数が減少する。"
+        },
+        {
+          "label": "3",
+          "text": "還元剤は相手を還元する物質である。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q044_c3",
+          "tts_text": "還元剤は相手を還元する物質である。"
+        },
+        {
+          "label": "4",
+          "text": "還元剤は電子を放出する。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q044_c4",
+          "tts_text": "還元剤は電子を放出する。"
+        }
+      ],
+      "explanation": "還元剤の名前に「還元」が入っているため「自身が還元される」と間違えやすいですが、還元剤は「相手を還元する側」であり自身は酸化されます。つまり還元剤の酸化数は増加します。名前は「相手への効果」を示しています。",
+      "evidence": [
+        {
+          "source_id": "5_2_def_001",
+          "quote": "還元剤は自身は酸化される"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "還元剤に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "還元剤の名前に「還元」が入っているため「自身が還元される」と間違えやすいですが、還元剤は「相手を還元する側」であり自身は酸化されます。つまり還元剤の酸化数は増加します。名前は「相手への効果」を示しています。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q045",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "comprehensive",
+      "sub_category": "イオン化傾向の総合",
+      "difficulty": 5,
+      "question_type": "correct",
+      "question": "イオン化傾向に関する総合的な記述として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "イオン化傾向大ほど酸化されやすく還元性が強い。ナトリウムは常温の水と反応。水素より上は希酸で溶ける。水素より下は酸化力のある酸が必要。白金と金は王水でのみ溶ける。電池ではイオン化傾向大が負極。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q045_c1",
+          "tts_text": "イオン化傾向大ほど酸化されやすく還元性が強い。ナトリウムは常温の水と反応。水素より上は希酸で溶ける。水素より下は酸化力のある酸が必要。白金と金は王水でのみ溶ける。電池ではイオン化傾向大が負極。"
+        },
+        {
+          "label": "2",
+          "text": "イオン化傾向大ほど酸化されにくい。銅は希塩酸に溶ける。金は硝酸に溶ける。イオン化傾向大が正極。四箇所すべて誤りで正しくは大ほど酸化されやすく銅は希酸に溶けず金は王水が必要で大が負極。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "四か所すべて誤り。",
+          "choice_id": "ch3_5_q045_c2",
+          "tts_text": "イオン化傾向大ほど酸化されにくい。銅は希塩酸に溶ける。金は硝酸に溶ける。イオン化傾向大が正極。四箇所すべて誤りで正しくは大ほど酸化されやすく銅は希酸に溶けず金は王水が必要で大が負極。"
+        },
+        {
+          "label": "3",
+          "text": "イオン化傾向は非金属にも定義される。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "金属に対して定義される。水素は例外的に含まれる。",
+          "choice_id": "ch3_5_q045_c3",
+          "tts_text": "イオン化傾向は非金属にも定義される。"
+        },
+        {
+          "label": "4",
+          "text": "すべての金属は常温の水と反応する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一部のみ。",
+          "choice_id": "ch3_5_q045_c4",
+          "tts_text": "すべての金属は常温の水と反応する。"
+        }
+      ],
+      "explanation": "イオン化傾向の総合問題です。反応性が高い方から低い方へ、水との反応性、酸との反応性、電池の極性がすべてつながります。語呂合わせの順番を覚え各区分（水と反応、酸と反応、酸化力のある酸が必要、王水が必要）を正確に理解することが重要です。",
+      "evidence": [
+        {
+          "source_id": "5_3_law_001",
+          "quote": "イオン化傾向が大きい金属ほど酸化されやすく還元性が強い"
+        }
+      ],
+      "related_concept_ids": [
+        "5_3_law_001",
+        "5_4_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "イオン化傾向に関する総合的な記述として、正しいものを選びなさい。",
+      "tts_explanation": "イオン化傾向の総合問題です。反応性が高い方から低い方へ、水との反応性、酸との反応性、電池の極性がすべてつながります。語呂合わせの順番を覚え各区分（水と反応、酸と反応、酸化力のある酸が必要、王水が必要）を正確に理解することが重要です。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q046",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "電気分解の陰極反応",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "電気分解の陰極で起こる反応として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "陰極では還元反応が起こる。溶液中の陽イオンが電子を受け取って金属として析出するか、水素が発生する。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q046_c1",
+          "tts_text": "陰極では還元反応が起こる。溶液中の陽イオンが電子を受け取って金属として析出するか、水素が発生する。"
+        },
+        {
+          "label": "2",
+          "text": "陰極で酸化反応が起こる。陰極では還元反応が起こる。酸化反応が起こるのは陽極の方である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "陰極は還元。陽極が酸化。",
+          "choice_id": "ch3_5_q046_c2",
+          "tts_text": "陰極で酸化反応が起こる。陰極では還元反応が起こる。酸化反応が起こるのは陽極の方である。"
+        },
+        {
+          "label": "3",
+          "text": "陰極では何も反応しない。陰極では陽イオンが電子を受け取る還元反応が起こり金属析出や水素発生が起こる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "還元反応が起こる。",
+          "choice_id": "ch3_5_q046_c3",
+          "tts_text": "陰極では何も反応しない。陰極では陽イオンが電子を受け取る還元反応が起こり金属析出や水素発生が起こる。"
+        },
+        {
+          "label": "4",
+          "text": "陰極で酸素が発生する。酸素が発生するのは陽極の方である。陰極では金属析出や水素発生が起こる。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "酸素は陽極で発生。陰極は水素か金属析出。",
+          "choice_id": "ch3_5_q046_c4",
+          "tts_text": "陰極で酸素が発生する。酸素が発生するのは陽極の方である。陰極では金属析出や水素発生が起こる。"
+        }
+      ],
+      "explanation": "電気分解の陰極（マイナス極）には電子が供給されるため還元反応が起こります。銅イオンの溶液なら銅が析出し、NaOH溶液なら水が還元されて水素が発生します。陽極では酸化反応で酸素発生や電極の溶解が起こります。",
+      "evidence": [
+        {
+          "source_id": "5_4_law_001",
+          "quote": "電気分解によって電極で変化する物質の物質量は電気量に比例する"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_law_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "電気分解の陰極で起こる反応として、正しいものを選びなさい。",
+      "tts_explanation": "電気分解の陰極（マイナス極）には電子が供給されるため還元反応が起こります。銅イオンの溶液なら銅が析出し、水酸化ナトリウム溶液なら水が還元されて水素が発生します。陽極では酸化反応で酸素発生や電極の溶解が起こります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q047",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "confusion",
+      "sub_category": "電子数合わせ忘れ",
+      "difficulty": 4,
+      "question_type": "incorrect",
+      "question": "酸化還元反応式の作成に関する記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "足し合わせると電子が消去される。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q047_c1",
+          "tts_text": "足し合わせると電子が消去される。"
+        },
+        {
+          "label": "2",
+          "text": "二つの半反応式の電子の数を最小公倍数で揃える必要がある。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q047_c2",
+          "tts_text": "二つの半反応式の電子の数を最小公倍数で揃える必要がある。"
+        },
+        {
+          "label": "3",
+          "text": "電子の数を揃えなくてもそのまま足し合わせれば正しい反応式が得られる。",
+          "is_correct": true,
+          "trap_type": "negation",
+          "trap_detail": "電子の数を揃えないと消去できず正しい式にならない。",
+          "choice_id": "ch3_5_q047_c3",
+          "tts_text": "電子の数を揃えなくてもそのまま足し合わせれば正しい反応式が得られる。"
+        },
+        {
+          "label": "4",
+          "text": "電子の数を揃えた後に二つの式を足し合わせる。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q047_c4",
+          "tts_text": "電子の数を揃えた後に二つの式を足し合わせる。"
+        }
+      ],
+      "explanation": "酸化還元反応式の作成で電子の数合わせを忘れると、足し合わせても電子が残ってしまい正しい化学反応式になりません。酸化剤が五電子受け取り還元剤が二電子放出する場合は十電子に揃える（酸化剤を二倍、還元剤を五倍する）必要があります。",
+      "evidence": [
+        {
+          "source_id": "5_2_proc_001",
+          "quote": "e-の数が等しくなるように式全体を整数倍する"
+        }
+      ],
+      "related_concept_ids": [
+        "5_2_proc_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "酸化還元反応式の作成に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "酸化還元反応式の作成で電子の数合わせを忘れると、足し合わせても電子が残ってしまい正しい化学反応式になりません。酸化剤が五電子受け取り還元剤が二電子放出する場合は十電子に揃える（酸化剤を二倍、還元剤を五倍する）必要があります。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q048",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "property",
+      "sub_category": "燃料電池",
+      "difficulty": 3,
+      "question_type": "correct",
+      "question": "燃料電池について、正しい記述を選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "燃料電池は化石燃料を燃焼させる装置であると誤って覚えやすい典型例だが、燃料電池は水素と酸素の化学反応で電気を取り出す装置であり化石燃料の燃焼装置ではない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電気化学的に反応させる。燃焼ではない。",
+          "choice_id": "ch3_5_q048_c1",
+          "tts_text": "燃料電池は化石燃料を燃焼させる装置であると誤って覚えやすい典型例だが、燃料電池は水素と酸素の化学反応で電気を取り出す装置であり化石燃料の燃焼装置ではない。"
+        },
+        {
+          "label": "2",
+          "text": "水素と酸素を反応させて電気エネルギーを取り出す電池であり、生成物は水のみでクリーンなエネルギー源である。外部から燃料を供給し続ける限り発電できる。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q048_c2",
+          "tts_text": "水素と酸素を反応させて電気エネルギーを取り出す電池であり、生成物は水のみでクリーンなエネルギー源である。外部から燃料を供給し続ける限り発電できる。"
+        },
+        {
+          "label": "3",
+          "text": "燃料電池の生成物はCO₂であると思い込みがちだが、水素と酸素を反応させる燃料電池の生成物は水のみでありCO₂は発生しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "水のみ。",
+          "choice_id": "ch3_5_q048_c3",
+          "tts_text": "燃料電池の生成物は二酸化炭素であると思い込みがちだが、水素と酸素を反応させる燃料電池の生成物は水のみであり二酸化炭素は発生しない。"
+        },
+        {
+          "label": "4",
+          "text": "燃料電池は充電式の二次電池である。燃料電池は外部から燃料を供給して発電する装置であり充電して繰り返し使う二次電池とは異なる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "充電ではなく燃料供給で継続的に発電する。",
+          "choice_id": "ch3_5_q048_c4",
+          "tts_text": "燃料電池は充電式の二次電池である。燃料電池は外部から燃料を供給して発電する装置であり充電して繰り返し使う二次電池とは異なる。"
+        }
+      ],
+      "explanation": "燃料電池は水素と酸素の酸化還元反応を利用した電池です。水素が負極で酸化され、酸素が正極で還元されます。全体としては水素と酸素から水ができる反応であり、CO₂を排出しないクリーンなエネルギー源として注目されています。",
+      "evidence": [],
+      "related_concept_ids": [
+        "5_4_def_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "燃料電池について、正しい記述を選びなさい。",
+      "tts_explanation": "燃料電池は水素と酸素の酸化還元反応を利用した電池です。水素が負極で酸化され、酸素が正極で還元されます。全体としては水素と酸素から水ができる反応であり、二酸化炭素を排出しないクリーンなエネルギー源として注目されています。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    },
+    {
+      "id": "ch3_5_q049",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "mnemonic",
+      "sub_category": "酸化還元のゴロ合わせ",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "酸化と還元の覚え方として、正しいものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "酸化は電子を得ると覚える。逆で酸化は電子を失うことである。OIL RIGのOILはOxidation Is Lossの略で失うことを意味する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "失う。",
+          "choice_id": "ch3_5_q049_c1",
+          "tts_text": "酸化は電子を得ると覚える。逆で酸化は電子を失うことである。OIL RIGのOILはOxidation Is Lossの略で失うことを意味する。"
+        },
+        {
+          "label": "2",
+          "text": "還元は電子を失うと覚える。逆で還元は電子を受け取ることである。OIL RIGのRIGはReduction Is Gainの略で得ることを意味する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "得る。",
+          "choice_id": "ch3_5_q049_c2",
+          "tts_text": "還元は電子を失うと覚える。逆で還元は電子を受け取ることである。OIL RIGのRIGはReduction Is Gainの略で得ることを意味する。"
+        },
+        {
+          "label": "3",
+          "text": "この覚え方は酸化数とは無関係である。電子の授受は酸化数の変化と直結しており電子を失うと酸化数は増加し酸化に対応する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "電子の授受は酸化数と直結する。",
+          "choice_id": "ch3_5_q049_c3",
+          "tts_text": "この覚え方は酸化数とは無関係である。電子の授受は酸化数の変化と直結しており電子を失うと酸化数は増加し酸化に対応する。"
+        },
+        {
+          "label": "4",
+          "text": "「酸化は電子を失う。OIL RIG（オイルリグ）で覚える。Oxidation Is Loss、Reduction Is Gain」と覚える。",
+          "is_correct": true,
+          "choice_id": "ch3_5_q049_c4",
+          "tts_text": "「酸化は電子を失う。OIL RIG（オイルリグ）で覚える。Oxidation Is Loss、Reduction Is Gain」と覚える。"
+        }
+      ],
+      "explanation": "OIL RIG（オイルリグ）は英語での有名な覚え方です。Oxidation Is Loss of electrons（酸化は電子を失う）、Reduction Is Gain of electrons（還元は電子を得る）の頭文字です。電子の移動方向を確実に覚えられます。",
+      "evidence": [
+        {
+          "source_id": "5_1_def_001",
+          "quote": "電子を失うと酸化された、電子を受け取ると還元された"
+        }
+      ],
+      "related_concept_ids": [
+        "5_1_def_001"
+      ],
+      "mnemonic": "OIL RIG: Oxidation Is Loss, Reduction Is Gain",
+      "tts_question": "酸化と還元の覚え方として、正しいものを選びなさい。",
+      "tts_explanation": "OIL RIG（オイルリグ）は英語での有名な覚え方です。Oxidation Is Loss of electrons（酸化は電子を失う）、Reduction Is Gain of electrons（還元は電子を得る）の頭文字です。電子の移動方向を確実に覚えられます。",
+      "audio_voice": "ja-JP-NanamiNeural"
+    },
+    {
+      "id": "ch3_5_q050",
+      "chapter": "3-5",
+      "chapter_title": "酸化還元反応と電池・電気分解",
+      "category": "comprehensive",
+      "sub_category": "鉛蓄電池の総合",
+      "difficulty": 5,
+      "question_type": "incorrect",
+      "question": "鉛蓄電池に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "choices": [
+        {
+          "label": "1",
+          "text": "放電すると硫酸が消費されて電解液の密度が低下する。充電で逆反応が起こり密度が回復する。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q050_c1",
+          "tts_text": "放電すると硫酸が消費されて電解液の密度が低下する。充電で逆反応が起こり密度が回復する。"
+        },
+        {
+          "label": "2",
+          "text": "一次電池で充電不可。放電で硫酸が生成して密度が上昇する。充電時は外部電源の正極を鉛蓄電池の負極に接続する。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて誤り。二次電池で充電可能、硫酸は消費され密度は低下、正極同士を接続。",
+          "choice_id": "ch3_5_q050_c2",
+          "tts_text": "一次電池で充電不可。放電で硫酸が生成して密度が上昇する。充電時は外部電源の正極を鉛蓄電池の負極に接続する。"
+        },
+        {
+          "label": "3",
+          "text": "負極に鉛、正極に酸化鉛（四価）、電解液に希硫酸を用いる二次電池。放電で両極に硫酸鉛が生成する。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q050_c3",
+          "tts_text": "負極に鉛、正極に酸化鉛（四価）、電解液に希硫酸を用いる二次電池。放電で両極に硫酸鉛が生成する。"
+        },
+        {
+          "label": "4",
+          "text": "充電時は外部電源の正極を鉛蓄電池の正極に接続する（正極同士、負極同士）。",
+          "is_correct": false,
+          "choice_id": "ch3_5_q050_c4",
+          "tts_text": "充電時は外部電源の正極を鉛蓄電池の正極に接続する（正極同士、負極同士）。"
+        }
+      ],
+      "explanation": "鉛蓄電池のすべてのポイントをまとめた最終問題です。二次電池で充電可能、放電で硫酸消費・密度低下、充電は正極同士・負極同士を接続、両極で硫酸鉛生成。これらをすべて正確に理解することが求められます。",
+      "evidence": [
+        {
+          "source_id": "5_4_rxn_001",
+          "quote": "充電でき、反応が元に戻る。放電で密度が低下"
+        }
+      ],
+      "related_concept_ids": [
+        "5_4_rxn_001"
+      ],
+      "mnemonic": null,
+      "tts_question": "鉛蓄電池に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "鉛蓄電池のすべてのポイントをまとめた最終問題です。二次電池で充電可能、放電で硫酸消費・密度低下、充電は正極同士・負極同士を接続、両極で硫酸鉛生成。これらをすべて正確に理解することが求められます。",
+      "audio_voice": "ja-JP-KeitaNeural"
+    }
   ]
 }

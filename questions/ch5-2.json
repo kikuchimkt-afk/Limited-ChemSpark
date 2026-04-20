@@ -21,6 +21,62 @@
       "partial_truth": "前半正後半誤",
       "multiple_swap": "複数すり替え",
       "negation": "肯定否定入れ替え"
+    },
+    "display_policy": {
+      "note": "question / choices[].text / explanation は表示用（アラビア数字・単位記号・主要化学式）。tts_question / choices[].tts_text / tts_explanation は音声読み上げ用（漢数字・単位語・日本語化学名）。",
+      "display_fields": [
+        "question",
+        "choices[].text",
+        "explanation"
+      ],
+      "tts_fields": [
+        "tts_question",
+        "choices[].tts_text",
+        "tts_explanation"
+      ],
+      "number_unit_mapping": {
+        "立方センチメートルあたり": "cm³あたり",
+        "立方センチメートル": "cm³",
+        "キロジュール毎グラム": "kJ/g",
+        "キロジュール毎モル": "kJ/mol",
+        "キロジュール": "kJ",
+        "グラム毎モル": "g/mol",
+        "クーロン毎モル": "C/mol",
+        "グラム": "g",
+        "ミリリットル": "mL",
+        "モル": "mol",
+        "パーセント": "%",
+        "リットル": "L",
+        "アンペア": "A",
+        "クーロン": "C",
+        "度": "℃",
+        "気圧": "atm",
+        "パスカル": "Pa",
+        "ケルビン": "K"
+      },
+      "formula_mapping": {
+        "炭酸水素ナトリウム": "NaHCO₃",
+        "炭酸カルシウム": "CaCO₃",
+        "塩化マグネシウム": "MgCl₂",
+        "塩化カルシウム": "CaCl₂",
+        "塩化ナトリウム": "NaCl",
+        "水酸化ナトリウム": "NaOH",
+        "水酸化カルシウム": "Ca(OH)₂",
+        "硫酸ナトリウム": "Na₂SO₄",
+        "硝酸ナトリウム": "NaNO₃",
+        "硫酸銅": "CuSO₄",
+        "二酸化ケイ素": "SiO₂",
+        "二酸化硫黄": "SO₂",
+        "二酸化炭素": "CO₂",
+        "一酸化炭素": "CO",
+        "メタン": "CH₄",
+        "アンモニア": "NH₃"
+      }
+    },
+    "choice_shuffle_policy": {
+      "note": "choices[].choice_id は問題内で固有の安定識別子。アプリはユーザ提示時に choices を配列としてシャッフルし、choice_id と is_correct を参照して採点する。",
+      "runtime_shuffle": true,
+      "correct_positions_balanced_in_file": true
     }
   },
   "questions": [
@@ -36,32 +92,40 @@
       "choices": [
         {
           "label": "1",
-          "text": "鎖状の炭素骨格を持ち炭素間の結合がすべて単結合である飽和炭化水素。一般式はシーエヌエイチ二エヌプラス二。炭素数が増えると沸点融点が高くなる。極性が小さく水に溶けにくい。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
-          "text": "アルカンは二重結合を含む不飽和炭化水素。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "単結合のみの飽和炭化水素。"
-        },
-        {
-          "label": "3",
           "text": "アルカンは水に溶けやすい。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "溶けにくい。"
+          "trap_detail": "溶けにくい。",
+          "choice_id": "ch5_2_q001_c1",
+          "tts_text": "アルカンは水に溶けやすい。"
         },
         {
-          "label": "4",
+          "label": "2",
           "text": "炭素数が増えると沸点は低くなる。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "高くなる。"
+          "trap_detail": "高くなる。",
+          "choice_id": "ch5_2_q001_c2",
+          "tts_text": "炭素数が増えると沸点は低くなる。"
+        },
+        {
+          "label": "3",
+          "text": "鎖状の炭素骨格を持ち炭素間の結合がすべて単結合である飽和炭化水素。一般式はシーエヌエイチ二エヌプラス二。炭素数が増えると沸点融点が高くなる。極性が小さく水に溶けにくい。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q001_c3",
+          "tts_text": "鎖状の炭素骨格を持ち炭素間の結合がすべて単結合である飽和炭化水素。一般式はシーエヌエイチ二エヌプラス二。炭素数が増えると沸点融点が高くなる。極性が小さく水に溶けにくい。"
+        },
+        {
+          "label": "4",
+          "text": "アルカンは二重結合を含む不飽和炭化水素。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "単結合のみの飽和炭化水素。",
+          "choice_id": "ch5_2_q001_c4",
+          "tts_text": "アルカンは二重結合を含む不飽和炭化水素。"
         }
       ],
-      "explanation": "アルカンは最も基本的な炭化水素です。炭素間がすべて単結合のため化学的に安定で反応性が低いです。分子量（炭素数）が大きくなるほど分子間力が強くなり沸点・融点が上昇します。メタン→エタン→プロパン→ブタンの順に沸点が上がります。",
+      "explanation": "アルカンは最も基本的な炭化水素です。炭素間がすべて単結合のため化学的に安定で反応性が低いです。分子量（炭素数）が大きくなるほど分子間力が強くなり沸点・融点が上昇します。CH₄→エタン→プロパン→ブタンの順に沸点が上がります。",
       "evidence": [
         {
           "source_id": "2_1_def_001",
@@ -71,7 +135,9 @@
       "related_concept_ids": [
         "2_1_def_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アルカンについて、正しい記述を選びなさい。",
+      "tts_explanation": "アルカンは最も基本的な炭化水素です。炭素間がすべて単結合のため化学的に安定で反応性が低いです。分子量（炭素数）が大きくなるほど分子間力が強くなり沸点・融点が上昇します。メタン→エタン→プロパン→ブタンの順に沸点が上がります。"
     },
     {
       "id": "ch5_2_q002",
@@ -81,36 +147,44 @@
       "sub_category": "メタンの性質",
       "difficulty": 2,
       "question_type": "correct",
-      "question": "メタンについて、正しい記述を選びなさい。",
+      "question": "CH₄について、正しい記述を選びなさい。",
       "choices": [
         {
           "label": "1",
-          "text": "無色無臭の可燃性気体で天然ガスの主成分。水に溶けにくい。正四面体構造をとる。沼気とも呼ばれる。",
-          "is_correct": true
+          "text": "CH₄は不燃性である。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "可燃性。",
+          "choice_id": "ch5_2_q002_c1",
+          "tts_text": "メタンは不燃性である。"
         },
         {
           "label": "2",
-          "text": "メタンは有色の気体である。",
+          "text": "CH₄は有色の気体である。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "無色。"
+          "trap_detail": "無色。",
+          "choice_id": "ch5_2_q002_c2",
+          "tts_text": "メタンは有色の気体である。"
         },
         {
           "label": "3",
-          "text": "メタンは水に非常によく溶ける。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "溶けにくい。"
+          "text": "無色無臭の可燃性気体で天然ガスの主成分。水に溶けにくい。正四面体構造をとる。沼気とも呼ばれる。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q002_c3",
+          "tts_text": "無色無臭の可燃性気体で天然ガスの主成分。水に溶けにくい。正四面体構造をとる。沼気とも呼ばれる。"
         },
         {
           "label": "4",
-          "text": "メタンは不燃性である。",
+          "text": "CH₄は水に非常によく溶ける。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "可燃性。"
+          "trap_detail": "溶けにくい。",
+          "choice_id": "ch5_2_q002_c4",
+          "tts_text": "メタンは水に非常によく溶ける。"
         }
       ],
-      "explanation": "メタンは天然ガスの約九十パーセントを占め、都市ガスの主成分です。沼地の有機物が分解して発生するため「沼気」とも呼ばれます。温室効果ガスとしても知られています。",
+      "explanation": "CH₄は天然ガスの約90%を占め、都市ガスの主成分です。沼地の有機物が分解して発生するため「沼気」とも呼ばれます。温室効果ガスとしても知られています。",
       "evidence": [
         {
           "source_id": "2_1_sub_001",
@@ -120,7 +194,9 @@
       "related_concept_ids": [
         "2_1_sub_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "メタンについて、正しい記述を選びなさい。",
+      "tts_explanation": "メタンは天然ガスの約九十パーセントを占め、都市ガスの主成分です。沼地の有機物が分解して発生するため「沼気」とも呼ばれます。温室効果ガスとしても知られています。"
     },
     {
       "id": "ch5_2_q003",
@@ -134,32 +210,40 @@
       "choices": [
         {
           "label": "1",
-          "text": "一つの分子中の原子や基が他の原子や基で置き換えられる反応。メタンと塩素の混合気体に光を当てるとクロロメタンと塩化水素が生成する。光や高温のエネルギーが必要。",
-          "is_correct": true
+          "text": "CH₄の塩素化で水が生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "塩化水素が生成。",
+          "choice_id": "ch5_2_q003_c1",
+          "tts_text": "メタンの塩素化で水が生成する。"
         },
         {
           "label": "2",
-          "text": "置換反応は常温で自発的に起こる。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "光や高温が必要。"
-        },
-        {
-          "label": "3",
           "text": "アルカンは付加反応を起こす。",
           "is_correct": false,
           "trap_type": "concept_confusion",
-          "trap_detail": "付加反応はアルケンやアルキン。アルカンは置換反応。"
+          "trap_detail": "付加反応はアルケンやアルキン。アルカンは置換反応。",
+          "choice_id": "ch5_2_q003_c2",
+          "tts_text": "アルカンは付加反応を起こす。"
+        },
+        {
+          "label": "3",
+          "text": "一つの分子中の原子や基が他の原子や基で置き換えられる反応。CH₄と塩素の混合気体に光を当てるとクロロCH₄と塩化水素が生成する。光や高温のエネルギーが必要。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q003_c3",
+          "tts_text": "一つの分子中の原子や基が他の原子や基で置き換えられる反応。メタンと塩素の混合気体に光を当てるとクロロメタンと塩化水素が生成する。光や高温のエネルギーが必要。"
         },
         {
           "label": "4",
-          "text": "メタンの塩素化で水が生成する。",
+          "text": "置換反応は常温で自発的に起こる。",
           "is_correct": false,
-          "trap_type": "keyword_swap",
-          "trap_detail": "塩化水素が生成。"
+          "trap_type": "negation",
+          "trap_detail": "光や高温が必要。",
+          "choice_id": "ch5_2_q003_c4",
+          "tts_text": "置換反応は常温で自発的に起こる。"
         }
       ],
-      "explanation": "アルカンは飽和なので二重結合がなく付加反応はできません。代わりに水素をハロゲンで置き換える置換反応を起こします。メタンの塩素化は紫外線を照射すると連鎖的に進行し、クロロメタン→ジクロロメタン→トリクロロメタン→テトラクロロメタンと段階的にハロゲン化が進みます。",
+      "explanation": "アルカンは飽和なので二重結合がなく付加反応はできません。代わりに水素をハロゲンで置き換える置換反応を起こします。CH₄の塩素化は紫外線を照射すると連鎖的に進行し、クロロCH₄→ジクロロCH₄→トリクロロCH₄→テトラクロロCH₄と段階的にハロゲン化が進みます。",
       "evidence": [
         {
           "source_id": "2_1_rxn_001",
@@ -169,7 +253,9 @@
       "related_concept_ids": [
         "2_1_rxn_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アルカンの置換反応について、正しい記述を選びなさい。",
+      "tts_explanation": "アルカンは飽和なので二重結合がなく付加反応はできません。代わりに水素をハロゲンで置き換える置換反応を起こします。メタンの塩素化は紫外線を照射すると連鎖的に進行し、クロロメタン→ジクロロメタン→トリクロロメタン→テトラクロロメタンと段階的にハロゲン化が進みます。"
     },
     {
       "id": "ch5_2_q004",
@@ -183,29 +269,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "炭素間に二重結合を一つ持つ鎖式不飽和炭化水素。一般式はシーエヌエイチ二エヌ。付加反応を起こしやすい。エチレンが代表例。",
-          "is_correct": true
+          "text": "アルケンは置換反応のみを起こす。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "付加反応が主。",
+          "choice_id": "ch5_2_q004_c1",
+          "tts_text": "アルケンは置換反応のみを起こす。"
         },
         {
           "label": "2",
-          "text": "アルケンは三重結合を持つ。",
-          "is_correct": false,
-          "trap_type": "keyword_swap",
-          "trap_detail": "二重結合。三重結合はアルキン。"
+          "text": "炭素間に二重結合を一つ持つ鎖式不飽和炭化水素。一般式はシーエヌエイチ二エヌ。付加反応を起こしやすい。エチレンが代表例。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q004_c2",
+          "tts_text": "炭素間に二重結合を一つ持つ鎖式不飽和炭化水素。一般式はシーエヌエイチ二エヌ。付加反応を起こしやすい。エチレンが代表例。"
         },
         {
           "label": "3",
           "text": "アルケンは飽和炭化水素である。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "不飽和。"
+          "trap_detail": "不飽和。",
+          "choice_id": "ch5_2_q004_c3",
+          "tts_text": "アルケンは飽和炭化水素である。"
         },
         {
           "label": "4",
-          "text": "アルケンは置換反応のみを起こす。",
+          "text": "アルケンは三重結合を持つ。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "付加反応が主。"
+          "trap_detail": "二重結合。三重結合はアルキン。",
+          "choice_id": "ch5_2_q004_c4",
+          "tts_text": "アルケンは三重結合を持つ。"
         }
       ],
       "explanation": "アルケンの二重結合は一本が強い結合（シグマ結合）、もう一本が弱い結合（パイ結合）でできています。弱い方の結合が切れやすいため他の分子が付加しやすく、これがアルケンの高い反応性の原因です。",
@@ -218,7 +312,9 @@
       "related_concept_ids": [
         "2_2_def_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アルケンについて、正しい記述を選びなさい。",
+      "tts_explanation": "アルケンの二重結合は一本が強い結合（シグマ結合）、もう一本が弱い結合（パイ結合）でできています。弱い方の結合が切れやすいため他の分子が付加しやすく、これがアルケンの高い反応性の原因です。"
     },
     {
       "id": "ch5_2_q005",
@@ -232,29 +328,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "無色でかすかに甘い匂いを持つ気体。最も簡単なアルケン。植物の成熟を促進する作用がある。エテンとも呼ばれる。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
           "text": "エチレンは赤色の液体である。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "無色の気体。"
+          "trap_detail": "無色の気体。",
+          "choice_id": "ch5_2_q005_c1",
+          "tts_text": "エチレンは赤色の液体である。"
+        },
+        {
+          "label": "2",
+          "text": "エチレンには三重結合がある。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "二重結合。",
+          "choice_id": "ch5_2_q005_c2",
+          "tts_text": "エチレンには三重結合がある。"
         },
         {
           "label": "3",
           "text": "エチレンはアルキンに分類される。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "アルケン。"
+          "trap_detail": "アルケン。",
+          "choice_id": "ch5_2_q005_c3",
+          "tts_text": "エチレンはアルキンに分類される。"
         },
         {
           "label": "4",
-          "text": "エチレンには三重結合がある。",
-          "is_correct": false,
-          "trap_type": "keyword_swap",
-          "trap_detail": "二重結合。"
+          "text": "無色でかすかに甘い匂いを持つ気体。最も簡単なアルケン。植物の成熟を促進する作用がある。エテンとも呼ばれる。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q005_c4",
+          "tts_text": "無色でかすかに甘い匂いを持つ気体。最も簡単なアルケン。植物の成熟を促進する作用がある。エテンとも呼ばれる。"
         }
       ],
       "explanation": "エチレンは果実の成熟ホルモンとしても知られています。リンゴがエチレンガスを放出して近くの果物の追熟を促すのはこの作用です。工業的にはポリエチレンの原料として非常に重要です。",
@@ -267,7 +371,9 @@
       "related_concept_ids": [
         "2_2_sub_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "エチレンについて、正しい記述を選びなさい。",
+      "tts_explanation": "エチレンは果実の成熟ホルモンとしても知られています。リンゴがエチレンガスを放出して近くの果物の追熟を促すのはこの作用です。工業的にはポリエチレンの原料として非常に重要です。"
     },
     {
       "id": "ch5_2_q006",
@@ -281,29 +387,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "アルケンやアルキンの多重結合に他の分子が結合して飽和化合物になる反応。二重結合の弱い方の結合が切れて新たな原子が付加する。臭素水の脱色が代表例。",
-          "is_correct": true
+          "text": "付加反応では分子が分解する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "新たな原子が結合する。",
+          "choice_id": "ch5_2_q006_c1",
+          "tts_text": "付加反応では分子が分解する。"
         },
         {
           "label": "2",
           "text": "付加反応はアルカンで起こる。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "アルケンやアルキン（不飽和）で起こる。"
+          "trap_detail": "アルケンやアルキン（不飽和）で起こる。",
+          "choice_id": "ch5_2_q006_c2",
+          "tts_text": "付加反応はアルカンで起こる。"
         },
         {
           "label": "3",
-          "text": "付加反応では分子が分解する。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "新たな原子が結合する。"
-        },
-        {
-          "label": "4",
           "text": "臭素水の脱色は置換反応の例である。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "付加反応。"
+          "trap_detail": "付加反応。",
+          "choice_id": "ch5_2_q006_c3",
+          "tts_text": "臭素水の脱色は置換反応の例である。"
+        },
+        {
+          "label": "4",
+          "text": "アルケンやアルキンの多重結合に他の分子が結合して飽和化合物になる反応。二重結合の弱い方の結合が切れて新たな原子が付加する。臭素水の脱色が代表例。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q006_c4",
+          "tts_text": "アルケンやアルキンの多重結合に他の分子が結合して飽和化合物になる反応。二重結合の弱い方の結合が切れて新たな原子が付加する。臭素水の脱色が代表例。"
         }
       ],
       "explanation": "付加反応は不飽和結合の検出に利用されます。赤褐色の臭素水をアルケンに加えると臭素が二重結合に付加して無色になります（脱色）。アルカンには二重結合がないため脱色は起こりません。この違いで飽和と不飽和を区別できます。",
@@ -316,7 +430,9 @@
       "related_concept_ids": [
         "2_2_rxn_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "付加反応について、正しい記述を選びなさい。",
+      "tts_explanation": "付加反応は不飽和結合の検出に利用されます。赤褐色の臭素水をアルケンに加えると臭素が二重結合に付加して無色になります（脱色）。アルカンには二重結合がないため脱色は起こりません。この違いで飽和と不飽和を区別できます。"
     },
     {
       "id": "ch5_2_q007",
@@ -330,32 +446,40 @@
       "choices": [
         {
           "label": "1",
-          "text": "二重結合では炭素間の回転が制限されるため原子の立体配置が異なる異性体が生じる。同じ側にあるのがシス形、反対側にあるのがトランス形。二ブテンにシスとトランスが存在する。",
-          "is_correct": true
+          "text": "シス形は反対側に原子がある配置。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "同じ側。反対側はトランス。",
+          "choice_id": "ch5_2_q007_c1",
+          "tts_text": "シス形は反対側に原子がある配置。"
         },
         {
           "label": "2",
-          "text": "単結合でもシスートランス異性体が生じる。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "二重結合で生じる。単結合は自由回転可能。"
+          "text": "二重結合では炭素間の回転が制限されるため原子の立体配置が異なる異性体が生じる。同じ側にあるのがシス形、反対側にあるのがトランス形。二ブテンにシスとトランスが存在する。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q007_c2",
+          "tts_text": "二重結合では炭素間の回転が制限されるため原子の立体配置が異なる異性体が生じる。同じ側にあるのがシス形、反対側にあるのがトランス形。二ブテンにシスとトランスが存在する。"
         },
         {
           "label": "3",
           "text": "二重結合の両方の炭素に同じ原子が結合していてもシスートランスが存在する。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "異なる原子が必要。"
+          "trap_detail": "異なる原子が必要。",
+          "choice_id": "ch5_2_q007_c3",
+          "tts_text": "二重結合の両方の炭素に同じ原子が結合していてもシスートランスが存在する。"
         },
         {
           "label": "4",
-          "text": "シス形は反対側に原子がある配置。",
+          "text": "単結合でもシスートランス異性体が生じる。",
           "is_correct": false,
-          "trap_type": "keyword_swap",
-          "trap_detail": "同じ側。反対側はトランス。"
+          "trap_type": "negation",
+          "trap_detail": "二重結合で生じる。単結合は自由回転可能。",
+          "choice_id": "ch5_2_q007_c4",
+          "tts_text": "単結合でもシスートランス異性体が生じる。"
         }
       ],
-      "explanation": "シスは「こちら側」（ラテン語）、トランスは「あちら側」の意味です。二重結合は回転できないため、一度できた配置は変えられません。これが構造異性体とは異なる「立体異性体」です。",
+      "explanation": "シスは「こちら側」（ラテン語）、トランスは「あちら側」の意味です。二重結合は回転できないため、1℃できた配置は変えられません。これが構造異性体とは異なる「立体異性体」です。",
       "evidence": [
         {
           "source_id": "2_2_def_002",
@@ -365,7 +489,9 @@
       "related_concept_ids": [
         "2_2_def_002"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "シスートランス異性体（幾何異性体）について、正しい記述を選びなさい。",
+      "tts_explanation": "シスは「こちら側」（ラテン語）、トランスは「あちら側」の意味です。二重結合は回転できないため、一度できた配置は変えられません。これが構造異性体とは異なる「立体異性体」です。"
     },
     {
       "id": "ch5_2_q008",
@@ -379,29 +505,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "非対称アルケンにエイチエックス型分子が付加するとき、水素が多く結合している炭素に水素が付加しやすいという経験則。プロペンに水が付加すると二プロパノールが主生成物。",
-          "is_correct": true
+          "text": "対称アルケンでマルコフニコフ則が重要になる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "非対称アルケンで重要。対称なら同等。",
+          "choice_id": "ch5_2_q008_c1",
+          "tts_text": "対称アルケンでマルコフニコフ則が重要になる。"
         },
         {
           "label": "2",
           "text": "水素が少ない方の炭素にエイチが付加する。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "水素が多い方。"
+          "trap_detail": "水素が多い方。",
+          "choice_id": "ch5_2_q008_c2",
+          "tts_text": "水素が少ない方の炭素にエイチが付加する。"
         },
         {
           "label": "3",
           "text": "マルコフニコフ則はすべての付加反応に当てはまる。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "例外がある。"
+          "trap_detail": "例外がある。",
+          "choice_id": "ch5_2_q008_c3",
+          "tts_text": "マルコフニコフ則はすべての付加反応に当てはまる。"
         },
         {
           "label": "4",
-          "text": "対称アルケンでマルコフニコフ則が重要になる。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "非対称アルケンで重要。対称なら同等。"
+          "text": "非対称アルケンにエイチエックス型分子が付加するとき、水素が多く結合している炭素に水素が付加しやすいという経験則。プロペンに水が付加すると二プロパノールが主生成物。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q008_c4",
+          "tts_text": "非対称アルケンにエイチエックス型分子が付加するとき、水素が多く結合している炭素に水素が付加しやすいという経験則。プロペンに水が付加すると二プロパノールが主生成物。"
         }
       ],
       "explanation": "マルコフニコフ則は「富める者はさらに富む」と覚えます。水素が多い炭素にさらに水素が付加します。プロペンの場合、末端炭素（水素二つ）に水の水素が付くため、ヒドロキシ基は中央炭素に結合して二プロパノールになります。",
@@ -414,7 +548,9 @@
       "related_concept_ids": [
         "2_2_law_001"
       ],
-      "mnemonic": "富める者はさらに富む"
+      "mnemonic": "富める者はさらに富む",
+      "tts_question": "マルコフニコフ則について、正しい記述を選びなさい。",
+      "tts_explanation": "マルコフニコフ則は「富める者はさらに富む」と覚えます。水素が多い炭素にさらに水素が付加します。プロペンの場合、末端炭素（水素二つ）に水の水素が付くため、ヒドロキシ基は中央炭素に結合して二プロパノールになります。"
     },
     {
       "id": "ch5_2_q009",
@@ -429,28 +565,36 @@
         {
           "label": "1",
           "text": "炭素間に三重結合を一つ持つ鎖式不飽和炭化水素。一般式はシーエヌエイチ二エヌマイナス二。付加反応を起こしやすい。アセチレンが代表例。",
-          "is_correct": true
+          "is_correct": true,
+          "choice_id": "ch5_2_q009_c1",
+          "tts_text": "炭素間に三重結合を一つ持つ鎖式不飽和炭化水素。一般式はシーエヌエイチ二エヌマイナス二。付加反応を起こしやすい。アセチレンが代表例。"
         },
         {
           "label": "2",
-          "text": "アルキンは二重結合を持つ。",
-          "is_correct": false,
-          "trap_type": "keyword_swap",
-          "trap_detail": "三重結合。二重結合はアルケン。"
-        },
-        {
-          "label": "3",
           "text": "アルキンは飽和炭化水素である。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "不飽和。"
+          "trap_detail": "不飽和。",
+          "choice_id": "ch5_2_q009_c2",
+          "tts_text": "アルキンは飽和炭化水素である。"
         },
         {
-          "label": "4",
+          "label": "3",
           "text": "アルキンの一般式はシーエヌエイチ二エヌプラス二。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "それはアルカン。マイナス二。"
+          "trap_detail": "それはアルカン。マイナス二。",
+          "choice_id": "ch5_2_q009_c3",
+          "tts_text": "アルキンの一般式はシーエヌエイチ二エヌプラス二。"
+        },
+        {
+          "label": "4",
+          "text": "アルキンは二重結合を持つ。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "三重結合。二重結合はアルケン。",
+          "choice_id": "ch5_2_q009_c4",
+          "tts_text": "アルキンは二重結合を持つ。"
         }
       ],
       "explanation": "アルキンは三重結合を持つため二段階の付加反応が可能です。一段階目の付加でアルケンに、二段階目でアルカンになります。アセチレンは三重結合を持つ最も単純な炭化水素です。",
@@ -463,7 +607,9 @@
       "related_concept_ids": [
         "2_2_def_004"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アルキンについて、正しい記述を選びなさい。",
+      "tts_explanation": "アルキンは三重結合を持つため二段階の付加反応が可能です。一段階目の付加でアルケンに、二段階目でアルカンになります。アセチレンは三重結合を持つ最も単純な炭化水素です。"
     },
     {
       "id": "ch5_2_q010",
@@ -477,32 +623,40 @@
       "choices": [
         {
           "label": "1",
-          "text": "無色の気体で燃焼時の発熱量が大きい。酸素アセチレン炎は鉄の溶断や溶接に利用される。水に塩化カルシウム（カーバイド）を加えると発生する。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
-          "text": "アセチレンは燃焼熱が小さい。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "大きい。"
-        },
-        {
-          "label": "3",
           "text": "アセチレンはアルケンに分類される。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "アルキン。"
+          "trap_detail": "アルキン。",
+          "choice_id": "ch5_2_q010_c1",
+          "tts_text": "アセチレンはアルケンに分類される。"
         },
         {
-          "label": "4",
+          "label": "2",
+          "text": "無色の気体で燃焼時の発熱量が大きい。酸素アセチレン炎は鉄の溶断や溶接に利用される。水にCaCl₂（カーバイド）を加えると発生する。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q010_c2",
+          "tts_text": "無色の気体で燃焼時の発熱量が大きい。酸素アセチレン炎は鉄の溶断や溶接に利用される。水に塩化カルシウム（カーバイド）を加えると発生する。"
+        },
+        {
+          "label": "3",
           "text": "アセチレンは単結合のみを持つ。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "三重結合。"
+          "trap_detail": "三重結合。",
+          "choice_id": "ch5_2_q010_c3",
+          "tts_text": "アセチレンは単結合のみを持つ。"
+        },
+        {
+          "label": "4",
+          "text": "アセチレンは燃焼熱が小さい。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "大きい。",
+          "choice_id": "ch5_2_q010_c4",
+          "tts_text": "アセチレンは燃焼熱が小さい。"
         }
       ],
-      "explanation": "アセチレンの燃焼温度は酸素と混合すると約三千度に達し、鉄を溶かすのに十分な温度です。このため金属の切断や溶接に使われます。カーバイド（炭化カルシウム）に水を加えると手軽に発生させられます。",
+      "explanation": "アセチレンの燃焼温度は酸素と混合すると約3000℃に達し、鉄を溶かすのに十分な温度です。このため金属の切断や溶接に使われます。カーバイド（炭化カルシウム）に水を加えると手軽に発生させられます。",
       "evidence": [
         {
           "source_id": "2_2_sub_002",
@@ -512,7 +666,9 @@
       "related_concept_ids": [
         "2_2_sub_002"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アセチレンについて、正しい記述を選びなさい。",
+      "tts_explanation": "アセチレンの燃焼温度は酸素と混合すると約三千度に達し、鉄を溶かすのに十分な温度です。このため金属の切断や溶接に使われます。カーバイド（炭化カルシウム）に水を加えると手軽に発生させられます。"
     },
     {
       "id": "ch5_2_q011",
@@ -526,29 +682,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "水を付加すると不安定なビニルアルコールを経てアセトアルデヒドに変化する。塩化水素を付加すると塩化ビニルが、酢酸を付加すると酢酸ビニルが生成する。これらは高分子の原料。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
-          "text": "アセチレンに水を付加するとエタノールが直接生成する。",
-          "is_correct": false,
-          "trap_type": "keyword_swap",
-          "trap_detail": "アセトアルデヒド。"
-        },
-        {
-          "label": "3",
-          "text": "塩化ビニルはアルカンの置換反応で得られる。",
-          "is_correct": false,
-          "trap_type": "concept_confusion",
-          "trap_detail": "アセチレンの付加反応。"
-        },
-        {
-          "label": "4",
           "text": "アセチレンは付加反応を起こさない安定な化合物。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "付加反応を起こしやすい。"
+          "trap_detail": "付加反応を起こしやすい。",
+          "choice_id": "ch5_2_q011_c1",
+          "tts_text": "アセチレンは付加反応を起こさない安定な化合物。"
+        },
+        {
+          "label": "2",
+          "text": "塩化ビニルはアルカンの置換反応で得られる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "アセチレンの付加反応。",
+          "choice_id": "ch5_2_q011_c2",
+          "tts_text": "塩化ビニルはアルカンの置換反応で得られる。"
+        },
+        {
+          "label": "3",
+          "text": "水を付加すると不安定なビニルアルコールを経てアセトアルデヒドに変化する。塩化水素を付加すると塩化ビニルが、酢酸を付加すると酢酸ビニルが生成する。これらは高分子の原料。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q011_c3",
+          "tts_text": "水を付加すると不安定なビニルアルコールを経てアセトアルデヒドに変化する。塩化水素を付加すると塩化ビニルが、酢酸を付加すると酢酸ビニルが生成する。これらは高分子の原料。"
+        },
+        {
+          "label": "4",
+          "text": "アセチレンに水を付加するとエタノールが直接生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アセトアルデヒド。",
+          "choice_id": "ch5_2_q011_c4",
+          "tts_text": "アセチレンに水を付加するとエタノールが直接生成する。"
         }
       ],
       "explanation": "アセチレンへの水の付加ではビニルアルコール（エノール形）が中間体として生じますが不安定で直ちにケト形のアセトアルデヒドに異性化します。この「ケトーエノール互変異性」は有機化学の重要な概念です。",
@@ -561,7 +725,9 @@
       "related_concept_ids": [
         "2_2_rxn_003"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アセチレンの付加反応として、正しいものを選びなさい。",
+      "tts_explanation": "アセチレンへの水の付加ではビニルアルコール（エノール形）が中間体として生じますが不安定で直ちにケト形のアセトアルデヒドに異性化します。この「ケトーエノール互変異性」は有機化学の重要な概念です。"
     },
     {
       "id": "ch5_2_q012",
@@ -575,25 +741,33 @@
       "choices": [
         {
           "label": "1",
-          "text": "アルカンは置換反応を起こす。",
-          "is_correct": false
+          "text": "アルカンは付加反応を起こしやすくアルケンは置換反応が主である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。アルカンは置換、アルケンは付加。",
+          "choice_id": "ch5_2_q012_c1",
+          "tts_text": "アルカンは付加反応を起こしやすくアルケンは置換反応が主である。"
         },
         {
           "label": "2",
           "text": "アルケンは付加反応を起こす。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q012_c2",
+          "tts_text": "アルケンは付加反応を起こす。"
         },
         {
           "label": "3",
-          "text": "アルキンも付加反応を起こす。",
-          "is_correct": false
+          "text": "アルカンは置換反応を起こす。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q012_c3",
+          "tts_text": "アルカンは置換反応を起こす。"
         },
         {
           "label": "4",
-          "text": "アルカンは付加反応を起こしやすくアルケンは置換反応が主である。",
-          "is_correct": true,
-          "trap_type": "keyword_swap",
-          "trap_detail": "逆。アルカンは置換、アルケンは付加。"
+          "text": "アルキンも付加反応を起こす。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q012_c4",
+          "tts_text": "アルキンも付加反応を起こす。"
         }
       ],
       "explanation": "飽和（アルカン）→置換反応、不飽和（アルケン・アルキン）→付加反応。これは最も基本的な区別です。飽和は結合の手が空いていないので「入れ替え（置換）」、不飽和は手が空いているので「追加（付加）」と覚えましょう。",
@@ -611,7 +785,9 @@
         "2_1_rxn_001",
         "2_2_rxn_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "有機反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "飽和（アルカン）→置換反応、不飽和（アルケン・アルキン）→付加反応。これは最も基本的な区別です。飽和は結合の手が空いていないので「入れ替え（置換）」、不飽和は手が空いているので「追加（付加）」と覚えましょう。"
     },
     {
       "id": "ch5_2_q013",
@@ -625,25 +801,33 @@
       "choices": [
         {
           "label": "1",
-          "text": "二重結合では回転が制限されるため立体異性体が生じる。",
-          "is_correct": false
-        },
-        {
-          "label": "2",
-          "text": "シス形は二重結合の同じ側に基がある配置。",
-          "is_correct": false
-        },
-        {
-          "label": "3",
-          "text": "トランス形は二重結合の反対側に基がある配置。",
-          "is_correct": false
-        },
-        {
-          "label": "4",
           "text": "シス形は反対側、トランス形は同じ側に基がある配置である。",
           "is_correct": true,
           "trap_type": "keyword_swap",
-          "trap_detail": "逆。シスが同じ側、トランスが反対側。"
+          "trap_detail": "逆。シスが同じ側、トランスが反対側。",
+          "choice_id": "ch5_2_q013_c1",
+          "tts_text": "シス形は反対側、トランス形は同じ側に基がある配置である。"
+        },
+        {
+          "label": "2",
+          "text": "二重結合では回転が制限されるため立体異性体が生じる。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q013_c2",
+          "tts_text": "二重結合では回転が制限されるため立体異性体が生じる。"
+        },
+        {
+          "label": "3",
+          "text": "シス形は二重結合の同じ側に基がある配置。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q013_c3",
+          "tts_text": "シス形は二重結合の同じ側に基がある配置。"
+        },
+        {
+          "label": "4",
+          "text": "トランス形は二重結合の反対側に基がある配置。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q013_c4",
+          "tts_text": "トランス形は二重結合の反対側に基がある配置。"
         }
       ],
       "explanation": "シス（cisはこちら側）とトランス（transはあちら側）の入れ替えは定番ひっかけです。シスは同じ側、トランスは反対側。「シスは仲良く同じ側、トランスは反対側」と覚えましょう。",
@@ -656,7 +840,9 @@
       "related_concept_ids": [
         "2_2_def_002"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "シスートランス異性体に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "シス（cisはこちら側）とトランス（transはあちら側）の入れ替えは定番ひっかけです。シスは同じ側、トランスは反対側。「シスは仲良く同じ側、トランスは反対側」と覚えましょう。"
     },
     {
       "id": "ch5_2_q014",
@@ -671,24 +857,32 @@
         {
           "label": "1",
           "text": "非対称アルケンにエイチエックス型が付加するときの方向を予測する。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q014_c1",
+          "tts_text": "非対称アルケンにエイチエックス型が付加するときの方向を予測する。"
         },
         {
           "label": "2",
           "text": "プロペンに水が付加すると二プロパノールが主生成物になる。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q014_c2",
+          "tts_text": "プロペンに水が付加すると二プロパノールが主生成物になる。"
         },
         {
           "label": "3",
           "text": "反応条件によっては当てはまらない場合もある。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q014_c3",
+          "tts_text": "反応条件によっては当てはまらない場合もある。"
         },
         {
           "label": "4",
           "text": "水素が少なく結合している炭素にさらに水素が付加する。",
           "is_correct": true,
           "trap_type": "negation",
-          "trap_detail": "水素が多い方に付加する。"
+          "trap_detail": "水素が多い方に付加する。",
+          "choice_id": "ch5_2_q014_c4",
+          "tts_text": "水素が少なく結合している炭素にさらに水素が付加する。"
         }
       ],
       "explanation": "マルコフニコフ則の方向を逆にするのは典型的なひっかけです。「水素が多い方にさらに水素が付く（富める者がさらに富む）」が正しい方向です。ただし過酸化物存在下では逆マルコフニコフになることもあります。",
@@ -701,7 +895,9 @@
       "related_concept_ids": [
         "2_2_law_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "マルコフニコフ則に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "マルコフニコフ則の方向を逆にするのは典型的なひっかけです。「水素が多い方にさらに水素が付く（富める者がさらに富む）」が正しい方向です。ただし過酸化物存在下では逆マルコフニコフになることもあります。"
     },
     {
       "id": "ch5_2_q015",
@@ -715,29 +911,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "アルケンやアルキンを臭素水に加えると赤褐色が脱色される。これは臭素が二重結合や三重結合に付加するため。アルカンでは脱色しない。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
-          "text": "アルカンでも臭素水が脱色する。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "脱色しない。"
-        },
-        {
-          "label": "3",
           "text": "アルケンは臭素水を脱色しない。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "脱色する。"
+          "trap_detail": "脱色する。",
+          "choice_id": "ch5_2_q015_c1",
+          "tts_text": "アルケンは臭素水を脱色しない。"
         },
         {
-          "label": "4",
+          "label": "2",
+          "text": "アルケンやアルキンを臭素水に加えると赤褐色が脱色される。これは臭素が二重結合や三重結合に付加するため。アルカンでは脱色しない。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q015_c2",
+          "tts_text": "アルケンやアルキンを臭素水に加えると赤褐色が脱色される。これは臭素が二重結合や三重結合に付加するため。アルカンでは脱色しない。"
+        },
+        {
+          "label": "3",
           "text": "臭素水が脱色するのは置換反応の結果。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "付加反応。"
+          "trap_detail": "付加反応。",
+          "choice_id": "ch5_2_q015_c3",
+          "tts_text": "臭素水が脱色するのは置換反応の結果。"
+        },
+        {
+          "label": "4",
+          "text": "アルカンでも臭素水が脱色する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "脱色しない。",
+          "choice_id": "ch5_2_q015_c4",
+          "tts_text": "アルカンでも臭素水が脱色する。"
         }
       ],
       "explanation": "臭素水の脱色は不飽和結合の有無を判定する最も簡単な方法です。赤褐色の臭素分子が二重結合に付加して無色のジブロモ化合物になるため色が消えます。",
@@ -750,7 +954,9 @@
       "related_concept_ids": [
         "2_2_rxn_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "臭素水による不飽和結合の検出として、正しいものを選びなさい。",
+      "tts_explanation": "臭素水の脱色は不飽和結合の有無を判定する最も簡単な方法です。赤褐色の臭素分子が二重結合に付加して無色のジブロモ化合物になるため色が消えます。"
     },
     {
       "id": "ch5_2_q016",
@@ -764,25 +970,33 @@
       "choices": [
         {
           "label": "1",
-          "text": "まずビニルアルコール（不安定な中間体）が生じる。",
-          "is_correct": false
+          "text": "ビニルアルコールは直ちにアセトアルデヒドに変化する。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q016_c1",
+          "tts_text": "ビニルアルコールは直ちにアセトアルデヒドに変化する。"
         },
         {
           "label": "2",
-          "text": "ビニルアルコールは直ちにアセトアルデヒドに変化する。",
-          "is_correct": false
+          "text": "まずビニルアルコール（不安定な中間体）が生じる。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q016_c2",
+          "tts_text": "まずビニルアルコール（不安定な中間体）が生じる。"
         },
         {
           "label": "3",
           "text": "この変化はケトーエノール互変異性による。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q016_c3",
+          "tts_text": "この変化はケトーエノール互変異性による。"
         },
         {
           "label": "4",
           "text": "アセチレンに水を付加するとエタノールが直接生成する。",
           "is_correct": true,
           "trap_type": "keyword_swap",
-          "trap_detail": "エタノールではなくアセトアルデヒド。"
+          "trap_detail": "エタノールではなくアセトアルデヒド。",
+          "choice_id": "ch5_2_q016_c4",
+          "tts_text": "アセチレンに水を付加するとエタノールが直接生成する。"
         }
       ],
       "explanation": "アセチレン＋水→ビニルアルコール→アセトアルデヒドの流れは超重要です。エタノールではなくアセトアルデヒド（アルデヒド基を持つ）が生成します。エタノールが得られるのはエチレンに水を付加した場合です。",
@@ -795,7 +1009,9 @@
       "related_concept_ids": [
         "2_2_rxn_003"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アセチレンに水を付加したときの生成物に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "アセチレン＋水→ビニルアルコール→アセトアルデヒドの流れは超重要です。エタノールではなくアセトアルデヒド（アルデヒド基を持つ）が生成します。エタノールが得られるのはエチレンに水を付加した場合です。"
     },
     {
       "id": "ch5_2_q017",
@@ -809,29 +1025,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "エチレン（二重結合）に水を付加するとエタノールが生成し、アセチレン（三重結合）に水を付加するとアセトアルデヒドが生成する。",
-          "is_correct": true
+          "text": "エチレンからアセトアルデヒド、アセチレンからエタノールが生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。",
+          "choice_id": "ch5_2_q017_c1",
+          "tts_text": "エチレンからアセトアルデヒド、アセチレンからエタノールが生成する。"
         },
         {
           "label": "2",
-          "text": "どちらもエタノールが生成する。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "アセチレンからはアセトアルデヒド。"
+          "text": "エチレン（二重結合）に水を付加するとエタノールが生成し、アセチレン（三重結合）に水を付加するとアセトアルデヒドが生成する。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q017_c2",
+          "tts_text": "エチレン（二重結合）に水を付加するとエタノールが生成し、アセチレン（三重結合）に水を付加するとアセトアルデヒドが生成する。"
         },
         {
           "label": "3",
           "text": "どちらもアセトアルデヒドが生成する。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "エチレンからはエタノール。"
+          "trap_detail": "エチレンからはエタノール。",
+          "choice_id": "ch5_2_q017_c3",
+          "tts_text": "どちらもアセトアルデヒドが生成する。"
         },
         {
           "label": "4",
-          "text": "エチレンからアセトアルデヒド、アセチレンからエタノールが生成する。",
+          "text": "どちらもエタノールが生成する。",
           "is_correct": false,
-          "trap_type": "keyword_swap",
-          "trap_detail": "逆。"
+          "trap_type": "negation",
+          "trap_detail": "アセチレンからはアセトアルデヒド。",
+          "choice_id": "ch5_2_q017_c4",
+          "tts_text": "どちらもエタノールが生成する。"
         }
       ],
       "explanation": "エチレン＋水→エタノール（アルコール）。アセチレン＋水→アセトアルデヒド（アルデヒド）。この違いは出発物質の結合次数の差によるものです。入れ替えは超頻出ひっかけです。",
@@ -849,7 +1073,9 @@
         "2_2_rxn_001",
         "2_2_rxn_003"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "エチレンとアセチレンそれぞれに水を付加した場合の生成物について、正しいものを選びなさい。",
+      "tts_explanation": "エチレン＋水→エタノール（アルコール）。アセチレン＋水→アセトアルデヒド（アルデヒド）。この違いは出発物質の結合次数の差によるものです。入れ替えは超頻出ひっかけです。"
     },
     {
       "id": "ch5_2_q018",
@@ -863,32 +1089,40 @@
       "choices": [
         {
           "label": "1",
-          "text": "炭素数が増えると沸点が高くなる。メタンからエタン、プロパン、ブタンの順に沸点が上昇する。分子間力（ファンデルワールス力）が強くなるため。",
-          "is_correct": true
+          "text": "炭素数が増えると沸点が高くなる。CH₄からエタン、プロパン、ブタンの順に沸点が上昇する。分子間力（ファンデルワールス力）が強くなるため。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q018_c1",
+          "tts_text": "炭素数が増えると沸点が高くなる。メタンからエタン、プロパン、ブタンの順に沸点が上昇する。分子間力（ファンデルワールス力）が強くなるため。"
         },
         {
           "label": "2",
           "text": "炭素数が増えると沸点が低くなる。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "高くなる。"
+          "trap_detail": "高くなる。",
+          "choice_id": "ch5_2_q018_c2",
+          "tts_text": "炭素数が増えると沸点が低くなる。"
         },
         {
           "label": "3",
           "text": "すべてのアルカンは気体である。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "炭素五以上は液体、十七以上は固体。"
+          "trap_detail": "炭素五以上は液体、十七以上は固体。",
+          "choice_id": "ch5_2_q018_c3",
+          "tts_text": "すべてのアルカンは気体である。"
         },
         {
           "label": "4",
           "text": "沸点の変化は分子量と無関係。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "分子量に比例して上昇。"
+          "trap_detail": "分子量に比例して上昇。",
+          "choice_id": "ch5_2_q018_c4",
+          "tts_text": "沸点の変化は分子量と無関係。"
         }
       ],
-      "explanation": "アルカンの沸点と炭素数の関係は重要です。炭素一〜四は気体（メタン・エタン・プロパン・ブタン）、五〜十六は液体（ペンタン〜ヘキサデカン）、十七以上は固体（パラフィンろう）です。",
+      "explanation": "アルカンの沸点と炭素数の関係は重要です。炭素一〜四は気体（CH₄・エタン・プロパン・ブタン）、五〜十六は液体（ペンタン〜ヘキサデカン）、十七以上は固体（パラフィンろう）です。",
       "evidence": [
         {
           "source_id": "2_1_def_001",
@@ -898,7 +1132,9 @@
       "related_concept_ids": [
         "2_1_def_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アルカンの沸点について、正しい記述を選びなさい。",
+      "tts_explanation": "アルカンの沸点と炭素数の関係は重要です。炭素一〜四は気体（メタン・エタン・プロパン・ブタン）、五〜十六は液体（ペンタン〜ヘキサデカン）、十七以上は固体（パラフィンろう）です。"
     },
     {
       "id": "ch5_2_q019",
@@ -913,24 +1149,32 @@
         {
           "label": "1",
           "text": "アセチレンに塩化水素を付加すると塩化ビニルが生成する。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q019_c1",
+          "tts_text": "アセチレンに塩化水素を付加すると塩化ビニルが生成する。"
         },
         {
           "label": "2",
           "text": "塩化ビニルはポリ塩化ビニルの原料（モノマー）となる。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q019_c2",
+          "tts_text": "塩化ビニルはポリ塩化ビニルの原料（モノマー）となる。"
         },
         {
           "label": "3",
-          "text": "水銀触媒などを使用する。",
-          "is_correct": false
-        },
-        {
-          "label": "4",
           "text": "エチレンに塩化水素を付加すると塩化ビニルが生成する。",
           "is_correct": true,
           "trap_type": "keyword_swap",
-          "trap_detail": "エチレンではなくアセチレン。エチレンに塩化水素を付加すると塩化エチルが生成。"
+          "trap_detail": "エチレンではなくアセチレン。エチレンに塩化水素を付加すると塩化エチルが生成。",
+          "choice_id": "ch5_2_q019_c3",
+          "tts_text": "エチレンに塩化水素を付加すると塩化ビニルが生成する。"
+        },
+        {
+          "label": "4",
+          "text": "水銀触媒などを使用する。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q019_c4",
+          "tts_text": "水銀触媒などを使用する。"
         }
       ],
       "explanation": "塩化ビニルがアセチレンから得られるのかエチレンから得られるのかの区別は重要です。アセチレン（三重結合）に塩化水素が付加すると二重結合が一つ残った塩化ビニルが生成します。エチレンの場合は飽和の塩化エチルになります。",
@@ -943,7 +1187,9 @@
       "related_concept_ids": [
         "2_2_rxn_003"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "塩化ビニルの製法に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "塩化ビニルがアセチレンから得られるのかエチレンから得られるのかの区別は重要です。アセチレン（三重結合）に塩化水素が付加すると二重結合が一つ残った塩化ビニルが生成します。エチレンの場合は飽和の塩化エチルになります。"
     },
     {
       "id": "ch5_2_q020",
@@ -957,29 +1203,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "「二重三重に色を消す（臭素の脱色）、二重三重に重ねる（付加重合）、二重三重に加える（付加反応）」と覚える。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
-          "text": "この語呂合わせはアルカンの性質を示している。",
-          "is_correct": false,
-          "trap_type": "concept_confusion",
-          "trap_detail": "アルケンやアルキン（不飽和）の性質。"
-        },
-        {
-          "label": "3",
           "text": "「色を消す」とは燃焼のことである。",
           "is_correct": false,
           "trap_type": "concept_confusion",
-          "trap_detail": "臭素水の脱色。"
+          "trap_detail": "臭素水の脱色。",
+          "choice_id": "ch5_2_q020_c1",
+          "tts_text": "「色を消す」とは燃焼のことである。"
         },
         {
-          "label": "4",
+          "label": "2",
           "text": "「重ねる」とは置換反応のことである。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "付加重合。"
+          "trap_detail": "付加重合。",
+          "choice_id": "ch5_2_q020_c2",
+          "tts_text": "「重ねる」とは置換反応のことである。"
+        },
+        {
+          "label": "3",
+          "text": "「二重三重に色を消す（臭素の脱色）、二重三重に重ねる（付加重合）、二重三重に加える（付加反応）」と覚える。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q020_c3",
+          "tts_text": "「二重三重に色を消す（臭素の脱色）、二重三重に重ねる（付加重合）、二重三重に加える（付加反応）」と覚える。"
+        },
+        {
+          "label": "4",
+          "text": "この語呂合わせはアルカンの性質を示している。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "アルケンやアルキン（不飽和）の性質。",
+          "choice_id": "ch5_2_q020_c4",
+          "tts_text": "この語呂合わせはアルカンの性質を示している。"
         }
       ],
       "explanation": "不飽和結合の三つの特徴をリズムよく覚えられる語呂合わせです。①脱色（臭素の付加）②重合（ポリエチレンなど）③付加反応（水素・ハロゲンなどの付加）。",
@@ -992,7 +1246,9 @@
       "related_concept_ids": [
         "2_2_def_004"
       ],
-      "mnemonic": "二重三重に色を消す、重ねる、加える"
+      "mnemonic": "二重三重に色を消す、重ねる、加える",
+      "tts_question": "二重結合や三重結合の特色を示す語呂合わせとして、正しいものを選びなさい。",
+      "tts_explanation": "不飽和結合の三つの特徴をリズムよく覚えられる語呂合わせです。①脱色（臭素の付加）②重合（ポリエチレンなど）③付加反応（水素・ハロゲンなどの付加）。"
     },
     {
       "id": "ch5_2_q021",
@@ -1006,25 +1262,33 @@
       "choices": [
         {
           "label": "1",
-          "text": "アルカンは化学的に比較的安定である。",
-          "is_correct": false
+          "text": "光を当てるとハロゲンとの置換反応が起こる。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q021_c1",
+          "tts_text": "光を当てるとハロゲンとの置換反応が起こる。"
         },
         {
           "label": "2",
-          "text": "光を当てるとハロゲンとの置換反応が起こる。",
-          "is_correct": false
+          "text": "アルカンは化学的に比較的安定である。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q021_c2",
+          "tts_text": "アルカンは化学的に比較的安定である。"
         },
         {
           "label": "3",
           "text": "常温では反応しにくい。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q021_c3",
+          "tts_text": "常温では反応しにくい。"
         },
         {
           "label": "4",
           "text": "アルカンは臭素水を容易に脱色する。",
           "is_correct": true,
           "trap_type": "negation",
-          "trap_detail": "脱色しない。脱色するのはアルケン・アルキン。"
+          "trap_detail": "脱色しない。脱色するのはアルケン・アルキン。",
+          "choice_id": "ch5_2_q021_c4",
+          "tts_text": "アルカンは臭素水を容易に脱色する。"
         }
       ],
       "explanation": "アルカンは飽和なので臭素水を脱色しません。これは飽和と不飽和を区別する最も基本的な実験です。アルカンに臭素水を加えても色は変わりませんが、アルケンを加えると臭素が付加して脱色します。",
@@ -1037,7 +1301,9 @@
       "related_concept_ids": [
         "2_1_def_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アルカンの反応性に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "アルカンは飽和なので臭素水を脱色しません。これは飽和と不飽和を区別する最も基本的な実験です。アルカンに臭素水を加えても色は変わりませんが、アルケンを加えると臭素が付加して脱色します。"
     },
     {
       "id": "ch5_2_q022",
@@ -1051,29 +1317,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "エチレンの二重結合が開いて次々と結合し高分子化合物のポリエチレンができる反応。高温高圧や触媒が必要。ポリ袋やラップなどに利用される。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
           "text": "エチレンの付加重合は縮合重合の一種である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
-          "trap_detail": "付加重合。水は脱離しない。"
+          "trap_detail": "付加重合。水は脱離しない。",
+          "choice_id": "ch5_2_q022_c1",
+          "tts_text": "エチレンの付加重合は縮合重合の一種である。"
+        },
+        {
+          "label": "2",
+          "text": "エチレンの二重結合が開いて次々と結合し高分子化合物のポリエチレンができる反応。高温高圧や触媒が必要。ポリ袋やラップなどに利用される。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q022_c2",
+          "tts_text": "エチレンの二重結合が開いて次々と結合し高分子化合物のポリエチレンができる反応。高温高圧や触媒が必要。ポリ袋やラップなどに利用される。"
         },
         {
           "label": "3",
-          "text": "付加重合でアルカンが生成する。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "高分子化合物（ポリマー）が生成。"
-        },
-        {
-          "label": "4",
           "text": "ポリエチレンはアセチレンから作られる。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "エチレンから。"
+          "trap_detail": "エチレンから。",
+          "choice_id": "ch5_2_q022_c3",
+          "tts_text": "ポリエチレンはアセチレンから作られる。"
+        },
+        {
+          "label": "4",
+          "text": "付加重合でアルカンが生成する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "高分子化合物（ポリマー）が生成。",
+          "choice_id": "ch5_2_q022_c4",
+          "tts_text": "付加重合でアルカンが生成する。"
         }
       ],
       "explanation": "付加重合は二重結合を持つモノマーが次々と連結して長い鎖の高分子になる反応です。水などの小分子は脱離しません。これが縮合重合（水が脱離）との大きな違いです。",
@@ -1086,7 +1360,9 @@
       "related_concept_ids": [
         "2_2_def_004"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "エチレンの付加重合について、正しい記述を選びなさい。",
+      "tts_explanation": "付加重合は二重結合を持つモノマーが次々と連結して長い鎖の高分子になる反応です。水などの小分子は脱離しません。これが縮合重合（水が脱離）との大きな違いです。"
     },
     {
       "id": "ch5_2_q023",
@@ -1101,28 +1377,36 @@
         {
           "label": "1",
           "text": "二重結合のそれぞれの炭素原子に、異なる原子または原子団が結合していること。一方の炭素に同じ原子が二つ結合していると存在しない。",
-          "is_correct": true
+          "is_correct": true,
+          "choice_id": "ch5_2_q023_c1",
+          "tts_text": "二重結合のそれぞれの炭素原子に、異なる原子または原子団が結合していること。一方の炭素に同じ原子が二つ結合していると存在しない。"
         },
         {
           "label": "2",
-          "text": "どんなアルケンにもシスートランス異性体がある。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "条件を満たさないものにはない。"
-        },
-        {
-          "label": "3",
           "text": "エチレンにシスートランス異性体がある。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "エチレンは各炭素に水素二つで条件を満たさない。"
+          "trap_detail": "エチレンは各炭素に水素二つで条件を満たさない。",
+          "choice_id": "ch5_2_q023_c2",
+          "tts_text": "エチレンにシスートランス異性体がある。"
+        },
+        {
+          "label": "3",
+          "text": "どんなアルケンにもシスートランス異性体がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "条件を満たさないものにはない。",
+          "choice_id": "ch5_2_q023_c3",
+          "tts_text": "どんなアルケンにもシスートランス異性体がある。"
         },
         {
           "label": "4",
           "text": "三重結合でもシスートランス異性体が生じる。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "三重結合は直線形なので生じない。"
+          "trap_detail": "三重結合は直線形なので生じない。",
+          "choice_id": "ch5_2_q023_c4",
+          "tts_text": "三重結合でもシスートランス異性体が生じる。"
         }
       ],
       "explanation": "シスートランス異性体の存在には「各炭素に異なる置換基」が必要です。エチレンは両方の炭素に水素二つずつなのでシスートランスなし。二ブテンは各炭素にメチル基と水素が一つずつなので存在します。",
@@ -1135,7 +1419,9 @@
       "related_concept_ids": [
         "2_2_def_002"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "シスートランス異性体が存在する条件として、正しいものを選びなさい。",
+      "tts_explanation": "シスートランス異性体の存在には「各炭素に異なる置換基」が必要です。エチレンは両方の炭素に水素二つずつなのでシスートランスなし。二ブテンは各炭素にメチル基と水素が一つずつなので存在します。"
     },
     {
       "id": "ch5_2_q024",
@@ -1149,25 +1435,33 @@
       "choices": [
         {
           "label": "1",
-          "text": "アルカンは置換反応を起こす。アルケンとアルキンは付加反応を起こす。",
-          "is_correct": false
-        },
-        {
-          "label": "2",
-          "text": "臭素水の脱色はアルケンやアルキンの不飽和結合の検出に使える。",
-          "is_correct": false
-        },
-        {
-          "label": "3",
-          "text": "エチレン＋水→エタノール。アセチレン＋水→アセトアルデヒド。",
-          "is_correct": false
-        },
-        {
-          "label": "4",
           "text": "アルカンは付加反応を起こし臭素水を脱色する。アセチレンに水を付加するとエタノールが得られる。",
           "is_correct": true,
           "trap_type": "multiple_swap",
-          "trap_detail": "二か所すべて誤り。アルカンは置換で脱色しない。アセチレンからはアセトアルデヒド。"
+          "trap_detail": "二か所すべて誤り。アルカンは置換で脱色しない。アセチレンからはアセトアルデヒド。",
+          "choice_id": "ch5_2_q024_c1",
+          "tts_text": "アルカンは付加反応を起こし臭素水を脱色する。アセチレンに水を付加するとエタノールが得られる。"
+        },
+        {
+          "label": "2",
+          "text": "アルカンは置換反応を起こす。アルケンとアルキンは付加反応を起こす。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q024_c2",
+          "tts_text": "アルカンは置換反応を起こす。アルケンとアルキンは付加反応を起こす。"
+        },
+        {
+          "label": "3",
+          "text": "臭素水の脱色はアルケンやアルキンの不飽和結合の検出に使える。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q024_c3",
+          "tts_text": "臭素水の脱色はアルケンやアルキンの不飽和結合の検出に使える。"
+        },
+        {
+          "label": "4",
+          "text": "エチレン＋水→エタノール。アセチレン＋水→アセトアルデヒド。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q024_c4",
+          "tts_text": "エチレン＋水→エタノール。アセチレン＋水→アセトアルデヒド。"
         }
       ],
       "explanation": "脂肪族炭化水素の反応全体を確認する問題です。飽和（アルカン）→置換反応・臭素水脱色なし。不飽和（アルケン・アルキン）→付加反応・臭素水脱色あり。水の付加先によって生成物が変わるのも重要です。",
@@ -1186,7 +1480,9 @@
         "2_2_rxn_001",
         "2_2_rxn_003"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "脂肪族炭化水素の反応に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "脂肪族炭化水素の反応全体を確認する問題です。飽和（アルカン）→置換反応・臭素水脱色なし。不飽和（アルケン・アルキン）→付加反応・臭素水脱色あり。水の付加先によって生成物が変わるのも重要です。"
     },
     {
       "id": "ch5_2_q025",
@@ -1196,36 +1492,44 @@
       "sub_category": "メタンの塩素化の段階",
       "difficulty": 3,
       "question_type": "correct",
-      "question": "メタンの塩素化の進行について、正しいものを選びなさい。",
+      "question": "CH₄の塩素化の進行について、正しいものを選びなさい。",
       "choices": [
         {
           "label": "1",
-          "text": "段階的に水素が塩素に置き換わり、クロロメタン→ジクロロメタン→トリクロロメタン（クロロホルム）→テトラクロロメタン（四塩化炭素）と進行する。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
-          "text": "メタンの塩素化は一段階で終わる。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "四段階まで進行可能。"
-        },
-        {
-          "label": "3",
-          "text": "最初からテトラクロロメタンが主生成物。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "段階的に進行。"
-        },
-        {
-          "label": "4",
           "text": "この反応は暗所で自発的に進行する。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "光（紫外線）が必要。"
+          "trap_detail": "光（紫外線）が必要。",
+          "choice_id": "ch5_2_q025_c1",
+          "tts_text": "この反応は暗所で自発的に進行する。"
+        },
+        {
+          "label": "2",
+          "text": "CH₄の塩素化は一段階で終わる。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "四段階まで進行可能。",
+          "choice_id": "ch5_2_q025_c2",
+          "tts_text": "メタンの塩素化は一段階で終わる。"
+        },
+        {
+          "label": "3",
+          "text": "段階的に水素が塩素に置き換わり、クロロCH₄→ジクロロCH₄→トリクロロCH₄（クロロホルム）→テトラクロロCH₄（四塩化炭素）と進行する。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q025_c3",
+          "tts_text": "段階的に水素が塩素に置き換わり、クロロメタン→ジクロロメタン→トリクロロメタン（クロロホルム）→テトラクロロメタン（四塩化炭素）と進行する。"
+        },
+        {
+          "label": "4",
+          "text": "最初からテトラクロロCH₄が主生成物。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "段階的に進行。",
+          "choice_id": "ch5_2_q025_c4",
+          "tts_text": "最初からテトラクロロメタンが主生成物。"
         }
       ],
-      "explanation": "メタンの塩素化は水素原子が一つずつ塩素に置き換わる連鎖反応です。トリクロロメタン（クロロホルム）は麻酔薬の先駆物質として、テトラクロロメタン（四塩化炭素）はかつて溶剤として使われました。",
+      "explanation": "CH₄の塩素化は水素原子が一つずつ塩素に置き換わる連鎖反応です。トリクロロCH₄（クロロホルム）は麻酔薬の先駆物質として、テトラクロロCH₄（四塩化炭素）はかつて溶剤として使われました。",
       "evidence": [
         {
           "source_id": "2_1_rxn_001",
@@ -1235,7 +1539,9 @@
       "related_concept_ids": [
         "2_1_rxn_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "メタンの塩素化の進行について、正しいものを選びなさい。",
+      "tts_explanation": "メタンの塩素化は水素原子が一つずつ塩素に置き換わる連鎖反応です。トリクロロメタン（クロロホルム）は麻酔薬の先駆物質として、テトラクロロメタン（四塩化炭素）はかつて溶剤として使われました。"
     },
     {
       "id": "ch5_2_q026",
@@ -1250,28 +1556,36 @@
         {
           "label": "1",
           "text": "白金またはニッケル触媒の存在下でエチレンに水素を付加するとエタンが生成する。二重結合が単結合になり飽和炭化水素となる。",
-          "is_correct": true
+          "is_correct": true,
+          "choice_id": "ch5_2_q026_c1",
+          "tts_text": "白金またはニッケル触媒の存在下でエチレンに水素を付加するとエタンが生成する。二重結合が単結合になり飽和炭化水素となる。"
         },
         {
           "label": "2",
           "text": "触媒なしで常温で反応が進行する。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "触媒が必要。"
+          "trap_detail": "触媒が必要。",
+          "choice_id": "ch5_2_q026_c2",
+          "tts_text": "触媒なしで常温で反応が進行する。"
         },
         {
           "label": "3",
-          "text": "エチレンに水素を付加するとメタンが生成する。",
+          "text": "エチレンに水素を付加するとCH₄が生成する。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "エタン。"
+          "trap_detail": "エタン。",
+          "choice_id": "ch5_2_q026_c3",
+          "tts_text": "エチレンに水素を付加するとメタンが生成する。"
         },
         {
           "label": "4",
           "text": "この反応後も二重結合が残る。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "単結合になる。"
+          "trap_detail": "単結合になる。",
+          "choice_id": "ch5_2_q026_c4",
+          "tts_text": "この反応後も二重結合が残る。"
         }
       ],
       "explanation": "水素化は不飽和結合を飽和にする反応で、マーガリンの製造（植物油の水素化）にも応用されています。触媒には白金・パラジウム・ニッケルなどが使われます。",
@@ -1284,7 +1598,9 @@
       "related_concept_ids": [
         "2_2_rxn_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "エチレンに水素を付加する反応について、正しいものを選びなさい。",
+      "tts_explanation": "水素化は不飽和結合を飽和にする反応で、マーガリンの製造（植物油の水素化）にも応用されています。触媒には白金・パラジウム・ニッケルなどが使われます。"
     },
     {
       "id": "ch5_2_q027",
@@ -1298,29 +1614,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "アセチレンに酢酸を酢酸亜鉛触媒で付加すると酢酸ビニルが生成する。酢酸ビニルはポリ酢酸ビニルの原料となる。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
-          "text": "エチレンに酢酸を付加すると酢酸ビニルが生成する。",
-          "is_correct": false,
-          "trap_type": "keyword_swap",
-          "trap_detail": "アセチレン。"
-        },
-        {
-          "label": "3",
           "text": "酢酸ビニルにはすべての結合が単結合である。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "二重結合が残っている。"
+          "trap_detail": "二重結合が残っている。",
+          "choice_id": "ch5_2_q027_c1",
+          "tts_text": "酢酸ビニルにはすべての結合が単結合である。"
         },
         {
-          "label": "4",
+          "label": "2",
           "text": "酢酸ビニルは塩化水素の付加で得られる。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "塩化水素付加では塩化ビニル。酢酸付加で酢酸ビニル。"
+          "trap_detail": "塩化水素付加では塩化ビニル。酢酸付加で酢酸ビニル。",
+          "choice_id": "ch5_2_q027_c2",
+          "tts_text": "酢酸ビニルは塩化水素の付加で得られる。"
+        },
+        {
+          "label": "3",
+          "text": "アセチレンに酢酸を酢酸亜鉛触媒で付加すると酢酸ビニルが生成する。酢酸ビニルはポリ酢酸ビニルの原料となる。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q027_c3",
+          "tts_text": "アセチレンに酢酸を酢酸亜鉛触媒で付加すると酢酸ビニルが生成する。酢酸ビニルはポリ酢酸ビニルの原料となる。"
+        },
+        {
+          "label": "4",
+          "text": "エチレンに酢酸を付加すると酢酸ビニルが生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アセチレン。",
+          "choice_id": "ch5_2_q027_c4",
+          "tts_text": "エチレンに酢酸を付加すると酢酸ビニルが生成する。"
         }
       ],
       "explanation": "アセチレンの三重結合に酢酸が一分子付加すると二重結合が一つ残った酢酸ビニルが生成します。酢酸ビニルが重合するとポリ酢酸ビニル（木工用ボンドの主成分）になります。",
@@ -1333,7 +1657,9 @@
       "related_concept_ids": [
         "2_2_rxn_003"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "酢酸ビニルの製法として、正しいものを選びなさい。",
+      "tts_explanation": "アセチレンの三重結合に酢酸が一分子付加すると二重結合が一つ残った酢酸ビニルが生成します。酢酸ビニルが重合するとポリ酢酸ビニル（木工用ボンドの主成分）になります。"
     },
     {
       "id": "ch5_2_q028",
@@ -1347,29 +1673,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "ブタン（炭素数四）にはノルマルブタンとイソブタン（二メチルプロパン）の二つの構造異性体がある。枝分かれがあると沸点が低くなる傾向がある。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
-          "text": "メタンには構造異性体がある。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "炭素一つなので異性体なし。"
-        },
-        {
-          "label": "3",
           "text": "エタンには構造異性体がある。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "炭素二つなので異性体なし。"
+          "trap_detail": "炭素二つなので異性体なし。",
+          "choice_id": "ch5_2_q028_c1",
+          "tts_text": "エタンには構造異性体がある。"
         },
         {
-          "label": "4",
+          "label": "2",
+          "text": "CH₄には構造異性体がある。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "炭素一つなので異性体なし。",
+          "choice_id": "ch5_2_q028_c2",
+          "tts_text": "メタンには構造異性体がある。"
+        },
+        {
+          "label": "3",
           "text": "枝分かれがあると沸点が高くなる。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "低くなる（分子がコンパクトになり分子間力が弱まる）。"
+          "trap_detail": "低くなる（分子がコンパクトになり分子間力が弱まる）。",
+          "choice_id": "ch5_2_q028_c3",
+          "tts_text": "枝分かれがあると沸点が高くなる。"
+        },
+        {
+          "label": "4",
+          "text": "ブタン（炭素数四）にはノルマルブタンとイソブタン（二メチルプロパン）の二つの構造異性体がある。枝分かれがあると沸点が低くなる傾向がある。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q028_c4",
+          "tts_text": "ブタン（炭素数四）にはノルマルブタンとイソブタン（二メチルプロパン）の二つの構造異性体がある。枝分かれがあると沸点が低くなる傾向がある。"
         }
       ],
       "explanation": "構造異性体は炭素数四以上で出現します。枝分かれした構造は分子全体がコンパクトになり表面積が小さくなるため、分子間力が弱くなり沸点が低下します。",
@@ -1382,7 +1716,9 @@
       "related_concept_ids": [
         "2_1_def_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アルカンの構造異性体について、正しい記述を選びなさい。",
+      "tts_explanation": "構造異性体は炭素数四以上で出現します。枝分かれした構造は分子全体がコンパクトになり表面積が小さくなるため、分子間力が弱くなり沸点が低下します。"
     },
     {
       "id": "ch5_2_q029",
@@ -1397,24 +1733,32 @@
         {
           "label": "1",
           "text": "三重結合を持つ最も簡単なアルキン。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q029_c1",
+          "tts_text": "三重結合を持つ最も簡単なアルキン。"
         },
         {
           "label": "2",
-          "text": "水を付加するとビニルアルコールを経てアセトアルデヒドが得られる。",
-          "is_correct": false
+          "text": "アセチレンはアルケンに分類される。水を付加するとエタノールが直接得られる。燃焼熱が小さく溶接には使えない。",
+          "is_correct": true,
+          "trap_type": "multiple_swap",
+          "trap_detail": "三か所すべて誤り。アルキン。アセトアルデヒド。燃焼熱大きく溶接に使う。",
+          "choice_id": "ch5_2_q029_c2",
+          "tts_text": "アセチレンはアルケンに分類される。水を付加するとエタノールが直接得られる。燃焼熱が小さく溶接には使えない。"
         },
         {
           "label": "3",
           "text": "塩化水素の付加で塩化ビニルが、酢酸の付加で酢酸ビニルが得られる。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q029_c3",
+          "tts_text": "塩化水素の付加で塩化ビニルが、酢酸の付加で酢酸ビニルが得られる。"
         },
         {
           "label": "4",
-          "text": "アセチレンはアルケンに分類される。水を付加するとエタノールが直接得られる。燃焼熱が小さく溶接には使えない。",
-          "is_correct": true,
-          "trap_type": "multiple_swap",
-          "trap_detail": "三か所すべて誤り。アルキン。アセトアルデヒド。燃焼熱大きく溶接に使う。"
+          "text": "水を付加するとビニルアルコールを経てアセトアルデヒドが得られる。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q029_c4",
+          "tts_text": "水を付加するとビニルアルコールを経てアセトアルデヒドが得られる。"
         }
       ],
       "explanation": "アセチレンの章全体を確認する最高難度の問題です。分類（アルキン）、付加反応の生成物（アセトアルデヒド・塩化ビニル・酢酸ビニル）、利用（溶接）すべてを正確に把握しましょう。",
@@ -1437,7 +1781,9 @@
         "2_2_rxn_003",
         "2_2_sub_002"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アセチレンに関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "アセチレンの章全体を確認する最高難度の問題です。分類（アルキン）、付加反応の生成物（アセトアルデヒド・塩化ビニル・酢酸ビニル）、利用（溶接）すべてを正確に把握しましょう。"
     },
     {
       "id": "ch5_2_q030",
@@ -1451,29 +1797,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "アルカンは飽和で置換反応が主。アルケンは二重結合で付加反応が主。アルキンは三重結合で付加反応を起こす。臭素水の脱色は不飽和結合の検出法。シスートランス異性体は二重結合の回転制限で生じる。マルコフニコフ則は水素が多い炭素にさらに水素が付くという経験則。エチレン＋水→エタノール。アセチレン＋水→アセトアルデヒド。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
           "text": "アルカンは不飽和で付加反応。アルケンは三重結合。臭素水の脱色はアルカンで起こる。シスが反対側。マルコフニコフ則は水素が少ない方に付加。アセチレン＋水→エタノール。",
           "is_correct": false,
           "trap_type": "multiple_swap",
-          "trap_detail": "七か所すべて誤り。"
+          "trap_detail": "七か所すべて誤り。",
+          "choice_id": "ch5_2_q030_c1",
+          "tts_text": "アルカンは不飽和で付加反応。アルケンは三重結合。臭素水の脱色はアルカンで起こる。シスが反対側。マルコフニコフ則は水素が少ない方に付加。アセチレン＋水→エタノール。"
         },
         {
-          "label": "3",
+          "label": "2",
           "text": "すべての炭化水素が付加反応を起こし、置換反応を起こすものはない。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "アルカンは置換反応。"
+          "trap_detail": "アルカンは置換反応。",
+          "choice_id": "ch5_2_q030_c2",
+          "tts_text": "すべての炭化水素が付加反応を起こし、置換反応を起こすものはない。"
         },
         {
-          "label": "4",
+          "label": "3",
           "text": "シスートランス異性体はすべてのアルケンに存在する。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "条件を満たすもののみ。"
+          "trap_detail": "条件を満たすもののみ。",
+          "choice_id": "ch5_2_q030_c3",
+          "tts_text": "シスートランス異性体はすべてのアルケンに存在する。"
+        },
+        {
+          "label": "4",
+          "text": "アルカンは飽和で置換反応が主。アルケンは二重結合で付加反応が主。アルキンは三重結合で付加反応を起こす。臭素水の脱色は不飽和結合の検出法。シスートランス異性体は二重結合の回転制限で生じる。マルコフニコフ則は水素が多い炭素にさらに水素が付くという経験則。エチレン＋水→エタノール。アセチレン＋水→アセトアルデヒド。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q030_c4",
+          "tts_text": "アルカンは飽和で置換反応が主。アルケンは二重結合で付加反応が主。アルキンは三重結合で付加反応を起こす。臭素水の脱色は不飽和結合の検出法。シスートランス異性体は二重結合の回転制限で生じる。マルコフニコフ則は水素が多い炭素にさらに水素が付くという経験則。エチレン＋水→エタノール。アセチレン＋水→アセトアルデヒド。"
         }
       ],
       "explanation": "脂肪族炭化水素の全範囲を網羅した最終問題です。",
@@ -1501,7 +1855,9 @@
         "2_2_def_004",
         "2_2_rxn_003"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "脂肪族炭化水素に関する全体の総合記述として、正しいものを選びなさい。",
+      "tts_explanation": "脂肪族炭化水素の全範囲を網羅した最終問題です。"
     },
     {
       "id": "ch5_2_q031",
@@ -1515,29 +1871,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "炭素一つ：メタン、二つ：エタン、三つ：プロパン、四つ：ブタン、五つ：ペンタン。語尾の「アン」がアルカンを表す。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
           "text": "炭素二つの化合物はプロパンである。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "エタン。プロパンは三つ。"
+          "trap_detail": "エタン。プロパンは三つ。",
+          "choice_id": "ch5_2_q031_c1",
+          "tts_text": "炭素二つの化合物はプロパンである。"
+        },
+        {
+          "label": "2",
+          "text": "炭素一つ：CH₄、二つ：エタン、三つ：プロパン、四つ：ブタン、五つ：ペンタン。語尾の「アン」がアルカンを表す。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q031_c2",
+          "tts_text": "炭素一つ：メタン、二つ：エタン、三つ：プロパン、四つ：ブタン、五つ：ペンタン。語尾の「アン」がアルカンを表す。"
         },
         {
           "label": "3",
-          "text": "語尾の「エン」がアルカンを表す。",
-          "is_correct": false,
-          "trap_type": "keyword_swap",
-          "trap_detail": "「エン」はアルケン。アルカンは「アン」。"
-        },
-        {
-          "label": "4",
           "text": "炭素四つの化合物はペンタンである。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "ブタン。ペンタンは五つ。"
+          "trap_detail": "ブタン。ペンタンは五つ。",
+          "choice_id": "ch5_2_q031_c3",
+          "tts_text": "炭素四つの化合物はペンタンである。"
+        },
+        {
+          "label": "4",
+          "text": "語尾の「エン」がアルカンを表す。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "「エン」はアルケン。アルカンは「アン」。",
+          "choice_id": "ch5_2_q031_c4",
+          "tts_text": "語尾の「エン」がアルカンを表す。"
         }
       ],
       "explanation": "語尾で分類を区別します。「アン」はアルカン（単結合）、「エン」はアルケン（二重結合）、「イン」はアルキン（三重結合）。炭素数の接頭辞はメト（一）・エト（二）・プロプ（三）・ブト（四）・ペント（五）です。",
@@ -1550,7 +1914,9 @@
       "related_concept_ids": [
         "2_1_def_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アルカンの命名法として、正しいものを選びなさい。",
+      "tts_explanation": "語尾で分類を区別します。「アン」はアルカン（単結合）、「エン」はアルケン（二重結合）、「イン」はアルキン（三重結合）。炭素数の接頭辞はメト（一）・エト（二）・プロプ（三）・ブト（四）・ペント（五）です。"
     },
     {
       "id": "ch5_2_q032",
@@ -1565,24 +1931,32 @@
         {
           "label": "1",
           "text": "エチレンは二重結合を持つアルケンである。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q032_c1",
+          "tts_text": "エチレンは二重結合を持つアルケンである。"
         },
         {
           "label": "2",
           "text": "アセチレンは三重結合を持つアルキンである。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q032_c2",
+          "tts_text": "アセチレンは三重結合を持つアルキンである。"
         },
         {
           "label": "3",
-          "text": "どちらも不飽和炭化水素で付加反応を起こす。",
-          "is_correct": false
-        },
-        {
-          "label": "4",
           "text": "エチレンは三重結合を持ちアセチレンは二重結合を持つ。",
           "is_correct": true,
           "trap_type": "keyword_swap",
-          "trap_detail": "逆。エチレンが二重、アセチレンが三重。"
+          "trap_detail": "逆。エチレンが二重、アセチレンが三重。",
+          "choice_id": "ch5_2_q032_c3",
+          "tts_text": "エチレンは三重結合を持ちアセチレンは二重結合を持つ。"
+        },
+        {
+          "label": "4",
+          "text": "どちらも不飽和炭化水素で付加反応を起こす。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q032_c4",
+          "tts_text": "どちらも不飽和炭化水素で付加反応を起こす。"
         }
       ],
       "explanation": "エチレンは二重結合をもつアルケン、アセチレンは三重結合をもつアルキン。この入れ替えは基本ですが見落としやすいポイントです。",
@@ -1600,7 +1974,9 @@
         "2_2_sub_001",
         "2_2_sub_002"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "エチレンとアセチレンに関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "エチレンは二重結合をもつアルケン、アセチレンは三重結合をもつアルキン。この入れ替えは基本ですが見落としやすいポイントです。"
     },
     {
       "id": "ch5_2_q033",
@@ -1614,25 +1990,33 @@
       "choices": [
         {
           "label": "1",
-          "text": "光（紫外線）を当てると反応が進行する。",
-          "is_correct": false
+          "text": "高温でも反応が起こる。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q033_c1",
+          "tts_text": "高温でも反応が起こる。"
         },
         {
           "label": "2",
-          "text": "高温でも反応が起こる。",
-          "is_correct": false
+          "text": "光（紫外線）を当てると反応が進行する。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q033_c2",
+          "tts_text": "光（紫外線）を当てると反応が進行する。"
         },
         {
           "label": "3",
-          "text": "メタンの塩素化では塩化水素も生成する。",
-          "is_correct": false
+          "text": "CH₄の塩素化では塩化水素も生成する。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q033_c3",
+          "tts_text": "メタンの塩素化では塩化水素も生成する。"
         },
         {
           "label": "4",
           "text": "暗所での常温で自発的に反応が進行する。",
           "is_correct": true,
           "trap_type": "negation",
-          "trap_detail": "光や高温などのエネルギーが必要。"
+          "trap_detail": "光や高温などのエネルギーが必要。",
+          "choice_id": "ch5_2_q033_c4",
+          "tts_text": "暗所での常温で自発的に反応が進行する。"
         }
       ],
       "explanation": "アルカンは飽和で安定なため常温暗所では反応しません。光（紫外線）を当てるか高温にしてラジカルを発生させる必要があります。この活性化エネルギーの壁がアルカンの安定性の根拠です。",
@@ -1645,7 +2029,9 @@
       "related_concept_ids": [
         "2_1_rxn_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アルカンの置換反応に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "アルカンは飽和で安定なため常温暗所では反応しません。光（紫外線）を当てるか高温にしてラジカルを発生させる必要があります。この活性化エネルギーの壁がアルカンの安定性の根拠です。"
     },
     {
       "id": "ch5_2_q034",
@@ -1659,32 +2045,40 @@
       "choices": [
         {
           "label": "1",
-          "text": "二つの炭素原子と二つの水素原子がすべて一直線上に並んだ直線形。三重結合の結合角は百八十度。",
-          "is_correct": true
+          "text": "二つの炭素原子と二つの水素原子がすべて一直線上に並んだ直線形。三重結合の結合角は180℃。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q034_c1",
+          "tts_text": "二つの炭素原子と二つの水素原子がすべて一直線上に並んだ直線形。三重結合の結合角は百八十度。"
         },
         {
           "label": "2",
           "text": "アセチレンは正四面体構造である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
-          "trap_detail": "正四面体はメタン。"
+          "trap_detail": "正四面体はメタン。",
+          "choice_id": "ch5_2_q034_c2",
+          "tts_text": "アセチレンは正四面体構造である。"
         },
         {
           "label": "3",
-          "text": "アセチレンは折れ線型である。",
+          "text": "アセチレンの結合角は約109.5℃である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
-          "trap_detail": "折れ線型は水。"
+          "trap_detail": "百九点五度はメタン。アセチレンは百八十度。",
+          "choice_id": "ch5_2_q034_c3",
+          "tts_text": "アセチレンの結合角は約百九点五度である。"
         },
         {
           "label": "4",
-          "text": "アセチレンの結合角は約百九点五度である。",
+          "text": "アセチレンは折れ線型である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
-          "trap_detail": "百九点五度はメタン。アセチレンは百八十度。"
+          "trap_detail": "折れ線型は水。",
+          "choice_id": "ch5_2_q034_c4",
+          "tts_text": "アセチレンは折れ線型である。"
         }
       ],
-      "explanation": "三重結合の炭素は直線形の配置をとります。メタン（正四面体・百九点五度）、エチレン（平面三角形・約百二十度）、アセチレン（直線形・百八十度）と結合次数に応じて構造が変わります。",
+      "explanation": "三重結合の炭素は直線形の配置をとります。CH₄（正四面体・109.5℃）、エチレン（平面三角形・約120℃）、アセチレン（直線形・180℃）と結合次数に応じて構造が変わります。",
       "evidence": [
         {
           "source_id": "2_2_def_004",
@@ -1694,7 +2088,9 @@
       "related_concept_ids": [
         "2_2_def_004"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アセチレンの分子構造として、正しいものを選びなさい。",
+      "tts_explanation": "三重結合の炭素は直線形の配置をとります。メタン（正四面体・百九点五度）、エチレン（平面三角形・約百二十度）、アセチレン（直線形・百八十度）と結合次数に応じて構造が変わります。"
     },
     {
       "id": "ch5_2_q035",
@@ -1709,28 +2105,36 @@
         {
           "label": "1",
           "text": "付加重合は付加反応の一種で、多数のモノマーが二重結合を開いて次々と結合して高分子を形成する反応。ポリエチレンが代表例。",
-          "is_correct": true
+          "is_correct": true,
+          "choice_id": "ch5_2_q035_c1",
+          "tts_text": "付加重合は付加反応の一種で、多数のモノマーが二重結合を開いて次々と結合して高分子を形成する反応。ポリエチレンが代表例。"
         },
         {
           "label": "2",
-          "text": "付加重合は縮合反応の一種である。",
-          "is_correct": false,
-          "trap_type": "concept_confusion",
-          "trap_detail": "付加反応の一種。"
-        },
-        {
-          "label": "3",
           "text": "付加重合では水が脱離する。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "水は脱離しない。水が脱離するのは縮合重合。"
+          "trap_detail": "水は脱離しない。水が脱離するのは縮合重合。",
+          "choice_id": "ch5_2_q035_c2",
+          "tts_text": "付加重合では水が脱離する。"
+        },
+        {
+          "label": "3",
+          "text": "付加重合は縮合反応の一種である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "付加反応の一種。",
+          "choice_id": "ch5_2_q035_c3",
+          "tts_text": "付加重合は縮合反応の一種である。"
         },
         {
           "label": "4",
           "text": "アルカンが付加重合する。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "二重結合を持つアルケンが重合する。"
+          "trap_detail": "二重結合を持つアルケンが重合する。",
+          "choice_id": "ch5_2_q035_c4",
+          "tts_text": "アルカンが付加重合する。"
         }
       ],
       "explanation": "付加重合と縮合重合の区別は重要です。付加重合：モノマーの二重結合が開いて連結（副生成物なし）。縮合重合：モノマー同士が水などの小分子を脱離して連結。",
@@ -1743,7 +2147,9 @@
       "related_concept_ids": [
         "2_2_def_004"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "付加反応と付加重合の関係として、正しいものを選びなさい。",
+      "tts_explanation": "付加重合と縮合重合の区別は重要です。付加重合：モノマーの二重結合が開いて連結（副生成物なし）。縮合重合：モノマー同士が水などの小分子を脱離して連結。"
     },
     {
       "id": "ch5_2_q036",
@@ -1757,32 +2163,40 @@
       "choices": [
         {
           "label": "1",
-          "text": "二つの炭素と四つの水素がすべて同一平面上に並ぶ平面構造。二重結合の結合角は約百二十度。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
           "text": "エチレンは正四面体構造である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
-          "trap_detail": "メタン。"
+          "trap_detail": "メタン。",
+          "choice_id": "ch5_2_q036_c1",
+          "tts_text": "エチレンは正四面体構造である。"
+        },
+        {
+          "label": "2",
+          "text": "エチレンの結合角は180℃である。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "百八十度はアセチレン。百二十度がエチレン。",
+          "choice_id": "ch5_2_q036_c2",
+          "tts_text": "エチレンの結合角は百八十度である。"
         },
         {
           "label": "3",
           "text": "エチレンは直線形である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
-          "trap_detail": "アセチレン。"
+          "trap_detail": "アセチレン。",
+          "choice_id": "ch5_2_q036_c3",
+          "tts_text": "エチレンは直線形である。"
         },
         {
           "label": "4",
-          "text": "エチレンの結合角は百八十度である。",
-          "is_correct": false,
-          "trap_type": "concept_confusion",
-          "trap_detail": "百八十度はアセチレン。百二十度がエチレン。"
+          "text": "二つの炭素と四つの水素がすべて同一平面上に並ぶ平面構造。二重結合の結合角は約120℃。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q036_c4",
+          "tts_text": "二つの炭素と四つの水素がすべて同一平面上に並ぶ平面構造。二重結合の結合角は約百二十度。"
         }
       ],
-      "explanation": "エチレンの二重結合では炭素がsp二混成軌道をとり、三つの結合が約百二十度の角度で平面上に広がります。すべての原子が同一平面上にあるのがエチレンの大きな特徴です。",
+      "explanation": "エチレンの二重結合では炭素がsp二混成軌道をとり、三つの結合が約120℃の角度で平面上に広がります。すべての原子が同一平面上にあるのがエチレンの大きな特徴です。",
       "evidence": [
         {
           "source_id": "2_2_def_001",
@@ -1792,7 +2206,9 @@
       "related_concept_ids": [
         "2_2_def_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "エチレンの分子構造として、正しいものを選びなさい。",
+      "tts_explanation": "エチレンの二重結合では炭素がsp二混成軌道をとり、三つの結合が約百二十度の角度で平面上に広がります。すべての原子が同一平面上にあるのがエチレンの大きな特徴です。"
     },
     {
       "id": "ch5_2_q037",
@@ -1806,29 +2222,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "マルコフニコフ則に従い二プロパノール（イソプロパノール）が主生成物となる。ヒドロキシ基は中央の炭素に結合する。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
           "text": "一プロパノールが主生成物となる。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "二プロパノールが主生成物。"
+          "trap_detail": "二プロパノールが主生成物。",
+          "choice_id": "ch5_2_q037_c1",
+          "tts_text": "一プロパノールが主生成物となる。"
+        },
+        {
+          "label": "2",
+          "text": "マルコフニコフ則に従い二プロパノール（イソプロパノール）が主生成物となる。ヒドロキシ基は中央の炭素に結合する。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q037_c2",
+          "tts_text": "マルコフニコフ則に従い二プロパノール（イソプロパノール）が主生成物となる。ヒドロキシ基は中央の炭素に結合する。"
         },
         {
           "label": "3",
           "text": "プロパンアルデヒドが生成する。",
           "is_correct": false,
           "trap_type": "concept_confusion",
-          "trap_detail": "アルデヒドはアセチレンの水付加。"
+          "trap_detail": "アルデヒドはアセチレンの水付加。",
+          "choice_id": "ch5_2_q037_c3",
+          "tts_text": "プロパンアルデヒドが生成する。"
         },
         {
           "label": "4",
           "text": "マルコフニコフ則は適用できない。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "非対称アルケンなので適用される。"
+          "trap_detail": "非対称アルケンなので適用される。",
+          "choice_id": "ch5_2_q037_c4",
+          "tts_text": "マルコフニコフ則は適用できない。"
         }
       ],
       "explanation": "プロペンの二重結合（炭素一と炭素二の間）に水が付加するとき、水素二つの末端炭素にさらに水素が、水素一つの中央炭素にヒドロキシ基が結合して二プロパノールが主生成物になります。",
@@ -1841,7 +2265,9 @@
       "related_concept_ids": [
         "2_2_law_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "プロペンに水を付加した場合の主生成物について、正しいものを選びなさい。",
+      "tts_explanation": "プロペンの二重結合（炭素一と炭素二の間）に水が付加するとき、水素二つの末端炭素にさらに水素が、水素一つの中央炭素にヒドロキシ基が結合して二プロパノールが主生成物になります。"
     },
     {
       "id": "ch5_2_q038",
@@ -1855,29 +2281,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "極性が小さいため水に溶けにくく有機溶媒に溶けやすい。ヘキサンやオクタンは有機溶媒として使われる。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
-          "text": "アルカンは水に非常によく溶ける。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "溶けにくい。"
-        },
-        {
-          "label": "3",
           "text": "アルカンは極性が大きい。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "小さい。"
+          "trap_detail": "小さい。",
+          "choice_id": "ch5_2_q038_c1",
+          "tts_text": "アルカンは極性が大きい。"
         },
         {
-          "label": "4",
+          "label": "2",
           "text": "アルカンは有機溶媒に溶けにくい。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "溶けやすい。"
+          "trap_detail": "溶けやすい。",
+          "choice_id": "ch5_2_q038_c2",
+          "tts_text": "アルカンは有機溶媒に溶けにくい。"
+        },
+        {
+          "label": "3",
+          "text": "極性が小さいため水に溶けにくく有機溶媒に溶けやすい。ヘキサンやオクタンは有機溶媒として使われる。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q038_c3",
+          "tts_text": "極性が小さいため水に溶けにくく有機溶媒に溶けやすい。ヘキサンやオクタンは有機溶媒として使われる。"
+        },
+        {
+          "label": "4",
+          "text": "アルカンは水に非常によく溶ける。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "溶けにくい。",
+          "choice_id": "ch5_2_q038_c4",
+          "tts_text": "アルカンは水に非常によく溶ける。"
         }
       ],
       "explanation": "アルカンは非極性分子なので「似たものは似たものを溶かす」の原則に従い非極性の有機溶媒によく溶けますが、極性の大きい水には溶けません。これは油と水が混ざらないのと同じ原理です。",
@@ -1890,7 +2324,9 @@
       "related_concept_ids": [
         "2_1_def_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アルカンの溶解性として正しいものを選びなさい。",
+      "tts_explanation": "アルカンは非極性分子なので「似たものは似たものを溶かす」の原則に従い非極性の有機溶媒によく溶けますが、極性の大きい水には溶けません。これは油と水が混ざらないのと同じ原理です。"
     },
     {
       "id": "ch5_2_q039",
@@ -1904,25 +2340,33 @@
       "choices": [
         {
           "label": "1",
-          "text": "塩化ビニルはポリ塩化ビニルの原料である。",
-          "is_correct": false
+          "text": "アセトアルデヒドはアセチレンに水を付加して得られる。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q039_c1",
+          "tts_text": "アセトアルデヒドはアセチレンに水を付加して得られる。"
         },
         {
           "label": "2",
           "text": "酢酸ビニルはポリ酢酸ビニルの原料である。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q039_c2",
+          "tts_text": "酢酸ビニルはポリ酢酸ビニルの原料である。"
         },
         {
           "label": "3",
-          "text": "アセトアルデヒドはアセチレンに水を付加して得られる。",
-          "is_correct": false
-        },
-        {
-          "label": "4",
           "text": "塩化ビニルをさらに付加重合するとポリ酢酸ビニルになる。",
           "is_correct": true,
           "trap_type": "keyword_swap",
-          "trap_detail": "塩化ビニルの重合はポリ塩化ビニル。ポリ酢酸ビニルは酢酸ビニルの重合。"
+          "trap_detail": "塩化ビニルの重合はポリ塩化ビニル。ポリ酢酸ビニルは酢酸ビニルの重合。",
+          "choice_id": "ch5_2_q039_c3",
+          "tts_text": "塩化ビニルをさらに付加重合するとポリ酢酸ビニルになる。"
+        },
+        {
+          "label": "4",
+          "text": "塩化ビニルはポリ塩化ビニルの原料である。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q039_c4",
+          "tts_text": "塩化ビニルはポリ塩化ビニルの原料である。"
         }
       ],
       "explanation": "モノマーとポリマーの対応を正確に覚えましょう。塩化ビニル→ポリ塩化ビニル（PVC、水道管やビニル袋）。酢酸ビニル→ポリ酢酸ビニル（木工用接着剤）。名前から対応は推測できます。",
@@ -1935,7 +2379,9 @@
       "related_concept_ids": [
         "2_2_rxn_003"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アセチレンの付加生成物に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "モノマーとポリマーの対応を正確に覚えましょう。塩化ビニル→ポリ塩化ビニル（PVC、水道管やビニル袋）。酢酸ビニル→ポリ酢酸ビニル（木工用接着剤）。名前から対応は推測できます。"
     },
     {
       "id": "ch5_2_q040",
@@ -1949,32 +2395,40 @@
       "choices": [
         {
           "label": "1",
-          "text": "完全燃焼すると二酸化炭素と水が生成する。炭素数が大きいほど発熱量が大きい。メタンの燃焼は都市ガスのエネルギー源。",
-          "is_correct": true
+          "text": "完全燃焼でCOが生成する。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "一酸化炭素は不完全燃焼。",
+          "choice_id": "ch5_2_q040_c1",
+          "tts_text": "完全燃焼で一酸化炭素が生成する。"
         },
         {
           "label": "2",
           "text": "アルカンは燃焼しない。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "可燃性。"
+          "trap_detail": "可燃性。",
+          "choice_id": "ch5_2_q040_c2",
+          "tts_text": "アルカンは燃焼しない。"
         },
         {
           "label": "3",
-          "text": "完全燃焼で一酸化炭素が生成する。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "一酸化炭素は不完全燃焼。"
-        },
-        {
-          "label": "4",
           "text": "炭素数が大きいほど発熱量が小さい。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "大きい。"
+          "trap_detail": "大きい。",
+          "choice_id": "ch5_2_q040_c3",
+          "tts_text": "炭素数が大きいほど発熱量が小さい。"
+        },
+        {
+          "label": "4",
+          "text": "完全燃焼するとCO₂と水が生成する。炭素数が大きいほど発熱量が大きい。CH₄の燃焼は都市ガスのエネルギー源。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q040_c4",
+          "tts_text": "完全燃焼すると二酸化炭素と水が生成する。炭素数が大きいほど発熱量が大きい。メタンの燃焼は都市ガスのエネルギー源。"
         }
       ],
-      "explanation": "アルカンの完全燃焼の一般式はシーエヌエイチ二エヌプラス二＋（三エヌプラス一）割る二の酸素→エヌの二酸化炭素＋（エヌプラス一）の水です。天然ガス・プロパンガスなどの燃料はこの反応を利用しています。",
+      "explanation": "アルカンの完全燃焼の一般式はシーエヌエイチ二エヌプラス二＋（三エヌプラス一）割る二の酸素→エヌのCO₂＋（エヌプラス一）の水です。天然ガス・プロパンガスなどの燃料はこの反応を利用しています。",
       "evidence": [
         {
           "source_id": "2_1_sub_001",
@@ -1984,7 +2438,9 @@
       "related_concept_ids": [
         "2_1_sub_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アルカンの燃焼について、正しい記述を選びなさい。",
+      "tts_explanation": "アルカンの完全燃焼の一般式はシーエヌエイチ二エヌプラス二＋（三エヌプラス一）割る二の酸素→エヌの二酸化炭素＋（エヌプラス一）の水です。天然ガス・プロパンガスなどの燃料はこの反応を利用しています。"
     },
     {
       "id": "ch5_2_q041",
@@ -1998,25 +2454,33 @@
       "choices": [
         {
           "label": "1",
-          "text": "飽和炭化水素はすべて単結合のみを含む。",
-          "is_correct": false
-        },
-        {
-          "label": "2",
-          "text": "不飽和炭化水素は二重結合や三重結合を含む。",
-          "is_correct": false
-        },
-        {
-          "label": "3",
-          "text": "アルカンは飽和炭化水素の代表例。",
-          "is_correct": false
-        },
-        {
-          "label": "4",
           "text": "不飽和炭化水素は単結合のみを持ち付加反応を起こさない。",
           "is_correct": true,
           "trap_type": "keyword_swap",
-          "trap_detail": "不飽和は多重結合を含み付加反応を起こす。単結合のみは飽和。"
+          "trap_detail": "不飽和は多重結合を含み付加反応を起こす。単結合のみは飽和。",
+          "choice_id": "ch5_2_q041_c1",
+          "tts_text": "不飽和炭化水素は単結合のみを持ち付加反応を起こさない。"
+        },
+        {
+          "label": "2",
+          "text": "アルカンは飽和炭化水素の代表例。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q041_c2",
+          "tts_text": "アルカンは飽和炭化水素の代表例。"
+        },
+        {
+          "label": "3",
+          "text": "飽和炭化水素はすべて単結合のみを含む。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q041_c3",
+          "tts_text": "飽和炭化水素はすべて単結合のみを含む。"
+        },
+        {
+          "label": "4",
+          "text": "不飽和炭化水素は二重結合や三重結合を含む。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q041_c4",
+          "tts_text": "不飽和炭化水素は二重結合や三重結合を含む。"
         }
       ],
       "explanation": "飽和と不飽和の定義の入れ替えは基本です。飽和は単結合のみは「満席」。不飽和は多重結合含むは「空席あり→付加反応可能」。",
@@ -2034,7 +2498,9 @@
         "2_1_def_001",
         "2_2_def_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "飽和と不飽和の定義に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "飽和と不飽和の定義の入れ替えは基本です。飽和は単結合のみは「満席」。不飽和は多重結合含むは「空席あり→付加反応可能」。"
     },
     {
       "id": "ch5_2_q042",
@@ -2049,28 +2515,36 @@
         {
           "label": "1",
           "text": "シス二ブテンとトランス二ブテンが存在する。シスはメチル基が同じ側、トランスは反対側にある配置。構造異性体ではなく立体異性体（幾何異性体）。",
-          "is_correct": true
+          "is_correct": true,
+          "choice_id": "ch5_2_q042_c1",
+          "tts_text": "シス二ブテンとトランス二ブテンが存在する。シスはメチル基が同じ側、トランスは反対側にある配置。構造異性体ではなく立体異性体（幾何異性体）。"
         },
         {
           "label": "2",
-          "text": "二ブテンにシスートランス異性体は存在しない。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "存在する。"
-        },
-        {
-          "label": "3",
-          "text": "シスとトランスは構造異性体である。",
-          "is_correct": false,
-          "trap_type": "keyword_swap",
-          "trap_detail": "立体異性体（幾何異性体）。"
-        },
-        {
-          "label": "4",
           "text": "エチレンにもシスートランス異性体がある。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "ない（各炭素に同じ水素原子が二つ）。"
+          "trap_detail": "ない（各炭素に同じ水素原子が二つ）。",
+          "choice_id": "ch5_2_q042_c2",
+          "tts_text": "エチレンにもシスートランス異性体がある。"
+        },
+        {
+          "label": "3",
+          "text": "二ブテンにシスートランス異性体は存在しない。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "存在する。",
+          "choice_id": "ch5_2_q042_c3",
+          "tts_text": "二ブテンにシスートランス異性体は存在しない。"
+        },
+        {
+          "label": "4",
+          "text": "シスとトランスは構造異性体である。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "立体異性体（幾何異性体）。",
+          "choice_id": "ch5_2_q042_c4",
+          "tts_text": "シスとトランスは構造異性体である。"
         }
       ],
       "explanation": "二ブテンの二重結合の各炭素にはメチル基と水素が一つずつ結合しています。メチル基が二重結合の同じ側にあるのがシス、反対側がトランスです。シスの方が融点が低く沸点がやや高い傾向があります。",
@@ -2083,7 +2557,9 @@
       "related_concept_ids": [
         "2_2_def_002"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "二ブテンの異性体として、正しいものを選びなさい。",
+      "tts_explanation": "二ブテンの二重結合の各炭素にはメチル基と水素が一つずつ結合しています。メチル基が二重結合の同じ側にあるのがシス、反対側がトランスです。シスの方が融点が低く沸点がやや高い傾向があります。"
     },
     {
       "id": "ch5_2_q043",
@@ -2097,32 +2573,40 @@
       "choices": [
         {
           "label": "1",
-          "text": "エタノールに濃硫酸を加えて約百七十度に加熱すると脱水反応でエチレンが生成する。これは分子内脱水（消去反応）。",
-          "is_correct": true
+          "text": "エタノールを140℃に加熱するとエチレンが生成する。",
+          "is_correct": false,
+          "trap_type": "condition_change",
+          "trap_detail": "百四十度ではジエチルエーテルが主生成物（分子間脱水）。",
+          "choice_id": "ch5_2_q043_c1",
+          "tts_text": "エタノールを百四十度に加熱するとエチレンが生成する。"
         },
         {
           "label": "2",
-          "text": "エタノールを百四十度に加熱するとエチレンが生成する。",
-          "is_correct": false,
-          "trap_type": "condition_change",
-          "trap_detail": "百四十度ではジエチルエーテルが主生成物（分子間脱水）。"
+          "text": "エタノールに濃硫酸を加えて約170℃に加熱すると脱水反応でエチレンが生成する。これは分子内脱水（消去反応）。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q043_c2",
+          "tts_text": "エタノールに濃硫酸を加えて約百七十度に加熱すると脱水反応でエチレンが生成する。これは分子内脱水（消去反応）。"
         },
         {
           "label": "3",
-          "text": "メタノールに濃硫酸を加えるとエチレンが生成する。",
-          "is_correct": false,
-          "trap_type": "keyword_swap",
-          "trap_detail": "エタノール。"
-        },
-        {
-          "label": "4",
           "text": "エタノールの脱水では水素が発生する。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "水が脱離。"
+          "trap_detail": "水が脱離。",
+          "choice_id": "ch5_2_q043_c3",
+          "tts_text": "エタノールの脱水では水素が発生する。"
+        },
+        {
+          "label": "4",
+          "text": "メタノールに濃硫酸を加えるとエチレンが生成する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "エタノール。",
+          "choice_id": "ch5_2_q043_c4",
+          "tts_text": "メタノールに濃硫酸を加えるとエチレンが生成する。"
         }
       ],
-      "explanation": "エタノールの脱水反応は温度で生成物が変わります。約百七十度→分子内脱水→エチレン（アルケン）。約百四十度→分子間脱水→ジエチルエーテル。この温度の違いは非常に重要です。",
+      "explanation": "エタノールの脱水反応は温度で生成物が変わります。約170℃→分子内脱水→エチレン（アルケン）。約140℃→分子間脱水→ジエチルエーテル。この温度の違いは非常に重要です。",
       "evidence": [
         {
           "source_id": "2_2_sub_001",
@@ -2132,7 +2616,9 @@
       "related_concept_ids": [
         "2_2_sub_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "エチレンの実験室での製法として、正しいものを選びなさい。",
+      "tts_explanation": "エタノールの脱水反応は温度で生成物が変わります。約百七十度→分子内脱水→エチレン（アルケン）。約百四十度→分子間脱水→ジエチルエーテル。この温度の違いは非常に重要です。"
     },
     {
       "id": "ch5_2_q044",
@@ -2146,32 +2632,40 @@
       "choices": [
         {
           "label": "1",
-          "text": "カーバイド（炭化カルシウム）に水を加えるとアセチレンと水酸化カルシウムが生成する。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
-          "text": "カーバイドに塩酸を加えるとアセチレンが発生する。",
-          "is_correct": false,
-          "trap_type": "keyword_swap",
-          "trap_detail": "水を加える。"
-        },
-        {
-          "label": "3",
           "text": "カーバイドからエチレンが発生する。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "アセチレン。"
+          "trap_detail": "アセチレン。",
+          "choice_id": "ch5_2_q044_c1",
+          "tts_text": "カーバイドからエチレンが発生する。"
+        },
+        {
+          "label": "2",
+          "text": "カーバイド（炭化カルシウム）に水を加えるとアセチレンとCa(OH)₂が生成する。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q044_c2",
+          "tts_text": "カーバイド（炭化カルシウム）に水を加えるとアセチレンと水酸化カルシウムが生成する。"
+        },
+        {
+          "label": "3",
+          "text": "カーバイドに塩酸を加えるとアセチレンが発生する。",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "水を加える。",
+          "choice_id": "ch5_2_q044_c3",
+          "tts_text": "カーバイドに塩酸を加えるとアセチレンが発生する。"
         },
         {
           "label": "4",
-          "text": "アセチレンはメタンの塩素化で得られる。",
+          "text": "アセチレンはCH₄の塩素化で得られる。",
           "is_correct": false,
           "trap_type": "concept_confusion",
-          "trap_detail": "全く別の反応。"
+          "trap_detail": "全く別の反応。",
+          "choice_id": "ch5_2_q044_c4",
+          "tts_text": "アセチレンはメタンの塩素化で得られる。"
         }
       ],
-      "explanation": "カーバイド（炭化カルシウム）と水の反応はアセチレンの古典的な製法です。かつてはアセチレンランプとしてカーバイドが照明に使われていました。水酸化カルシウム（消石灰）が副生成物です。",
+      "explanation": "カーバイド（炭化カルシウム）と水の反応はアセチレンの古典的な製法です。かつてはアセチレンランプとしてカーバイドが照明に使われていました。Ca(OH)₂（消石灰）が副生成物です。",
       "evidence": [
         {
           "source_id": "2_2_sub_002",
@@ -2181,7 +2675,9 @@
       "related_concept_ids": [
         "2_2_sub_002"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "アセチレンの実験室での製法として、正しいものを選びなさい。",
+      "tts_explanation": "カーバイド（炭化カルシウム）と水の反応はアセチレンの古典的な製法です。かつてはアセチレンランプとしてカーバイドが照明に使われていました。水酸化カルシウム（消石灰）が副生成物です。"
     },
     {
       "id": "ch5_2_q045",
@@ -2195,25 +2691,33 @@
       "choices": [
         {
           "label": "1",
-          "text": "アルカンが同じ炭素数で最も水素が多い。",
-          "is_correct": false
+          "text": "アルキンが同じ炭素数で最も水素が多い。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "アルカンが最多。アルキンが最少。",
+          "choice_id": "ch5_2_q045_c1",
+          "tts_text": "アルキンが同じ炭素数で最も水素が多い。"
         },
         {
           "label": "2",
-          "text": "アルケンはアルカンより水素が二つ少ない。",
-          "is_correct": false
+          "text": "アルカンが同じ炭素数で最も水素が多い。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q045_c2",
+          "tts_text": "アルカンが同じ炭素数で最も水素が多い。"
         },
         {
           "label": "3",
           "text": "アルキンはアルケンより水素が二つ少ない。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q045_c3",
+          "tts_text": "アルキンはアルケンより水素が二つ少ない。"
         },
         {
           "label": "4",
-          "text": "アルキンが同じ炭素数で最も水素が多い。",
-          "is_correct": true,
-          "trap_type": "keyword_swap",
-          "trap_detail": "アルカンが最多。アルキンが最少。"
+          "text": "アルケンはアルカンより水素が二つ少ない。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q045_c4",
+          "tts_text": "アルケンはアルカンより水素が二つ少ない。"
         }
       ],
       "explanation": "多重結合が増えるほど水素が減ります。炭素エヌ個で比較すると、アルカン（二エヌ＋二）＞アルケン（二エヌ）＞アルキン（二エヌ−二）の順です。",
@@ -2232,7 +2736,9 @@
         "2_2_def_001",
         "2_2_def_004"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "炭化水素の一般式の水素数に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "多重結合が増えるほど水素が減ります。炭素エヌ個で比較すると、アルカン（二エヌ＋二）＞アルケン（二エヌ）＞アルキン（二エヌ−二）の順です。"
     },
     {
       "id": "ch5_2_q046",
@@ -2247,28 +2753,36 @@
         {
           "label": "1",
           "text": "ポリエチレンの原料。エタノールの原料（水の付加）。酸化エチレンやエチレングリコールの原料。果実の追熟促進にも利用。",
-          "is_correct": true
+          "is_correct": true,
+          "choice_id": "ch5_2_q046_c1",
+          "tts_text": "ポリエチレンの原料。エタノールの原料（水の付加）。酸化エチレンやエチレングリコールの原料。果実の追熟促進にも利用。"
         },
         {
           "label": "2",
           "text": "エチレンは工業的に利用されない。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "最も多く生産される有機化合物の一つ。"
+          "trap_detail": "最も多く生産される有機化合物の一つ。",
+          "choice_id": "ch5_2_q046_c2",
+          "tts_text": "エチレンは工業的に利用されない。"
         },
         {
           "label": "3",
-          "text": "エチレンは溶接にのみ使われる。",
-          "is_correct": false,
-          "trap_type": "concept_confusion",
-          "trap_detail": "溶接はアセチレン。"
-        },
-        {
-          "label": "4",
           "text": "エチレンから塩化ビニルが直接得られる。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "塩化ビニルはアセチレンから。エチレンからは塩化エチル。"
+          "trap_detail": "塩化ビニルはアセチレンから。エチレンからは塩化エチル。",
+          "choice_id": "ch5_2_q046_c3",
+          "tts_text": "エチレンから塩化ビニルが直接得られる。"
+        },
+        {
+          "label": "4",
+          "text": "エチレンは溶接にのみ使われる。",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "溶接はアセチレン。",
+          "choice_id": "ch5_2_q046_c4",
+          "tts_text": "エチレンは溶接にのみ使われる。"
         }
       ],
       "explanation": "エチレンは石油化学工業の最も基本的な原料です。年間生産量が最も多い有機化合物で、ポリエチレン（包装材）、エタノール（工業用アルコール）、エチレングリコール（不凍液）など多数の化学製品の出発物質です。",
@@ -2281,7 +2795,9 @@
       "related_concept_ids": [
         "2_2_sub_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "エチレンの工業的用途として、正しいものを選びなさい。",
+      "tts_explanation": "エチレンは石油化学工業の最も基本的な原料です。年間生産量が最も多い有機化合物で、ポリエチレン（包装材）、エタノール（工業用アルコール）、エチレングリコール（不凍液）など多数の化学製品の出発物質です。"
     },
     {
       "id": "ch5_2_q047",
@@ -2295,28 +2811,36 @@
       "choices": [
         {
           "label": "1",
-          "text": "メタンは正四面体構造で結合角約百九点五度。",
-          "is_correct": false
+          "text": "アセチレンは直線構造で結合角180℃。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q047_c1",
+          "tts_text": "アセチレンは直線構造で結合角百八十度。"
         },
         {
           "label": "2",
-          "text": "エチレンは平面構造で結合角約百二十度。",
-          "is_correct": false
+          "text": "CH₄は正四面体構造で結合角約109.5℃。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q047_c2",
+          "tts_text": "メタンは正四面体構造で結合角約百九点五度。"
         },
         {
           "label": "3",
-          "text": "アセチレンは直線構造で結合角百八十度。",
-          "is_correct": false
+          "text": "CH₄の結合角は180℃でアセチレンの結合角は約109.5℃である。",
+          "is_correct": true,
+          "trap_type": "keyword_swap",
+          "trap_detail": "逆。メタンが百九点五度、アセチレンが百八十度。",
+          "choice_id": "ch5_2_q047_c3",
+          "tts_text": "メタンの結合角は百八十度でアセチレンの結合角は約百九点五度である。"
         },
         {
           "label": "4",
-          "text": "メタンの結合角は百八十度でアセチレンの結合角は約百九点五度である。",
-          "is_correct": true,
-          "trap_type": "keyword_swap",
-          "trap_detail": "逆。メタンが百九点五度、アセチレンが百八十度。"
+          "text": "エチレンは平面構造で結合角約120℃。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q047_c4",
+          "tts_text": "エチレンは平面構造で結合角約百二十度。"
         }
       ],
-      "explanation": "結合次数と構造・結合角の対応は重要です。単結合（sp三混成）→正四面体→百九点五度。二重結合（sp二混成）→平面→百二十度。三重結合（sp混成）→直線→百八十度。",
+      "explanation": "結合次数と構造・結合角の対応は重要です。単結合（sp三混成）→正四面体→109.5℃。二重結合（sp二混成）→平面→120℃。三重結合（sp混成）→直線→180℃。",
       "evidence": [
         {
           "source_id": "2_1_sub_001",
@@ -2331,7 +2855,9 @@
         "2_1_sub_001",
         "2_2_def_004"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "分子構造と結合角に関する記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "結合次数と構造・結合角の対応は重要です。単結合（sp三混成）→正四面体→百九点五度。二重結合（sp二混成）→平面→百二十度。三重結合（sp混成）→直線→百八十度。"
     },
     {
       "id": "ch5_2_q048",
@@ -2345,29 +2871,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "臭素水の脱色（赤褐色→無色）と過マンガン酸カリウム水溶液の脱色（赤紫色→無色）が代表的な検出法。どちらもアルケンやアルキンで陽性、アルカンで陰性。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
-          "text": "臭素水の脱色はアルカンでのみ陽性。",
-          "is_correct": false,
-          "trap_type": "negation",
-          "trap_detail": "アルカンは陰性。"
-        },
-        {
-          "label": "3",
           "text": "過マンガン酸カリウムもアルカンで脱色する。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "アルカンでは脱色しない。"
+          "trap_detail": "アルカンでは脱色しない。",
+          "choice_id": "ch5_2_q048_c1",
+          "tts_text": "過マンガン酸カリウムもアルカンで脱色する。"
         },
         {
-          "label": "4",
+          "label": "2",
+          "text": "臭素水の脱色（赤褐色→無色）と過マンガン酸カリウム水溶液の脱色（赤紫色→無色）が代表的な検出法。どちらもアルケンやアルキンで陽性、アルカンで陰性。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q048_c2",
+          "tts_text": "臭素水の脱色（赤褐色→無色）と過マンガン酸カリウム水溶液の脱色（赤紫色→無色）が代表的な検出法。どちらもアルケンやアルキンで陽性、アルカンで陰性。"
+        },
+        {
+          "label": "3",
           "text": "不飽和結合を検出する方法はない。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "複数の方法がある。"
+          "trap_detail": "複数の方法がある。",
+          "choice_id": "ch5_2_q048_c3",
+          "tts_text": "不飽和結合を検出する方法はない。"
+        },
+        {
+          "label": "4",
+          "text": "臭素水の脱色はアルカンでのみ陽性。",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "アルカンは陰性。",
+          "choice_id": "ch5_2_q048_c4",
+          "tts_text": "臭素水の脱色はアルカンでのみ陽性。"
         }
       ],
       "explanation": "臭素水と過マンガン酸カリウムの二つの脱色反応は不飽和結合の検出のために知っておくべきです。臭素は付加反応、過マンガン酸カリウムは酸化反応として不飽和結合に反応します。",
@@ -2380,7 +2914,9 @@
       "related_concept_ids": [
         "2_2_rxn_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "不飽和結合の検出法として、正しいものを選びなさい。",
+      "tts_explanation": "臭素水と過マンガン酸カリウムの二つの脱色反応は不飽和結合の検出のために知っておくべきです。臭素は付加反応、過マンガン酸カリウムは酸化反応として不飽和結合に反応します。"
     },
     {
       "id": "ch5_2_q049",
@@ -2395,24 +2931,32 @@
         {
           "label": "1",
           "text": "非対称アルケンへのエイチエックス付加の方向を予測する経験則。",
-          "is_correct": false
+          "is_correct": false,
+          "choice_id": "ch5_2_q049_c1",
+          "tts_text": "非対称アルケンへのエイチエックス付加の方向を予測する経験則。"
         },
         {
           "label": "2",
-          "text": "水素が多い炭素にさらに水素が付加する。",
-          "is_correct": false
+          "text": "プロペンに水を付加すると二プロパノールが主生成物。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q049_c2",
+          "tts_text": "プロペンに水を付加すると二プロパノールが主生成物。"
         },
         {
           "label": "3",
-          "text": "プロペンに水を付加すると二プロパノールが主生成物。",
-          "is_correct": false
+          "text": "水素が多い炭素にさらに水素が付加する。",
+          "is_correct": false,
+          "choice_id": "ch5_2_q049_c3",
+          "tts_text": "水素が多い炭素にさらに水素が付加する。"
         },
         {
           "label": "4",
           "text": "すべての付加反応にマルコフニコフ則が適用され例外はない。水素が少ない方に水素が付加する。",
           "is_correct": true,
           "trap_type": "multiple_swap",
-          "trap_detail": "二か所誤り。例外はあり、水素が多い方に付加。"
+          "trap_detail": "二か所誤り。例外はあり、水素が多い方に付加。",
+          "choice_id": "ch5_2_q049_c4",
+          "tts_text": "すべての付加反応にマルコフニコフ則が適用され例外はない。水素が少ない方に水素が付加する。"
         }
       ],
       "explanation": "マルコフニコフ則の二つのポイントを確認します。①方向：水素が多い炭素にさらに水素。②例外あり：過酸化物存在下では逆マルコフニコフ付加が起こることがある。",
@@ -2425,7 +2969,9 @@
       "related_concept_ids": [
         "2_2_law_001"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "マルコフニコフ則に関する総合的な記述のうち、誤りを含むものを選びなさい。",
+      "tts_explanation": "マルコフニコフ則の二つのポイントを確認します。①方向：水素が多い炭素にさらに水素。②例外あり：過酸化物存在下では逆マルコフニコフ付加が起こることがある。"
     },
     {
       "id": "ch5_2_q050",
@@ -2439,29 +2985,37 @@
       "choices": [
         {
           "label": "1",
-          "text": "アルカンは飽和の単結合のみで置換反応を起こし、臭素水を脱色しない。アルケンは不飽和で二重結合をもち、付加反応を起こして臭素水を脱色する。アルキンは不飽和で三重結合をもち、付加反応を起こす。シスートランスは二重結合で生じ同じ側がシス。マルコフニコフ則は水素が多い方に付加。エチレン＋水→エタノール。アセチレン＋水→アセトアルデヒド。アセチレンは溶接に利用。",
-          "is_correct": true
-        },
-        {
-          "label": "2",
-          "text": "アルカンは不飽和で付加反応を起こす。アルケンは飽和で置換反応を起こす。アセチレン＋水→エタノール。シスが反対側。マルコフニコフ則は水素が少ない方。",
-          "is_correct": false,
-          "trap_type": "multiple_swap",
-          "trap_detail": "すべて逆。"
-        },
-        {
-          "label": "3",
           "text": "トランスが同じ側でシスが反対側。エチレン＋水→アセトアルデヒド。",
           "is_correct": false,
           "trap_type": "keyword_swap",
-          "trap_detail": "すべて逆。"
+          "trap_detail": "すべて逆。",
+          "choice_id": "ch5_2_q050_c1",
+          "tts_text": "トランスが同じ側でシスが反対側。エチレン＋水→アセトアルデヒド。"
+        },
+        {
+          "label": "2",
+          "text": "アルカンは飽和の単結合のみで置換反応を起こし、臭素水を脱色しない。アルケンは不飽和で二重結合をもち、付加反応を起こして臭素水を脱色する。アルキンは不飽和で三重結合をもち、付加反応を起こす。シスートランスは二重結合で生じ同じ側がシス。マルコフニコフ則は水素が多い方に付加。エチレン＋水→エタノール。アセチレン＋水→アセトアルデヒド。アセチレンは溶接に利用。",
+          "is_correct": true,
+          "choice_id": "ch5_2_q050_c2",
+          "tts_text": "アルカンは飽和の単結合のみで置換反応を起こし、臭素水を脱色しない。アルケンは不飽和で二重結合をもち、付加反応を起こして臭素水を脱色する。アルキンは不飽和で三重結合をもち、付加反応を起こす。シスートランスは二重結合で生じ同じ側がシス。マルコフニコフ則は水素が多い方に付加。エチレン＋水→エタノール。アセチレン＋水→アセトアルデヒド。アセチレンは溶接に利用。"
+        },
+        {
+          "label": "3",
+          "text": "アルカンは不飽和で付加反応を起こす。アルケンは飽和で置換反応を起こす。アセチレン＋水→エタノール。シスが反対側。マルコフニコフ則は水素が少ない方。",
+          "is_correct": false,
+          "trap_type": "multiple_swap",
+          "trap_detail": "すべて逆。",
+          "choice_id": "ch5_2_q050_c3",
+          "tts_text": "アルカンは不飽和で付加反応を起こす。アルケンは飽和で置換反応を起こす。アセチレン＋水→エタノール。シスが反対側。マルコフニコフ則は水素が少ない方。"
         },
         {
           "label": "4",
           "text": "すべての炭化水素が同じ反応性を示し区別する方法はない。",
           "is_correct": false,
           "trap_type": "negation",
-          "trap_detail": "臭素水で区別可能。"
+          "trap_detail": "臭素水で区別可能。",
+          "choice_id": "ch5_2_q050_c4",
+          "tts_text": "すべての炭化水素が同じ反応性を示し区別する方法はない。"
         }
       ],
       "explanation": "脂肪族炭化水素の全範囲を一問に凝縮しました。飽和vs不飽和、置換vs付加、シスvsトランス、マルコフニコフ則の方向、水付加の生成物の違いなどすべてを正確に整理しましょう。",
@@ -2489,7 +3043,9 @@
         "2_2_def_004",
         "2_2_rxn_003"
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "tts_question": "脂肪族炭化水素の全範囲に関する最終総合として、正しいものを選びなさい。",
+      "tts_explanation": "脂肪族炭化水素の全範囲を一問に凝縮しました。飽和vs不飽和、置換vs付加、シスvsトランス、マルコフニコフ則の方向、水付加の生成物の違いなどすべてを正確に整理しましょう。"
     }
   ]
 }
