@@ -6,9 +6,9 @@ const DATA_PATH = 'questions';
 const AUDIO_PATH = 'audio';
 
 const SPEED_MAP = {
-  slow: { rate: 1.0, label: 'ゆっくり' },
-  natural: { rate: 1.11, label: 'ナチュラル' },
-  fast: { rate: 1.25, label: '早め' },
+  slow: { rate: 1.11, label: 'ゆっくり' },
+  natural: { rate: 1.25, label: 'ナチュラル' },
+  fast: { rate: 1.43, label: '早め' },
 };
 
 const CATEGORY_LABELS = {
@@ -21,32 +21,68 @@ const CATEGORY_LABELS = {
   comprehensive: '総合',
 };
 
-const CHAPTERS = [
-  { id: 'ch1-1', title: '第1章-1 物質の構成', enabled: true },
-  { id: 'ch1-2', title: '第1章-2 物質の構成粒子', enabled: true },
-  { id: 'ch1-3', title: '第1章-3 化学結合', enabled: true },
-  { id: 'ch1-4', title: '第1章-4 物質量と化学反応式', enabled: true },
-  { id: 'ch2-1', title: '第2章-1 物質の三態と状態変化', enabled: true },
-  { id: 'ch2-2', title: '第2章-2 気体の法則', enabled: true },
-  { id: 'ch2-3', title: '第2章-3 溶液の性質', enabled: true },
-  { id: 'ch3-1', title: '第3章-1 化学反応とエネルギー', enabled: true },
-  { id: 'ch3-2', title: '第3章-2 化学反応の速さとしくみ', enabled: true },
-  { id: 'ch3-3', title: '第3章-3 化学平衡', enabled: true },
-  { id: 'ch3-4', title: '第3章-4 酸と塩基の反応', enabled: true },
-  { id: 'ch3-5', title: '第3章-5 酸化還元反応', enabled: true },
-  { id: 'ch4-1', title: '第4章-1 非金属元素', enabled: true },
-  { id: 'ch4-2', title: '第4章-2 典型金属元素', enabled: true },
-  { id: 'ch4-3', title: '第4章-3 遷移元素', enabled: true },
-  { id: 'ch4-4', title: '第4章-4 無機物質と人間生活', enabled: true },
-  { id: 'ch5-1', title: '第5章-1 有機化合物の分類と分析', enabled: true },
-  { id: 'ch5-2', title: '第5章-2 脂肪族炭化水素', enabled: true },
-  { id: 'ch5-3', title: '第5章-3 アルコールと関連化合物', enabled: true },
-  { id: 'ch5-4', title: '第5章-4 芳香族化合物', enabled: true },
-  { id: 'ch5-5', title: '第5章-5 高分子化合物の基礎', enabled: true },
-  { id: 'ch6-1', title: '第6章-1 天然高分子化合物', enabled: true },
-  { id: 'ch6-2', title: '第6章-2 合成高分子化合物', enabled: true },
-  { id: 'ch6-3', title: '第6章-3 高分子化合物と人間生活', enabled: true },
+// 6 major chapters (教科書の「編」→「章」), each with sections (「章」→「節」)
+const CHAPTER_GROUPS = [
+  {
+    id: 'group1', num: '1', title: '物質の構成と化学結合', icon: '🔬',
+    sections: [
+      { id: 'ch1-1', num: '1', title: '物質の構成', enabled: true },
+      { id: 'ch1-2', num: '2', title: '物質の構成粒子', enabled: true },
+      { id: 'ch1-3', num: '3', title: '化学結合', enabled: true },
+      { id: 'ch1-4', num: '4', title: '物質量と化学反応式', enabled: true },
+    ],
+  },
+  {
+    id: 'group2', num: '2', title: '物質の状態', icon: '🧪',
+    sections: [
+      { id: 'ch2-1', num: '1', title: '物質の三態と状態変化', enabled: true },
+      { id: 'ch2-2', num: '2', title: '気体の法則', enabled: true },
+      { id: 'ch2-3', num: '3', title: '溶液の性質', enabled: true },
+    ],
+  },
+  {
+    id: 'group3', num: '3', title: '物質の変化', icon: '⚡',
+    sections: [
+      { id: 'ch3-1', num: '1', title: '化学反応とエネルギー', enabled: true },
+      { id: 'ch3-2', num: '2', title: '化学反応の速さとしくみ', enabled: true },
+      { id: 'ch3-3', num: '3', title: '化学平衡', enabled: true },
+      { id: 'ch3-4', num: '4', title: '酸と塩基の反応', enabled: true },
+      { id: 'ch3-5', num: '5', title: '酸化還元反応', enabled: true },
+    ],
+  },
+  {
+    id: 'group4', num: '4', title: '無機物質', icon: '💎',
+    sections: [
+      { id: 'ch4-1', num: '1', title: '非金属元素', enabled: true },
+      { id: 'ch4-2', num: '2', title: '典型金属元素', enabled: true },
+      { id: 'ch4-3', num: '3', title: '遷移元素', enabled: true },
+      { id: 'ch4-4', num: '4', title: '無機物質と人間生活', enabled: true },
+    ],
+  },
+  {
+    id: 'group5', num: '5', title: '有機化合物', icon: '🧬',
+    sections: [
+      { id: 'ch5-1', num: '1', title: '有機化合物の分類と分析', enabled: true },
+      { id: 'ch5-2', num: '2', title: '脂肪族炭化水素', enabled: true },
+      { id: 'ch5-3', num: '3', title: 'アルコールと関連化合物', enabled: true },
+      { id: 'ch5-4', num: '4', title: '芳香族化合物', enabled: true },
+      { id: 'ch5-5', num: '5', title: '高分子化合物の基礎', enabled: true },
+    ],
+  },
+  {
+    id: 'group6', num: '6', title: '天然有機化合物と高分子化合物', icon: '🌿',
+    sections: [
+      { id: 'ch6-1', num: '1', title: '天然高分子化合物', enabled: true },
+      { id: 'ch6-2', num: '2', title: '合成高分子化合物', enabled: true },
+      { id: 'ch6-3', num: '3', title: '高分子化合物と人間生活', enabled: true },
+    ],
+  },
 ];
+
+// Flat list for lookup convenience
+const CHAPTERS = CHAPTER_GROUPS.flatMap(g =>
+  g.sections.map(s => ({ ...s, title: `第${g.num}章-${s.num} ${s.title}`, groupTitle: g.title }))
+);
 
 // ------------------------------------------------------------
 // state
@@ -325,35 +361,91 @@ function renderChapterList() {
   const list = $('#chapter-list');
   list.innerHTML = '';
   const mistakes = loadMistakes();
-  for (const ch of CHAPTERS) {
-    const btn = document.createElement('button');
-    btn.className = 'chapter-btn';
-    btn.dataset.chapterId = ch.id;
-    btn.disabled = !ch.enabled;
+  const history = loadHistory();
 
-    const mistakeCount = mistakes[ch.id] ? Object.keys(mistakes[ch.id]).length : 0;
-    const mistakeBadge = mistakeCount > 0
-      ? `<span class="mistake-badge">🔥${mistakeCount}</span>`
-      : '';
+  for (const group of CHAPTER_GROUPS) {
+    // Calculate group-level stats
+    const totalMistakes = group.sections.reduce((sum, s) => {
+      return sum + (mistakes[s.id] ? Object.keys(mistakes[s.id]).length : 0);
+    }, 0);
+    const totalSessions = group.sections.reduce((sum, s) => {
+      return sum + (history[s.id] ? history[s.id].length : 0);
+    }, 0);
 
-    btn.innerHTML = `
-      <span class="chapter-title">${ch.title}</span>
-      <span class="chapter-meta">
-        <span>${ch.enabled ? '50問' : '準備中'}</span>
-        ${mistakeBadge}
-      </span>
+    // Accordion panel
+    const panel = document.createElement('div');
+    panel.className = 'accordion-panel';
+    panel.dataset.groupId = group.id;
+
+    // Panel header
+    const header = document.createElement('button');
+    header.className = 'accordion-header';
+    header.innerHTML = `
+      <div class="accordion-header-left">
+        <span class="accordion-num">第${group.num}章</span>
+        <span class="accordion-icon">${group.icon}</span>
+      </div>
+      <div class="accordion-header-center">
+        <span class="accordion-title">${group.title}</span>
+        <span class="accordion-meta">
+          ${group.sections.length}節 · ${group.sections.length * 50}問
+          ${totalMistakes > 0 ? `<span class="accordion-mistakes">🔥${totalMistakes}</span>` : ''}
+          ${totalSessions > 0 ? `<span class="accordion-sessions">📊${totalSessions}回</span>` : ''}
+        </span>
+      </div>
+      <span class="accordion-chevron">▾</span>
     `;
-    if (ch.id === state.chapter) btn.classList.add('active');
-    btn.addEventListener('click', () => {
-      if (!ch.enabled) return;
-      document.querySelectorAll('.chapter-btn').forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-      state.chapter = ch.id;
-      openSettingsModal();
+
+    // Panel body (sections)
+    const body = document.createElement('div');
+    body.className = 'accordion-body';
+
+    for (const sec of group.sections) {
+      const btn = document.createElement('button');
+      btn.className = 'section-btn';
+      btn.dataset.chapterId = sec.id;
+      btn.disabled = !sec.enabled;
+
+      const mistakeCount = mistakes[sec.id] ? Object.keys(mistakes[sec.id]).length : 0;
+      const sectionHistory = history[sec.id];
+      const lastScore = sectionHistory && sectionHistory.length > 0
+        ? Math.round((sectionHistory[sectionHistory.length - 1].correct / sectionHistory[sectionHistory.length - 1].total) * 100)
+        : null;
+
+      btn.innerHTML = `
+        <span class="section-num">第${sec.num}節</span>
+        <span class="section-title">${sec.title}</span>
+        <span class="section-info">
+          <span class="section-qcount">50問</span>
+          ${mistakeCount > 0 ? `<span class="mistake-badge">🔥${mistakeCount}</span>` : ''}
+          ${lastScore !== null ? `<span class="section-score ${lastScore >= 80 ? 'good' : lastScore >= 60 ? 'mid' : 'low'}">${lastScore}%</span>` : ''}
+        </span>
+      `;
+
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.section-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        state.chapter = sec.id;
+        openSettingsModal();
+      });
+
+      body.appendChild(btn);
+    }
+
+    // Toggle accordion
+    header.addEventListener('click', () => {
+      const isOpen = panel.classList.contains('open');
+      // Close all first
+      document.querySelectorAll('.accordion-panel').forEach(p => p.classList.remove('open'));
+      if (!isOpen) panel.classList.add('open');
     });
-    list.appendChild(btn);
+
+    panel.appendChild(header);
+    panel.appendChild(body);
+    list.appendChild(panel);
   }
 }
+
 
 function renderMistakesSummary() {
   const el = $('#mistakes-summary');
