@@ -26,8 +26,9 @@ const CATEGORY_LABELS = {
 // Available chapters (enabled flag lets us hide chapters without data yet).
 const CHAPTERS = [
   { id: 'ch1-1', title: '第1章-1 物質の構成', enabled: true },
-  { id: 'ch1-2', title: '第1章-2', enabled: false },
-  { id: 'ch1-3', title: '第1章-3', enabled: false },
+  { id: 'ch1-2', title: '第1章-2 物質の構成粒子', enabled: true },
+  { id: 'ch1-3', title: '第1章-3 化学結合', enabled: true },
+  { id: 'ch1-4', title: '第1章-4 物質量と化学反応式', enabled: true },
   // (further chapters added as data is prepared)
 ];
 
@@ -100,6 +101,40 @@ function recordSessionResult(chapter, stats) {
 // ------------------------------------------------------------
 function $(sel) {
   return document.querySelector(sel);
+}
+
+// Rewrites "選択肢N" references inside a text so they point to the CURRENT
+// shuffled display position. Works for both Arabic (1-9) and kanji (一-九).
+// Relies on the convention that the N-th entry in q.choices (1-indexed) is
+// what the original explanation text referred to as "選択肢N".
+const KANJI_DIGITS = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+const KANJI_TO_NUM = {
+  一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9,
+};
+
+function buildChoiceRemap(q, shuffled) {
+  const origToNew = new Map();
+  q.choices.forEach((c, origIdx) => {
+    const newIdx = shuffled.findIndex((sc) => sc.choice_id === c.choice_id);
+    if (newIdx >= 0) origToNew.set(origIdx + 1, newIdx + 1);
+  });
+  return origToNew;
+}
+
+function remapChoiceRefs(text, q, shuffled) {
+  if (!text) return text;
+  const map = buildChoiceRemap(q, shuffled);
+  return text
+    .replace(/選択肢([1-9])/g, (m, d) => {
+      const n = parseInt(d, 10);
+      const nn = map.get(n);
+      return nn ? `選択肢${nn}` : m;
+    })
+    .replace(/選択肢([一二三四五六七八九])/g, (m, d) => {
+      const n = KANJI_TO_NUM[d];
+      const nn = map.get(n);
+      return nn ? `選択肢${KANJI_DIGITS[nn]}` : m;
+    });
 }
 
 function shuffle(arr) {
@@ -458,7 +493,11 @@ function handleChoice(choice) {
         ) + 1
       })`;
 
-  $('#feedback-explanation').textContent = q.explanation;
+  $('#feedback-explanation').textContent = remapChoiceRefs(
+    q.explanation,
+    q,
+    state.shuffledChoices,
+  );
 
   const evList = $('#feedback-evidence-list');
   evList.innerHTML = '';

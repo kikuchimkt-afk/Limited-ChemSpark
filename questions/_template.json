@@ -1,0 +1,83 @@
+{
+  "_README": "Minimal skeleton for a new chapter JSON file. Copy to questions/chXYZ.json, fill in metadata and questions, then run the restructure/validate/audio workflow in WORKFLOW.md. Do NOT author the tts_* / choice_id fields here — _restructure_chapter.py generates them from question/text/explanation. You only need the 'raw' fields shown below.",
+  "metadata": {
+    "chapter": "X-Y",
+    "chapter_title": "<章タイトル>",
+    "source_file": "json_data/<source>.txt",
+    "textbook": "化学基礎",
+    "total_questions": 50,
+    "version": "1.0",
+    "tts_policy": {
+      "note": "すべての文字列は日本語読み上げ可能な形式で記述。化学式・数式は日本語名に置換済み。単位は『度』『モル』『パーセント』等の語に統一。",
+      "no_chemical_formulas": true,
+      "no_math_equations": true,
+      "temperature_unit": "度",
+      "percent_unit": "パーセント"
+    },
+    "trap_type_legend": {
+      "keyword_swap": "キーワード1語をすり替え",
+      "concept_confusion": "類似概念の混同",
+      "property_swap": "物質の性質を別物質と入れ替え",
+      "condition_change": "成立条件の変更",
+      "negation": "肯定否定を入れ替え"
+    },
+    "category_distribution": {
+      "definition": 0,
+      "property": 0,
+      "classification": 0,
+      "procedure": 0,
+      "confusion": 0,
+      "comprehensive": 0
+    }
+  },
+  "questions": [
+    {
+      "_comment_for_author": "Authoring rules: (1) Write question/choices[].text/explanation in TTS-friendly Japanese (kanji numerals, unit words, no chemical formulas, no symbols). _restructure_chapter.py will COPY these into tts_* and then convert the display-side question/text/explanation to ARABIC numerals + unit symbols + major formulas. (2) Do NOT set choice_id or tts_* yourself — the restructure script assigns them. (3) Ensure exactly one choice has is_correct=true per question. (4) In 'explanation', you may refer to wrong choices as '選択肢一' '選択肢二' ... (KANJI) using ORIGINAL positions; _restructure_chapter.py remaps them to NEW positions after shuffling, and a separate rewrite step converts them to content-based wording for audio. (5) Keep category, trap_type, trap_detail, difficulty fields consistent with ch1-1.json examples.",
+      "id": "chX_Y_q001",
+      "chapter": "X-Y",
+      "chapter_title": "<章タイトル>",
+      "category": "definition",
+      "sub_category": "<サブカテゴリ>",
+      "difficulty": 2,
+      "question_type": "correct",
+      "question": "<問題文（TTSフレンドリー：漢数字・単位語・日本語化学名）>",
+      "choices": [
+        {
+          "label": "1",
+          "text": "<選択肢1本文>",
+          "is_correct": false,
+          "trap_type": "concept_confusion",
+          "trap_detail": "<どのような引っかけか>"
+        },
+        {
+          "label": "2",
+          "text": "<選択肢2本文（これが正解なら label はそのままで is_correct のみ true にする）>",
+          "is_correct": true
+        },
+        {
+          "label": "3",
+          "text": "<選択肢3本文>",
+          "is_correct": false,
+          "trap_type": "keyword_swap",
+          "trap_detail": "<どのような引っかけか>"
+        },
+        {
+          "label": "4",
+          "text": "<選択肢4本文>",
+          "is_correct": false,
+          "trap_type": "negation",
+          "trap_detail": "<どのような引っかけか>"
+        }
+      ],
+      "explanation": "<解説本文。誤答選択肢に言及する際は『選択肢一は…、選択肢三は…』のように漢数字で書く（_restructure_chapter.py がシャッフル後の新番号へ自動で書き換える）。>",
+      "evidence": [
+        {
+          "source_id": "<教科書・参考書の出典ID>",
+          "quote": "<該当箇所の引用>"
+        }
+      ],
+      "related_concept_ids": [],
+      "mnemonic": null
+    }
+  ]
+}
