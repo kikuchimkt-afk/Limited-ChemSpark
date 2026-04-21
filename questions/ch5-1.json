@@ -49,7 +49,14 @@
         "メタン": "CH₄",
         "シアン化カリウム": "KCN",
         "酸化銅": "CuO",
-        "水": "H₂O"
+        "水": "H₂O",
+        "シーエヌエイチにエヌプラスに": "CₙH₂ₙ₊₂",
+        "シーエヌエイチにエヌマイナスに": "CₙH₂ₙ₋₂",
+        "シーエヌエイチにエヌ": "CₙH₂ₙ",
+        "シーエイチツーオー": "CH₂O",
+        "シーツーエイチフォーオーツー": "C₂H₄O₂",
+        "シースリーエイチシックスオースリー": "C₃H₆O₃",
+        "シーフォーエイチエイトオーフォー": "C₄H₈O₄"
       }
     },
     "choice_shuffle_policy": {
@@ -1310,7 +1317,7 @@
         {
           "label": "2",
           "choice_id": "ch5_1_q023_c2",
-          "text": "一般式はシーエヌエイチにエヌである。",
+          "text": "一般式はCₙH₂ₙである。",
           "tts_text": "一般式はシーエヌエイチにエヌである。",
           "is_correct": false,
           "trap_type": "keyword_swap",
@@ -1319,14 +1326,14 @@
         {
           "label": "3",
           "choice_id": "ch5_1_q023_c3",
-          "text": "単結合のみからなり、一般式はシーエヌエイチにエヌプラスにである。",
+          "text": "単結合のみからなり、一般式はCₙH₂ₙ₊₂である。",
           "tts_text": "単結合のみからなり、一般式はシーエヌエイチにエヌプラスにである。",
           "is_correct": true
         },
         {
           "label": "4",
           "choice_id": "ch5_1_q023_c4",
-          "text": "一般式はシーエヌエイチにエヌマイナスにである。",
+          "text": "一般式はCₙH₂ₙ₋₂である。",
           "tts_text": "一般式はシーエヌエイチにエヌマイナスにである。",
           "is_correct": false,
           "trap_type": "keyword_swap",
@@ -1366,7 +1373,7 @@
         {
           "label": "2",
           "choice_id": "ch5_1_q024_c2",
-          "text": "一般式はシーエヌエイチにエヌプラスにである。",
+          "text": "一般式はCₙH₂ₙ₊₂である。",
           "tts_text": "一般式はシーエヌエイチにエヌプラスにである。",
           "is_correct": false,
           "trap_type": "keyword_swap",
@@ -1384,7 +1391,7 @@
         {
           "label": "4",
           "choice_id": "ch5_1_q024_c4",
-          "text": "二重結合を一つ持ち、一般式はシーエヌエイチにエヌである。",
+          "text": "二重結合を一つ持ち、一般式はCₙH₂ₙである。",
           "tts_text": "二重結合を一つ持ち、一般式はシーエヌエイチにエヌである。",
           "is_correct": true
         }
@@ -1413,14 +1420,14 @@
         {
           "label": "1",
           "choice_id": "ch5_1_q025_c1",
-          "text": "三重結合を一つ持ち、一般式はシーエヌエイチにエヌマイナスにである。",
+          "text": "三重結合を一つ持ち、一般式はCₙH₂ₙ₋₂である。",
           "tts_text": "三重結合を一つ持ち、一般式はシーエヌエイチにエヌマイナスにである。",
           "is_correct": true
         },
         {
           "label": "2",
           "choice_id": "ch5_1_q025_c2",
-          "text": "二重結合を一つ持ち、一般式はシーエヌエイチにエヌの炭化水素である。",
+          "text": "二重結合を一つ持ち、一般式はCₙH₂ₙの炭化水素である。",
           "tts_text": "二重結合を一つ持ち、一般式はシーエヌエイチにエヌの炭化水素である。",
           "is_correct": false,
           "trap_type": "keyword_swap",
@@ -1429,7 +1436,7 @@
         {
           "label": "3",
           "choice_id": "ch5_1_q025_c3",
-          "text": "一般式はシーエヌエイチにエヌであり、飽和炭化水素に分類される。",
+          "text": "一般式はCₙH₂ₙであり、飽和炭化水素に分類される。",
           "tts_text": "一般式はシーエヌエイチにエヌであり、飽和炭化水素に分類される。",
           "is_correct": false,
           "trap_type": "keyword_swap",
@@ -1548,7 +1555,7 @@
         {
           "label": "4",
           "choice_id": "ch5_1_q027_c4",
-          "text": "アルカンの一般式はシーエヌエイチにエヌプラスにである。",
+          "text": "アルカンの一般式はCₙH₂ₙ₊₂である。",
           "tts_text": "アルカンの一般式はシーエヌエイチにエヌプラスにである。",
           "is_correct": false
         }
@@ -1577,28 +1584,28 @@
         {
           "label": "1",
           "choice_id": "ch5_1_q028_c1",
-          "text": "アルカンの一般式はシーエヌエイチにエヌプラスにである。",
+          "text": "アルカンの一般式はCₙH₂ₙ₊₂である。",
           "tts_text": "アルカンの一般式はシーエヌエイチにエヌプラスにである。",
           "is_correct": false
         },
         {
           "label": "2",
           "choice_id": "ch5_1_q028_c2",
-          "text": "アルケンの一般式はシーエヌエイチにエヌである。",
+          "text": "アルケンの一般式はCₙH₂ₙである。",
           "tts_text": "アルケンの一般式はシーエヌエイチにエヌである。",
           "is_correct": false
         },
         {
           "label": "3",
           "choice_id": "ch5_1_q028_c3",
-          "text": "アルキンの一般式はシーエヌエイチにエヌマイナスにである。",
+          "text": "アルキンの一般式はCₙH₂ₙ₋₂である。",
           "tts_text": "アルキンの一般式はシーエヌエイチにエヌマイナスにである。",
           "is_correct": false
         },
         {
           "label": "4",
           "choice_id": "ch5_1_q028_c4",
-          "text": "アルカンの一般式はシーエヌエイチにエヌである。",
+          "text": "アルカンの一般式はCₙH₂ₙである。",
           "tts_text": "アルカンの一般式はシーエヌエイチにエヌである。",
           "is_correct": true,
           "trap_type": "keyword_swap",
@@ -2791,13 +2798,13 @@
       "sub_category": "分子式の計算",
       "difficulty": 3,
       "question_type": "correct",
-      "question": "組成式がシーエイチツーオーで分子量が60の化合物の分子式として、正しいものを選びなさい。",
+      "question": "組成式がCH₂Oで分子量が60の化合物の分子式として、正しいものを選びなさい。",
       "tts_question": "組成式がシーエイチツーオーで分子量が六十の化合物の分子式として、正しいものを選びなさい。",
       "choices": [
         {
           "label": "1",
           "choice_id": "ch5_1_q050_c1",
-          "text": "シーエイチツーオー",
+          "text": "CH₂O",
           "tts_text": "シーエイチツーオー",
           "is_correct": false,
           "trap_type": "partial_truth",
@@ -2806,14 +2813,14 @@
         {
           "label": "2",
           "choice_id": "ch5_1_q050_c2",
-          "text": "シーツーエイチフォーオーツー",
+          "text": "C₂H₄O₂",
           "tts_text": "シーツーエイチフォーオーツー",
           "is_correct": true
         },
         {
           "label": "3",
           "choice_id": "ch5_1_q050_c3",
-          "text": "シースリーエイチシックスオースリー",
+          "text": "C₃H₆O₃",
           "tts_text": "シースリーエイチシックスオースリー",
           "is_correct": false,
           "trap_type": "condition_change",
@@ -2822,7 +2829,7 @@
         {
           "label": "4",
           "choice_id": "ch5_1_q050_c4",
-          "text": "シーフォーエイチエイトオーフォー",
+          "text": "C₄H₈O₄",
           "tts_text": "シーフォーエイチエイトオーフォー",
           "is_correct": false,
           "trap_type": "condition_change",

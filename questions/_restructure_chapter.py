@@ -162,6 +162,15 @@ def _convert_standalone_numbers(text: str) -> str:
 # substituted; element-level words are left in Japanese. Extend this list
 # as new chapters introduce new compounds.
 FORMULAS: list[tuple[str, str]] = [
+    # TTS phonetic readings of general/molecular formulas (longer first)
+    ("シーエヌエイチにエヌプラスに", "CₙH₂ₙ₊₂"),
+    ("シーエヌエイチにエヌマイナスに", "CₙH₂ₙ₋₂"),
+    ("シーエヌエイチにエヌ", "CₙH₂ₙ"),
+    ("シースリーエイチシックスオースリー", "C₃H₆O₃"),
+    ("シーフォーエイチエイトオーフォー", "C₄H₈O₄"),
+    ("シーツーエイチフォーオーツー", "C₂H₄O₂"),
+    ("シーエイチツーオー", "CH₂O"),
+    # Japanese compound names → chemical formulas
     ("炭酸水素ナトリウム", "NaHCO₃"),
     ("炭酸カルシウム", "CaCO₃"),
     ("塩化マグネシウム", "MgCl₂"),
