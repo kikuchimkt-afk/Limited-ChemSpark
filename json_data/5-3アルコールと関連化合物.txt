@@ -1,0 +1,384 @@
+
+JSON
+
+
+{
+  "metadata": {
+    "textbook": "第5編 有機化合物",
+    "chapter": 3,
+    "chapter_title": "アルコールと関連化合物",
+    "section": 1,
+    "section_title": "アルコールとエーテル",
+    "page_range": [432, 455],
+    "version": "1.0"
+  },
+  "substances": [
+    {
+      "id": "3_1_sub_001",
+      "name": "メタノール",
+      "formula": "CH3OH",
+      "aliases": ["メチルアルコール"],
+      "type": "化合物",
+      "properties": {
+        "melting_point": { "value": null, "unit": "℃", "condition": "" },
+        "boiling_point": { "value": 65, "unit": "℃", "condition": "" },
+        "color": "無色透明",
+        "odor": "特有なにおい",
+        "density": { "value": 0.79, "unit": "g/mL", "condition": "20℃" },
+        "solubility": "水によく溶ける",
+        "electrical_conductivity": "",
+        "other": ["有毒な液体である [cite: 95]"]
+      },
+      "cross_refs": ["3_1_def_001", "TBD:ホルムアルデヒド"],
+      "notes": "少量摂取で眼に障害が表れ、失明したり、多量に摂取すると死に至る。[cite: 122]"
+    },
+    {
+      "id": "3_1_sub_002",
+      "name": "エタノール",
+      "formula": "C2H5OH",
+      "aliases": ["エチルアルコール"],
+      "type": "化合物",
+      "properties": {
+        "melting_point": { "value": null, "unit": "℃", "condition": "" },
+        "boiling_point": { "value": 78, "unit": "℃", "condition": "" },
+        "color": "無色透明",
+        "odor": "特有のにおい",
+        "density": { "value": 0.79, "unit": "g/mL", "condition": "20℃" },
+        "solubility": "水によく溶ける",
+        "electrical_conductivity": "",
+        "other": ["麻酔作用、消毒作用がある [cite: 151]"]
+      },
+      "cross_refs": ["3_1_def_001", "3_1_rxn_002", "3_2_sub_001"],
+      "notes": "70~80%水溶液が消毒作用が強い。[cite: 186]"
+    },
+    {
+      "id": "3_1_sub_003",
+      "name": "ジエチルエーテル",
+      "formula": "C2H5-O-C2H5",
+      "aliases": ["エーテル"],
+      "type": "化合物",
+      "properties": {
+        "melting_point": { "value": null, "unit": "℃", "condition": "" },
+        "boiling_point": { "value": 34, "unit": "℃", "condition": "" },
+        "color": "無色",
+        "odor": "特有の強いにおい",
+        "density": { "value": null, "unit": "g/mL", "condition": "" },
+        "solubility": "水にわずかしか溶けない",
+        "electrical_conductivity": "",
+        "other": ["揮発性・引火性の液体 [cite: 283]", "麻酔作用がある [cite: 283]"]
+      },
+      "cross_refs": ["3_1_def_003"],
+      "notes": "有機溶媒として、有機化合物の分離・抽出に利用される。[cite: 285]"
+    },
+    {
+      "id": "3_2_sub_001",
+      "name": "アセトアルデヒド",
+      "formula": "CH3CHO",
+      "aliases": [],
+      "type": "化合物",
+      "properties": {
+        "melting_point": { "value": null, "unit": "℃", "condition": "" },
+        "boiling_point": { "value": 20, "unit": "℃", "condition": "" },
+        "color": "無色",
+        "odor": "特有の刺激臭",
+        "density": { "value": null, "unit": "g/mL", "condition": "" },
+        "solubility": "水によく溶ける",
+        "electrical_conductivity": "",
+        "other": []
+      },
+      "cross_refs": ["3_2_def_001", "3_1_sub_002", "3_3_sub_001"],
+      "notes": "エタノールをニクロム酸カリウムなどの酸化剤で酸化すると得られる。[cite: 335]"
+    },
+    {
+      "id": "3_2_sub_002",
+      "name": "アセトン",
+      "formula": "CH3COCH3",
+      "aliases": [],
+      "type": "化合物",
+      "properties": {
+        "melting_point": { "value": null, "unit": "℃", "condition": "" },
+        "boiling_point": { "value": 56, "unit": "℃", "condition": "" },
+        "color": "無色",
+        "odor": "芳香のある液体",
+        "density": { "value": null, "unit": "g/mL", "condition": "" },
+        "solubility": "水にもベンゼン・アルコールなどの有機溶媒にもよく混ざり合う",
+        "electrical_conductivity": "",
+        "other": []
+      },
+      "cross_refs": ["3_2_def_002"],
+      "notes": "マニキュア除光液(リムーバー)の主成分にもなっている。[cite: 449]"
+    },
+    {
+      "id": "3_3_sub_001",
+      "name": "酢酸",
+      "formula": "CH3COOH",
+      "aliases": ["氷酢酸"],
+      "type": "化合物",
+      "properties": {
+        "melting_point": { "value": 17, "unit": "℃", "condition": "" },
+        "boiling_point": { "value": 118, "unit": "℃", "condition": "" },
+        "color": "無色",
+        "odor": "刺激臭",
+        "density": { "value": null, "unit": "g/mL", "condition": "" },
+        "solubility": "水によく溶ける",
+        "electrical_conductivity": "",
+        "other": ["食酢中に4~5%含まれている [cite: 575]"]
+      },
+      "cross_refs": ["3_3_def_001", "3_2_sub_001"],
+      "notes": "純粋な酢酸は室温が下がると凝固するので、氷酢酸ともよばれる。[cite: 576]"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "3_1_def_001",
+      "type": "def",
+      "title": "アルコール",
+      "prerequisite_ids": [],
+      "definition": "炭化水素分子中の水素原子がヒドロキシ基-OHで置換された構造R-OHの化合物を、アルコールという。[cite: 12]",
+      "explanation": "アルコールは-OHの数による「価数」や、-OHが結合している炭素原子の状況による「級数」で分類されます。[cite: 13, 19] 炭素数が少ないものは水によく溶けますが、炭素数が増えると水に溶けにくくなります。[cite: 23]",
+      "conditions": [],
+      "examples": [
+        {
+          "label": "1価アルコール",
+          "substance_ids": ["3_1_sub_001", "3_1_sub_002"],
+          "description": "分子中に-OHを1個もつアルコール。[cite: 13]",
+          "values": []
+        }
+      ],
+      "counter_examples": ["フェノール類はヒドロキシ基を持つがアルコールには分類されない（別章で扱う）。"],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "アルコールの級数と酸化生成物の関係を問う問題",
+          "key_concept_ids": ["3_1_rxn_001"]
+        }
+      ],
+      "cross_refs": ["3_1_rxn_001", "TBD:フェノール類"],
+      "source_page": 432
+    },
+    {
+      "id": "3_1_rxn_001",
+      "type": "rxn",
+      "title": "アルコールの酸化反応",
+      "prerequisite_ids": ["3_1_def_001"],
+      "definition": "アルコールを硫酸酸性のニクロム酸カリウム水溶液などの酸化剤とともに加熱すると、カルボニル基に酸化される反応。[cite: 35, 36]",
+      "explanation": "アルコールの級数によって酸化のされ方が異なります。[cite: 37, 63, 84] 第1級アルコールはアルデヒドを経てカルボン酸になります。[cite: 37, 38] 第2級アルコールはケトンになり、それ以上は酸化されません。[cite: 63] 第3級アルコールは酸化されにくいです。[cite: 84]",
+      "conditions": ["酸化剤（硫酸酸性のニクロム酸カリウム水溶液など）", "加熱"],
+      "examples": [
+        {
+          "label": "エタノールの酸化",
+          "substance_ids": ["3_1_sub_002", "3_2_sub_001", "3_3_sub_001"],
+          "description": "エタノール(第1級) → アセトアルデヒド → 酢酸 [cite: 155]",
+          "values": []
+        }
+      ],
+      "counter_examples": ["第3級アルコールは通常の条件では酸化されない。[cite: 84]"],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "与えられたアルコールの構造式から、酸化して生じる化合物を推定する問題",
+          "key_concept_ids": ["3_1_def_001", "3_2_def_001", "3_2_def_002"]
+        }
+      ],
+      "cross_refs": ["3_2_def_001", "3_2_def_002", "3_3_def_001"],
+      "source_page": 433
+    },
+    {
+      "id": "3_1_law_001",
+      "type": "law",
+      "title": "ザイツェフ則",
+      "prerequisite_ids": ["3_1_def_001", "3_1_rxn_002"],
+      "definition": "アルコールの脱水反応では、-OHが結合した炭素原子の両隣の炭素原子のうち、結合している水素原子が少ないほうから水素原子が失われ、主生成物になるという法則。[cite: 213, 216]",
+      "explanation": "分子内脱水が起こるときに、二重結合がどこにできるかを予測する法則です。[cite: 212] 水素の少ない方から水素が奪われるため、置換基の多いアルケンが主生成物として得られます。[cite: 212-221]",
+      "conditions": ["アルコールの分子内脱水反応"],
+      "examples": [
+        {
+          "label": "2-ブタノールの脱水",
+          "substance_ids": [],
+          "description": "2-ブタノールから脱水すると、2-ブテンが主生成物(82%)、1-ブテンが副生成物(18%)となる。[cite: 219, 221]",
+          "values": [
+            { "value": 82, "unit": "%", "condition": "主生成物" },
+            { "value": 18, "unit": "%", "condition": "副生成物" }
+          ]
+        }
+      ],
+      "counter_examples": [],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "非対称なアルコールの脱水生成物の主生成物と副生成物を判別する問題",
+          "key_concept_ids": ["3_1_rxn_002"]
+        }
+      ],
+      "cross_refs": ["TBD:アルケン"],
+      "source_page": 436
+    },
+    {
+      "id": "3_1_def_003",
+      "type": "def",
+      "title": "エーテル",
+      "prerequisite_ids": [],
+      "definition": "同種または異種の炭化水素基が酸素原子をはさんで結合した化合物をエーテルという。[cite: 252]",
+      "explanation": "C-O-Cの結合をエーテル結合と呼びます。[cite: 252] アルコールとは構造異性体の関係になりますが、ヒドロキシ基を持たないため、ナトリウムとは反応しません。[cite: 252, 255] 沸点もアルコールに比べてかなり低いです。[cite: 257]",
+      "conditions": [],
+      "examples": [
+        {
+          "label": "ジエチルエーテル",
+          "substance_ids": ["3_1_sub_003"],
+          "description": "エタノールの分子間脱水で得られるエーテル。[cite: 263-267]",
+          "values": []
+        }
+      ],
+      "counter_examples": ["アルコールはナトリウムと反応して水素を発生するが、エーテルは反応しない。[cite: 255]"],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "分子式が同じ化合物のうち、Naと反応するかどうかでアルコールとエーテルを判別する問題",
+          "key_concept_ids": ["3_1_def_001"]
+        }
+      ],
+      "cross_refs": ["3_1_sub_003"],
+      "source_page": 437
+    },
+    {
+      "id": "3_2_rxn_002",
+      "type": "rxn",
+      "title": "ヨードホルム反応",
+      "prerequisite_ids": ["3_2_def_001", "3_2_def_002"],
+      "definition": "CH3-CO-R、または CH3-CH(OH)-R (RはHも可)の構造をもつ有機化合物にヨウ素I2と塩基水溶液を加えて温めると、特有の臭気をもったヨードホルムCHI3の黄色沈殿が生成する反応。[cite: 450]",
+      "explanation": "特定の構造を持つアルコールやケトン（アセトアルデヒドも含む）を検出するための重要な反応です。[cite: 450] 生成するヨードホルムは黄色い沈殿物です。[cite: 450]",
+      "conditions": ["CH3-CO-R または CH3-CH(OH)-R の構造を持つこと", "ヨウ素と水酸化ナトリウム(または炭酸ナトリウム)を加えて温める [cite: 450]"],
+      "examples": [
+        {
+          "label": "ヨードホルム反応を示す物質",
+          "substance_ids": ["3_1_sub_002", "3_2_sub_001", "3_2_sub_002"],
+          "description": "アセトン、アセトアルデヒド、エタノール、2-プロパノール、2-ブタノールなど。[cite: 451, 453, 457, 461]",
+          "values": []
+        }
+      ],
+      "counter_examples": ["メタノールや1-プロパノールは条件の構造を持たないため、ヨードホルム反応を示さない。"],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "複数の化合物の構造から、ヨードホルム反応を示すものを選択する問題",
+          "key_concept_ids": ["3_1_def_001", "3_2_def_001", "3_2_def_002"]
+        }
+      ],
+      "cross_refs": [],
+      "source_page": 441
+    },
+    {
+      "id": "3_2_rxn_003",
+      "type": "rxn",
+      "title": "銀鏡反応",
+      "prerequisite_ids": ["3_2_def_001"],
+      "definition": "アンモニア性硝酸銀水溶液にアルデヒドを加えて温めると、アルデヒドの還元性により銀イオンが還元され、器壁に銀が析出して鏡のようになる反応。[cite: 385]",
+      "explanation": "アルデヒドが持つ還元性を確認するための代表的な反応です。[cite: 316, 385] ケトンは還元性を持たないため、この反応を示しません。[cite: 422]",
+      "conditions": ["アンモニア性硝酸銀水溶液", "約60℃に温める [cite: 396]"],
+      "examples": [],
+      "counter_examples": ["ケトン（アセトンなど）は銀鏡反応を示さない。[cite: 422]"],
+      "mnemonics": [],
+      "steps": [
+        { "step": 1, "action": "硝酸銀水溶液にアンモニア水を少量加える", "reason": "褐色の酸化銀Ag2Oの沈殿を生じさせるため [cite: 385]" },
+        { "step": 2, "action": "さらにアンモニア水を過剰に加える", "reason": "沈殿を溶解させ、ジアンミン銀(I)イオンを含む無色の水溶液(アンモニア性硝酸銀水溶液)を調製するため [cite: 385]" },
+        { "step": 3, "action": "アルデヒドを加えて60℃程度に温める", "reason": "還元反応を進行させ、銀を析出させるため [cite: 385]" }
+      ],
+      "related_problems": [
+        {
+          "pattern": "アルデヒドとケトンを区別する試薬や反応名を問う問題",
+          "key_concept_ids": ["3_2_def_001", "3_2_def_002"]
+        }
+      ],
+      "cross_refs": ["3_2_rxn_004"],
+      "source_page": 440
+    },
+    {
+      "id": "3_4_rxn_001",
+      "type": "rxn",
+      "title": "エステル化とけん化",
+      "prerequisite_ids": ["3_1_def_001", "3_3_def_001"],
+      "definition": "エステルに塩基の水溶液を加えて加熱すると、加水分解してアルコールとカルボン酸の塩になる反応をけん化という。[cite: 790, 791]",
+      "explanation": "エステルを作る反応(エステル化)は酸触媒による可逆反応ですが、塩基を用いた加水分解(けん化)は、カルボン酸が塩となるため不可逆反応として進行します。[cite: 790, 791] 中和反応に似ています。[cite: 795-800]",
+      "conditions": ["塩基（KOH、NaOHなど）の水溶液", "加熱 [cite: 790]"],
+      "examples": [
+        {
+          "label": "酢酸エチルのけん化",
+          "substance_ids": [],
+          "description": "酢酸エチルに水酸化ナトリウムを加えると、酢酸ナトリウムとエタノールになる。[cite: 792-794]",
+          "values": []
+        }
+      ],
+      "counter_examples": [],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "エステルを加水分解した際の生成物の構造式を書かせる問題",
+          "key_concept_ids": ["3_4_def_001"]
+        }
+      ],
+      "cross_refs": ["3_4_def_001", "TBD:油脂のけん化"],
+      "source_page": 449
+    },
+    {
+      "id": "3_4_eq_001",
+      "type": "eq",
+      "title": "けん化価",
+      "prerequisite_ids": ["3_4_def_002"],
+      "definition": "油脂1gをけん化するのに必要なKOHの質量(単位 mg)の数値。[cite: 902]",
+      "explanation": "油脂を構成する脂肪酸の平均分子量の大小を推定する目安になります。[cite: 902] けん化価が大きいほど、油脂の平均分子量は小さいという反比例の関係があります。[cite: 908, 909, 915]",
+      "conditions": [],
+      "examples": [
+        {
+          "label": "けん化価から平均分子量を求める計算",
+          "substance_ids": [],
+          "description": "油脂の平均分子量をM、けん化価をsとすると、M = (3 × 56 × 10^3) / s となる。[cite: 906, 907]",
+          "values": []
+        }
+      ],
+      "counter_examples": [],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "与えられたけん化価から油脂の平均分子量を計算する問題",
+          "key_concept_ids": ["3_4_def_002"]
+        }
+      ],
+      "cross_refs": ["3_4_eq_002"],
+      "source_page": 452
+    }
+  ],
+  "relations": [
+    {
+      "from_id": "3_1_def_001",
+      "to_id": "3_1_rxn_001",
+      "relation_type": "is_prerequisite_of",
+      "note": "アルコールの構造（級数）が酸化反応の挙動を決定する。"
+    },
+    {
+      "from_id": "3_1_rxn_001",
+      "to_id": "3_2_sub_001",
+      "relation_type": "produces",
+      "note": "第1級アルコール(エタノール)の酸化により生成する。"
+    },
+    {
+      "from_id": "3_2_rxn_002",
+      "to_id": "3_2_sub_002",
+      "relation_type": "is_detected_by",
+      "note": "アセトンはヨードホルム反応を示す。"
+    },
+    {
+      "from_id": "3_2_sub_001",
+      "to_id": "3_2_rxn_003",
+      "relation_type": "is_detected_by",
+      "note": "アセトアルデヒドは還元性を持つため銀鏡反応を示す。"
+    }
+  ]
+}
+

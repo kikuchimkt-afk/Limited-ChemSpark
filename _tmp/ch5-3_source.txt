@@ -1,0 +1,384 @@
+﻿
+JSON
+
+
+{
+  "metadata": {
+    "textbook": "��5�� �L�@������",
+    "chapter": 3,
+    "chapter_title": "�A���R�[���Ɗ֘A������",
+    "section": 1,
+    "section_title": "�A���R�[���ƃG�[�e��",
+    "page_range": [432, 455],
+    "version": "1.0"
+  },
+  "substances": [
+    {
+      "id": "3_1_sub_001",
+      "name": "���^�m�[��",
+      "formula": "CH3OH",
+      "aliases": ["���`���A���R�[��"],
+      "type": "������",
+      "properties": {
+        "melting_point": { "value": null, "unit": "��", "condition": "" },
+        "boiling_point": { "value": 65, "unit": "��", "condition": "" },
+        "color": "���F����",
+        "odor": "���L�Ȃɂ���",
+        "density": { "value": 0.79, "unit": "g/mL", "condition": "20��" },
+        "solubility": "���ɂ悭�n����",
+        "electrical_conductivity": "",
+        "other": ["�L�łȉt�̂ł��� [cite: 95]"]
+      },
+      "cross_refs": ["3_1_def_001", "TBD:�z�����A���f�q�h"],
+      "notes": "���ʐێ�Ŋ�ɏ�Q���\��A����������A���ʂɐێ悷��Ǝ��Ɏ���B[cite: 122]"
+    },
+    {
+      "id": "3_1_sub_002",
+      "name": "�G�^�m�[��",
+      "formula": "C2H5OH",
+      "aliases": ["�G�`���A���R�[��"],
+      "type": "������",
+      "properties": {
+        "melting_point": { "value": null, "unit": "��", "condition": "" },
+        "boiling_point": { "value": 78, "unit": "��", "condition": "" },
+        "color": "���F����",
+        "odor": "���L�̂ɂ���",
+        "density": { "value": 0.79, "unit": "g/mL", "condition": "20��" },
+        "solubility": "���ɂ悭�n����",
+        "electrical_conductivity": "",
+        "other": ["������p�A���ō�p������ [cite: 151]"]
+      },
+      "cross_refs": ["3_1_def_001", "3_1_rxn_002", "3_2_sub_001"],
+      "notes": "70~80%���n�t�����ō�p�������B[cite: 186]"
+    },
+    {
+      "id": "3_1_sub_003",
+      "name": "�W�G�`���G�[�e��",
+      "formula": "C2H5-O-C2H5",
+      "aliases": ["�G�[�e��"],
+      "type": "������",
+      "properties": {
+        "melting_point": { "value": null, "unit": "��", "condition": "" },
+        "boiling_point": { "value": 34, "unit": "��", "condition": "" },
+        "color": "���F",
+        "odor": "���L�̋����ɂ���",
+        "density": { "value": null, "unit": "g/mL", "condition": "" },
+        "solubility": "���ɂ킸�������n���Ȃ�",
+        "electrical_conductivity": "",
+        "other": ["�������E���ΐ��̉t�� [cite: 283]", "������p������ [cite: 283]"]
+      },
+      "cross_refs": ["3_1_def_003"],
+      "notes": "�L�@�n�}�Ƃ��āA�L�@�������̕����E���o�ɗ��p�����B[cite: 285]"
+    },
+    {
+      "id": "3_2_sub_001",
+      "name": "�A�Z�g�A���f�q�h",
+      "formula": "CH3CHO",
+      "aliases": [],
+      "type": "������",
+      "properties": {
+        "melting_point": { "value": null, "unit": "��", "condition": "" },
+        "boiling_point": { "value": 20, "unit": "��", "condition": "" },
+        "color": "���F",
+        "odor": "���L�̎h���L",
+        "density": { "value": null, "unit": "g/mL", "condition": "" },
+        "solubility": "���ɂ悭�n����",
+        "electrical_conductivity": "",
+        "other": []
+      },
+      "cross_refs": ["3_2_def_001", "3_1_sub_002", "3_3_sub_001"],
+      "notes": "�G�^�m�[����j�N�����_�J���E���Ȃǂ̎_���܂Ŏ_������Ɠ�����B[cite: 335]"
+    },
+    {
+      "id": "3_2_sub_002",
+      "name": "�A�Z�g��",
+      "formula": "CH3COCH3",
+      "aliases": [],
+      "type": "������",
+      "properties": {
+        "melting_point": { "value": null, "unit": "��", "condition": "" },
+        "boiling_point": { "value": 56, "unit": "��", "condition": "" },
+        "color": "���F",
+        "odor": "�F���̂���t��",
+        "density": { "value": null, "unit": "g/mL", "condition": "" },
+        "solubility": "���ɂ�x���[���E�A���R�[���Ȃǂ̗L�@�n�}�ɂ�悭�����荇��",
+        "electrical_conductivity": "",
+        "other": []
+      },
+      "cross_refs": ["3_2_def_002"],
+      "notes": "�}�j�L���A�����t(�����[�o�[)�̎听���ɂ�Ȃ��Ă���B[cite: 449]"
+    },
+    {
+      "id": "3_3_sub_001",
+      "name": "�|�_",
+      "formula": "CH3COOH",
+      "aliases": ["�X�|�_"],
+      "type": "������",
+      "properties": {
+        "melting_point": { "value": 17, "unit": "��", "condition": "" },
+        "boiling_point": { "value": 118, "unit": "��", "condition": "" },
+        "color": "���F",
+        "odor": "�h���L",
+        "density": { "value": null, "unit": "g/mL", "condition": "" },
+        "solubility": "���ɂ悭�n����",
+        "electrical_conductivity": "",
+        "other": ["�H�|����4~5%�܂܂�Ă��� [cite: 575]"]
+      },
+      "cross_refs": ["3_3_def_001", "3_2_sub_001"],
+      "notes": "�����Ȑ|�_�͎�����������ƋÌł���̂ŁA�X�|�_�Ƃ��΂��B[cite: 576]"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "3_1_def_001",
+      "type": "def",
+      "title": "�A���R�[��",
+      "prerequisite_ids": [],
+      "definition": "�Y�����f���q���̐��f���q���q�h���L�V��-OH�Œu�����ꂽ�\��R-OH�̉�������A�A���R�[���Ƃ����B[cite: 12]",
+      "explanation": "�A���R�[����-OH�̐��ɂ��u�����v��A-OH���������Ă���Y�f���q�̏󋵂ɂ��u�����v�ŕ��ނ���܂��B[cite: 13, 19] �Y�f�������Ȃ���̂͐��ɂ悭�n���܂����A�Y�f����������Ɛ��ɗn���ɂ����Ȃ�܂��B[cite: 23]",
+      "conditions": [],
+      "examples": [
+        {
+          "label": "1���A���R�[��",
+          "substance_ids": ["3_1_sub_001", "3_1_sub_002"],
+          "description": "���q����-OH��1��A���R�[���B[cite: 13]",
+          "values": []
+        }
+      ],
+      "counter_examples": ["�t�F�m�[���ނ̓q�h���L�V�������A���R�[���ɂ͕��ނ���Ȃ��i�ʏ͂ň����j�B"],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "�A���R�[���̋����Ǝ_���������̊֌W��₤���",
+          "key_concept_ids": ["3_1_rxn_001"]
+        }
+      ],
+      "cross_refs": ["3_1_rxn_001", "TBD:�t�F�m�[����"],
+      "source_page": 432
+    },
+    {
+      "id": "3_1_rxn_001",
+      "type": "rxn",
+      "title": "�A���R�[���̎_������",
+      "prerequisite_ids": ["3_1_def_001"],
+      "definition": "�A���R�[���𗰎_�_���̃j�N�����_�J���E�����n�t�Ȃǂ̎_���܂ƂƂ�ɉ��M����ƁA�J���{�j����Ɏ_������锽���B[cite: 35, 36]",
+      "explanation": "�A���R�[���̋����ɂ���Ď_���̂�������قȂ�܂��B[cite: 37, 63, 84] ��1���A���R�[���̓A���f�q�h��o�ăJ���{���_�ɂȂ�܂��B[cite: 37, 38] ��2���A���R�[���̓P�g���ɂȂ�A����ȏ�͎_������܂���B[cite: 63] ��3���A���R�[���͎_������ɂ����ł��B[cite: 84]",
+      "conditions": ["�_���܁i���_�_���̃j�N�����_�J���E�����n�t�Ȃǁj", "���M"],
+      "examples": [
+        {
+          "label": "�G�^�m�[���̎_��",
+          "substance_ids": ["3_1_sub_002", "3_2_sub_001", "3_3_sub_001"],
+          "description": "�G�^�m�[��(��1��) �� �A�Z�g�A���f�q�h �� �|�_ [cite: 155]",
+          "values": []
+        }
+      ],
+      "counter_examples": ["��3���A���R�[���͒ʏ�̏���ł͎_������Ȃ��B[cite: 84]"],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "�^����ꂽ�A���R�[���̍\��������A�_�����Đ����鉻�����𐄒肷����",
+          "key_concept_ids": ["3_1_def_001", "3_2_def_001", "3_2_def_002"]
+        }
+      ],
+      "cross_refs": ["3_2_def_001", "3_2_def_002", "3_3_def_001"],
+      "source_page": 433
+    },
+    {
+      "id": "3_1_law_001",
+      "type": "law",
+      "title": "�U�C�c�F�t��",
+      "prerequisite_ids": ["3_1_def_001", "3_1_rxn_002"],
+      "definition": "�A���R�[���̒E�������ł́A-OH�����������Y�f���q�̗��ׂ̒Y�f���q�̂����A�������Ă��鐅�f���q�����Ȃ��ق����琅�f���q�������A�吶�����ɂȂ�Ƃ����@���B[cite: 213, 216]",
+      "explanation": "���q��E�����N����Ƃ��ɁA��d�������ǂ��ɂł��邩��\������@���ł��B[cite: 212] ���f�̏��Ȃ������琅�f���D���邽�߁A�u����̑����A���P�����吶�����Ƃ��ē����܂��B[cite: 212-221]",
+      "conditions": ["�A���R�[���̕��q��E������"],
+      "examples": [
+        {
+          "label": "2-�u�^�m�[���̒E��",
+          "substance_ids": [],
+          "description": "2-�u�^�m�[������E������ƁA2-�u�e�����吶����(82%)�A1-�u�e������������(18%)�ƂȂ�B[cite: 219, 221]",
+          "values": [
+            { "value": 82, "unit": "%", "condition": "�吶����" },
+            { "value": 18, "unit": "%", "condition": "��������" }
+          ]
+        }
+      ],
+      "counter_examples": [],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "��Ώ̂ȃA���R�[���̒E���������̎吶�����ƕ��������𔻕ʂ�����",
+          "key_concept_ids": ["3_1_rxn_002"]
+        }
+      ],
+      "cross_refs": ["TBD:�A���P��"],
+      "source_page": 436
+    },
+    {
+      "id": "3_1_def_003",
+      "type": "def",
+      "title": "�G�[�e��",
+      "prerequisite_ids": [],
+      "definition": "����܂��َ͈�̒Y�����f��_�f���q��͂���Ō���������������G�[�e���Ƃ����B[cite: 252]",
+      "explanation": "C-O-C�̌�����G�[�e�������ƌĂт܂��B[cite: 252] �A���R�[���Ƃ͍\���ِ��̂̊֌W�ɂȂ�܂����A�q�h���L�V�������Ȃ����߁A�i�g���E���Ƃ͔������܂���B[cite: 252, 255] ���_��A���R�[���ɔ�ׂĂ��Ȃ�Ⴂ�ł��B[cite: 257]",
+      "conditions": [],
+      "examples": [
+        {
+          "label": "�W�G�`���G�[�e��",
+          "substance_ids": ["3_1_sub_003"],
+          "description": "�G�^�m�[���̕��q�ԒE���œ�����G�[�e���B[cite: 263-267]",
+          "values": []
+        }
+      ],
+      "counter_examples": ["�A���R�[���̓i�g���E���Ɣ������Đ��f�𔭐����邪�A�G�[�e���͔������Ȃ��B[cite: 255]"],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "���q���������������̂����ANa�Ɣ������邩�ǂ����ŃA���R�[���ƃG�[�e���𔻕ʂ�����",
+          "key_concept_ids": ["3_1_def_001"]
+        }
+      ],
+      "cross_refs": ["3_1_sub_003"],
+      "source_page": 437
+    },
+    {
+      "id": "3_2_rxn_002",
+      "type": "rxn",
+      "title": "���[�h�z��������",
+      "prerequisite_ids": ["3_2_def_001", "3_2_def_002"],
+      "definition": "CH3-CO-R�A�܂��� CH3-CH(OH)-R (R��H���)�̍\�����L�@�������Ƀ��E�fI2�Ɖ���n�t������ĉ��߂�ƁA���L�̏L�C���������[�h�z����CHI3�̉��F���a���������锽���B[cite: 450]",
+      "explanation": "����̍\������A���R�[����P�g���i�A�Z�g�A���f�q�h��܂ށj����o���邽�߂̏d�v�Ȕ����ł��B[cite: 450] �������郈�[�h�z�����͉��F�����a���ł��B[cite: 450]",
+      "conditions": ["CH3-CO-R �܂��� CH3-CH(OH)-R �̍\���������", "���E�f�Ɛ��_���i�g���E��(�܂��͒Y�_�i�g���E��)������ĉ��߂� [cite: 450]"],
+      "examples": [
+        {
+          "label": "���[�h�z�����������������",
+          "substance_ids": ["3_1_sub_002", "3_2_sub_001", "3_2_sub_002"],
+          "description": "�A�Z�g���A�A�Z�g�A���f�q�h�A�G�^�m�[���A2-�v���p�m�[���A2-�u�^�m�[���ȂǁB[cite: 451, 453, 457, 461]",
+          "values": []
+        }
+      ],
+      "counter_examples": ["���^�m�[����1-�v���p�m�[���͏���̍\��������Ȃ����߁A���[�h�z��������������Ȃ��B"],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "�����̉������̍\������A���[�h�z���������������̂�I�������",
+          "key_concept_ids": ["3_1_def_001", "3_2_def_001", "3_2_def_002"]
+        }
+      ],
+      "cross_refs": [],
+      "source_page": 441
+    },
+    {
+      "id": "3_2_rxn_003",
+      "type": "rxn",
+      "title": "�⋾����",
+      "prerequisite_ids": ["3_2_def_001"],
+      "definition": "�A�����j�A���Ɏ_�␅�n�t�ɃA���f�q�h������ĉ��߂�ƁA�A���f�q�h�̊Ҍ����ɂ���C�I�����Ҍ�����A��ǂɋ₪�͏o���ċ��̂悤�ɂȂ锽���B[cite: 385]",
+      "explanation": "�A���f�q�h�����Ҍ�����m�F���邽�߂̑�\�I�Ȕ����ł��B[cite: 316, 385] �P�g���͊Ҍ���������Ȃ����߁A���̔���������܂���B[cite: 422]",
+      "conditions": ["�A�����j�A���Ɏ_�␅�n�t", "��60���ɉ��߂� [cite: 396]"],
+      "examples": [],
+      "counter_examples": ["�P�g���i�A�Z�g���Ȃǁj�͋⋾����������Ȃ��B[cite: 422]"],
+      "mnemonics": [],
+      "steps": [
+        { "step": 1, "action": "�Ɏ_�␅�n�t�ɃA�����j�A������ʉ�����", "reason": "���F�̎_����Ag2O�̒��a�𐶂������邽�� [cite: 385]" },
+        { "step": 2, "action": "����ɃA�����j�A����ߏ�ɉ�����", "reason": "���a��n������A�W�A���~����(I)�C�I����܂ޖ��F�̐��n�t(�A�����j�A���Ɏ_�␅�n�t)�𒲐����邽�� [cite: 385]" },
+        { "step": 3, "action": "�A���f�q�h�������60�����x�ɉ��߂�", "reason": "�Ҍ�������i�s�����A���͏o�����邽�� [cite: 385]" }
+      ],
+      "related_problems": [
+        {
+          "pattern": "�A���f�q�h�ƃP�g�����ʂ��鎎��┽������₤���",
+          "key_concept_ids": ["3_2_def_001", "3_2_def_002"]
+        }
+      ],
+      "cross_refs": ["3_2_rxn_004"],
+      "source_page": 440
+    },
+    {
+      "id": "3_4_rxn_001",
+      "type": "rxn",
+      "title": "�G�X�e�����Ƃ���",
+      "prerequisite_ids": ["3_1_def_001", "3_3_def_001"],
+      "definition": "�G�X�e���ɉ���̐��n�t������ĉ��M����ƁA����������ăA���R�[���ƃJ���{���_�̉��ɂȂ锽������񉻂Ƃ����B[cite: 790, 791]",
+      "explanation": "�G�X�e�����锽��(�G�X�e����)�͎_�G�}�ɂ��t�����ł����A�����p������������(����)�́A�J���{���_�����ƂȂ邽�ߕs�t�����Ƃ��Đi�s���܂��B[cite: 790, 791] ���a�����Ɏ��Ă��܂��B[cite: 795-800]",
+      "conditions": ["����iKOH�ANaOH�Ȃǁj�̐��n�t", "���M [cite: 790]"],
+      "examples": [
+        {
+          "label": "�|�_�G�`���̂���",
+          "substance_ids": [],
+          "description": "�|�_�G�`���ɐ��_���i�g���E���������ƁA�|�_�i�g���E���ƃG�^�m�[���ɂȂ�B[cite: 792-794]",
+          "values": []
+        }
+      ],
+      "counter_examples": [],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "�G�X�e���������������ۂ̐������̍\���������������",
+          "key_concept_ids": ["3_4_def_001"]
+        }
+      ],
+      "cross_refs": ["3_4_def_001", "TBD:�����̂���"],
+      "source_page": 449
+    },
+    {
+      "id": "3_4_eq_001",
+      "type": "eq",
+      "title": "���񉻉�",
+      "prerequisite_ids": ["3_4_def_002"],
+      "definition": "����1g����񉻂���̂ɕK�v��KOH�̎���(�P�� mg)�̐��l�B[cite: 902]",
+      "explanation": "������\�����鎉�b�_�̕��ϕ��q�ʂ̑召�𐄒肷��ڈ��ɂȂ�܂��B[cite: 902] ���񉻉����傫���قǁA�����̕��ϕ��q�ʂ͏������Ƃ��������̊֌W������܂��B[cite: 908, 909, 915]",
+      "conditions": [],
+      "examples": [
+        {
+          "label": "���񉻉����畽�ϕ��q�ʂ���߂�v�Z",
+          "substance_ids": [],
+          "description": "�����̕��ϕ��q�ʂ�M�A���񉻉���s�Ƃ���ƁAM = (3 �~ 56 �~ 10^3) / s �ƂȂ�B[cite: 906, 907]",
+          "values": []
+        }
+      ],
+      "counter_examples": [],
+      "mnemonics": [],
+      "steps": [],
+      "related_problems": [
+        {
+          "pattern": "�^����ꂽ���񉻉���������̕��ϕ��q�ʂ�v�Z������",
+          "key_concept_ids": ["3_4_def_002"]
+        }
+      ],
+      "cross_refs": ["3_4_eq_002"],
+      "source_page": 452
+    }
+  ],
+  "relations": [
+    {
+      "from_id": "3_1_def_001",
+      "to_id": "3_1_rxn_001",
+      "relation_type": "is_prerequisite_of",
+      "note": "�A���R�[���̍\���i�����j���_�������̋�������肷��B"
+    },
+    {
+      "from_id": "3_1_rxn_001",
+      "to_id": "3_2_sub_001",
+      "relation_type": "produces",
+      "note": "��1���A���R�[��(�G�^�m�[��)�̎_���ɂ�萶������B"
+    },
+    {
+      "from_id": "3_2_rxn_002",
+      "to_id": "3_2_sub_002",
+      "relation_type": "is_detected_by",
+      "note": "�A�Z�g���̓��[�h�z��������������B"
+    },
+    {
+      "from_id": "3_2_sub_001",
+      "to_id": "3_2_rxn_003",
+      "relation_type": "is_detected_by",
+      "note": "�A�Z�g�A���f�q�h�͊Ҍ���������ߋ⋾����������B"
+    }
+  ]
+}
+
