@@ -91,7 +91,7 @@
       "choices": [
         {
           "label": "1",
-          "text": "一種類の元素だけからできている純物質である。",
+          "text": "1種類の元素だけからできている純物質である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
           "trap_detail": "単体の定義にすり替え。",
@@ -109,14 +109,14 @@
         },
         {
           "label": "3",
-          "text": "二種類以上の物質が混じり合ってできているものである。",
+          "text": "2種類以上の物質が混じり合ってできているものである。",
           "is_correct": true,
           "choice_id": "ch1_1_q001_c3",
           "tts_text": "二種類以上の物質が混じり合ってできているものである。"
         },
         {
           "label": "4",
-          "text": "二種類以上の元素からできている純物質である。",
+          "text": "2種類以上の元素からできている純物質である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
           "trap_detail": "化合物の定義にすり替え。",
@@ -179,7 +179,7 @@
         },
         {
           "label": "4",
-          "text": "二種類以上の物質が混じり合ってできているものである。",
+          "text": "2種類以上の物質が混じり合ってできているものである。",
           "is_correct": false,
           "trap_type": "concept_confusion",
           "trap_detail": "混合物の定義にすり替え。",
@@ -224,7 +224,7 @@
         },
         {
           "label": "2",
-          "text": "二種類以上の物質が単に混じり合ってできている混合物である。",
+          "text": "2種類以上の物質が単に混じり合ってできている混合物である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
           "trap_detail": "混合物の定義にすり替え。化合物は純物質。",
@@ -233,14 +233,14 @@
         },
         {
           "label": "3",
-          "text": "二種類以上の元素からできている純物質である。",
+          "text": "2種類以上の元素からできている純物質である。",
           "is_correct": true,
           "choice_id": "ch1_1_q003_c3",
           "tts_text": "二種類以上の元素からできている純物質である。"
         },
         {
           "label": "4",
-          "text": "一種類の元素だけからできている純物質である。",
+          "text": "1種類の元素だけからできている純物質である。",
           "is_correct": false,
           "trap_type": "keyword_swap",
           "trap_detail": "『二種類以上』を『一種類』にすり替え。これは単体の定義。",
@@ -286,7 +286,7 @@
         },
         {
           "label": "2",
-          "text": "一種類の元素だけからできている純物質である。",
+          "text": "1種類の元素だけからできている純物質である。",
           "is_correct": true,
           "choice_id": "ch1_1_q004_c2",
           "tts_text": "一種類の元素だけからできている純物質である。"
@@ -302,7 +302,7 @@
         },
         {
           "label": "4",
-          "text": "二種類以上の元素からできている純物質である。",
+          "text": "2種類以上の元素からできている純物質である。",
           "is_correct": false,
           "trap_type": "keyword_swap",
           "trap_detail": "『一種類』を『二種類以上』にすり替え。これは化合物の定義。",
@@ -922,7 +922,7 @@
         },
         {
           "label": "3",
-          "text": "ナトリウムと塩素の二種類の元素からなる化合物である。",
+          "text": "ナトリウムと塩素の2種類の元素からなる化合物である。",
           "is_correct": false,
           "choice_id": "ch1_1_q014_c3",
           "tts_text": "ナトリウムと塩素の二種類の元素からなる化合物である。"
@@ -1488,7 +1488,7 @@
         },
         {
           "label": "2",
-          "text": "二種類以上の元素からできている化合物である。",
+          "text": "2種類以上の元素からできている化合物である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
           "trap_detail": "化合物と混合物の混同。",
@@ -1497,7 +1497,7 @@
         },
         {
           "label": "3",
-          "text": "一種類の元素だけからできている単体である。",
+          "text": "1種類の元素だけからできている単体である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
           "trap_detail": "単体の定義にすり替え。空気は複数物質。",
@@ -1549,7 +1549,7 @@
         },
         {
           "label": "2",
-          "text": "水分子一種類だけからなる純物質である。",
+          "text": "水分子1種類だけからなる純物質である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
           "trap_detail": "純物質（純水）の説明にすり替え。",
@@ -1603,7 +1603,7 @@
       "choices": [
         {
           "label": "1",
-          "text": "一種類の元素からできている単体である。",
+          "text": "1種類の元素からできている単体である。",
           "is_correct": false,
           "trap_type": "concept_confusion",
           "trap_detail": "単体の定義にすり替え。",
@@ -1661,7 +1661,7 @@
       "sub_category": "単体の判別",
       "difficulty": 3,
       "question_type": "correct",
-      "question": "次の四つのうち、単体であるものとして正しい組合せを選びなさい。",
+      "question": "次の4つのうち、単体であるものとして正しい組合せを選びなさい。",
       "choices": [
         {
           "label": "1",
@@ -1734,7 +1734,7 @@
       "sub_category": "化合物の判別",
       "difficulty": 2,
       "question_type": "correct",
-      "question": "次の四つのうち、化合物であるものとして正しい組合せを選びなさい。",
+      "question": "次の4つのうち、化合物であるものとして正しい組合せを選びなさい。",
       "choices": [
         {
           "label": "1",
@@ -1802,7 +1802,7 @@
       "sub_category": "混合物の判別",
       "difficulty": 2,
       "question_type": "correct",
-      "question": "次の四つの組合せのうち、すべてが混合物であるものを選びなさい。",
+      "question": "次の4つの組合せのうち、すべてが混合物であるものを選びなさい。",
       "choices": [
         {
           "label": "1",
@@ -1999,7 +1999,7 @@
       "choices": [
         {
           "label": "1",
-          "text": "ろ紙を四つ折りにしてから円錐状に開き、漏斗の中に入れる。",
+          "text": "ろ紙を4つ折りにしてから円錐状に開き、漏斗の中に入れる。",
           "is_correct": false,
           "choice_id": "ch1_1_q031_c1",
           "tts_text": "ろ紙を四つ折りにしてから円錐状に開き、漏斗の中に入れる。"
@@ -2860,7 +2860,7 @@
       "sub_category": "同素体のスコップ",
       "difficulty": 2,
       "question_type": "correct",
-      "question": "同素体をもつ代表的な四つの元素を表す語呂合わせ『スコップ』の組合せとして、正しいものを選びなさい。",
+      "question": "同素体をもつ代表的な4つの元素を表す語呂合わせ『スコップ』の組合せとして、正しいものを選びなさい。",
       "choices": [
         {
           "label": "1",
@@ -2990,7 +2990,7 @@
       "sub_category": "炎色反応の語呂対応",
       "difficulty": 4,
       "question_type": "correct",
-      "question": "炎色反応の語呂合わせ『リアカーなきケー村』の部分が意味する元素と色の組合せとして、正しい記述を選びなさい。",
+      "question": "炎色反応の語呂合わせ『リアカーなきK村』の部分が意味する元素と色の組合せとして、正しい記述を選びなさい。",
       "choices": [
         {
           "label": "1",
