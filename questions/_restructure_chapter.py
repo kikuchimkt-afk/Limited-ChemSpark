@@ -65,7 +65,7 @@ HERE = Path(__file__).parent
 
 KANJI_DIGIT = {"零": 0, "〇": 0, "一": 1, "二": 2, "三": 3, "四": 4,
                "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
-DIGIT_CHARS = "零一二三四五六七八九十百千"
+DIGIT_CHARS = "零〇一二三四五六七八九十百千万"
 DIGIT_CLASS = f"[{DIGIT_CHARS}]"
 
 
@@ -84,6 +84,10 @@ def _parse_int(s: str) -> int:
             current = 0
         elif ch == "千":
             result += (current if current else 1) * 1000
+            current = 0
+        elif ch == "万":
+            result += (current if current else 1)
+            result *= 10000
             current = 0
     return result + current
 
