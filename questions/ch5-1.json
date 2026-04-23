@@ -128,7 +128,8 @@
           "quote": "炭素原子を骨格とした化合物を有機化合物"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q002",
@@ -184,7 +185,8 @@
           "quote": "可燃性で、融点が低く、水に溶けにくい非電解質が多い"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q003",
@@ -240,7 +242,8 @@
           "quote": "有機化合物は可燃性で融点が低く水に溶けにくい非電解質が多い"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q004",
@@ -296,7 +299,8 @@
           "quote": "共有結合が大部分"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q005",
@@ -352,7 +356,8 @@
           "quote": "種類が非常に多く"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q006",
@@ -408,7 +413,8 @@
           "quote": "水に溶けにくい"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q007",
@@ -464,7 +470,8 @@
           "quote": "可燃性"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q008",
@@ -520,7 +527,8 @@
           "quote": "反応が遅い"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q009",
@@ -576,7 +584,8 @@
           "quote": "炭素の酸化物(CO, CO2)は例外で無機化合物"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q010",
@@ -628,7 +637,8 @@
           "quote": "炭素の酸化物(CO, CO2), 炭酸塩, シアン化物"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q011",
@@ -684,7 +694,8 @@
           "quote": "炭素の酸化物, 炭酸塩は例外で無機"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q012",
@@ -740,7 +751,8 @@
           "quote": "シアン化物(KCNなど)"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q013",
@@ -792,7 +804,8 @@
           "quote": "炭酸塩(CaCO3など)は例外"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q014",
@@ -848,7 +861,8 @@
           "quote": "ウェーラーによって初めて人工的に合成された有機化合物"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q015",
@@ -904,7 +918,8 @@
           "quote": "尿素"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q016",
@@ -960,7 +975,8 @@
           "quote": "無機化合物であるシアン酸アンモニウムから合成された"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q017",
@@ -1016,7 +1032,8 @@
           "quote": "炭素原子どうしの結合がすべて単結合のものを飽和化合物"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q018",
@@ -1072,7 +1089,8 @@
           "quote": "二重結合や三重結合などの不飽和結合を1つでも含むものを不飽和化合物"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q019",
@@ -1128,7 +1146,8 @@
           "quote": "エタン（単結合のみ）"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q020",
@@ -1184,7 +1203,8 @@
           "quote": "エチレン（二重結合をもつ）"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q021",
@@ -1236,7 +1256,8 @@
           "quote": "エチレン（二重結合をもつ）"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q022",
@@ -1292,7 +1313,8 @@
           "quote": "炭素と水素だけからなる化合物を炭化水素"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q023",
@@ -1348,7 +1370,8 @@
           "quote": "一般式 CnH2n+2。単結合のみ"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q024",
@@ -1404,7 +1427,8 @@
           "quote": "一般式 CnH2n。二重結合を1個もつ"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q025",
@@ -1460,7 +1484,8 @@
           "quote": "一般式 CnH2n-2。三重結合を1個もつ"
         }
       ],
-      "mnemonic": "歩きは禁止（アルキンは三重結合）"
+      "mnemonic": "歩きは禁止（アルキンは三重結合）",
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q026",
@@ -1516,7 +1541,8 @@
           "quote": "アルケン:エチレン、アルキン:アセチレン"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q027",
@@ -1568,7 +1594,8 @@
           "quote": "アルキン:アセチレン"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q028",
@@ -1620,7 +1647,8 @@
           "quote": "アルカン:CnH2n+2, アルケン:CnH2n"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q029",
@@ -1676,7 +1704,8 @@
           "quote": "物質の性質を決定している原子または原子団を官能基"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q030",
@@ -1732,7 +1761,8 @@
           "quote": "同じ官能基を持つ化合物は、化学的な性質がよく似ています"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q031",
@@ -1788,7 +1818,8 @@
           "quote": "ヒドロキシ基 (-OH) アルコール類を構成"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q032",
@@ -1844,7 +1875,8 @@
           "quote": "カルボキシ基 (-COOH) カルボン酸類を構成"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q033",
@@ -1896,7 +1928,8 @@
           "quote": "ヒドロキシ基→アルコール、カルボキシ基→カルボン酸"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q034",
@@ -1952,7 +1985,8 @@
           "quote": "酸性を示し、アルコールと反応してエステルをつくる"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q035",
@@ -2004,7 +2038,8 @@
           "quote": "ヒドロキシ基→アルコール、カルボキシ基→カルボン酸"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q036",
@@ -2060,7 +2095,8 @@
           "quote": "試料に乾いた酸素O2を通じて完全燃焼"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q037",
@@ -2116,7 +2152,8 @@
           "quote": "元素分析においてH2Oを吸収する"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q038",
@@ -2172,7 +2209,8 @@
           "quote": "水分や二酸化炭素の吸収に使う"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q039",
@@ -2228,7 +2266,8 @@
           "quote": "必ず塩化カルシウム管を先につなぐ必要がある"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q040",
@@ -2284,7 +2323,8 @@
           "quote": "ソーダ石灰はH2Oも吸収してしまうため、必ず塩化カルシウム管を先に"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q041",
@@ -2340,7 +2380,8 @@
           "quote": "試料を完全燃焼させるための酸化剤として使用される"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q042",
@@ -2396,7 +2437,8 @@
           "quote": "各元素の質量をそれぞれの原子量で割り、モル比を出す"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q043",
@@ -2452,7 +2494,8 @@
           "quote": "Cの質量を求める: CO2の質量 × (12 / 44)"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q044",
@@ -2508,7 +2551,8 @@
           "quote": "Hの質量を求める: H2Oの質量 × (2.0 / 18)"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q045",
@@ -2564,7 +2608,8 @@
           "quote": "Oの質量を求める: 試料全体の質量 - (Cの質量 + Hの質量)"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q046",
@@ -2620,7 +2665,8 @@
           "quote": "燃焼に使った外部の酸素と区別するため、引き算で元の試料内のOの質量を出す"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q047",
@@ -2676,7 +2722,8 @@
           "quote": "n = 分子量 / 式量"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_1_q048",
@@ -2732,7 +2779,8 @@
           "quote": "別途、気体の状態方程式や浸透圧などで分子量が測定されていること"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q049",
@@ -2788,7 +2836,8 @@
           "quote": "組成式の各原子の数をn倍して分子式とする"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_1_q050",
@@ -2844,7 +2893,8 @@
           "quote": "分子量÷式量＝倍率n。組成式をn倍して分子式"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     }
   ]
 }

@@ -74,7 +74,8 @@
           "quote": "正六角形の平面構造"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q002",
@@ -130,7 +131,8 @@
           "quote": "炭素原子間の距離は単結合と二重結合の中間"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q003",
@@ -186,7 +188,8 @@
           "quote": "無色、特有のにおい、水に不溶、可燃性"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q004",
@@ -242,7 +245,8 @@
           "quote": "付加反応を簡単には起こさない（安定なため）"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q005",
@@ -298,7 +302,8 @@
           "quote": "石炭の乾留で生成するコールタールを分留した軽油中に存在する"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q006",
@@ -354,7 +359,8 @@
           "quote": "弱酸性（炭酸より弱い）"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q007",
@@ -410,7 +416,8 @@
           "quote": "皮膚や粘膜を強く侵す。有毒"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q008",
@@ -466,7 +473,8 @@
           "quote": "プロペンとベンゼンからクメンを経由してフェノールとアセトンを合成する製法"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q009",
@@ -522,7 +530,8 @@
           "quote": "副産物として有用なアセトンが得られます"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q010",
@@ -578,7 +587,8 @@
           "quote": "1分子中に-OHと-COOHをもつヒドロキシ酸"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q011",
@@ -634,7 +644,8 @@
           "quote": "弱塩基性。有毒な油状液体"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q012",
@@ -690,7 +701,8 @@
           "quote": "冷やしながら亜硝酸ナトリウムを作用させ、5℃以下に冷却"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q013",
@@ -742,7 +754,8 @@
           "quote": "温度が上がると加水分解してフェノールと窒素になる"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q014",
@@ -798,7 +811,8 @@
           "quote": "酸性・塩基性の違いを利用し、塩にして水層に移行させることで分離する"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q015",
@@ -854,7 +868,8 @@
           "quote": "NaHCO3水溶液を加えると、カルボン酸のみが塩となり水層へ移動する"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q016",
@@ -910,7 +925,8 @@
           "quote": "スルホン酸 ＞ カルボン酸 ＞ 炭酸 ＞ フェノール類"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q017",
@@ -966,7 +982,8 @@
           "quote": "アニリン（塩基性物質）の分離には塩酸による抽出が用いられる"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q018",
@@ -1022,7 +1039,8 @@
           "quote": "無色（酸化されると赤〜赤褐色）"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q019",
@@ -1078,7 +1096,8 @@
           "quote": "燃焼時はすすを多量に出す"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q020",
@@ -1130,7 +1149,8 @@
           "quote": "弱酸性（炭酸より弱い）"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q021",
@@ -1186,7 +1206,8 @@
           "quote": "プロペンにベンゼンを付加→空気酸化→希硫酸で分解"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q022",
@@ -1242,7 +1263,8 @@
           "quote": "無色、針状結晶"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q023",
@@ -1298,7 +1320,8 @@
           "quote": "有機化合物をよく溶かすため有機溶媒として用いられる"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q024",
@@ -1354,7 +1377,8 @@
           "quote": "弱酸の塩に強酸を加えると弱酸が遊離して再びエーテルで抽出できる"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q025",
@@ -1410,7 +1434,8 @@
           "quote": "フェノールはNaOHで塩になる。NaHCO3では反応しない"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q026",
@@ -1462,7 +1487,8 @@
           "quote": "ケクレは二重結合が1つおきに、実際はすべて等しい"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q027",
@@ -1518,7 +1544,8 @@
           "quote": "かつては消毒剤に用いられた"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q028",
@@ -1574,7 +1601,8 @@
           "quote": "水にわずかに溶ける"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q029",
@@ -1630,7 +1658,8 @@
           "quote": "水に溶けにくいが有機溶媒にはよく溶ける"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q030",
@@ -1686,7 +1715,8 @@
           "quote": "分液漏斗で振る"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q031",
@@ -1742,7 +1772,8 @@
           "quote": "融点5.5℃、沸点80℃"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q032",
@@ -1798,7 +1829,8 @@
           "quote": "融点41℃"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q033",
@@ -1854,7 +1886,8 @@
           "quote": "0.140nm、単結合と二重結合の中間"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q034",
@@ -1910,7 +1943,8 @@
           "quote": "特有の不快臭"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q035",
@@ -1966,7 +2000,8 @@
           "quote": "塩化ベンゼンジアゾニウムを生成する反応"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q036",
@@ -2022,7 +2057,8 @@
           "quote": "融点159℃"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q037",
@@ -2074,7 +2110,8 @@
           "quote": "付加反応を簡単には起こさない"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q038",
@@ -2130,7 +2167,8 @@
           "quote": "クメンを作り→空気酸化→クメンヒドロペルオキシド"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q039",
@@ -2186,7 +2224,8 @@
           "quote": "加水分解してフェノールと窒素になる"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q040",
@@ -2238,7 +2277,8 @@
           "quote": "分離操作で加えられる試薬はすべて常温のまま使用する"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q041",
@@ -2294,7 +2334,8 @@
           "quote": "沸点80℃"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q042",
@@ -2350,7 +2391,8 @@
           "quote": "水にわずかに溶ける"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q043",
@@ -2402,7 +2444,8 @@
           "quote": "水に不溶"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q044",
@@ -2458,7 +2501,8 @@
           "quote": "混合溶液をジエチルエーテルに溶かす"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q045",
@@ -2510,7 +2554,8 @@
           "quote": "フェノール類はアルコールには分類されない"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q046",
@@ -2562,7 +2607,8 @@
           "quote": "正六角形の平面構造"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q047",
@@ -2618,7 +2664,8 @@
           "quote": "アニリン塩酸塩に亜硝酸ナトリウムを作用させ"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q048",
@@ -2670,7 +2717,8 @@
           "quote": "NaHCO3ではフェノールは溶解せずエーテル層に残る"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_4_q049",
@@ -2722,7 +2770,8 @@
           "quote": "プロペンとベンゼンから"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_4_q050",
@@ -2774,7 +2823,8 @@
           "quote": "弱塩基性"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     }
   ]
 }

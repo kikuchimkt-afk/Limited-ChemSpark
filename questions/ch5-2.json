@@ -95,7 +95,8 @@
           "quote": "鎖式飽和炭化水素をアルカンという"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q002",
@@ -151,7 +152,8 @@
           "quote": "極性が小さいため水に溶けにくく、有機溶媒に溶けやすい"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q003",
@@ -207,7 +209,8 @@
           "quote": "nの数が大きくなるに従って、沸点や融点が高くなる"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q004",
@@ -263,7 +266,8 @@
           "quote": "無色・無臭・可燃性の気体。天然ガスの主成分"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q005",
@@ -319,7 +323,8 @@
           "quote": "化学的には比較的安定"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q006",
@@ -375,7 +380,8 @@
           "quote": "1つの分子中の原子が他の原子で置き換えられる反応"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q007",
@@ -431,7 +437,8 @@
           "quote": "メタンと塩素の混合気体に光を当てると、クロロメタンや塩化水素などが生成"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q008",
@@ -487,7 +494,8 @@
           "quote": "光や高温などのエネルギーが必要"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q009",
@@ -543,7 +551,8 @@
           "quote": "炭素原子間の二重結合を1個もつ鎖式不飽和炭化水素"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q010",
@@ -595,7 +604,8 @@
           "quote": "化学的には比較的安定"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q011",
@@ -651,7 +661,8 @@
           "quote": "アルケンなどが他の分子と反応して、単結合をもった飽和化合物になる反応"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q012",
@@ -707,7 +718,8 @@
           "quote": "白金またはニッケル触媒上で水素を付加させるとエタンが生成"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q013",
@@ -763,7 +775,8 @@
           "quote": "赤褐色の臭素がアルケンに付加すると無色の化合物になり脱色する"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q014",
@@ -815,7 +828,8 @@
           "quote": "化学的には比較的安定"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q015",
@@ -871,7 +885,8 @@
           "quote": "二重結合の一方の炭素原子を固定すると他方が自由に回転できないために生じる"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q016",
@@ -927,7 +942,8 @@
           "quote": "同じ側にあるものをシス形、反対側にあるものをトランス形"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q017",
@@ -983,7 +999,8 @@
           "quote": "二重結合のそれぞれの炭素原子に、異なる原子または原子団が結合していること"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q018",
@@ -1039,7 +1056,8 @@
           "quote": "最も簡単なアルケン。植物の成熟を促進する作用"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q019",
@@ -1095,7 +1113,8 @@
           "quote": "水素原子が多く結合している炭素原子にHX分子の水素原子が結合しやすい"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q020",
@@ -1151,7 +1170,8 @@
           "quote": "2-プロパノールが主生成物となります"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q021",
@@ -1207,7 +1227,8 @@
           "quote": "炭素原子間に三重結合が1つある鎖式不飽和炭化水素"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q022",
@@ -1263,7 +1284,8 @@
           "quote": "発熱量が大きく、酸素アセチレン炎として鉄の溶断や溶接に利用"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q023",
@@ -1319,7 +1341,8 @@
           "quote": "水を付加させると不安定なビニルアルコールを経て、直ちにアセトアルデヒドに変化"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q024",
@@ -1375,7 +1398,8 @@
           "quote": "塩化水素を付加すると塩化ビニル"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q025",
@@ -1431,7 +1455,8 @@
           "quote": "酢酸を付加すると酢酸ビニルが生成"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q026",
@@ -1483,7 +1508,8 @@
           "quote": "酢酸→酢酸ビニル。水→アセトアルデヒド"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q027",
@@ -1535,7 +1561,8 @@
           "quote": "三重結合が1つある鎖式不飽和炭化水素"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q028",
@@ -1587,7 +1614,8 @@
           "quote": "アルケン:CnH2n"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q029",
@@ -1643,7 +1671,8 @@
           "quote": "エタン C2H6"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q030",
@@ -1699,7 +1728,8 @@
           "quote": "メタンと塩素の混合気体に光を当てると置換反応"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q031",
@@ -1755,7 +1785,8 @@
           "quote": "nの数が大きくなるに従って、沸点や融点が高くなる"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q032",
@@ -1811,7 +1842,8 @@
           "quote": "cis-2-ブテンとtrans-2-ブテン"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q033",
@@ -1863,7 +1895,8 @@
           "quote": "臭素がアルケンに付加すると脱色"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q034",
@@ -1919,7 +1952,8 @@
           "quote": "白金またはニッケル触媒"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q035",
@@ -1975,7 +2009,8 @@
           "quote": "不安定なビニルアルコールを経て、直ちにアセトアルデヒドに変化"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q036",
@@ -2031,7 +2066,8 @@
           "quote": "天然ガスや石炭層内に含まれるガスの主成分"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q037",
@@ -2087,7 +2123,8 @@
           "quote": "鎖式飽和炭化水素"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q038",
@@ -2139,7 +2176,8 @@
           "quote": "臭素がアルケンに付加すると脱色"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q039",
@@ -2195,7 +2233,8 @@
           "quote": "酸素アセチレン炎として鉄の溶断や溶接に利用"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q040",
@@ -2251,7 +2290,8 @@
           "quote": "エチレンに水素を付加させるとエタンが生成"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q041",
@@ -2307,7 +2347,8 @@
           "quote": "塩化水素を付加すると塩化ビニル"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q042",
@@ -2363,7 +2404,8 @@
           "quote": "植物の成熟を促進する作用"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q043",
@@ -2415,7 +2457,8 @@
           "quote": "アルカンは化学的に比較的安定"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q044",
@@ -2471,7 +2514,8 @@
           "quote": "三重結合をもつため付加反応を起こしやすい"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q045",
@@ -2527,7 +2571,8 @@
           "quote": "非対称のアルケンの二重結合にHX型の分子が付加する場合"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q046",
@@ -2579,7 +2624,8 @@
           "quote": "塩化水素→塩化ビニル"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q047",
@@ -2635,7 +2681,8 @@
           "quote": "三重結合"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q048",
@@ -2691,7 +2738,8 @@
           "quote": "酢酸を付加すると酢酸ビニルが生成。高分子の重要な原料"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_2_q049",
@@ -2743,7 +2791,8 @@
           "quote": "一方の炭素原子に同じ原子または原子団が結合していると存在しない"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_2_q050",
@@ -2799,7 +2848,8 @@
           "quote": "アルカンは光や高温のもとで置換反応"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     }
   ]
 }

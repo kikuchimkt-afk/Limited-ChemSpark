@@ -84,7 +84,8 @@
           "quote": "水素原子がヒドロキシ基-OHで置換された構造R-OH"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q002",
@@ -140,7 +141,8 @@
           "quote": "-OHの数による「価数」"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q003",
@@ -196,7 +198,8 @@
           "quote": "-OHが結合している炭素原子の状況による「級数」"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q004",
@@ -252,7 +255,8 @@
           "quote": "第1級アルコールはアルデヒドを経てカルボン酸になります"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q005",
@@ -308,7 +312,8 @@
           "quote": "第2級アルコールはケトンになり、それ以上は酸化されません"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q006",
@@ -364,7 +369,8 @@
           "quote": "第3級アルコールは酸化されにくい"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q007",
@@ -420,7 +426,8 @@
           "quote": "エタノール → アセトアルデヒド → 酢酸"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q008",
@@ -476,7 +483,8 @@
           "quote": "有毒な液体。少量摂取で眼に障害、失明"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q009",
@@ -532,7 +540,8 @@
           "quote": "70~80%水溶液が消毒作用が強い"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q010",
@@ -588,7 +597,8 @@
           "quote": "炭化水素基が酸素原子をはさんで結合した化合物"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q011",
@@ -644,7 +654,8 @@
           "quote": "アルコールはナトリウムと反応して水素を発生するが、エーテルは反応しない"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q012",
@@ -700,7 +711,8 @@
           "quote": "揮発性・引火性の液体。有機溶媒として利用"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q013",
@@ -756,7 +768,8 @@
           "quote": "沸点もアルコールに比べてかなり低い"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q014",
@@ -812,7 +825,8 @@
           "quote": "アルデヒドの還元性により銀イオンが還元され、器壁に銀が析出"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q015",
@@ -868,7 +882,8 @@
           "quote": "ヨードホルムCHI3の黄色沈殿が生成する反応"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q016",
@@ -920,7 +935,8 @@
           "quote": "メタノールは条件の構造を持たないため、ヨードホルム反応を示さない"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q017",
@@ -972,7 +988,8 @@
           "quote": "ケトンは還元性を持たないため、この反応を示しません"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q018",
@@ -1028,7 +1045,8 @@
           "quote": "無色、特有の刺激臭、水によく溶ける"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q019",
@@ -1084,7 +1102,8 @@
           "quote": "水にもベンゼン・アルコールなどの有機溶媒にもよく混ざり合う"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q020",
@@ -1140,7 +1159,8 @@
           "quote": "純粋な酢酸は室温が下がると凝固するので、氷酢酸ともよばれる"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q021",
@@ -1196,7 +1216,8 @@
           "quote": "硫酸酸性のニクロム酸カリウム水溶液などの酸化剤"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q022",
@@ -1252,7 +1273,8 @@
           "quote": "水素原子が少ないほうから水素原子が失われ、主生成物になる"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q023",
@@ -1308,7 +1330,8 @@
           "quote": "エステルを作る反応がエステル化"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q024",
@@ -1364,7 +1387,8 @@
           "quote": "塩基を用いた加水分解（けん化）は不可逆反応として進行"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q025",
@@ -1420,7 +1444,8 @@
           "quote": "炭素数が少ないものは水によく溶けますが、炭素数が増えると水に溶けにくくなります"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q026",
@@ -1472,7 +1497,8 @@
           "quote": "ケトンは還元性を持たないため銀鏡反応を示さない"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q027",
@@ -1524,7 +1550,8 @@
           "quote": "けん化は不可逆反応として進行"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q028",
@@ -1580,7 +1607,8 @@
           "quote": "油脂1gをけん化するのに必要なKOHの質量(mg)の数値"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q029",
@@ -1632,7 +1660,8 @@
           "quote": "水によく溶ける"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q030",
@@ -1688,7 +1717,8 @@
           "quote": "エタノールの分子間脱水で得られるエーテル"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q031",
@@ -1744,7 +1774,8 @@
           "quote": "エタノールの分子間脱水で得られるエーテル"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q032",
@@ -1800,7 +1831,8 @@
           "quote": "フェノール類はヒドロキシ基を持つがアルコールには分類されない"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q033",
@@ -1856,7 +1888,8 @@
           "quote": "酢酸エチルに水酸化ナトリウムを加えると、酢酸ナトリウムとエタノールになる"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q034",
@@ -1908,7 +1941,8 @@
           "quote": "第3級アルコールは酸化されにくい"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q035",
@@ -1964,7 +1998,8 @@
           "quote": "硝酸銀水溶液にアンモニア水→アルデヒド→60℃"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q036",
@@ -2020,7 +2055,8 @@
           "quote": "CH3-CO-R、または CH3-CH(OH)-Rの構造"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q037",
@@ -2076,7 +2112,8 @@
           "quote": "マニキュア除光液(リムーバー)の主成分"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q038",
@@ -2132,7 +2169,8 @@
           "quote": "食酢中に4~5%含まれている"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q039",
@@ -2188,7 +2226,8 @@
           "quote": "高温→分子内脱水→エチレン。低温→分子間脱水→エーテル"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q040",
@@ -2240,7 +2279,8 @@
           "quote": "けん化価が大きいほど、油脂の平均分子量は小さいという反比例の関係"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q041",
@@ -2296,7 +2336,8 @@
           "quote": "メチルアルコール"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q042",
@@ -2352,7 +2393,8 @@
           "quote": "アルデヒドが持つ還元性を確認するための代表的な反応"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q043",
@@ -2404,7 +2446,8 @@
           "quote": "エーテルはナトリウムと反応しない"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q044",
@@ -2460,7 +2503,8 @@
           "quote": "エタノール沸点78℃"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q045",
@@ -2512,7 +2556,8 @@
           "quote": "1-プロパノールは条件の構造を持たないため、ヨードホルム反応を示さない"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q046",
@@ -2568,7 +2613,8 @@
           "quote": "酢酸はカルボン酸"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     },
     {
       "id": "ch5_3_q047",
@@ -2620,7 +2666,8 @@
           "quote": "酸化→アルデヒド・ケトン"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q048",
@@ -2676,7 +2723,8 @@
           "quote": "2-ブテンが主生成物(82%)、1-ブテンが副生成物(18%)"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q049",
@@ -2732,7 +2780,8 @@
           "quote": "麻酔作用がある"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-NanamiNeural"
     },
     {
       "id": "ch5_3_q050",
@@ -2788,7 +2837,8 @@
           "quote": "アルデヒドを経てカルボン酸"
         }
       ],
-      "mnemonic": null
+      "mnemonic": null,
+      "audio_voice": "ja-JP-KeitaNeural"
     }
   ]
 }
