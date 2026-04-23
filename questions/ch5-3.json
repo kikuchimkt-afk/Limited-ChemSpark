@@ -2022,7 +2022,7 @@
         {
           "label": "2",
           "choice_id": "ch5_3_q036_c2",
-          "text": "ヒドロキシ基を二つ以上持つこと。",
+          "text": "ヒドロキシ基を2つ以上持つこと。",
           "tts_text": "ヒドロキシ基を二つ以上持つこと。",
           "is_correct": false,
           "trap_type": "concept_confusion",
