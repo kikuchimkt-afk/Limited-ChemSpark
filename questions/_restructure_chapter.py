@@ -63,14 +63,14 @@ HERE = Path(__file__).parent
 # Number / unit conversion (for display form)
 # ---------------------------------------------------------------------------
 
-KANJI_DIGIT = {"零": 0, "一": 1, "二": 2, "三": 3, "四": 4,
+KANJI_DIGIT = {"零": 0, "〇": 0, "一": 1, "二": 2, "三": 3, "四": 4,
                "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
-DIGIT_CHARS = "零一二三四五六七八九十百千"
+DIGIT_CHARS = "零〇一二三四五六七八九十百千万"
 DIGIT_CLASS = f"[{DIGIT_CHARS}]"
 
 
 def _parse_int(s: str) -> int:
-    if s == "零":
+    if s in ("零", "〇"):
         return 0
     result, current = 0, 0
     for ch in s:
@@ -84,6 +84,10 @@ def _parse_int(s: str) -> int:
             current = 0
         elif ch == "千":
             result += (current if current else 1) * 1000
+            current = 0
+        elif ch == "万":
+            result += (current if current else 1)
+            result *= 10000
             current = 0
     return result + current
 
@@ -123,7 +127,7 @@ UNIT_MAP = dict(UNITS)
 
 NUM_RE = re.compile(
     r"(マイナス)?"
-    rf"({DIGIT_CLASS}+(?:[点・][零一二三四五六七八九]+)?)"
+    rf"({DIGIT_CLASS}+(?:[点・][零〇一二三四五六七八九]+)?)"
     r"(" + "|".join(re.escape(u) for u, _ in UNITS) + r")"
 )
 
@@ -141,7 +145,7 @@ def _convert_numbers(text: str) -> str:
 # arabic display form. Single-character numerals are intentionally left as-is
 # to avoid over-converting common words ("一部", "一般", etc.).
 STANDALONE_NUM_RE = re.compile(
-    rf"(?<![A-Za-z0-9₀-₉])({DIGIT_CLASS}+(?:[点・][零一二三四五六七八九]+)?)(?![A-Za-z0-9₀-₉])"
+    rf"(?<![A-Za-z0-9₀-₉])({DIGIT_CLASS}+(?:[点・][零〇一二三四五六七八九]+)?)(?![A-Za-z0-9₀-₉])"
 )
 
 
@@ -197,6 +201,61 @@ def _convert_formulas(text: str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Kanji single-digit + counter conversion (for display form)
+# ---------------------------------------------------------------------------
+# Converts patterns like 一種類→1種類, 四つ→4つ, 第一に→第1に.
+# Uses negative lookbehind to avoid corrupting compound words
+# (単一, 均一, 一定, 一般, 一方, 一見, 一切, 一連, 一致, 同一).
+
+_KANJI_COUNTER_RULES: list[tuple[re.Pattern, str]] = [
+    # N種類
+    (re.compile(r"(?<![単均唯同])一種類"), "1種類"),
+    (re.compile(r"二種類"), "2種類"),
+    (re.compile(r"三種類"), "3種類"),
+    (re.compile(r"四種類"), "4種類"),
+    (re.compile(r"五種類"), "5種類"),
+    # Nつ
+    (re.compile(r"(?<![単均唯定不同])一つ"), "1つ"),
+    (re.compile(r"二つ"), "2つ"),
+    (re.compile(r"三つ"), "3つ"),
+    (re.compile(r"四つ"), "4つ"),
+    (re.compile(r"五つ"), "5つ"),
+    (re.compile(r"六つ"), "6つ"),
+    (re.compile(r"七つ"), "7つ"),
+    (re.compile(r"八つ"), "8つ"),
+    (re.compile(r"九つ"), "9つ"),
+    # 第N (ordinals before に/の/章/節)
+    (re.compile(r"第一(?=[にの章節])"), "第1"),
+    (re.compile(r"第二(?=[にの章節])"), "第2"),
+    (re.compile(r"第三(?=[にの章節])"), "第3"),
+    (re.compile(r"第四(?=[にの章節])"), "第4"),
+]
+
+
+def _convert_kanji_counters(text: str) -> str:
+    for pat, repl in _KANJI_COUNTER_RULES:
+        text = pat.sub(repl, text)
+    return text
+
+
+# ---------------------------------------------------------------------------
+# Katakana alphabet → Latin letter conversion (for display form)
+# ---------------------------------------------------------------------------
+# TTS fields spell out element symbols as katakana (エス, シー, etc.);
+# display fields should use actual Latin letters (S, C, etc.).
+_KATAKANA_ALPHA_RULES: list[tuple[str, str]] = [
+    ("エス・シー・オー・ピー", "S・C・O・P"),
+    ("ケー村", "K村"),
+]
+
+
+def _convert_katakana_alpha(text: str) -> str:
+    for kata, latin in _KATAKANA_ALPHA_RULES:
+        text = text.replace(kata, latin)
+    return text
+
+
+# ---------------------------------------------------------------------------
 # 選択肢○ position reference conversion
 # ---------------------------------------------------------------------------
 KANJI_POS = {"一": 0, "二": 1, "三": 2, "四": 3}
@@ -227,6 +286,8 @@ def to_display(text: str) -> str:
     text = _convert_numbers(text)
     text = _convert_standalone_numbers(text)
     text = _convert_formulas(text)
+    text = _convert_kanji_counters(text)
+    text = _convert_katakana_alpha(text)
     text = _choice_refs_to_arabic(text)
     return text
 
