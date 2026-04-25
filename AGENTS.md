@@ -44,6 +44,12 @@ Otherwise fix the errors and re-run it until it passes.
    and Arabic `選択肢N` (the app remaps them).
 6. **Do not mix authoring paths.** Pick Path A or Path B (see below)
    and stick with it for the whole chapter.
+7. **Verify `_rewrites` JSON format before applying.** Values must be
+   plain strings (`{"qid": "text"}`), **not** nested objects
+   (`{"qid": {"tts_explanation": "text"}}`). The script does not
+   validate shape and will silently corrupt the chapter JSON if the
+   format is wrong. If corruption occurs, restore with
+   `git checkout -- questions/<chapter>.json`.
 
 ## Two accepted authoring paths
 
@@ -91,6 +97,13 @@ python questions\_dump_for_rewrite.py <chapter> > _tmp\<chapter>_rewrite_input.t
 python questions\_rewrite_explanations.py <chapter> --dry-run
 python questions\_rewrite_explanations.py <chapter>
 python questions\_check_all.py <chapter>
+
+# 6b. Manual content verification (see WORKFLOW.md §3.6b)
+#   - Check: no 選択肢N in explanation fields
+#   - Check: each explanation covers ALL choices (correct + incorrect)
+#   - Check: scientific accuracy of content
+#   - Check: incorrect choices don't embed giveaway explanations
+#   If fixes needed: update _rewrites/<chapter>.json, re-apply, re-check
 
 # 7. Audio
 python audio\_generate.py <chapter> all

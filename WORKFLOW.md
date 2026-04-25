@@ -362,6 +362,68 @@ python questions\_check_all.py ch1-2
 
 The final quality gate should report `ALL CHECKS PASSED`.
 
+**Critical format rule:** The rewrite JSON values MUST be plain strings,
+not nested objects. Correct:
+
+```json
+{ "ch1_2_q001": "新しい解説テキスト" }
+```
+
+Incorrect (will silently corrupt the chapter JSON):
+
+```json
+{ "ch1_2_q001": { "tts_explanation": "新しい解説テキスト" } }
+```
+
+If you accidentally apply a malformed rewrite, restore the chapter JSON
+from git (`git checkout -- questions/<chapter>.json`), fix the rewrite
+file, and re-apply.
+
+### Step 3.6b. Manual content verification
+
+After all automated checks pass, manually verify the educational
+quality of each question. This step catches issues that automated
+validators cannot detect.
+
+**Checklist** (read through all 50 questions):
+
+1. **No `選択肢N` in display `explanation`** — although the app remaps
+   these at runtime, verify none slipped through by searching the file:
+
+   ```powershell
+   Select-String '選択肢' questions\ch1-2.json
+   ```
+
+2. **Explanation covers ALL choices** — for each question, verify that
+   `tts_explanation` explains:
+   - Why the correct answer is correct (with evidence).
+   - Why each incorrect answer is wrong (at least the key error).
+   - Rate each question: ✅ sufficient, ⚠️ partial, ❌ missing.
+
+3. **Scientific accuracy** — verify that correct answers are factually
+   accurate and that incorrect answers' `trap_detail` correctly
+   identifies the error.
+
+4. **Incorrect choice quality** — verify that wrong choices do not
+   contain embedded mini-explanations that give away the answer (e.g.
+   "…であるため還元性を持たない非還元糖に分類される" is acceptable
+   as an elaborated wrong claim, but should not accidentally teach the
+   correct concept).
+
+If explanations need improvement, add entries to
+`questions/_rewrites/<chapter>.json` and re-apply:
+
+```powershell
+python questions\_rewrite_explanations.py ch1-2 --dry-run
+python questions\_rewrite_explanations.py ch1-2
+python questions\_check_all.py ch1-2
+```
+
+Note: this step only updates `tts_explanation`. The display-side
+`explanation` field must be edited separately if you want it to match
+(the display field is what users read on screen; `tts_explanation` is
+what gets synthesized to audio).
+
 ### Step 3.7. Generate audio
 
 ```powershell
@@ -507,6 +569,7 @@ Before marking a chapter done, run each command and confirm:
 | Check | Command | Expected |
 |-------|---------|----------|
 | All content checks | `python questions\_check_all.py ch1-2 --strict` | `ALL CHECKS PASSED`. |
+| Manual content verification | Section 3.6b | All explanations rated ✅. |
 | All voices assigned | (manually) every question has `audio_voice`. |
 | All MP3s exist | `audio/<chapter>/<qid>/` contains 6 files for every question. |
 | Common prefixes | `audio/common/<voice>/choice_prefix_{1..4}.mp3` exists for every voice in use. |
@@ -537,3 +600,14 @@ Before marking a chapter done, run each command and confirm:
   `_fix_tts.py`, `_fix_chains.py`) are historical records. **Do not run
   them on other chapters.** Always use the `_chapter.py` / general
   variants listed in Section 4.
+- `_rewrite_explanations.py` does **not validate** the shape of
+  rewrite values. If you accidentally use `{"qid": {"tts_explanation":
+  "..."}}`  instead of `{"qid": "..."}`, the script will silently write
+  a dict object into `tts_explanation`, corrupting the chapter JSON.
+  Always verify the rewrite file format before applying. If corruption
+  occurs, restore the file with `git checkout -- questions/<chapter>.json`,
+  fix the rewrite file, and re-run.
+- `tts_explanation` and display `explanation` are independent fields.
+  `_rewrite_explanations.py` only updates `tts_explanation`. If you
+  want the display explanation to match, edit the chapter JSON by hand
+  or add display-side edits as a separate manual step.
