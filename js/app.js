@@ -720,13 +720,27 @@ function handleChoice(choice) {
   cdList.innerHTML = '';
   state.shuffledChoices.forEach((c, i) => {
     const li = document.createElement('li');
-    li.className = c.is_correct ? 'choice-detail-correct' : 'choice-detail-wrong';
-    const marker = c.is_correct ? '○' : '×';
-    const detail = c.is_correct
-      ? '正解'
-      : (c.trap_detail || c.text);
+    let marker, detail, cssClass;
+    if (c.is_correct) {
+      // The correct answer (for "correct" type) or the wrong statement (for "incorrect" type)
+      marker = q.type === 'incorrect' ? '×' : '○';
+      detail = q.type === 'incorrect' ? (c.trap_detail || '誤りを含む記述。') : '正解';
+      cssClass = q.type === 'incorrect' ? 'choice-detail-wrong' : 'choice-detail-correct';
+    } else {
+      // Wrong choice for "correct" type, or correct distractor for "incorrect" type
+      if (q.type === 'incorrect' && !c.trap_detail) {
+        marker = '○';
+        detail = 'この記述は正しい。';
+        cssClass = 'choice-detail-correct';
+      } else {
+        marker = q.type === 'incorrect' ? '○' : '×';
+        detail = c.trap_detail || c.text;
+        cssClass = q.type === 'incorrect' ? 'choice-detail-correct' : 'choice-detail-wrong';
+      }
+    }
+    li.className = cssClass;
     li.innerHTML = `<span class="choice-detail-label">選択肢${i + 1}</span>`
-      + `<span class="choice-detail-marker ${c.is_correct ? 'marker-correct' : 'marker-wrong'}">${marker}</span>`
+      + `<span class="choice-detail-marker ${cssClass === 'choice-detail-correct' ? 'marker-correct' : 'marker-wrong'}">${marker}</span>`
       + `<span class="choice-detail-text">${detail}</span>`;
     cdList.appendChild(li);
   });
