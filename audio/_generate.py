@@ -13,9 +13,10 @@ generation and the choice is persisted in the question JSON as
 ``audio_voice``. Subsequent runs use the recorded voice to keep speaker
 identity consistent for that question.
 
-Shared "選択肢一"..."選択肢四" prefix clips are generated per voice under
+Shared "いち"..."よん" prefix clips are generated per voice under
 ``audio/common/<voice>/`` so the runtime can concatenate the correct-voice
 prefix + choice body while still allowing the app to shuffle choices.
+The short prefix (number only, no "選択肢") keeps the pace brisk.
 
 Usage::
 
@@ -54,9 +55,9 @@ async def synth(text: str, out_path: Path, *, voice: str,
 
 
 async def gen_common(voice: str) -> int:
-    """Generate 選択肢一〜選択肢四 prefix clips for a specific voice."""
+    """Generate いち〜よん prefix clips for a specific voice."""
     common_dir = AUDIO_DIR / "common" / voice
-    labels = {1: "選択肢一", 2: "選択肢二", 3: "選択肢三", 4: "選択肢四"}
+    labels = {1: "いち", 2: "に", 3: "さん", 4: "よん"}
     count = 0
     for n, text in labels.items():
         out = common_dir / f"choice_prefix_{n}.mp3"

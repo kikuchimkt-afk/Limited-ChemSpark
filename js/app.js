@@ -317,7 +317,7 @@ async function playAllAudio() {
   const voice = q.audio_voice;
   await playClip(questionAudioPath(q, 'question.mp3'), token);
   if (state.audio.token !== token) return;
-  if (!(await sleep(1500, token))) return;
+  if (!(await sleep(750, token))) return;
   for (let i = 0; i < state.shuffledChoices.length; i++) {
     if (state.audio.token !== token) return;
     const c = state.shuffledChoices[i];
@@ -329,7 +329,7 @@ async function playAllAudio() {
     choiceEl?.classList.remove('playing');
     if (state.audio.token !== token) return;
     if (i < state.shuffledChoices.length - 1) {
-      if (!(await sleep(700, token))) return;
+      if (!(await sleep(350, token))) return;
     }
   }
 }
