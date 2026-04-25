@@ -901,21 +901,27 @@
           "choice_id": "ch5_3_q016_c1",
           "text": "エタノールはヨードホルム反応を示す。",
           "tts_text": "エタノールはヨードホルム反応を示す。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。メタノールは所定の構造を持たないため、ヨードホルム反応を示しません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_3_q016_c2",
           "text": "アセトンはヨードホルム反応を示す。",
           "tts_text": "アセトンはヨードホルム反応を示す。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。メタノールは所定の構造を持たないため、ヨードホルム反応を示しません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "choice_id": "ch5_3_q016_c3",
           "text": "アセトアルデヒドはヨードホルム反応を示す。",
           "tts_text": "アセトアルデヒドはヨードホルム反応を示す。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。メタノールは所定の構造を持たないため、ヨードホルム反応を示しません。エタノール、アセトン、アセトアルデヒドは示します。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
@@ -954,21 +960,27 @@
           "choice_id": "ch5_3_q017_c1",
           "text": "アルデヒドが銀鏡反応を示す。",
           "tts_text": "アルデヒドが銀鏡反応を示す。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。銀鏡反応を示すのはアルデヒドです。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_3_q017_c2",
           "text": "NH₃性硝酸銀水溶液を使用する。",
           "tts_text": "アンモニア性硝酸銀水溶液を使用する。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "choice_id": "ch5_3_q017_c3",
           "text": "約ろくじゅう度に温めて反応させる。",
           "tts_text": "約ろくじゅう度に温めて反応させる。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
@@ -1463,14 +1475,18 @@
           "choice_id": "ch5_3_q026_c1",
           "text": "アルデヒドは第いち級アルコールの酸化で得られる。",
           "tts_text": "アルデヒドは第いち級アルコールの酸化で得られる。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_3_q026_c2",
           "text": "ケトンは第に級アルコールの酸化で得られる。",
           "tts_text": "ケトンは第に級アルコールの酸化で得られる。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
@@ -1486,7 +1502,9 @@
           "choice_id": "ch5_3_q026_c4",
           "text": "アルデヒドは還元性を持つがケトンは持たない。",
           "tts_text": "アルデヒドは還元性を持つがケトンは持たない。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。ケトンは還元性を持たないため銀鏡反応を示しません。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "ケトンは還元性を持たないため銀鏡反応を示しません。銀鏡反応を示すのはアルデヒドのみです。",
@@ -1516,21 +1534,27 @@
           "choice_id": "ch5_3_q027_c1",
           "text": "エステル化は酸触媒による可逆反応である。",
           "tts_text": "エステル化は酸触媒による可逆反応である。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。エステル化は可逆反応ですが、けん化はカルボン酸が塩になるため不可逆反応として完全に進行します。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_3_q027_c2",
           "text": "けん化は塩基によるエステルの加水分解で不可逆反応である。",
           "tts_text": "けん化は塩基によるエステルの加水分解で不可逆反応である。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。エステル化は可逆反応ですが、けん化はカルボン酸が塩になるため不可逆反応として完全に進行します。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "choice_id": "ch5_3_q027_c3",
           "text": "けん化ではカルボン酸の塩が生成するため不可逆となる。",
           "tts_text": "けん化ではカルボン酸の塩が生成するため不可逆となる。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。エステル化は可逆反応ですが、けん化はカルボン酸が塩になるため不可逆反応として完全に進行します。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
@@ -1626,14 +1650,18 @@
           "choice_id": "ch5_3_q029_c1",
           "text": "メタノールは有毒であり、少量摂取でも失明のおそれがある。",
           "tts_text": "メタノールは有毒であり、少量摂取でも失明のおそれがある。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_3_q029_c2",
           "text": "エタノールは消毒作用があり、飲料にも利用される。",
           "tts_text": "エタノールは消毒作用があり、飲料にも利用される。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。メタノールもエタノールも水によく溶けます。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
@@ -1649,7 +1677,9 @@
           "choice_id": "ch5_3_q029_c4",
           "text": "メタノールの沸点はエタノールよりも低い。",
           "tts_text": "メタノールの沸点はエタノールよりも低い。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。メタノールもエタノールも水によく溶けます。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "メタノールもエタノールも水によく溶けます。両者とも炭素数が少ないため、ヒドロキシ基の影響で水と親和性が高いです。",
@@ -1907,14 +1937,18 @@
           "choice_id": "ch5_3_q034_c1",
           "text": "第いち級アルコールはアルデヒドを経てカルボン酸になる。",
           "tts_text": "第いち級アルコールはアルデヒドを経てカルボン酸になる。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。第さん級アルコールは通常の条件では酸化されにくく、カルボン酸は生成しません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_3_q034_c2",
           "text": "第に級アルコールを酸化するとケトンが生成する。",
           "tts_text": "第に級アルコールを酸化するとケトンが生成する。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。第さん級アルコールは通常の条件では酸化されにくく、カルボン酸は生成しません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
@@ -1930,7 +1964,9 @@
           "choice_id": "ch5_3_q034_c4",
           "text": "第さん級アルコールは通常の条件では酸化されにくい。",
           "tts_text": "第さん級アルコールは通常の条件では酸化されにくい。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "第さん級アルコールは通常の条件では酸化されにくく、カルボン酸は生成しません。",
@@ -2245,14 +2281,18 @@
           "choice_id": "ch5_3_q040_c1",
           "text": "けん化価は油脂の構成脂肪酸の平均分子量の目安になる。",
           "tts_text": "けん化価は油脂の構成脂肪酸の平均分子量の目安になる。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。けん化価が大きいほど油脂の平均分子量は小さくなります。けん化価とは油脂一グラムをけん化するのに必要な水酸化カリウムの量であり、分子量が小さいほど多くの水酸化カリウムが必要になるためです。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_3_q040_c2",
           "text": "けん化価が大きいほど油脂を構成する脂肪酸の平均分子量が小さい。",
           "tts_text": "けん化価が大きいほど油脂を構成する脂肪酸の平均分子量が小さい。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。けん化価が大きいほど油脂の平均分子量は小さくなります。「けん化価が大きいほど分子量も大きくなる」という比例関係は誤りです。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
@@ -2268,7 +2308,9 @@
           "choice_id": "ch5_3_q040_c4",
           "text": "けん化価と油脂の平均分子量は反比例の関係がある。",
           "tts_text": "けん化価と油脂の平均分子量は反比例の関係がある。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。けん化価が大きいほど油脂の平均分子量は小さくなります。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "けん化価が大きいほど油脂の平均分子量は小さくなります。これは反比例の関係です。「けん化価が大きいほど分子量も大きくなる」という比例関係は誤りです。けん化価とは油脂1gをけん化するのに必要な水酸化カリウムの量であり、分子量が小さいほど多くの水酸化カリウムが必要になるためです。",
@@ -2412,14 +2454,18 @@
           "choice_id": "ch5_3_q043_c1",
           "text": "エーテルはアルコールと構造異性体の関係にある。",
           "tts_text": "エーテルはアルコールと構造異性体の関係にある。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。ナトリウムと反応して水素を発生するのはアルコールです。エーテルはヒドロキシ基を持たないためナトリウムとは反応しません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_3_q043_c2",
           "text": "エーテルはヒドロキシ基を持たない。",
           "tts_text": "エーテルはヒドロキシ基を持たない。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。エーテルはヒドロキシ基を持たないためナトリウムとは反応しません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
@@ -2435,7 +2481,9 @@
           "choice_id": "ch5_3_q043_c4",
           "text": "エーテルの沸点はアルコールに比べて低い。",
           "tts_text": "エーテルの沸点はアルコールに比べて低い。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。ナトリウムと反応して水素を発生するのはアルコールです。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "エーテルはヒドロキシ基を持たないためナトリウムとは反応しません。ナトリウムと反応して水素を発生するのはアルコールです。",
@@ -2522,7 +2570,9 @@
           "choice_id": "ch5_3_q045_c1",
           "text": "にプロパノールはヨードホルム反応を示す。",
           "tts_text": "にプロパノールはヨードホルム反応を示す。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。いちプロパノールは条件となる構造を持たないため、ヨードホルム反応を示しません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
@@ -2538,14 +2588,18 @@
           "choice_id": "ch5_3_q045_c3",
           "text": "にブタノールはヨードホルム反応を示す。",
           "tts_text": "にブタノールはヨードホルム反応を示す。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。いちプロパノールは条件となる構造を持たないため、ヨードホルム反応を示しません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
           "choice_id": "ch5_3_q045_c4",
           "text": "生成するヨードホルムは特有の臭気を持つ黄色沈殿である。",
           "tts_text": "生成するヨードホルムは特有の臭気を持つ黄色沈殿である。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。いちプロパノールは条件となる構造を持たないため、ヨードホルム反応を示しません。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "いちプロパノールは条件となる構造を持たないため、ヨードホルム反応を示しません。にプロパノールは該当構造を持つため示します。",
@@ -2632,21 +2686,27 @@
           "choice_id": "ch5_3_q047_c1",
           "text": "酸化反応ではアルコールからアルデヒドやケトンが生成する。",
           "tts_text": "酸化反応ではアルコールからアルデヒドやケトンが生成する。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。酸化反応で生成するのはアルデヒドやケトンです。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_3_q047_c2",
           "text": "脱水反応ではアルコールからアルケンやエーテルが生成する。",
           "tts_text": "脱水反応ではアルコールからアルケンやエーテルが生成する。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。エーテルはアルコールの分子間脱水によって生成します。酸化反応で生成するのはアルデヒドやケトンです。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "choice_id": "ch5_3_q047_c3",
           "text": "エステル化はアルコールとカルボン酸の縮合反応である。",
           "tts_text": "エステル化はアルコールとカルボン酸の縮合反応である。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。エーテルはアルコールの分子間脱水によって生成します。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",

@@ -395,21 +395,27 @@
           "text": "合成洗剤水溶液は中性。",
           "is_correct": false,
           "choice_id": "ch5_5_q006_c1",
-          "tts_text": "合成洗剤水溶液は中性。"
+          "tts_text": "合成洗剤水溶液は中性。",
+          "trap_detail": "正しい。合成洗剤は強酸（スルホン酸）の塩→中性。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "text": "セッケン水溶液は弱塩基性。",
           "is_correct": false,
           "choice_id": "ch5_5_q006_c2",
-          "tts_text": "セッケン水溶液は弱塩基性。"
+          "tts_text": "セッケン水溶液は弱塩基性。",
+          "trap_detail": "正しい。セッケンは弱酸（脂肪酸）の塩→弱塩基性。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "text": "液性の違いは塩の構成（弱酸と強酸の塩の違い）による。",
           "is_correct": false,
           "choice_id": "ch5_5_q006_c3",
-          "tts_text": "液性の違いは塩の構成（弱酸と強酸の塩の違い）による。"
+          "tts_text": "液性の違いは塩の構成（弱酸と強酸の塩の違い）による。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
@@ -456,7 +462,9 @@
           "text": "この違いは疎水基の構造の違いによる。",
           "is_correct": false,
           "choice_id": "ch5_5_q007_c1",
-          "tts_text": "この違いは疎水基の構造の違いによる。"
+          "tts_text": "この違いは疎水基の構造の違いによる。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
@@ -472,14 +480,18 @@
           "text": "合成洗剤は硬水中でも沈殿を作らず洗浄力が低下しない。",
           "is_correct": false,
           "choice_id": "ch5_5_q007_c3",
-          "tts_text": "合成洗剤は硬水中でも沈殿を作らず洗浄力が低下しない。"
+          "tts_text": "合成洗剤は硬水中でも沈殿を作らず洗浄力が低下しない。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
           "text": "セッケンは硬水中でカルシウムイオンやマグネシウムイオンと反応して沈殿を生じ洗浄力が低下する。",
           "is_correct": false,
           "choice_id": "ch5_5_q007_c4",
-          "tts_text": "セッケンは硬水中でカルシウムイオンやマグネシウムイオンと反応して沈殿を生じ洗浄力が低下する。"
+          "tts_text": "セッケンは硬水中でカルシウムイオンやマグネシウムイオンと反応して沈殿を生じ洗浄力が低下する。",
+          "trap_detail": "正しい。硬水中でセッケンが沈殿するのは脂肪酸イオンがカルシウムイオンと結合して不溶性の脂肪酸カルシウムになるためです。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "硬水中でセッケンが沈殿するのは脂肪酸イオンがカルシウムイオンと結合して不溶性の脂肪酸カルシウムになるためです。スルホン酸塩は同様の沈殿を作りません。",
@@ -1057,7 +1069,9 @@
           "text": "アスピリンは対症療法薬、ペニシリンは化学療法薬。",
           "is_correct": false,
           "choice_id": "ch5_5_q017_c1",
-          "tts_text": "アスピリンは対症療法薬、ペニシリンは化学療法薬。"
+          "tts_text": "アスピリンは対症療法薬、ペニシリンは化学療法薬。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
@@ -1073,14 +1087,18 @@
           "text": "化学療法薬は病気の原因に作用する。",
           "is_correct": false,
           "choice_id": "ch5_5_q017_c3",
-          "tts_text": "化学療法薬は病気の原因に作用する。"
+          "tts_text": "化学療法薬は病気の原因に作用する。",
+          "trap_detail": "正しい。ペニシリン（細菌を殺す）は化学療法薬。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
           "text": "対症療法薬は症状を緩和する。",
           "is_correct": false,
           "choice_id": "ch5_5_q017_c4",
-          "tts_text": "対症療法薬は症状を緩和する。"
+          "tts_text": "対症療法薬は症状を緩和する。",
+          "trap_detail": "正しい。アスピリン（症状を抑える）は対症療法薬。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "アスピリン（症状を抑える）は対症療法薬。ペニシリン（細菌を殺す）は化学療法薬。入れ替えは定番です。",
@@ -1127,21 +1145,27 @@
           "text": "サルファ剤は化学合成された医薬品。",
           "is_correct": false,
           "choice_id": "ch5_5_q018_c2",
-          "tts_text": "サルファ剤は化学合成された医薬品。"
+          "tts_text": "サルファ剤は化学合成された医薬品。",
+          "trap_detail": "正しい。サルファ剤は化学合成（人工的に作る）。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "text": "抗生物質は微生物によって生産される物質。",
           "is_correct": false,
           "choice_id": "ch5_5_q018_c3",
-          "tts_text": "抗生物質は微生物によって生産される物質。"
+          "tts_text": "抗生物質は微生物によって生産される物質。",
+          "trap_detail": "正しい。抗生物質は微生物が生産（天然由来）。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
           "text": "どちらも化学療法薬に分類される。",
           "is_correct": false,
           "choice_id": "ch5_5_q018_c4",
-          "tts_text": "どちらも化学療法薬に分類される。"
+          "tts_text": "どちらも化学療法薬に分類される。",
+          "trap_detail": "正しい。起源は異なりますが、どちらも細菌に作用する化学療法薬です。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "サルファ剤は化学合成（人工的に作る）。抗生物質は微生物が生産（天然由来）。起源は異なりますが、どちらも細菌に作用する化学療法薬です。",
@@ -1174,14 +1198,18 @@
           "text": "発色団は色を出すために必要な原子団。",
           "is_correct": false,
           "choice_id": "ch5_5_q019_c1",
-          "tts_text": "発色団は色を出すために必要な原子団。"
+          "tts_text": "発色団は色を出すために必要な原子団。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "text": "助色団は色を濃くしたり染着性を与える原子団。",
           "is_correct": false,
           "choice_id": "ch5_5_q019_c2",
-          "tts_text": "助色団は色を濃くしたり染着性を与える原子団。"
+          "tts_text": "助色団は色を濃くしたり染着性を与える原子団。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
@@ -1197,7 +1225,9 @@
           "text": "アゾ基は代表的な発色団。",
           "is_correct": false,
           "choice_id": "ch5_5_q019_c4",
-          "tts_text": "アゾ基は代表的な発色団。"
+          "tts_text": "アゾ基は代表的な発色団。",
+          "trap_detail": "正しい。不飽和結合を含む原子団（アゾ基、カルボニル基など）が発色団。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "不飽和結合を含む原子団（アゾ基、カルボニル基など）が発色団。非共有電子対を含む原子団（ヒドロキシ基、アミノ基など）が助色団。役割を正確に区別しましょう。",
@@ -1290,21 +1320,27 @@
           "text": "乳化作用でミセルが形成される。",
           "is_correct": false,
           "choice_id": "ch5_5_q021_c1",
-          "tts_text": "乳化作用でミセルが形成される。"
+          "tts_text": "乳化作用でミセルが形成される。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "text": "浸透作用で界面活性剤が汚れと繊維の間にしみ込む。",
           "is_correct": false,
           "choice_id": "ch5_5_q021_c2",
-          "tts_text": "浸透作用で界面活性剤が汚れと繊維の間にしみ込む。"
+          "tts_text": "浸透作用で界面活性剤が汚れと繊維の間にしみ込む。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "text": "分散作用でミセルが水中に散らばる。",
           "is_correct": false,
           "choice_id": "ch5_5_q021_c3",
-          "tts_text": "分散作用でミセルが水中に散らばる。"
+          "tts_text": "分散作用でミセルが水中に散らばる。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
@@ -1415,21 +1451,27 @@
           "text": "多数の界面活性剤分子から構成される。",
           "is_correct": false,
           "choice_id": "ch5_5_q023_c2",
-          "tts_text": "多数の界面活性剤分子から構成される。"
+          "tts_text": "多数の界面活性剤分子から構成される。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "text": "球状の集合体。",
           "is_correct": false,
           "choice_id": "ch5_5_q023_c3",
-          "tts_text": "球状の集合体。"
+          "tts_text": "球状の集合体。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
           "text": "油汚れを内部に取り込める。",
           "is_correct": false,
           "choice_id": "ch5_5_q023_c4",
-          "tts_text": "油汚れを内部に取り込める。"
+          "tts_text": "油汚れを内部に取り込める。",
+          "trap_detail": "正しい。油を内側に取り込むために疎水基が内側を向くのは論理的に理解できます。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "ミセルの向きは「内は疎（ソは油好き）、外は親（シンは水好き）」と覚えます。油を内側に取り込むために疎水基が内側を向くのは論理的に理解できます。",
@@ -1471,21 +1513,27 @@
           "text": "アスピリンは解熱鎮痛剤。",
           "is_correct": false,
           "choice_id": "ch5_5_q024_c2",
-          "tts_text": "アスピリンは解熱鎮痛剤。"
+          "tts_text": "アスピリンは解熱鎮痛剤。",
+          "trap_detail": "正しい。アスピリンは「熱を下げ痛みを抑える」対症療法薬。アスピリンをペニシリンなどの抗生物質と混同してはいけません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "text": "アスピリンは対症療法薬。",
           "is_correct": false,
           "choice_id": "ch5_5_q024_c3",
-          "tts_text": "アスピリンは対症療法薬。"
+          "tts_text": "アスピリンは対症療法薬。",
+          "trap_detail": "正しい。アスピリンは「熱を下げ痛みを抑える」対症療法薬。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
           "text": "アスピリンはサリチル酸の誘導体。",
           "is_correct": false,
           "choice_id": "ch5_5_q024_c4",
-          "tts_text": "アスピリンはサリチル酸の誘導体。"
+          "tts_text": "アスピリンはサリチル酸の誘導体。",
+          "trap_detail": "正しい。アスピリンは「熱を下げ痛みを抑える」対症療法薬。アスピリンをペニシリンなどの抗生物質と混同してはいけません。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "アスピリンをペニシリンなどの抗生物質と混同してはいけません。アスピリンは「熱を下げ痛みを抑える」対症療法薬。ペニシリンは「細菌を殺す」化学療法薬です。",
@@ -1518,14 +1566,18 @@
           "text": "繊維に染み込ませた後、空気中で酸化して青色に発色する。",
           "is_correct": false,
           "choice_id": "ch5_5_q025_c1",
-          "tts_text": "繊維に染み込ませた後、空気中で酸化して青色に発色する。"
+          "tts_text": "繊維に染み込ませた後、空気中で酸化して青色に発色する。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "text": "インジゴは水に不溶な青色の染料。",
           "is_correct": false,
           "choice_id": "ch5_5_q025_c2",
-          "tts_text": "インジゴは水に不溶な青色の染料。"
+          "tts_text": "インジゴは水に不溶な青色の染料。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
@@ -1541,7 +1593,9 @@
           "text": "還元すると無色のロイコ体（水溶性）になる。",
           "is_correct": false,
           "choice_id": "ch5_5_q025_c4",
-          "tts_text": "還元すると無色のロイコ体（水溶性）になる。"
+          "tts_text": "還元すると無色のロイコ体（水溶性）になる。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "「還元→無色→ロイコ（leucoは白い）」「酸化→青色」。ロイコのギリシャ語の意味「白い」を知っていると覚えやすいです。",
@@ -1754,7 +1808,9 @@
           "text": "アセチルサリチル酸はサリチル酸系の対症療法薬。",
           "is_correct": false,
           "choice_id": "ch5_5_q029_c1",
-          "tts_text": "アセチルサリチル酸はサリチル酸系の対症療法薬。"
+          "tts_text": "アセチルサリチル酸はサリチル酸系の対症療法薬。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
@@ -1770,14 +1826,18 @@
           "text": "スルファニルアミドは化学合成のサルファ剤（化学療法薬）。",
           "is_correct": false,
           "choice_id": "ch5_5_q029_c3",
-          "tts_text": "スルファニルアミドは化学合成のサルファ剤（化学療法薬）。"
+          "tts_text": "スルファニルアミドは化学合成のサルファ剤（化学療法薬）。",
+          "trap_detail": "正しい。サルファ剤は抗菌（化学療法）。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
           "text": "アセトアミノフェンはアミド系の対症療法薬。",
           "is_correct": false,
           "choice_id": "ch5_5_q029_c4",
-          "tts_text": "アセトアミノフェンはアミド系の対症療法薬。"
+          "tts_text": "アセトアミノフェンはアミド系の対症療法薬。",
+          "trap_detail": "正しい。アセトアミノフェンは解熱鎮痛（対症療法）。アセトアミノフェンとサルファ剤は全く異なるカテゴリーです。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "アセトアミノフェンとサルファ剤は全く異なるカテゴリーです。アセトアミノフェンは解熱鎮痛（対症療法）。サルファ剤は抗菌（化学療法）。名前に惑わされないようにしましょう。",
@@ -2064,21 +2124,27 @@
           "text": "インジゴはアイから得られる天然染料。",
           "is_correct": false,
           "choice_id": "ch5_5_q034_c2",
-          "tts_text": "インジゴはアイから得られる天然染料。"
+          "tts_text": "インジゴはアイから得られる天然染料。",
+          "trap_detail": "正しい。インジゴは天然染料（植物のアイから得られる。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "text": "モーブは最初の合成染料として知られる。",
           "is_correct": false,
           "choice_id": "ch5_5_q034_c3",
-          "tts_text": "モーブは最初の合成染料として知られる。"
+          "tts_text": "モーブは最初の合成染料として知られる。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
           "text": "アゾ染料はジアゾ化とカップリングで合成する合成染料。",
           "is_correct": false,
           "choice_id": "ch5_5_q034_c4",
-          "tts_text": "アゾ染料はジアゾ化とカップリングで合成する合成染料。"
+          "tts_text": "アゾ染料はジアゾ化とカップリングで合成する合成染料。",
+          "trap_detail": "正しい。アゾ染料は合成染料。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "インジゴは天然染料（植物のアイから得られる。のちに合成法も開発された）。アゾ染料は合成染料。この区別は重要です。",
@@ -2793,21 +2859,27 @@
           "text": "界面活性剤は表面張力を低下させる。",
           "is_correct": false,
           "choice_id": "ch5_5_q046_c2",
-          "tts_text": "界面活性剤は表面張力を低下させる。"
+          "tts_text": "界面活性剤は表面張力を低下させる。",
+          "trap_detail": "正しい。界面活性剤が表面張力を下げるからこそ、水が繊維の隙間にしみ込みやすくなり汚れを落としやすくなるのです。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "text": "界面活性剤を加えると水の「まとまる力」が弱くなる。",
           "is_correct": false,
           "choice_id": "ch5_5_q046_c3",
-          "tts_text": "界面活性剤を加えると水の「まとまる力」が弱くなる。"
+          "tts_text": "界面活性剤を加えると水の「まとまる力」が弱くなる。",
+          "trap_detail": "正しい。界面活性剤が表面張力を下げるからこそ、水が繊維の隙間にしみ込みやすくなり汚れを落としやすくなるのです。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
           "text": "表面張力が下がると水は繊維に浸透しやすくなる。",
           "is_correct": false,
           "choice_id": "ch5_5_q046_c4",
-          "tts_text": "表面張力が下がると水は繊維に浸透しやすくなる。"
+          "tts_text": "表面張力が下がると水は繊維に浸透しやすくなる。",
+          "trap_detail": "正しい。界面活性剤が表面張力を下げるからこそ、水が繊維の隙間にしみ込みやすくなり汚れを落としやすくなるのです。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "界面活性剤が表面張力を下げるからこそ、水が繊維の隙間にしみ込みやすくなり汚れを落としやすくなるのです。",
@@ -2984,21 +3056,27 @@
           "text": "インジゴは水に不溶な青色染料。",
           "is_correct": false,
           "choice_id": "ch5_5_q049_c1",
-          "tts_text": "インジゴは水に不溶な青色染料。"
+          "tts_text": "インジゴは水に不溶な青色染料。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "text": "ロイコ体は水に溶けるため繊維にしみ込む。",
           "is_correct": false,
           "choice_id": "ch5_5_q049_c2",
-          "tts_text": "ロイコ体は水に溶けるため繊維にしみ込む。"
+          "tts_text": "ロイコ体は水に溶けるため繊維にしみ込む。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "text": "塩基性条件下で還元して無色のロイコ体にする。",
           "is_correct": false,
           "choice_id": "ch5_5_q049_c3",
-          "tts_text": "塩基性条件下で還元して無色のロイコ体にする。"
+          "tts_text": "塩基性条件下で還元して無色のロイコ体にする。",
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",

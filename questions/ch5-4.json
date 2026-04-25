@@ -720,21 +720,27 @@
           "choice_id": "ch5_4_q013_c1",
           "text": "ご度以下に冷却して反応を行う必要がある。",
           "tts_text": "ご度以下に冷却して反応を行う必要がある。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_4_q013_c2",
           "text": "生成する塩化ベンゼンジアゾニウムは不安定な化合物である。",
           "tts_text": "生成する塩化ベンゼンジアゾニウムは不安定な化合物である。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。高温では塩化ベンゼンジアゾニウムが加水分解してフェノールと窒素に分解するため収率が低下します。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "choice_id": "ch5_4_q013_c3",
           "text": "温度が上がると塩化ベンゼンジアゾニウムは分解してフェノールと窒素になる。",
           "tts_text": "温度が上がると塩化ベンゼンジアゾニウムは分解してフェノールと窒素になる。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。高温では塩化ベンゼンジアゾニウムが加水分解してフェノールと窒素に分解するため収率が低下します。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
@@ -1115,7 +1121,9 @@
           "choice_id": "ch5_4_q020_c1",
           "text": "フェノールは弱酸性を示す化合物である。",
           "tts_text": "フェノールは弱酸性を示す化合物である。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。フェノールは炭酸よりも弱い酸です。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
@@ -1131,14 +1139,18 @@
           "choice_id": "ch5_4_q020_c3",
           "text": "NaOHと反応してナトリウムフェノキシドを生成する。",
           "tts_text": "水酸化ナトリウムと反応してナトリウムフェノキシドを生成する。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。そのため炭酸水素ナトリウムとは反応しません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
           "choice_id": "ch5_4_q020_c4",
           "text": "フェノールは水にわずかに溶ける性質がある。",
           "tts_text": "フェノールは水にわずかに溶ける性質がある。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。フェノールは炭酸よりも弱い酸です。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "フェノールは炭酸よりも弱い酸です。そのためNaHCO₃とは反応しません。この性質を利用してカルボン酸と分離できます。",
@@ -1453,14 +1465,18 @@
           "choice_id": "ch5_4_q026_c1",
           "text": "すべての炭素原子と水素原子が同一平面上に配置されている。",
           "tts_text": "すべての炭素原子と水素原子が同一平面上に配置されている。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_4_q026_c2",
           "text": "ろっつの炭素原子が正六角形の平面構造を形成している。",
           "tts_text": "ろっつの炭素原子が正六角形の平面構造を形成している。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
@@ -1476,7 +1492,9 @@
           "choice_id": "ch5_4_q026_c4",
           "text": "パイ電子が環を構成する炭素原子全体にわたって均等に分布している。",
           "tts_text": "パイ電子が環を構成する炭素原子全体にわたって均等に分布している。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。実際はパイ電子が環全体に均等に分布しています。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "ベンゼンの炭素間結合はすべて等しい長さであり、単結合と二重結合が交互に並んでいるのはケクレの古い仮説です。実際はパイ電子が環全体に均等に分布しています。",
@@ -2076,14 +2094,18 @@
           "choice_id": "ch5_4_q037_c1",
           "text": "ベンゼンは安定な構造を持つため付加反応を起こしにくい。",
           "tts_text": "ベンゼンは安定な構造を持つため付加反応を起こしにくい。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。ベンゼンはパイ電子が環全体に共鳴して安定しているため、アルケンのように容易に付加反応を起こしません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_4_q037_c2",
           "text": "ベンゼンは主に置換反応を起こす化合物である。",
           "tts_text": "ベンゼンは主に置換反応を起こす化合物である。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。ベンゼンはパイ電子が環全体に共鳴して安定しているため、アルケンのように容易に付加反応を起こしません。主に触媒の存在下で置換反応を起こします。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
@@ -2099,7 +2121,9 @@
           "choice_id": "ch5_4_q037_c4",
           "text": "パイ電子の安定性がベンゼンの反応性に影響している。",
           "tts_text": "パイ電子の安定性がベンゼンの反応性に影響している。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。ベンゼンはパイ電子が環全体に共鳴して安定しているため、アルケンのように容易に付加反応を起こしません。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "ベンゼンはパイ電子が環全体に共鳴して安定しているため、アルケンのように容易に付加反応を起こしません。主に触媒の存在下で置換反応を起こします。",
@@ -2243,14 +2267,18 @@
           "choice_id": "ch5_4_q040_c1",
           "text": "分離操作で加える試薬はすべて常温のまま使用する。",
           "tts_text": "分離操作で加える試薬はすべて常温のまま使用する。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_4_q040_c2",
           "text": "酸性や塩基性の違いを利用して目的物質を分離する。",
           "tts_text": "酸性や塩基性の違いを利用して目的物質を分離する。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
@@ -2266,7 +2294,9 @@
           "choice_id": "ch5_4_q040_c4",
           "text": "有機化合物を塩にすることで水層に移行させて分離する。",
           "tts_text": "有機化合物を塩にすることで水層に移行させて分離する。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "有機化合物の分離操作で加える試薬はすべて常温で使用します。加熱は中和ではなくエステルやアミドの加水分解を意味する場合が多いです。",
@@ -2410,21 +2440,27 @@
           "choice_id": "ch5_4_q043_c1",
           "text": "無色の液体であり特有のにおいがある。",
           "tts_text": "無色の液体であり特有のにおいがある。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_4_q043_c2",
           "text": "有機溶媒として広く用いられている。",
           "tts_text": "有機溶媒として広く用いられている。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。有機化合物をよく溶かす有機溶媒として使用されます。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "choice_id": "ch5_4_q043_c3",
           "text": "可燃性であり燃焼時にすすを多量に出す。",
           "tts_text": "可燃性であり燃焼時にすすを多量に出す。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
@@ -2520,14 +2556,18 @@
           "choice_id": "ch5_4_q045_c1",
           "text": "ベンゼン環にヒドロキシ基が直接結合した構造を持つ。",
           "tts_text": "ベンゼン環にヒドロキシ基が直接結合した構造を持つ。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。フェノールはベンゼン環にヒドロキシ基が直接結合した化合物であり、フェノール類に分類されます。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_4_q045_c2",
           "text": "弱酸性を示しナトリウムフェノキシドの塩を作る。",
           "tts_text": "弱酸性を示しナトリウムフェノキシドの塩を作る。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
@@ -2543,7 +2583,9 @@
           "choice_id": "ch5_4_q045_c4",
           "text": "フェノールは有毒であり皮膚を侵す性質がある。",
           "tts_text": "フェノールは有毒であり皮膚を侵す性質がある。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。フェノールはベンゼン環にヒドロキシ基が直接結合した化合物であり、フェノール類に分類されます。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "フェノールはベンゼン環にヒドロキシ基が直接結合した化合物であり、フェノール類に分類されます。アルコールとは別の分類です。",
@@ -2573,21 +2615,27 @@
           "choice_id": "ch5_4_q046_c1",
           "text": "すべての原子が同一平面上にある。",
           "tts_text": "すべての原子が同一平面上にある。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_4_q046_c2",
           "text": "正六角形の形をしている。",
           "tts_text": "正六角形の形をしている。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。ベンゼンの炭素原子は正六角形の平面構造を形成しています。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "choice_id": "ch5_4_q046_c3",
           "text": "すべての炭素間結合が等しい長さである。",
           "tts_text": "すべての炭素間結合が等しい長さである。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
@@ -2683,21 +2731,27 @@
           "choice_id": "ch5_4_q048_c1",
           "text": "塩基性のアニリンは塩酸で塩にして水層に抽出する。",
           "tts_text": "塩基性のアニリンは塩酸で塩にして水層に抽出する。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_4_q048_c2",
           "text": "カルボン酸はNaHCO₃水溶液で塩にして分離する。",
           "tts_text": "カルボン酸は炭酸水素ナトリウム水溶液で塩にして分離する。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。フェノールは炭酸より弱い酸なので、炭酸水素ナトリウム水溶液では塩になりません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "choice_id": "ch5_4_q048_c3",
           "text": "フェノールはNaOH水溶液で塩にして分離する。",
           "tts_text": "フェノールは水酸化ナトリウム水溶液で塩にして分離する。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。フェノールの分離には水酸化ナトリウム水溶液を使います。フェノールは炭酸より弱い酸なので、炭酸水素ナトリウム水溶液では塩になりません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
@@ -2736,21 +2790,27 @@
           "choice_id": "ch5_4_q049_c1",
           "text": "クメン法はフェノールの工業的製法である。",
           "tts_text": "クメン法はフェノールの工業的製法である。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_4_q049_c2",
           "text": "原料としてベンゼンとプロペンを使用する。",
           "tts_text": "原料としてベンゼンとプロペンを使用する。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "正しい。クメン法の原料はベンゼンとプロペンであり、メタンやエチレンではありません。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
           "choice_id": "ch5_4_q049_c3",
           "text": "副産物としてアセトンが得られる。",
           "tts_text": "副産物としてアセトンが得られる。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "4",
@@ -2789,14 +2849,18 @@
           "choice_id": "ch5_4_q050_c1",
           "text": "ベンゼンは有機溶媒として広く用いられる可燃性の液体である。",
           "tts_text": "ベンゼンは有機溶媒として広く用いられる可燃性の液体である。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "2",
           "choice_id": "ch5_4_q050_c2",
           "text": "フェノールは弱酸性で炭酸より弱い酸性を示す化合物である。",
           "tts_text": "フェノールは弱酸性で炭酸より弱い酸性を示す化合物である。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         },
         {
           "label": "3",
@@ -2812,7 +2876,9 @@
           "choice_id": "ch5_4_q050_c4",
           "text": "サリチル酸はヒドロキシ基とカルボキシ基の両方を持つ化合物である。",
           "tts_text": "サリチル酸はヒドロキシ基とカルボキシ基の両方を持つ化合物である。",
-          "is_correct": false
+          "is_correct": false,
+          "trap_detail": "この記述は正しい。",
+          "trap_type": "correct_statement"
         }
       ],
       "explanation": "アニリンは弱塩基性を示す芳香族アミンであり、強酸性ではありません。ベンゼン環にアミノ基が結合した構造を持ちます。",

@@ -721,21 +721,32 @@ function handleChoice(choice) {
   state.shuffledChoices.forEach((c, i) => {
     const li = document.createElement('li');
     let marker, detail, cssClass;
+    const ct = c.text;
     if (c.is_correct) {
-      // The correct answer (for "correct" type) or the wrong statement (for "incorrect" type)
-      marker = q.type === 'incorrect' ? '×' : '○';
-      detail = q.type === 'incorrect' ? (c.trap_detail || '誤りを含む記述。') : '正解';
-      cssClass = q.type === 'incorrect' ? 'choice-detail-wrong' : 'choice-detail-correct';
-    } else {
-      // Wrong choice for "correct" type, or correct distractor for "incorrect" type
-      if (q.type === 'incorrect' && !c.trap_detail) {
+      if (q.type === 'incorrect') {
+        marker = '×';
+        detail = c.trap_detail
+          ? `${ct} → ${c.trap_detail}`
+          : `${ct} → 誤りを含む記述。`;
+        cssClass = 'choice-detail-wrong';
+      } else {
         marker = '○';
-        detail = 'この記述は正しい。';
+        detail = `${ct} → 正解。`;
+        cssClass = 'choice-detail-correct';
+      }
+    } else {
+      if (q.type === 'incorrect') {
+        marker = '○';
+        detail = c.trap_detail
+          ? `${ct} → ${c.trap_detail}`
+          : `${ct} → 正しい記述。`;
         cssClass = 'choice-detail-correct';
       } else {
-        marker = q.type === 'incorrect' ? '○' : '×';
-        detail = c.trap_detail || c.text;
-        cssClass = q.type === 'incorrect' ? 'choice-detail-correct' : 'choice-detail-wrong';
+        marker = '×';
+        detail = c.trap_detail
+          ? `${ct} → ${c.trap_detail}`
+          : ct;
+        cssClass = 'choice-detail-wrong';
       }
     }
     li.className = cssClass;
