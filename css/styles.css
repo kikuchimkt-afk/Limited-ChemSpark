@@ -1128,6 +1128,70 @@ button { font-family: inherit; font-size: inherit; cursor: pointer; border: none
 .evidence ul { margin: 0.5rem 0 0 1.25rem; list-style: disc; }
 .evidence li { margin-bottom: 0.3rem; }
 
+/* ---------- Per-choice breakdown ---------- */
+.choice-details {
+  margin-top: 0.85rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.choice-details summary {
+  cursor: pointer;
+  padding: 0.6rem 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-elevated);
+  transition: color var(--transition), background var(--transition);
+  list-style: none;
+  user-select: none;
+}
+.choice-details summary::-webkit-details-marker { display: none; }
+.choice-details summary:hover { color: var(--text); background: var(--bg-hover); }
+
+.choice-detail-list {
+  margin: 0;
+  padding: 0.4rem 0;
+  list-style: none;
+  border-top: 1px solid var(--border);
+}
+.choice-detail-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  line-height: 1.6;
+}
+.choice-detail-list li + li {
+  border-top: 1px solid var(--border);
+}
+.choice-detail-label {
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  min-width: 3.2em;
+}
+.choice-detail-marker {
+  flex-shrink: 0;
+  font-weight: 900;
+  font-size: 0.85rem;
+  width: 1.3em;
+  text-align: center;
+}
+.marker-correct { color: var(--success); }
+.marker-wrong  { color: var(--danger); }
+.choice-detail-text {
+  flex: 1;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+.choice-detail-correct .choice-detail-text {
+  color: var(--success);
+  font-weight: 600;
+}
+
 .mnemonic {
   margin-top: 1rem; padding: 0.75rem 1rem;
   background: var(--accent-soft); border-radius: var(--radius-sm);

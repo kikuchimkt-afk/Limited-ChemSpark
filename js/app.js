@@ -715,6 +715,24 @@ function handleChoice(choice) {
   });
   $('#feedback-evidence').style.display = (q.evidence || []).length ? '' : 'none';
 
+  // Per-choice breakdown (display only, no audio)
+  const cdList = $('#feedback-choice-detail-list');
+  cdList.innerHTML = '';
+  state.shuffledChoices.forEach((c, i) => {
+    const li = document.createElement('li');
+    li.className = c.is_correct ? 'choice-detail-correct' : 'choice-detail-wrong';
+    const marker = c.is_correct ? '○' : '×';
+    const detail = c.is_correct
+      ? '正解'
+      : (c.trap_detail || c.text);
+    li.innerHTML = `<span class="choice-detail-label">選択肢${i + 1}</span>`
+      + `<span class="choice-detail-marker ${c.is_correct ? 'marker-correct' : 'marker-wrong'}">${marker}</span>`
+      + `<span class="choice-detail-text">${detail}</span>`;
+    cdList.appendChild(li);
+  });
+  const cdDetails = $('#feedback-choice-details');
+  cdDetails.removeAttribute('open');
+
   if (q.mnemonic) {
     $('#feedback-mnemonic').classList.remove('hidden');
     $('#feedback-mnemonic-text').textContent = q.mnemonic;
