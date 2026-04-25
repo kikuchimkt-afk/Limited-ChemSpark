@@ -419,10 +419,27 @@ python questions\_rewrite_explanations.py ch1-2
 python questions\_check_all.py ch1-2
 ```
 
-Note: this step only updates `tts_explanation`. The display-side
-`explanation` field must be edited separately if you want it to match
-(the display field is what users read on screen; `tts_explanation` is
-what gets synthesized to audio).
+Note: this step only updates `tts_explanation`. To sync the display-side
+`explanation` field to match, run Step 3.6c below.
+
+### Step 3.6c. Sync display explanation from TTS
+
+After rewriting `tts_explanation`, the display `explanation` may diverge
+(e.g. it may still contain `選択肢N` references from the original
+authoring). To regenerate it from `tts_explanation` via `to_display()`:
+
+```powershell
+python questions\_fix_display_explanations.py ch1-2
+python questions\_check_all.py ch1-2
+```
+
+This replaces `explanation` with `to_display(tts_explanation)` for every
+question where they differ. The result uses content-based descriptions
+instead of `選択肢N` references, matching the audio narration exactly.
+
+**Important:** After this step, `explanation` no longer contains `選択肢N`.
+The app still shows per-choice breakdowns via the separate "各選択肢の解説"
+UI section (powered by `trap_detail` in each choice).
 
 ### Step 3.7. Generate audio
 
@@ -435,7 +452,7 @@ The script:
 - Assigns each question a random voice (Nanami / Keita) on first run
   and persists it as `audio_voice`.
 - Generates `audio/common/<voice>/choice_prefix_{1..4}.mp3` once per
-  voice.
+  voice. Prefixes are short number words: "いち", "に", "さん", "よん".
 - Generates `audio/ch1-2/<qid>/question.mp3`,
   `<choice_id>.mp3` × 4, `explanation.mp3`.
 - Skips files that already exist (safe to re-run / interrupt).
@@ -454,6 +471,54 @@ Partial runs:
 ```powershell
 python audio\_generate.py ch1-2 1-10
 python audio\_generate.py ch1-2 25
+```
+
+#### Full re-generation (all chapters)
+
+When audio settings change globally (e.g. prefix labels, TTS rate),
+delete all existing MP3s and regenerate:
+
+```powershell
+# 1. Delete all existing MP3s (preserve directory structure)
+Get-ChildItem -Path "audio" -Recurse -Filter "*.mp3" | Remove-Item -Force
+
+# 2. Generate common prefixes for both voices
+python -c "import asyncio; import sys; sys.path.insert(0,'.'); from audio._generate import gen_common; asyncio.run(gen_common('ja-JP-NanamiNeural')); asyncio.run(gen_common('ja-JP-KeitaNeural'))"
+
+# 3. Generate each chapter sequentially
+$chapters = @('ch1-1','ch1-2','ch1-3','ch1-4','ch2-1','ch2-2','ch2-3',
+              'ch3-1','ch3-2','ch3-3','ch3-4','ch3-5',
+              'ch4-1','ch4-2','ch4-3','ch4-4',
+              'ch5-1','ch5-2','ch5-3','ch5-4','ch5-5',
+              'ch6-1','ch6-2','ch6-3')
+foreach ($ch in $chapters) {
+    Write-Host "=== $ch ==="
+    python audio\_generate.py $ch all
+}
+```
+
+**Edge TTS rate limit:** The TTS service may return 503 errors during
+large batch runs. If generation fails mid-chapter, note which question
+it stopped at, clean up the partial file, and resume:
+
+```powershell
+# Find incomplete questions (should have 6 mp3s each)
+$dirs = Get-ChildItem -Path "audio\ch1-2" -Directory
+foreach ($d in $dirs) {
+    $c = (Get-ChildItem $d.FullName -Filter "*.mp3").Count
+    if ($c -ne 6) { Write-Host "$($d.Name): $c/6" }
+}
+
+# Clean partial and resume from question N
+Get-ChildItem -Path "audio\ch1-2\ch1_2_qNNN" -Filter "*.mp3" | Remove-Item -Force
+python audio\_generate.py ch1-2 NNN-50
+```
+
+#### Verify audio completeness
+
+```powershell
+# Count total MP3s (expect 300 per chapter = 50 × 6)
+(Get-ChildItem -Path "audio\ch1-2" -Recurse -Filter "*.mp3").Count
 ```
 
 ### Step 3.8. Regenerate stale `explanation.mp3`
@@ -551,14 +616,26 @@ If you change any of these assumptions, update the app in lockstep.
 - Audio path for choice `N` in voice `V`:
   `audio/common/<V>/choice_prefix_<N>.mp3` followed by
   `audio/<chapter>/<qid>/<choice_id>.mp3`.
+  Choice prefix clips contain short number words ("いち"〜"よん").
 - Explanation path: `audio/<chapter>/<qid>/explanation.mp3`.
+- Playback timing in `playAllAudio()`:
+  - Question → choices gap: **750ms**.
+  - Inter-choice gap: **350ms**.
+  If you change these, edit `js/app.js :: playAllAudio()`.
 - Playback speeds use `HTMLAudioElement.playbackRate`. MP3s are
-  synthesized at Edge-TTS rate `-10%`; `natural` speed uses `1.11x`.
+  synthesized at Edge-TTS rate `-10%`; `slow` speed uses `1.11x`,
+  `natural` uses `1.25x`, `fast` uses `1.43x`.
   If you change the synthesis rate, update `SPEED_MAP` in `js/app.js`.
-- `remapChoiceRefs` in `js/app.js` assumes `選択肢N` in `explanation`
-  (display) refers to the 1-indexed position in `q.choices[]` as stored
-  in JSON. Don't reorder choices after restructuring without re-running
-  remap.
+- **Per-choice breakdown** ("各選択肢の解説"): A display-only collapsible
+  section in the feedback area. Renders each choice with ○/× marker and
+  `trap_detail` text (or fallback). **No audio is generated for this
+  section.** Labels use `選択肢N` where N reflects the shuffled runtime
+  position.
+  - For `type: "correct"` questions: correct choice shows ○, wrong
+    choices show × with `trap_detail`.
+  - For `type: "incorrect"` questions: the "correct" answer (the wrong
+    statement to select) shows ×, distractors (correct statements)
+    show ○.
 
 ---
 
@@ -571,8 +648,9 @@ Before marking a chapter done, run each command and confirm:
 | All content checks | `python questions\_check_all.py ch1-2 --strict` | `ALL CHECKS PASSED`. |
 | Manual content verification | Section 3.6b | All explanations rated ✅. |
 | All voices assigned | (manually) every question has `audio_voice`. |
+| Display explanation synced | `python questions\_fix_display_explanations.py <chapter>` reports 0 changes. |
 | All MP3s exist | `audio/<chapter>/<qid>/` contains 6 files for every question. |
-| Common prefixes | `audio/common/<voice>/choice_prefix_{1..4}.mp3` exists for every voice in use. |
+| Common prefixes | `audio/common/<voice>/choice_prefix_{1..4}.mp3` ("いち"〜"よん") exists for both voices. |
 | App enabled | `CHAPTERS` entry has `enabled: true`. |
 | Smoke test | Section 3.10. |
 
@@ -608,6 +686,14 @@ Before marking a chapter done, run each command and confirm:
   occurs, restore the file with `git checkout -- questions/<chapter>.json`,
   fix the rewrite file, and re-run.
 - `tts_explanation` and display `explanation` are independent fields.
-  `_rewrite_explanations.py` only updates `tts_explanation`. If you
-  want the display explanation to match, edit the chapter JSON by hand
-  or add display-side edits as a separate manual step.
+  `_rewrite_explanations.py` only updates `tts_explanation`. Use
+  `_fix_display_explanations.py` (Step 3.6c) to regenerate the display
+  explanation from the TTS source via `to_display()`.
+
+---
+
+## 8. Additional scripts
+
+| Script | Purpose |
+|--------|---------|
+| `questions/_fix_display_explanations.py <chapter>` | Regenerate display `explanation` from `to_display(tts_explanation)`. Removes `選択肢N` references and syncs with audio narration. Pass `--dry-run` to preview. |
