@@ -1,0 +1,12 @@
+﻿Found 41 issues:
+python : Traceback (most recent call last):
+発生場所 行:1 文字:1
++ python _tmp\check_ch11_exp.py 2>&1 | Out-File -Encoding utf8 _tmp\ch1 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\makoto\Documents\GitHub\Limited-ChemSpark\_tmp\check_ch11_exp.py", line 37, in <module>
+    print(f"  {qid} [{typ}]: {preview}...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp932' codec can't encode character '\u2082' in position 124: illegal multibyte sequence
