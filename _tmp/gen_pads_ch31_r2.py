@@ -1,0 +1,41 @@
+"""Additional padding for ch3-1 remaining biased questions."""
+import json
+
+with open("questions/ch3-1.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+PAD_TARGETS_2 = {
+    "ch3_1_q012": {
+        "c2": "係数に分数は使えないため必ず整数にする。化学反応式の係数は最小整数比で表すのが原則であり分数の係数は使用できない規則になっているため調整が不要になる。",
+        "c3": "状態を明記する必要はなく、化学式のみでよい。反応式に状態を書き加えると煩雑になるため化学式だけで十分であるとされており明記の手間を省くことができる。",
+        "c4": "エンタルピー変化は反応物と並べて反応式の左辺に書くのが一般的な書式である。反応の原因と結果を同じ側に記載した方が読みやすいためこの書き方が推奨されている。",
+    },
+    "ch3_1_q026": {
+        "c2": "燃焼エンタルピーと生成エンタルピーは本質的に同じ概念を指しており互換的に用いてよい。どちらも物質のエネルギー変化を表す量であるため区別する必要はないものである。",
+        "c3": "生成エンタルピーは化合物が分解するときの値である。化合物一モルが元素に分かれるときのエンタルピー変化が生成エンタルピーであると定義されているものである。",
+    },
+    "ch3_1_q050": {
+        "c1": "反応エンタルピーの具体的な計算には生成エンタルピーや結合エネルギーの数値データが必要であり、ヘスの法則は抽象的な法則にすぎず実際の計算には使えない。数値計算に直接使うことのできない理論的な原理にすぎないものであり応用場面がない概念である。",
+        "c3": "発熱はプラス。ヘスの法則は経路依存。引き算の順はどちらも同じ。結合を切るのは発熱。光に関連する現象は一種類のみ。五箇所の知識を一文にまとめた記述であり反応エンタルピーに関する要点を凝縮した総合的なまとめの内容である。",
+        "c4": "光触媒は反応の進行とともに自身が徐々に消費されて光を発する物質であり化学発光現象の一種である。光を吸収して自ら発光する性質と触媒としての機能を併せ持つ物質であるため様々な反応系で多用される重要な物質である。",
+    },
+}
+
+pads = {}
+for q in data["questions"]:
+    qid = q["id"]
+    if qid not in PAD_TARGETS_2:
+        continue
+    pads[qid] = {}
+    for choice in q["choices"]:
+        cid = choice["choice_id"]
+        suffix = cid.replace(f"{qid}_", "")
+        if suffix in PAD_TARGETS_2[qid]:
+            old_tts = choice["tts_text"]
+            new_tts = PAD_TARGETS_2[qid][suffix]
+            pads[qid][old_tts] = new_tts
+
+with open("questions/_pads/ch3-1.json", "w", encoding="utf-8") as f:
+    json.dump(pads, f, ensure_ascii=False, indent=2)
+
+print(f"Generated pads for {sum(len(v) for v in pads.values())} choices across {len(pads)} questions")
