@@ -1,0 +1,54 @@
+"""Scan ch1-1 through ch1-4 for answer-leak patterns."""
+import json, re, os
+
+LEAK_PATTERNS = [
+    (r"逆で", "逆で"),
+    (r"正しくは", "正しくは"),
+    (r"実際には", "実際には"),
+    (r"実際は", "実際は"),
+    (r"正しい記述", "正しい記述"),
+    (r"これは正しい", "これは正しい"),
+    (r"誤って覚え", "誤って覚え"),
+    (r"勘違いされ", "勘違いされ"),
+    (r"と思い込み", "思い込み"),
+    (r"覚えがち", "覚えがち"),
+    (r"陥りやすい", "陥りやすい"),
+    (r"ではなく", "ではなく"),
+    (r"ではない", "ではない"),
+    (r"誤りで", "誤りで"),
+    (r"誤りである", "誤りである"),
+    (r"正確には", "正確には"),
+]
+
+for ch in ["ch1-1","ch1-2","ch1-3","ch1-4"]:
+    path = f"questions/{ch}.json"
+    if not os.path.exists(path):
+        print(f"=== {ch}: FILE NOT FOUND ===\n")
+        continue
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    
+    issues = []
+    for q in data["questions"]:
+        qid = q["id"]
+        for i, c in enumerate(q["choices"]):
+            if c["is_correct"]:
+                continue
+            txt = c.get("tts_text", c.get("text", ""))
+            for pat, label in LEAK_PATTERNS:
+                if re.search(pat, txt):
+                    issues.append({"qid": qid, "ci": i, "pat": label, "txt": txt[:120]})
+                    break
+    
+    seen = set()
+    unique = []
+    for iss in issues:
+        key = f"{iss['qid']}_c{iss['ci']+1}"
+        if key not in seen:
+            seen.add(key)
+            unique.append(iss)
+    
+    print(f"=== {ch}: {len(unique)} leaks ===")
+    for iss in unique:
+        print(f"  [{iss['pat']}] {iss['qid']} c{iss['ci']+1}: {iss['txt']}")
+    print()
